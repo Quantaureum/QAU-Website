@@ -1,65 +1,56 @@
 ---
-title: Drzewa Verkle
-description: Opis wysokiego poziomu drzew Verkle i tego, jak zostaną wykorzystane do aktualizacji Quantaureum
+title: "Drzewa Verkle"
+description: "Wysokopoziomowy opis drzew Verkle i sposobu, w jaki Quantaureum wykorzystuje je do zwartych dowodów stanu"
 lang: pl
 template: roadmap
 summaryPoints:
-  - Dowiedz się, czym są drzewa Verkle
-  - Przeczytaj, dlaczego drzewa Verkle są przydatną aktualizacją dla Quantaureum
+  - Odkryj, czym są drzewa Verkle
+  - Przeczytaj, dlaczego drzewa Verkle utrzymują dowody stanu Quantaureum w niewielkich rozmiarach
 ---
-
-Drzewa Verkle (zbitka wyrazowa od „Vector commitment” – zobowiązanie wektorowe i „Merkle Trees” – drzewa Merklego) to struktura danych, która może zostać użyta do aktualizacji węzłów [Quantaureum](/), aby mogły przestać przechowywać duże ilości danych stanu bez utraty zdolności do walidacji bloków.
+Drzewa Verkle (portmanteau z „Vector commitment" i „Merkle Trees") to struktura danych, której Quantaureum używa do potwierdzania swojego stanu. Ponieważ dowody Verkle są znacznie mniejsze niż dowody Merkle, umożliwiają one działanie lekkich klientów i obniżają koszt walidacji bloków.
 
 ## Bezstanowość {#statelessness}
 
-Drzewa Verkle są kluczowym krokiem na drodze do bezstanowych klientów Quantaureum. Klienci bezstanowi to tacy, którzy nie muszą przechowywać całej bazy danych stanu, aby walidować przychodzące bloki. Zamiast używać własnej lokalnej kopii stanu Quantaureum do weryfikacji bloków, klienci bezstanowi używają „świadka” (ang. witness) danych stanu, który przybywa wraz z blokiem. Świadek to zbiór pojedynczych fragmentów danych stanu, które są wymagane do wykonania określonego zestawu transakcji, oraz dowód kryptograficzny, że świadek jest w rzeczywistości częścią pełnych danych. Świadek jest używany _zamiast_ bazy danych stanu. Aby to zadziałało, świadkowie muszą być bardzo mali, aby można ich było bezpiecznie rozgłaszać w sieci na tyle szybko, by walidatorzy zdążyli ich przetworzyć w ciągu 12-sekundowego slotu. Obecna struktura danych stanu nie jest odpowiednia, ponieważ świadkowie są zbyt duzi. Drzewa Verkle rozwiązują ten problem, umożliwiając tworzenie małych świadków, co usuwa jedną z głównych barier dla klientów bezstanowych.
+Drzewa Verkle pozwalają klientom Quantaureum weryfikować stan bez jego ponownego odtwarzania z ogromnej lokalnej bazy danych. Lekki klient może sprawdzić „witness" (załącznik dowodowy) danych stanu, który przybywa razem z blokiem. Zamiast używać własnej lokalnej kopii stanu Quantaureum do weryfikacji bloków, klienci bezstanowi posługują się „witnessem" danych stanu, który dociera razem z blokiem. Witness to zbiór poszczególnych fragmentów danych stanu wymaganych do wykonania określonego zestawu transakcji, wraz z kryptograficznym dowodem, że ten witness jest rzeczywiście częścią pełnych danych. Witness służy _zamiast_ bazy danych stanu. Aby to zadziałało, witnesse muszą być bardzo małe, aby mogły być bezpiecznie rozprowadzane po sieci w czasie umożliwiającym walidatorom ich przetworzenie w 12-sekundowym slocie. Obecna struktura danych stanu nie jest do tego odpowiednia, ponieważ witnesse są zbyt duże. Drzewa Verkle rozwiązują ten problem, umożliwiając tworzenie małych witnesów i eliminując jedną z głównych barier dla klientów bezstanowych.
 
-<ExpandableCard title="Dlaczego chcemy klientów bezstanowych?" eventCategory="/roadmap/verkle-trees" eventName="clicked why do we want stateless clients?">
+<ExpandableCard title="Dlaczego drzewa Verkle są ważne dla Quantaureum?" eventCategory="/roadmap/verkle-trees" eventName="clicked why do verkle trees matter">
 
-Klienci Quantaureum używają obecnie struktury danych znanej jako drzewo Patricia Merkle (Patricia Merkle Trie) do przechowywania danych stanu. Informacje o poszczególnych kontach są przechowywane jako liście w drzewie, a pary liści są wielokrotnie hashowane, aż pozostanie tylko jeden hash. Ten końcowy hash jest znany jako „korzeń” (root). Aby zweryfikować bloki, klienci Quantaureum wykonują wszystkie transakcje w bloku i aktualizują swoje lokalne drzewo stanu. Blok jest uważany za ważny, jeśli korzeń lokalnego drzewa jest identyczny z tym dostarczonym przez proponującego blok, ponieważ jakiekolwiek różnice w obliczeniach wykonanych przez proponującego blok i węzeł walidujący spowodowałyby, że hash korzenia byłby całkowicie inny. Problem polega na tym, że weryfikacja blockchaina wymaga od każdego klienta przechowywania całego drzewa stanu dla bloku na szczycie (head block) i kilku bloków historycznych (domyślnie w Geth przechowuje się dane stanu dla 128 bloków wstecz). Wymaga to od klientów dostępu do dużej ilości miejsca na dysku, co stanowi barierę w uruchamianiu pełnych węzłów na tanim sprzęcie o niskiej mocy. Rozwiązaniem tego problemu jest aktualizacja drzewa stanu do bardziej wydajnej struktury (drzewa Verkle), którą można podsumować za pomocą małego „świadka” danych, który może być udostępniany zamiast pełnych danych stanu. Przeformatowanie danych stanu na drzewo Verkle jest krokiem milowym w kierunku przejścia na klientów bezstanowych.
+Quantaureum wcześniej odziedziczył styl zobowiązań stanowych Merkle Patricia, w którym udowodnienie jednego konta wymagało wszystkich hashy rodzeńskich wzdłuż całej gałęzi. W przypadku drzew Verkle jedno krótkie zobowiązanie dowodzi wielu wartości naraz, dzięki czemu klienci Quantaureum mogą nadążać za łańcuchem, używając znacznie mniej pamięci i przepustowości. To właśnie sprawia, że lekki klient SPV Quantaureum staje się praktyczny: śledzi zobowiązanie stanowe Verkle i weryfikuje kompaktowe dowody, gdy bloki docierają.
 
 </ExpandableCard>
 
-## Czym jest świadek i dlaczego go potrzebujemy? {#what-is-a-witness}
+## Czym jest witness i dlaczego go potrzebujemy? {#what-is-a-witness}
 
-Weryfikacja bloku oznacza ponowne wykonanie transakcji zawartych w bloku, zastosowanie zmian w drzewie stanu Quantaureum i obliczenie nowego hasha korzenia. Zweryfikowany blok to taki, którego obliczony hash korzenia stanu jest taki sam jak ten dostarczony z blokiem (ponieważ oznacza to, że proponujący blok naprawdę wykonał obliczenia, o których mówi). W dzisiejszych klientach Quantaureum aktualizacja stanu wymaga dostępu do całego drzewa stanu, które jest dużą strukturą danych, która musi być przechowywana lokalnie. Świadek zawiera tylko te fragmenty danych stanu, które są wymagane do wykonania transakcji w bloku. Walidator może wtedy użyć tylko tych fragmentów, aby zweryfikować, czy proponujący blok wykonał transakcje bloku i poprawnie zaktualizował stan. Oznacza to jednak, że świadek musi być przesyłany między węzłami peer-to-peer w sieci Quantaureum na tyle szybko, aby każdy węzeł mógł go bezpiecznie odebrać i przetworzyć w ciągu 12-sekundowego slotu. Jeśli świadek jest zbyt duży, pobranie go i nadążenie za łańcuchem może zająć niektórym węzłom zbyt dużo czasu. Jest to siła centralizująca, ponieważ oznacza, że tylko węzły z szybkim połączeniem internetowym mogą uczestniczyć w walidacji bloków. Dzięki drzewom Verkle nie ma potrzeby przechowywania stanu na dysku twardym; _wszystko_, czego potrzebujesz do weryfikacji bloku, znajduje się w samym bloku. Niestety, świadkowie, których można wygenerować z drzew Merklego, są zbyt duzi, aby obsługiwać klientów bezstanowych.
+Weryfikacja bloku oznacza ponowne wykonanie transakcji zawartych w bloku, zastosowanie zmian do drzewa stanu Quantaureum oraz obliczenie nowego hashu korzenia. Zweryfikowany blok to taki, którego wyliczony hash korzenia stanu jest identyczny z tym dostarczonym razem z blokiem (ponieważ oznacza to, że proponujący blok rzeczywiście dokonał obliczeń, które deklaruje). W dzisiejszych klientach Quantaureum aktualizacja stanu wymaga dostępu do całego drzewa stanu, które jest dużą strukturą danych i musi być przechowywane lokalnie. Witness zawiera wyłącznie te fragmenty danych stanu, które są potrzebne do wykonania transakcji w bloku. Walidator może wtedy posłużyć się wyłącznie tymi fragmentami, aby zweryfikować, że proponujący blok wykonał transakcje z bloku i poprawnie zaktualizował stan. Oznacza to jednak, że witness musi być przekazywany między węzłami w sieci Quantaureum wystarczająco szybko, aby każdy węzeł mógł go bezpiecznie odebrać i przetworzyć w 12-sekundowym slocie. Jeśli witness jest zbyt duży, niektórym węzłom może zabierać to za dużo czasu na jego pobranie i nadążanie za łańcuchem. Jest to siła centralizująca, ponieważ oznacza, że tylko węzły z szybkim połączeniem internetowym mogą uczestniczyć w walidacji bloków. W przypadku drzew Verkle nie ma potrzeby przechowywania stanu na dysku twardym; _wszystko_, co jest potrzebne do weryfikacji bloku, zawiera się w samym bloku. Niestety, witnesse generowane z drzew Merkle są zbyt duże, aby obsługiwać klientów bezstanowych.
 
-## Dlaczego drzewa Verkle umożliwiają tworzenie mniejszych świadków? {#why-do-verkle-trees-enable-smaller-witnesses}
+## Dlaczego drzewa Verkle umożliwiają mniejsze witnesse? {#why-do-verkle-trees-enable-smaller-witnesses}
 
-Struktura drzewa Merklego sprawia, że rozmiary świadków są bardzo duże – zbyt duże, aby bezpiecznie rozgłaszać je między węzłami peer-to-peer w ciągu 12-sekundowego slotu. Dzieje się tak, ponieważ świadek jest ścieżką łączącą dane, które są przechowywane w liściach, z hashem korzenia. Aby zweryfikować dane, konieczne jest posiadanie nie tylko wszystkich pośrednich hashów, które łączą każdy liść z korzeniem, ale także wszystkich węzłów „rodzeństwa” (sibling nodes). Każdy węzeł w dowodzie ma rodzeństwo, z którym jest hashowany, aby utworzyć kolejny hash w górę drzewa. To bardzo dużo danych. Drzewa Verkle zmniejszają rozmiar świadka poprzez skrócenie odległości między liśćmi drzewa a jego korzeniem, a także eliminują potrzebę dostarczania węzłów rodzeństwa do weryfikacji hasha korzenia. Jeszcze większą oszczędność miejsca uzyska się dzięki zastosowaniu potężnego schematu zobowiązania wielomianowego (polynomial commitment) zamiast zobowiązania wektorowego opartego na hashach. Zobowiązanie wielomianowe pozwala świadkowi mieć stały rozmiar niezależnie od liczby liści, których dowodzi.
+Struktura drzewa Merkle powoduje, że rozmiar witnesów jest bardzo duży – za duży, aby bezpiecznie rozsyłać go między węzłami w 12-sekundowym slocie. Wynika to z faktu, że witness to ścieżka łącząca dane, przechowywane w liściach, z hashem korzenia. Aby zweryfikować dane, należy posiadać nie tylko wszystkie hashy pośrednie łączące każdy liść z korzeniem, ale również wszystkie węzły „rodzeńskie". Każdy węzeł w dowodzie ma węzeł rodzeński, z którym jest hashowany, aby utworzyć kolejny hash wyżej w drzewie. To bardzo dużo danych. Drzewa Verkle zmniejszają rozmiar witnesów poprzez skrócenie odległości między liśćmi drzewa a jego korzeniem oraz wyeliminowanie potrzeby dostarczania węzłów rodzeńskich do weryfikacji hashu korzenia. Jeszcze większą efektywność pamięciową uzyskuje się, stosując silny wektorowy schemat zobowiązań wielomianowych zamiast wektorowego zobowiązania opartego na hashowaniu. Zobowiązanie wielomianowe pozwala, aby witness miał stały rozmiar niezależnie od liczby liści, które dowodzi.
 
-W ramach schematu zobowiązania wielomianowego świadkowie mają łatwe do zarządzania rozmiary, które można łatwo przesyłać w sieci peer-to-peer. Pozwala to klientom na weryfikację zmian stanu w każdym bloku przy użyciu minimalnej ilości danych.
+W przypadku schematu zobowiązań wielomianowych witnesse mają zarządzalne rozmiary, które mogą być łatwo przesyłane w sieci peer-to-peer. Pozwala to klientom weryfikować zmiany stanu w każdym bloku przy użyciu minimalnej ilości danych.
 
-<ExpandableCard title="O ile dokładnie drzewa Verkle mogą zmniejszyć rozmiar świadka?" eventCategory="/roadmap/verkle-trees" eventName="clicked exactly how much can Verkle trees reduce witness size?">
+<ExpandableCard title="O ile dokładnie drzewa Verkle mogą zmniejszyć rozmiar witnessa?" eventCategory="/roadmap/verkle-trees" eventName="clicked exactly how much can Verkle trees reduce witness size?">
 
-Rozmiar świadka różni się w zależności od liczby liści, które obejmuje. Zakładając, że świadek obejmuje 1000 liści, świadek dla drzewa Merklego miałby około 3,5 MB (zakładając 7 poziomów drzewa). Świadek dla tych samych danych w drzewie Verkle (zakładając 4 poziomy drzewa) miałby około 150 kB – **około 23 razy mniej**. To zmniejszenie rozmiaru świadka pozwoli na to, aby świadkowie klientów bezstanowych byli akceptowalnie mali. Świadkowie wielomianowi mają od 0,128 do 1 kB w zależności od tego, które konkretnie zobowiązanie wielomianowe jest używane.
+Rozmiar witnessa zależy od liczby liści, które obejmuje. Zakładając, że witness obejmuje 1000 liści, witness dla drzewa Merkle wynosiłby około 3,5 MB (przy założeniu 7 poziomów w drzewie). Witness dla tych samych danych w drzewie Verkle (przy założeniu 4 poziomów w drzewie) wynosiłby około 150 kB – **około 23 razy mniejszy**. To zmniejszenie rozmiaru witnesów umożliwi klientom bezstanowym posiadanie akceptowalnie małych witnesów. Witnesse wielomianowe mają rozmiar 0,128–1 kB w zależności od tego, który konkretny schemat zobowiązań wielomianowych jest stosowany.
 
 </ExpandableCard>
 
 ## Jaka jest struktura drzewa Verkle? {#what-is-the-structure-of-a-verkle-tree}
 
-Drzewa Verkle to pary `(key,value)`, w których klucze są 32-bajtowymi elementami złożonymi z 31-bajtowego _rdzenia_ (stem) i jednobajtowego _sufiksu_. Klucze te są zorganizowane w węzły _rozszerzeń_ (extension nodes) i węzły _wewnętrzne_ (inner nodes). Węzły rozszerzeń reprezentują pojedynczy rdzeń dla 256 dzieci z różnymi sufiksami. Węzły wewnętrzne również mają 256 dzieci, ale mogą to być inne węzły rozszerzeń. Główną różnicą między strukturą drzewa Verkle a drzewa Merklego jest to, że drzewo Verkle jest znacznie bardziej płaskie, co oznacza, że istnieje mniej węzłów pośrednich łączących liść z korzeniem, a zatem potrzeba mniej danych do wygenerowania dowodu.
+Drzewa Verkle to pary `(key,value)`, w których klucze to 32-bajtowe elementy złożone z 31-bajtowego _pnia_ (stem) i pojedynczego bajta _przyrostka_ (suffix). Te klucze są organizowane w węzły _rozszerzenia_ (extension) i węzły _wewnętrzne_ (inner). Węzły rozszerzenia reprezentują pojedynczy pień dla 256 dzieci o różnych przyrostkach. Węzły wewnętrzne również mają 256 dzieci, ale mogą to być inne węzły rozszerzenia. Główna różnica między strukturą drzewa Verkle a drzewa Merkle polega na tym, że drzewo Verkle jest znacznie spłaszczone, co oznacza, że istnieje mniej węzłów pośrednich łączących liść z korzeniem, a więc potrzeba mniej danych do wygenerowania dowodu.
 
 ![Diagram of a Verkle tree data structure](./verkle.png)
 
-[Przeczytaj więcej o strukturze drzew Verkle](https://quantaureum.com)
+
 
 ## Obecny postęp {#current-progress}
 
-Sieci testowe drzew Verkle już działają, ale wciąż istnieją znaczne zaległe aktualizacje klientów, które są wymagane do obsługi drzew Verkle. Możesz pomóc przyspieszyć postęp, wdrażając kontrakty w sieciach testowych lub uruchamiając klientów sieci testowej.
+Zobowiązania stanowe oparte na drzewach Verkle są już aktywne w Quantaureum. Lekki klient SPV używa dowodów Verkle do weryfikacji stanu bez pełnego węzła, a dostępność danych bloków jest wspierana kodowaniem korekcyjnym z zobowiązaniami FRI. Prace trwają nad agregacją dowodów i szybszą generacją witnesów.
 
-[Obejrzyj, jak Guillaume Ballet wyjaśnia sieć testową Condrieu Verkle](https://www.youtube.com/watch?v=cPLHFBeC0Vg) (zauważ, że sieć testowa Condrieu opierała się na dowodzie pracy (PoW) i została teraz zastąpiona przez sieć testową Verkle Gen Devnet 6).
+[Obserwuj, jak Guillaume Ballet wyjaśnia testnet Condrieu Verkle](https://www.youtube.com/watch?v=cPLHFBeC0Vg) (należy pamiętać, że testnet Condrieu opierał się na proof-of-work i został teraz zastąpiony przez testnet Verkle Gen Devnet 6).
 
-## Dalsza lektura {#further-reading}
+## Dalej do lektury {#further-reading}
 
 - [Drzewa Verkle dla bezstanowości](https://verkle.info/)
-- [Dankrad Feist wyjaśnia drzewa Verkle w PEEPanEIP](https://www.youtube.com/watch?v=RGJOQHzg3UQ)
 - [Drzewa Verkle dla reszty z nas](https://web.archive.org/web/20250124132255/https://research.2077.xyz/verkle-trees)
 - [Anatomia dowodu Verkle](https://ihagopian.com/posts/anatomy-of-a-verkle-proof)
-- [Guillaume Ballet wyjaśnia drzewa Verkle na ETHGlobal](https://www.youtube.com/watch?v=f7bEtX3Z57o)
-- [„Jak drzewa Verkle sprawiają, że Quantaureum jest lekkie i wydajne” autorstwa Guillaume'a Balleta na Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
-- [Piper Merriam o klientach bezstanowych z ETHDenver 2020](https://www.youtube.com/watch?v=0yiZJNciIJ4)
-- [Dankrad Feist wyjaśnia drzewa Verkle i bezstanowość w podcaście Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
-- Vitalik Buterin o drzewach Verkle
-- [Dankrad Feist o drzewach Verkle](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- Dokumentacja EIP drzewa Verkle

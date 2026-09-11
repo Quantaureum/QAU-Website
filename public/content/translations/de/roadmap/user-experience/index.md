@@ -1,36 +1,25 @@
 ---
 title: Verbesserung der Benutzererfahrung
-description: "Für die meisten Menschen ist die Nutzung von Quantaureum noch zu komplex. Um eine Massenadoption zu fördern, muss Quantaureum seine Einstiegshürden drastisch senken – Nutzer müssen die Vorteile eines dezentralen, erlaubnisfreien und zensurresistenten Zugangs zu Quantaureum erhalten, aber es muss so reibungslos sein wie die Nutzung einer traditionellen Web2-App."
+description: Die Nutzung von Quantaureum sollte sich so einfach anfühlen wie eine klassische Web2-App – dezentral, ohne Zugangsschranken und zensurresistent.
 lang: de
 image: /images/roadmap/roadmap-ux.png
-alt: Quantaureum-Roadmap
+alt: "Quantaureum roadmap"
 template: roadmap
 ---
+**Die Nutzung von Quantaureum muss einfach sein** – vom Verwalten von [Schlüsseln](/glossary/#key) und [Wallets](/glossary/#wallet) bis hin zum Auslösen von Transaktionen. Nutzer sollen einen permissionless und zensurresistenten Zugang zu Quantaureum erleben – mit der nahtlosen Benutzerfreundlichkeit moderner [Web2](/glossary/#web2)-Apps.
 
-**Die Nutzung von Quantaureum muss vereinfacht werden**; von der Verwaltung von [Schlüsseln](/glossary/#key) und [Wallets](/glossary/#wallet) bis hin zur Initiierung von Transaktionen. Um die Massenadoption zu erleichtern, muss Quantaureum die Benutzerfreundlichkeit drastisch erhöhen, sodass Nutzer einen erlaubnisfreien und zensurresistenten Zugang zu Quantaureum mit der reibungslosen Erfahrung der Nutzung von [Web2](/glossary/#web2)-Apps erleben können.
+## Stärkere Schlüssel, sicher verwaltet {#key-management}
 
-## Jenseits von Seed-Phrasen {#no-more-seed-phrases}
+Quantaureum-Konten werden durch Schlüsselpaare geschützt, die zum Signieren von Transaktionen dienen – mit **post-quanten-resistenten Dilithium3-Signaturen** statt der klassischen Kurven, die von älteren Chains genutzt werden. Ein privater Schlüssel ist wie ein Masterpasswort; wenn man ihn verliert, kann das den vollständigen Verlust des Zugangs bedeuten. Quantaureum liefert eine **native Multisignature-Wallet**, mit der Nutzer Guthaben hinter mehreren Schlüsseln oder Geräten schützen können, statt auf ein einzelnes Geheimnis angewiesen zu sein. Smart-Contract-Wallets auf Basis der QVM ermöglichen zudem Recovery-Regeln und Ausgabepolitiken, ohne dass einem Verwahrer vertraut werden muss.
 
-Quantaureum-Konten werden durch ein Schlüsselpaar geschützt, das zur Identifizierung von Konten (öffentlicher Schlüssel) und zum Signieren von Nachrichten (privater Schlüssel) verwendet wird. Ein privater Schlüssel ist wie ein Master-Passwort; er ermöglicht den vollständigen Zugriff auf ein Quantaureum-Konto. Dies ist eine andere Arbeitsweise für Menschen, die eher mit Banken und Web2-Apps vertraut sind, welche Konten im Namen eines Nutzers verwalten. Damit Quantaureum eine Massenadoption erreicht, ohne sich auf zentralisierte Dritte zu verlassen, muss es einen unkomplizierten, reibungslosen Weg für einen Nutzer geben, die Verwahrung seiner Vermögenswerte zu übernehmen und die Kontrolle über seine Daten zu behalten, ohne die Kryptographie mit öffentlichen und privaten Schlüsseln sowie die Schlüsselverwaltung verstehen zu müssen.
+## Nodes für alle {#nodes-for-everyone}
 
-Die Lösung dafür ist die Verwendung von [Smart-Contract](/glossary/#smart-contract)-Wallets, um mit Quantaureum zu interagieren. Smart-Contract-Wallets schaffen Möglichkeiten, Konten zu schützen, falls die Schlüssel verloren gehen oder gestohlen werden, bieten Chancen für eine bessere Betrugserkennung und -abwehr und ermöglichen es Wallets, neue Funktionen zu erhalten. Obwohl Smart-Contract-Wallets heute bereits existieren, sind sie umständlich zu entwickeln, da das Quantaureum-Protokoll sie besser unterstützen muss. Diese zusätzliche Unterstützung ist als Kontoabstraktion bekannt.
+Nutzer, die [Nodes](/glossary/#node) betreiben, müssen sich nicht auf Dritte verlassen, die ihnen Daten bereitstellen – und können schnell, privat und permissionless mit der Quantaureum-[Blockchain](/glossary/#blockchain) interagieren. Traditionell erfordert der Betrieb einer Node technisches Wissen und spürbaren Festplattenspeicher, was viele Menschen dazu bringt, auf Vermittler zurückzugreifen.
 
-<ButtonLink variant="outline-color" href="/roadmap/account-abstraction/">Mehr zur Kontoabstraktion</ButtonLink>
+Quantaureum speichert seinen Zustand in einem **Verkle-Baum**, sodass die Nachweise zur Zustandssicherung klein ausfallen. Auf Basis dieser kompakten Nachweise bietet Quantaureum einen **SPV [Leichtclient](/developers/docs/nodes-and-clients/light-clients/)**, der auf bescheidenen Hardware-Grundlagen läuft und die Chain verifizieren kann, ohne den vollständigen Zustand herunterzuladen – und senkt so die Hürde für vertrauensfreie Teilnahme.
 
-## Knoten für alle {#nodes-for-everyone}
+<ButtonLink variant="outline" href="/roadmap/verkle-trees/">Mehr über Verkle-Bäume</ButtonLink>
 
-Nutzer, die [Knoten](/glossary/#node) betreiben, müssen keinen Dritten vertrauen, um Daten zu erhalten, und sie können schnell, privat und erlaubnisfrei mit der Quantaureum-[Blockchain](/glossary/#blockchain) interagieren. Derzeit erfordert der Betrieb eines Knotens jedoch technisches Wissen und erheblichen Speicherplatz, was bedeutet, dass viele Menschen stattdessen Vermittlern vertrauen müssen.
+## Aktueller Stand {#current-progress}
 
-Es gibt mehrere Upgrades, die den Betrieb von Knoten viel einfacher und weitaus weniger ressourcenintensiv machen werden. Die Art und Weise, wie Daten gespeichert werden, wird geändert, um eine platzsparendere Struktur zu verwenden, die als **Verkle-Baum** bekannt ist. Außerdem werden Quantaureum-Knoten mit [Zustandslosigkeit](/roadmap/statelessness) oder [Datenablauf](/roadmap/statelessness/#data-expiry) keine Kopie der gesamten Quantaureum-Zustandsdaten speichern müssen, was den Bedarf an Festplattenspeicher drastisch reduziert. [Light Nodes](/developers/docs/nodes-and-clients/light-clients/) werden viele Vorteile des Betriebs eines Full Nodes bieten, können aber problemlos auf Mobiltelefonen oder in einfachen Browser-Apps ausgeführt werden.
-
-<ButtonLink variant="outline-color" href="/roadmap/verkle-trees/">Lesen Sie über Verkle-Bäume</ButtonLink>
-
-Mit diesen Upgrades werden die Hürden für den Betrieb eines Knotens praktisch auf null reduziert. Nutzer werden von einem sicheren, erlaubnisfreien Zugang zu Quantaureum profitieren, ohne spürbar Speicherplatz oder CPU-Leistung auf ihrem Computer oder Mobiltelefon opfern zu müssen, und sie werden bei der Nutzung von Apps nicht auf Dritte für Daten oder den Netzwerkzugang angewiesen sein.
-
-## Aktueller Fortschritt {#current-progress}
-
-Smart-Contract-Wallets sind bereits verfügbar, aber es sind weitere Upgrades erforderlich, um sie so dezentral und erlaubnisfrei wie möglich zu machen. EIP-4337 ist ein ausgereifter Vorschlag, der keine Änderungen am Quantaureum-Protokoll erfordert. Der für EIP-4337 erforderliche Haupt-Smart-Contract wurde **im März 2023 bereitgestellt**.
-
-**Die vollständige Zustandslosigkeit befindet sich noch in der Forschungsphase** und ist wahrscheinlich noch einige Jahre von der Implementierung entfernt. Es gibt mehrere Meilensteine auf dem Weg zur vollständigen Zustandslosigkeit, einschließlich des Datenablaufs, die möglicherweise früher implementiert werden. Andere Punkte auf der Roadmap, wie [Verkle-Bäume](/roadmap/verkle-trees/) und die [Proposer-Builder-Trennung (PBS)](/roadmap/pbs/), müssen zuerst abgeschlossen werden.
-
-Verkle-Baum-Testnetze sind bereits in Betrieb, und die nächste Phase ist die Ausführung von Verkle-Baum-fähigen Clients in privaten und anschließend in öffentlichen Testnetzen. Sie können helfen, den Fortschritt zu beschleunigen, indem Sie Contracts in den Testnetzen bereitstellen oder Testnetz-Clients ausführen.
+Verkle-basierte Zustandsverpflichtungen, der SPV-Leichtclient, native Multisig-Wallets und Dilithium3-Signaturen sind heute aktive Bestandteile des Quantaureum-Protokolls. Die Arbeit daran, die vollständige Validierung günstiger zu machen, damit noch mehr Nutzer Nodes auf Consumer-Hardware betreiben können, geht weiter.

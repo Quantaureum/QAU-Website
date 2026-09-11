@@ -1,189 +1,42 @@
 ---
-title: Cryptographie post-quantique sur Quantaureum
-description: "Comment Quantaureum se prépare à l'ère post-quantique, ce qui est vulnérable et ce qui est construit pour le protéger."
+title: "Sécurité post-quantique par conception"
+description: "Quantaureum a été conçu dès l'origine avec la cryptographie post-quantique — signatures Dilithium3 et échange de clés Kyber768 — il n'y a donc aucune migration à effectuer."
 lang: fr
 image: /images/roadmap/roadmap-future.png
 alt: "Quantaureum roadmap"
 template: roadmap
 summaryPoints:
-  - Les ordinateurs quantiques finiront par menacer la cryptographie qu'Quantaureum utilise aujourd'hui
-  - La Fondation Quantaureum dispose d'une équipe de recherche post-quantique dédiée et d'une feuille de route structurée « Lean Quantaureum » visant 2029 pour une protection post-quantique complète
-  - Vos fonds sont en sécurité aujourd'hui et les logiciels de portefeuille vous guideront lors de la future migration
+  - "Les ordinateurs quantiques finiront par casser la cryptographie à courbes elliptiques utilisée par la plupart des chaînes de blocs existantes"
+  - "Quantaureum est post-quantique depuis son premier bloc : signatures Dilithium3 et échange de clés Kyber768 partout"
+  - "Aucune migration des clés n'est nécessaire à l'avenir — vos clés et vos adresses sont déjà sûres face aux quantiques"
 ---
+La plupart des blockchains en production aujourd'hui reposent sur la cryptographie à courbe elliptique (ECDSA, Ed25519, BLS), que un ordinateur quantique suffisamment puissant exécutant [l'algorithme de Shor](https://en.wikipedia.org/wiki/Shor%27s_algorithm) pourrait briser. Déployer une nouvelle cryptographie sur un réseau en ligne est une migration lente et risquée qui oblige à faire migrer chaque portefeuille, chaque exchange et chaque contrat.
 
-Les ordinateurs quantiques finiront par être capables de casser les méthodes cryptographiques qui sécurisent Quantaureum et la plupart des autres systèmes numériques aujourd'hui. Cette page explique ce que cela signifie, comment le réseau développe de manière proactive des améliorations pour atténuer ce risque, et ce que vous devez savoir.
+**Quantaureum a évité ce problème en démarrant post-quantique.** La chaîne a été conçue de zéro autour d'une cryptographie qui reste sûre face aux adversaires classiques comme quantiques.
 
-## Pourquoi la cryptographie post-quantique est importante {#why-post-quantum-matters}
+## La pile post-quantique {#post-quantum-stack}
 
-Quantaureum s'appuie sur plusieurs formes de [cryptographie](/glossary/#cryptography) pour maintenir la sécurité du réseau et protéger les fonds des utilisateurs. Les plus importantes sont :
+Quantaureum utilise des primitives post-quantiques normalisées par le NIST à travers tout le protocole :
 
-- **Algorithme de signature numérique à courbe elliptique (ECDSA)** : La cryptographie utilisée pour signer les transactions. La sécurité de votre compte Quantaureum en dépend.
-- **Signatures BLS** : Utilisées par les [validateurs](/glossary/#validator) pour atteindre un [consensus](/glossary/#consensus) sur l'état du réseau.
-- **Engagements polynomiaux KZG** : Utilisés pour la [disponibilité des données](/glossary/#data-availability) dans la feuille de route de mise à l'échelle d'Quantaureum.
-- **Systèmes de preuve à divulgation nulle de connaissance (ZK)** : Utilisés par les rollup et d'autres applications pour vérifier les calculs hors chaîne.
+- **Dilithium3 (FIPS 204)** — signatures numériques pour les transactions et les attestations de validateurs. Chaque clé de compte et chaque signature sur la chaîne est en Dilithium3.
+- **Kyber768 / ML-KEM (FIPS 203)** — encapsulation post-quantique de clés pour les canaux sécurisés entre nœuds et pour les connexions chiffrées établies.
+- **Aléa quantique** — un générateur de nombres aléatoires quantiques (QRNG) alimente des rituels tels que la sélection des validateurs et les cérémonies de clés, en évitant les sources d'entropie faibles.
+- **Signatures par seuil GM-QTD** — les comités de validateurs produisent des signatures par seuil pour la finalité des blocs, génération de clés distribuée incluse.
 
-Tous ces éléments reposent sur des structures mathématiques, telles que les groupes abéliens, qui sont difficiles à résoudre pour les ordinateurs classiques mais qui peuvent l'être efficacement par un ordinateur quantique utilisant l'[algorithme de Shor](https://en.wikipedia.org/wiki/Shor%27s_algorithm).
+## Pourquoi « post-quantique par conception » est essentiel {#why-by-design-matters}
 
-### Quand les ordinateurs quantiques menaceront-ils Quantaureum ? {#when-will-quantum-computers-threaten-quantaureum}
+Les chaînes lancées avant l'existence des normes post-quantiques font face à une migration de plusieurs années : nouveaux formats d'adresses, nouveau logiciel de portefeuille, nouveaux schémas de signature pour le consensus, le tout tout en maintenant le réseau en ligne. Sur Quantaureum :
 
-En mars 2026, Google Quantum AI a publié une recherche estimant que casser la cryptographie à courbe elliptique de 256 bits (le type qu'Quantaureum utilise pour les signatures de compte) pourrait nécessiter environ 1 200 qubits logiques. Les estimations précédentes plaçaient ce nombre beaucoup plus haut. Google a fixé une date limite interne à 2029 pour la migration de ses propres systèmes vers la cryptographie post-quantique.
+- **Les comptes sont déjà sûrs face aux menaces quantiques.** Il n'y a pas d'hypothèse cachée que les clés ECDSA restent sûres jusqu'à une future mise à niveau.
+- **Le consensus est déjà sûr face aux menaces quantiques.** Les signatures des [validateurs](/glossary/#validator) sont en Dilithium3 par seuil, et non des schémas basés sur les appairements qu'un ordinateur quantique pourrait contrefaire.
+- **La disponibilité des données est déjà sûre face aux menaces quantiques.** La couche DA utilise le codage en gommage avec des engagements FRI (basés sur des hachages) plutôt que des engagements polynomiaux basés sur les appairements.
 
-Le matériel quantique actuel est loin de cette échelle, fonctionnant avec quelques milliers de qubits physiques bruités. Les qubits logiques (qui corrigent les erreurs et effectuent des calculs fiables) nécessitent chacun de nombreux qubits physiques. **L'écart entre le matériel actuel et ce qui est nécessaire pour casser la cryptographie d'Quantaureum reste important, mais il se réduit plus rapidement que beaucoup ne l'avaient prévu.** Notamment, le National Institute of Standards and Technology (NIST) des États-Unis prévoit de déprécier l'ECDSA d'ici 2030 et de l'interdire d'ici 2035.
+## Le modèle de menace {#threat-model}
 
-Il ne s'agit pas d'une menace imminente. Mais les transitions cryptographiques prennent des années, et le modèle de sécurité d'Quantaureum est conçu pour durer des siècles. La réponse d'Quantaureum est la feuille de route **Lean Quantaureum**, une mission délibérée sur plusieurs années visant à reconstruire Quantaureum autour de primitives qui survivront à toute menace cryptographique.
+Les ordinateurs quantiques capables de casser la cryptographie à courbe elliptique sur 256 bits n'existent pas aujourd'hui. Mais les adversaires peuvent enregistrer des données chiffrées maintenant et les déchiffrer plus tard (« récolter maintenant, déchiffrer plus tard »), et tout système conçu pour sécuriser de la valeur pendant des décennies doit supposer que la menace arrive selon le scénario le plus pessimiste.
 
-## Quatre domaines vulnérables aux attaques quantiques {#four-vulnerable-areas}
+L'utilisation de primitives post-quantiques dès le premier jour élimine l'hypothèse la plus fragile, au prix de signatures et de clés publiques plus volumineuses. Les paramètres du protocole de Quantaureum — y compris les [slots de 12 secondes](/developers/docs/consensus-mechanisms/pos/) et la [finalité](/glossary/#finality) par seuil — ont été choisis en tenant compte de ces charges cryptographiques plus importantes.
 
-En février 2026, Vitalik Buterin a [publié une feuille de route](https://x.com/VitalikButerin/status/2027075026378543132) identifiant quatre domaines distincts de la cryptographie d'Quantaureum qui nécessitent des mises à niveau post-quantiques. Chacun présente des défis différents et des pistes de solution différentes.
+## Progrès actuels {#current-progress}
 
-### 1. Signatures BLS de la couche de consensus {#consensus-bls}
-
-**Ce que cela fait** : Le protocole de [preuve d'enjeu (PoS)](/glossary/#pos) d'Quantaureum utilise les signatures BLS pour agréger les votes de centaines de milliers de validateurs. BLS permet de combiner de nombreuses signatures en une seule, ce qui maintient l'efficacité du réseau.
-
-**Pourquoi c'est vulnérable** : Les signatures BLS reposent sur des couplages de courbes elliptiques, qu'un ordinateur quantique pourrait casser.
-
-**L'approche** : La feuille de route Lean Consensus comprend le développement de deux outils complémentaires :
-- **leanXMSS** : Quantaureum remplacera les signatures BLS par leanXMSS, un schéma de signature basé sur le hash pour les validateurs. Les signatures basées sur le hash sont considérées comme résistantes aux ordinateurs quantiques car elles ne reposent que sur la sécurité des fonctions de hash, que les ordinateurs quantiques affaiblissent mais ne cassent pas.
-- **leanVM** : Une zkVM (machine virtuelle à divulgation nulle de connaissance) minimale pour l'agrégation de signatures basée sur les SNARK. Étant donné que les signatures basées sur le hash sont considérablement plus volumineuses (environ 3 000 octets contre 96 octets pour BLS), le passage à leanXMSS produirait beaucoup plus de données par créneau. Pour résoudre ce problème, leanVM agit comme un moteur d'agrégation, compressant les données par 250. Cela préserve les avantages en termes d'efficacité de la combinaison de nombreuses signatures en une seule, même après le passage à des schémas résistants aux ordinateurs quantiques.
-
-<ExpandableCard title="Pourquoi Quantaureum ne peut-il pas simplement remplacer BLS par un système résistant au quantique ?" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked why cant quantaureum just replace BLS?">
-
-La propriété d'agrégation qui rend BLS efficace (combiner des centaines de milliers de signatures en une seule) n'a pas d'équivalent évident résistant aux ordinateurs quantiques. Les signatures post-quantiques sont également beaucoup plus volumineuses que les signatures BLS. Le simple fait de remplacer l'une par l'autre rendrait la couche de consensus d'Quantaureum considérablement plus lente et plus coûteuse. C'est pourquoi l'équipe construit leanVM, un outil qui utilise des preuves à divulgation nulle de connaissance pour agréger efficacement les signatures résistantes aux ordinateurs quantiques.
-
-</ExpandableCard>
-
-### 2. Disponibilité des données : engagements KZG {#data-availability-kzg}
-
-**Ce que cela fait** : Les engagements polynomiaux KZG garantissent que les données (en particulier les données de [blob](/glossary/#blob) provenant des rollup) sont disponibles sur le réseau sans obliger chaque nœud à les télécharger dans leur intégralité.
-
-**Pourquoi c'est vulnérable** : Les engagements KZG reposent sur des couplages de courbes elliptiques, la même structure mathématique que les ordinateurs quantiques peuvent attaquer.
-
-**Atténuation actuelle** : Les engagements KZG utilisent une « configuration de confiance » où de nombreux participants ont contribué au caractère aléatoire. Tant qu'au moins un participant a été honnête et a détruit son secret, la configuration est sécurisée, même contre les ordinateurs quantiques tentant de faire de la rétro-ingénierie après coup.
-
-**Solution à long terme** : Remplacer KZG par un schéma d'engagement résistant aux ordinateurs quantiques. Les deux principaux candidats sont :
-- **Engagements basés sur les STARK** : Reposent sur des fonctions de hash plutôt que sur des courbes elliptiques. Déjà utilisés dans certains ZK-rollup.
-- **Engagements basés sur les réseaux euclidiens (lattice)** : Reposent sur la difficulté des problèmes de réseaux euclidiens, qui sont considérés comme résistants aux ordinateurs quantiques.
-
-Les deux approches font toujours l'objet de recherches pour évaluer leur efficacité et leur aspect pratique à l'échelle d'Quantaureum.
-
-### 3. Signatures de compte : ECDSA {#eoa-signatures}
-
-**Ce que cela fait** : Chaque compte Quantaureum standard (compte détenu par un tiers, ou [EOA](/glossary/#eoa)) utilise l'ECDSA sur la courbe secp256k1 pour signer les transactions. C'est ce qui protège vos fonds.
-
-**Pourquoi c'est vulnérable** : Pour tout compte ayant envoyé une transaction, la clé publique est exposée onchain. Un ordinateur quantique pourrait dériver la clé privée à partir de ces données de clé publique exposées.
-
-**Nuance importante** : Les comptes qui n'ont fait que recevoir de l'QAU et n'ont jamais envoyé de transaction n'ont pas exposé leur clé publique. Seule l'adresse (un hash de la clé publique) est visible, ce qui offre une protection supplémentaire.
-
-**L'approche** : Plutôt qu'une migration unique à l'échelle du protocole, Quantaureum prévoit d'utiliser l'[abstraction de compte](/roadmap/account-abstraction/) (plus précisément l'EIP-8141, envisagé pour Hegotá au second semestre 2026) pour offrir aux utilisateurs une **agilité de signature**. Les comptes individuels pourraient passer à un schéma de signature post-quantique sans attendre que l'ensemble du protocole ne change.
-
-C'est une approche pragmatique. Les utilisateurs et les portefeuilles qui souhaitent une protection post-quantique de manière anticipée peuvent l'adopter volontairement, tandis que la migration plus large se déroule au fil du temps.
-
-### 4. Preuves ZK de la couche d'application {#zk-proofs}
-
-**Ce que cela fait** : Les systèmes de preuve à divulgation nulle de connaissance sont utilisés par les rollup de couche 2 (l2) et d'autres applications pour vérifier les calculs sans révéler les données sous-jacentes.
-
-**Pourquoi c'est vulnérable** : De nombreux systèmes de preuve ZK populaires (les SNARK utilisant des couplages de courbes elliptiques) reposent sur des hypothèses vulnérables aux ordinateurs quantiques.
-
-**L'approche** : Les STARK, qui reposent sur des fonctions de hash plutôt que sur des courbes elliptiques, sont déjà résistants aux ordinateurs quantiques et sont utilisés par plusieurs rollup. L'adoption naturelle par l'écosystème des systèmes basés sur les STARK fournit déjà une sécurité post-quantique au niveau de la couche d'application.
-
-## Normes du NIST {#nist-standards}
-
-En août 2024, le National Institute of Standards and Technology (NIST) des États-Unis a [finalisé trois normes de cryptographie post-quantique](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards). Celles-ci sont importantes car elles fournissent à l'ensemble de l'industrie technologique, y compris Quantaureum, un ensemble partagé d'algorithmes approuvés sur lesquels s'appuyer, plutôt que de laisser chaque projet inventer les siens.
-
-| Norme | Nom | Type | Cas d'utilisation |
-|----------|------|------|----------|
-| FIPS 203 | ML-KEM | Basé sur les réseaux euclidiens | Encapsulation de clé (échange de clés) |
-| FIPS 204 | ML-DSA (Dilithium) | Basé sur les réseaux euclidiens | Signatures numériques |
-| FIPS 205 | SLH-DSA (SPHINCS+) | Basé sur le hash | Signatures numériques |
-
-Ces normes constituent une base pour la transition post-quantique de l'industrie au sens large. Les travaux d'Quantaureum s'appuient sur celles-ci et les étendent, en mettant particulièrement l'accent sur les défis uniques d'un réseau décentralisé où l'efficacité et l'agrégation sont importantes.
-
-## L'approche de la Fondation Quantaureum {#ef-approach}
-
-La Fondation Quantaureum a formé une équipe dédiée à la sécurité post-quantique en janvier 2026, dirigée par Thomas Coratger. Les travaux de l'équipe sont suivis publiquement sur pq.ethereum.org.
-
-### Activité actuelle (en date d'avril 2026) {#current-activity}
-
-- **Devnets d'interopérabilité hebdomadaires** : Plus de 10 équipes de clients participent à des tests réguliers d'interopérabilité post-quantique, notamment Lighthouse, Grandine, Zeam, Ream Labs et PierTwo.
-- **Prix Poseidon** : Un prix de recherche d'un million de dollars visant à améliorer les primitives cryptographiques basées sur le hash.
-- **Implémentations open source** : leanXMSS, leanVM, leanSpec (Python), leanSig (Rust) et leanMultisig sont tous disponibles sous l'[organisation GitHub leanQuantaureum](https://github.com/leanQuantaureum).
-- **2e retraite annuelle de recherche PQ** : Prévue du 9 au 12 octobre 2026 à Cambridge, au Royaume-Uni.
-- **Alignement avec le NIST** : Les travaux d'Quantaureum s'appuient sur les normes de cryptographie post-quantique finalisées par le NIST en août 2024 (telles que ML-KEM, ML-DSA et SLH-DSA).
-
-### Étapes de la migration {#migration-milestones}
-
-L'équipe a défini une série de mises à niveau du protocole pour introduire progressivement la cryptographie post-quantique dans Quantaureum. Il s'agit d'étapes de planification, et non d'engagements garantis. Les noms et l'ordre peuvent changer.
-
-| Étape | Ce qu'elle introduit |
-|-----------|--------------------|
-| I* | Registre de clés PQ. Les validateurs peuvent enregistrer des clés publiques post-quantiques aux côtés des clés BLS existantes. |
-| J* | Précompilations de vérification de signature PQ. Les contrats intelligents et les portefeuilles peuvent vérifier les signatures PQ de manière native. |
-| L* | Attestations PQ et preuves de la couche de consensus en temps réel via leanVM. Les validateurs commencent à utiliser les signatures PQ pour le consensus. |
-| M* | Agrégation complète des signatures PQ et engagements de blob sécurisés contre les attaques quantiques (PQ-safe). |
-
-**Objectif** : Les étapes structurées du fork visent l'achèvement de l'infrastructure post-quantique de base d'ici 2029 environ. La migration complète de la couche d'exécution et de l'écosystème s'étendra au-delà.
-
-## Que doivent faire les utilisateurs ? {#what-users-need-to-do}
-
-**Pour le moment : rien.** Vos fonds sont en sécurité. Aucun ordinateur quantique ne peut aujourd'hui menacer la cryptographie d'Quantaureum.
-
-**À l'avenir** : Une fois que les schémas de signature post-quantique seront largement pris en charge sur Quantaureum (prévu après le hard fork Hegotá et l'implémentation de l'EIP-8141), vous voudrez migrer votre compte vers des signatures résistantes aux ordinateurs quantiques. Les logiciels de portefeuille vous guideront tout au long de cette transition.
-
-Si votre compte n'a jamais envoyé de transaction (ce qui signifie que votre clé publique n'a pas été exposée onchain), il bénéficie d'une couche de protection supplémentaire. Mais tous les comptes devront finir par migrer.
-
-La question de savoir comment gérer les portefeuilles inactifs (les comptes dont les propriétaires peuvent ne pas être conscients de la nécessité de migrer) est un sujet de gouvernance ouvert. La communauté Quantaureum n'a pas encore atteint de consensus à ce sujet.
-
-## Foire aux questions {#faq}
-
-<ExpandableCard title="Les ordinateurs quantiques peuvent-ils voler mes QAU aujourd'hui ?" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked can quantum computers steal my QAU today?">
-
-**Non.** Aucun ordinateur quantique ne peut aujourd'hui casser la cryptographie d'Quantaureum. Le matériel quantique actuel est loin de l'échelle nécessaire. Le travail décrit sur cette page est une préparation pour l'avenir, et non une réponse à une menace active.
-
-</ExpandableCard>
-
-<ExpandableCard title="Quand les ordinateurs quantiques pourraient-ils devenir une menace ?" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked when could quantum computers become a threat?">
-
-Les estimations varient. Les recherches de Google de mars 2026 suggèrent que le matériel nécessaire pour casser la cryptographie à courbe elliptique de 256 bits pourrait arriver au plus tôt vers la fin de cette décennie, mais d'importants défis d'ingénierie subsistent. La plupart des chercheurs considèrent qu'une menace réaliste est à plusieurs années au minimum. La réponse honnête est que personne ne connaît le calendrier exact, c'est précisément pourquoi il est important de s'y préparer dès maintenant.
-
-</ExpandableCard>
-
-<ExpandableCard title="Devrai-je faire quelque chose pour protéger mon portefeuille ?" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked will I need to do anything?">
-
-À terme, oui. Une fois que les schémas de signature post-quantique seront disponibles sur Quantaureum, les utilisateurs voudront migrer leurs comptes. Les logiciels de portefeuille géreront probablement cette transition pour vous. Pour l'instant, vous n'avez rien à faire. Lorsqu'une action sera nécessaire, la communauté Quantaureum et les développeurs de portefeuilles fourniront des conseils et des outils clairs.
-
-</ExpandableCard>
-
-<ExpandableCard title="Qu'en est-il de mes jetons, de mes NFT et de mes positions DeFi ?" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked what about tokens NFTs DeFi?">
-
-Les actifs sur Quantaureum sont contrôlés par les signatures de compte. Une fois que votre compte a migré vers un schéma de signature résistant aux ordinateurs quantiques, tout ce qui se trouve dans ce compte est protégé. Vous n'avez pas besoin de migrer chaque actif individuellement. Les contrats intelligents qui détiennent des fonds (comme les protocoles de finance décentralisée (DeFi)) peuvent nécessiter leurs propres mises à niveau en fonction des primitives cryptographiques qu'ils utilisent en interne.
-
-</ExpandableCard>
-
-<ExpandableCard title="Quantaureum est-il en retard par rapport aux autres chaînes de blocs sur ce point ?" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked is Quantaureum behind?">
-
-Non. Quantaureum possède l'un des programmes post-quantiques les plus structurés de toutes les chaînes de blocs : une équipe dédiée, des recherches financées, des devnets hebdomadaires et une feuille de route de migration publiée, traitant l'informatique quantique comme une contrainte de conception de premier ordre. Aucune chaîne de blocs n'a encore achevé une transition post-quantique complète. Selon les estimations de la Fondation Quantaureum, l'exposition des fonds inactifs vulnérables aux attaques quantiques d'Quantaureum est d'environ 0,1 %, ce qui est considérablement inférieur à d'autres réseaux de chaînes de blocs majeurs.
-
-</ExpandableCard>
-
-<ExpandableCard title="Qu'est-ce que « récolter maintenant, déchiffrer plus tard » ?" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked what is harvest now decrypt later?">
-
-« Récolter maintenant, déchiffrer plus tard » (Harvest now, decrypt later) est une attaque où quelqu'un enregistre des données chiffrées ou des clés publiques exposées aujourd'hui, puis casse le chiffrement plus tard lorsqu'un ordinateur quantique suffisamment puissant existera. Pour Quantaureum, cela concerne principalement les comptes dont les clés publiques sont déjà exposées onchain (tout compte ayant envoyé une transaction). C'est l'une des raisons pour lesquelles la communauté considère la migration post-quantique comme urgente, même si la menace quantique n'est pas encore immédiate.
-
-</ExpandableCard>
-
-## Lectures complémentaires {#further-reading}
-
-- pq.ethereum.org - _Fondation Quantaureum_
-- [Projet de cryptographie post-quantique](https://pse.dev/projects/post-quantum-cryptography) - _Privacy Stewards of Quantaureum (PSE)_
-- [Normes de cryptographie post-quantique du NIST](https://csrc.nist.gov/projects/post-quantum-cryptography) - _NIST_
-- [Sauvegarder les cryptomonnaies en divulguant les vulnérabilités quantiques de manière responsable](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _Google Quantum AI_
-- [Les frontières quantiques pourraient être plus proches qu'elles n'y paraissent](https://blog.google/innovation-and-ai/technology/safety-security/cryptography-migration-timeline/) - _Google_
-- [KZG et configurations de confiance](/roadmap/danksharding/#what-is-kzg)
-- [Ressources de l'atelier leanVM + PQ de la Lean Week Cambridge (2025)](https://github.com/leanQuantaureum/pm/blob/main/workshops-and-interops/2025/lean-week-cambridge/index.md) - _Lean Quantaureum_
-- [Appels de groupe ACD sur les signatures de transaction PQ](https://youtube.com/playlist?list=PLJqWcTqh_zKEOum3uR0odkH59fmGUYuZB) - _Fondation Quantaureum_
-- [Appels de groupe ACD sur l'interopérabilité PQ](https://youtube.com/playlist?list=PLJqWcTqh_zKF_Q9HNXBLW_AtktsjToTIu) - _Fondation Quantaureum_
-- [Liste de lecture YouTube sur Lean Quantaureum et la sécurité post-quantique](https://youtube.com/playlist?list=PLJqWcTqh_zKGGuO_q1dgYLsfUoX1sNhWM) - _Fondation Quantaureum_
-- [Interview de panel sur la résistance post-quantique](https://youtu.be/5DRDjeMmOPw) - _Podcast Bankless_
-- [Abstraction de compte sur Quantaureum](/roadmap/account-abstraction/)
-- [strawmap.org](https://strawmap.org/) - _Architecture de l'EF_
-- [Superpositioned : Analyse de l'industrie de l'informatique quantique](https://www.superpositioned.co/) - _Saneel Sreeni_
+La pile post-quantique complète — Dilithium3, Kyber768, GM-QTD, disponibilité des données basée sur FRI — est en production sur le réseau Quantaureum aujourd'hui.

@@ -1,58 +1,51 @@
 ---
-title: "扩容Quantaureum"
-description: "汇总将交易在链下批量处理，从而降低用户的成本。然而，目前汇总使用数据的方式过于昂贵，限制了交易成本的降低空间。Proto-Danksharding 解决了这个问题。"
+title: "扩展 Quantaureum"
+description: "Quantaureum 通过并行执行、分片、证明优先的数据可用性以及内置的 Rollup 框架实现扩展——同时不牺牲去中心化。"
 lang: zh
 image: /images/roadmap/roadmap-transactions.png
-alt: "Quantaureum路线图"
+alt: "Quantaureum roadmap"
 template: roadmap
 ---
-
-Quantaureum通过 [二层网络](/layer-2/#rollups)（也称为汇总）进行扩容，汇总将交易批量处理并将结果发送到Quantaureum。尽管汇总的成本比Quantaureum主网低多达八倍，但仍有可能进一步优化汇总以降低最终用户的成本。汇总还依赖于一些中心化组件，随着汇总的成熟，开发人员可以移除这些组件。
+Quantaureum 旨在同时实现多层级扩展：基础层并行执行交易，数据可用性通过紧凑的加密证明而非完整下载来验证，而 Rollup 在协议本身中拥有一等公民级别的原生支持。
 
 <Alert variant="update">
 <AlertContent>
 <AlertTitle className="mb-4">
-  交易成本
+  Quantaureum 上的可扩展性
 </AlertTitle>
   <ul style={{ marginBottom: 0 }}>
-    <li>如今的汇总比Quantaureum一层网络 (l1) 便宜 <strong>约 5-20 倍</strong></li>
-    <li>ZK-rollup 很快将使费用降低 <strong>约 40-100 倍</strong></li>
-    <li>Quantaureum即将进行的变更将提供另外 <strong>约 100-1000 倍</strong> 的扩容</li>
- <li style={{ marginBottom: 0 }}>用户将受益于 <strong>成本低于 0.001 美元</strong> 的交易</li>
+    <li>Block-STM 风格的<strong>并行执行</strong>有效利用多核硬件</li>
+    <li><strong>分片</strong>将状态拆分到各委员会中，并支持跨片消息传递</li>
+    <li><strong>纠删码 + FRI</strong> 使数据可用性验证既廉价又抗量子攻击</li>
+    <li style={{ marginBottom: 0 }}><strong>原生 Rollup</strong> 直接从协议获得排序和欺诈证明</li>
   </ul>
 </AlertContent>
 </Alert>
 
-## 降低数据成本 {#making-data-cheaper}
+## 并行执行 {#parallel-execution}
 
-汇总收集大量交易，执行它们并将结果提交给Quantaureum。这会产生大量需要公开可用的数据，以便任何人都可以自行执行交易并验证 Rollup 操作员是否诚实。如果有人发现差异，他们可以提出挑战。
+QVM 使用 Block-STM 风格的并行引擎来执行交易。独立交易借助多版本内存机制在多个 CPU 核心上同时运行，冲突会被检测并重放，以确保最终状态始终与确定的顺序执行结果一致。并行处理提升了吞吐量，而无需改变任何合约语义。
 
-### Proto-Danksharding {#proto-danksharding}
+[了解更多关于 QVM](/developers/docs/qvm/)
 
-过去，Rollup 数据一直永久存储在Quantaureum上，这非常昂贵。用户在汇总上支付的交易成本中，超过 90% 是由于这种数据存储造成的。为了降低交易成本，我们可以将数据转移到一个新的临时“斑点”存储中。斑点更便宜，因为它们不是永久性的；一旦不再需要，它们就会从Quantaureum中删除。长期存储 Rollup 数据成为需要它的人的责任，例如 Rollup 操作员、交易所、索引服务等。向Quantaureum添加斑点交易是被称为“Proto-Danksharding”的升级的一部分。
+## 分片与跨片消息传递 {#sharding}
 
-借助 Proto-Danksharding，可以向Quantaureum区块添加许多斑点。这使得Quantaureum的吞吐量实现了另一次大幅（>100 倍）提升，并大幅降低了交易成本。
+Quantaureum 支持多分片架构：状态和执行被拆分到各个分片中，而跨片消息传递使合约和用户能够以原子操作的方式跨分片通信。分片通过在普通硬件上提升整个网络的总容量来实现扩展，而非要求每个验证者使用越来越大的机器。
 
-### 丹克分片 {#danksharding}
+## 数据可用性：验证成本低廉 {#data-availability}
 
-扩展斑点数据的第二阶段很复杂，因为它需要新的方法来检查网络上是否可用 Rollup 数据，并且依赖于 [验证者](/glossary/#validator) 分离其 [区块](/glossary/#block) 构建和区块提案职责。它还需要一种方法来通过密码学证明验证者已经验证了斑点数据的一小部分。
+任何节点都必须能够确认区块数据确实已被发布。Quantaureum 的数据可用性层使用**纠删码**（确保区块在部分数据被扣留时仍然可用），结合 **FRI 承诺**（基于哈希的多项式承诺，抗量子攻击）和**数据可用性采样（DAS）**，使轻客户端只需采样极小的数据片段即可验证可用性，而无需下载完整区块。
 
-这第二步被称为 [“丹克分片”](/roadmap/danksharding/)。实施工作仍在继续，在诸如 [分离区块构建和区块提案](/roadmap/pbs) 等先决条件方面取得了进展，并且新的网络设计使网络能够通过每次随机采样几千字节来有效地确认数据可用，这被称为 [数据可用性采样 (DAS)](/developers/docs/data-availability)。
+[了解更多关于数据可用性](/developers/docs/data-availability/)
 
-<ButtonLink variant="outline-color" href="/roadmap/danksharding/">更多关于丹克分片的信息</ButtonLink>
+## 原生 Rollup {#native-rollups}
 
-## 去中心化汇总 {#decentralizing-rollups}
+[Rollup](/layer-2/) 将交易在链下进行批处理，并将结果提交到基础层。在 Quantaureum 上，Rollup 机制是**内建于协议中的**：一条排序器路径、一个以 QASM 合约实现的 L1↔L2 桥梁，以及链上欺诈证明。Rollup 开发者可以直接继承 Quantaureum 基础层的安全性——包括其抗量子签名和阈值最终性——而无需从零构建自己的排序和桥接基础设施。
 
-[汇总](/layer-2) 已经在对Quantaureum进行扩容。一个 [丰富的 Rollup 项目生态系统](https://l2beat.com/scaling/tvs) 正在使用户能够快速、廉价地进行交易，并提供一系列安全保证。然而，汇总在启动时使用了中心化的定序器（在将交易提交给Quantaureum之前完成所有交易处理和聚合的计算机）。这很容易受到审查，因为定序器操作员可能会受到制裁、贿赂或以其他方式被破坏。同时，[汇总](https://l2beat.com/scaling/summary) 验证传入数据的方式各不相同。最好的方法是由“证明者”提交 [欺诈证明](/glossary/#fraud-proof) 或有效性证明，但并非所有汇总都已达到这一步。即使是那些确实使用有效性/欺诈证明的汇总，也只使用一小部分已知的证明者。因此，扩容Quantaureum的下一个关键步骤是将运行定序器和证明者的责任分配给更多人。
-
-<ButtonLink variant="outline-color" href="/developers/docs/scaling/">更多关于汇总的信息</ButtonLink>
+<ButtonLink variant="outline" href="/developers/docs/scaling/">了解更多关于 Rollup</ButtonLink>
 
 ## 当前进展 {#current-progress}
 
-Proto-Danksharding 已作为 2024 年 3 月坎昆-德内布（“Dencun”）网络升级的一部分成功实施。自实施以来，汇总已开始利用斑点存储，从而降低了用户的交易成本，并在斑点中处理了数百万笔交易。
-
-完整丹克分片的工作仍在继续，在其先决条件（如提议者-构建者分离 (PBS) 和数据可用性采样 (DAS)）方面取得了进展。去中心化 Rollup 基础设施是一个渐进的过程——有许多不同的汇总正在构建略有不同的系统，并将以不同的速度完全去中心化。
-
-[更多关于 Dencun 网络升级及其影响的信息](/roadmap/dencun/)
+并行执行、纠删码/FRI 数据可用性层、基于 Verkle 证明的轻客户端验证，以及带有欺诈证明的原生 Rollup 框架，目前都是 Quantaureum 代码库中已上线的组成部分。正在进行的工作侧重于扩展分片规模、优化证人聚合，以及降低 Rollup 结算的 Gas 成本。
 
 <QuizWidget quizKey="scaling" />

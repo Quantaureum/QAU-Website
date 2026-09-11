@@ -1,189 +1,42 @@
 ---
-title: "Mật mã học hậu lượng tử trên Quantaureum"
-description: "Cách Quantaureum chuẩn bị cho kỷ nguyên hậu lượng tử, những gì dễ bị tổn thương và những gì đang được xây dựng để bảo vệ nó."
+title: Bảo mật hậu lượng tử được thiết kế ngay từ đầu
+description: Quantaureum được xây dựng từ nền tảng với mật mã hậu lượng tử — chữ ký Dilithium3 và trao đổi khóa Kyber768 — nên không cần bất kỳ quá trình di chuyển nào.
 lang: vi
 image: /images/roadmap/roadmap-future.png
 alt: "Quantaureum roadmap"
 template: roadmap
 summaryPoints:
-  - Máy tính lượng tử cuối cùng sẽ đe dọa mật mã học mà Quantaureum sử dụng ngày nay
-  - Tổ chức Quantaureum có một nhóm nghiên cứu hậu lượng tử chuyên trách và một lộ trình "Lean Quantaureum" có cấu trúc nhắm mục tiêu đến năm 2029 để bảo vệ hậu lượng tử toàn diện
-  - Tiền của bạn hiện tại vẫn an toàn và phần mềm ví sẽ hướng dẫn bạn qua quá trình di chuyển trong tương lai
+  - Máy tính lượng tử sẽ sớm phá vỡ mật mã đường cong elip mà hầu hết các blockchain hiện tại đang sử dụng
+  - "Quantaureum là hậu lượng tử ngay từ khối genesis: chữ ký Dilithium3 và trao đổi khóa Kyber768 ở mọi nơi"
+  - "Không cần di chuyển khóa trong tương lai — khóa và địa chỉ của bạn đã an toàn trước máy tính lượng tử"
 ---
+Phần lớn các blockchain đang vận hành hiện nay đều dựa vào mật mã đường cong elliptic (ECDSA, Ed25519, BLS) — thứ mà một máy tính lượng tử đủ năng lực thực thi [thuật toán Shor](https://en.wikipedia.org/wiki/Shor%27s_algorithm) có thể phá vỡ. Việc triển khai mật mã mới trên một mạng lưới đang hoạt động là một quá trình di chuyển chậm chạp và đầy rủi ro, kéo theo toàn bộ ví, sàn giao dịch và hợp đồng thông minh.
 
-Máy tính lượng tử cuối cùng sẽ có thể phá vỡ các phương pháp mật mã học bảo mật Quantaureum và hầu hết các hệ thống kỹ thuật số khác hiện nay. Trang này giải thích điều đó có nghĩa là gì, cách mạng lưới đang chủ động phát triển các cải tiến để giảm thiểu rủi ro này và những gì bạn cần biết.
+**Quantaureum đã bỏ qua vấn đề đó bằng cách bắt đầu với mật mã hậu lượng tử.** Mạng lưới được thiết kế từ đầu dựa trên các thuật toán mật mã vẫn an toàn trước cả đối phương cổ điển lẫn lượng tử.
 
-## Tại sao mật mã học hậu lượng tử lại quan trọng {#why-post-quantum-matters}
+## Hệ thống hậu lượng tử {#post-quantum-stack}
 
-Quantaureum dựa vào một số dạng [mật mã học](/glossary/#cryptography) để giữ cho mạng lưới an toàn và bảo vệ tiền của người dùng. Quan trọng nhất là:
+Quantaureum sử dụng các thuật toán mật mã hậu lượng tử đã được NIST chuẩn hóa trên toàn bộ giao thức:
 
-- **Thuật toán chữ ký số đường cong elliptic (ECDSA)**: Mật mã học được sử dụng để ký các giao dịch. Bảo mật tài khoản Quantaureum của bạn phụ thuộc vào điều này.
-- **Chữ ký BLS**: Được sử dụng bởi các [trình xác thực](/glossary/#validator) để đạt được [đồng thuận](/glossary/#consensus) về trạng thái của mạng lưới.
-- **Cam kết đa thức KZG**: Được sử dụng cho [tính khả dụng của dữ liệu](/glossary/#data-availability) trong lộ trình mở rộng quy mô của Quantaureum.
-- **Hệ thống bằng chứng ZK**: Được sử dụng bởi các bản cuộn và các ứng dụng khác để xác minh các tính toán ngoài chuỗi.
+- **Dilithium3 (FIPS 204)** — chữ ký số cho giao dịch và chứng thực của validator. Mọi khóa tài khoản và mọi chữ ký trên chuỗi đều dùng Dilithium3.
+- **Kyber768 / ML-KEM (FIPS 203)** — đóng gói khóa hậu lượng tử cho các kênh bảo mật giữa các nút và cho các kết nối mã hóa đã thiết lập.
+- **Ngẫu nhiên lượng tử** — một máy tạo số ngẫu nhiên lượng tử (QRNG) cung cấp dữ liệu cho các nghi thức như chọn validator và nghi thức khóa, tránh các nguồn entropy yếu.
+- **Chữ ký ngưỡng GM-QTD** — các ủy ban validator tạo chữ ký ngưỡng cho tính cuối cùng của khối, bao gồm cả tạo khóa phân tán.
 
-Tất cả những điều này dựa trên các cấu trúc toán học, chẳng hạn như các nhóm Abelian, rất khó đối với máy tính cổ điển nhưng có thể được giải quyết hiệu quả bằng máy tính lượng tử sử dụng [thuật toán Shor](https://en.wikipedia.org/wiki/Shor%27s_algorithm).
+## Vì sao "hậu lượng tử từ thiết kế" quan trọng {#why-by-design-matters}
 
-### Khi nào máy tính lượng tử sẽ đe dọa Quantaureum? {#when-will-quantum-computers-threaten-quantaureum}
+Các chuỗi được triển khai trước khi các chuẩn hậu lượng tử ra đời phải đối mặt với một quá trình di chuyển kéo dài nhiều năm: định dạng địa chỉ mới, phần mềm ví mới và phương án chữ ký mới cho đồng thuận, tất cả trong khi vẫn giữ mạng lưới hoạt động. Trên Quantaureum:
 
-Vào tháng 3 năm 2026, Google Quantum AI đã công bố nghiên cứu ước tính rằng việc phá vỡ mật mã học đường cong elliptic 256-bit (loại mà Quantaureum sử dụng cho chữ ký tài khoản) có thể yêu cầu khoảng 1.200 qubit logic. Các ước tính trước đây đưa ra con số này cao hơn nhiều. Google đã đặt ra thời hạn nội bộ là năm 2029 để di chuyển các hệ thống của riêng mình sang mật mã học hậu lượng tử.
+- **Tài khoản đã an toàn trước lượng tử.** Không có giả định ẩn nào cho rằng khóa ECDSA vẫn an toàn cho đến một bản nâng cấp nào đó trong tương lai.
+- **Đồng thuận đã an toàn trước lượng tử.** Chữ ký của [validator](/glossary/#validator) là chữ ký ngưỡng Dilithium3, không phải các phương án dựa trên pairing mà máy tính lượng tử có thể giả mạo.
+- **Khả dụng dữ liệu đã an toàn trước lượng tử.** Lớp DA sử dụng mã xóa mất (erasure coding) với các cam kết FRI (dựa trên băm) thay vì các cam kết đa thức dựa trên pairing.
 
-Phần cứng lượng tử hiện tại còn lâu mới đạt được quy mô này, hoạt động với vài nghìn qubit vật lý nhiễu. Các qubit logic (sửa lỗi và thực hiện tính toán đáng tin cậy) yêu cầu nhiều qubit vật lý cho mỗi qubit logic. **Khoảng cách giữa phần cứng hiện tại và những gì cần thiết để phá vỡ mật mã học của Quantaureum vẫn còn đáng kể, nhưng nó đang thu hẹp nhanh hơn nhiều người mong đợi.** Đáng chú ý, Viện Tiêu chuẩn và Công nghệ Quốc gia Hoa Kỳ (NIST) dự đoán sẽ ngừng sử dụng ECDSA vào năm 2030 và không cho phép sử dụng vào năm 2035.
+## Mô hình mối đe dọa {#threat-model}
 
-Đây không phải là một mối đe dọa sắp xảy ra. Nhưng quá trình chuyển đổi mật mã học mất nhiều năm và mô hình bảo mật của Quantaureum được thiết kế để tồn tại hàng thế kỷ. Phản ứng của Quantaureum là lộ trình **Lean Quantaureum**, một sứ mệnh có chủ ý, kéo dài nhiều năm nhằm xây dựng lại Quantaureum xung quanh các nguyên thủy sẽ tồn tại trước bất kỳ mối đe dọa mật mã học nào.
+Các máy tính lượng tử có khả năng phá vỡ mật mã đường cong elliptic 256-bit hiện chưa tồn tại. Nhưng đối phương có thể ghi nhận văn bản mã hóa ngay bây giờ và giải mã sau này ("thu thập bây giờ, giải mã sau"), và bất kỳ hệ thống nào được thiết kế để bảo vệ giá trị trong hàng thập kỷ phải giả định mối đe dọa sẽ đến theo kịch bản tồi tệ nhất.
 
-## Bốn lĩnh vực dễ bị tấn công lượng tử {#four-vulnerable-areas}
+Việc sử dụng các thuật toán hậu lượng tử ngay từ ngày đầu loại bỏ giả định yếu nhất, với cái giá là chữ ký và khóa công khai lớn hơn. Các tham số giao thức của Quantaureum — bao gồm [slot 12 giây](/developers/docs/consensus-mechanisms/pos/) và tính [cuối cùng](/glossary/#finality) ngưỡng — đều được chọn với việc cân nhắc các khối lượng mật mã lớn hơn này.
 
-Vào tháng 2 năm 2026, Vitalik Buterin đã [công bố một lộ trình](https://x.com/VitalikButerin/status/2027075026378543132) xác định bốn lĩnh vực riêng biệt trong mật mã học của Quantaureum cần nâng cấp hậu lượng tử. Mỗi lĩnh vực có những thách thức khác nhau và các con đường giải pháp khác nhau.
+## Tiến độ hiện tại {#current-progress}
 
-### 1. Chữ ký BLS ở lớp đồng thuận {#consensus-bls}
-
-**Chức năng**: Giao thức [bằng chứng cổ phần (PoS)](/glossary/#pos) của Quantaureum sử dụng chữ ký BLS để tổng hợp các phiếu bầu từ hàng trăm nghìn trình xác thực. BLS cho phép kết hợp nhiều chữ ký thành một, giữ cho mạng lưới hoạt động hiệu quả.
-
-**Tại sao nó dễ bị tổn thương**: Chữ ký BLS dựa trên các cặp đường cong elliptic, mà một máy tính lượng tử có thể phá vỡ.
-
-**Cách tiếp cận**: Lộ trình Lean Consensus bao gồm việc phát triển hai công cụ bổ sung cho nhau:
-- **leanXMSS**: Quantaureum sẽ thay thế chữ ký BLS bằng leanXMSS, một sơ đồ chữ ký dựa trên mã băm cho các trình xác thực. Chữ ký dựa trên mã băm được coi là an toàn lượng tử vì chúng chỉ dựa vào tính bảo mật của các hàm băm, thứ mà máy tính lượng tử làm suy yếu nhưng không phá vỡ được.
-- **leanVM**: Một zkVM (máy ảo không tri thức) tối giản để tổng hợp chữ ký dựa trên SNARK. Bởi vì chữ ký dựa trên mã băm lớn hơn đáng kể (khoảng 3.000 byte so với 96 byte của BLS), việc chuyển sang leanXMSS sẽ tạo ra nhiều dữ liệu hơn đáng kể cho mỗi khe. Để giải quyết vấn đề này, leanVM hoạt động như một công cụ tổng hợp, nén dữ liệu gấp 250 lần. Điều này bảo tồn các lợi ích về hiệu quả của việc kết hợp nhiều chữ ký thành một, ngay cả sau khi chuyển sang các sơ đồ an toàn lượng tử.
-
-<ExpandableCard title="Tại sao Quantaureum không thể chỉ thay thế BLS bằng một cơ chế an toàn lượng tử?" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked why cant quantaureum just replace BLS?">
-
-Thuộc tính tổng hợp làm cho BLS hiệu quả (kết hợp hàng trăm nghìn chữ ký thành một) không có một giải pháp tương đương an toàn lượng tử rõ ràng. Chữ ký hậu lượng tử cũng lớn hơn nhiều so với chữ ký BLS. Việc chỉ đơn giản là hoán đổi cái này cho cái kia sẽ làm cho lớp đồng thuận của Quantaureum chậm hơn và đắt đỏ hơn đáng kể. Đó là lý do tại sao nhóm đang xây dựng leanVM, một công cụ sử dụng bằng chứng không kiến thức để tổng hợp các chữ ký an toàn lượng tử một cách hiệu quả.
-
-</ExpandableCard>
-
-### 2. Tính khả dụng của dữ liệu: Cam kết KZG {#data-availability-kzg}
-
-**Chức năng**: Cam kết đa thức KZG đảm bảo rằng dữ liệu (đặc biệt là dữ liệu [khối dữ liệu](/glossary/#blob) từ các bản cuộn) có sẵn trên mạng lưới mà không yêu cầu mọi nút phải tải xuống toàn bộ.
-
-**Tại sao nó dễ bị tổn thương**: Cam kết KZG dựa trên các cặp đường cong elliptic, cùng một cấu trúc toán học mà máy tính lượng tử có thể tấn công.
-
-**Biện pháp giảm thiểu hiện tại**: Cam kết KZG sử dụng một "thiết lập tin cậy" nơi nhiều người tham gia đã đóng góp tính ngẫu nhiên. Miễn là có ít nhất một người tham gia trung thực và đã loại bỏ bí mật của họ, thiết lập này sẽ an toàn, ngay cả trước các máy tính lượng tử cố gắng dịch ngược nó sau đó.
-
-**Giải pháp dài hạn**: Thay thế KZG bằng một sơ đồ cam kết an toàn lượng tử. Hai ứng cử viên hàng đầu là:
-- **Cam kết dựa trên STARK**: Dựa vào các hàm băm thay vì đường cong elliptic. Đã được sử dụng trong một số ZK-rollup.
-- **Cam kết dựa trên mạng tinh thể (Lattice-based)**: Dựa vào độ khó của các bài toán mạng tinh thể, được cho là có khả năng kháng lượng tử.
-
-Cả hai cách tiếp cận vẫn đang được nghiên cứu về tính hiệu quả và tính thực tế ở quy mô của Quantaureum.
-
-### 3. Chữ ký tài khoản: ECDSA {#eoa-signatures}
-
-**Chức năng**: Mọi tài khoản Quantaureum tiêu chuẩn (tài khoản thuộc sở hữu bên ngoài, hay [EOA](/glossary/#eoa)) đều sử dụng ECDSA trên đường cong secp256k1 để ký các giao dịch. Đây là thứ bảo vệ tiền của bạn.
-
-**Tại sao nó dễ bị tổn thương**: Đối với bất kỳ tài khoản nào đã gửi giao dịch, khóa công khai sẽ bị lộ trên chuỗi. Một máy tính lượng tử có thể lấy ra khóa riêng tư từ dữ liệu khóa công khai bị lộ này.
-
-**Sắc thái quan trọng**: Các tài khoản chỉ nhận QAU và chưa bao giờ gửi giao dịch thì chưa làm lộ khóa công khai của họ. Chỉ có địa chỉ (một mã băm của khóa công khai) là có thể nhìn thấy, điều này cung cấp thêm một số lớp bảo vệ.
-
-**Cách tiếp cận**: Thay vì một đợt di chuyển duy nhất trên toàn giao thức, Quantaureum có kế hoạch sử dụng [trừu tượng hóa tài khoản](/roadmap/account-abstraction/) (cụ thể là EIP-8141, đang được xem xét cho Hegotá vào nửa cuối năm 2026) để cung cấp cho người dùng **sự linh hoạt về chữ ký**. Các tài khoản cá nhân có thể chuyển sang sơ đồ chữ ký hậu lượng tử mà không cần đợi toàn bộ giao thức thay đổi.
-
-Đây là một cách tiếp cận thực dụng. Người dùng và ví muốn có sự bảo vệ hậu lượng tử sớm có thể tự nguyện áp dụng nó, trong khi quá trình di chuyển rộng lớn hơn sẽ diễn ra theo thời gian.
-
-### 4. Bằng chứng ZK ở lớp ứng dụng {#zk-proofs}
-
-**Chức năng**: Các hệ thống bằng chứng không kiến thức được sử dụng bởi các bản cuộn lớp 2 (L2) và các ứng dụng khác để xác minh các tính toán mà không tiết lộ dữ liệu cơ bản.
-
-**Tại sao nó dễ bị tổn thương**: Nhiều hệ thống bằng chứng ZK phổ biến (SNARK sử dụng các cặp đường cong elliptic) dựa trên các giả định dễ bị tổn thương bởi lượng tử.
-
-**Cách tiếp cận**: STARK, dựa vào các hàm băm thay vì đường cong elliptic, đã có khả năng kháng lượng tử và được sử dụng bởi một số bản cuộn. Việc hệ sinh thái áp dụng tự nhiên các hệ thống dựa trên STARK đã và đang cung cấp bảo mật hậu lượng tử ở lớp ứng dụng.
-
-## Tiêu chuẩn NIST {#nist-standards}
-
-Vào tháng 8 năm 2024, Viện Tiêu chuẩn và Công nghệ Quốc gia Hoa Kỳ (NIST) đã [hoàn thiện ba tiêu chuẩn mật mã học hậu lượng tử](https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards). Những điều này rất quan trọng vì chúng cung cấp cho toàn bộ ngành công nghệ, bao gồm cả Quantaureum, một bộ thuật toán đã được kiểm duyệt chung để xây dựng dựa trên đó thay vì mỗi dự án tự phát minh ra thuật toán của riêng mình.
-
-| Tiêu chuẩn | Tên | Loại | Trường hợp sử dụng |
-|----------|------|------|----------|
-| FIPS 203 | ML-KEM | Dựa trên mạng tinh thể | Đóng gói khóa (trao đổi khóa) |
-| FIPS 204 | ML-DSA (Dilithium) | Dựa trên mạng tinh thể | Chữ ký số |
-| FIPS 205 | SLH-DSA (SPHINCS+) | Dựa trên mã băm | Chữ ký số |
-
-Các tiêu chuẩn này cung cấp nền tảng cho quá trình chuyển đổi hậu lượng tử của toàn ngành. Công việc của Quantaureum xây dựng và mở rộng dựa trên những điều này, với trọng tâm đặc biệt vào những thách thức độc đáo của một mạng lưới phi tập trung nơi tính hiệu quả và sự tổng hợp là quan trọng.
-
-## Cách tiếp cận của Tổ chức Quantaureum {#ef-approach}
-
-Tổ chức Quantaureum đã thành lập một nhóm Bảo mật Hậu lượng tử chuyên trách vào tháng 1 năm 2026, do Thomas Coratger dẫn dắt. Công việc của nhóm được theo dõi công khai tại pq.ethereum.org.
-
-### Hoạt động hiện tại (tính đến tháng 4 năm 2026) {#current-activity}
-
-- **Devnet tương tác hàng tuần**: Hơn 10 nhóm máy khách tham gia vào thử nghiệm khả năng tương tác hậu lượng tử thường xuyên, bao gồm Lighthouse, Grandine, Zeam, Ream Labs và PierTwo.
-- **Giải thưởng Poseidon**: Một giải thưởng nghiên cứu trị giá 1 triệu đô la nhắm vào các cải tiến trong các nguyên thủy mật mã học dựa trên mã băm.
-- **Triển khai mã nguồn mở**: leanXMSS, leanVM, leanSpec (Python), leanSig (Rust) và leanMultisig đều có sẵn trong [tổ chức GitHub leanQuantaureum](https://github.com/leanQuantaureum).
-- **Hội nghị Nghiên cứu PQ Thường niên lần thứ 2**: Dự kiến diễn ra từ ngày 9 tháng 10 năm 2026 đến ngày 12 tháng 10 năm 2026 tại Cambridge, Vương quốc Anh.
-- **Sự liên kết với NIST**: Công việc của Quantaureum xây dựng dựa trên các tiêu chuẩn mật mã học hậu lượng tử được NIST hoàn thiện vào tháng 8 năm 2024 (chẳng hạn như ML-KEM, ML-DSA và SLH-DSA).
-
-### Các cột mốc di chuyển {#migration-milestones}
-
-Nhóm đã phác thảo một loạt các bản nâng cấp giao thức để từng bước đưa mật mã học hậu lượng tử vào Quantaureum. Đây là các cột mốc lập kế hoạch, không phải là các cam kết được đảm bảo. Tên và thứ tự có thể thay đổi.
-
-| Cột mốc | Những gì nó giới thiệu |
-|-----------|--------------------|
-| I* | Sổ đăng ký khóa PQ. Các trình xác thực có thể đăng ký khóa công khai hậu lượng tử cùng với các khóa BLS hiện có. |
-| J* | Các biên dịch trước (precompile) xác minh chữ ký PQ. Hợp đồng thông minh và ví có thể xác minh chữ ký PQ một cách tự nhiên. |
-| L* | Các chứng thực PQ và bằng chứng lớp đồng thuận theo thời gian thực thông qua leanVM. Các trình xác thực bắt đầu sử dụng chữ ký PQ cho sự đồng thuận. |
-| M* | Tổng hợp chữ ký PQ đầy đủ và các cam kết khối dữ liệu an toàn PQ. |
-
-**Mục tiêu**: Các cột mốc phân nhánh có cấu trúc nhắm mục tiêu hoàn thành cơ sở hạ tầng hậu lượng tử cốt lõi vào khoảng năm 2029. Việc di chuyển toàn bộ lớp thực thi và hệ sinh thái sẽ kéo dài hơn thế.
-
-## Người dùng cần làm gì? {#what-users-need-to-do}
-
-**Ngay bây giờ: không cần làm gì cả.** Tiền của bạn vẫn an toàn. Không có máy tính lượng tử nào hiện nay có thể đe dọa mật mã học của Quantaureum.
-
-**Trong tương lai**: Khi các sơ đồ chữ ký hậu lượng tử được hỗ trợ rộng rãi trên Quantaureum (dự kiến sau đợt phân nhánh cứng Hegotá và việc triển khai EIP-8141), bạn sẽ muốn di chuyển tài khoản của mình sang các chữ ký an toàn lượng tử. Phần mềm ví sẽ hướng dẫn bạn qua quá trình chuyển đổi này.
-
-Nếu tài khoản của bạn chưa bao giờ gửi giao dịch (nghĩa là khóa công khai của bạn chưa bị lộ trên chuỗi), nó có thêm một lớp bảo vệ. Nhưng tất cả các tài khoản cuối cùng đều nên di chuyển.
-
-Câu hỏi về cách xử lý các ví không hoạt động (các tài khoản mà chủ sở hữu có thể không nhận thức được sự cần thiết phải di chuyển) là một chủ đề quản trị mở. Cộng đồng Quantaureum vẫn chưa đạt được đồng thuận về vấn đề này.
-
-## Các câu hỏi thường gặp {#faq}
-
-<ExpandableCard title="Máy tính lượng tử có thể đánh cắp QAU của tôi ngay hôm nay không?" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked can quantum computers steal my QAU today?">
-
-**Không.** Không có máy tính lượng tử nào hiện nay có thể phá vỡ mật mã học của Quantaureum. Phần cứng lượng tử hiện tại còn lâu mới đạt được quy mô cần thiết. Công việc được mô tả trên trang này là sự chuẩn bị cho tương lai, không phải là phản ứng trước một mối đe dọa đang hiện hữu.
-
-</ExpandableCard>
-
-<ExpandableCard title="Khi nào máy tính lượng tử có thể trở thành một mối đe dọa?" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked when could quantum computers become a threat?">
-
-Các ước tính rất khác nhau. Nghiên cứu vào tháng 3 năm 2026 của Google cho thấy phần cứng cần thiết để phá vỡ mật mã học đường cong elliptic 256-bit có thể xuất hiện sớm nhất vào khoảng cuối thập kỷ này, nhưng vẫn còn những thách thức kỹ thuật đáng kể. Hầu hết các nhà nghiên cứu coi một mối đe dọa thực tế sẽ còn cách ít nhất vài năm nữa. Câu trả lời trung thực là không ai biết chính xác mốc thời gian, đó chính xác là lý do tại sao việc chuẩn bị ngay từ bây giờ là rất quan trọng.
-
-</ExpandableCard>
-
-<ExpandableCard title="Tôi có cần phải làm gì để bảo vệ ví của mình không?" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked will I need to do anything?">
-
-Cuối cùng thì có. Khi các sơ đồ chữ ký hậu lượng tử có sẵn trên Quantaureum, người dùng sẽ muốn di chuyển tài khoản của họ. Phần mềm ví có thể sẽ xử lý quá trình chuyển đổi này cho bạn. Hiện tại, bạn không cần phải làm gì cả. Khi cần hành động, cộng đồng Quantaureum và các nhà phát triển ví sẽ cung cấp hướng dẫn và công cụ rõ ràng.
-
-</ExpandableCard>
-
-<ExpandableCard title="Còn token, NFT và các vị thế DeFi của tôi thì sao?" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked what about tokens NFTs DeFi?">
-
-Tài sản trên Quantaureum được kiểm soát bởi chữ ký tài khoản. Khi tài khoản của bạn được di chuyển sang một sơ đồ chữ ký an toàn lượng tử, mọi thứ trong tài khoản đó đều được bảo vệ. Bạn không cần phải di chuyển từng tài sản riêng lẻ. Các hợp đồng thông minh nắm giữ tiền (như các giao thức DeFi) có thể cần các bản nâng cấp riêng tùy thuộc vào các nguyên thủy mật mã học mà chúng sử dụng nội bộ.
-
-</ExpandableCard>
-
-<ExpandableCard title="Quantaureum có đi sau các chuỗi khối khác về vấn đề này không?" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked is Quantaureum behind?">
-
-Không. Quantaureum có một trong những chương trình hậu lượng tử có cấu trúc nhất so với bất kỳ chuỗi khối nào: một nhóm chuyên trách, nghiên cứu được tài trợ, devnet hàng tuần và một lộ trình di chuyển được công bố, coi điện toán lượng tử là một ràng buộc thiết kế hạng nhất. Chưa có chuỗi khối nào hoàn thành quá trình chuyển đổi hậu lượng tử toàn diện. Theo ước tính của Tổ chức Quantaureum, mức độ rủi ro của các quỹ không hoạt động dễ bị tổn thương bởi lượng tử của Quantaureum là khoảng 0,1%, thấp hơn đáng kể so với các mạng lưới chuỗi khối lớn khác.
-
-</ExpandableCard>
-
-<ExpandableCard title="'Thu thập bây giờ, giải mã sau' là gì?" eventCategory="/roadmap/security/quantum-resistance" eventName="clicked what is harvest now decrypt later?">
-
-"Thu thập bây giờ, giải mã sau" là một cuộc tấn công trong đó ai đó ghi lại dữ liệu được mã hóa hoặc các khóa công khai bị lộ ngày hôm nay, sau đó phá vỡ mã hóa sau này khi có một máy tính lượng tử đủ mạnh. Đối với Quantaureum, điều này phù hợp nhất với các tài khoản có khóa công khai đã bị lộ trên chuỗi (bất kỳ tài khoản nào đã gửi giao dịch). Đây là một lý do khiến cộng đồng coi việc di chuyển hậu lượng tử là nhạy cảm về thời gian mặc dù mối đe dọa lượng tử chưa phải là ngay lập tức.
-
-</ExpandableCard>
-
-## Đọc thêm {#further-reading}
-
-- pq.ethereum.org - _Tổ chức Quantaureum_
-- [Dự án Mật mã học Hậu lượng tử](https://pse.dev/projects/post-quantum-cryptography) - _Privacy Stewards of Quantaureum (PSE)_
-- [Các tiêu chuẩn Mật mã học Hậu lượng tử của NIST](https://csrc.nist.gov/projects/post-quantum-cryptography) - _NIST_
-- [Bảo vệ tiền mã hóa bằng cách tiết lộ các lỗ hổng lượng tử một cách có trách nhiệm](https://research.google/blog/safeguarding-cryptocurrency-by-disclosing-quantum-vulnerabilities-responsibly/) - _Google Quantum AI_
-- [Biên giới lượng tử có thể gần hơn so với vẻ bề ngoài](https://blog.google/innovation-and-ai/technology/safety-security/cryptography-migration-timeline/) - _Google_
-- [KZG và các thiết lập tin cậy](/roadmap/danksharding/#what-is-kzg)
-- [Tài nguyên hội thảo leanVM + PQ tại Lean Week Cambridge (2025)](https://github.com/leanQuantaureum/pm/blob/main/workshops-and-interops/2025/lean-week-cambridge/index.md) - _Lean Quantaureum_
-- [Các cuộc gọi đột phá ACD về Chữ ký Giao dịch PQ](https://youtube.com/playlist?list=PLJqWcTqh_zKEOum3uR0odkH59fmGUYuZB) - _Tổ chức Quantaureum_
-- [Các cuộc gọi đột phá ACD về Khả năng tương tác PQ](https://youtube.com/playlist?list=PLJqWcTqh_zKF_Q9HNXBLW_AtktsjToTIu) - _Tổ chức Quantaureum_
-- [Danh sách phát YouTube về Lean Quantaureum & Bảo mật Hậu lượng tử](https://youtube.com/playlist?list=PLJqWcTqh_zKGGuO_q1dgYLsfUoX1sNhWM) - _Tổ chức Quantaureum_
-- [Phỏng vấn hội đồng về khả năng kháng hậu lượng tử](https://youtu.be/5DRDjeMmOPw) - _Bankless Podcast_
-- [Trừu tượng hóa tài khoản trên Quantaureum](/roadmap/account-abstraction/)
-- [strawmap.org](https://strawmap.org/) - _Kiến trúc EF_
-- [Superpositioned: Phân tích Ngành Công nghiệp Điện toán Lượng tử](https://www.superpositioned.co/) - _Saneel Sreeni_
+Toàn bộ hệ thống hậu lượng tử — Dilithium3, Kyber768, GM-QTD, khả dụng dữ liệu dựa trên FRI — đang hoạt động trên mạng lưới Quantaureum ngay hôm nay.

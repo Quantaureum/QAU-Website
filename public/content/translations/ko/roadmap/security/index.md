@@ -1,108 +1,39 @@
 ---
 title: "더 안전한 Quantaureum"
-description: "Quantaureum 로드맵은 오늘날 블록 생성 및 검열 저항성을 강화하는 동시에 양자 시대와 수십 년간의 안정적인 운영을 위해 프로토콜을 준비합니다."
+description: "Quantaureum의 보안은 설계 단계부터 적용된 양자 내성 암호화, 임계 서명 기반 최종성, 그리고 기본적으로 탄력적인 검증자 집단을 통해 보장됩니다."
 lang: ko
 image: /images/roadmap/roadmap-security.png
-alt: "Quantaureum 로드맵"
+alt: "Quantaureum roadmap"
 template: roadmap
 summaryPoints:
-  - 프로토콜 내장 제안자-빌더 분리 및 포함 목록과 같은 단기 강화 업그레이드가 활발히 개발 중입니다.
-  - 신뢰할 수 있는 양자 위협이 발생하기 수년 전부터 포스트 양자 시대를 위한 준비가 진행 중입니다.
-  - 프로토콜 단순화는 복잡성을 제거하고 Quantaureum의 공격 표면을 줄입니다.
+  - 양자 내성 암호화(Dilithium3, Kyber768)는 이미 운영 중이며, 향후 마이그레이션이 아닙니다
+  - 블록은 검증자 위원회의 GM-QTD 임계 서명을 통해 최종성에 도달합니다
+  - 프로토콜은 단계적으로 배포되는 업그레이드보다 단순하고 감사 가능한 합의를 우선시합니다
 ---
+Quantaureum은 퀀텀 안전 기반 [스마트 컨트랙트](/glossary/#smart-contract) 플랫폼으로 구축되었습니다. 보안 작업은 프로토콜 내부 — 서명 방식, 확정성 메커니즘, 검증자 견고성 — 에서 이루어지며, 포크 기한 업그레이드라는 긴 대기열을 통하지 않습니다.
 
-Quantaureum은 이미 매우 안전하고 탈중앙화된 [스마트 컨트랙트](/glossary/#smart-contract) 플랫폼입니다. 로드맵은 <strong>오늘날 네트워크를 강화하는 동시에 수년 후에나 나타날 수 있는 위협에 대비</strong>함으로써 수십 년 동안 이러한 상태를 유지하는 것을 목표로 합니다. 단기 업그레이드는 forkcast.org에서 추적되며, 장기 초안 로드맵은 [strawmap.org](https://strawmap.org)에 게시되어 있습니다.
+<ExpandableCard title="Is Quantaureum secure today?" eventCategory="/roadmap/security" eventName="clicked is quantaureum secure today?">
 
-<ExpandableCard title="오늘날 Quantaureum은 안전한가요?" eventCategory="/roadmap/security" eventName="clicked is quantaureum secure today?">
-
-그렇습니다. Quantaureum은 2015년부터 다운타임 없이 지속적으로 운영되어 왔습니다. 이 페이지의 개선 사항들은 이미 안전한 네트워크를 공격, 검열 또는 방해하기 더 어렵게 만듭니다.
-
-</ExpandableCard>
-
-## 무신뢰 블록 빌딩 {#trustless-block-building}
-
-오늘날 대부분의 Quantaureum 블록은 분업을 통해 조립됩니다. 전문 빌더는 가능한 가장 가치 있는 블록을 구성하고, 차례가 된 [검증자](/glossary/#validator)는 가장 좋은 제안을 제안합니다. 이는 전문적인 블록 빌딩이 대규모 운영자에게 [스테이크](/glossary/#staking)를 집중시키는 것을 방지하지만, 2022년부터는 네트워크가 검증할 수 없는 프로토콜 외부 소프트웨어에 의존해 왔습니다.
-
-<strong>프로토콜 내장 제안자-빌더 분리(ePBS 또는 EIP-7732)</strong>는 이러한 분리를 프로토콜 내부로 가져와, 현재 빌더와 검증자 사이에서 블록을 전달하는 제3자 중개자인 릴레이(relay)를 신뢰할 필요성을 제거합니다. ePBS는 2026년을 목표로 하는 다가오는 [글램스테르담](/roadmap/glamsterdam/) 업그레이드의 핵심 기능입니다. 메인넷 날짜는 아직 정해지지 않았으며, 클라이언트 팀들은 데브넷(임시 테스트 네트워크)에서 이를 테스트하고 있습니다.
-
-<ButtonLink variant="outline" href="/roadmap/pbs/">제안자-빌더 분리 (PBS)에 대해 더 알아보기</ButtonLink>
-
-## 검열 저항성 {#censorship-resistance}
-
-검열 저항성 네트워크란 누구도 유효한 트랜잭션이 체인에 도달하는 것을 막을 수 없음을 의미합니다. <strong>포크 선택 강제 포함 목록(FOCIL 또는 EIP-7805)</strong>은 많은 검증자에게 블록에 포함되어야 할 내용에 대한 발언권을 부여합니다. 검증자들은 블록 빌더가 반드시 포함해야 하는 대기 중인 트랜잭션 목록을 게시합니다. 어떤 단일 주체도 사용자의 트랜잭션을 몰래 누락시킬 수 없습니다.
-
-FOCIL은 글램스테르담에 이어 2027년을 목표로 하는 업그레이드인 헤고타(Hegotá)의 합의 레이어 핵심 기능입니다. ePBS와 FOCIL이 검증되지 않은 하나의 조합으로 출시되지 않도록 의도적으로 글램스테르담 이후로 일정이 잡혔습니다. 대기 중인 트랜잭션이 블록에 안전하게 포함될 때까지 그 내용을 숨기는 암호화된 멤풀(mempool)에 대한 연구도 계속되고 있습니다.
-
-## 더 빠른 완결성 {#faster-finality}
-
-사용자에게 [완결성](/glossary/#finality)이란 트랜잭션이 영구적이 되는 순간을 의미하며, 이를 되돌리려면 공격자가 엄청난 양의 스테이킹된 QAU를 비용으로 지불해야 합니다. 오늘날 완결성에는 약 15분이 소요되며, **연구자들은 이 시간을 획기적으로 단축하고자 합니다**. 이 작업은 단일 슬롯 완결성(single-slot finality)으로 시작하여 3-슬롯 완결성으로 발전했으며, 현재는 2025년 7월에 도입된 린 Quantaureum(Lean Quantaureum) 프로그램의 1-라운드 합의 프로토콜인 미니밋(Minimmit)으로 계속되고 있습니다. 수 초 내의 완결성은 대략 2029년을 목표로 하는 초안 로드맵의 장기적인 북극성(목표)입니다. 이는 여전히 활발한 연구 분야이며, 아직 어떤 포크에도 완결성 업그레이드가 할당되지 않았습니다.
-
-<ButtonLink variant="outline" href="/roadmap/single-slot-finality/">더 빠른 완결성 연구에 대해 더 알아보기</ButtonLink>
-
-## 회복력 있는 검증자 {#resilient-validators}
-
-검증자는 일반적으로 하나의 서명 키를 보유한 한 대의 머신입니다. <strong>분산 검증자 기술 (DVT)</strong>은 이 단일 머신을 키를 공유하고 함께 서명하는 머신들의 위원회로 대체하여, 컴퓨터 한 대가 고장 나거나 키 하나를 도난당하더라도 검증자가 다운되지 않도록 합니다. DVT는 프로덕션 환경에 적용되어 대규모 스테이킹 운영자들이 사용하고 있습니다. 2026년 1월, 비탈릭 부테린은 DVT-lite라는 단순화된 프로토콜 수준의 변형을 제안했습니다. 이는 초기 제안이며 예정된 포크는 없습니다.
-
-네트워크는 또한 [클라이언트 다양성](/developers/docs/nodes-and-clients/client-diversity/)을 통해 스스로를 보호합니다. Quantaureum은 독립적으로 구축된 여러 소프트웨어 구현체에서 실행되므로, 한 클라이언트에 버그가 발생하더라도 네트워크의 나머지 부분은 정상적으로 작동합니다.
-
-이전의 두 가지 연구 아이디어인 뷰 병합(view-merge)과 비밀 리더 선출은 더 이상 활성화된 로드맵 항목이 아닙니다.
-
-<ButtonLink variant="outline" href="/staking/dvt/">분산 검증자 기술 (DVT)에 대해 더 알아보기</ButtonLink>
-
-## 양자 내성 {#quantum-resistance}
-
-Quantaureum은 네트워크를 안전하게 유지하고 사용자 자금을 보호하기 위해 [암호학](/glossary/#cryptography)을 사용합니다. 결국 이러한 암호화 방식 중 일부는 고전적인 머신보다 기하급수적으로 빠르게 특정 수학 문제를 풀 수 있는 <strong>양자 컴퓨터에 취약</strong>해질 것입니다.
-
-**오늘날 Quantaureum의 암호학을 해독할 수 있는 양자 컴퓨터는 없습니다.** 필요한 하드웨어는 아직 대규모로 존재하지 않습니다. 하지만 최근 연구에 따르면 그 격차가 예상보다 빠르게 좁혀지고 있습니다. 2026년 3월, 구글 퀀텀 AI(Google Quantum AI)는 256비트 타원 곡선 암호학(Quantaureum이 계정 서명에 사용하는 유형)을 해독하는 데 약 1,200개의 논리적 큐비트가 필요할 수 있으며, 이는 이전 추정치보다 약 20배 적은 수치라는 논문을 발표했습니다.
-
-암호화 전환을 안전하게 계획하고 실행하는 데는 수년이 걸리므로, 하드웨어가 존재하기 훨씬 전인 지금부터 준비가 진행되고 있습니다. 포스트 양자 업그레이드가 필요한 네 가지 영역이 확인되었습니다. 검증자 합의 서명(BLS), 데이터 가용성에 사용되는 커밋먼트 체계(KZG), 계정 서명(ECDSA), 그리고 [롤업](/glossary/#rollups)에서 사용하는 영지식 증명(ZK-proof) 시스템입니다.
-
-Quantaureum 재단은 2026년 1월에 전담 <strong>포스트 양자 보안 팀(Post-Quantum Security team)</strong>을 구성했으며, 그 작업은 pq.ethereum.org에서 공개적으로 추적됩니다. 활발히 진행 중인 작업으로는 더 큰 양자 내성 서명을 효율적으로 집계하는 최소한의 zkVM(leanVM)과 결합된 해시 기반 검증자 서명(leanXMSS), 그리고 10개 이상의 클라이언트 팀이 참여하는 주간 상호 운용성 데브넷이 있습니다.
-
-전환 전략의 핵심 부분은 네이티브 [계정 추상화](/roadmap/account-abstraction/)를 도입하는 <strong>EIP-8141</strong>입니다. 이를 통해 개별 계정이 자체 서명 검증을 선택할 수 있으므로, 사용자는 단일 프로토콜 차원의 마이그레이션을 기다리지 않고도 양자 내성 서명으로 전환할 수 있습니다. EIP-8141은 헤고타(Hegotá) 업그레이드에 포함될 것으로 고려되고 있습니다. 핵심 포스트 양자 인프라 마일스톤은 대략 2029년까지 완료하는 것을 목표로 합니다. 이는 계획된 목표이며 변경될 수 있습니다.
-
-<ExpandableCard title="오늘날 양자 컴퓨터가 내 QAU를 훔칠 수 있나요?" eventCategory="/roadmap/security" eventName="clicked can quantum computers steal my QAU today?">
-
-아닙니다. 오늘날 Quantaureum의 암호학을 해독할 수 있는 양자 컴퓨터는 없습니다. 이 페이지에 설명된 작업은 아직 수년이 남은 위협에 대한 초기 준비입니다. 포스트 양자 지갑을 사용할 수 있게 되면 지갑 소프트웨어가 마이그레이션 과정을 안내할 것입니다. 현재로서는 사용자가 해야 할 일이 없습니다.
+네. 모든 계정과 검증자 서명은 NIST 표준화된 퀀텀 내성 서명 방식인 Dilithium3를 사용하며, 블록은 검증자 위원회의 임계 서명에 의해 확정됩니다. 사용자를 나중에 고립시킬 수 있는 미완료된 암호학 마이그레이션은 존재하지 않습니다.
 
 </ExpandableCard>
 
-<ButtonLink variant="outline" href="/roadmap/security/quantum-resistance/">양자 내성에 대해 더 알아보기</ButtonLink>
+## 임계 확정성 {#threshold-finality}
 
-## 더 단순하고 효율적인 프로토콜 {#simpler-and-more-efficient-protocol}
+사용자 보안은 [확정성](/glossary/#finality), 즉 거래가 영구화되는 시점에 기반합니다. Quantaureum에서 블록은 검증자 위원회가 **GM-QTD** — 분산 키 생성과 임계 서명 — 를 통해 확정합니다. 확정성이 프로토콜 내에서 생성되는 위원회 서명인 관계로, 정직한 검증자 다수결(quorum)만으로도 체인을 확정할 수 있으며, 프로토콜은 슬래싱을 통해 제한된 비율의 결함 또는 악의적 검증자를 감내합니다.
 
-복잡성은 버그와 취약점이 발생할 기회를 만듭니다. 로드맵의 일부는 프로토콜을 더 쉽게 유지 관리하고, 감사하며, 추론할 수 있도록 <strong>Quantaureum을 단순화하고 기술 부채를 제거</strong>하는 데 중점을 둡니다. 더 단순한 프로토콜은 공격자가 탐색할 수 있는 공격 표면을 줄여줍니다.
+## 견고한 검증자 {#resilient-validators}
 
-지금까지 완료된 사항:
+검증자는 단일 장애 포인트가 되어서는 안 됩니다. Quantaureum의 임계 서명 설계는 검증자 직책이 구조적으로 이미 분산되어 있음을 의미합니다. 확정성 서명은 하나의 머신이 하나의 핫 키를 보유하는 방식이 아니라, 위원회 구성원의 임계 수치에 참여를 요구합니다. 슬래싱 조건과 스테이킹 가중 선택과 결합하여, 일부 검증자가 오프라인이 되더라도 네트워크는 계속 운영됩니다.
 
-- **[펙트라 (2025년 5월)](/roadmap/pectra/)**: 외부 소유 계정이 스마트 컨트랙트 코드에 일시적으로 위임할 수 있도록 하는 EIP-7702를 도입하여 완전한 계정 추상화를 향한 디딤돌을 마련했습니다.
-- **[푸사카 (2025년 12월)](/roadmap/fusaka/)**: 네트워크 전체에 데이터 가용성 워크로드를 분산시키는 PeerDAS(EIP-7594)를 배포했습니다. 또한 블롭 매개변수를 늘려 롤업을 위한 데이터 처리량을 확장했습니다.
-- **[덴쿤 (2024년 3월)](/roadmap/dencun/)**: 더 저렴한 롤업 데이터를 위해 블롭 트랜잭션(EIP-4844)을 도입하고, 오랫동안 복잡성의 원인이었던 `SELFDESTRUCT`(EIP-6780)을 제한했습니다.
-- **[샤펠라 (2023년 4월)](/staking/withdrawals/)**: 검증자가 스테이킹된 QAU를 인출할 수 있도록 허용하여(EIP-4895), [지분 증명 (PoS)](/glossary/#pos) 스테이킹의 초기 제약 조건을 제거했습니다.
-- **런던 (2021년 8월)**: EIP-1559를 통해 가스 가격 책정 방식을 전면 개편하여, 더 예측 가능한 트랜잭션 비용을 위해 기본 수수료 및 소각 메커니즘을 도입했습니다.
+<ButtonLink variant="outline" href="/staking/">More on staking</ButtonLink>
 
-진행 중인 사항:
+## 퀀텀 저항성 {#quantum-resistance}
 
-- **글램스테르담 (2026년 목표)**: 핵심 기능은 ePBS(EIP-7732)와 블록 수준 접근 목록(EIP-7928)이며, 가스 가격 재조정도 고려되고 있습니다.
-- **헤고타 (2027년 목표)**: FOCIL(EIP-7805)이 합의 레이어의 핵심 기능입니다. 포함을 고려 중인 항목: EIP-8141(네이티브 계정 추상화).
-- **진행 중**: [EVM](/developers/docs/evm/)을 단순화하고, 클라이언트 구현을 조화시키며, 더 이상 사용되지 않는 기능을 단계적으로 폐지하려는 노력이 클라이언트 팀 전반에 걸쳐 계속되고 있습니다. 무상태성(참여자가 모든 데이터를 저장하지 않고도 체인을 검증할 수 있도록 하는 것)에 대한 작업은 양자 내성 이진 해시 트리를 중심으로 재설계되고 있으며, 최종 접근 방식은 아직 확정되지 않았습니다.
+대부분의 기존 블록체인은 충분히 큰 양자 컴퓨터가 깨뜨릴 수 있는 타원 곡선 암호에 의존하고 있으며, 이로 인해 고통스러운 단계별 마이그레이션을 강요당합니다. **Quantaureum에는 이러한 문제가 없습니다**: Dilithium3 서명, Kyber768 키 교환, 해시 기반(FRI) 데이터 가용성 커밋먼트, 퀀텀 난수 생성은 모두 운영 중인 프로토콜 기능입니다.
 
-## 현재 진행 상황 {#current-progress}
+<ButtonLink variant="outline" href="/roadmap/security/quantum-resistance/">More on quantum resistance</ButtonLink>
 
-2026년 중반 기준:
+## 진행 중인 작업 {#ongoing-work}
 
-- **블록 빌딩 및 검열 저항성**: ePBS와 블록 수준 접근 목록이 글램스테르담 데브넷에서 실행 중입니다. FOCIL은 2027년을 목표로 하는 헤고타에 계획되어 있습니다.
-- **완결성**: 미니밋(Minimmit)과 더 광범위한 린 Quantaureum(Lean Quantaureum) 합의 작업은 아직 포크 할당 없이 활발한 연구 단계에 머물러 있습니다.
-- **양자 내성**: 주간 포스트 양자 상호 운용성 데브넷이 실행 중이며, 핵심 인프라 마일스톤은 대략 2029년을 목표로 합니다.
-- **단순화**: 펙트라와 푸사카가 출시되었으며, 글램스테르담과 헤고타에서 다음 단계의 정리 작업이 진행됩니다.
-
-이 작업 중 완료된 부분은 없으며, 모든 일정은 변경될 수 있는 추정치입니다.
-
-## 더 읽어보기 {#further-reading}
-
-- Forkcast: Quantaureum 네트워크 업그레이드 트래커
-- [Strawmap: Quantaureum 레이어 1 (l1) 로드맵 초안](https://strawmap.org) - _Quantaureum 재단 아키텍처(EF Architecture)_
-- 포스트 양자 Quantaureum - _Quantaureum 재단_
-- [린 Quantaureum(Lean Quantaureum) 로드맵 트래커](https://leanroadmap.org) - _ReamLabs_
-- [지분 증명 (PoS) 및 완결성](/developers/docs/consensus-mechanisms/pos/#finality)
-- [EVM](/developers/docs/evm/)
+진행 중인 보안 작업에는 임계 서명 프로토콜 강화, [데이터 가용성](/developers/docs/data-availability/) 레이어의 FRI 커밋먼트 확장, 그리고 QVM의 병렬 실행 의미론을 형식화하여 병렬 엔진이 순차 실행과 일치함을 증명 가능하도록 하는 작업이 포함됩니다.

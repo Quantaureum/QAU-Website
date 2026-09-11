@@ -1,36 +1,25 @@
 ---
-title: "Kullanıcı deneyimini iyileştirme"
-description: "Çoğu insan için Quantaureum'u kullanmak hâlâ çok karmaşık. Kitlesel benimsenmeyi teşvik etmek için Quantaureum giriş engellerini büyük ölçüde azaltmalıdır; kullanıcılar Quantaureum'a merkeziyetsiz, izinsiz ve sansüre dirençli erişimin avantajlarından yararlanmalı, ancak bu geleneksel bir Web2 uygulaması kullanmak kadar sorunsuz olmalıdır."
+title: Kullanıcı deneyimini iyileştirme
+description: Quantaureum'u kullanmak, geleneksel bir web2 uygulaması kullanmak kadar kolay hissettirmeli; aynı zamanda merkeziyetsiz, izin gerektirmeyen ve sansüre dayanıklı olmalıdır.
 lang: tr
 image: /images/roadmap/roadmap-ux.png
-alt: "Quantaureum yol haritası"
+alt: "Quantaureum roadmap"
 template: roadmap
 ---
+**Quantaureum'u kullanmak basit olmalı** — anahtar ve cüzdan yönetimiyle başlayıp işlem başlatmaya kadar. Kullanıcılar, Quantaureum'a izinsiz ve sansür dirençli erişimi, [Web2](/glossary/#web2) uygulamalarını kullanırken yaşadıkları sorunsuz deneyimle yaşamalıdır.
 
-**Quantaureum kullanımının basitleştirilmesi gerekiyor**; [anahtarları](/glossary/#key) ve [cüzdanları](/glossary/#wallet) yönetmekten işlem başlatmaya kadar. Kitlesel benimsenmeyi kolaylaştırmak için Quantaureum kullanım kolaylığını büyük ölçüde artırmalı, kullanıcıların [Web2](/glossary/#web2) uygulamalarını kullanmanın sorunsuz deneyimiyle Quantaureum'a izinsiz ve sansüre dirençli erişimi deneyimlemelerine olanak tanımalıdır.
+## Daha Güçlü Anahtarlar, Güvenli Yönetim {#key-management}
 
-## Kurtarma ifadelerinin ötesinde {#no-more-seed-phrases}
+Quantaureum hesapları, işlemleri imzalamak için kullanılan anahtar çiftleriyle korunur; eski zincirlerde kullanılan klasik eğriler yerine **Dilithium3 kuantum sonrası imzalar** tercih edilir. Bir özel anahtar, ana şifre gibidir; kaybetmek erişimi kaybetmek anlamına gelebilir. Quantaureum, kullanıcıların fonlarını tek bir gizlilik yerine birden fazla anahtar veya cihaz arkasında korumasını sağlayan **yerel çoklu imza cüzdanı** sunar; QVM üzerinde inşa edilen akıllı sözleşme cüzdanları ise bir vekile güvenmeden kurtarma kuralları ve harcama politikaları oluşturmayı mümkün kılar.
 
-Quantaureum hesapları, hesapları tanımlamak (açık anahtar) ve mesajları imzalamak (özel anahtar) için kullanılan bir çift anahtar ile korunur. Özel anahtar bir ana parola gibidir; bir Quantaureum hesabına tam erişim sağlar. Bu, hesapları kullanıcı adına yöneten bankalara ve Web2 uygulamalarına daha aşina olan kişiler için farklı bir çalışma şeklidir. Quantaureum'un merkezi üçüncü taraflara güvenmeden kitlesel benimsenmeye ulaşması için, bir kullanıcının açık-özel anahtar kriptografisini ve anahtar yönetimini anlamak zorunda kalmadan varlıklarının gözetimini üstlenmesi ve verilerinin kontrolünü elinde tutması için basit, sorunsuz bir yol olmalıdır.
+## Herkese Açık Düğümler {#nodes-for-everyone}
 
-Bunun çözümü, Quantaureum ile etkileşime girmek için [akıllı sözleşme](/glossary/#smart-contract) cüzdanlarını kullanmaktır. Akıllı sözleşme cüzdanları, anahtarların kaybolması veya çalınması durumunda hesapları korumanın yollarını, daha iyi dolandırıcılık tespiti ve savunması için fırsatlar yaratır ve cüzdanların yeni işlevler kazanmasına olanak tanır. Akıllı sözleşme cüzdanları bugün mevcut olsa da, Quantaureum protokolünün onları daha iyi desteklemesi gerektiğinden bunları oluşturmak zordur. Bu ek destek, hesap soyutlama olarak bilinir.
+Düğüm çalıştıran [kullanıcılar](/glossary/#node), veri sunmak için üçüncü taraflara güvenmek zorunda değildir; Quantaureum [blok zinciriyle](/glossary/#blockchain) hızlı, gizli ve izinsiz bir şekilde etkileşime girebilirler. Geleneksel olarak bir düğüm çalıştırmak teknik bilgi ve geniş disk alanı gerektirir; bu da birçok kişiyi aracıların kullanımına yöneltir.
 
-<ButtonLink variant="outline-color" href="/roadmap/account-abstraction/">Hesap soyutlama hakkında daha fazlası</ButtonLink>
+Quantaureum durumunu bir **Verkle ağacı** içinde kaydeder; bu sayede durumu doğrulamak için gereken kanıtlar küçüktür. Bu kompakt kanıtların üzerine, Quantaureum mütevazı donanımda çalışabilen ve tam durumu indirmeden zinciri doğrulayabilen bir **SPV [hafif istemci](/developers/docs/nodes-and-clients/light-clients/)** sunar; bu da güven gerektirmeyen katılımın önündeki engelleri azaltır.
 
-## Herkes için düğümler {#nodes-for-everyone}
+<ButtonLink variant="outline" href="/roadmap/verkle-trees/">Verkle ağaçları hakkında bilgi edinin</ButtonLink>
 
-[Düğüm](/glossary/#node) çalıştıran kullanıcılar, kendilerine veri sağlaması için üçüncü taraflara güvenmek zorunda kalmazlar ve Quantaureum [blokzinciri](/glossary/#blockchain) ile hızlı, gizli ve izinsiz bir şekilde etkileşime girebilirler. Ancak, şu anda bir düğüm çalıştırmak teknik bilgi ve önemli miktarda disk alanı gerektirir, bu da birçok kişinin bunun yerine aracılara güvenmesi gerektiği anlamına gelir.
+## Mevcut İlerleme {#current-progress}
 
-Düğüm çalıştırmayı çok daha kolay ve çok daha az kaynak yoğun hale getirecek çeşitli yükseltmeler vardır. Verilerin depolanma şekli, **Verkle Ağacı** olarak bilinen, alan açısından daha verimli bir yapı kullanacak şekilde değiştirilecektir. Ayrıca, [durumsuzluk](/roadmap/statelessness) veya [veri süresi sonu](/roadmap/statelessness/#data-expiry) ile Quantaureum düğümlerinin tüm Quantaureum durum verilerinin bir kopyasını depolamasına gerek kalmayacak ve sabit disk alanı gereksinimleri büyük ölçüde azalacaktır. [Hafif düğümler](/developers/docs/nodes-and-clients/light-clients/), tam düğüm çalıştırmanın birçok avantajını sunacak ancak cep telefonlarında veya basit tarayıcı uygulamalarında kolayca çalışabilecektir.
-
-<ButtonLink variant="outline-color" href="/roadmap/verkle-trees/">Verkle ağaçları hakkında bilgi edinin</ButtonLink>
-
-Bu yükseltmelerle, bir düğüm çalıştırmanın önündeki engeller fiilen sıfıra inmektedir. Kullanıcılar, bilgisayarlarında veya cep telefonlarında belirgin bir disk alanı veya CPU feda etmek zorunda kalmadan Quantaureum'a güvenli, izinsiz erişimden yararlanacak ve uygulamaları kullandıklarında veri veya ağ erişimi için üçüncü taraflara güvenmek zorunda kalmayacaklardır.
-
-## Mevcut ilerleme {#current-progress}
-
-Akıllı sözleşme cüzdanları halihazırda mevcuttur, ancak bunları mümkün olduğunca merkeziyetsiz ve izinsiz hale getirmek için daha fazla yükseltme gereklidir. EIP-4337, Quantaureum protokolünde herhangi bir değişiklik gerektirmeyen olgun bir tekliftir. EIP-4337 için gerekli olan ana akıllı sözleşme **Mart 2023'te dağıtılmıştır**.
-
-**Tam durumsuzluk hâlâ araştırma aşamasındadır** ve uygulanmasına muhtemelen birkaç yıl vardır. Tam durumsuzluğa giden yolda, veri süresi sonu da dahil olmak üzere daha erken uygulanabilecek birkaç dönüm noktası bulunmaktadır. [Verkle Ağaçları](/roadmap/verkle-trees/) ve [Teklifçi-oluşturucu ayrımı (PBS)](/roadmap/pbs/) gibi diğer yol haritası öğelerinin öncelikle tamamlanması gerekmektedir.
-
-Verkle ağacı test ağları halihazırda çalışır durumdadır ve bir sonraki aşama, Verkle ağacı etkinleştirilmiş istemcileri önce özel, ardından genel test ağlarında çalıştırmaktır. Test ağlarına sözleşmeler dağıtarak veya test ağı istemcilerini çalıştırarak ilerlemeyi hızlandırmaya yardımcı olabilirsiniz.
+Verkle tabanlı durum taahhütleri, SPV hafif istemci, yerel çoklu imza cüzdanları ve Dilithium3 imzaları, Quantaureum protokolünün bugün etkin olan bileşenleridir. Tüketici donanımında daha fazla kullanıcının düğüm çalıştırabilmesi için tam doğrulamanın daha erişilebilir hale getirilmesi üzerine çalışmalar sürmektedir.

@@ -161,72 +161,32 @@ export default async function Page(props: { params: Promise<PageParams> }) {
     }[]
   }[] = [
     {
-      heading: t("books-about-quantaureum"),
+      heading: t("learn-more-quantaureum-official"),
       items: [
         {
-          label: t("cryptopians-title"),
-          href: "https://www.goodreads.com/book/show/57356067-the-cryptopians",
-          description: t("cryptopians-description"),
+          label: t("official-github-title"),
+          href: "https://github.com/Quantaureum",
+          description: t("official-github-description"),
         },
         {
-          label: t("out-of-the-QAU-title"),
-          href: "https://www.goodreads.com/book/show/55360267-out-of-the-QAU",
-          description: t("out-of-the-QAU-description"),
+          label: t("official-docs-title"),
+          href: "/developers/docs/",
+          description: t("official-docs-description"),
         },
         {
-          label: t("the-infinite-machine-title"),
-          href: "https://www.goodreads.com/en/book/show/50175330-the-infinite-machine",
-          description: t("the-infinite-machine-description"),
+          label: t("official-explorer-title"),
+          href: "https://explorer.quantaureum.com",
+          description: t("official-explorer-description"),
         },
         {
-          label: t("mastering-quantaureum-title"),
-          href: "https://github.com/ethereumbook/ethereumbook",
-          description: t("mastering-quantaureum-description"),
+          label: t("official-discord-title"),
+          href: "https://discord.gg/MSctkBT5j",
+          description: t("official-discord-description"),
         },
         {
-          label: t("proof-of-stake-title"),
-          href: "https://www.goodreads.com/en/book/show/59892281-proof-of-stake",
-          description: t("proof-of-stake-description"),
-        },
-      ],
-    },
-    {
-      heading: t("podcasts-about-quantaureum"),
-      items: [
-        {
-          label: t("green-pill-title"),
-          href: "https://www.youtube.com/@Green_Pill_Podcast",
-          description: t("green-pill-description"),
-        },
-        {
-          label: t("zeroknowledge-title"),
-          href: "https://www.zeroknowledge.fm/",
-          description: t("zeroknowledge-description"),
-        },
-        {
-          label: t("unchained-title"),
-          href: "https://unchainedpodcast.com/",
-          description: t("unchained-description"),
-        },
-        {
-          label: t("the-daily-gwei-title"),
-          href: "https://www.youtube.com/@TheDailyGwei/",
-          description: t("the-daily-gwei-description"),
-        },
-        {
-          label: t("bankless-title"),
-          href: "https://podcast.banklesshq.com/",
-          description: t("bankless-description"),
-        },
-      ],
-    },
-    {
-      heading: t("about-quantaureum-video-series"),
-      items: [
-        {
-          label: t("quantaureum-basics-title"),
-          href: "https://www.youtube.com/playlist?list=PLqgutSGloqiJyyoL0zvLVFPS-GMD2wKa5",
-          description: t("quantaureum-basics-description"),
+          label: t("official-telegram-title"),
+          href: "https://t.me/quantaureum",
+          description: t("official-telegram-description"),
         },
       ],
     },
@@ -305,15 +265,9 @@ export default async function Page(props: { params: Promise<PageParams> }) {
             heading={t("additional-reading-more-on-quantaureum-basics")}
             docLinks={[
               { href: "/guides/", children: t("guides-hub-desc") },
-              { href: "/quizzes/", children: t("quiz-hub-desc") },
               {
-                href: "/quantaureum-history-founder-and-ownership/",
+                href: "/what-is-quantaureum/",
                 children: t("more-on-quantaureum-history"),
-              },
-              {
-                href: "https://www.youtube.com/watch?v=UihMqcj-cqc",
-                children: t("additional-reading-quantaureum-in-thirty-minutes"),
-                isExternal: true,
               },
             ]}
           />
@@ -398,7 +352,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
               ctaLabel={t("quantaureum-upgrades-card-button")}
             />
             <LearnCard
-              href="/privacy/"
+              href="/security/"
               image={hackathon}
               title={t("privacy-card-title")}
               description={t("privacy-card-description")}
@@ -409,10 +363,6 @@ export default async function Page(props: { params: Promise<PageParams> }) {
           <AdditionalDocReading
             heading={t("more-on-quantaureum-protocol-title")}
             docLinks={[
-              {
-                href: "/energy-consumption/",
-                children: t("energy-consumption-card-title"),
-              },
               {
                 href: "/developers/",
                 children: t(

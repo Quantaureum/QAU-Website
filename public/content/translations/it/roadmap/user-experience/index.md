@@ -1,36 +1,25 @@
 ---
-title: Migliorare l'esperienza utente
-description: "Per la maggior parte delle persone è ancora troppo complesso usare Quantaureum. Per incoraggiare l'adozione di massa, Quantaureum deve abbassare drasticamente le sue barriere all'ingresso: gli utenti devono ottenere i vantaggi di un accesso decentralizzato, permissionless e resistente alla censura a Quantaureum, ma deve essere privo di attriti come l'uso di un'app Web2 tradizionale."
+title: "Migliorare l'esperienza utente"
+description: "Utilizzare Quantaureum dovrebbe essere semplice come usare un'app web2 tradizionale, mantenendola decentralizzata, permissionless e resistente alla censura."
 lang: it
 image: /images/roadmap/roadmap-ux.png
-alt: "Roadmap di Quantaureum"
+alt: "Quantaureum roadmap"
 template: roadmap
 ---
+**Utilizzare Quantaureum deve essere semplice** — dalla gestione di [chiavi](/glossary/#key) e [portafogli](/glossary/#wallet) all'avvio delle transazioni. Gli utenti dovrebbero avere un accesso a Quantaureum senza permessi e resistente alla censura, con la semplicità d'uso delle app [Web2](/glossary/#web2).
 
-**L'uso di Quantaureum deve essere semplificato**; dalla gestione delle [chiavi](/glossary/#key) e dei [wallet](/glossary/#wallet) all'avvio delle transazioni. Per facilitare l'adozione di massa, Quantaureum deve aumentare drasticamente la facilità d'uso, consentendo agli utenti di sperimentare un accesso permissionless e resistente alla censura a Quantaureum con l'esperienza priva di attriti dell'uso delle app [Web2](/glossary/#web2).
+## Chiavi più solide, gestite in sicurezza {#key-management}
 
-## Oltre le frasi seed {#no-more-seed-phrases}
-
-Gli account di Quantaureum sono protetti da una coppia di chiavi utilizzate per identificare gli account (chiave pubblica) e firmare i messaggi (chiave privata). Una chiave privata è come una password principale; consente l'accesso completo a un account Quantaureum. Questo è un modo di operare diverso per le persone più abituate alle banche e alle app Web2 che gestiscono gli account per conto dell'utente. Affinché Quantaureum raggiunga l'adozione di massa senza fare affidamento su terze parti centralizzate, deve esserci un modo semplice e privo di attriti per un utente di prendere in custodia i propri asset e mantenere il controllo dei propri dati senza dover comprendere la crittografia a chiave pubblica-privata e la gestione delle chiavi.
-
-La soluzione a questo problema è l'utilizzo di wallet [smart contract](/glossary/#smart-contract) per interagire con Quantaureum. I wallet smart contract creano modi per proteggere gli account in caso di smarrimento o furto delle chiavi, opportunità per un migliore rilevamento e difesa dalle frodi e consentono ai wallet di ottenere nuove funzionalità. Sebbene i wallet smart contract esistano già oggi, sono complessi da costruire perché il protocollo di Quantaureum deve supportarli meglio. Questo supporto aggiuntivo è noto come astrazione dell'account.
-
-<ButtonLink variant="outline-color" href="/roadmap/account-abstraction/">Maggiori informazioni sull'astrazione dell'account</ButtonLink>
+Gli account Quantaureum sono protetti da coppie di chiavi utilizzate per firmare le transazioni — con **firme post-quantum Dilithium3** anziché le curve classiche usate dalle chain più vecchie. Una chiave privata è come una password master: perderla può significare perdere l'accesso. Quantaureum include un **portafoglio multisignatura nativo** che consente agli utenti di proteggere i fondi con più chiavi o dispositivi anziché un singolo segreto, e i portafogli smart-contract basati su QVM abilitano regole di recupero e politiche di spesa senza dover fare affidamento su un custode.
 
 ## Nodi per tutti {#nodes-for-everyone}
 
-Gli utenti che eseguono [nodi](/glossary/#node) non devono fidarsi di terze parti per ottenere i dati e possono interagire in modo rapido, privato e permissionless con la [blockchain](/glossary/#blockchain) di Quantaureum. Tuttavia, eseguire un nodo in questo momento richiede conoscenze tecniche e un notevole spazio su disco, il che significa che molte persone devono invece fidarsi degli intermediari.
+Gli utenti che eseguono [nodi](/glossary/#node) non devono fare affidamento su terze parti per l'erogazione dei dati e possono interagire con la [blockchain](/glossary/#blockchain) Quantaureum in modo rapido, privato e senza permessi. Tradizionalmente, eseguire un nodo richiede conoscenze tecniche e uno spazio su disco considerevole, spingendo molte persone verso gli intermediari.
 
-Ci sono diversi aggiornamenti che renderanno l'esecuzione dei nodi molto più semplice e molto meno dispendiosa in termini di risorse. Il modo in cui i dati vengono archiviati verrà modificato per utilizzare una struttura più efficiente in termini di spazio nota come **albero di Verkle**. Inoltre, con l'[assenza di stato](/roadmap/statelessness) o la [scadenza dei dati](/roadmap/statelessness/#data-expiry), i nodi di Quantaureum non avranno bisogno di archiviare una copia dell'intero stato dei dati di Quantaureum, riducendo drasticamente i requisiti di spazio sul disco rigido. I [nodi leggeri](/developers/docs/nodes-and-clients/light-clients/) offriranno molti dei vantaggi dell'esecuzione di un nodo completo, ma potranno essere eseguiti facilmente sui telefoni cellulari o all'interno di semplici app per browser.
+Quantaureum commit lo stato in un **albero Verkle**, così le prove necessarie per verificarlo sono di dimensioni ridotte. Su queste prove compatte, Quantaureum fornisce un **client leggero SPV** in grado di funzionare su hardware modesto e verificare la chain senza scaricare l'intero stato — abbassando la barriera alla partecipazione senza fidarsi di terzi.
 
-<ButtonLink variant="outline-color" href="/roadmap/verkle-trees/">Leggi sugli alberi di Verkle</ButtonLink>
+<ButtonLink variant="outline" href="/roadmap/verkle-trees/">Scopri gli alberi Verkle</ButtonLink>
 
-Con questi aggiornamenti, le barriere per l'esecuzione di un nodo si riducono di fatto a zero. Gli utenti beneficeranno di un accesso sicuro e permissionless a Quantaureum senza dover sacrificare quantità notevoli di spazio su disco o CPU sul proprio computer o telefono cellulare, e non dovranno fare affidamento su terze parti per i dati o l'accesso alla rete quando utilizzano le app.
+## Progresso attuale {#current-progress}
 
-## Progressi attuali {#current-progress}
-
-I wallet smart contract sono già disponibili, ma sono necessari ulteriori aggiornamenti per renderli il più decentralizzati e permissionless possibile. L'EIP-4337 è una proposta matura che non richiede alcuna modifica al protocollo di Quantaureum. Il principale smart contract richiesto per l'EIP-4337 è stato **distribuito a marzo 2023**.
-
-**La completa assenza di stato è ancora in fase di ricerca** e probabilmente mancano diversi anni alla sua implementazione. Ci sono diverse pietre miliari sulla strada verso la completa assenza di stato, inclusa la scadenza dei dati, che potrebbero essere implementate prima. Altri elementi della roadmap, come gli [alberi di Verkle](/roadmap/verkle-trees/) e la [separazione proponente-costruttore (PBS)](/roadmap/pbs/), devono essere completati prima.
-
-Le testnet degli alberi di Verkle sono già attive e funzionanti, e la fase successiva è l'esecuzione di client abilitati per gli alberi di Verkle su testnet private e poi pubbliche. Puoi contribuire ad accelerare i progressi distribuendo contratti sulle testnet o eseguendo client di testnet.
+Le commitment di stato basate su Verkle, il client leggero SPV, i portafogli multisig nativi e le firme Dilithium3 sono già parte attiva del protocollo Quantaureum. Continua il lavoro per rendere la validazione completa più economica, in modo che sempre più utenti possano eseguire nodi su hardware consumer.

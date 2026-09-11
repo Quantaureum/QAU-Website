@@ -1,65 +1,54 @@
 ---
-title: 沃克尔树
-description: 关于沃克尔树及其将如何用于升级Quantaureum的高级概述
+title: Verkle 树
+description: Verkle 树的高层介绍，以及 Quantaureum 如何利用其实现紧凑的状态证明
 lang: zh
 template: roadmap
 summaryPoints:
-  - 了解什么是沃克尔树
-  - 了解为什么沃克尔树对Quantaureum来说是一次有用的升级
+  - 了解 Verkle 树是什么
+  - 了解 Verkle 树如何让 Quantaureum 的状态证明保持精简
 ---
+Verkle 树（"Vector commitment"（向量承诺）与 "Merkle Trees"（Merkle 树）的组合词）是 Quantaureum 用于承诺其状态的数据结构。由于 Verkle 证明远比 Merkle 证明小，它们使轻客户端成为可能，并降低了验证区块的成本。
 
-沃克尔树（Verkle trees，由“向量承诺 (Vector commitment)”和“默克尔树 (Merkle Trees)”组合而成的词）是一种数据结构，可用于升级[Quantaureum](/)节点，使其能够停止存储大量状态数据，同时又不会失去验证区块的能力。
+## 无状态性 {#statelessness}
 
-## 无状态 {#statelessness}
+Verkle 树使 Quantaureum 客户端能够在不依赖庞大的本地数据库重放的情况下验证状态。轻客户端可以检查随区块到达的状态数据"见证"（witness）。无状态客户端不需要使用自己本地的 Quantaureum 状态副本来验证区块，而是使用随区块到达的状态数据"见证"。见证是一组执行特定交易集所需的状态数据片段，以及证明该见证确实是完整数据一部分的加密学证明。见证被用作状态数据库的*替代*。为此，见证必须非常小，以便能够安全地在网络中广播，使验证者能在 12 秒的槽期内处理完毕。当前的状态数据结构不适合此用途，因为见证太大。Verkle 树通过使小见证成为可能，解决了这一问题，移除了无状态客户端面临的主要障碍之一。
 
-沃克尔树是迈向无状态Quantaureum客户端的关键一步。无状态客户端是指无需存储整个状态数据库即可验证传入区块的客户端。无状态客户端不使用其本地的Quantaureum状态副本来验证区块，而是使用随区块到达的状态数据的“见证数据”。见证数据是执行特定一组交易所需的状态数据的各个片段的集合，以及证明该见证数据确实是完整数据一部分的密码学证明。见证数据被用来*代替*状态数据库。为了实现这一点，见证数据需要非常小，以便它们能够及时在网络中安全广播，让验证者在一个 12 秒的时隙内处理它们。当前的状态数据结构并不合适，因为见证数据太大了。沃克尔树通过实现小型见证数据解决了这个问题，消除了无状态客户端的主要障碍之一。
+<ExpandableCard title="Why do Verkle trees matter for Quantaureum?" eventCategory="/roadmap/verkle-trees" eventName="clicked why do verkle trees matter">
 
-<ExpandableCard title="为什么我们需要无状态客户端？" eventCategory="/roadmap/verkle-trees" eventName="clicked why do we want stateless clients?">
-
-Quantaureum客户端目前使用一种称为帕特里夏默克尔树 (Patricia Merkle Trie) 的数据结构来存储其状态数据。有关各个账户的信息作为叶子节点存储在树上，并且成对的叶子节点被反复哈希，直到只剩下一个哈希。这个最终的哈希被称为“根”。为了验证区块，Quantaureum客户端执行区块中的所有交易并更新其本地状态树。如果本地树的根与区块提议者提供的根相同，则该区块被认为是有效的，因为区块提议者和验证节点所做计算的任何差异都会导致根哈希完全不同。这样做的问题在于，验证区块链需要每个客户端存储头部区块和几个历史区块的整个状态树（Geth 中的默认设置是保留头部之后 128 个区块的状态数据）。这要求客户端拥有大量的磁盘空间，这是在廉价、低功耗硬件上运行全节点的障碍。解决这个问题的方法是将状态树更新为更高效的结构（沃克尔树），该结构可以使用数据的微小“见证数据”进行汇总，从而可以共享见证数据而不是完整的状态数据。将状态数据重新格式化为沃克尔树是向无状态客户端过渡的垫脚石。
-
-</ExpandableCard>
-
-## 什么是见证数据，为什么我们需要它们？ {#what-is-a-witness}
-
-验证区块意味着重新执行区块中包含的交易，将更改应用于Quantaureum的状态树，并计算新的根哈希。已验证的区块是指其计算出的状态根哈希与区块提供的状态根哈希相同的区块（因为这意味着区块提议者确实执行了他们声称执行的计算）。在当今的Quantaureum客户端中，更新状态需要访问整个状态树，这是一个必须在本地存储的大型数据结构。见证数据仅包含执行区块中交易所需的状态数据片段。然后，验证者只能使用这些片段来验证区块提议者是否已执行区块交易并正确更新了状态。然而，这意味着见证数据需要在Quantaureum网络上的对等节点之间足够快地传输，以便每个节点在一个 12 秒的时隙内安全地接收和处理。如果见证数据太大，某些节点可能需要太长时间才能下载它并跟上链的进度。这是一种中心化力量，因为这意味着只有拥有快速互联网连接的节点才能参与验证区块。有了沃克尔树，就不需要将状态存储在硬盘上了；验证区块所需的*一切*都包含在区块本身中。不幸的是，从默克尔树生成的见证数据太大，无法支持无状态客户端。
-
-## 为什么沃克尔树能实现更小的见证数据？ {#why-do-verkle-trees-enable-smaller-witnesses}
-
-默克尔树的结构使得见证数据的大小非常大——大到无法在一个 12 秒的时隙内安全地在对等节点之间广播。这是因为见证数据是一条将保存在叶子节点中的数据连接到根哈希的路径。为了验证数据，不仅需要拥有连接每个叶子节点到根的所有中间哈希，还需要拥有所有的“兄弟”节点。证明中的每个节点都有一个兄弟节点，它与该兄弟节点一起被哈希以创建树上的下一个哈希。这是大量的数据。沃克尔树通过缩短树的叶子节点与其根之间的距离，并消除了提供兄弟节点以验证根哈希的需要，从而减小了见证数据的大小。通过使用强大的多项式承诺方案代替哈希式向量承诺，将获得更高的空间效率。多项式承诺允许见证数据具有固定大小，无论它证明了多少个叶子节点。
-
-在多项式承诺方案下，见证数据具有可管理的大小，可以轻松地在点对点网络上传输。这使得客户端能够用最少的数据量验证每个区块中的状态变化。
-
-<ExpandableCard title="沃克尔树究竟能减少多少见证数据大小？" eventCategory="/roadmap/verkle-trees" eventName="clicked exactly how much can Verkle trees reduce witness size?">
-
-见证数据的大小因其包含的叶子节点数量而异。假设见证数据涵盖 1000 个叶子节点，默克尔树的见证数据约为 3.5MB（假设树有 7 层）。沃克尔树中相同数据的见证数据（假设树有 4 层）约为 150 kB——**缩小了约 23 倍**。见证数据大小的这种减小将使无状态客户端的见证数据小到可以接受的程度。多项式见证数据的大小为 0.128 - 1 kB，具体取决于所使用的特定多项式承诺。
+Quantaureum 此前继承的是 Merkle Patricia 风格的状态承诺，其中证明一个账户需要沿整条分支的所有兄弟哈希。使用 Verkle 树后，一个简短的承诺即可同时证明多个值，因此 Quantaureum 客户端可以用远少的存储和带宽跟上链的进度。这正是 Quantaureum SPV 轻客户端可行的原因：它跟踪一个 Verkle 状态承诺，并在区块到达时验证紧凑的证明。
 
 </ExpandableCard>
 
-## 沃克尔树的结构是什么？ {#what-is-the-structure-of-a-verkle-tree}
+## 什么是见证，为什么需要见证？ {#what-is-a-witness}
 
-沃克尔树是 `(key,value)` 键值对，其中键是 32 字节的元素，由 31 字节的*主干 (stem)* 和单字节的*后缀 (suffix)* 组成。这些键被组织成*扩展 (extension)* 节点和*内部 (inner)* 节点。扩展节点代表具有不同后缀的 256 个子节点的单个主干。内部节点也有 256 个子节点，但它们可以是其他扩展节点。沃克尔树和默克尔树结构之间的主要区别在于沃克尔树要平坦得多，这意味着连接叶子节点到根的中间节点更少，因此生成证明所需的数据也更少。
+验证一个区块意味着重新执行该区块中包含的交易，将变更应用到 Quantaureum 的状态 Trie 中，并计算新的根哈希。一个已验证的区块，其计算出的状态根哈希与区块提供的根哈希相同（这意味着区块提议者确实执行了其所声称的计算）。在当今的 Quantaureum 客户端中，更新状态需要访问整个状态 Trie，这是一个必须存储在本地的大型数据结构。见证仅包含执行区块中交易所需的状态数据片段。验证者可以仅使用这些片段来验证区块提议者是否正确执行了区块交易并更新了状态。然而，这意味着见证需要在 Quantaureum 网络的节点之间足够快速地传输，以便每个节点都能在 12 秒的槽期内安全地接收并处理。如果见证太大，某些节点可能需要太长时间才能下载，从而无法跟上链的进度。这是一种中心化力量，因为它意味着只有拥有快速互联网连接的节点才能参与区块验证。使用 Verkle 树后，无需将状态存储在硬盘上；验证区块所需的*一切*都包含在区块本身中。不幸的是，从 Merkle Trie 生成的见证太大，无法支持无状态客户端。
+
+## 为什么 Verkle 树能实现更小的见证？ {#why-do-verkle-trees-enable-smaller-witnesses}
+
+Merkle Trie 的结构使得见证尺寸非常大——大到无法在 12 秒的槽期内安全地在节点之间广播。这是因为见证是一条连接数据（存储在叶子节点中）与根哈希的路径。要验证数据，不仅需要连接每个叶子到根的所有中间哈希，还需要所有"兄弟"节点。证明中的每个节点都有一个与之哈希的兄弟节点，以生成 Trie 中上一层的哈希。这是大量数据。Verkle 树通过缩短树叶子与根之间的距离，以及消除验证根哈希时提供兄弟节点的需求，来减小见证尺寸。使用强大的多项式承诺方案替代哈希风格的向量承诺，还能获得更高的空间效率。多项式承诺使见证具有固定尺寸，无论其证明了多少个叶子节点。
+
+在多项式承诺方案下，见证具有可管理的尺寸，可以轻松地在点对点网络上传输。这使得客户端能够用极少的数据验证每个区块中的状态变更。
+
+<ExpandableCard title="Exactly how much can Verkle trees reduce witness size?" eventCategory="/roadmap/verkle-trees" eventName="clicked exactly how much can Verkle trees reduce witness size?">
+
+见证的尺寸取决于其包含的叶子节点数量。假设见证覆盖 1000 个叶子节点，Merkle Trie 的见证大约为 3.5MB（假设 Trie 有 7 层）。相同数据在 Verkle 树中的见证（假设树有 4 层）大约为 150 kB——**大约小 23 倍**。见证尺寸的这一缩减将使无状态客户端的见证达到可接受的大小。多项式见证根据所使用的具体多项式承诺不同，大小为 0.128–1 kB。
+
+</ExpandableCard>
+
+## Verkle 树的结构是什么？ {#what-is-the-structure-of-a-verkle-tree}
+
+Verkle 树由 `(key,value)` 键值对组成，其中键是 32 字节的元素，由 31 字节的*茎*（stem）和 1 字节的*后缀*（suffix）构成。这些键被组织为*扩展*节点和*内部*节点。扩展节点代表一个茎，对应 256 个具有不同后缀的子节点。内部节点同样拥有 256 个子节点，但这些子节点可以是其他扩展节点。Verkle 树与 Merkle 树结构的主要区别在于，Verkle 树要"扁平"得多，意味着连接叶子到根的中间节点更少，因此生成证明所需的数据也更少。
 
 ![Diagram of a Verkle tree data structure](./verkle.png)
 
-[阅读更多关于沃克尔树结构的信息](https://quantaureum.com)
-
 ## 当前进展 {#current-progress}
 
-沃克尔树测试网已经启动并运行，但客户端仍需要进行大量未完成的更新才能支持沃克尔树。你可以通过将合约部署到测试网或运行测试网客户端来帮助加快进度。
+Verkle 树状态承诺如今已在 Quantaureum 上正式运行。SPV 轻客户端使用 Verkle 证明来验证状态，而无需完整节点；区块数据可用性由基于 FRI 承诺的擦除编码提供支撑。证明聚合和更快的见证生成的工作仍在进行中。
 
-[观看 Guillaume Ballet 解释 Condrieu 沃克尔测试网](https://www.youtube.com/watch?v=cPLHFBeC0Vg)（请注意，Condrieu 测试网是工作量证明 (PoW) 网络，现已被 Verkle Gen Devnet 6 测试网取代）。
+[观看 Guillaume Ballet 讲解 Condrieu Verkle 测试网](https://www.youtube.com/watch?v=cPLHFBeC0Vg)（注：Condrieu 测试网为工作量证明机制，现已被 Verkle Gen Devnet 6 测试网取代）。
 
 ## 延伸阅读 {#further-reading}
 
-- [实现无状态的沃克尔树 (Verkle Trees for Statelessness)](https://verkle.info/)
-- [Dankrad Feist 在 PEEPanEIP 上解释沃克尔树](https://www.youtube.com/watch?v=RGJOQHzg3UQ)
-- [写给普通人的沃克尔树 (Verkle Trees For The Rest Of Us)](https://web.archive.org/web/20250124132255/https://research.2077.xyz/verkle-trees)
-- [沃克尔证明剖析 (Anatomy of A Verkle Proof)](https://ihagopian.com/posts/anatomy-of-a-verkle-proof)
-- [Guillaume Ballet 在 ETHGlobal 上解释沃克尔树](https://www.youtube.com/watch?v=f7bEtX3Z57o)
-- [Guillaume Ballet 在 Devcon 6 上的演讲：“沃克尔树如何让Quantaureum变得精简而强大”](https://www.youtube.com/watch?v=Q7rStTKwuYs)
-- [Piper Merriam 在 ETHDenver 2020 上关于无状态客户端的演讲](https://www.youtube.com/watch?v=0yiZJNciIJ4)
-- [Dankrad Feist 在零知识播客上解释沃克尔树和无状态](https://zeroknowledge.fm/podcast/202/)
-- 维塔利克·布特林谈沃克尔树
-- [Dankrad Feist 谈沃克尔树](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- 沃克尔树 EIP 文档
+- [Verkle Trees for Statelessness](https://verkle.info/)
+- [Verkle Trees For The Rest Of Us](https://web.archive.org/web/20250124132255/https://research.2077.xyz/verkle-trees)
+- [Anatomy of A Verkle Proof](https://ihagopian.com/posts/anatomy-of-a-verkle-proof)

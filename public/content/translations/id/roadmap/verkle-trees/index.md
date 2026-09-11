@@ -1,65 +1,56 @@
 ---
 title: Pohon Verkle
-description: Deskripsi tingkat tinggi tentang pohon Verkle dan bagaimana mereka akan digunakan untuk meningkatkan Quantaureum
+description: Deskripsi tingkat tinggi tentang pohon Verkle dan bagaimana Quantaureum menggunakannya untuk pembuktian status yang ringkas
 lang: id
 template: roadmap
 summaryPoints:
-  - Temukan apa itu pohon Verkle
-  - Baca mengapa Pohon Verkle adalah peningkatan yang berguna untuk Quantaureum
+  - Pelajari apa itu pohon Verkle
+  - Baca mengapa pohon Verkle membuat pembuktian status Quantaureum tetap ringkas
 ---
+Pohon Verkle (penggabungan kata dari "Vector commitment" dan "Merkle Trees") adalah struktur data yang digunakan Quantaureum untuk membuat komitmen state. Karena proof Verkle jauh lebih kecil daripada proof Merkle, hal ini memungkinkan klien ringan dan menurunkan biaya validasi blok.
 
-Pohon Verkle (lakuran dari "komitmen Vektor" dan "Pohon Merkle") adalah struktur data yang dapat digunakan untuk meningkatkan node [Quantaureum](/) sehingga mereka dapat berhenti menyimpan sejumlah besar data state tanpa kehilangan kemampuan untuk memvalidasi blok.
+## Stateless {#statelessness}
 
-## Ketiadaan state {#statelessness}
+Pohon Verkle memungkinkan klien Quantaureum memverifikasi state tanpa harus mereplay-nya dari database lokal yang besar. Klien ringan dapat memeriksa "witness" dari data state yang datang bersama blok. Alih-alih menggunakan salinan lokal state Quantaureum mereka sendiri untuk memverifikasi blok, klien stateless menggunakan "witness" dari data state yang datang bersama blok. Witness adalah kumpulan potongan-potongan data state yang diperlukan untuk mengeksekusi set transaksi tertentu, beserta bukti kriptografis bahwa witness tersebut benar-benar merupakan bagian dari data lengkap. Witness digunakan _sebagai pengganti_ database state. Agar ini dapat berfungsi, witness harus sangat kecil agar dapat disiarkan dengan aman melalui jaringan dalam waktu yang cukup bagi validator untuk memprosesnya dalam slot 12 detik. Struktur data state saat ini tidak cocok karena witness-nya terlalu besar. Pohon Verkle menyelesaikan masalah ini dengan memungkinkan witness yang kecil, sehingga menghapus salah satu penghalang utama bagi klien stateless.
 
-Pohon Verkle adalah langkah penting di jalur menuju klien Quantaureum tanpa state. Klien tanpa state adalah klien yang tidak perlu menyimpan seluruh basis data state untuk memvalidasi blok yang masuk. Alih-alih menggunakan salinan lokal state Quantaureum mereka sendiri untuk memverifikasi blok, klien tanpa state menggunakan "saksi" untuk data state yang tiba bersama blok tersebut. Saksi adalah kumpulan potongan individu dari data state yang diperlukan untuk mengeksekusi serangkaian transaksi tertentu, dan bukti kriptografi bahwa saksi tersebut benar-benar bagian dari data lengkap. Saksi digunakan _sebagai pengganti_ basis data state. Agar ini berfungsi, saksi harus sangat kecil, sehingga dapat disiarkan dengan aman di seluruh jaringan tepat waktu agar validator dapat memprosesnya dalam slot 12 detik. Struktur data state saat ini tidak cocok karena saksi terlalu besar. Pohon Verkle memecahkan masalah ini dengan memungkinkan saksi berukuran kecil, menghilangkan salah satu hambatan utama bagi klien tanpa state.
+<ExpandableCard title="Why do Verkle trees matter for Quantaureum?" eventCategory="/roadmap/verkle-trees" eventName="clicked why do verkle trees matter">
 
-<ExpandableCard title="Mengapa kita menginginkan klien tanpa state?" eventCategory="/roadmap/verkle-trees" eventName="clicked why do we want stateless clients?">
-
-Klien Quantaureum saat ini menggunakan struktur data yang dikenal sebagai Patricia Merkle Trie untuk menyimpan data state-nya. Informasi tentang akun individu disimpan sebagai daun pada trie dan pasangan daun di-hash berulang kali hingga hanya tersisa satu hash tunggal. Hash akhir ini dikenal sebagai "akar". Untuk memverifikasi blok, klien Quantaureum mengeksekusi semua transaksi dalam sebuah blok dan memperbarui trie keadaan lokal mereka. Blok dianggap valid jika akar dari pohon lokal identik dengan yang disediakan oleh pengusul blok, karena setiap perbedaan dalam komputasi yang dilakukan oleh pengusul blok dan node yang memvalidasi akan menyebabkan hash akar menjadi sama sekali berbeda. Masalahnya adalah memverifikasi rantai blok mengharuskan setiap klien untuk menyimpan seluruh trie keadaan untuk blok kepala dan beberapa blok historis (default di Geth adalah menyimpan data state untuk 128 blok di belakang kepala). Hal ini mengharuskan klien untuk memiliki akses ke ruang disk dalam jumlah besar, yang merupakan hambatan untuk menjalankan node penuh pada perangkat keras yang murah dan berdaya rendah. Solusi untuk ini adalah memperbarui trie keadaan ke struktur yang lebih efisien (pohon Verkle) yang dapat diringkas menggunakan "saksi" kecil untuk data yang dapat dibagikan sebagai pengganti data state lengkap. Memformat ulang data state menjadi pohon Verkle adalah batu loncatan untuk beralih ke klien tanpa state.
-
-</ExpandableCard>
-
-## Apa itu saksi dan mengapa kita membutuhkannya? {#what-is-a-witness}
-
-Memverifikasi sebuah blok berarti mengeksekusi ulang transaksi yang terkandung dalam blok tersebut, menerapkan perubahan pada trie keadaan Quantaureum, dan menghitung hash akar yang baru. Blok yang diverifikasi adalah blok yang hash akar state hasil komputasinya sama dengan yang disediakan bersama blok tersebut (karena ini berarti pengusul blok benar-benar melakukan komputasi yang mereka katakan telah mereka lakukan). Pada klien Quantaureum saat ini, memperbarui state memerlukan akses ke seluruh trie keadaan, yang merupakan struktur data besar yang harus disimpan secara lokal. Saksi hanya berisi fragmen data state yang diperlukan untuk mengeksekusi transaksi di dalam blok. Validator kemudian hanya dapat menggunakan fragmen tersebut untuk memverifikasi bahwa pengusul blok telah mengeksekusi transaksi blok dan memperbarui state dengan benar. Namun, ini berarti bahwa saksi perlu ditransfer antar rekan di jaringan Quantaureum dengan cukup cepat agar dapat diterima dan diproses oleh setiap node dengan aman dalam slot 12 detik. Jika saksi terlalu besar, mungkin butuh waktu terlalu lama bagi beberapa node untuk mengunduhnya dan mengikuti rantai. Ini adalah kekuatan pemusatan karena itu berarti hanya node dengan koneksi internet cepat yang dapat berpartisipasi dalam memvalidasi blok. Dengan pohon Verkle, tidak perlu menyimpan state di hard drive Anda; _semua_ yang Anda butuhkan untuk memverifikasi blok terkandung di dalam blok itu sendiri. Sayangnya, saksi yang dapat dihasilkan dari trie Merkle terlalu besar untuk mendukung klien tanpa state.
-
-## Mengapa pohon Verkle memungkinkan saksi yang lebih kecil? {#why-do-verkle-trees-enable-smaller-witnesses}
-
-Struktur trie Merkle membuat ukuran saksi menjadi sangat besar - terlalu besar untuk disiarkan dengan aman antar rekan dalam slot 12 detik. Hal ini karena saksi adalah jalur yang menghubungkan data, yang disimpan di daun, ke hash akar. Untuk memverifikasi data, tidak hanya diperlukan semua hash perantara yang menghubungkan setiap daun ke akar, tetapi juga semua node "saudara". Setiap node dalam bukti memiliki saudara yang di-hash bersamanya untuk membuat hash berikutnya di atas trie. Ini adalah data yang sangat banyak. Pohon Verkle mengurangi ukuran saksi dengan memperpendek jarak antara daun pohon dan akarnya serta menghilangkan kebutuhan untuk menyediakan node saudara untuk memverifikasi hash akar. Efisiensi ruang yang lebih besar akan diperoleh dengan menggunakan skema komitmen polinomial yang kuat alih-alih komitmen vektor bergaya hash. Komitmen polinomial memungkinkan saksi memiliki ukuran tetap terlepas dari jumlah daun yang dibuktikannya.
-
-Di bawah skema komitmen polinomial, saksi memiliki ukuran yang dapat dikelola yang dapat dengan mudah ditransfer di jaringan peer-to-peer. Hal ini memungkinkan klien untuk memverifikasi perubahan state di setiap blok dengan jumlah data yang minimal.
-
-<ExpandableCard title="Seberapa besar tepatnya Pohon Verkle dapat mengurangi ukuran Saksi?" eventCategory="/roadmap/verkle-trees" eventName="clicked exactly how much can Verkle trees reduce witness size?">
-
-Ukuran saksi bervariasi tergantung pada jumlah daun yang disertakannya. Dengan asumsi saksi mencakup 1000 daun, saksi untuk trie Merkle akan berukuran sekitar 3,5MB (dengan asumsi 7 tingkat pada trie). Saksi untuk data yang sama dalam pohon Verkle (dengan asumsi 4 tingkat pada pohon) akan berukuran sekitar 150 kB - **sekitar 23x lebih kecil**. Pengurangan ukuran saksi ini akan memungkinkan saksi klien tanpa state menjadi cukup kecil. Saksi polinomial berukuran 0,128 - 1 kB tergantung pada komitmen polinomial spesifik mana yang digunakan.
+Quantaureum sebelumnya mewarisi gaya komitmen state Merkle Patricia, di mana membuktikan satu akun memerlukan semua hash saudara sepanjang seluruh cabang. Dengan pohon Verkle, satu komitmen pendek dapat membuktikan banyak nilai sekaligus, sehingga klien Quantaureum dapat mengikuti chain dengan penyimpanan dan bandwidth yang jauh lebih sedikit. Inilah yang membuat klien ringan SPV Quantaureum menjadi praktis: klien tersebut melacak komitmen state Verkle dan memverifikasi proof ringkas saat blok tiba.
 
 </ExpandableCard>
 
-## Apa struktur dari pohon Verkle? {#what-is-the-structure-of-a-verkle-tree}
+## Apa itu witness dan mengapa kita membutuhkannya? {#what-is-a-witness}
 
-Pohon Verkle adalah pasangan `(key,value)` di mana kuncinya adalah elemen 32-byte yang terdiri dari _batang_ 31-byte dan _akhiran_ byte tunggal. Kunci-kunci ini diatur ke dalam node _ekstensi_ dan node _dalam_. Node ekstensi mewakili satu batang untuk 256 anak dengan akhiran yang berbeda. Node dalam juga memiliki 256 anak, tetapi mereka bisa berupa node ekstensi lainnya. Perbedaan utama antara struktur pohon Verkle dan pohon Merkle adalah bahwa pohon Verkle jauh lebih datar, yang berarti ada lebih sedikit node perantara yang menghubungkan daun ke akar, dan oleh karena itu lebih sedikit data yang diperlukan untuk menghasilkan bukti.
+Memverifikasi blok berarti mengeksekusi ulang transaksi yang terkandung dalam blok, menerapkan perubahan ke state trie Quantaureum, dan menghitung root hash baru. Blok yang terverifikasi adalah blok yang hash state root yang dihitungnya sama dengan yang disediakan bersama blok (karena ini berarti proposer blok benar-benar melakukan komputasi yang mereka klaimkan). Pada klien Quantaureum saat ini, memperbarui state memerlukan akses ke state trie lengkap, yaitu struktur data besar yang harus disimpan secara lokal. Witness hanya berisi fragmen-fragmen data state yang diperlukan untuk mengeksekusi transaksi dalam blok. Validator kemudian hanya dapat menggunakan fragmen tersebut untuk memverifikasi bahwa proposer blok telah mengeksekusi transaksi blok dan memperbarui state dengan benar. Namun, ini berarti witness perlu ditransfer antar peer di jaringan Quantaureum dengan cukup cepat agar dapat diterima dan diproses oleh setiap node dengan aman dalam slot 12 detik. Jika witness terlalu besar, beberapa node mungkin membutuhkan waktu terlalu lama untuk mengunduhnya dan mengikuti chain. Ini adalah kekuatan sentralisasi karena berarti hanya node dengan koneksi internet cepat yang dapat berpartisipasi dalam memvalidasi blok. Dengan pohon Verkle, tidak perlu lagi menyimpan state di hard drive; _segala_ yang Anda butuhkan untuk memverifikasi blok terkandung dalam blok itu sendiri. Sayangnya, witness yang dapat dihasilkan dari Merkle trie terlalu besar untuk mendukung klien stateless.
 
-![Diagram of a Verkle tree data structure](./verkle.png)
+## Mengapa pohon Verkle memungkinkan witness yang lebih kecil? {#why-do-verkle-trees-enable-smaller-witnesses}
 
-[Baca lebih lanjut tentang struktur pohon Verkle](https://quantaureum.com)
+Struktur Merkle Trie membuat ukuran witness sangat besar – terlalu besar untuk disiarkan dengan aman antar peer dalam slot 12 detik. Hal ini karena witness adalah jalur yang menghubungkan data, yang disimpan di daun, ke root hash. Untuk memverifikasi data, diperlukan tidak hanya semua hash perantara yang menghubungkan setiap daun ke root, tetapi juga semua node "saudara". Setiap node dalam proof memiliki saudara yang di-hash bersamanya untuk membuat hash berikutnya ke atas trie. Jumlah datanya besar. Pohon Verkle mengurangi ukuran witness dengan memendekkan jarak antara daun pohon dan root-nya, serta menghilangkan kebutuhan untuk menyediakan node saudara dalam memverifikasi root hash. Efisiensi ruang yang lebih besar akan diperoleh dengan menggunakan skema komitmen polinomial yang kuat alih-alih vector commitment bergaya hash. Komitmen polinomial memungkinkan witness memiliki ukuran tetap terlepas dari jumlah daun yang dibuktikan.
+
+Di bawah skema komitmen polinomial, witness memiliki ukuran yang dapat dikelola dan dapat dengan mudah ditransfer di jaringan peer-to-peer. Ini memungkinkan klien untuk memverifikasi perubahan state di setiap blok dengan jumlah data yang minimal.
+
+<ExpandableCard title="Exactly how much can Verkle trees reduce witness size?" eventCategory="/roadmap/verkle-trees" eventName="clicked exactly how much can Verkle trees reduce witness size?">
+
+Ukuran witness bervariasi tergantung pada jumlah daun yang tercakup. Dengan asumsi witness mencakup 1000 daun, witness untuk Merkle trie akan sekitar 3,5 MB (dengan asumsi 7 level pada trie). Witness untuk data yang sama dalam pohon Verkle (dengan asumsi 4 level pada pohon) akan sekitar 150 kB – **sekitar 23x lebih kecil**. Pengurangan ukuran witness ini akan memungkinkan witness klien stateless menjadi cukup kecil. Witness polinomial berukuran 0,128 – 1 kB tergantung pada komitmen polinomial spesifik yang digunakan.
+
+</ExpandableCard>
+
+## Apa struktur pohon Verkle? {#what-is-the-structure-of-a-verkle-tree}
+
+Pohon Verkle adalah pasangan `(key,value)` di mana key-nya adalah elemen 32-byte yang terdiri dari _stem_ 31-byte dan _suffix_ satu byte. Key-key ini diorganisasikan menjadi node _extension_ dan node _inner_. Node extension merepresentasikan satu stem untuk 256 anak dengan suffix yang berbeda. Node inner juga memiliki 256 anak, tetapi anak-anak tersebut dapat berupa node extension lain. Perbedaan utama antara struktur pohon Verkle dan pohon Merkle adalah bahwa pohon Verkle jauh lebih datar, artinya ada lebih sedikit node perantara yang menghubungkan daun ke root, dan karenanya data yang diperlukan untuk menghasilkan proof lebih sedikit.
+
+![Diagram struktur data pohon Verkle](./verkle.png)
+
+
 
 ## Kemajuan saat ini {#current-progress}
 
-Testnet pohon Verkle sudah aktif dan berjalan, tetapi masih ada pembaruan substansial yang belum diselesaikan pada klien yang diperlukan untuk mendukung pohon Verkle. Anda dapat membantu mempercepat kemajuan dengan menerapkan kontrak ke testnet atau menjalankan klien testnet.
+Komitmen state berbasis pohon Verkle sudah aktif di Quantaureum saat ini. Klien ringan SPV menggunakan proof Verkle untuk memverifikasi state tanpa full node, dan ketersediaan data blok didukung oleh erasure coding dengan komitmen FRI. Pekerjaan terus berlanjut pada agregasi proof dan generasi witness yang lebih cepat.
 
-[Tonton Guillaume Ballet menjelaskan testnet Verkle Condrieu](https://www.youtube.com/watch?v=cPLHFBeC0Vg) (perhatikan bahwa testnet Condrieu menggunakan Bukti Kerja (PoW) dan sekarang telah digantikan oleh testnet Verkle Gen Devnet 6).
+[Lihat Guillaume Ballet menjelaskan testnet Verkle Condrieu](https://www.youtube.com/watch?v=cPLHFBeC0Vg) (perhatikan bahwa testnet Condrieu menggunakan proof-of-work dan sekarang telah digantikan oleh testnet Verkle Gen Devnet 6).
 
-## Bacaan lebih lanjut {#further-reading}
+## Membaca lebih lanjut {#further-reading}
 
-- [Pohon Verkle untuk Ketiadaan State](https://verkle.info/)
-- [Dankrad Feist menjelaskan pohon Verkle di PEEPanEIP](https://www.youtube.com/watch?v=RGJOQHzg3UQ)
-- [Pohon Verkle Untuk Kita Semua](https://web.archive.org/web/20250124132255/https://research.2077.xyz/verkle-trees)
-- [Anatomi Bukti Verkle](https://ihagopian.com/posts/anatomy-of-a-verkle-proof)
-- [Guillaume Ballet menjelaskan pohon Verkle di ETHGlobal](https://www.youtube.com/watch?v=f7bEtX3Z57o)
-- ["Bagaimana pohon Verkle membuat Quantaureum ramping dan tangguh" oleh Guillaume Ballet di Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
-- [Piper Merriam tentang klien tanpa state dari ETHDenver 2020](https://www.youtube.com/watch?v=0yiZJNciIJ4)
-- [Dankrad Fiest menjelaskan pohon Verkle dan ketiadaan state di podcast Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
-- Vitalik Buterin tentang pohon Verkle
-- [Dankrad Feist tentang pohon Verkle](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- Dokumentasi EIP pohon Verkle
+- [Pohon Verkle untuk Statelessness](https://verkle.info/)
+- [Pohon Verkle untuk Kita Semua](https://web.archive.org/web20250124132255/https://research.2077.xyz/verkle-trees)
+- [Anatomi Proof Verkle](https://ihagopian.com/posts/anatomy-of-a-verkle-proof)

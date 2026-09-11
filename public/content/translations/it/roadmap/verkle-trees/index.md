@@ -1,65 +1,56 @@
 ---
-title: Alberi di Verkle
-description: Una descrizione ad alto livello degli alberi di Verkle e di come verranno utilizzati per aggiornare Quantaureum
+title: Alberi Verkle
+description: Una descrizione a livello alto degli alberi Verkle e di come Quantaureum li utilizza per dimostrazioni di stato compatte
 lang: it
 template: roadmap
 summaryPoints:
-  - Scopri cosa sono gli alberi di Verkle
-  - Leggi perché gli alberi di Verkle sono un utile aggiornamento per Quantaureum
+  - Scopri cosa sono gli alberi Verkle
+  - Scopri perché gli alberi Verkle mantengono le dimostrazioni di stato di Quantaureum compatte
 ---
+Gli alberi Verkle (un portmanteau di "Vector commitment" e "Merkle Trees") sono la struttura dati che Quantaureum utilizza per impegnare il proprio stato. Poiché le prove Verkle sono molto più piccole delle prove Merkle, esse abilitano i client leggeri e riducono il costo della convalida dei blocchi.
 
-Gli alberi di Verkle (una parola macedonia tra "Vector commitment" e "Merkle Trees") sono una struttura dati che può essere utilizzata per aggiornare i nodi di [Quantaureum](/) in modo che possano smettere di archiviare grandi quantità di dati di stato senza perdere la capacità di convalidare i blocchi.
+## Stateless {#statelessness}
 
-## Assenza di stato {#statelessness}
+Gli alberi Verkle consentono ai client di Quantaureum di verificare lo stato senza doverlo ri-eseguire da un enorme database locale. Un client leggero può controllare una "testimonianza" (witness) dei dati di stato che arriva insieme al blocco. Invece di utilizzare la propria copia locale dello stato di Quantaureum per verificare i blocchi, i client stateless utilizzano una "testimonianza" dei dati di stato che arriva insieme al blocco. Una testimonianza è una raccolta di singoli frammenti dei dati di stato necessari per eseguire un particolare insieme di transazioni, unita a una prova crittografica che dimostra che la testimonianza fa realmente parte dei dati completi. La testimonianza viene utilizzata _al posto_ del database di stato. Per funzionare, le testimonianze devono essere molto piccole, in modo da poter essere trasmesse in sicurezza sulla rete in tempo utile affinché i validatori le elaborino entro uno slot di 12 secondi. La struttura dati di stato attuale non è adatta perché le testimonianze sono troppo grandi. Gli alberi Verkle risolvono questo problema abilitando testimonianze di piccole dimensioni, eliminando una delle principali barriere per i client stateless.
 
-Gli alberi di Verkle sono un passo fondamentale nel percorso verso i client Quantaureum senza stato. I client senza stato sono quelli che non devono archiviare l'intero database di stato per convalidare i blocchi in arrivo. Invece di utilizzare la propria copia locale dello stato di Quantaureum per verificare i blocchi, i client senza stato utilizzano un "testimone" per i dati di stato che arriva con il blocco. Un testimone è una raccolta di singoli frammenti dei dati di stato necessari per eseguire un particolare insieme di transazioni e una prova crittografica che il testimone fa realmente parte dei dati completi. Il testimone viene utilizzato _al posto_ del database di stato. Affinché ciò funzioni, i testimoni devono essere molto piccoli, in modo da poter essere trasmessi in modo sicuro attraverso la rete in tempo utile affinché i validatori li elaborino entro uno slot di 12 secondi. L'attuale struttura dei dati di stato non è adatta perché i testimoni sono troppo grandi. Gli alberi di Verkle risolvono questo problema consentendo testimoni di piccole dimensioni, rimuovendo una delle barriere principali ai client senza stato.
+<ExpandableCard title="Perché gli alberi Verkle contano per Quantaureum?" eventCategory="/roadmap/verkle-trees" eventName="clicked why do verkle trees matter">
 
-<ExpandableCard title="Perché vogliamo client senza stato?" eventCategory="/roadmap/verkle-trees" eventName="clicked why do we want stateless clients?">
-
-I client Quantaureum attualmente utilizzano una struttura dati nota come Patricia Merkle Trie per archiviare i propri dati di stato. Le informazioni sui singoli account sono archiviate come foglie sul trie e le coppie di foglie vengono sottoposte a hash ripetutamente finché non rimane un solo hash. Questo hash finale è noto come "radice". Per verificare i blocchi, i client Quantaureum eseguono tutte le transazioni in un blocco e aggiornano il loro trie di stato locale. Il blocco è considerato valido se la radice dell'albero locale è identica a quella fornita dal proponente del blocco, perché qualsiasi differenza nel calcolo eseguito dal proponente del blocco e dal nodo di convalida farebbe sì che l'hash radice sia completamente diverso. Il problema è che la verifica della blockchain richiede che ogni client archivi l'intero trie di stato per il blocco di testa e per diversi blocchi storici (l'impostazione predefinita in Geth è mantenere i dati di stato per 128 blocchi dietro la testa). Ciò richiede che i client abbiano accesso a una grande quantità di spazio su disco, il che rappresenta un ostacolo all'esecuzione di nodi completi su hardware economico e a basso consumo. Una soluzione a questo problema è aggiornare il trie di stato a una struttura più efficiente (albero di Verkle) che può essere riassunta utilizzando un piccolo "testimone" dei dati che può essere condiviso al posto dei dati di stato completi. La riformattazione dei dati di stato in un albero di Verkle è un trampolino di lancio per passare ai client senza stato.
-
-</ExpandableCard>
-
-## Cos'è un testimone e perché ne abbiamo bisogno? {#what-is-a-witness}
-
-Verificare un blocco significa rieseguire le transazioni contenute nel blocco, applicare le modifiche al trie di stato di Quantaureum e calcolare il nuovo hash radice. Un blocco verificato è quello il cui hash radice di stato calcolato è uguale a quello fornito con il blocco (perché questo significa che il proponente del blocco ha realmente eseguito il calcolo che afferma di aver fatto). Nei client Quantaureum odierni, l'aggiornamento dello stato richiede l'accesso all'intero trie di stato, che è una struttura dati di grandi dimensioni che deve essere archiviata localmente. Un testimone contiene solo i frammenti dei dati di stato necessari per eseguire le transazioni nel blocco. Un validatore può quindi utilizzare solo quei frammenti per verificare che il proponente del blocco abbia eseguito le transazioni del blocco e aggiornato lo stato correttamente. Tuttavia, ciò significa che il testimone deve essere trasferito tra i peer sulla rete Quantaureum abbastanza rapidamente da essere ricevuto ed elaborato da ciascun nodo in modo sicuro entro uno slot di 12 secondi. Se il testimone è troppo grande, alcuni nodi potrebbero impiegare troppo tempo per scaricarlo e stare al passo con la catena. Questa è una forza centralizzante perché significa che solo i nodi con connessioni Internet veloci possono partecipare alla convalida dei blocchi. Con gli alberi di Verkle non c'è bisogno di avere lo stato archiviato sul disco rigido; _tutto_ ciò di cui hai bisogno per verificare un blocco è contenuto all'interno del blocco stesso. Sfortunatamente, i testimoni che possono essere prodotti dai trie di Merkle sono troppo grandi per supportare i client senza stato.
-
-## Perché gli alberi di Verkle consentono testimoni più piccoli? {#why-do-verkle-trees-enable-smaller-witnesses}
-
-La struttura di un trie di Merkle rende le dimensioni del testimone molto grandi: troppo grandi per essere trasmesse in modo sicuro tra i peer entro uno slot di 12 secondi. Questo perché il testimone è un percorso che collega i dati, contenuti nelle foglie, all'hash radice. Per verificare i dati è necessario avere non solo tutti gli hash intermedi che collegano ogni foglia alla radice, ma anche tutti i nodi "fratelli". Ogni nodo nella prova ha un fratello con cui viene sottoposto a hash per creare l'hash successivo lungo il trie. Si tratta di molti dati. Gli alberi di Verkle riducono le dimensioni del testimone accorciando la distanza tra le foglie dell'albero e la sua radice ed eliminando anche la necessità di fornire nodi fratelli per verificare l'hash radice. Un'efficienza di spazio ancora maggiore sarà ottenuta utilizzando un potente schema di commitment polinomiale invece del vector commitment basato su hash. Il commitment polinomiale consente al testimone di avere una dimensione fissa indipendentemente dal numero di foglie che dimostra.
-
-Con lo schema di commitment polinomiale, i testimoni hanno dimensioni gestibili che possono essere facilmente trasferite sulla rete peer-to-peer. Ciò consente ai client di verificare le modifiche di stato in ogni blocco con una quantità minima di dati.
-
-<ExpandableCard title="Esattamente di quanto gli alberi di Verkle possono ridurre la dimensione del testimone?" eventCategory="/roadmap/verkle-trees" eventName="clicked exactly how much can Verkle trees reduce witness size?">
-
-La dimensione del testimone varia a seconda del numero di foglie che include. Supponendo che il testimone copra 1000 foglie, un testimone per un trie di Merkle sarebbe di circa 3,5 MB (supponendo 7 livelli per il trie). Un testimone per gli stessi dati in un albero di Verkle (supponendo 4 livelli per l'albero) sarebbe di circa 150 kB: **circa 23 volte più piccolo**. Questa riduzione delle dimensioni del testimone consentirà ai testimoni dei client senza stato di essere sufficientemente piccoli. I testimoni polinomiali sono di 0,128 - 1 kB a seconda dello specifico commitment polinomiale utilizzato.
+Quantaureum ha in precedenza ereditato lo stile di commitment di stato Merkle Patricia, in cui la prova di un account richiede tutti gli hash fratelli lungo un intero ramo. Con gli alberi Verkle, un singolo commitment breve dimostra molti valori contemporaneamente, consentendo ai client di Quantaureum di stare al passo con la catena utilizzando molto meno spazio di archiviazione e larghezza di banda. È ciò che rende pratico il client leggero SPV di Quantaureum: traccia un commitment di stato Verkle e verifica prove compatte man mano che i blocchi arrivano.
 
 </ExpandableCard>
 
-## Qual è la struttura di un albero di Verkle? {#what-is-the-structure-of-a-verkle-tree}
+## Cos'è una testimonianza e perché ne abbiamo bisogno? {#what-is-a-witness}
 
-Gli alberi di Verkle sono coppie `(key,value)` in cui le chiavi sono elementi da 32 byte composti da un _gambo_ (stem) da 31 byte e un _suffisso_ da un singolo byte. Queste chiavi sono organizzate in nodi di _estensione_ e nodi _interni_. I nodi di estensione rappresentano un singolo gambo per 256 figli con suffissi diversi. Anche i nodi interni hanno 256 figli, ma possono essere altri nodi di estensione. La differenza principale tra la struttura dell'albero di Verkle e quella dell'albero di Merkle è che l'albero di Verkle è molto più piatto, il che significa che ci sono meno nodi intermedi che collegano una foglia alla radice e, di conseguenza, meno dati necessari per generare una prova.
+Verificare un blocco significa ri-eseguire le transazioni contenute nel blocco, applicare le modifiche alla trie di stato di Quantaureum e calcolare il nuovo hash radice. Un blocco verificato è quello il cui hash radice di stato calcolato è uguale a quello fornito con il blocco (poiché ciò significa che il proponente del blocco ha realmente eseguito i calcoli che afferma di aver eseguito). Nei client di Quantaureum odierni, l'aggiornamento dello stato richiede l'accesso all'intera trie di stato, una grande struttura dati che deve essere memorizzata localmente. Una testimonianza contiene solo i frammenti dei dati di stato necessari per eseguire le transazioni nel blocco. Un validatore può quindi utilizzare solo quei frammenti per verificare che il proponente del blocco abbia eseguito le transazioni del blocco e aggiornato correttamente lo stato. Tuttavia, ciò significa che la testimonianza deve essere trasferita tra i peer nella rete di Quantaureum abbastanza rapidamente da essere ricevuta e elaborata da ciascun nodo in sicurezza entro uno slot di 12 secondi. Se la testimonianza è troppo grande, alcuni nodi potrebbero impiegare troppo tempo a scaricarla e a stare al passo con la catena. Questo è un fattore centralizzante, poiché significa che solo i nodi con connessioni internet veloci possono partecipare alla convalida dei blocchi. Con gli alberi Verkle non è necessario avere lo stato memorizzato sul disco fisso; _tutto_ ciò che serve per verificare un blocco è contenuto all'interno del blocco stesso. Sfortunatamente, le testimonianze che possono essere generate dalle trie Merkle sono troppo grandi per supportare i client stateless.
 
-![Diagram of a Verkle tree data structure](./verkle.png)
+## Perché gli alberi Verkle abilitano testimonianze più piccole? {#why-do-verkle-trees-enable-smaller-witnesses}
 
-[Scopri di più sulla struttura degli alberi di Verkle](https://quantaureum.com)
+La struttura di una trie Merkle rende le dimensioni delle testimonianze molto grandi – troppo grandi per poter essere trasmesse in sicurezza tra i peer entro uno slot di 12 secondi. Questo perché la testimonianza è un percorso che collega i dati, tenuti nelle foglie, all'hash radice. Per verificare i dati è necessario non solo tutti gli hash intermedi che collegano ciascuna foglia alla radice, ma anche tutti i nodi "fratelli". Ogni nodo nella prova ha un fratello con cui viene hashato per creare l'hash successivo verso l'alto nella trie. Si tratta di una grande quantità di dati. Gli alberi Verkle riducono la dimensione della testimonianza accorciando la distanza tra le foglie dell'albero e la sua radice ed eliminando anche la necessità di fornire nodi fratelli per la verifica dell'hash radice. Ulteriore efficienza in termini di spazio sarà ottenuta utilizzando un potente scheme di commitment polinomiale al posto del vector commitment di tipo hash. Il commitment polinomiale consente alla testimonianza di avere una dimensione fissa indipendentemente dal numero di foglie che dimostra.
+
+Nello scheme di commitment polinomiale, le testimonianze hanno dimensioni gestibili che possono essere facilmente trasferite sulla rete peer-to-peer. Ciò consente ai client di verificare le modifiche dello stato in ciascun blocco con una quantità minima di dati.
+
+<ExpandableCard title="Di quanto precisamente gli alberi Verkle possono ridurre la dimensione della testimonianza?" eventCategory="/roadmap/verkle-trees" eventName="clicked exactly how much can Verkle trees reduce witness size?">
+
+La dimensione della testimonianza varia a seconda del numero di foglie che include. Assumendo che la testimonianza copra 1000 foglie, una testimonianza per una trie Merkle sarebbe di circa 3,5 MB (ipotizzando 7 livelli nella trie). Una testimonianza per gli stessi dati in un albero Verkle (ipotizzando 4 livelli nell'albero) sarebbe di circa 150 kB – **circa 23 volte più piccola**. Questa riduzione della dimensione della testimonianza consentirà che le testimonianze dei client stateless siano accettabilmente piccole. Le testimonianze polinomiali sono di 0,128 – 1 kB a seconda dello specifico commitment polinomiale utilizzato.
+
+</ExpandableCard>
+
+## Qual è la struttura di un albero Verkle? {#what-is-the-structure-of-a-verkle-tree}
+
+Gli alberi Verkle sono coppie `(key,value)` in cui le chiavi sono elementi da 32 byte composti da uno _stem_ da 31 byte e un singolo byte di _suffisso_. Queste chiavi sono organizzate in nodi _estensione_ e nodi _interni_. I nodi di estensione rappresentano un singolo stem per 256 figli con suffissi diversi. I nodi interni hanno anch'essi 256 figli, ma possono essere altri nodi di estensione. La differenza principale tra la struttura dell'albero Verkle e quella dell'albero Merkle è che l'albero Verkle è molto più "piatto", il che significa che ci sono meno nodi intermedi che collegano una foglia alla radice e, di conseguenza, meno dati necessari per generare una prova.
+
+![Diagramma della struttura dati di un albero Verkle](./verkle.png)
+
+
 
 ## Progressi attuali {#current-progress}
 
-Le testnet degli alberi di Verkle sono già attive e funzionanti, ma ci sono ancora sostanziali aggiornamenti in sospeso per i client che sono necessari per supportare gli alberi di Verkle. Puoi contribuire ad accelerare i progressi distribuendo contratti sulle testnet o eseguendo client di testnet.
+I commitment di stato basati su alberi Verkle sono attivi su Quantaureum da oggi. Il client leggero SPV utilizza le prove Verkle per verificare lo stato senza un nodo completo, e la disponibilità dei dati dei blocchi è supportata da erasure coding con commitment FRI. Il lavoro continua sull'aggregazione delle prove e sulla generazione più rapida delle testimonianze.
 
-[Guarda Guillaume Ballet spiegare la testnet Condrieu Verkle](https://www.youtube.com/watch?v=cPLHFBeC0Vg) (nota che la testnet Condrieu era basata sulla Prova di lavoro (PoW) ed è ora stata sostituita dalla testnet Verkle Gen Devnet 6).
+[Guarda Guillaume Ballet spiegare la testnet Verkle di Condrieu](https://www.youtube.com/watch?v=cPLHFBeC0Vg) (nota che la testnet di Condrieu era proof-of-work ed è ora stata sostituita dalla testnet Verkle Gen Devnet 6).
 
-## Letture consigliate {#further-reading}
+## Ulteriori letture {#further-reading}
 
-- [Alberi di Verkle per l'assenza di stato](https://verkle.info/)
-- [Dankrad Feist spiega gli alberi di Verkle su PEEPanEIP](https://www.youtube.com/watch?v=RGJOQHzg3UQ)
-- [Alberi di Verkle per il resto di noi](https://web.archive.org/web/20250124132255/https://research.2077.xyz/verkle-trees)
-- [Anatomia di una prova di Verkle](https://ihagopian.com/posts/anatomy-of-a-verkle-proof)
-- [Guillaume Ballet spiega gli alberi di Verkle a ETHGlobal](https://www.youtube.com/watch?v=f7bEtX3Z57o)
-- ["Come gli alberi di Verkle rendono Quantaureum snello ed efficiente" di Guillaume Ballet alla Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
-- [Piper Merriam sui client senza stato all'ETHDenver 2020](https://www.youtube.com/watch?v=0yiZJNciIJ4)
-- [Dankrad Fiest spiega gli alberi di Verkle e l'assenza di stato sul podcast Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
-- Vitalik Buterin sugli alberi di Verkle
-- [Dankrad Feist sugli alberi di Verkle](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- Documentazione EIP dell'albero di Verkle
+- [Verkle Trees for Statelessness](https://verkle.info/)
+- [Verkle Trees For The Rest Of Us](https://web.archive.org/web/20250124132255/https://research.2077.xyz/verkle-trees)
+- [Anatomy of A Verkle Proof](https://ihagopian.com/posts/anatomy-of-a-verkle-proof)

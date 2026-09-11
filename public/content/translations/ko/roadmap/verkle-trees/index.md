@@ -1,65 +1,54 @@
 ---
-title: 버클 트리
-description: 버클 트리에 대한 개요와 Quantaureum 업그레이드에 어떻게 사용되는지에 대한 설명
+title: "Verkle 트리"
+description: "Verkle 트리에 대한 고수준 설명 및 Quantaureum이 이를 통해 어떻게 압축된 상태 증명을 구현하는지"
 lang: ko
 template: roadmap
 summaryPoints:
-  - 버클 트리가 무엇인지 알아보기
-  - 버클 트리가 Quantaureum에 유용한 업그레이드인 이유 알아보기
+  - Verkle 트리가 무엇인지 알아보세요
+  - Verkle 트리가 Quantaureum의 상태 증명을 왜 작게 유지하는지 읽어보세요
 ---
+Verkle 트리( "Vector commitment"와 "Merkle Trees"의 합성어)는 Quantaureum이 상태를 커밋하는 데 사용하는 데이터 구조입니다. Verkle 증명은 Merkle 증명보다 훨씬 작기 때문에, 라이트 클라이언트를 가능하게 하고 블록 검증 비용을 낮춥니다.
 
-버클 트리("벡터 커밋먼트(Vector commitment)"와 "머클 트리(Merkle Trees)"의 합성어)는 블록 검증 능력을 잃지 않으면서도 대량의 상태 데이터를 저장하지 않도록 [Quantaureum](/) 노드를 업그레이드하는 데 사용할 수 있는 데이터 구조입니다.
+## Stateless {#statelessness}
 
-## 무상태성 {#statelessness}
+Verkle 트리는 Quantaureum 클라이언트가 방대한 로컬 데이터베이스에서 상태를 재실행하지 않고도 상태를 검증할 수 있게 합니다. 라이트 클라이언트는 블록과 함께 도착하는 상태 데이터에 대한 "witness"를 확인하면 됩니다. 블록 검증을 위해 Quantaureum의 상태 로컬 사본을 사용하지 않고, stateless 클라이언트는 블록과 함께 도착하는 상태 데이터의 "witness"를 사용합니다. Witness는 특정 트랜잭션 집합을 실행하는 데 필요한 상태 데이터의 개별 조각 모음과, 해당 witness가 실제로 전체 데이터의 일부임을 보여주는 암호학적 증명입니다. Witness는 상태 데이터베이스 _대신_ 사용됩니다. 이를 위해 witness는 12초 슬롯 내에서 검증자가及时处理할 수 있도록 네트워크를 통해 안전하게 배포될 만큼 매우 작아야 합니다. 현재 상태 데이터 구조는 witness가 너무 커서 적합하지 않습니다. Verkle 트리는 작은 witness를 가능하게 함으로써 이를 해결하며, stateless 클라이언트의 주요 장벽 중 하나를 제거합니다.
 
-버클 트리는 무상태(stateless) Quantaureum 클라이언트로 나아가는 과정에서 중요한 단계입니다. 무상태 클라이언트는 수신되는 블록을 검증하기 위해 전체 상태 데이터베이스를 저장할 필요가 없는 클라이언트입니다. 무상태 클라이언트는 블록을 검증하기 위해 Quantaureum 상태의 로컬 복사본을 사용하는 대신, 블록과 함께 도착하는 상태 데이터의 "증거"를 사용합니다. 증거는 특정 트랜잭션 세트를 실행하는 데 필요한 상태 데이터의 개별 조각 모음이자, 해당 증거가 전체 데이터의 일부임을 증명하는 암호학적 증명입니다. 증거는 상태 데이터베이스 _대신_ 사용됩니다. 이것이 작동하려면 검증자가 12초 슬롯 내에 처리할 수 있도록 네트워크를 통해 안전하게 브로드캐스트될 수 있을 만큼 증거의 크기가 매우 작아야 합니다. 현재의 상태 데이터 구조는 증거가 너무 크기 때문에 적합하지 않습니다. 버클 트리는 작은 크기의 증거를 가능하게 하여 이 문제를 해결하고, 무상태 클라이언트를 구현하는 데 있어 주요 장벽 중 하나를 제거합니다.
+<ExpandableCard title="Why do Verkle trees matter for Quantaureum?" eventCategory="/roadmap/verkle-trees" eventName="clicked why do verkle trees matter">
 
-<ExpandableCard title="무상태 클라이언트가 필요한 이유는 무엇인가요?" eventCategory="/roadmap/verkle-trees" eventName="clicked why do we want stateless clients?">
-
-현재 Quantaureum 클라이언트는 상태 데이터를 저장하기 위해 패트리샤 머클 트라이(Patricia Merkle Trie)라는 데이터 구조를 사용합니다. 개별 계정에 대한 정보는 트라이의 리프(leaf)로 저장되며, 단일 해시만 남을 때까지 리프 쌍이 반복적으로 해시됩니다. 이 최종 해시를 "루트(root)"라고 합니다. 블록을 검증하기 위해 Quantaureum 클라이언트는 블록 내의 모든 트랜잭션을 실행하고 로컬 상태 트라이를 업데이트합니다. 블록 제안자와 검증 노드가 수행한 연산에 차이가 있으면 루트 해시가 완전히 달라지기 때문에, 로컬 트리의 루트가 블록 제안자가 제공한 루트와 동일한 경우에만 블록이 유효한 것으로 간주됩니다. 이 방식의 문제점은 블록체인을 검증하려면 각 클라이언트가 헤드 블록과 여러 과거 블록에 대한 전체 상태 트라이를 저장해야 한다는 것입니다(Geth의 기본 설정은 헤드 뒤의 128개 블록에 대한 상태 데이터를 유지하는 것입니다). 이로 인해 클라이언트는 대용량 디스크 공간에 접근할 수 있어야 하며, 이는 저렴하고 전력 소모가 적은 하드웨어에서 풀 노드를 실행하는 데 장벽이 됩니다. 이에 대한 해결책은 전체 상태 데이터 대신 공유할 수 있는 데이터에 대한 작은 "증거"를 사용하여 요약할 수 있는 더 효율적인 구조(버클 트리)로 상태 트라이를 업데이트하는 것입니다. 상태 데이터를 버클 트리로 재구성하는 것은 무상태 클라이언트로 이동하기 위한 디딤돌입니다.
-
-</ExpandableCard>
-
-## 증거란 무엇이며 왜 필요한가요? {#what-is-a-witness}
-
-블록을 검증한다는 것은 블록에 포함된 트랜잭션을 재실행하고, 변경 사항을 Quantaureum의 상태 트라이에 적용하며, 새로운 루트 해시를 계산하는 것을 의미합니다. 검증된 블록은 계산된 상태 루트 해시가 블록과 함께 제공된 해시와 동일한 블록입니다(이는 블록 제안자가 실제로 자신이 수행했다고 주장하는 연산을 수행했음을 의미하기 때문입니다). 오늘날의 Quantaureum 클라이언트에서 상태를 업데이트하려면 로컬에 저장해야 하는 대규모 데이터 구조인 전체 상태 트라이에 접근해야 합니다. 증거에는 블록의 트랜잭션을 실행하는 데 필요한 상태 데이터의 조각만 포함됩니다. 그러면 검증자는 해당 조각들만 사용하여 블록 제안자가 블록 트랜잭션을 실행하고 상태를 올바르게 업데이트했는지 확인할 수 있습니다. 그러나 이는 증거가 Quantaureum 네트워크의 피어 간에 충분히 빠르게 전송되어 각 노드가 12초 슬롯 내에 안전하게 수신하고 처리할 수 있어야 함을 의미합니다. 증거가 너무 크면 일부 노드가 이를 다운로드하고 체인을 따라가는 데 너무 오랜 시간이 걸릴 수 있습니다. 이는 빠른 인터넷 연결을 가진 노드만이 블록 검증에 참여할 수 있음을 의미하므로 중앙화 요인으로 작용합니다. 버클 트리를 사용하면 하드 드라이브에 상태를 저장할 필요가 없습니다. 블록을 검증하는 데 필요한 _모든 것_이 블록 자체에 포함되어 있습니다. 안타깝게도 머클 트라이에서 생성할 수 있는 증거는 무상태 클라이언트를 지원하기에는 너무 큽니다.
-
-## 버클 트리가 더 작은 증거를 가능하게 하는 이유는 무엇인가요? {#why-do-verkle-trees-enable-smaller-witnesses}
-
-머클 트라이의 구조는 증거 크기를 매우 크게 만듭니다. 12초 슬롯 내에 피어 간에 안전하게 브로드캐스트하기에는 너무 큽니다. 이는 증거가 리프에 보관된 데이터와 루트 해시를 연결하는 경로이기 때문입니다. 데이터를 검증하려면 각 리프를 루트에 연결하는 모든 중간 해시뿐만 아니라 모든 "형제(sibling)" 노드도 있어야 합니다. 증명에 있는 각 노드에는 트라이 위로 다음 해시를 생성하기 위해 함께 해시되는 형제가 있습니다. 이는 엄청난 양의 데이터입니다. 버클 트리는 트리의 리프와 루트 사이의 거리를 줄이고 루트 해시를 검증하기 위해 형제 노드를 제공할 필요성을 없앰으로써 증거 크기를 줄입니다. 해시 방식의 벡터 커밋먼트 대신 강력한 다항식 커밋먼트(polynomial commitment) 체계를 사용하면 훨씬 더 높은 공간 효율성을 얻을 수 있습니다. 다항식 커밋먼트를 사용하면 증명하는 리프의 수에 관계없이 증거가 고정된 크기를 가질 수 있습니다.
-
-다항식 커밋먼트 체계 하에서 증거는 피어 투 피어 네트워크에서 쉽게 전송할 수 있는 관리 가능한 크기를 갖습니다. 이를 통해 클라이언트는 최소한의 데이터로 각 블록의 상태 변경을 검증할 수 있습니다.
-
-<ExpandableCard title="버클 트리는 증거 크기를 정확히 얼마나 줄일 수 있나요?" eventCategory="/roadmap/verkle-trees" eventName="clicked exactly how much can Verkle trees reduce witness size?">
-
-증거 크기는 포함된 리프의 수에 따라 다릅니다. 증거가 1000개의 리프를 포함한다고 가정할 때, 머클 트라이의 증거는 약 3.5MB(트라이가 7레벨이라고 가정)가 됩니다. 버클 트리에서 동일한 데이터에 대한 증거(트리가 4레벨이라고 가정)는 약 150kB로, **약 23배 더 작습니다**. 이러한 증거 크기의 감소는 무상태 클라이언트 증거가 허용 가능한 수준으로 작아질 수 있게 해줍니다. 다항식 증거는 사용되는 특정 다항식 커밋먼트에 따라 0.128~1kB입니다.
+Quantaureum은 과거에 Merkle Patricia 스타일의 상태 커밋먼트를 상속받았으며, 이는 하나의 계정을 증명하는 데 해당 분기 전체의 모든 형제 해시가 필요했습니다. Verkle 트리에서는 하나의 짧은 커밋먼트가 여러 값을 한꺼번에 증명하므로, Quantaureum 클라이언트는 훨씬 적은 저장 공간과 대역폭으로 체인에 따라갈 수 있습니다. 이것이 Quantaureum SPV 라이트 클라이언트를 실용적으로 만드는 이유입니다: Verkle 상태 커밋먼트를 추적하고 블록이 도착할 때마다 컴팩트한 증명을 검증합니다.
 
 </ExpandableCard>
 
-## 버클 트리의 구조는 무엇인가요? {#what-is-the-structure-of-a-verkle-tree}
+## Witness란 무엇이고 왜 필요한가? {#what-is-a-witness}
 
-버클 트리는 키가 31바이트의 _줄기(stem)_와 1바이트의 _접미사(suffix)_로 구성된 32바이트 요소인 `(key,value)` 쌍입니다. 이러한 키는 _확장(extension)_ 노드와 _내부(inner)_ 노드로 구성됩니다. 확장 노드는 서로 다른 접미사를 가진 256개의 자식에 대한 단일 줄기를 나타냅니다. 내부 노드도 256개의 자식을 가지지만, 다른 확장 노드가 될 수 있습니다. 버클 트리와 머클 트리 구조의 주요 차이점은 버클 트리가 훨씬 더 평평하다는 것입니다. 즉, 리프를 루트에 연결하는 중간 노드가 적으므로 증명을 생성하는 데 필요한 데이터가 적습니다.
+블록을 검증하는 것은 블록에 포함된 트랜잭션을 재실행하고, Quantaureum의 상태 트리에 변경사항을 적용하며, 새로운 루트 해시를 계산하는 것입니다. 검증된 블록은 계산된 상태 루트 해시가 블록과 함께 제공된 해시와 동일한 블록입니다(이는 블록 제안자가 실제로 자신이 했다고 주장한 계산을 수행했음을 의미하므로). 현재의 Quantaureum 클라이언트에서 상태를 업데이트하려면 전체 상태 트리에 접근해야 하며, 이는 로컬에 저장되어야 하는 방대한 데이터 구조입니다. Witness는 블록의 트랜잭션을 실행하는 데 필요한 상태 데이터의 조각만 포함합니다. 그러면 검증자는 그 조각만으로 블록 제안자가 블록 트랜잭션을 실행하고 상태를 올바르게 업데이트했는지 확인할 수 있습니다. 그러나 이 경우 witness는 12초 슬롯 내에서 각 노드가 안전하게 수신하고 처리할 수 있도록 Quantaureum 네트워크의 피어 간에 충분히 빠르게 전달되어야 합니다. witness가 너무 크면 일부 노드는 다운로드에 너무 많은 시간이 소요되어 체인에 따라가지 못할 수 있습니다. 이는 중앙화 요인이며, 빠른 인터넷 연결을 가진 노드만 블록 검증에 참여할 수 있음을 의미합니다. Verkle 트리를 사용하면 하드 디브에 상태를 저장할 필요가 없으며, 블록을 검증하는 데 _필요한 모든 것_ 이 블록 자체에 포함되어 있습니다. 불행하게도, Merkle 트리에서 생성될 수 있는 witness는 stateless 클라이언트를 지원하기에 너무 큽니다.
 
-![Diagram of a Verkle tree data structure](./verkle.png)
+## 왜 Verkle 트리는 더 작은 witness를 가능하게 하는가? {#why-do-verkle-trees-enable-smaller-witnesses}
 
-[버클 트리의 구조에 대해 자세히 알아보기](https://quantaureum.com)
+Merkle 트리의 구조상 witness 크기는 매우 큽니다 – 12초 슬롯 내에서 피어 간에 안전하게 배포하기에는 너무 큰 수준입니다. 이는 witness가 리프(leaf)에 있는 데이터를 루트 해시로 연결하는 경로이기 때문입니다. 데이터를 검증하려면 각 리프를 루트로 연결하는 모든 중간 해시뿐만 아니라 모든 "sibling" 노드도 필요합니다. 증명에 포함된 각 노드는 트리의 상위 해시를 생성하기 위해 해시되는 sibling이 있습니다. 이는 상당한 양의 데이터입니다. Verkle 트리는 트리의 리프와 루트 사이의 거리를 단축하고 루트 해시 검증에 sibling 노드를 제공할 필요가 없도록 함으로써 witness 크기를 줄입니다. 해시 스타일 벡터 커밋먼트 대신 강력한 다항식 커밋먼트 방식을 사용하면 공간 효율성이 더욱 향상됩니다. 다항식 커밋먼트는 증명이 몇 개의 리프를 포함하든 관계없이 witness가 고정 크기를 갖도록 합니다.
 
-## 현재 진행 상황 {#current-progress}
+다항식 커밋먼트 방식에서 witness는 피어-투-피어 네트워크를 통해 쉽게 전송될 수 있는 관리 가능한 크기를 가집니다. 이를 통해 클라이언트는 최소한의 데이터로 각 블록의 상태 변경을 검증할 수 있습니다.
 
-버클 트리 테스트넷은 이미 가동 중이지만, 버클 트리를 지원하기 위해 클라이언트에 필요한 상당한 업데이트가 아직 남아 있습니다. 테스트넷에 컨트랙트를 배포하거나 테스트넷 클라이언트를 실행하여 진행 속도를 높이는 데 기여할 수 있습니다.
+<ExpandableCard title="Exactly how much can Verkle trees reduce witness size?" eventCategory="/roadmap/verkle-trees" eventName="clicked exactly how much can Verkle trees reduce witness size?">
 
-[기욤 발레(Guillaume Ballet)의 콩드리외(Condrieu) 버클 테스트넷 설명 시청하기](https://www.youtube.com/watch?v=cPLHFBeC0Vg) (콩드리외 테스트넷은 작업증명(PoW)이었으며 현재는 버클 젠 데브넷 6(Verkle Gen Devnet 6) 테스트넷으로 대체되었습니다).
+witness 크기는 포함된 리프 수에 따라 달라집니다. witness가 1000개 리프를 커버한다고 가정하면, Merkle 트리의 witness는 약 3.5MB(트리 7레벨 가정)입니다. 동일한 데이터에 대한 Verkle 트리 witness(트리 4레벨 가정)는 약 150 kB로, **약 23배 작습니다**. 이러한 witness 크기 감소는 stateless 클라이언트 witness를 허용 가능한 수준으로 작게 만듭니다. 다항식 witness는 사용된 특정 다항식 커밋먼트에 따라 0.128 – 1 kB입니다.
 
-## 더 읽어보기 {#further-reading}
+</ExpandableCard>
 
-- [무상태성을 위한 버클 트리(Verkle Trees for Statelessness)](https://verkle.info/)
-- [PEEPanEIP에서 당크라드 파이스트(Dankrad Feist)의 버클 트리 설명](https://www.youtube.com/watch?v=RGJOQHzg3UQ)
-- [일반인을 위한 버클 트리(Verkle Trees For The Rest Of Us)](https://web.archive.org/web/20250124132255/https://research.2077.xyz/verkle-trees)
-- [버클 증명 해부(Anatomy of A Verkle Proof)](https://ihagopian.com/posts/anatomy-of-a-verkle-proof)
-- [ETHGlobal에서 기욤 발레(Guillaume Ballet)의 버클 트리 설명](https://www.youtube.com/watch?v=f7bEtX3Z57o)
-- [데브콘 6(Devcon 6)에서 기욤 발레의 "버클 트리가 Quantaureum을 가볍고 강력하게 만드는 방법(How Verkle trees make Quantaureum lean and mean)"](https://www.youtube.com/watch?v=Q7rStTKwuYs)
-- [ETHDenver 2020에서 파이퍼 메리엄(Piper Merriam)의 무상태 클라이언트 설명](https://www.youtube.com/watch?v=0yiZJNciIJ4)
-- [영지식(Zero Knowledge) 팟캐스트에서 당크라드 파이스트의 버클 트리 및 무상태성 설명](https://zeroknowledge.fm/podcast/202/)
-- 비탈릭 부테린의 버클 트리 설명
-- [당크라드 파이스트의 버클 트리 설명](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- 버클 트리 EIP 문서
+## Verkle 트리의 구조는 어떻게 되어 있는가? {#what-is-the-structure-of-a-verkle-tree}
+
+Verkle 트리는 `(key, value)` 쌍이며, 키는 31바이트 _stem_과 1바이트 _suffix_로 구성된 32바이트 원소입니다. 이러한 키는 _extension_ 노드와 _inner_ 노드로 구성됩니다. Extension 노드는 서로 다른 suffix를 가진 256자녀에 대한 단일 stem을 나타냅니다. Inner 노드도 256자녀를 가질 수 있지만, 그 자녀가 다른 extension 노드일 수 있습니다. Verkle 트리와 Merkle 트리 구조의 주요 차이는 Verkle 트리가 훨씬 평탄하다는 점으로, 리프와 루트를 연결하는 중간 노드가 적으므로 증명을 생성하는 데 필요한 데이터가 줄어듭니다.
+
+![Verkle 트리 데이터 구조 다이어그램](./verkle.png)
+
+## 진행 상황 {#current-progress}
+
+Verkle 트리 상태 커밋먼트는 현재 Quantaureum에서 서비스 중입니다. SPV 라이트 클라이언트는 풀 노드 없이 Verkle 증명을 사용하여 상태를 검증하며, 블록 데이터 가용성은 FRI 커밋먼트 기반 소거 인코딩으로 뒷받침됩니다. 증명 집계와 더 빠른 witness 생성 작업이 진행 중입니다.
+
+[Guillaume Ballet이 Condrieu Verkle 테스트넷을 설명하는 영상 보기](https://www.youtube.com/watch?v=cPLHFBeC0Vg) (Condrieu 테스트넷은 Proof-of-Work 방식이었으며, 현재 Verkle Gen Devnet 6 테스트넷으로 대체되었습니다).
+
+## 추가 읽을거리 {#further-reading}
+
+- [Verkle Trees for Statelessness](https://verkle.info/)
+- [Verkle Trees For The Rest Of Us](https://web.archive.org/web/20250124132255/https://research.2077.xyz/verkle-trees)
+- [Anatomy of A Verkle Proof](https://ihagopian.com/posts/anatomy-of-a-verkle-proof)

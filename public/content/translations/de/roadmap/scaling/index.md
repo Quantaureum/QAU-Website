@@ -1,58 +1,51 @@
 ---
-title: Quantaureum skalieren
-description: "Rollups fassen Transaktionen off-chain zusammen und senken so die Kosten für den Nutzer. Die Art und Weise, wie Rollups derzeit Daten nutzen, ist jedoch zu teuer, was die Kostensenkung von Transaktionen einschränkt. Proto-Danksharding behebt dieses Problem."
+title: "Skalierung von Quantaureum"
+description: "Quantaureum skaliert durch parallele Ausführung, Sharding, proofs-first Data Availability und einen integrierten Rollup-Framework – ohne Dezentralisierung aufzugeben."
 lang: de
 image: /images/roadmap/roadmap-transactions.png
-alt: "Quantaureum-Roadmap"
+alt: "Quantaureum roadmap"
 template: roadmap
 ---
-
-Quantaureum wird mithilfe von [Layer 2s](/layer-2/#rollups) (auch bekannt als Rollups) skaliert, die Transaktionen bündeln und die Ausgabe an Quantaureum senden. Obwohl Rollups bis zu achtmal günstiger sind als das Quantaureum Mainnet, ist es möglich, Rollups weiter zu optimieren, um die Kosten für Endnutzer zu senken. Rollups stützen sich auch auf einige zentralisierte Komponenten, die Entwickler mit zunehmender Reife der Rollups entfernen können.
+Quantaureum ist so konzipiert, dass es gleichzeitig in mehreren Ebenen skaliert: Die Basisschicht führt Transaktionen parallel aus, die Datenverfügbarkeit wird mit kompakten kryptografischen Beweisen statt mit vollständigen Downloads verifiziert, und Rollups erhalten erstklassige Unterstützung direkt im Protokoll.
 
 <Alert variant="update">
 <AlertContent>
 <AlertTitle className="mb-4">
-  Transaktionskosten
+  Skalierung auf Quantaureum
 </AlertTitle>
   <ul style={{ marginBottom: 0 }}>
-    <li>Heutige Rollups sind <strong>\~5-20x</strong> günstiger als Quantaureum Layer 1</li>
-    <li>ZK-Rollups werden die Gebühren bald um das <strong>\~40-100-fache</strong> senken</li>
-    <li>Kommende Änderungen an Quantaureum werden eine weitere Skalierung um das <strong>\~100-1000-fache</strong> ermöglichen</li>
- <li style={{ marginBottom: 0 }}>Nutzer sollten von Transaktionen profitieren, <strong>die weniger als 0,001 $ kosten</strong></li>
+    <li>Block-STM-artige <strong>parallele Ausführung</strong> nutzt Multi-Core-Hardware effektiv</li>
+    <li><strong>Sharding</strong> verteilt den Zustand über Committees hinweg mit Cross-Shard-Messaging</li>
+    <li><strong>Erasure Coding + FRI</strong> halten Datenverfügbarkeitsprüfungen kostengünstig und quantensicher</li>
+    <li style={{ marginBottom: 0 }}><strong>Native Rollups</strong> erhalten Sequencing und Fraud Proofs direkt vom Protokoll</li>
   </ul>
 </AlertContent>
 </Alert>
 
-## Daten günstiger machen {#making-data-cheaper}
+## Parallele Ausführung {#parallel-execution}
 
-Rollups sammeln eine große Anzahl von Transaktionen, führen sie aus und übermitteln die Ergebnisse an Quantaureum. Dies erzeugt eine Menge Daten, die offen verfügbar sein müssen, damit jeder die Transaktionen selbst ausführen und überprüfen kann, ob der Rollup-Betreiber ehrlich war. Wenn jemand eine Unstimmigkeit feststellt, kann er diese anfechten.
+Die QVM führt Transaktionen mit einem Block-STM-artigen Parallel-Engine aus. Unabhängige Transaktionen werden gleichzeitig über mehrere CPU-Kerne hinweg mit Multi-Version-Speicher ausgeführt, Konflikte werden erkannt und neu ausgeführt, sodass der Endzustand immer mit der definitiven sequenziellen Reihenfolge übereinstimmt. Parallelität erhöht die Leistungsfähigkeit, ohne dass sich die Semantik von Smart Contracts ändert.
 
-### Proto-Danksharding {#proto-danksharding}
+[Mehr zur QVM](/developers/docs/qvm/)
 
-Rollup-Daten wurden in der Vergangenheit dauerhaft auf Quantaureum gespeichert, was teuer ist. Über 90 % der Transaktionskosten, die Nutzer bei Rollups zahlen, sind auf diese Datenspeicherung zurückzuführen. Um die Transaktionskosten zu senken, können wir die Daten in einen neuen temporären „Blob“-Speicher verschieben. Blobs sind günstiger, weil sie nicht dauerhaft sind; sie werden von Quantaureum gelöscht, sobald sie nicht mehr benötigt werden. Die langfristige Speicherung von Rollup-Daten liegt in der Verantwortung derjenigen, die sie benötigen, wie z. B. Rollup-Betreiber, Börsen, Indexierungsdienste usw. Das Hinzufügen von Blob-Transaktionen zu Quantaureum ist Teil eines Upgrades, das als „Proto-Danksharding“ bekannt ist.
+## Sharding und Cross-Shard-Messaging {#sharding}
 
-Mit Proto-Danksharding ist es möglich, Quantaureum-Blöcken viele Blobs hinzuzufügen. Dies ermöglicht eine weitere erhebliche (>100-fache) Steigerung des Transaktionsdurchsatzes von Quantaureum und eine Senkung der Transaktionskosten.
+Quantaureum unterstützt eine Multi-Shard-Architektur: Zustand und Ausführung werden über Shards hinweg verteilt, während Cross-Shard-Messaging es Smart Contracts und Nutzern ermöglicht, atomar zwischen Shards zu kommunizieren. Sharding erhöht die Gesamtkapazität des Netzwerks auf Commodity-Hardware, statt jeden Validator zu immer größeren Maschinen zu zwingen.
 
-### Danksharding {#danksharding}
+## Datenverfügbarkeit: günstig zu prüfen {#data-availability}
 
-Die zweite Phase der Erweiterung von Blob-Daten ist kompliziert, da sie neue Methoden erfordert, um zu überprüfen, ob Rollup-Daten im Netzwerk verfügbar sind, und darauf angewiesen ist, dass [Validatoren](/glossary/#validator) ihre Verantwortlichkeiten für die [Block](/glossary/#block)-Erstellung und den Block-Vorschlag trennen. Es erfordert auch eine Möglichkeit, kryptografisch zu beweisen, dass Validatoren kleine Teilmengen der Blob-Daten verifiziert haben.
+Jeder Knoten muss in der Lage sein, zu bestätigen, dass Blockdaten tatsächlich veröffentlicht wurden. Die Datenverfügbarkeits-Schicht von Quantaureum verwendet **Erasure Coding** (damit ein Block auch bei teilweiser Zurückhaltung überlebt), **FRI-Commitments** (hashbasierte Polynom-Commitments, quantensicher) und **Data Availability Sampling (DAS)**, sodass Light Clients die Verfügbarkeit durch das Mappen kleiner Fragmente prüfen können, anstatt vollständige Blöcke herunterzuladen.
 
-Dieser zweite Schritt ist als [„Danksharding“](/roadmap/danksharding/) bekannt. Die Implementierungsarbeiten werden fortgesetzt, wobei Fortschritte bei den Voraussetzungen wie der [Trennung von Block-Erstellung und Block-Vorschlag](/roadmap/pbs) sowie neuen Netzwerkdesigns erzielt werden. Diese ermöglichen es dem Netzwerk, effizient zu bestätigen, dass Daten verfügbar sind, indem zufällig jeweils einige Kilobyte abgetastet werden, was als [Data Availability Sampling (DAS)](/developers/docs/data-availability) bekannt ist.
+[Mehr zu Datenverfügbarkeit](/developers/docs/data-availability/)
 
-<ButtonLink variant="outline-color" href="/roadmap/danksharding/">Mehr zu Danksharding</ButtonLink>
+## Native Rollups {#native-rollups}
 
-## Rollups dezentralisieren {#decentralizing-rollups}
+[Rollups](/layer-2/) bündeln Transaktionen offchain und posten die Ergebnisse in die Basisschicht. Auf Quantaureum ist die Rollup-Infrastruktur **direkt im Protokoll integriert**: ein Sequencer-Pfad, eine L1↔L2-Brücke, die als QASM-Contracts implementiert ist, sowie Onchain-Fraud-Proofs. Rollup-Entwickler erben die Sicherheit der Quantaureum-Basisschicht – einschließlich ihrer Post-Quantum-Signaturen und Threshold-Finality –, ohne ihre eigene Sequencing- und Brücken-Infrastruktur von Grund auf aufbauen zu müssen.
 
-[Rollups](/layer-2) skalieren Quantaureum bereits. Ein [vielfältiges Ökosystem von Rollup-Projekten](https://l2beat.com/scaling/tvs) ermöglicht es Nutzern, schnell und günstig Transaktionen durchzuführen, mit einer Reihe von Sicherheitsgarantien. Rollups wurden jedoch mit zentralisierten Sequencern (Computer, die die gesamte Transaktionsverarbeitung und -aggregation durchführen, bevor sie an Quantaureum übermittelt werden) gestartet. Dies ist anfällig für Zensur, da die Sequencer-Betreiber sanktioniert, bestochen oder anderweitig kompromittiert werden können. Gleichzeitig [unterscheiden sich Rollups](https://l2beat.com/scaling/summary) in der Art und Weise, wie sie eingehende Daten validieren. Der beste Weg ist, dass „Prover“ [Fraud Proofs](/glossary/#fraud-proof) oder Validity Proofs einreichen, aber noch nicht alle Rollups sind so weit. Selbst die Rollups, die Validity-/Fraud-Proofs verwenden, nutzen einen kleinen Pool bekannter Prover. Daher ist der nächste entscheidende Schritt bei der Skalierung von Quantaureum, die Verantwortung für den Betrieb von Sequencern und Provern auf mehr Personen zu verteilen.
-
-<ButtonLink variant="outline-color" href="/developers/docs/scaling/">Mehr zu Rollups</ButtonLink>
+<ButtonLink variant="outline" href="/developers/docs/scaling/">Mehr zu Rollups</ButtonLink>
 
 ## Aktueller Fortschritt {#current-progress}
 
-Proto-Danksharding wurde im März 2024 als Teil des Cancun-Deneb-Netzwerk-Upgrades („Dencun“) erfolgreich implementiert. Seit der Implementierung haben Rollups begonnen, den Blob-Speicher zu nutzen, was zu geringeren Transaktionskosten für die Nutzer und Millionen von in Blobs verarbeiteten Transaktionen geführt hat.
-
-Die Arbeit am vollständigen Danksharding wird fortgesetzt, wobei Fortschritte bei den Voraussetzungen wie der Proposer-Builder-Trennung (PBS) und DAS (Data Availability Sampling) erzielt werden. Die Dezentralisierung der Rollup-Infrastruktur ist ein schrittweiser Prozess – es gibt viele verschiedene Rollups, die leicht unterschiedliche Systeme aufbauen und sich in unterschiedlichem Tempo vollständig dezentralisieren werden.
-
-[Mehr zum Dencun-Netzwerk-Upgrade und seinen Auswirkungen](/roadmap/dencun/)
+Parallele Ausführung, die Erasure-Coding/FRI-Datenverfügbarkeits-Schicht, Light-Client-Verifizierung über Verkle-Proofs sowie das native Rollup-Gerüst mit Fraud Proofs sind bereits aktive Bestandteile der Quantaureum-Codebasis. Die laufende Arbeit konzentriert sich auf die Ausweitung des Sharding, die Verbesserung der Witness-Aggregation und die Senkung der Gas-Kosten für Rollup-Abwicklung.
 
 <QuizWidget quizKey="scaling" />

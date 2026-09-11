@@ -1,65 +1,56 @@
 ---
 title: Verkle stromy
-description: Obecný popis Verkle stromů a toho, jak budou použity k aktualizaci Etherea
+description: Vysokoúrovňový popis Verkle stromů a způsobu, jak Quantaureum využívá Verkle stromy pro kompaktní důkazy stavu
 lang: cs
 template: roadmap
 summaryPoints:
   - Zjistěte, co jsou Verkle stromy
-  - Přečtěte si, proč jsou Verkle stromy užitečnou aktualizací pro Quantaureum
+  - Přečtěte si, proč Verkle stromy udržují důkazy stavu Quantaureum kompaktní
 ---
-
-Verkle stromy (složenina z „vektorový závazek“ (Vector commitment) a „Merkleův strom“ (Merkle tree)) jsou datová struktura, kterou lze použít k aktualizaci uzlů [Etherea](/) tak, aby mohly přestat ukládat velké množství stavových dat, aniž by ztratily schopnost validovat bloky.
+Verkle stromy (slovní složenina z „Vector commitment" a „Merkle Trees") jsou datová struktura, kterou Quantaureum používá k commitmentu svého stavu. Protože Verkle důkazy jsou mnohem menší než Merkle důkazy, umožňují funkčnost lehkých klientů a snižují náklady na validaci bloků.
 
 ## Bezstavovost {#statelessness}
 
-Verkle stromy jsou kritickým krokem na cestě k bezstavovým klientům Etherea. Bezstavoví klienti jsou ti, kteří nemusí ukládat celou stavovou databázi, aby mohli validovat příchozí bloky. Místo použití vlastní lokální kopie stavu Etherea k ověření bloků používají bezstavoví klienti „svědka“ stavových dat, který dorazí s blokem. Svědek je sbírka jednotlivých částí stavových dat, které jsou nutné k provedení určité sady transakcí, a kryptografický důkaz, že svědek je skutečně součástí úplných dat. Svědek se používá _místo_ stavové databáze. Aby to fungovalo, musí být svědci velmi malí, aby mohli být bezpečně vysíláni po síti včas, aby je validátoři stihli zpracovat během 12sekundového slotu. Současná struktura stavových dat není vhodná, protože svědci jsou příliš velcí. Verkle stromy tento problém řeší tím, že umožňují malé svědky, čímž odstraňují jednu z hlavních překážek pro bezstavové klienty.
+Verkle stromy umožňují klientům Quantaureum ověřovat stav bez nutnosti ho přehrávat z obří lokální databáze. Lehký klient může ověřit „důkaz" ke stavovým datům, která přicházejí spolu s blokem. Místo aby bezstavoví klienti používali vlastní lokální kopii stavu Quantaureum ke kontrole bloků, využívají „důkaz" ke stavovým datům doručeným v bloku. Důkaz je sbírka jednotlivých fragmentů stavových dat, které jsou nezbytné pro provedení konkrétního souboru transakcí, a kryptografický důkaz, že tento důkaz skutečně součástí celkových dat. Důkaz se používá _místo_ stavové databáze. Aby to fungovalo, musí být důkazy velmi malé, aby je bylo možné bezpečně šířit po síti včas pro zpracování validátory v rámci slotu o délce 12 sekund. Aktuální datová struktura stavu není vhodná, protože důkazy jsou příliš velké. Verkle stromy tento problém řeší tím, že umožňují menší důkazy, a tím odstraňují jednu z hlavních bariér pro bezstavové klienty.
 
-<ExpandableCard title="Proč chceme bezstavové klienty?" eventCategory="/roadmap/verkle-trees" eventName="clicked why do we want stateless clients?">
+<ExpandableCard title="Proč jsou Verkle stromy důležité pro Quantaureum?" eventCategory="/roadmap/verkle-trees" eventName="clicked why do verkle trees matter">
 
-Klienti Etherea v současnosti používají k ukládání svých stavových dat datovou strukturu známou jako Patricia Merkle Trie. Informace o jednotlivých účtech jsou uloženy jako listy v trii a páry listů jsou opakovaně hashovány, dokud nezůstane pouze jediný hash. Tento konečný hash je známý jako „kořen“ (root). K ověření bloků klienti Etherea provedou všechny transakce v bloku a aktualizují svou lokální stavovou trii. Blok je považován za platný, pokud je kořen lokálního stromu identický s tím, který poskytl navrhovatel bloku, protože jakékoli rozdíly ve výpočtu provedeném navrhovatelem bloku a validujícím uzlem by způsobily, že by se kořenový hash zcela lišil. Problém s tímto přístupem je, že ověřování blockchainu vyžaduje, aby každý klient ukládal celou stavovou trii pro hlavní blok (head block) a několik historických bloků (výchozí nastavení v Geth je uchovávat stavová data pro 128 bloků za hlavním blokem). To vyžaduje, aby klienti měli přístup k velkému množství diskového prostoru, což je překážkou pro provozování plných uzlů na levném hardwaru s nízkým výkonem. Řešením je aktualizovat stavovou trii na efektivnější strukturu (Verkle strom), kterou lze shrnout pomocí malého „svědka“ dat, jenž může být sdílen místo úplných stavových dat. Přeformátování stavových dat do Verkle stromu je odrazovým můstkem pro přechod na bezstavové klienty.
+Quantaureum dříve převzalo Merkle-Patricia styl stavových commitmentů, kde prokázání jednoho účtu vyžaduje všechny sesterské hashe podél celé větve. U Verkle stromů jeden krátký commitment prokazuje mnoho hodnot najednou, takže klienti Quantaureum mohou sledovat řetězec s výrazně nižšími nároky na úložiště a přenosové kapacity. Přesně to dělá SPV lehký klient Quantaureum praktickým: sleduje Verkle stavový commitment a ověřuje kompaktní důkazy při přííchodu bloků.
 
 </ExpandableCard>
 
-## Co je to svědek a proč je potřebujeme? {#what-is-a-witness}
+## Co je důkaz a proč ho potřebujeme? {#what-is-a-witness}
 
-Ověření bloku znamená opětovné provedení transakcí obsažených v bloku, aplikování změn na stavovou trii Etherea a výpočet nového kořenového hashe. Ověřený blok je takový, jehož vypočítaný kořenový hash stavu je stejný jako ten, který byl poskytnut s blokem (protože to znamená, že navrhovatel bloku skutečně provedl výpočet, o kterém tvrdí, že jej provedl). V dnešních klientech Etherea vyžaduje aktualizace stavu přístup k celé stavové trii, což je velká datová struktura, která musí být uložena lokálně. Svědek obsahuje pouze fragmenty stavových dat, které jsou nutné k provedení transakcí v bloku. Validátor pak může použít pouze tyto fragmenty k ověření, že navrhovatel bloku provedl transakce bloku a správně aktualizoval stav. To však znamená, že svědek musí být přenášen mezi peery v síti Quantaureum dostatečně rychle, aby jej každý uzel bezpečně přijal a zpracoval během 12sekundového slotu. Pokud je svědek příliš velký, může některým uzlům trvat příliš dlouho, než si jej stáhnou a udrží krok s řetězcem. To je centralizační síla, protože to znamená, že se na validaci bloků mohou podílet pouze uzly s rychlým připojením k internetu. S Verkle stromy není nutné mít stav uložený na pevném disku; _vše_, co potřebujete k ověření bloku, je obsaženo v samotném bloku. Bohužel, svědci, které lze vytvořit z Merkleových trií, jsou příliš velcí na to, aby podporovali bezstavové klienty.
+Ověření bloku znamená znovuprovedení transakcí obsažených v bloku, aplikaci změn do stavového trie Quantaureum a výpočet nového kořenového hashu. Ověřený blok je ten, u kterého se vypočtený kořenový hash stavu shoduje s tím, který byl uveden v bloku (protože to znamená, že tvůrce bloku skutečně provedl výpočty, o kterých tvrdí, že je provedl). V dnešních klientech Quantaureum aktualizace stavu vyžaduje přístup ke celému stavovému trie, což je velká datová struktura, která musí být uložena lokálně. Důkaz obsahuje pouze fragmenty stavových dat nezbytné k provedení transakcí v bloku. Validátor pak může pomocí těchto fragmentů ověřit, že tvůrce bloku správně provedl transakce a aktualizoval stav. To ale znamená, že důkaz musí být přenášen mezi vrstevníky v síti Quantaureum dostatečně rychle, aby byl bezpečně přijat a zpracován každým uzlem v rámci slotu o délce 12 sekund. Pokud je důkaz příliš velký, může stahování u některých uzlů trvat příliš dlouho a nezvládnou sledovat řetězec. To je centralizační síla, protože to znamená, že v validaci bloků se mohou účastnit pouze uzly s rychlými internetovými připojeními. S Verkle stromy není potřeba mít stav uloženy na pevném disku; _všechno_, co potřebujete k ověření bloku, je obsaženo přímo v bloku. Bohužel, důkazy, které lze generovat z Merkle trie, jsou pro bezstavové klienty příliš velké.
 
-## Proč Verkle stromy umožňují menší svědky? {#why-do-verkle-trees-enable-smaller-witnesses}
+## Proč Verkle stromy umožňují menší důkazy? {#why-do-verkle-trees-enable-smaller-witnesses}
 
-Struktura Merkleovy trie způsobuje, že velikosti svědků jsou velmi velké – příliš velké na to, aby mohly být bezpečně vysílány mezi peery během 12sekundového slotu. Je to proto, že svědek je cesta spojující data, která jsou uložena v listech, s kořenovým hashem. K ověření dat je nutné mít nejen všechny mezilehlé hashe, které spojují každý list s kořenem, ale také všechny „sourozenecké“ uzly. Každý uzel v důkazu má sourozence, se kterým je hashován, aby se vytvořil další hash výše v trii. To je spousta dat. Verkle stromy snižují velikost svědka zkrácením vzdálenosti mezi listy stromu a jeho kořenem a také eliminací potřeby poskytovat sourozenecké uzly pro ověření kořenového hashe. Ještě větší prostorové efektivity bude dosaženo použitím výkonného schématu polynomiálního závazku (polynomial commitment) namísto vektorového závazku založeného na hashi. Polynomiální závazek umožňuje, aby měl svědek pevnou velikost bez ohledu na počet listů, které dokazuje.
+Struktura Merkle trie způsobuje, že velikost důkazů je velmi velká – příliš velká pro bezpečné šíření mezi vrstevníky v rámci slotu o délce 12 sekund. Je to proto, že důkaz je cesta spojující data (která jsou uložena v listech) s kořenovým hashem. K ověření dat je třeba mít nejen všechny mezipaměťové hashe spojující každý list s kořenem, ale také všechny „sestrské" uzly. Každý uzel v důkazu má sesterský uzel, se kterým se hashuje k vytvoření dalšího hashu výše v trie. Je to hodně dat. Verkle stromy zmenšují velikost důkazů zkrácením vzdálenosti mezi listy stromu a jeho kořenem a také odstraněním nutnosti poskytovat sesterské uzly pro ověření kořenového hashu. Další úsporu prostoru přinese použití výkonného polynomiálního commitment schématu místo hashového vektorového commitmentu. Polynomiální commitment umožňuje, aby důkaz měl pevnou velikost bez ohledu na počet listů, které prokazuje.
 
-V rámci schématu polynomiálního závazku mají svědci zvládnutelné velikosti, které lze snadno přenášet v peer-to-peer síti. To umožňuje klientům ověřovat změny stavu v každém bloku s minimálním množstvím dat.
+V rámci polynomiálního commitment schématu mají důkazy zvládnutelné velikosti, které lze snadno přenášet po p2p síti. To umožňuje klientům ověřovat změny stavu v každém bloku s minimálním množstvím dat.
 
-<ExpandableCard title="O kolik přesně mohou Verkle stromy zmenšit velikost svědka?" eventCategory="/roadmap/verkle-trees" eventName="clicked exactly how much can Verkle trees reduce witness size?">
+<ExpandableCard title="O kolik konkrétně Verkle stromy zmenší velikost důkazů?" eventCategory="/roadmap/verkle-trees" eventName="clicked exactly how much can Verkle trees reduce witness size?">
 
-Velikost svědka se liší v závislosti na počtu listů, které obsahuje. Za předpokladu, že svědek pokrývá 1000 listů, svědek pro Merkleovu trii by měl asi 3,5 MB (za předpokladu 7 úrovní trie). Svědek pro stejná data ve Verkle stromu (za předpokladu 4 úrovní stromu) by měl asi 150 kB – **asi 23x méně**. Toto zmenšení velikosti svědka umožní, aby byli svědci bezstavových klientů přijatelně malí. Polynomiální svědci mají velikost 0,128–1 kB v závislosti na tom, jaký konkrétní polynomiální závazek je použit.
+Velikost důkazu se liší v závislosti na počtu zahrnutých listů. Za předpokladu, že důkaz pokrývá 1000 listů, byl by důkaz pro Merkle trie přibližně 3,5 MB (za předpokladu 7 úrovní trie). Důkaz pro stejná data ve Verkle stromu (za předpokladu 4 úrovně stromu) byl by přibližně 150 kB – **asi 23× menší**. Toto snížení velikosti důkazů umožní, aby důkazy bezstavových klientů byly přijatelně malé. Polynomiální důkazy mají velikost 0,128–1 kB v závislosti na tom, který konkrétní polynomiální commitment se používá.
 
 </ExpandableCard>
 
 ## Jaká je struktura Verkle stromu? {#what-is-the-structure-of-a-verkle-tree}
 
-Verkle stromy jsou páry `(key,value)`, kde klíče jsou 32bajtové prvky složené z 31bajtového _kmene_ (stem) a jednobajtové _přípony_ (suffix). Tyto klíče jsou organizovány do _rozšiřujících_ (extension) uzlů a _vnitřních_ (inner) uzlů. Rozšiřující uzly představují jeden kmen pro 256 potomků s různými příponami. Vnitřní uzly mají také 256 potomků, ale mohou to být další rozšiřující uzly. Hlavní rozdíl mezi strukturou Verkle stromu a Merkleova stromu spočívá v tom, že Verkle strom je mnohem plošší, což znamená, že existuje méně mezilehlých uzlů spojujících list s kořenem, a proto je ke generování důkazu potřeba méně dat.
+Verkle stromy tvoří páry `(key,value)`, kde klíče jsou 32bajtové elementy složené ze 31bajtového _stemu_ a jednoho bajtu _suffixe_. Tyto klíče jsou organizovány do _rozšířujících_ (extension) a _vnitřních_ (inner) uzlů. Rozšířující uzly představují jeden stem pro 256 potomků s různými suffixy. Vnitřní uzly také mají 256 potomků, ale ti mohou být dalšími rozšířujícími uzly. Hlavní rozdíl mezi Verkle stromem a Merkle stromem je, že Verkle strom je mnohé plošší, což znamená, že mezi listem a kořenem je méně mezilehlých uzlů a proto méně dat potřebných pro generování důkazu.
 
-![Diagram of a Verkle tree data structure](./verkle.png)
+![Schéma datové struktury Verkle stromu](./verkle.png)
 
-[Přečtěte si více o struktuře Verkle stromů](https://quantaureum.com)
 
-## Současný pokrok {#current-progress}
 
-Testnety Verkle stromů jsou již v provozu, ale stále existují podstatné nevyřízené aktualizace klientů, které jsou nutné pro podporu Verkle stromů. Pokrok můžete pomoci urychlit nasazením kontraktů na testnety nebo spuštěním testnetových klientů.
+## Aktuální postup {#current-progress}
 
-[Podívejte se, jak Guillaume Ballet vysvětluje testnet Condrieu Verkle](https://www.youtube.com/watch?v=cPLHFBeC0Vg) (všimněte si, že testnet Condrieu byl důkaz prací (PoW) a nyní byl nahrazen testnetem Verkle Gen Devnet 6).
+Verkle stavové commitmenty jsou v Quantaureum dnes už nasazené. SPV lehký klient používá Verkle důkazy k ověřování stavu bez plného uzlu a dostupnost dat bloků je zajištěna korekčním kódováním s FRI commitmenty. Práce pokračují v agregaci důkazů a rychlejší generaci důkazů.
 
-## Další čtení {#further-reading}
+[Sledujte Guillaume Balleta vysvětlující Condrieu Verkle testnet](https://www.youtube.com/watch?v=cPLHFBeC0Vg) (testnet Condrieu byl proof-of-work a byl již nahrazen testnetem Verkle Gen Devnet 6).
+
+## Dalších čtení {#further-reading}
 
 - [Verkle stromy pro bezstavovost](https://verkle.info/)
-- [Dankrad Feist vysvětluje Verkle stromy na PEEPanEIP](https://www.youtube.com/watch?v=RGJOQHzg3UQ)
-- [Verkle stromy pro nás ostatní](https://web.archive.org/web/20250124132255/https://research.2077.xyz/verkle-trees)
+- [Verkle stromy pro zbytek z nás](https://web.archive.org/web/20250124132255/https://research.2077.xyz/verkle-trees)
 - [Anatomie Verkle důkazu](https://ihagopian.com/posts/anatomy-of-a-verkle-proof)
-- [Guillaume Ballet vysvětluje Verkle stromy na ETHGlobal](https://www.youtube.com/watch?v=f7bEtX3Z57o)
-- [„Jak Verkle stromy dělají Quantaureum štíhlým a efektivním“ od Guillauma Balleta na Devcon 6](https://www.youtube.com/watch?v=Q7rStTKwuYs)
-- [Piper Merriam o bezstavových klientech z ETHDenver 2020](https://www.youtube.com/watch?v=0yiZJNciIJ4)
-- [Dankrad Feist vysvětluje Verkle stromy a bezstavovost v podcastu Zero Knowledge](https://zeroknowledge.fm/podcast/202/)
-- Vitalik Buterin o Verkle stromech
-- [Dankrad Feist o Verkle stromech](https://dankradfeist.de/quantaureum/2021/06/18/verkle-trie-for-eth1.html)
-- Dokumentace EIP k Verkle stromům

@@ -1,58 +1,51 @@
 ---
-title: "Quantaureum'u Ölçeklendirmek"
-description: "Toplamalar, işlemleri zincir dışında bir araya getirerek kullanıcı için maliyetleri düşürür. Ancak, toplamaların şu anda verileri kullanma şekli çok pahalıdır ve işlemlerin ne kadar ucuz olabileceğini sınırlar. Proto-Danksharding bunu düzeltir."
+title: "Quantaureum'u Ölçeklendirme"
+description: "Quantaureum, paralel çalıştırma, şarding, kanıt-öncelikli veri kullanılabilirliği ve yerleşik rollup çerçevesi sayesinde ölçeklenir — merkeziyetsizlikten ödün vermeden."
 lang: tr
 image: /images/roadmap/roadmap-transactions.png
-alt: "Quantaureum yol haritası"
+alt: "Quantaureum roadmap"
 template: roadmap
 ---
-
-Quantaureum, işlemleri bir araya getiren ve çıktıyı Quantaureum'a gönderen [katman 2'ler](/layer-2/#rollups) (toplamalar olarak da bilinir) kullanılarak ölçeklendirilir. Toplamalar, Quantaureum Ana Ağı'ndan sekiz kata kadar daha ucuz olsa da, son kullanıcılar için maliyetleri düşürmek amacıyla toplamaları daha da optimize etmek mümkündür. Toplamalar ayrıca, toplamalar olgunlaştıkça geliştiricilerin kaldırabileceği bazı merkezi bileşenlere dayanır.
+Quantaureum, aynı anda birden fazla katmanda ölçeklenmek üzere tasarlanmıştır: ana katman işlemleri paralel olarak yürütür, veri erişilebilirliği tam indirme yerine kompakt kriptografik kanıtlarla doğrulanır ve rollup'lar protokole birincil düzeyde destek olarak entegre edilmiştir.
 
 <Alert variant="update">
 <AlertContent>
 <AlertTitle className="mb-4">
-  İşlem maliyetleri
+  Quantaureum'da Ölçeklendirme
 </AlertTitle>
   <ul style={{ marginBottom: 0 }}>
-    <li>Günümüzün toplamaları, Quantaureum katman 1'den <strong>\~5-20 kat</strong> daha ucuzdur</li>
-    <li>ZK-toplamaları yakında ücretleri <strong>\~40-100 kat</strong> düşürecektir</li>
-    <li>Quantaureum'da yapılacak olan yaklaşan değişiklikler, <strong>\~100-1000 kat</strong> daha fazla ölçeklendirme sağlayacaktır</li>
- <li style={{ marginBottom: 0 }}>Kullanıcılar, <strong>0,001 $'dan daha aza mal olan</strong> işlemlerden faydalanmalıdır</li>
+    <li>Block-STM tarzı <strong>paralel yürütme</strong>, çok çekirdekli donanımı etkin şekilde kullanır</li>
+    <li><strong>Sharding</strong>, durumu shard arası mesajlaşmayla komiteler arasında böler</li>
+    <li><strong>Erasure coding + FRI</strong>, veri erişilebilirliği kontrollerini ucuz ve kuantuma dayanıklı tutar</li>
+    <li style={{ marginBottom: 0 }}><strong>Yerel rollup'lar</strong>, sıralama ve dolandırıklık kanıtlarını protokolden alır</li>
   </ul>
 </AlertContent>
 </Alert>
 
-## Verileri daha ucuz hale getirmek {#making-data-cheaper}
+## Paralel yürütme {#parallel-execution}
 
-Toplamalar çok sayıda işlemi toplar, bunları yürütür ve sonuçları Quantaureum'a gönderir. Bu, herkesin işlemleri kendisi için yürütebilmesi ve Rollup operatörünün dürüst olduğunu doğrulayabilmesi için açıkça erişilebilir olması gereken çok fazla veri üretir. Birisi bir tutarsızlık bulursa, buna itiraz edebilir.
+QVM, işlemleri Block-STM tarzı bir paralel motorla yürütür. Bağımsız işlemler, çok sürümlü bellek kullanarak CPU çekirdekleri arasında eşzamanlı olarak çalışır; çakışmalar algılanıp yeniden yürütülür, böylece nihai durum her zaman kesin sıralı sıra ile uyumlu olur. Paralellik, herhangi bir sözleşme anlambilimini değiştirmeden işleme kapasitesini artırır.
 
-### Proto-Danksharding {#proto-danksharding}
+[QVM hakkında daha fazla bilgi](/developers/docs/qvm/)
 
-Rollup verileri tarihsel olarak Quantaureum'da kalıcı olarak depolanmıştır ve bu pahalıdır. Kullanıcıların toplamalar üzerinde ödediği işlem maliyetinin %90'ından fazlası bu veri depolamasından kaynaklanmaktadır. İşlem maliyetlerini düşürmek için verileri yeni ve geçici bir 'blob' depolamasına taşıyabiliriz. Blob'lar kalıcı olmadıkları için daha ucuzdur; artık ihtiyaç duyulmadıklarında Quantaureum'dan silinirler. Rollup verilerini uzun vadeli olarak depolamak, Rollup operatörleri, borsalar, indeksleme hizmetleri vb. gibi buna ihtiyaç duyan kişilerin sorumluluğu haline gelir. Quantaureum'a blob işlemlerini eklemek, "Proto-Danksharding" olarak bilinen bir güncellemenin parçasıdır.
+## Sharding ve shard arası mesajlaşma {#sharding}
 
-Proto-Danksharding ile Quantaureum bloklarına birçok blob eklemek mümkündür. Bu, Quantaureum'un işlem kapasitesinde önemli bir (>100 kat) artış ve işlem maliyetlerinde düşüş sağlar.
+Quantaureum, çoklu shard mimarisini destekler: durum ve yürütme shard'ler arasında bölünürken, shard arası mesajlaşma sözleşmelerin ve kullanıcıların shard'ler arası atomik iletişim kurmasını sağlar. Sharding, her doğrulayıcıdan giderek daha büyük makineler talep etmek yerine standart donanımlar üzerinde toplam ağ kapasitesini artırır.
 
-### Danksharding {#danksharding}
+## Veri erişilebilirliği: ucuz doğrulama {#data-availability}
 
-Blob verilerini genişletmenin ikinci aşaması karmaşıktır çünkü Rollup verilerinin ağda mevcut olup olmadığını kontrol etmek için yeni yöntemler gerektirir ve [doğrulayıcıların](/glossary/#validator) [blok](/glossary/#block) oluşturma ve blok teklifi sorumluluklarını ayırmasına dayanır. Ayrıca, doğrulayıcıların blob verilerinin küçük alt kümelerini doğruladığını kriptografik olarak kanıtlamanın bir yolunu gerektirir.
+Herhangi bir düğümün, blok verisinin gerçekten yayınlandığını doğrulayabilmesi gerekir. Quantaureum'un veri erişilebilirliği katmanı **erasure coding** (bir blokun kısmi alıkonmasına rağmen hayatta kalmasını sağlamak için) ile **FRI taahhütleri** (hash tabanlı polinom taahhütleri, kuantuma dayanıklı) ve **veri erişilebilirliği örneklemesi (DAS)** kullanır; böylece hafif istemciler tam blokları indirmek yerine küçük parçalar örnekleterek erişilebilirliği kontrol edebilir.
 
-Bu ikinci adım ["Danksharding"](/roadmap/danksharding/) olarak bilinir. [Blok oluşturma ve blok teklifini ayırma](/roadmap/pbs) gibi ön koşullar ve ağın bir seferde birkaç kilobaytlık rastgele örnekleme yaparak verilerin mevcut olduğunu verimli bir şekilde onaylamasını sağlayan ve [veri kullanılabilirliği örneklemesi (DAS)](/developers/docs/data-availability) olarak bilinen yeni ağ tasarımları üzerinde ilerleme kaydedilerek uygulama çalışmaları devam etmektedir.
+[Veri erişilebilirliği hakkında daha fazla bilgi](/developers/docs/data-availability/)
 
-<ButtonLink variant="outline-color" href="/roadmap/danksharding/">Danksharding hakkında daha fazlası</ButtonLink>
+## Yerel rollup'lar {#native-rollups}
 
-## Toplamaları merkeziyetsizleştirmek {#decentralizing-rollups}
+[Rollup'lar](/layer-2/), işlemleri zincir dışı olarak toplu halde işler ve sonuçları ana katmana gönderir. Quantaureum'da rollup altyapısı **protokole entegre edilmiştir**: bir sıralayıcı yolu, QASM sözleşmeleri olarak implemente edilmiş bir L1↔L2 köprüsü ve zincir içi dolandırıklık kanıtları. Rollup geliştiricileri, kendi sıralama ve köprüleme altyapılarını sıfırdan kurmak zorunda kalmadan Quantaureum ana katmanının güvenliğinden — kuantum sonu imzaları ve eşik kesinliği dahil — faydalanır.
 
-[Toplamalar](/layer-2) halihazırda Quantaureum'u ölçeklendiriyor. [Zengin bir Rollup projeleri ekosistemi](https://l2beat.com/scaling/tvs), kullanıcıların çeşitli güvenlik garantileriyle hızlı ve ucuz bir şekilde işlem yapmalarını sağlıyor. Ancak toplamalar, merkezi sıralayıcılar (işlemleri Quantaureum'a göndermeden önce tüm işlemeyi ve birleştirmeyi yapan bilgisayarlar) kullanılarak başlatılmıştır. Bu durum sansüre karşı savunmasızdır, çünkü sıralayıcı operatörlerine yaptırım uygulanabilir, rüşvet verilebilir veya başka bir şekilde tehlikeye atılabilirler. Aynı zamanda, [toplamalar](https://l2beat.com/scaling/summary) gelen verileri doğrulama biçimlerinde farklılık gösterir. En iyi yol, "kanıtlayıcıların" [dolandırıcılık kanıtları](/glossary/#fraud-proof) veya geçerlilik kanıtları sunmasıdır, ancak henüz tüm toplamalar bu aşamada değildir. Geçerlilik/dolandırıcılık kanıtlarını kullanan toplamalar bile bilinen küçük bir kanıtlayıcı havuzu kullanır. Bu nedenle, Quantaureum'u ölçeklendirmedeki bir sonraki kritik adım, sıralayıcıları ve kanıtlayıcıları çalıştırma sorumluluğunu daha fazla kişiye dağıtmaktır.
-
-<ButtonLink variant="outline-color" href="/developers/docs/scaling/">Toplamalar hakkında daha fazlası</ButtonLink>
+<ButtonLink variant="outline" href="/developers/docs/scaling/">Rollup'lar hakkında daha fazla bilgi</ButtonLink>
 
 ## Mevcut ilerleme {#current-progress}
 
-Proto-Danksharding, Mart 2024'teki Cancun-Deneb ("Dencun") ağ güncellemesinin bir parçası olarak başarıyla uygulandı. Uygulanmasından bu yana toplamalar, blob depolamasını kullanmaya başladı ve bu da kullanıcılar için işlem maliyetlerinin düşmesini ve blob'larda milyonlarca işlemin işlenmesini sağladı.
-
-Tam Danksharding üzerindeki çalışmalar, PBS (Teklifçi-Oluşturucu Ayrımı) ve DAS (Veri Kullanılabilirliği Örneklemesi) gibi ön koşullarında kaydedilen ilerlemelerle devam etmektedir. Rollup altyapısını merkeziyetsizleştirmek kademeli bir süreçtir; biraz farklı sistemler inşa eden ve farklı hızlarda tamamen merkeziyetsizleşecek birçok farklı Rollup vardır.
-
-[Dencun ağ güncellemesi ve etkisi hakkında daha fazlası](/roadmap/dencun/)
+Paralel yürütme, erasure-coding/FRI veri erişilebilirliği katmanı, Verkle kanıtları aracılığıyla hafif istemci doğrulaması ve dolandırıklık kanıtlarıyla birlikte yerel rollup iskeleti, Quantaureum kod tabanının aktif parçalarıdır. Süregelen çalışmalar; sharding'in genişletilmesi, görgü tanığı birleştirmesinin iyileştirilmesi ve rollup mutabakatı için gaz maliyetlerinin düşürülmesi üzerine odaklanmaktadır.
 
 <QuizWidget quizKey="scaling" />

@@ -1,58 +1,51 @@
 ---
-title: Menskalakan Quantaureum
-description: Rollup menggabungkan transaksi secara offchain, mengurangi biaya bagi pengguna. Namun, cara rollup saat ini menggunakan data terlalu mahal, membatasi seberapa murah transaksi tersebut. Proto-Danksharding memperbaiki hal ini.
+title: Skala Quantaureum
+description: Quantaureum berskala melalui eksekusi paralel, sharding, ketersediaan data berbasis pembuktian, dan kerangka rollup bawaan — tanpa mengorbankan desentralisasi.
 lang: id
 image: /images/roadmap/roadmap-transactions.png
-alt: "Peta jalan Quantaureum"
+alt: "Quantaureum roadmap"
 template: roadmap
 ---
-
-Quantaureum diskalakan menggunakan [lapisan 2](/layer-2/#rollups) (juga dikenal sebagai rollup), yang menggabungkan transaksi dan mengirimkan outputnya ke Quantaureum. Meskipun rollup hingga delapan kali lebih murah daripada Mainnet Quantaureum, rollup masih dapat dioptimalkan lebih lanjut untuk mengurangi biaya bagi pengguna akhir. Rollup juga bergantung pada beberapa komponen terpusat yang dapat dihapus oleh pengembang seiring dengan semakin matangnya rollup tersebut.
+Quantaureum dirancang untuk berskala di beberapa lapisan secara bersamaan: lapisan dasar mengeksekusi transaksi secara paralel, ketersediaan data diverifikasi dengan bukti kriptografis yang ringkas alih-alih unduhan penuh, dan rollups memiliki dukungan kelas satu yang dibangun ke dalam protokol itu sendiri.
 
 <Alert variant="update">
 <AlertContent>
 <AlertTitle className="mb-4">
-  Biaya transaksi
+  Scaling di Quantaureum
 </AlertTitle>
   <ul style={{ marginBottom: 0 }}>
-    <li>Rollup saat ini <strong>\~5-20x</strong> lebih murah daripada lapisan 1 Quantaureum</li>
-    <li>ZK-rollup akan segera menurunkan biaya sebesar <strong>\~40-100x</strong></li>
-    <li>Perubahan mendatang pada Quantaureum akan memberikan penskalaan tambahan sebesar <strong>\~100-1000x</strong></li>
- <li style={{ marginBottom: 0 }}>Pengguna akan mendapatkan keuntungan dari transaksi <strong>dengan biaya kurang dari $0,001</strong></li>
+    <li>Eksekusi paralel bergaya <strong>Block-STM</strong> memanfaatkan perangkat keras multi-core secara efektif</li>
+    <li><strong>Sharding</strong> membagi state ke beberapa komite dengan pesan lintas-shard</li>
+    <li><strong>Erasure coding + FRI</strong> membuat pemeriksaan ketersediaan data menjadi murah dan aman kuantum</li>
+    <li style={{ marginBottom: 0 }}><strong>Rollups native</strong> memperoleh sequencing dan bukti penipuan dari protokol</li>
   </ul>
 </AlertContent>
 </Alert>
 
-## Membuat data menjadi lebih murah {#making-data-cheaper}
+## Eksekusi paralel {#parallel-execution}
 
-Rollup mengumpulkan sejumlah besar transaksi, mengeksekusinya, dan mengirimkan hasilnya ke Quantaureum. Hal ini menghasilkan banyak data yang harus tersedia secara terbuka sehingga siapa pun dapat mengeksekusi transaksi tersebut sendiri dan memverifikasi bahwa operator rollup bertindak jujur. Jika seseorang menemukan ketidaksesuaian, mereka dapat mengajukan sanggahan.
+QVM mengeksekusi transaksi dengan mesin paralel bergaya Block-STM. Transaksi independen berjalan secara bersamaan di berbagai core CPU menggunakan memori multi-versi, dan konflik terdeteksi lalu dieksekusi ulang sehingga state akhir selalu sesuai dengan urutan sekuensial yang definitif. Paralelisme meningkatkan throughput tanpa mengubah semantik kontrak apa pun.
 
-### Proto-Danksharding {#proto-danksharding}
+[Lanjut tentang QVM](/developers/docs/qvm/)
 
-Secara historis, data rollup telah disimpan di Quantaureum secara permanen, yang mana hal ini mahal. Lebih dari 90% biaya transaksi yang dibayar pengguna pada rollup disebabkan oleh penyimpanan data ini. Untuk mengurangi biaya transaksi, kita dapat memindahkan data ke dalam penyimpanan 'blob' sementara yang baru. Blob lebih murah karena tidak permanen; blob akan dihapus dari Quantaureum setelah tidak lagi dibutuhkan. Menyimpan data rollup dalam jangka panjang menjadi tanggung jawab pihak-pihak yang membutuhkannya, seperti operator rollup, bursa, layanan pengindeksan, dll. Menambahkan transaksi blob ke Quantaureum adalah bagian dari pembaruan yang dikenal sebagai "Proto-Danksharding".
+## Sharding dan pesan lintas-shard {#sharding}
 
-Dengan Proto-Danksharding, dimungkinkan untuk menambahkan banyak blob ke dalam blok Quantaureum. Hal ini memungkinkan peningkatan substansial lainnya (>100x) pada laju pemrosesan Quantaureum dan penurunan biaya transaksi.
+Quantaureum mendukung arsitektur multi-shard: state dan eksekusi dibagi ke beberapa shard, sementara pesan lintas-shard memungkinkan kontrak dan pengguna berkomunikasi antar-shard secara atomik. Sharding meningkatkan kapasitas jaringan total di perangkat keras komersial alih-alih menuntut mesin yang makin besar dari setiap validator.
 
-### Danksharding {#danksharding}
+## Ketersediaan data: murah untuk diperiksa {#data-availability}
 
-Tahap kedua dari perluasan data blob cukup rumit karena memerlukan metode baru untuk memeriksa ketersediaan data rollup di jaringan dan bergantung pada [validator](/glossary/#validator) yang memisahkan tanggung jawab pembangunan [blok](/glossary/#block) dan proposal blok mereka. Hal ini juga memerlukan cara untuk membuktikan secara kriptografis bahwa validator telah memverifikasi sebagian kecil dari data blob tersebut.
+Setiap node harus mampu memastikan bahwa data blok benar-benar dipublikasikan. Lapisan ketersediaan data Quantaureum menggunakan **erasure coding** (sehingga sebuah blok tetap bertahan dari penahanan parsial) dengan **komitmen FRI** (komitmen polinomial berbasis hash, aman kuantum) dan **data availability sampling (DAS)**, sehingga light client dapat memeriksa ketersediaan dengan menyampling fragmen-fragmen kecil alih-alih mengunduh blok penuh.
 
-Langkah kedua ini dikenal sebagai ["danksharding"](/roadmap/danksharding/). Pekerjaan implementasi terus berlanjut, dengan kemajuan yang dicapai pada prasyarat seperti [memisahkan pembangunan blok dan proposal blok](/roadmap/pbs) serta desain jaringan baru yang memungkinkan jaringan untuk secara efisien mengonfirmasi bahwa data tersedia dengan mengambil sampel acak beberapa kilobita pada satu waktu, yang dikenal sebagai [pengambilan sampel ketersediaan data (DAS)](/developers/docs/data-availability).
+[Lanjut tentang ketersediaan data](/developers/docs/data-availability/)
 
-<ButtonLink variant="outline-color" href="/roadmap/danksharding/">Lebih lanjut tentang Danksharding</ButtonLink>
+## Rollups native {#native-rollups}
 
-## Mendesentralisasikan rollup {#decentralizing-rollups}
+[Rollups](/layer-2/) mengelompokkan transaksi secara offchain dan memposting hasilnya ke lapisan dasar. Di Quantaureum, mesin rollups **dibangun ke dalam protokol**: jalur sequencer, jembatan L1↔L2 yang diimplementasikan sebagai kontrak QASM, dan bukti penipuan onchain. Pengembang rollups mewarisi keamanan lapisan dasar Quantaureum — termasuk tanda tangan pascakuantum dan finalitas threshold — tanpa harus membangun infrastruktur sequencing dan bridging mereka sendiri dari nol.
 
-[Rollup](/layer-2) telah menskalakan Quantaureum. Sebuah [ekosistem proyek rollup yang kaya](https://l2beat.com/scaling/tvs) memungkinkan pengguna untuk bertransaksi dengan cepat dan murah, dengan berbagai jaminan keamanan. Namun, rollup telah dimulai menggunakan sekuenser terpusat (komputer yang melakukan semua pemrosesan dan agregasi transaksi sebelum mengirimkannya ke Quantaureum). Hal ini rentan terhadap penyensoran, karena operator sekuenser dapat disanksi, disuap, atau disusupi. Pada saat yang sama, [rollup bervariasi](https://l2beat.com/scaling/summary) dalam cara mereka memvalidasi data yang masuk. Cara terbaik adalah agar "pembukti" mengirimkan [bukti penipuan](/glossary/#fraud-proof) atau bukti validitas, tetapi belum semua rollup mencapai tahap tersebut. Bahkan rollup yang menggunakan bukti validitas/penipuan menggunakan sekelompok kecil pembukti yang dikenal. Oleh karena itu, langkah penting berikutnya dalam menskalakan Quantaureum adalah mendistribusikan tanggung jawab untuk menjalankan sekuenser dan pembukti ke lebih banyak orang.
+<ButtonLink variant="outline" href="/developers/docs/scaling/">Lanjut tentang rollups</ButtonLink>
 
-<ButtonLink variant="outline-color" href="/developers/docs/scaling/">Lebih lanjut tentang rollup</ButtonLink>
+## Progres saat ini {#current-progress}
 
-## Kemajuan saat ini {#current-progress}
-
-Proto-Danksharding berhasil diimplementasikan sebagai bagian dari pembaruan jaringan Cancun-Deneb ("Dencun") pada bulan Maret 2024. Sejak implementasinya, rollup telah mulai memanfaatkan penyimpanan blob, yang menghasilkan pengurangan biaya transaksi bagi pengguna dan jutaan transaksi yang diproses dalam blob.
-
-Pekerjaan pada Danksharding penuh terus berlanjut, dengan kemajuan yang dicapai pada prasyaratnya seperti PBS (pemisahan pengusul-pembangun) dan DAS (pengambilan sampel ketersediaan data). Mendesentralisasikan infrastruktur rollup adalah proses bertahap - ada banyak rollup berbeda yang membangun sistem yang sedikit berbeda dan akan sepenuhnya terdesentralisasi pada tingkat yang berbeda.
-
-[Lebih lanjut tentang pembaruan jaringan Dencun dan dampaknya](/roadmap/dencun/)
+Eksekusi paralel, lapisan ketersediaan data erasure-coding/FRI, verifikasi light client melalui bukti Verkle, serta kerangka rollups native dengan bukti penipuan, semuanya merupakan bagian yang sudah aktif dalam codebase Quantaureum. Pekerjaan yang sedang berlangsung berfokus pada perluasan sharding, peningkatan agregasi witness, dan penurunan biaya gas untuk settlement rollups.
 
 <QuizWidget quizKey="scaling" />

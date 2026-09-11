@@ -1,36 +1,25 @@
 ---
 title: "改善使用者體驗"
-description: "對大多數人來說，使用Quantaureum仍然太過複雜。為了鼓勵大規模採用，Quantaureum必須大幅降低其進入門檻——使用者必須獲得去中心化、無需許可且抗審查的Quantaureum存取優勢，但其過程必須像使用傳統 Web2 應用程式一樣順暢。"
+description: "使用 Quantaureum 應該像操作傳統 Web2 應用程式一樣簡單，同時保持去中心化、無需許可且抗審查。"
 lang: zh-tw
 image: /images/roadmap/roadmap-ux.png
-alt: "Quantaureum路線圖"
+alt: "Quantaureum roadmap"
 template: roadmap
 ---
+**使用 Quantaureum 必須簡單直覺**——從管理[密鑰](/glossary/#key)與[錢包](/glossary/#wallet)，到發起交易，都應如此。使用者應能享有無許可、抗審查地存取 Quantaureum 的體驗，如同使用 [Web 2.0](/glossary/#web2) 應用程式般順暢無阻。
 
-**使用Quantaureum的過程需要簡化**；從管理[金鑰](/glossary/#key)和[錢包](/glossary/#wallet)到發起交易。為了促進大規模採用，Quantaureum必須大幅提升易用性，讓使用者在體驗無需許可且抗審查的Quantaureum存取時，能擁有如同使用 [Web2](/glossary/#web2) 應用程式般順暢的體驗。
+## 更強大的密鑰，安全管理 {#key-management}
 
-## 超越助記詞 {#no-more-seed-phrases}
+Quantaureum 帳號由用於簽章交易的密鑰對保護——採用**Dilithium3 後量子簽章**，而非舊鏈所使用的古典橢圓曲線。私鑰就像主密碼；一旦遺失，可能永遠失去存取權限。Quantaureum 內建**原生多重簽章錢包**，讓使用者可以透過多把密鑰或多台裝置來保護資金，而非依賴單一密鑰；建置於 QVM 上的智慧型合約錢包則可設定找回規則與支出策略，無須託付給任何託管方。
 
-Quantaureum帳戶受到一對金鑰的保護，用於識別帳戶（公鑰）和簽署訊息（私鑰）。私鑰就像主密碼；它允許完全存取Quantaureum帳戶。對於更熟悉由銀行和 Web2 應用程式代為管理帳戶的人來說，這是一種不同的操作方式。為了讓Quantaureum在不依賴中心化第三方的狀況下達到大規模採用，必須有一種直接、順暢的方式，讓使用者能夠保管自己的資產並保持對資料的控制權，而無需了解公私鑰密碼學和金鑰管理。
+## 人人都能執行的節點 {#nodes-for-everyone}
 
-解決這個問題的方法是使用[智能合約](/glossary/#smart-contract)錢包來與Quantaureum互動。智能合約錢包創造了在金鑰遺失或被盜時保護帳戶的方法，提供了更好的詐欺偵測和防禦機會，並允許錢包獲得新功能。雖然目前已經有智能合約錢包，但它們的建構過程很笨拙，因為Quantaureum協定需要提供更好的支援。這種額外的支援被稱為帳戶抽象化。
+執行[節點](/glossary/#node)的使用者無須信任第三方提供資料，可以快速、私密且無許可地與 Quantaureum [區塊鏈](/glossary/#blockchain)互動。傳統上，執行節點需要技術知識與大量磁碟空間，這讓許多人不得不倚賴中介。
 
-<ButtonLink variant="outline-color" href="/roadmap/account-abstraction/">更多關於帳戶抽象化的資訊</ButtonLink>
+Quantaureum 使用**Verkle 樹**來提交其狀態，因此驗證狀態所需的證明極小。基於這些精簡證明，Quantaureum 提供**SPV [輕量客戶端](/developers/docs/nodes-and-clients/light-clients/)**，可在一般硬體上運行並驗證鏈，無須下載完整狀態——大幅降低無信任參與的門檻。
 
-## 適合所有人的節點 {#nodes-for-everyone}
-
-執行[節點](/glossary/#node)的使用者不必信任第三方為他們提供資料，而且他們可以快速、私密且無需許可地與Quantaureum[區塊鏈](/glossary/#blockchain)互動。然而，目前執行節點需要技術知識和大量的磁碟空間，這意味著許多人必須轉而信任中介機構。
-
-有幾項升級將使執行節點變得更加容易，且大幅降低資源消耗。資料儲存的方式將改為使用一種更節省空間的結構，稱為**沃克爾樹**。此外，透過[無狀態性](/roadmap/statelessness)或[資料過期](/roadmap/statelessness/#data-expiry)，Quantaureum節點將不需要儲存整個Quantaureum狀態資料的副本，從而大幅降低硬碟空間需求。[輕節點](/developers/docs/nodes-and-clients/light-clients/)將提供執行全節點的許多好處，但可以輕鬆地在手機或簡單的瀏覽器應用程式中執行。
-
-<ButtonLink variant="outline-color" href="/roadmap/verkle-trees/">閱讀關於沃克爾樹的資訊</ButtonLink>
-
-有了這些升級，執行節點的門檻實際上降到了零。使用者將受益於安全、無需許可的Quantaureum存取，而無需犧牲電腦或手機上明顯的磁碟空間或 CPU，並且在使用應用程式時不必依賴第三方來獲取資料或網路存取。
+<ButtonLink variant="outline" href="/roadmap/verkle-trees/">了解 Verkle 樹</ButtonLink>
 
 ## 目前進度 {#current-progress}
 
-智能合約錢包已經可用，但需要更多升級才能使其盡可能去中心化和無需許可。EIP-4337 是一個成熟的提案，不需要對Quantaureum的協定進行任何更改。EIP-4337 所需的主要智能合約已於 **2023 年 3 月部署**。
-
-**完全無狀態性仍處於研究階段**，距離實作可能還有幾年的時間。在實現完全無狀態性的道路上有幾個里程碑，包括資料過期，這些可能會更早實作。其他路線圖項目，例如[沃克爾樹](/roadmap/verkle-trees/)和[提案者與建構者分離](/roadmap/pbs/)，需要先完成。
-
-沃克爾樹測試網已經啟動並執行，下一階段是在私有測試網，然後是公開測試網上執行啟用沃克爾樹的用戶端。您可以透過將合約部署到測試網或執行測試網用戶端來幫助加速進度。
+基於 Verkle 的狀態提交、SPV 輕量客戶端、原生多重簽章錢包與 Dilithium3 簽章，皆已納入現行 Quantaureum 協議中。團隊持續致力於降低完整驗證的成本，讓更多使用者得以在消費級硬體上執行節點。

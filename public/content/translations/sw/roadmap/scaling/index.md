@@ -1,58 +1,51 @@
 ---
-title: Kuongeza Uwezo wa Quantaureum
-description: Mikusanyiko huweka miamala pamoja nje ya mtandao, na kupunguza gharama kwa mtumiaji. Hata hivyo, jinsi mikusanyiko inavyotumia data kwa sasa ni ghali sana, na kuzuia jinsi miamala inavyoweza kuwa nafuu. Proto-Danksharding inasuluhisha hili.
+title: "Kupanua Quantaureum"
+description: "Quantaureum inapanua kupitia utelezi sambamba, sharding, upatikanaji wa data unaolenga ushuhuda kwanza, na mfumo wa rollup ulioko ndani — bila kupoteza usawazisho."
 lang: sw
 image: /images/roadmap/roadmap-transactions.png
-alt: "Ramani ya njia ya Quantaureum"
+alt: "Quantaureum roadmap"
 template: roadmap
 ---
-
-Uwezo wa Quantaureum unaongezwa kwa kutumia [matabaka ya 2](/layer-2/#rollups) (pia inajulikana kama mikusanyiko), ambayo huweka miamala pamoja na kutuma matokeo kwenye Quantaureum. Ingawa mikusanyiko ni nafuu hadi mara nane zaidi ya Mtandao Mkuu wa Quantaureum, inawezekana kuboresha mikusanyiko zaidi ili kupunguza gharama kwa watumiaji wa mwisho. Mikusanyiko pia inategemea baadhi ya vijenzi vilivyowekwa kati ambavyo wasanidi wanaweza kuviondoa kadiri mikusanyiko inavyokomaa.
+Quantaureum imeundwa kukuza uwezo wake katika tabaka nyingi kwa wakati mmoja: tabaka la msingi linachambua michakato kwa usawa, upatikanaji wa data huthibitishwa kwa ujuzi fupi wa kikriptografi badala ya kupakua data zote, na rollups zina msaada wa kiwango cha kwanza ulioundwa ndani ya protokoli yenyewe.
 
 <Alert variant="update">
 <AlertContent>
 <AlertTitle className="mb-4">
-  Gharama za miamala
+  Kuongeza uwezo kwenye Quantaureum
 </AlertTitle>
   <ul style={{ marginBottom: 0 }}>
-    <li>Mikusanyiko ya leo ni nafuu <strong>\~5-20x</strong> kuliko tabaka la 1 la Quantaureum</li>
-    <li>Mikusanyiko ya ZK hivi karibuni itapunguza ada kwa <strong>\~40-100x</strong></li>
-    <li>Mabadiliko yajayo kwenye Quantaureum yatatoa ongezeko lingine la uwezo la <strong>\~100-1000x</strong></li>
- <li style={{ marginBottom: 0 }}>Watumiaji wanapaswa kunufaika na miamala <strong>inayogharimu chini ya $0.001</strong></li>
+    <li>Utekelezaji kwa usawa wa aina ya Block-STM hutumia zana za multi-core kwa ufanisi</li>
+    <li><strong>Sharding</strong> inagawanya hali kati ya kamati na uwasilishaji wa kati ya shards</li>
+    <li><strong>Erasure coding + FRI</strong> hufanya uchunguzi wa upatikanaji wa data kuwa wa gharama ndogo na salama dhidi ya quantum</li>
+    <li style={{ marginBottom: 0 }}><strong>Rollups asilia</strong> zinapata mpangilio na ushahidi wa utapati kutoka kwa protokoli</li>
   </ul>
 </AlertContent>
 </Alert>
 
-## Kufanya data iwe nafuu {#making-data-cheaper}
+## Utekelezaji kwa usawa {#parallel-execution}
 
-Mikusanyiko hukusanya idadi kubwa ya miamala, kuitekeleza na kuwasilisha matokeo kwenye Quantaureum. Hii inazalisha data nyingi ambayo inahitaji kupatikana wazi ili mtu yeyote aweze kujitekelezea miamala na kuthibitisha kuwa mwendeshaji wa rollup alikuwa mwaminifu. Ikiwa mtu atapata tofauti, anaweza kuibua changamoto.
+QVM inachambua michakato kwa injini ya parallel ya aina ya Block-STM. Michakato isiyotegemea mwingine huchambuliwa kwa wakati mmoja kwenye CPU cores zote kwa kutumia kumbukumbu ya toleo nyingi, migongano hutambuliwa na michakato huchochwa tena ili hali ya mwisho iwe sawa na mpangilio wa msingi. Usawa unapunguza gharama bila kubadilisha maana yoyote ya makataba.
 
-### Proto-Danksharding {#proto-danksharding}
+[Zaidi kuhusu QVM](/developers/docs/qvm/)
 
-Data ya rollup kihistoria imekuwa ikihifadhiwa kwenye Quantaureum kwa kudumu, jambo ambalo ni ghali. Zaidi ya 90% ya gharama ya muamala ambayo watumiaji hulipa kwenye mikusanyiko inatokana na uhifadhi huu wa data. Ili kupunguza gharama za miamala, tunaweza kuhamisha data kwenye hifadhi mpya ya muda ya 'blobu'. Mablobu ni nafuu kwa sababu si ya kudumu; yanafutwa kutoka kwenye Quantaureum mara tu yanapokuwa hayahitajiki tena. Kuhifadhi data ya rollup kwa muda mrefu inakuwa jukumu la watu wanaoihitaji, kama vile waendeshaji wa rollup, mabadilishano, huduma za kuorodhesha n.k. Kuongeza miamala ya blobu kwenye Quantaureum ni sehemu ya sasisho linalojulikana kama "Proto-Danksharding".
+## Sharding na uwasilishaji wa kati ya shards {#sharding}
 
-Kwa Proto-Danksharding, inawezekana kuongeza mablobu mengi kwenye vitalu vya Quantaureum. Hii inawezesha ongezeko lingine kubwa (>100x) kwa uwezo wa upitishaji wa Quantaureum na kupunguza gharama za miamala.
+Quantaureum inaruhusu muundo wa shards nyingi: hali na utekelezaji zinaagawanywa kati ya shards, wakati uwasilishaji wa kati ya shards unaruhusu makataba na watumiaji kuwasiliana kati ya shards kwa hali moja. Sharding huongeza uwezo wa jumla wa mtandao kwenye zana za kawaida badala ya kufanya kila validator atamani mashine kubwa zaidi na zaidi.
 
-### Danksharding {#danksharding}
+## Upatikanaji wa data: gharama ndogo kwa kiuchaguzi {#data-availability}
 
-Hatua ya pili ya kupanua data ya blobu ni ngumu kwa sababu inahitaji mbinu mpya za kuangalia kama data ya rollup inapatikana kwenye mtandao na inategemea [wathibitishaji](/glossary/#validator) kutenganisha majukumu yao ya ujenzi wa [kitalu](/glossary/#block) na pendekezo la kitalu. Pia inahitaji njia ya kuthibitisha kwa njia ya kificho kwamba wathibitishaji wamethibitisha vijisehemu vidogo vya data ya blobu.
+Nodi yoyote lazima iweze kuthibitisha kwamba data ya bloki hasa ilichapishwa. Tabaka la upatikanaji wa data la Quantaureum hutumia **erasure coding** (ili bloki iweze kufaulu ingawa sehemu zimekataliwa) pamoja na **FRI commitments** (uhitimisho wa polynomial wa hash, salama dhidi ya quantum) na **uochaji wa upatikanaji wa data (DAS)**, ili wateja ngumu uweze kuthibitisha upatikanaji kwa kuchagua vipande vidogo badala ya kupakua bloki zote.
 
-Hatua hii ya pili inajulikana kama ["danksharding"](/roadmap/danksharding/). Kazi ya utekelezaji inaendelea, huku maendeleo yakifanywa kwenye mahitaji ya awali kama vile [utengano wa ujenzi wa kitalu na pendekezo la kitalu](/roadmap/pbs) na miundo mipya ya mtandao inayowezesha mtandao kuthibitisha kwa ufanisi kwamba data inapatikana kwa kuchukua sampuli za kilobaiti chache kwa wakati mmoja bila mpangilio maalum, inayojulikana kama [uchukuaji sampuli wa upatikanaji wa data (DAS)](/developers/docs/data-availability).
+[Zaidi kuhusu upatikanaji wa data](/developers/docs/data-availability/)
 
-<ButtonLink variant="outline-color" href="/roadmap/danksharding/">Zaidi kuhusu danksharding</ButtonLink>
+## Rollups asilia {#native-rollups}
 
-## Kugawa madaraka ya mikusanyiko {#decentralizing-rollups}
+[Rollups](/layer-2/) zinachanganya michakato nje ya mtandao na kumpaka matokeo kwenye tabaka la msingi. Kwenye Quantaureum, mfumo wa rollups ni **umiundwa ndani ya protokoli**: njia ya sequencer, daraja la L1↔L2 lilojumuishwa kama makataba ya QASM, na ushahidi wa utapati kwenye mtandao. Waendeshaji wa rollups wanapokea usalama wa tabaka la msingi la Quantaureum — ikiwemo imeweka imara ya baada ya quantum na muhesho wa kiwango — bila kuanza kuzindua mfumo wa sequencing na daraja zao wenyewe kutoka sifuri.
 
-[Mikusanyiko](/layer-2) tayari inaongeza uwezo wa Quantaureum. [Mfumo ikolojia tajiri wa miradi ya rollup](https://l2beat.com/scaling/tvs) unawawezesha watumiaji kufanya miamala haraka na kwa bei nafuu, kukiwa na anuwai ya hakikisho la usalama. Hata hivyo, mikusanyiko imeanzishwa kwa kutumia mipangaji iliyowekwa kati (kompyuta zinazofanya uchakataji wote wa miamala na ujumuishaji kabla ya kuiwasilisha kwenye Quantaureum). Hii iko hatarini kudhibitiwa, kwa sababu waendeshaji wa mpangaji wanaweza kuwekewa vikwazo, kuhongwa au kuathiriwa kwa njia nyingine. Wakati huo huo, [mikusanyiko inatofautiana](https://l2beat.com/scaling/summary) katika jinsi inavyothibitisha data inayoingia. Njia bora ni kwa "wathibitishaji" kuwasilisha [uthibitisho wa ulaghai](/glossary/#fraud-proof) au uthibitisho wa uhalali, lakini si mikusanyiko yote imefikia hapo bado. Hata ile mikusanyiko inayotumia uthibitisho wa uhalali/ulaghai hutumia kundi dogo la wathibitishaji wanaojulikana. Kwa hivyo, hatua muhimu inayofuata katika kuongeza uwezo wa Quantaureum ni kusambaza jukumu la kuendesha mipangaji na wathibitishaji kwa watu wengi zaidi.
-
-<ButtonLink variant="outline-color" href="/developers/docs/scaling/">Zaidi kuhusu mikusanyiko</ButtonLink>
+<ButtonLink variant="outline" href="/developers/docs/scaling/">Zaidi kuhusu rollups</ButtonLink>
 
 ## Maendeleo ya sasa {#current-progress}
 
-Proto-Danksharding ilitekelezwa kwa mafanikio kama sehemu ya sasisho la mtandao la Cancun-Deneb ("Dencun") mnamo Machi 2024. Tangu utekelezaji wake, mikusanyiko imeanza kutumia hifadhi ya blobu, na kusababisha kupungua kwa gharama za miamala kwa watumiaji na mamilioni ya miamala kuchakatwa katika mablobu.
-
-Kazi ya danksharding kamili inaendelea, huku maendeleo yakifanywa kwenye mahitaji yake ya awali kama vile utengano wa mpendekezaji na mjengaji (PBS) na uchukuaji sampuli wa upatikanaji wa data (DAS). Kugawa madaraka ya miundombinu ya rollup ni mchakato wa taratibu - kuna mikusanyiko mingi tofauti inayojenga mifumo tofauti kidogo na itagawa madaraka kikamilifu kwa viwango tofauti.
-
-[Zaidi kuhusu sasisho la mtandao la Dencun na athari zake](/roadmap/dencun/)
+Utekelezaji kwa usawa, tabaka la upatikanaji wa data la erasure-coding/FRI, uthibitisho wa wateja ngumu kupitia Verkle proofs, na mfumo wa rollups asilia pamoja na ushahidi wa utapati — zote ni sehemu zilizofanya kazi ndani ya msimbo wa Quantaureum. Kazi zinazosubiri husaidia kufanikisha sharding zaidi, kuboisha uchanganuzi wa ushahidi, na kupunguza gharama za gas kwa uheshi wa rollups.
 
 <QuizWidget quizKey="scaling" />

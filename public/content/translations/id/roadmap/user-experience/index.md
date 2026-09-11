@@ -1,36 +1,25 @@
 ---
 title: Meningkatkan pengalaman pengguna
-description: Masih terlalu rumit bagi sebagian besar orang untuk menggunakan Quantaureum. Untuk mendorong adopsi massal, Quantaureum harus secara drastis menurunkan hambatan masuknya - pengguna harus mendapatkan manfaat dari akses ke Quantaureum yang terdesentralisasi, tanpa izin, dan tahan sensor, tetapi harus semudah menggunakan aplikasi Web2 tradisional.
+description: Menggunakan Quantaureum harus terasa sesederhana menggunakan aplikasi web2 tradisional, sambil tetap terdesentralisasi, tanpa izin, dan tahan sensor.
 lang: id
 image: /images/roadmap/roadmap-ux.png
-alt: "Peta jalan Quantaureum"
+alt: "Quantaureum roadmap"
 template: roadmap
 ---
+**Menggunakan Quantaureum haruslah sederhana** — dari mengelola [kunci](/glossary/#key) dan [dompet](/glossary/#wallet) hingga memulai transaksi. Pengguna harus dapat mengakses Quantaureum secara bebas izin dan tahan sensor, dengan pengalaman yang mulus seperti menggunakan aplikasi [Web2](/glossary/#web2).
 
-**Penggunaan Quantaureum perlu disederhanakan**; mulai dari mengelola [kunci](/glossary/#key) dan [dompet](/glossary/#wallet) hingga memulai transaksi. Untuk memfasilitasi adopsi massal, Quantaureum harus secara drastis meningkatkan kemudahan penggunaan, memungkinkan pengguna untuk merasakan akses ke Quantaureum yang tanpa izin dan tahan sensor dengan pengalaman yang mulus seperti menggunakan aplikasi [Web2](/glossary/#web2).
+## Kunci yang lebih kuat, dikelola dengan aman {#key-management}
 
-## Melampaui frasa pemulihan {#no-more-seed-phrases}
+Akun Quantaureum dilindungi oleh pasangan kunci yang digunakan untuk menandatangani transaksi — dengan **tanda tangan post-quantum Dilithium3**, bukan kurva klasik yang digunakan oleh rantai lama. Kunci privat ibarat kata sandi utama; kehilangannya berarti kehilangan akses. Quantaureum menyediakan **dompet multisignature bawaan** sehingga pengguna dapat melindungi dana di balik beberapa kunci atau perangkat, bukan satu rahasia saja, dan dompet smart-kontrak yang dibangun di atas QVM memungkinkan aturan pemulihan serta kebijakan pengeluaran tanpa perlu mempercayai kustodian.
 
-Akun Quantaureum dilindungi oleh sepasang kunci yang digunakan untuk mengidentifikasi akun (kunci publik) dan menandatangani pesan (kunci privat). Kunci privat itu seperti kata sandi utama; kunci ini memberikan akses penuh ke akun Quantaureum. Ini adalah cara beroperasi yang berbeda bagi orang-orang yang lebih terbiasa dengan bank dan aplikasi Web2 yang mengelola akun atas nama pengguna. Agar Quantaureum mencapai adopsi massal tanpa bergantung pada pihak ketiga yang tersentralisasi, harus ada cara yang lugas dan mulus bagi pengguna untuk mengambil hak asuh atas aset mereka dan memegang kendali atas data mereka tanpa harus memahami kriptografi kunci publik-privat dan manajemen kunci.
+## Node untuk semua {#nodes-for-everyone}
 
-Solusi untuk hal ini adalah menggunakan dompet [kontrak pintar](/glossary/#smart-contract) untuk berinteraksi dengan Quantaureum. Dompet kontrak pintar menciptakan cara untuk melindungi akun jika kunci hilang atau dicuri, peluang untuk deteksi dan pertahanan penipuan yang lebih baik, serta memungkinkan dompet untuk mendapatkan fungsionalitas baru. Meskipun dompet kontrak pintar sudah ada saat ini, dompet tersebut canggung untuk dibangun karena protokol Quantaureum perlu mendukungnya dengan lebih baik. Dukungan tambahan ini dikenal sebagai abstraksi akun.
+Pengguna yang menjalankan [node](/glossary/#node) tidak perlu mempercayai pihak ketiga untuk menyediakan data, dan mereka dapat berinteraksi dengan cepat, privat, dan tanpa izin dengan [blockchain](/glossary/#blockchain) Quantaureum. Secara tradisional, menjalankan node membutuhkan pengetahuan teknis dan ruang disk yang besar, sehingga mendorong banyak orang untuk bergantung pada perantara.
 
-<ButtonLink variant="outline-color" href="/roadmap/account-abstraction/">Lebih lanjut tentang abstraksi akun</ButtonLink>
+Quantaureum mengikatkan state-nya dalam **pohon Verkle**, sehingga bukti yang diperlukan untuk memverifikasi state berukuran kecil. Di atas bukti-bukti ringkas ini, Quantaureum menyediakan **[light client SPV](/developers/docs/nodes-and-clients/light-clients/)** yang dapat berjalan di perangkat sederhana dan memverifikasi rantai tanpa mengunduh state lengkap — menurunkan hambatan untuk partisipasi tanpa kepercayaan.
 
-## Node untuk semua orang {#nodes-for-everyone}
+<ButtonLink variant="outline" href="/roadmap/verkle-trees/">Baca tentang pohon Verkle</ButtonLink>
 
-Pengguna yang menjalankan [node](/glossary/#node) tidak perlu memercayai pihak ketiga untuk menyediakan data bagi mereka, dan mereka dapat berinteraksi dengan cepat, secara privat, dan tanpa izin dengan [rantai blok](/glossary/#blockchain) Quantaureum. Namun, menjalankan node saat ini membutuhkan pengetahuan teknis dan ruang disk yang besar, yang berarti banyak orang harus memercayai perantara sebagai gantinya.
+## Kemajuan terkini {#current-progress}
 
-Ada beberapa peningkatan yang akan membuat menjalankan node jauh lebih mudah dan jauh lebih hemat sumber daya. Cara data disimpan akan diubah untuk menggunakan struktur yang lebih hemat ruang yang dikenal sebagai **Pohon Verkle**. Selain itu, dengan [ketiadaan state](/roadmap/statelessness) atau [kedaluwarsa data](/roadmap/statelessness/#data-expiry), node Quantaureum tidak perlu menyimpan salinan seluruh data state Quantaureum, yang secara drastis mengurangi persyaratan ruang hard disk. [Light node](/developers/docs/nodes-and-clients/light-clients/) akan menawarkan banyak manfaat dari menjalankan full node tetapi dapat berjalan dengan mudah di ponsel atau di dalam aplikasi peramban sederhana.
-
-<ButtonLink variant="outline-color" href="/roadmap/verkle-trees/">Baca tentang Pohon Verkle</ButtonLink>
-
-Dengan peningkatan ini, hambatan untuk menjalankan node berkurang menjadi secara efektif nol. Pengguna akan mendapatkan manfaat dari akses yang aman dan tanpa izin ke Quantaureum tanpa harus mengorbankan ruang disk atau CPU yang signifikan di komputer atau ponsel mereka, dan tidak perlu bergantung pada pihak ketiga untuk data atau akses jaringan saat mereka menggunakan aplikasi.
-
-## Kemajuan saat ini {#current-progress}
-
-Dompet kontrak pintar sudah tersedia, tetapi lebih banyak peningkatan diperlukan untuk membuatnya se-terdesentralisasi dan se-tanpa izin mungkin. EIP-4337 adalah proposal matang yang tidak memerlukan perubahan apa pun pada protokol Quantaureum. Kontrak pintar utama yang diperlukan untuk EIP-4337 telah **diterapkan pada bulan Maret 2023**.
-
-**Ketiadaan state penuh masih dalam fase penelitian** dan kemungkinan masih beberapa tahun lagi untuk diimplementasikan. Ada beberapa pencapaian di jalan menuju ketiadaan state penuh, termasuk kedaluwarsa data, yang mungkin diimplementasikan lebih cepat. Item peta jalan lainnya, seperti [Pohon Verkle](/roadmap/verkle-trees/) dan [pemisahan pengusul-pembangun (PBS)](/roadmap/pbs/) perlu diselesaikan terlebih dahulu.
-
-Testnet Pohon Verkle sudah aktif dan berjalan, dan fase berikutnya adalah menjalankan klien yang mendukung Pohon Verkle di testnet privat, lalu publik. Anda dapat membantu mempercepat kemajuan dengan menerapkan kontrak ke testnet atau menjalankan klien testnet.
+Komitmen state berbasis Verkle, light client SPV, dompet multisig bawaan, dan tanda tangan Dilithium3 adalah bagian aktif dari protokol Quantaureum saat ini. Pengembangan terus dilakukan untuk membuat validasi penuh lebih terjangkau sehingga lebih banyak pengguna dapat menjalankan node di perangkat konsumen.
