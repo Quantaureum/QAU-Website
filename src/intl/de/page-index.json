@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "Benutzererlebnis",
   "page-index-roadmap-topic-verkle": "Verkle-Bäume",
   "page-index-roadmap-cta": "Vollständige Roadmap ansehen",
-  "page-index-roadmap-cta-community": "Community beitreten"
+  "page-index-roadmap-cta-community": "Community beitreten",
+  "page-index-get-started-wallet-title": "Wallet herunterladen",
+  "page-index-get-started-wallet-description": "Bewahre deine eigenen Schlüssel mit der offiziellen Quantaureum Wallet.",
+  "page-index-get-started-wallet-bullet-1": "Browser-Erweiterung für Chrome, Edge und Firefox",
+  "page-index-get-started-wallet-bullet-2": "Android-App (APK)",
+  "page-index-get-started-wallet-bullet-3": "Konten mit Dilithium-Antrieb, standardmäßig quantensicher",
+  "page-index-get-started-wallet-cta": "Wallet erhalten",
+  "page-index-get-started-wallet-dl-android": "Android-App (APK)",
+  "page-index-get-started-wallet-dl-chrome": "Chrome- / Edge-Erweiterung",
+  "page-index-get-started-wallet-dl-firefox": "Firefox-Erweiterung"
 }

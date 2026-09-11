@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "사용자 경험",
   "page-index-roadmap-topic-verkle": "Verkle 트리",
   "page-index-roadmap-cta": "전체 로드맵 보기",
-  "page-index-roadmap-cta-community": "커뮤니티 참여하기"
+  "page-index-roadmap-cta-community": "커뮤니티 참여하기",
+  "page-index-get-started-wallet-title": "지갑 다운로드",
+  "page-index-get-started-wallet-description": "공식 Quantaureum 지갑으로 나만의 키를 안전하게 관리하세요.",
+  "page-index-get-started-wallet-bullet-1": "Chrome, Edge, Firefox용 브라우저 확장",
+  "page-index-get-started-wallet-bullet-2": "안드로이드 앱 (APK)",
+  "page-index-get-started-wallet-bullet-3": "dilithium 기반 계정, 기본적으로 양자 안전",
+  "page-index-get-started-wallet-cta": "지갑 받기",
+  "page-index-get-started-wallet-dl-android": "안드로이드 앱 (APK)",
+  "page-index-get-started-wallet-dl-chrome": "Chrome / Edge 확장 프로그램",
+  "page-index-get-started-wallet-dl-firefox": "Firefox 확장 프로그램"
 }

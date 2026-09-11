@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "صارف کا تجربہ",
   "page-index-roadmap-topic-verkle": "ورکل ٹریز",
   "page-index-roadmap-cta": "مکمل روڈ میگ دیکھیں",
-  "page-index-roadmap-cta-community": "کمیونٹی جوائن کریں"
+  "page-index-roadmap-cta-community": "کمیونٹی جوائن کریں",
+  "page-index-get-started-wallet-title": "والیٹ ڈاؤن لوڈ کریں",
+  "page-index-get-started-wallet-description": "Apna apna private key سر کو Quantaureum کے سرکاری واlett کے ساتھ محفوظ رکھیں۔",
+  "page-index-get-started-wallet-bullet-1": "کروم، ایج اور فائرفاکس کے لیے براؤزر ایکسٹینشن",
+  "page-index-get-started-wallet-bullet-2": "Android ایپ (APK)",
+  "page-index-get-started-wallet-bullet-3": "dilithium-ساختہ اکاؤنٹس، بطور ڈیفالٹ کوانٹم محفوظ",
+  "page-index-get-started-wallet-cta": "والٹ حاصل کریں",
+  "page-index-get-started-wallet-dl-android": "Android ایپ (APK)",
+  "page-index-get-started-wallet-dl-chrome": "Chrome / Edge امتداد",
+  "page-index-get-started-wallet-dl-firefox": "Firefox ایکسٹینشن"
 }

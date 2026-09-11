@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "用户体验",
   "page-index-roadmap-topic-verkle": "Verkle 树",
   "page-index-roadmap-cta": "查看完整路线图",
-  "page-index-roadmap-cta-community": "加入社区"
+  "page-index-roadmap-cta-community": "加入社区",
+  "page-index-get-started-wallet-title": "下载钱包",
+  "page-index-get-started-wallet-description": "使用官方 Quantaureum 钱包，自主掌握密钥。",
+  "page-index-get-started-wallet-bullet-1": "适用于 Chrome、Edge 和 Firefox 的浏览器扩展",
+  "page-index-get-started-wallet-bullet-2": "安卓应用 (APK)",
+  "page-index-get-started-wallet-bullet-3": "由 Dilithium 驱动的账户，默认具备量子安全特性",
+  "page-index-get-started-wallet-cta": "获取钱包",
+  "page-index-get-started-wallet-dl-android": "Android 应用（APK）",
+  "page-index-get-started-wallet-dl-chrome": "Chrome / Edge 扩展",
+  "page-index-get-started-wallet-dl-firefox": "Firefox 扩展"
 }

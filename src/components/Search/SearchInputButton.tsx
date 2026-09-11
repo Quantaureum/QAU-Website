@@ -1,6 +1,6 @@
 import * as React from "react"
+import { SearchIcon } from "lucide-react"
 import { useTranslations } from "next-intl"
-import { DocSearchButton } from "@docsearch/react"
 
 import { cn } from "@/lib/utils/cn"
 
@@ -17,18 +17,13 @@ const SearchInputButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
         data-testid="search-input-button"
         variant="ghost"
         className={cn(
-          "group me-3 border border-disabled hover:border-primary-hover",
+          "group me-3 gap-2 border border-disabled hover:border-primary-hover",
           className
         )}
         {...props}
-        asChild
       >
-        <DocSearchButton
-          translations={{
-            buttonText: t("search"),
-            buttonAriaLabel: t("search"),
-          }}
-        />
+        <SearchIcon className="size-4" aria-hidden />
+        {t("search")}
       </Button>
     )
   }

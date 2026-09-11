@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "Esperienza utente",
   "page-index-roadmap-topic-verkle": "Alberi Verkle",
   "page-index-roadmap-cta": "Vedi la roadmap completa",
-  "page-index-roadmap-cta-community": "Unisciti alla community"
+  "page-index-roadmap-cta-community": "Unisciti alla community",
+  "page-index-get-started-wallet-title": "Télécharger le portefeuille",
+  "page-index-get-started-wallet-description": "Gérez vos clés avec le portefeuille officiel Quantaureum.",
+  "page-index-get-started-wallet-bullet-1": "Browserextension für Chrome, Edge und Firefox",
+  "page-index-get-started-wallet-bullet-2": "Aplicación para Android (APK)",
+  "page-index-get-started-wallet-bullet-3": "Comptes propulsés par Dilithium, sûrs quantiquement par défaut",
+  "page-index-get-started-wallet-cta": "Obtener la cartera",
+  "page-index-get-started-wallet-dl-android": "Aplicación para Android (APK)",
+  "page-index-get-started-wallet-dl-chrome": "Extension for Chrome / Edge",
+  "page-index-get-started-wallet-dl-firefox": "Firefox extension"
 }

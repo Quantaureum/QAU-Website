@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "使用者體驗",
   "page-index-roadmap-topic-verkle": "Verkle 樹",
   "page-index-roadmap-cta": "查看完整路線圖",
-  "page-index-roadmap-cta-community": "加入社群"
+  "page-index-roadmap-cta-community": "加入社群",
+  "page-index-get-started-wallet-title": "下載錢包",
+  "page-index-get-started-wallet-description": "使用官方 Quantaureum 錢包，掌握自己的金鑰。",
+  "page-index-get-started-wallet-bullet-1": "支援 Chrome、Edge 與 Firefox 的瀏覽器擴充功能",
+  "page-index-get-started-wallet-bullet-2": "Android 應用程式 (APK)",
+  "page-index-get-started-wallet-bullet-3": "Dilithium 驅動帳戶，預設具備量子安全",
+  "page-index-get-started-wallet-cta": "取得錢包",
+  "page-index-get-started-wallet-dl-android": "Android app (APK)",
+  "page-index-get-started-wallet-dl-chrome": "Chrome / Edge 擴充功能",
+  "page-index-get-started-wallet-dl-firefox": "Firefox 擴充功能"
 }

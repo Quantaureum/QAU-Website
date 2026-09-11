@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "User experience",
   "page-index-roadmap-topic-verkle": "Verkle trees",
   "page-index-roadmap-cta": "See the full roadmap",
-  "page-index-roadmap-cta-community": "Join the community"
+  "page-index-roadmap-cta-community": "Join the community",
+  "page-index-get-started-wallet-title": "Download the wallet",
+  "page-index-get-started-wallet-description": "Hold your own keys with the official Quantaureum Wallet.",
+  "page-index-get-started-wallet-bullet-1": "Browser extension for Chrome, Edge and Firefox",
+  "page-index-get-started-wallet-bullet-2": "Android app (APK)",
+  "page-index-get-started-wallet-bullet-3": "Dilithium-powered accounts, quantum-safe by default",
+  "page-index-get-started-wallet-cta": "Get the wallet",
+  "page-index-get-started-wallet-dl-android": "Android app (APK)",
+  "page-index-get-started-wallet-dl-chrome": "Chrome / Edge extension",
+  "page-index-get-started-wallet-dl-firefox": "Firefox extension"
 }

@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "تجربة المستخدم",
   "page-index-roadmap-topic-verkle": "أشجار Verkle",
   "page-index-roadmap-cta": "اطّلع على خارطة الطريق الكاملة",
-  "page-index-roadmap-cta-community": "انضم إلى المجتمع"
+  "page-index-roadmap-cta-community": "انضم إلى المجتمع",
+  "page-index-get-started-wallet-title": "تنزيل المحفظة",
+  "page-index-get-started-wallet-description": "احتفظ بمفاتيحك الخاصة في محفظة Quantaureum الرسمية.",
+  "page-index-get-started-wallet-bullet-1": "امتداد المتصفح لـ Chrome وEdge وFirefox",
+  "page-index-get-started-wallet-bullet-2": "تطبيق أندرويد (APK)",
+  "page-index-get-started-wallet-bullet-3": "حسابات مدعومة بالثليثيوم، آمنة كميّاتياً افتراضياً",
+  "page-index-get-started-wallet-cta": "احصل على المحفظة",
+  "page-index-get-started-wallet-dl-android": "التطبيق لنظام أندرويد (APK)",
+  "page-index-get-started-wallet-dl-chrome": "إضافة كروم / إيدج",
+  "page-index-get-started-wallet-dl-firefox": "امتداد فايرفوكس"
 }

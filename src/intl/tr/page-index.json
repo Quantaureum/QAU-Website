@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "Kullanıcı deneyimi",
   "page-index-roadmap-topic-verkle": "Verkle ağaçları",
   "page-index-roadmap-cta": "Tam yol haritasını görüntüle",
-  "page-index-roadmap-cta-community": "Topluluğa katıl"
+  "page-index-roadmap-cta-community": "Topluluğa katıl",
+  "page-index-get-started-wallet-title": "Cüzdanı indir",
+  "page-index-get-started-wallet-description": "Resmi Quantaureum Cüzdanı ile anahtarlarınızı kendiniz tutun.",
+  "page-index-get-started-wallet-bullet-1": "Chrome, Edge ve Firefox için tarayıcı eklentisi",
+  "page-index-get-started-wallet-bullet-2": "Android uygulaması (APK)",
+  "page-index-get-started-wallet-bullet-3": "Dilithium destekli hesaplar, varsayılan olarak kuantum güvenli",
+  "page-index-get-started-wallet-cta": "Cüzdanı Al",
+  "page-index-get-started-wallet-dl-android": "Android Uygulaması (APK)",
+  "page-index-get-started-wallet-dl-chrome": "Chrome / Edge eklentisi",
+  "page-index-get-started-wallet-dl-firefox": "Firefox eklentisi"
 }
