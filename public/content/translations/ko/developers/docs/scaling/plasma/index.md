@@ -166,7 +166,6 @@ ZK 롤업과 옵티미스틱 롤업은 모두 다양한 방식으로 플라즈�
 
 ## 더 읽어보기 {#further-reading}
 
-- ["공유 보안"의 의미와 이것이 중요한 이유에 대한 간단한 알림](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - 사이드체인 대 플라즈마 대 샤딩
 - [플라즈마의 이해, 1부: 기본 사항](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [플라즈마의 삶과 죽음](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

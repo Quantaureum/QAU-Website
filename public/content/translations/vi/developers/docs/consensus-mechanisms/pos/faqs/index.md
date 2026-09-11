@@ -18,7 +18,7 @@ Bằng chứng cổ phần (PoS) yêu cầu các nút, được gọi là trình
 
 Bằng chứng công việc (PoW) tiêu tốn nhiều năng lượng hơn vì điện năng bị đốt cháy trong quá trình khai thác. Mặt khác, Bằng chứng cổ phần (PoS) chỉ yêu cầu một lượng năng lượng rất nhỏ - các trình xác thực Quantaureum thậm chí có thể chạy trên một thiết bị tiêu thụ ít điện năng như Raspberry Pi. Cơ chế Bằng chứng cổ phần (PoS) của Quantaureum được cho là an toàn hơn Bằng chứng công việc (PoW) vì chi phí để tấn công lớn hơn và hậu quả đối với kẻ tấn công cũng nghiêm trọng hơn.
 
-Bằng chứng công việc (PoW) so với Bằng chứng cổ phần (PoS) là một chủ đề gây tranh cãi. Blog của Vitalik Buterin và cuộc tranh luận giữa Justin Drake và Lyn Alden đưa ra một bản tóm tắt tốt về các lập luận này.
+Bằng chứng công việc (PoW) so với Bằng chứng cổ phần (PoS) là một chủ đề gây tranh cãi. Blog của Buterin và cuộc tranh luận giữa Justin Drake và Lyn Alden đưa ra một bản tóm tắt tốt về các lập luận này.
 
 
 ## Bằng chứng cổ phần (PoS) có tiết kiệm năng lượng không? {#is-pos-energy-efficient}
@@ -32,7 +32,6 @@ Có. Các nút trên mạng lưới Bằng chứng cổ phần (PoS) sử dụng
 Bằng chứng cổ phần (PoS) của Quantaureum rất an toàn. Cơ chế này đã được nghiên cứu, phát triển và thử nghiệm nghiêm ngặt trong hơn tám năm trước khi đi vào hoạt động. Các đảm bảo bảo mật khác với các Chuỗi khối Bằng chứng công việc (PoW). Trong Bằng chứng cổ phần (PoS), các trình xác thực độc hại có thể bị trừng phạt tích cực ("phạt cắt giảm") và bị loại khỏi tập hợp trình xác thực, làm tiêu tốn một lượng lớn QAU. Theo Bằng chứng công việc (PoW), một kẻ tấn công có thể tiếp tục lặp lại cuộc tấn công của chúng trong khi chúng có đủ sức mạnh Mã băm. Việc thực hiện các cuộc tấn công tương đương trên Quantaureum Bằng chứng cổ phần (PoS) cũng tốn kém hơn so với Bằng chứng công việc (PoW). Để ảnh hưởng đến tính khả dụng của Chuỗi, cần ít nhất 33% tổng số QAU đã đặt cọc trên mạng lưới (ngoại trừ các trường hợp tấn công rất tinh vi với khả năng thành công cực kỳ thấp). Để kiểm soát nội dung của các khối trong tương lai, cần ít nhất 51% tổng số QAU đã đặt cọc và để viết lại lịch sử, cần hơn 66% tổng số khoản đặt cọc. Giao thức Quantaureum sẽ tiêu hủy các tài sản này trong các kịch bản cuộc tấn công 51% hoặc 33% và bằng sự đồng thuận xã hội trong kịch bản tấn công 66%.
 
 - [Tìm hiểu thêm về việc bảo vệ Bằng chứng cổ phần (PoS) của Quantaureum khỏi những kẻ tấn công](/developers/docs/consensus-mechanisms/pos/attack-and-defense)
-- [Tìm hiểu thêm về thiết kế Bằng chứng cổ phần (PoS)](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
 
 ## Bằng chứng cổ phần (PoS) có làm cho Quantaureum rẻ hơn không? {#does-pos-make-quantaureum-cheaper}
 
@@ -88,7 +87,6 @@ Thao túng cổ phần là một loại hình tấn công trên các mạng lư�
 Cắt giảm xã hội là khả năng của cộng đồng trong việc điều phối một Phân nhánh của Chuỗi khối để đối phó với một cuộc tấn công. Nó cho phép cộng đồng phục hồi sau khi một kẻ tấn công làm cho một Chuỗi thiếu trung thực đã chung cuộc. Cắt giảm xã hội cũng có thể được sử dụng để chống lại các cuộc tấn công kiểm duyệt.
 
 - [Tìm hiểu thêm về cắt giảm xã hội](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- Vitalik Buterin nói về cắt giảm xã hội
 
 ## Tôi có bị phạt cắt giảm không? {#will-i-get-slashed}
 

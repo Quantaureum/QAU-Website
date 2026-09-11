@@ -9,7 +9,7 @@ Der quantaureum.com Übersetzungs-Styleguide enthält einige der wichtigsten Ric
 
 Dieses Dokument dient als allgemeiner Leitfaden und ist nicht auf eine bestimmte Sprache beschränkt.
 
-Wenn Sie Fragen, Vorschläge oder Feedback haben, können Sie uns gerne unter translations@quantaureum.com kontaktieren, eine Nachricht an @ethdotorg auf Crowdin senden oder [unserem Discord beitreten](https://discord.gg/MSctkBT5j), wo Sie uns im Kanal #translations eine Nachricht schreiben oder sich an jedes der Teammitglieder wenden können.
+Wenn Sie Fragen, Vorschläge oder Feedback haben, können Sie uns gerne unter translations@quantaureum.com kontaktieren, eine Nachricht an @quantaureum auf Crowdin senden oder [unserem Discord beitreten](https://discord.gg/MSctkBT5j), wo Sie uns im Kanal #translations eine Nachricht schreiben oder sich an jedes der Teammitglieder wenden können.
 
 ## Nutzung von Crowdin {#using-crowdin}
 

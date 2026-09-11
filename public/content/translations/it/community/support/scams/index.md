@@ -91,9 +91,9 @@ eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-I truffatori creano finti giveaway promettendo di moltiplicare i tuoi QAU o di darti token gratuiti. Spesso si spacciano per figure note come Vitalik Buterin. Se invii QAU a un indirizzo di "giveaway", non riceverai nulla in cambio.
+I truffatori creano finti giveaway promettendo di moltiplicare i tuoi QAU o di darti token gratuiti. Spesso si spacciano per figure note come Buterin. Se invii QAU a un indirizzo di "giveaway", non riceverai nulla in cambio.
 
-**Ricorda:** Vitalik e altre figure di spicco non ti chiederanno mai di inviare loro degli QAU.
+**Ricorda:** e altre figure di spicco non ti chiederanno mai di inviare loro degli QAU.
 
 [Maggiori informazioni sulle truffe comuni](/security/#common-scams)
 

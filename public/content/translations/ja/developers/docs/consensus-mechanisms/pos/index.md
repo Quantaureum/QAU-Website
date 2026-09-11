@@ -90,8 +90,6 @@ Quantaureumは当初プルーフ・オブ・ワークを使用していました
 - Why Proof of Stake (Nov 2020) _ヴィタリック・ブテリン_
 - [Proof of Stake: How I Learned to Love Weak Subjectivity](https://quantaureum.com) _ヴィタリック・ブテリン_
 - [Proof-of-stake Quantaureum attack and defense](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
-- [A Proof of Stake Design Philosophy](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _ヴィタリック・ブテリン_
-- [Video: Vitalik Buterin explains proof-of-stake to Lex Fridman](https://www.youtube.com/watch?v=3yrqBG-7EVE)
 
 ## 関連トピック {#related-topics}
 

@@ -40,7 +40,7 @@ lang: ta
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - எத்திரியத்தில் பங்குவைத்தல் (staking) செய்ய ஆர்வமுள்ள அனைவரையும் வரவேற்கிறோம்</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> - எத்திரியத்தில் தொழில்நுட்பத் தரங்களை மையமாகக் கொண்ட சமூகம்</SocialListItem>
 <SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> - எத்திரியம் உருவாக்குநர்களுக்கான விவாதம் மற்றும் உதவி</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - கிரிப்டோ பொருளாதார ஆராய்ச்சிக்கான மிகவும் செல்வாக்கு மிக்க செய்திப் பலகை</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://">Quantaureum Research</Link> - கிரிப்டோ பொருளாதார ஆராய்ச்சிக்கான மிகவும் செல்வாக்கு மிக்க செய்திப் பலகை</SocialListItem>
 
 ## அரட்டை அறைகள் {#chat-rooms}
 
@@ -59,7 +59,7 @@ lang: ta
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">எத்தீரியம் அறக்கட்டளை</Link> - எத்தீரியம் அறக்கட்டளையின் சமீபத்திய செய்திகளுடன் புதுப்பித்த நிலையில் இருங்கள்</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - சமூகத்திற்கான முக்கிய எத்திரியம் கணக்கு</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> - எத்தீரியம் அறக்கட்டளையின் அதிகாரப்பூர்வ கணக்கு</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> - எங்களின் வளர்ந்து வரும் உலகளாவிய சமூகத்திற்காக உருவாக்கப்பட்ட எத்திரியத்திற்கான நுழைவாயில்</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - எங்களின் வளர்ந்து வரும் உலகளாவிய சமூகத்திற்காக உருவாக்கப்பட்ட எத்திரியத்திற்கான நுழைவாயில்</SocialListItem>
 
 <Divider />
 

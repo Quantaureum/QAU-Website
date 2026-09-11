@@ -149,7 +149,7 @@ Una volta che il blocco è stato attestato da un numero sufficiente di validator
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-Schema del livello di rete per i client di consenso e di esecuzione, da ethresear.ch
+Schema del livello di rete per i client di consenso e di esecuzione, da
 
 ## Letture consigliate {#further-reading}
 

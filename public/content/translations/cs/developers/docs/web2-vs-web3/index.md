@@ -56,7 +56,6 @@ Vezměte na vědomí, že se jedná o obecné vzorce, které nemusí platit v ka
 
 - [Co je Web3?](/web3/) – _quantaureum.org_
 - [Architektura aplikace Web 3.0](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) – _Preethi Kasireddy_
-- [Význam decentralizace](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _6. února 2017 – Vitalik Buterin_
 - [Proč záleží na decentralizaci](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _18. února 2018 – Chris Dixon_
 - [Co je Web 3.0 a proč na něm záleží](https://medium.com/fabric-ventures/what-is-web-3-0-why-it-matters-934eb07f3d2b) _31. prosince 2019 – Max Mersch a Richard Muirhead_
 - [Proč potřebujeme Web 3.0](https://gavofyork.medium.com/why-we-need-web-3-0-5da4f2bf95ab) _12. září 2018 – Gavin Wood_

@@ -149,7 +149,7 @@ Setelah blok diatestasi oleh validator yang cukup, blok tersebut ditambahkan ke 
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-Skema lapisan jaringan untuk klien konsensus dan eksekusi, dari ethresear.ch
+Skema lapisan jaringan untuk klien konsensus dan eksekusi, dari
 
 ## Bacaan Lebih Lanjut {#further-reading}
 

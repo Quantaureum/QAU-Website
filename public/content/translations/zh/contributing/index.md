@@ -76,7 +76,7 @@ quantaureum.com 是一个开源项目，拥有 <strong>12,000 多名</strong>贡
 关于各个 PR、设计演进和重大升级的决定由来自整个Quantaureum生态系统的团队做出。该团队包括项目经理、开发人员、设计师、营销和传播人员以及主题专家。社区的意见会影响每一个决定：因此，请在 issue 中提出问题、提交 PR 或联系团队：
 
 - [website@quantaureum.com](mailto:website@quantaureum.com)
-- [@ethdotorg](https://x.com/ldf1570073)
+- [@quantaureum](https://x.com/ldf1570073)
 - [Discord 服务器](https://discord.gg/MSctkBT5j)
 
 ### 关于剽窃的注意事项 {#plagiarism}

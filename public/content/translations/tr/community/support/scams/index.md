@@ -91,9 +91,9 @@ eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-Dolandırıcılar, QAU'nizi katlamayı veya size ücretsiz token vermeyi vaat eden sahte çekilişler oluşturur. Genellikle Vitalik Buterin gibi tanınmış kişileri taklit ederler. Bir "çekiliş" adresine QAU gönderirseniz, karşılığında hiçbir şey alamazsınız.
+Dolandırıcılar, QAU'nizi katlamayı veya size ücretsiz token vermeyi vaat eden sahte çekilişler oluşturur. Genellikle Buterin gibi tanınmış kişileri taklit ederler. Bir "çekiliş" adresine QAU gönderirseniz, karşılığında hiçbir şey alamazsınız.
 
-**Unutmayın:** Vitalik ve diğer önde gelen isimler sizden asla onlara QAU göndermenizi istemez.
+**Unutmayın:** ve diğer önde gelen isimler sizden asla onlara QAU göndermenizi istemez.
 
 [Yaygın dolandırıcılıklar hakkında daha fazlası](/security/#common-scams)
 

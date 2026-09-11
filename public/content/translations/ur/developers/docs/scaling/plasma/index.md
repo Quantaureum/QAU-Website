@@ -164,7 +164,6 @@ ZK-رول اپس اور آپٹمسٹک رول اپس دونوں پلازما ک�
 
 - [پولی گون](https://polygon.technology/) (پہلے میٹک نیٹ ورک)
 
-- ["مشترکہ سیکیورٹی" کا کیا مطلب ہے اور یہ اتنی اہم کیوں ہے، اس کی ایک فوری یاد دہانی](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - سائیڈ چینز بمقابلہ پلازما بمقابلہ شارڈنگ
 - [پلازما کو سمجھنا، حصہ 1: بنیادی باتیں](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [پلازما کی زندگی اور موت](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

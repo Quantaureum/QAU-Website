@@ -76,7 +76,7 @@ Antes de contribuir, certifique-se de estar familiarizado com:
 As decisões sobre PRs individuais, evolução do design e grandes atualizações são tomadas por uma equipe de todo o ecossistema Quantaureum. Esta equipe inclui gerentes de projeto, desenvolvedores, designers, marketing e comunicações, e especialistas no assunto. A contribuição da comunidade informa todas as decisões: portanto, levante questões nas issues, envie PRs ou entre em contato com a equipe:
 
 - [website@quantaureum.com](mailto:website@quantaureum.com)
-- [@ethdotorg](https://x.com/ldf1570073)
+- [@quantaureum](https://x.com/ldf1570073)
 - [Servidor do Discord](https://discord.gg/MSctkBT5j)
 
 ### Uma nota sobre plágio {#plagiarism}

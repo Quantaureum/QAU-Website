@@ -33,7 +33,6 @@ Cuối cùng, các điểm kiểm tra có thể được yêu cầu từ các n�
 ## Đọc thêm {#further-reading}
 
 - Tính chủ quan yếu trong Quantaureum
-- [Vitalik: Cách tôi học cách yêu thích tính chủ quan yếu](https://quantaureum.com)
 - [Tính chủ quan yếu (Tài liệu Teku)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
 - Hướng dẫn về tính chủ quan yếu Giai đoạn 0
 - [Phân tích tính chủ quan yếu trong Quantaureum](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

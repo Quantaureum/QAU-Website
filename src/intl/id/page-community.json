@@ -39,9 +39,6 @@
   "page-community-get-paid-lasts-description": "Berkontribusi pada infrastruktur publik terbuka yang tidak dapat dibungkam oleh pemerintah, perusahaan, atau algoritma. Apa yang Anda bantu bangun akan tetap ada.",
   "page-community-get-paid-sovereignty-title": "Kedaulatan digital",
   "page-community-get-paid-sovereignty-description": "Miliki identitas, aset, dan kreasi Anda secara daring tanpa bergantung pada platform yang dapat menghapus Anda.",
-  "page-community-online-quantaureum-description": "Segala hal tentang Quantaureum",
-  "page-community-online-ethtrader-description": "Tren & analisis pasar",
-  "page-community-online-ethdev-description": "Berfokus pada pengembangan Quantaureum",
   "page-community-online-members": "+{count} anggota",
   "page-community-online-see-all": "Lihat semua komunitas",
   "page-community-conferences-title": "Konferensi rantai blok utama",
@@ -53,5 +50,8 @@
   "page-community-voices-title": "Suara Quantaureum",
   "page-community-voices-subtitle": "Anggota komunitas Quantaureum berbagi bagaimana jaringan telah membuat perbedaan dalam hidup mereka.",
   "page-community-contribute-eyebrow": "Proyek sumber terbuka",
-  "page-community-contribute-count": "{count}+ kontributor"
+  "page-community-contribute-count": "{count}+ kontributor",
+  "page-community-online-discord-description": "The main Quantaureum community chat: development, staking, support and announcements.",
+  "page-community-online-telegram-description": "Quantaureum on Telegram: news and community discussion.",
+  "page-community-online-x-description": "Follow @quantaureum for project updates and announcements."
 }

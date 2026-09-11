@@ -103,7 +103,7 @@ Una versione di alto profilo di questo fenomeno si è verificata nel luglio 2020
 
 Il giveaway di celebrità è un'altra forma comune che assume la truffa dei giveaway. I truffatori prendono un'intervista video registrata o un discorso a una conferenza tenuto da una celebrità e lo trasmettono in live streaming su YouTube, facendo sembrare che la celebrità stia rilasciando un'intervista video in diretta per promuovere un giveaway di criptovalute.
 
-Vitalik Buterin è usato più spesso in questa truffa, ma vengono usate anche molte altre persone di spicco coinvolte nelle cripto (ad es. Elon Musk o Charles Hoskinson). Includere una persona nota conferisce al live streaming dei truffatori un senso di legittimità (sembra losco, ma c'è di mezzo Vitalik, quindi deve essere a posto!).
+Buterin è usato più spesso in questa truffa, ma vengono usate anche molte altre persone di spicco coinvolte nelle cripto (ad es. Elon Musk o Charles Hoskinson). Includere una persona nota conferisce al live streaming dei truffatori un senso di legittimità (sembra losco, ma c'è di mezzo , quindi deve essere a posto!).
 
 **I giveaway sono sempre truffe. Se invii i tuoi fondi a questi account, li perderai per sempre.**
 

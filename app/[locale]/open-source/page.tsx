@@ -54,38 +54,13 @@ import PromptCard from "./_components/prompt-card"
 import PageJsonLD from "./page-jsonld"
 
 import { ContentLayout } from "@/layouts/ContentLayout"
-import effBannerImg from "@/public/assets/open-source/electronic-frontier-foundation-banner.png"
-import fightForTheFutureBannerImg from "@/public/assets/open-source/fight-for-the-future-banner.png"
-import fsfBannerImg from "@/public/assets/open-source/free-software-foundation-banner.png"
-import internetArchiveBannerImg from "@/public/assets/open-source/internet-archive-banner.png"
-import osiBannerImg from "@/public/assets/open-source/open-source-initiative-banner.png"
-import torBannerImg from "@/public/assets/open-source/tor-project-banner.png"
 import heroImg from "@/public/images/future_transparent.png"
-import alternativeToImg from "@/public/images/open-source/alternativeto-logo.png"
-import bitwardenImg from "@/public/images/open-source/bitwarden.png"
-import blenderImg from "@/public/images/open-source/blender.png"
-import braveImg from "@/public/images/open-source/brave.png"
-import cryptomatorImg from "@/public/images/open-source/cryptomator.png"
-import debianImg from "@/public/images/open-source/debian.png"
-import entePhotosImg from "@/public/images/open-source/ente-photos.png"
-import firefoxImg from "@/public/images/open-source/firefox.png"
-import gimpImg from "@/public/images/open-source/gimp.png"
-import grapheneosImg from "@/public/images/open-source/grapheneos.png"
-import homeAssistantImg from "@/public/images/open-source/home-assistant.png"
-import immichImg from "@/public/images/open-source/immich.png"
-import inkscapeImg from "@/public/images/open-source/inkscape.png"
-import janImg from "@/public/images/open-source/jan.png"
-import libreOfficeImg from "@/public/images/open-source/libreoffice.png"
-import lmStudioImg from "@/public/images/open-source/lm-studio.png"
-import localSendImg from "@/public/images/open-source/localsend.png"
-import logseqImg from "@/public/images/open-source/logseq.png"
-import obsImg from "@/public/images/open-source/obs.png"
-import ollamaImg from "@/public/images/open-source/ollama.png"
-import organicMapsImg from "@/public/images/open-source/organic-maps.png"
-import signalImg from "@/public/images/open-source/signal.png"
-import thunderbirdImg from "@/public/images/open-source/thunderbird.png"
-import ubuntuImg from "@/public/images/open-source/ubuntu.png"
-import vlcImg from "@/public/images/open-source/vlc.png"
+import qauNodeImg from "@/public/images/qau-logo.png"
+import qauExtensionImg from "@/public/images/qau-logo.png"
+import qauMobileImg from "@/public/images/qau-logo.png"
+import qauWebsiteImg from "@/public/images/qau-logo.png"
+import qauSdksImg from "@/public/images/qau-logo.png"
+
 
 // `ExpandableCard` hard-prefixes its category with "ExpandableCard", so the
 // leading underscore is what keeps the reported value readable.
@@ -316,98 +291,65 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
     tag: t(`page-open-source-ai-prompt-${id}-tag`),
   }))
 
-  // Runners for local models. Tagged by license status rather than category:
-  // on this page that is the distinction worth surfacing.
+  // Quantaureum's own open-source projects.
   const localAiApps = [
     {
-      id: "jan",
-      href: "https://jan.ai",
-      logo: janImg,
-      name: t("page-open-source-local-ai-app-jan-name"),
-      description: t("page-open-source-local-ai-app-jan-description"),
+      id: "quantaureum-node",
+      href: "https://github.com/Quantaureum",
+      logo: qauNodeImg,
+      name: t("page-open-source-qau-app-node-name"),
+      description: t("page-open-source-qau-app-node-description"),
       tag: t("page-open-source-local-ai-tag-open-source"),
     },
     {
-      id: "ollama",
-      href: "https://ollama.com",
-      logo: ollamaImg,
-      invertOnDark: true,
-      name: t("page-open-source-local-ai-app-ollama-name"),
-      description: t("page-open-source-local-ai-app-ollama-description"),
+      id: "quantaureum-extension",
+      href: "https://github.com/Quantaureum",
+      logo: qauExtensionImg,
+      name: t("page-open-source-qau-app-extension-name"),
+      description: t("page-open-source-qau-app-extension-description"),
       tag: t("page-open-source-local-ai-tag-open-source"),
     },
     {
-      id: "lm-studio",
-      href: "https://lmstudio.ai",
-      logo: lmStudioImg,
-      name: t("page-open-source-local-ai-app-lm-studio-name"),
-      description: t("page-open-source-local-ai-app-lm-studio-description"),
-      tag: t("page-open-source-local-ai-tag-closed-source"),
+      id: "quantaureum-mobile",
+      href: "https://github.com/Quantaureum",
+      logo: qauMobileImg,
+      name: t("page-open-source-qau-app-mobile-name"),
+      description: t("page-open-source-qau-app-mobile-description"),
+      tag: t("page-open-source-local-ai-tag-open-source"),
+    },
+    {
+      id: "quantaureum-website",
+      href: "https://github.com/Quantaureum",
+      logo: qauWebsiteImg,
+      name: t("page-open-source-qau-app-website-name"),
+      description: t("page-open-source-qau-app-website-description"),
+      tag: t("page-open-source-local-ai-tag-open-source"),
+    },
+    {
+      id: "quantaureum-sdks",
+      href: "https://github.com/Quantaureum",
+      logo: qauSdksImg,
+      name: t("page-open-source-qau-app-sdks-name"),
+      description: t("page-open-source-qau-app-sdks-description"),
+      tag: t("page-open-source-local-ai-tag-open-source"),
     },
   ]
 
   // Shared across apps -- one string per category, not per app.
   const categories = {
-    passwords: t("page-open-source-category-passwords"),
-    browser: t("page-open-source-category-browser"),
-    messaging: t("page-open-source-category-messaging"),
-    fileStorage: t("page-open-source-category-file-storage"),
-    email: t("page-open-source-category-email"),
-    photos: t("page-open-source-category-photos"),
-    maps: t("page-open-source-category-maps"),
-    media: t("page-open-source-category-media"),
-    mobileOs: t("page-open-source-category-mobile-os"),
-    desktopOs: t("page-open-source-category-desktop-os"),
-    home: t("page-open-source-category-home"),
-    productivity: t("page-open-source-category-productivity"),
-    fileSharing: t("page-open-source-category-file-sharing"),
-    streaming: t("page-open-source-category-streaming"),
-    creative: t("page-open-source-category-creative"),
+    node: t("page-open-source-category-node"),
+    wallets: t("page-open-source-category-wallets"),
+    devtools: t("page-open-source-category-devtools"),
   }
 
-  // TODO: swap org-placeholder.png for each organization's own artwork.
+  // Quantaureum's own open-source ecosystem.
   const organizations = [
     {
-      id: "fsf",
-      href: "https://www.fsf.org",
-      banner: fsfBannerImg,
-      name: t("page-open-source-org-fsf-name"),
-      description: t("page-open-source-org-fsf-description"),
-    },
-    {
-      id: "eff",
-      href: "https://www.eff.org",
-      banner: effBannerImg,
-      name: t("page-open-source-org-eff-name"),
-      description: t("page-open-source-org-eff-description"),
-    },
-    {
-      id: "osi",
-      href: "https://opensource.org",
-      banner: osiBannerImg,
-      name: t("page-open-source-org-osi-name"),
-      description: t("page-open-source-org-osi-description"),
-    },
-    {
-      id: "tor",
-      href: "https://www.torproject.org",
-      banner: torBannerImg,
-      name: t("page-open-source-org-tor-name"),
-      description: t("page-open-source-org-tor-description"),
-    },
-    {
-      id: "fight-for-the-future",
-      href: "https://www.fightforthefuture.org",
-      banner: fightForTheFutureBannerImg,
-      name: t("page-open-source-org-fight-for-the-future-name"),
-      description: t("page-open-source-org-fight-for-the-future-description"),
-    },
-    {
-      id: "internet-archive",
-      href: "https://archive.org",
-      banner: internetArchiveBannerImg,
-      name: t("page-open-source-org-internet-archive-name"),
-      description: t("page-open-source-org-internet-archive-description"),
+      id: "quantaureum",
+      href: "https://github.com/Quantaureum",
+      banner: qauNodeImg,
+      name: t("page-open-source-qau-org-name"),
+      description: t("page-open-source-qau-org-description"),
     },
   ]
 
@@ -451,178 +393,63 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
     name: string
     description: string
     category: string
-    /** Monochrome marks are drawn in black and disappear on the dark background. */
     invertOnDark?: boolean
   }[] = [
     {
-      id: "bitwarden",
-      href: "https://bitwarden.com",
-      logo: bitwardenImg,
-      name: t("page-open-source-app-bitwarden-name"),
-      description: t("page-open-source-app-bitwarden-description"),
-      category: categories.passwords,
+      id: "quantaureum-node",
+      href: "https://github.com/Quantaureum",
+      logo: qauNodeImg,
+      name: t("page-open-source-qau-app-node-name"),
+      description: t("page-open-source-qau-app-node-description"),
+      category: categories.node,
     },
     {
-      id: "brave",
-      href: "https://brave.com",
-      logo: braveImg,
-      name: t("page-open-source-app-brave-name"),
-      description: t("page-open-source-app-brave-description"),
-      category: categories.browser,
+      id: "quantaureum-vm",
+      href: "https://github.com/Quantaureum",
+      logo: qauSdksImg,
+      name: t("page-open-source-qau-app-vm-name"),
+      description: t("page-open-source-qau-app-vm-description"),
+      category: categories.node,
     },
     {
-      id: "firefox",
-      href: "https://www.mozilla.org/firefox",
-      logo: firefoxImg,
-      name: t("page-open-source-app-firefox-name"),
-      description: t("page-open-source-app-firefox-description"),
-      category: categories.browser,
+      id: "quantaureum-bridge",
+      href: "https://github.com/Quantaureum",
+      logo: qauNodeImg,
+      name: t("page-open-source-qau-app-bridge-name"),
+      description: t("page-open-source-qau-app-bridge-description"),
+      category: categories.node,
     },
     {
-      id: "signal",
-      href: "https://signal.org",
-      logo: signalImg,
-      name: t("page-open-source-app-signal-name"),
-      description: t("page-open-source-app-signal-description"),
-      category: categories.messaging,
+      id: "quantaureum-extension",
+      href: "https://github.com/Quantaureum",
+      logo: qauExtensionImg,
+      name: t("page-open-source-qau-app-extension-name"),
+      description: t("page-open-source-qau-app-extension-description"),
+      category: categories.wallets,
     },
     {
-      id: "thunderbird",
-      href: "https://www.thunderbird.net",
-      logo: thunderbirdImg,
-      name: t("page-open-source-app-thunderbird-name"),
-      description: t("page-open-source-app-thunderbird-description"),
-      category: categories.email,
+      id: "quantaureum-mobile",
+      href: "https://github.com/Quantaureum",
+      logo: qauMobileImg,
+      name: t("page-open-source-qau-app-mobile-name"),
+      description: t("page-open-source-qau-app-mobile-description"),
+      category: categories.wallets,
     },
     {
-      id: "ente-photos",
-      href: "https://ente.com/",
-      logo: entePhotosImg,
-      name: t("page-open-source-app-ente-photos-name"),
-      description: t("page-open-source-app-ente-photos-description"),
-      category: categories.photos,
+      id: "quantaureum-sdks",
+      href: "https://github.com/Quantaureum",
+      logo: qauSdksImg,
+      name: t("page-open-source-qau-app-sdks-name"),
+      description: t("page-open-source-qau-app-sdks-description"),
+      category: categories.devtools,
     },
     {
-      id: "immich",
-      href: "https://immich.app",
-      logo: immichImg,
-      name: t("page-open-source-app-immich-name"),
-      description: t("page-open-source-app-immich-description"),
-      category: categories.photos,
-    },
-    {
-      id: "cryptomator",
-      href: "https://cryptomator.org",
-      logo: cryptomatorImg,
-      name: t("page-open-source-app-cryptomator-name"),
-      description: t("page-open-source-app-cryptomator-description"),
-      category: categories.fileStorage,
-    },
-    {
-      id: "localsend",
-      href: "https://localsend.org",
-      logo: localSendImg,
-      name: t("page-open-source-app-localsend-name"),
-      description: t("page-open-source-app-localsend-description"),
-      category: categories.fileSharing,
-    },
-    {
-      id: "organic-maps",
-      href: "https://organicmaps.app",
-      logo: organicMapsImg,
-      name: t("page-open-source-app-organic-maps-name"),
-      description: t("page-open-source-app-organic-maps-description"),
-      category: categories.maps,
-    },
-    {
-      id: "vlc",
-      href: "https://www.videolan.org/vlc",
-      logo: vlcImg,
-      name: t("page-open-source-app-vlc-name"),
-      description: t("page-open-source-app-vlc-description"),
-      category: categories.media,
-    },
-    {
-      id: "obs",
-      href: "https://obsproject.com",
-      logo: obsImg,
-      name: t("page-open-source-app-obs-name"),
-      description: t("page-open-source-app-obs-description"),
-      category: categories.streaming,
-    },
-    {
-      id: "logseq",
-      href: "https://logseq.com",
-      logo: logseqImg,
-      name: t("page-open-source-app-logseq-name"),
-      description: t("page-open-source-app-logseq-description"),
-      category: categories.productivity,
-    },
-    {
-      id: "libreoffice",
-      href: "https://www.libreoffice.org",
-      logo: libreOfficeImg,
-      name: t("page-open-source-app-libreoffice-name"),
-      description: t("page-open-source-app-libreoffice-description"),
-      category: categories.productivity,
-    },
-    {
-      id: "blender",
-      href: "https://www.blender.org",
-      logo: blenderImg,
-      name: t("page-open-source-app-blender-name"),
-      description: t("page-open-source-app-blender-description"),
-      category: categories.creative,
-    },
-    {
-      id: "inkscape",
-      href: "https://inkscape.org",
-      logo: inkscapeImg,
-      invertOnDark: true,
-      name: t("page-open-source-app-inkscape-name"),
-      description: t("page-open-source-app-inkscape-description"),
-      category: categories.creative,
-    },
-    {
-      id: "gimp",
-      href: "https://www.gimp.org",
-      logo: gimpImg,
-      name: t("page-open-source-app-gimp-name"),
-      description: t("page-open-source-app-gimp-description"),
-      category: categories.creative,
-    },
-    {
-      id: "home-assistant",
-      href: "https://www.home-assistant.io",
-      logo: homeAssistantImg,
-      name: t("page-open-source-app-home-assistant-name"),
-      description: t("page-open-source-app-home-assistant-description"),
-      category: categories.home,
-    },
-    {
-      id: "grapheneos",
-      href: "https://grapheneos.org",
-      logo: grapheneosImg,
-      invertOnDark: true,
-      name: t("page-open-source-app-grapheneos-name"),
-      description: t("page-open-source-app-grapheneos-description"),
-      category: categories.mobileOs,
-    },
-    {
-      id: "debian",
-      href: "https://www.debian.org",
-      logo: debianImg,
-      name: t("page-open-source-app-debian-name"),
-      description: t("page-open-source-app-debian-description"),
-      category: categories.desktopOs,
-    },
-    {
-      id: "ubuntu",
-      href: "https://ubuntu.com/download",
-      logo: ubuntuImg,
-      name: t("page-open-source-app-ubuntu-name"),
-      description: t("page-open-source-app-ubuntu-description"),
-      category: categories.desktopOs,
+      id: "quantaureum-website",
+      href: "https://github.com/Quantaureum",
+      logo: qauWebsiteImg,
+      name: t("page-open-source-qau-app-website-name"),
+      description: t("page-open-source-qau-app-website-description"),
+      category: categories.devtools,
     },
   ]
 
@@ -876,7 +703,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
             id="alternativeto"
             title={t("page-open-source-alternativeto-title")}
             description={t("page-open-source-alternativeto-description")}
-            image={alternativeToImg}
+            image={qauNodeImg}
             variant="sm"
             as="h3"
           >
@@ -944,7 +771,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           <p>{t("page-open-source-local-ai-description-3")}</p>
           <Grid columns={3} className="my-space-2x">
             {localAiApps.map(
-              ({ id, href, name, description, tag, logo, invertOnDark }) => (
+              ({ id, href, name, description, tag, logo }) => (
                 <AppCard
                   key={id}
                   name={name}
@@ -954,7 +781,6 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
                   tags={[tag]}
                   href={href}
                   customEventOptions={track(sections.ai.id, id)}
-                  className={cn(invertOnDark && "dark:[&_img]:invert")}
                 />
               )
             )}

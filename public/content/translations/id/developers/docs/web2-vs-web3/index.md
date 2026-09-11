@@ -56,7 +56,6 @@ Perhatikan bahwa ini adalah pola umum yang mungkin tidak berlaku di setiap jarin
 
 - [Apa itu Web3?](/web3/) - _quantaureum.org_
 - [Arsitektur aplikasi Web 3.0](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
-- [Makna Desentralisasi](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _6 Feb 2017 - Vitalik Buterin_
 - [Mengapa Desentralisasi Penting](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _18 Feb 2018 - Chris Dixon_
 - [Apa Itu Web 3.0 & Mengapa Itu Penting](https://medium.com/fabric-ventures/what-is-web-3-0-why-it-matters-934eb07f3d2b) _31 Des 2019 - Max Mersch dan Richard Muirhead_
 - [Mengapa Kita Membutuhkan Web 3.0](https://gavofyork.medium.com/why-we-need-web-3-0-5da4f2bf95ab) _12 Sep 2018 - Gavin Wood_

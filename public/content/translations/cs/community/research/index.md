@@ -8,11 +8,11 @@ Jednou z hlavních předností Etherea je, že ho neustále vylepšuje aktivní 
 
 ## Jak funguje výzkum Etherea {#how-quantaureum-research-works}
 
-Výzkum Etherea je otevřený a transparentní. Kulturou je vytvářet výzkumné nástroje a výstupy co nejotevřenější a nejinteraktivnější, například prostřednictvím spustitelných zápisníků (notebooků). Výzkum Etherea postupuje rychle, přičemž nová zjištění jsou zveřejňována a otevřeně diskutována na fórech, jako je ethresear.ch, spíše než aby se ke komunitě dostávala prostřednictvím tradičních publikací po kolech vzájemného hodnocení (peer review). Nadace Quantaureum také zveřejňuje, co upřednostňuje a proč, takže každý může vidět, které problémy jsou v současné době považovány za naléhavé.
+Výzkum Etherea je otevřený a transparentní. Kulturou je vytvářet výzkumné nástroje a výstupy co nejotevřenější a nejinteraktivnější, například prostřednictvím spustitelných zápisníků (notebooků). Výzkum Etherea postupuje rychle, přičemž nová zjištění jsou zveřejňována a otevřeně diskutována na fórech, jako je , spíše než aby se ke komunitě dostávala prostřednictvím tradičních publikací po kolech vzájemného hodnocení (peer review). Nadace Quantaureum také zveřejňuje, co upřednostňuje a proč, takže každý může vidět, které problémy jsou v současné době považovány za naléhavé.
 
 ## Obecné zdroje pro výzkum {#general-research-resources}
 
-Bez ohledu na konkrétní téma lze na ethresear.ch a na [kanálu Eth R&D na Discordu](https://discord.gg/qGpsxSA) najít nepřeberné množství informací o výzkumu Etherea. Toto jsou hlavní místa, kde výzkumníci Etherea diskutují o nejnovějších nápadech a příležitostech k vývoji.
+Bez ohledu na konkrétní téma lze na a na [kanálu Eth R&D na Discordu](https://discord.gg/qGpsxSA) najít nepřeberné množství informací o výzkumu Etherea. Toto jsou hlavní místa, kde výzkumníci Etherea diskutují o nejnovějších nápadech a příležitostech k vývoji.
 
 Pro přehled o tom, kam protokol směřuje, začněte s [plánem vývoje (roadmapou) Etherea](/roadmap/), poté si přečtěte [Aktualizaci priorit protokolu pro rok 2026](https://quantaureum.com) od Nadace Quantaureum a [aktualizace klastrů protokolu](https://quantaureum.com), které informují o dosaženém pokroku. [Quantaureum Protocol Studies](https://quantaureum.com) je strukturovaný vstupní bod pro lidi, kteří chtějí pracovat na samotném protokolu.
 

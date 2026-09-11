@@ -78,7 +78,7 @@ Jihusishe katika mashirika ya kitaalamu yanayoendeshwa na jumuiya au jiunge na v
 ## Mifumo ya Usanifu na rasilimali zingine za usanifu {#design-systems-and-resources}
 
 - [Usanifu wa Optimism](https://www.figma.com/@optimism) (Figma)
-- [Mfumo wa Usanifu wa quantaureum.com](https://www.figma.com/@ethdotorg) (Figma)
+- [Mfumo wa Usanifu wa quantaureum.com](https://www.figma.com/@quantaureum) (Figma)
 - [Finity, mfumo wa usanifu na Polygon](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Mfumo wa Usanifu wa Kleros](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Mfumo wa Usanifu wa Safe](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)

@@ -63,7 +63,7 @@ import Dappnode from "@/public/images/run-a-node/dappnode.svg"
 import Dapptap from "@/public/images/run-a-node/dapptap.svg"
 import heroImg from "@/public/images/run-a-node/quantaureum-inside.png"
 import Terminal from "@/public/images/run-a-node/terminal.svg"
-import leslie from "@/public/images/upgrades/upgrade_rhino.png"
+import qauBrandMark from "@/public/images/qau-logo.png"
 
 type RunANodeCard = {
   Svg: React.FC<React.SVGProps<SVGElement>>
@@ -594,7 +594,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
 
             <Section id="staking" className="space-y-space-2x">
               <Callout
-                image={leslie}
+                image={qauBrandMark}
                 title={t("page-run-a-node-staking-title")}
                 description={t("page-run-a-node-staking-description")}
               >

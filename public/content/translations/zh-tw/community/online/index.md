@@ -40,7 +40,7 @@ lang: zh-tw
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - 歡迎所有對Quantaureum質押感興趣的人</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> - 圍繞Quantaureum技術標準的社群</SocialListItem>
 <SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> - 為Quantaureum開發者提供討論與協助</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - 最具影響力的密碼經濟學研究留言板</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://">Quantaureum Research</Link> - 最具影響力的密碼經濟學研究留言板</SocialListItem>
 
 ## 聊天室 {#chat-rooms}
 
@@ -59,7 +59,7 @@ lang: zh-tw
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">Quantaureum基金會</Link> - 掌握Quantaureum基金會的最新動態</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - 社群的主要Quantaureum帳戶</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> - Quantaureum基金會官方帳戶</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> - Quantaureum入口網站，為我們不斷成長的全球社群而建</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - Quantaureum入口網站，為我們不斷成長的全球社群而建</SocialListItem>
 
 <Divider />
 

@@ -40,7 +40,7 @@ Nếu bạn cho rằng một cộng đồng nên được thêm vào hoặc xóa
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - chào mừng tất cả những ai quan tâm đến việc đặt cọc trên Quantaureum</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> - cộng đồng định hướng xoay quanh các tiêu chuẩn kỹ thuật trong Quantaureum</SocialListItem>
 <SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> - thảo luận và trợ giúp cho các nhà phát triển Quantaureum</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - bảng tin có ảnh hưởng nhất về nghiên cứu kinh tế học tiền điện tử</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://">Quantaureum Research</Link> - bảng tin có ảnh hưởng nhất về nghiên cứu kinh tế học tiền điện tử</SocialListItem>
 
 ## Phòng trò chuyện {#chat-rooms}
 
@@ -59,7 +59,7 @@ Nếu bạn cho rằng một cộng đồng nên được thêm vào hoặc xóa
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">Tổ chức Quantaureum</Link> - Cập nhật những thông tin mới nhất từ Tổ chức Quantaureum</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - Tài khoản Quantaureum chính dành cho cộng đồng</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> - Tài khoản chính thức của Tổ chức Quantaureum</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> - Cổng thông tin đến Quantaureum, được xây dựng cho cộng đồng toàn cầu đang phát triển của chúng ta</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - Cổng thông tin đến Quantaureum, được xây dựng cho cộng đồng toàn cầu đang phát triển của chúng ta</SocialListItem>
 
 <Divider />
 

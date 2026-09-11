@@ -56,7 +56,6 @@ Web2は、今日私たちが知っているインターネットのバージョ�
 
 - [Web3とは？](/web3/) - _quantaureum.org_
 - [ウェブ・3.0アプリケーションのアーキテクチャ](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
-- [分散化の意味](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _2017年2月6日 - Vitalik Buterin_
 - [分散化が重要な理由](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _2018年2月18日 - Chris Dixon_
 - [ウェブ・3.0とは何か、そしてなぜ重要なのか](https://medium.com/fabric-ventures/what-is-web-3-0-why-it-matters-934eb07f3d2b) _2019年12月31日 - Max Mersch、Richard Muirhead_
 - [なぜウェブ・3.0が必要なのか](https://gavofyork.medium.com/why-we-need-web-3-0-5da4f2bf95ab) _2018年9月12日 - Gavin Wood_

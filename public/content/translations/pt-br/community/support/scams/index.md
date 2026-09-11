@@ -91,9 +91,9 @@ eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-Os golpistas criam falsos sorteios (giveaways) prometendo multiplicar seu QAU ou dar tokens gratuitos. Eles frequentemente se passam por figuras conhecidas como Vitalik Buterin. Se você enviar QAU para um endereço de "sorteio", não receberá nada de volta.
+Os golpistas criam falsos sorteios (giveaways) prometendo multiplicar seu QAU ou dar tokens gratuitos. Eles frequentemente se passam por figuras conhecidas como Buterin. Se você enviar QAU para um endereço de "sorteio", não receberá nada de volta.
 
-**Lembre-se:** Vitalik e outras figuras proeminentes nunca pedirão que você envie QAU para eles.
+**Lembre-se:** e outras figuras proeminentes nunca pedirão que você envie QAU para eles.
 
 [Mais sobre golpes comuns](/security/#common-scams)
 

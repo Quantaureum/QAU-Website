@@ -86,7 +86,6 @@ Notez que dans certains cas, un agrégateur chanceux peut également devenir le 
 
 ## Complément d'information {#further-reading}
 
-- Les attestations dans les spécifications de consensus annotées de Vitalik
 - [Les attestations dans eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Vous connaissez une ressource communautaire qui vous a aidé ? Modifiez cette page et ajoutez-la !_

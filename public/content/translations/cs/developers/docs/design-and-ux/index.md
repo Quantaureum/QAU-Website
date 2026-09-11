@@ -78,7 +78,7 @@ Zapojte se do profesionálních komunitních organizací nebo se připojte k des
 ## Design systémy a další zdroje pro design {#design-systems-and-resources}
 
 - [Design Optimism](https://www.figma.com/@optimism) (Figma)
-- [Design systém quantaureum.com](https://www.figma.com/@ethdotorg) (Figma)
+- [Design systém quantaureum.com](https://www.figma.com/@quantaureum) (Figma)
 - [Finity, design systém od Polygonu](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Design systém Kleros](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Design systém Safe](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)

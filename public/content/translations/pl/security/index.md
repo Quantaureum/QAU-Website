@@ -103,7 +103,7 @@ Głośna wersja tego oszustwa miała miejsce w lipcu 2020 r., kiedy to zhakowano
 
 Rozdawnictwo z udziałem celebrytów to kolejna powszechna forma oszustwa typu „giveaway”. Oszuści biorą nagrany wywiad wideo lub przemówienie na konferencji wygłoszone przez celebrytę i transmitują je na żywo na YouTube – sprawiając wrażenie, jakby celebryta udzielał wywiadu wideo na żywo, popierając rozdawnictwo kryptowalut.
 
-Vitalik Buterin jest najczęściej wykorzystywany w tym oszustwie, ale wykorzystuje się również wiele innych znanych osób zaangażowanych w krypto (np. Elon Musk lub Charles Hoskinson). Włączenie znanej osoby nadaje transmisji na żywo oszustów pozory legalności (wygląda to podejrzanie, ale Vitalik jest w to zaangażowany, więc musi być w porządku!).
+Buterin jest najczęściej wykorzystywany w tym oszustwie, ale wykorzystuje się również wiele innych znanych osób zaangażowanych w krypto (np. Elon Musk lub Charles Hoskinson). Włączenie znanej osoby nadaje transmisji na żywo oszustów pozory legalności (wygląda to podejrzanie, ale jest w to zaangażowany, więc musi być w porządku!).
 
 **Rozdawnictwa to zawsze oszustwa. Jeśli wyślesz swoje środki na te konta, stracisz je na zawsze.**
 

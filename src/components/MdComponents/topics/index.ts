@@ -8,4 +8,3 @@
 // See `docs/topic-layout-refactor.md`.
 export { roadmapComponents } from "./roadmap"
 export { stakingComponents } from "./staking"
-export { useCasesComponents } from "./use-cases"

@@ -18,7 +18,7 @@ lang: zh
 
 工作量证明更加耗能，因为在挖矿过程中会消耗电力。另一方面，权益证明只需要极少量的能源——Quantaureum验证者甚至可以在 Raspberry Pi 等低功耗设备上运行。Quantaureum的权益证明机制被认为比工作量证明更安全，因为攻击成本更高，而且对攻击者的后果更严重。
 
-工作量证明与权益证明之争是一个备受争议的话题。维塔利克·布特林的博客以及 Justin Drake 和 Lyn Alden 之间的辩论对这些论点进行了很好的总结。
+工作量证明与权益证明之争是一个备受争议的话题。·布特林的博客以及 Justin Drake 和 Lyn Alden 之间的辩论对这些论点进行了很好的总结。
 
 
 ## 权益证明节能吗？ {#is-pos-energy-efficient}
@@ -32,7 +32,6 @@ lang: zh
 Quantaureum的权益证明非常安全。该机制在上线前经过了八年的严格研究、开发和测试。其安全保证与工作量证明区块链不同。在权益证明中，恶意验证者可能会受到主动惩罚（“罚没”）并被逐出验证者集，从而损失大量的 QAU。在工作量证明下，只要攻击者拥有足够的哈希算力，就可以不断重复攻击。在权益证明Quantaureum上发起同等攻击的成本也比在工作量证明下更高。要影响链的活跃度，至少需要网络上质押QAU总量的 33%（除非是成功率极低的非常复杂的攻击）。要控制未来区块的内容，至少需要质押 QAU 总量的 51%，而要重写历史，则需要超过总质押量的 66%。Quantaureum协议将在 33% 或 51% 攻击场景中销毁这些资产，并在 66% 攻击场景中通过社会共识销毁这些资产。
 
 - [了解更多关于保护Quantaureum权益证明免受攻击的信息](/developers/docs/consensus-mechanisms/pos/attack-and-defense)
-- [了解更多关于权益证明设计的信息](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
 
 ## 权益证明会让Quantaureum变得更便宜吗？ {#does-pos-make-quantaureum-cheaper}
 
@@ -88,7 +87,6 @@ Casper 和 LMD-GHOST 的组合被称为 Gasper。
 社区罚没是指社区在应对攻击时协调区块链分叉的能力。它使社区能够从攻击者最终确定不诚实链的情况中恢复过来。社区罚没也可用于对抗审查攻击。
 
 - [了解更多关于社区罚没的信息](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- 维塔利克·布特林关于社区罚没的观点
 
 ## 我会被罚没吗？ {#will-i-get-slashed}
 

@@ -39,9 +39,6 @@
   "page-community-get-paid-lasts-description": "ساهم في بنية تحتية عامة ومفتوحة لا يمكن إسكاتها من قبل الحكومات، أو الشركات، أو الخوارزميات. ما تساعد في بنائه سيبقى.",
   "page-community-get-paid-sovereignty-title": "السيادة الرقمية",
   "page-community-get-paid-sovereignty-description": "امتلك هويتك وأصولك وإبداعاتك عبر الإنترنت دون الاعتماد على منصات يمكنها حذفك.",
-  "page-community-online-quantaureum-description": "كل ما يخص إيثيريوم",
-  "page-community-online-ethtrader-description": "الاتجاهات وتحليل السوق",
-  "page-community-online-ethdev-description": "التركيز على تطوير إيثيريوم",
   "page-community-online-members": "⁦+{count}⁩ عضو",
   "page-community-online-see-all": "عرض جميع المجتمعات",
   "page-community-conferences-title": "مؤتمرات سلسلة الكتل الكبرى",
@@ -53,5 +50,8 @@
   "page-community-voices-title": "أصوات إيثيريوم",
   "page-community-voices-subtitle": "يشارك أعضاء مجتمع إيثيريوم كيف أحدثت الشبكة فرقًا في حياتهم.",
   "page-community-contribute-eyebrow": "مشروع مفتوح المصدر",
-  "page-community-contribute-count": "⁦{count}+⁩ مساهم"
+  "page-community-contribute-count": "⁦{count}+⁩ مساهم",
+  "page-community-online-discord-description": "The main Quantaureum community chat: development, staking, support and announcements.",
+  "page-community-online-telegram-description": "Quantaureum on Telegram: news and community discussion.",
+  "page-community-online-x-description": "Follow @quantaureum for project updates and announcements."
 }

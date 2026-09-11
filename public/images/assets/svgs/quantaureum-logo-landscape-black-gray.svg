@@ -1,6 +1,0 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Quantaureum quantum lattice brand mark -->
-  <path d="M256 64 L411.7 154 L411.7 334 L256 424 L100.3 334 L100.3 154 Z" stroke="#8A8A8A" stroke-width="18" stroke-linejoin="round"/>
-  <path d="M256 160 L342 210 L342 310 L256 360 L170 310 L170 210 Z" stroke="#8A8A8A" stroke-width="10" stroke-linejoin="round" opacity="0.9"/>
-  <circle cx="256" cy="160" r="14" fill="#8A8A8A"/><circle cx="342" cy="210" r="10" fill="#8A8A8A"/><circle cx="342" cy="310" r="10" fill="#8A8A8A"/><circle cx="256" cy="360" r="14" fill="#8A8A8A"/><circle cx="170" cy="310" r="10" fill="#8A8A8A"/><circle cx="170" cy="210" r="10" fill="#8A8A8A"/><circle cx="256" cy="260" r="12" fill="#8A8A8A"/>
-</svg>

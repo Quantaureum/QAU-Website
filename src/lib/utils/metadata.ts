@@ -23,7 +23,7 @@ const imageForSlug = [
   { section: "roadmap", image: "/images/heroes/roadmap-hub-hero.jpg" },
   { section: "guides", image: "/images/heroes/guides-hub-hero.jpg" },
   { section: "community", image: "/images/heroes/community-hero.png" },
-  { section: "staking", image: "/images/upgrades/upgrade_rhino.png" },
+  { section: "staking", image: "/images/qau-logo.png" },
 ] as const
 
 /**

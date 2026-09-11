@@ -72,7 +72,7 @@ export default async function StakingPageJsonLD({
         isPartOf: webPageId,
         headline: t("page-staking-hero-title"),
         description: t("page-staking-meta-description"),
-        image: "https://quantaureum.com/images/upgrades/upgrade_rhino.png",
+        image: "https://quantaureum.com/images/qau-logo.png",
         author: [REFERENCE.QUANTAUREUM_COMMUNITY],
         contributor: contributorList,
         publisher: REFERENCE.QUANTAUREUM_ORG,

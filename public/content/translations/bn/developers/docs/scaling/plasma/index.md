@@ -166,7 +166,6 @@ ZK-রোলআপ এবং অপটিমিস্টিক রোলআপ �
 
 ## আরও পড়ুন {#further-reading}
 
-- ["শেয়ার্ড সিকিউরিটি" বলতে কী বোঝায় এবং এটি কেন এত গুরুত্বপূর্ণ তার একটি দ্রুত অনুস্মারক](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - সাইডচেইন বনাম প্লাজমা বনাম শার্ডিং
 - [প্লাজমা বোঝা, পর্ব 1: মৌলিক বিষয়গুলো](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [প্লাজমার জীবন ও মৃত্যু](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

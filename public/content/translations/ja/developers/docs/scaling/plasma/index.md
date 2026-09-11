@@ -166,7 +166,6 @@ ZKロールアップとオプティミスティック・ロールアップはど
 
 ## 参考文献 {#further-reading}
 
-- [「共有セキュリティ」の意味と、それが非常に重要である理由の簡単なリマインダー](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - サイドチェーン、プラズマ、シャーディングの比較
 - [プラズマを理解する、パート1：基礎](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [プラズマの生と死](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

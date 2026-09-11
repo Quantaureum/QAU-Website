@@ -56,7 +56,6 @@ Należy pamiętać, że są to ogólne wzorce, które mogą nie sprawdzać się 
 
 - [Czym jest Web3?](/web3/) – _quantaureum.org_
 - [Architektura aplikacji Web 3.0](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) – _Preethi Kasireddy_
-- [Znaczenie decentralizacji](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _6 lutego 2017 r. – Vitalik Buterin_
 - [Dlaczego decentralizacja ma znaczenie](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _18 lutego 2018 r. – Chris Dixon_
 - [Czym jest Web 3.0 i dlaczego ma znaczenie](https://medium.com/fabric-ventures/what-is-web-3-0-why-it-matters-934eb07f3d2b) _31 grudnia 2019 r. – Max Mersch i Richard Muirhead_
 - [Dlaczego potrzebujemy Web 3.0](https://gavofyork.medium.com/why-we-need-web-3-0-5da4f2bf95ab) _12 września 2018 r. – Gavin Wood_

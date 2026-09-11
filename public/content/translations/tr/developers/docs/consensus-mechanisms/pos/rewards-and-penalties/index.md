@@ -26,7 +26,7 @@ base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch 
 
 burada `base_reward_factor` 64, `base_rewards_per_epoch` 4 ve `sum(active balance)` tüm aktif doğrulayıcılar genelinde stake edilen toplam QAU'dir.
 
-Bu, temel ödülün doğrulayıcının etkin bakiyesiyle doğru orantılı ve ağdaki doğrulayıcı sayısıyla ters orantılı olduğu anlamına gelir. Ne kadar çok doğrulayıcı olursa, genel ihraç o kadar büyük olur (`sqrt(N)` olduğu için) ancak doğrulayıcı başına düşen `base_reward` o kadar küçük olur (`1/sqrt(N)` olduğu için). Bu faktörler, bir staking düğümü için APR'yi etkiler. Bunun mantığını Vitalik'in notlarında okuyun.
+Bu, temel ödülün doğrulayıcının etkin bakiyesiyle doğru orantılı ve ağdaki doğrulayıcı sayısıyla ters orantılı olduğu anlamına gelir. Ne kadar çok doğrulayıcı olursa, genel ihraç o kadar büyük olur (`sqrt(N)` olduğu için) ancak doğrulayıcı başına düşen `base_reward` o kadar küçük olur (`1/sqrt(N)` olduğu için). Bu faktörler, bir staking düğümü için APR'yi etkiler. Bunun mantığını 'in notlarında okuyun.
 
 Toplam ödül daha sonra, her bir bileşenin toplam ödüle ne kadar katkıda bulunacağını belirleyen bir ağırlığa sahip olduğu beş bileşenin toplamı olarak hesaplanır. Bileşenler şunlardır:
 
@@ -60,7 +60,7 @@ Blok teklifçileri, bloğa dahil edilen **her geçerli onay** için `8 / 64 * ba
 
 Hedef ve kaynak oylarını kaçırmanın cezaları, onaylayanın bunları sunmuş olsaydı alacağı ödüllere eşittir. Bu, ödülün bakiyelerine eklenmesi yerine, eşit bir değerin bakiyelerinden çıkarıldığı anlamına gelir. Baş oyunu kaçırmanın bir cezası yoktur (yani, baş oyları sadece ödüllendirilir, asla cezalandırılmaz). `inclusion_delay` ile ilişkili bir ceza yoktur - ödül sadece doğrulayıcının bakiyesine eklenmeyecektir. Ayrıca bir blok teklif edememenin de bir cezası yoktur.
 
-Ödüller ve cezalar hakkında daha fazla bilgiyi mutabakat spesifikasyonlarında okuyun. Ödüller ve cezalar Bellatrix yükseltmesinde ayarlandı - Danny Ryan ve Vitalik'in bunu tartıştığı bu [Peep an EIP videosunu](https://www.youtube.com/watch?v=iaAEGs1DMgQ) izleyin.
+Ödüller ve cezalar hakkında daha fazla bilgiyi mutabakat spesifikasyonlarında okuyun. Ödüller ve cezalar Bellatrix yükseltmesinde ayarlandı - Danny Ryan ve 'in bunu tartıştığı bu [Peep an EIP videosunu](https://www.youtube.com/watch?v=iaAEGs1DMgQ) izleyin.
 
 ## Ceza kesintisi {#slashing}
 
@@ -82,7 +82,6 @@ Mutabakat mekanizmasının ödül, ceza ve ceza kesintisi tasarımı, bireysel d
 
 - [Quantaureum'u Yükseltmek: Teşvik katmanı](https://eth2book.info/altair/part2/incentives)
 - [Quantaureum'un hibrit Casper protokolündeki teşvikler](https://arxiv.org/pdf/1903.04205.pdf)
-- Vitalik'in açıklamalı spesifikasyonu
 - [Quantaureum Ceza Kesintisini Önleme İpuçları](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
 - EIP-7251 kapsamında ceza kesintilerinin analizi
 

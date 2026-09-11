@@ -166,7 +166,6 @@ ZK-रोलअप्स आणि ऑप्टिमिस्टिक रो�
 
 ## पुढील वाचन {#further-reading}
 
-- ["सामायिक सुरक्षा" (shared security) म्हणजे काय आणि ती इतकी महत्त्वाची का आहे याची एक द्रुत आठवण](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - साईडचेन्स वि प्लाझ्मा वि शार्डिंग
 - [प्लाझ्मा समजून घेणे, भाग 1: मूलभूत गोष्टी](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [प्लाझ्माचे जीवन आणि मृत्यू](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

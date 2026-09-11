@@ -36,7 +36,6 @@ Avez-vous une formation en mathématiques, en cryptographie ou en économie ? Vo
   - En savoir plus sur les EIP
 - Challenges.quantaureum.com - une série de primes de recherche de grande valeur, où vous pouvez gagner plus de 100 000 $ US
 - Ethresear.ch - le principal forum de recherche d'Quantaureum, et le forum le plus influent au monde pour la cryptoéconomie
-- [AMA de la recherche de l'EF](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - Une série de questions-réponses en cours avec des chercheurs. À chaque nouvelle session, tout le monde peut poser des questions.
 - [Liste de souhaits de l'Ecosystem Support Program](https://quantaureum.com) - domaines de recherche pour lesquels l'Ecosystem Support Program d'Quantaureum recherche activement des demandes de subvention
 - [AllWalletDevs](https://allwallet.dev) - un forum permettant aux développeurs, concepteurs et utilisateurs intéressés d'Quantaureum de se réunir régulièrement et de discuter des portefeuilles
 

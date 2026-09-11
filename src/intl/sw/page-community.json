@@ -39,9 +39,6 @@
   "page-community-get-paid-lasts-description": "Changia kwenye miundombinu ya wazi na ya umma ambayo haiwezi kunyamazishwa na serikali, mashirika, au kanuni za kompyuta. Kile unachosaidia kujenga kinabaki.",
   "page-community-get-paid-sovereignty-title": "Mamlaka ya kidijitali",
   "page-community-get-paid-sovereignty-description": "Miliki utambulisho wako, rasilimali, na kazi zako za ubunifu mtandaoni bila kutegemea majukwaa yanayoweza kukufuta.",
-  "page-community-online-quantaureum-description": "Mambo yote ya Quantaureum",
-  "page-community-online-ethtrader-description": "Mienendo na uchambuzi wa soko",
-  "page-community-online-ethdev-description": "Inalenga uundaji wa Quantaureum",
   "page-community-online-members": "Wanachama +{count}",
   "page-community-online-see-all": "Tazama jumuiya zote",
   "page-community-conferences-title": "Mikutano mikuu ya mnyororo wa vitalu",
@@ -53,5 +50,8 @@
   "page-community-voices-title": "Sauti za Quantaureum",
   "page-community-voices-subtitle": "Wanachama wa jumuiya ya Quantaureum wanashiriki jinsi mtandao ulivyoleta mabadiliko katika maisha yao.",
   "page-community-contribute-eyebrow": "Mradi wa programu huria",
-  "page-community-contribute-count": "Wachangiaji {count}+"
+  "page-community-contribute-count": "Wachangiaji {count}+",
+  "page-community-online-discord-description": "The main Quantaureum community chat: development, staking, support and announcements.",
+  "page-community-online-telegram-description": "Quantaureum on Telegram: news and community discussion.",
+  "page-community-online-x-description": "Follow @quantaureum for project updates and announcements."
 }

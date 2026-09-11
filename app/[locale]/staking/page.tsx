@@ -64,7 +64,7 @@ import poolsImg from "@/public/images/staking/leslie-pool.png"
 import saasImg from "@/public/images/staking/leslie-saas.png"
 import soloImg from "@/public/images/staking/leslie-solo.png"
 import cexImg from "@/public/images/staking/leslie-withdrawal.png"
-import heroImg from "@/public/images/upgrades/upgrade_rhino.png"
+import heroImg from "@/public/images/qau-logo.png"
 
 type IndicatorLevel = "good" | "meh" | "poor"
 
@@ -295,7 +295,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
         }),
         t.rich("page-staking-section-comparison-solo-requirements-li3", {
           a: (chunks) => (
-            <InlineLink href="https://hoodi.launchpad.ethereum.org">
+            <InlineLink href="https://github.com/Quantaureum">
               {chunks}
             </InlineLink>
           ),
@@ -799,7 +799,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 </InlineLink>
               </ListItem>
               <ListItem>
-                <InlineLink href="https://notes.ethereum.org/9l707paQQEeI-GPzVK02lA?view#">
+                <InlineLink href="https://github.com/Quantaureum">
                   {t("page-staking-further-reading-2-link")}
                 </InlineLink>{" "}
                 -{" "}
@@ -824,7 +824,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 </InlineLink>
               </ListItem>
               <ListItem>
-                <InlineLink href="https://launchpad.ethereum.org/en/faq">
+                <InlineLink href="https://github.com/Quantaureum">
                   {t("page-staking-further-reading-9-link")}
                 </InlineLink>
               </ListItem>
@@ -856,7 +856,7 @@ export async function generateMetadata(props: {
     slug: ["staking"],
     title: t("page-staking-meta-title"),
     description: t("page-staking-meta-description"),
-    image: "/images/upgrades/upgrade_rhino.png",
+    image: "/images/qau-logo.png",
   })
 }
 

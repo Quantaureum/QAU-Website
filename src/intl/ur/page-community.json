@@ -39,9 +39,6 @@
   "page-community-get-paid-lasts-description": "ایسے کھلے، عوامی انفراسٹرکچر میں تعاون کریں جسے حکومتیں، کارپوریشنز، یا الگورتھم خاموش نہیں کر سکتے۔ آپ جو بنانے میں مدد کرتے ہیں وہ باقی رہتا ہے۔",
   "page-community-get-paid-sovereignty-title": "ڈیجیٹل خودمختاری",
   "page-community-get-paid-sovereignty-description": "ایسے پلیٹ فارمز پر انحصار کیے بغیر جو آپ کو ڈیلیٹ کر سکتے ہیں، آن لائن اپنی شناخت، اثاثوں اور تخلیقات کے مالک بنیں۔",
-  "page-community-online-quantaureum-description": "ایتھیریم سے متعلق سب کچھ",
-  "page-community-online-ethtrader-description": "رجحانات اور مارکیٹ کا تجزیہ",
-  "page-community-online-ethdev-description": "ایتھیریم ڈیولپمنٹ پر مرکوز",
   "page-community-online-members": "⁦+{count}⁩ ممبران",
   "page-community-online-see-all": "تمام کمیونٹیز دیکھیں",
   "page-community-conferences-title": "بڑی بلاک چین کانفرنسز",
@@ -53,5 +50,8 @@
   "page-community-voices-title": "ایتھیریم کی آوازیں",
   "page-community-voices-subtitle": "ایتھیریم کمیونٹی کے ممبران بتاتے ہیں کہ نیٹ ورک نے ان کی زندگیوں میں کیسے تبدیلی لائی ہے۔",
   "page-community-contribute-eyebrow": "اوپن سورس پروجیکٹ",
-  "page-community-contribute-count": "⁦{count}+⁩ تعاون کنندگان"
+  "page-community-contribute-count": "⁦{count}+⁩ تعاون کنندگان",
+  "page-community-online-discord-description": "The main Quantaureum community chat: development, staking, support and announcements.",
+  "page-community-online-telegram-description": "Quantaureum on Telegram: news and community discussion.",
+  "page-community-online-x-description": "Follow @quantaureum for project updates and announcements."
 }

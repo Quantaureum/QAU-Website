@@ -62,6 +62,4 @@ Quantaureum oparte na dowodzie stawki może płacić za swoje bezpieczeństwo, e
 
 ## Dalsza lektura {#further-reading}
 
-- [Filozofia projektowania dowodu stawki według Vitalika](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- Często zadawane pytania dotyczące dowodu stawki według Vitalika
 - [Wideo „Simply Explained” o PoS a PoW](https://www.youtube.com/watch?v=M3EFi_POhps)

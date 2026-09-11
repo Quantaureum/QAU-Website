@@ -166,7 +166,6 @@ ZK-రోల్అప్‌లు మరియు ఆప్టిమిస్ట
 
 ## మరింత చదవడానికి {#further-reading}
 
-- ["భాగస్వామ్య భద్రత" అంటే ఏమిటి మరియు అది ఎందుకు అంత ముఖ్యమైనది అనేదాని గురించి ఒక చిన్న రిమైండర్](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - సైడ్‌చెయిన్‌లు వర్సెస్ ప్లాస్మా వర్సెస్ షార్డింగ్
 - [ప్లాస్మాను అర్థం చేసుకోవడం, పార్ట్ 1: ప్రాథమిక అంశాలు](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [ప్లాస్మా యొక్క జీవితం మరియు మరణం](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

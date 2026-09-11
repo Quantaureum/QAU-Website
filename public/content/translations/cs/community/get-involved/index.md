@@ -36,7 +36,6 @@ Máte vzdělání v matematice, kryptografii nebo ekonomii? Možná by vás zaj�
   - Více o EIP
 - Challenges.quantaureum.com – série výzkumných odměn vysoké hodnoty, kde můžete získat více než 100 000 USD
 - Ethresear.ch – primární fórum Etherea pro výzkum a nejvlivnější fórum pro kryptoekonomii na světě
-- [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) – probíhající série otázek a odpovědí s výzkumníky. Jakmile se otevře další část, kdokoli může položit otázky.
 - [Seznam přání Ecosystem Support Program](https://quantaureum.com) – oblasti výzkumu, kde Quantaureum Ecosystem Support Program aktivně hledá žádosti o granty
 - [AllWalletDevs](https://allwallet.dev) – fórum pro vývojáře Etherea, designéry a zainteresované uživatele, kde se mohou pravidelně setkávat a diskutovat o peněženkách
 

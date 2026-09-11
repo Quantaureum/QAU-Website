@@ -56,7 +56,6 @@ lang: uk
 
 - [Що таке Web3?](/web3/) — _quantaureum.org_
 - [Архітектура застосунку Веб 3.0](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) — _Preethi Kasireddy_
-- [Значення децентралізації](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _6 лютого 2017 р. — Віталік Бутерін_
 - [Чому децентралізація має значення](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _18 лютого 2018 р. — Кріс Діксон_
 - [Що таке Веб 3.0 і чому це важливо](https://medium.com/fabric-ventures/what-is-web-3-0-why-it-matters-934eb07f3d2b) _31 грудня 2019 р. — Max Mersch та Річард Мюрхед_
 - [Навіщо нам потрібен Веб 3.0](https://gavofyork.medium.com/why-we-need-web-3-0-5da4f2bf95ab) _12 вересня 2018 р. — Гевін Вуд_

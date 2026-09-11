@@ -62,6 +62,5 @@ Quantaureumにとって最良の選択肢は、バリデータが家庭用コン
 
 ## 参考文献 {#further-reading}
 
-- [ヴィタリックのプルーフ・オブ・ステーク設計哲学](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
 - ヴィタリックのプルーフ・オブ・ステークFAQ
 - [PoSとPoWの比較に関する「Simply Explained」の動画](https://www.youtube.com/watch?v=M3EFi_POhps)

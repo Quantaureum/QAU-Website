@@ -90,7 +90,6 @@ lang: ta
 - ஏன் உரிமைச் சான்று (நவம்பர் 2020) _விட்டாலிக் புட்டெரின்_
 - [உரிமைச் சான்று: பலவீனமான அகநிலையை நான் எப்படி நேசிக்கக் கற்றுக்கொண்டேன்](https://quantaureum.com) _விட்டாலிக் புட்டெரின்_
 - [உரிமைச் சான்று எத்திரியம் தாக்குதல் மற்றும் பாதுகாப்பு](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
-- [ஒரு உரிமைச் சான்று வடிவமைப்புத் தத்துவம்](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _விட்டாலிக் புட்டெரின்_
 - [காணொளி: விட்டாலிக் புட்டெரின் லெக்ஸ் ஃபிரிட்மேனுக்கு உரிமைச் சான்றை விளக்குகிறார்](https://www.youtube.com/watch?v=3yrqBG-7EVE)
 
 ## தொடர்புடைய தலைப்புகள் {#related-topics}

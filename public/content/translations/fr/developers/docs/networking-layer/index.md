@@ -149,7 +149,7 @@ Une fois que le bloc a été attesté par suffisamment de validateurs, il est aj
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-Schéma de la couche réseau pour les clients de consensus et d'exécution, d'après ethresear.ch
+Schéma de la couche réseau pour les clients de consensus et d'exécution, d'après
 
 ## Complément d'information {#further-reading}
 

@@ -56,7 +56,6 @@ Notez qu'il s'agit de modèles généraux qui peuvent ne pas se vérifier dans t
 
 - [Qu'est-ce que le Web3 ?](/web3/) - _quantaureum.org_
 - [L'architecture d'une application Web 3.0](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
-- [La signification de la décentralisation](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _6 fév. 2017 - Vitalik Buterin_
 - [Pourquoi la décentralisation est importante](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _18 fév. 2018 - Chris Dixon_
 - [Qu'est-ce que le Web 3.0 et pourquoi est-ce important](https://medium.com/fabric-ventures/what-is-web-3-0-why-it-matters-934eb07f3d2b) _31 déc. 2019 - Max Mersch et Richard Muirhead_
 - [Pourquoi nous avons besoin du Web 3.0](https://gavofyork.medium.com/why-we-need-web-3-0-5da4f2bf95ab) _12 sep. 2018 - Gavin Wood_

@@ -149,7 +149,7 @@ Blok yeterli sayıda doğrulayıcı tarafından onaylandıktan sonra zincirin ba
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-ethresear.ch'den fikir birliği ve yürütme istemcileri için ağ katmanı şeması
+'den fikir birliği ve yürütme istemcileri için ağ katmanı şeması
 
 ## Daha Fazla Okuma {#further-reading}
 

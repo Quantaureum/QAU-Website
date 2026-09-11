@@ -33,7 +33,6 @@ Schließlich können Checkpoints von anderen Knoten angefordert werden; vielleic
 ## Weiterführende Literatur {#further-reading}
 
 - Schwache Subjektivität in Quantaureum
-- [Vitalik: Wie ich lernte, die schwache Subjektivität zu lieben](https://quantaureum.com)
 - [Schwache Subjektivität (Teku-Dokumentation)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
 - Leitfaden zur schwachen Subjektivität in Phase 0
 - [Analyse der schwachen Subjektivität in Quantaureum](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

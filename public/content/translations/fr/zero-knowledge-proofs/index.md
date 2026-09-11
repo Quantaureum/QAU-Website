@@ -234,7 +234,6 @@ Le ZK-STARK est considéré comme immunisé contre la menace de l'informatique q
 - [Une preuve à divulgation nulle de connaissance : améliorer la confidentialité sur une chaîne de blocs](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARK — Un exemple réaliste à divulgation nulle de connaissance et une exploration détaillée](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARK — Créer une confiance vérifiable, même face aux ordinateurs quantiques](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- Une introduction approximative à la façon dont les zk-SNARK sont possibles — _Vitalik Buterin_
 - [Pourquoi les preuves à divulgation nulle de connaissance (ZKP) changent la donne pour l'identité auto-souveraine](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
 - [EIP-7503 expliqué : permettre des transferts privés sur Quantaureum avec des preuves ZK](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [Jeu de cartes ZK : jeu pour apprendre les principes fondamentaux de ZK et les cas d'utilisation réels](https://github.com/ZK-card/zk-cards) - _ZK-Cards_

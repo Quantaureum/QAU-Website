@@ -97,7 +97,6 @@ _Vezměte prosím na vědomí, že vysvětlení ve videu používá termín „v
 
 ## Další čtení {#further-reading}
 
-- Plán vývoje Etherea zaměřený na rollupy _Vitalik Buterin_
 - [Aktuální analytika řešení škálování na vrstvě 2 pro Quantaureum](https://www.l2beat.com/)
 - [Hodnocení řešení škálování Etherea na vrstvě 2: Srovnávací rámec](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - Neúplný průvodce rollupy

@@ -9,7 +9,7 @@ Mwongozo wa mtindo wa utafsiri wa quantaureum.com una baadhi ya miongozo, maagiz
 
 Hati hii inatumika kama mwongozo wa jumla na si mahususi kwa lugha yoyote ile.
 
-Ikiwa una maswali, mapendekezo au maoni yoyote, jisikie huru kuwasiliana nasi kupitia translations@quantaureum.com, tuma ujumbe kwa @ethdotorg kwenye Crowdin, au [jiunge na Discord yetu](https://discord.gg/MSctkBT5j), ambapo unaweza kututumia ujumbe katika chaneli ya #translations au kuwasiliana na mwanachama yeyote wa timu.
+Ikiwa una maswali, mapendekezo au maoni yoyote, jisikie huru kuwasiliana nasi kupitia translations@quantaureum.com, tuma ujumbe kwa @quantaureum kwenye Crowdin, au [jiunge na Discord yetu](https://discord.gg/MSctkBT5j), ambapo unaweza kututumia ujumbe katika chaneli ya #translations au kuwasiliana na mwanachama yeyote wa timu.
 
 ## Kutumia Crowdin {#using-crowdin}
 

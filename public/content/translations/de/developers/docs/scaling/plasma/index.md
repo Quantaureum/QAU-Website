@@ -166,7 +166,6 @@ Mehrere Projekte bieten Implementierungen von Plasma an, die Sie in Ihre Dapps i
 
 ## Weiterführende Literatur {#further-reading}
 
-- [Eine kurze Erinnerung daran, was „Shared Security“ bedeutet und warum sie so wichtig ist](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - Sidechains vs. Plasma vs. Sharding
 - [Plasma verstehen, Teil 1: Die Grundlagen](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Das Leben und Sterben von Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

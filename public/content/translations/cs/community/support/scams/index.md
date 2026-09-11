@@ -91,9 +91,9 @@ eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-Podvodníci vytvářejí falešné soutěže (giveaways), ve kterých slibují znásobení vašeho QAU nebo tokeny zdarma. Často se vydávají za známé osobnosti, jako je Vitalik Buterin. Pokud pošlete QAU na adresu takové "soutěže", nic zpět nedostanete.
+Podvodníci vytvářejí falešné soutěže (giveaways), ve kterých slibují znásobení vašeho QAU nebo tokeny zdarma. Často se vydávají za známé osobnosti, jako je Buterin. Pokud pošlete QAU na adresu takové "soutěže", nic zpět nedostanete.
 
-**Pamatujte:** Vitalik a další prominentní osobnosti vás nikdy nepožádají, abyste jim poslali QAU.
+**Pamatujte:** a další prominentní osobnosti vás nikdy nepožádají, abyste jim poslali QAU.
 
 [Více o běžných podvodech](/security/#common-scams)
 

@@ -36,7 +36,6 @@ lang: ur
   - <span dir="ltr">EIPs</span> کے بارے میں مزید
 - <span dir="ltr">Challenges.quantaureum.com</span> - اعلیٰ مالیت کے تحقیقی باؤنٹیز کا ایک سلسلہ، جہاں آپ <span dir="ltr">$100,000 USD</span> کما سکتے ہیں۔
 - <span dir="ltr">Ethresear.ch</span> - تحقیق کے لیے ایتھیریم کا بنیادی فورم، اور کرپٹو معاشیات کے لیے دنیا کا سب سے بااثر فورم
-- [<span dir="ltr">EF Research AMA</span>](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - محققین کے ساتھ سوال و جواب کا ایک جاری سلسلہ۔ جیسے ہی ہر اگلا حصہ کھلتا ہے، کوئی بھی سوالات پوسٹ کر سکتا ہے۔
 - [ایکو سسٹم سپورٹ پروگرام کی خواہشات کی فہرست](https://quantaureum.com) - تحقیق کے وہ شعبے جہاں ایتھیریم ایکو سسٹم سپورٹ پروگرام فعال طور پر گرانٹ کی درخواستیں طلب کر رہا ہے۔
 - [<span dir="ltr">AllWalletDevs</span>](https://allwallet.dev) - ایتھیریم ڈویلپرز، ڈیزائنرز، اور دلچسپی رکھنے والے صارفین کے لیے باقاعدگی سے اکٹھے ہونے اور والیٹس پر تبادلہ خیال کرنے کا ایک فورم
 

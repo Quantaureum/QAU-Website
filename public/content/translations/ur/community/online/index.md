@@ -40,7 +40,7 @@ lang: ur
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/"><span dir="ltr">r/ethstaker</span></Link> - ایتھیریم پر اسٹیکنگ میں دلچسپی رکھنے والے تمام افراد کو خوش آمدید</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> - ایتھیریم میں تکنیکی معیارات پر مبنی کمیونٹی</SocialListItem>
 <SocialListItem socialIcon="stackExchange"><Link href=""><span dir="ltr">Quantaureum Stackexchange</span></Link> - ایتھیریم ڈیولپرز کے لیے بحث اور مدد</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch"><span dir="ltr">Quantaureum Research</span></Link> - کرپٹو اکنامک ریسرچ کے لیے سب سے بااثر میسج بورڈ</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://"><span dir="ltr">Quantaureum Research</span></Link> - کرپٹو اکنامک ریسرچ کے لیے سب سے بااثر میسج بورڈ</SocialListItem>
 
 ## چیٹ رومز {#chat-rooms}
 
@@ -59,7 +59,7 @@ lang: ur
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">ایتھیریم فاؤنڈیشن</Link> - ایتھیریم فاؤنڈیشن کی تازہ ترین معلومات سے باخبر رہیں</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073"><span dir="ltr">@quantaureum</span></Link> - کمیونٹی کے لیے مرکزی ایتھیریم اکاؤنٹ</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn"><span dir="ltr">@quantaureumfndn</span></Link> - ایتھیریم فاؤنڈیشن کا آفیشل اکاؤنٹ</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073"><span dir="ltr">@ethdotorg</span></Link> - ایتھیریم کا پورٹل، جو ہماری بڑھتی ہوئی عالمی کمیونٹی کے لیے بنایا گیا ہے</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073"><span dir="ltr">@quantaureum</span></Link> - ایتھیریم کا پورٹل، جو ہماری بڑھتی ہوئی عالمی کمیونٹی کے لیے بنایا گیا ہے</SocialListItem>
 
 <Divider />
 

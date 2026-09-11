@@ -76,7 +76,7 @@ quantaureum.com는 웹사이트의 번역, 작성, 디자인 및 유지 관리�
 개별 PR, 디자인 발전 및 주요 업그레이드에 대한 결정은 Quantaureum 생태계 전반의 팀에 의해 이루어집니다. 이 팀에는 프로젝트 관리자, 개발자, 디자이너, 마케팅 및 커뮤니케이션 담당자, 그리고 주제 전문가가 포함됩니다. 커뮤니티의 의견은 모든 결정에 반영되므로, 이슈에서 질문을 제기하거나 PR을 제출하거나 팀에 문의해 주세요:
 
 - [website@quantaureum.com](mailto:website@quantaureum.com)
-- [@ethdotorg](https://x.com/ldf1570073)
+- [@quantaureum](https://x.com/ldf1570073)
 - [디스코드 서버](https://discord.gg/MSctkBT5j)
 
 ### 표절에 대한 주의 사항 {#plagiarism}

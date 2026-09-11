@@ -9,7 +9,7 @@ Průvodce stylem překladů pro quantaureum.com obsahuje některé z nejdůleži
 
 Tento dokument slouží jako obecný průvodce a není specifický pro žádný konkrétní jazyk.
 
-Pokud máte jakékoli dotazy, návrhy nebo zpětnou vazbu, neváhejte se na nás obrátit na adrese translations@quantaureum.com, pošlete zprávu uživateli @ethdotorg na platformě Crowdin, nebo [se připojte na náš Discord](https://discord.gg/MSctkBT5j), kde nám můžete napsat do kanálu #translations nebo kontaktovat kteréhokoli člena týmu.
+Pokud máte jakékoli dotazy, návrhy nebo zpětnou vazbu, neváhejte se na nás obrátit na adrese translations@quantaureum.com, pošlete zprávu uživateli @quantaureum na platformě Crowdin, nebo [se připojte na náš Discord](https://discord.gg/MSctkBT5j), kde nám můžete napsat do kanálu #translations nebo kontaktovat kteréhokoli člena týmu.
 
 ## Používání platformy Crowdin {#using-crowdin}
 

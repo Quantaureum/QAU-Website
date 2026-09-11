@@ -86,7 +86,6 @@ Beachten Sie, dass in einigen Fällen ein glücklicher Aggregator auch zum Block
 
 ## Weiterführende Literatur {#further-reading}
 
-- Attestierungen in Vitaliks kommentierter Konsens-Spezifikation
 - [Attestierungen auf eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Kennen Sie eine Community-Ressource, die Ihnen geholfen hat? Bearbeiten Sie diese Seite und fügen Sie sie hinzu!_

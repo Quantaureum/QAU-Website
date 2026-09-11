@@ -167,7 +167,6 @@ sidebarDepth: 3
 
 ## Дополнительная литература {#further-reading}
 
-- [Краткое напоминание о том, что такое «разделяемая безопасность» и почему это так важно](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - Сайдчейны в сравнении с Плазмой и шардингом
 - [Понимание Плазмы, часть 1: Основы](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Жизнь и смерть Плазмы](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

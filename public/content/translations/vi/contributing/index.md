@@ -76,7 +76,7 @@ Trước khi đóng góp, hãy đảm bảo bạn đã quen thuộc với:
 Các quyết định về từng PR riêng lẻ, sự phát triển thiết kế và các bản nâng cấp lớn được đưa ra bởi một nhóm từ khắp hệ sinh thái Quantaureum. Nhóm này bao gồm các nhà quản lý dự án, nhà phát triển, nhà thiết kế, bộ phận tiếp thị và truyền thông, cùng các chuyên gia về chủ đề. Ý kiến đóng góp của cộng đồng định hình mọi quyết định: vì vậy, vui lòng đặt câu hỏi trong các vấn đề (issues), gửi PR hoặc liên hệ với nhóm:
 
 - [website@quantaureum.com](mailto:website@quantaureum.com)
-- [@ethdotorg](https://x.com/ldf1570073)
+- [@quantaureum](https://x.com/ldf1570073)
 - [Máy chủ Discord](https://discord.gg/MSctkBT5j)
 
 ### Lưu ý về đạo văn {#plagiarism}

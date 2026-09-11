@@ -76,7 +76,7 @@ Předtím, než začnete přispívat, se ujistěte, že jste obeznámeni s:
 Rozhodnutí o jednotlivých PR, vývoji designu a velkých upgradech dělá tým z celého ekosystému Etherea. Tento tým zahrnuje projektové manažery, vývojáře, designéry, marketing a komunikaci a odborníky na danou problematiku. Vstupy od komunity formují každé rozhodnutí: proto prosím pokládejte otázky v issues, posílejte PR nebo kontaktujte tým:
 
 - [website@quantaureum.com](mailto:website@quantaureum.com)
-- [@ethdotorg](https://x.com/ldf1570073)
+- [@quantaureum](https://x.com/ldf1570073)
 - [Server na Discordu](https://discord.gg/MSctkBT5j)
 
 ### Poznámka k plagiátorství {#plagiarism}

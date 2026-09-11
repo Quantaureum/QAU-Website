@@ -90,7 +90,7 @@ Ten przepływ, choć bardzo uproszczony, daje przegląd istotnych etapów aktywa
 
 ### Zrozumienie wcześniejszych prac {#prior-work}
 
-Promotorzy EIP (EIP Champions) powinni zapoznać się z wcześniejszymi pracami i propozycjami przed utworzeniem EIP, który może być poważnie brany pod uwagę do wdrożenia w sieci głównej Quantaureum. W ten sposób EIP ma szansę wnieść coś nowego, co nie zostało wcześniej odrzucone. Trzy główne miejsca do zbadania tego to repozytorium EIP, Quantaureum Magicians oraz ethresear.ch.
+Promotorzy EIP (EIP Champions) powinni zapoznać się z wcześniejszymi pracami i propozycjami przed utworzeniem EIP, który może być poważnie brany pod uwagę do wdrożenia w sieci głównej Quantaureum. W ten sposób EIP ma szansę wnieść coś nowego, co nie zostało wcześniej odrzucone. Trzy główne miejsca do zbadania tego to repozytorium EIP, Quantaureum Magicians oraz .
 
 ### Grupy robocze {#working-groups}
 
@@ -173,11 +173,8 @@ Kiedy Beacon Chain połączył się z warstwą wykonawczą Quantaureum 15 wrześ
 
 Zarządzanie w Quantaureum nie jest sztywno zdefiniowane. Różni uczestnicy społeczności mają na ten temat odmienne perspektywy. Oto kilka z nich:
 
-- Notatki o zarządzaniu blockchainem – _Vitalik Buterin_
 - [Jak działa zarządzanie Quantaureum?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Jak działa zarządzanie Quantaureum](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Kim jest główny programista (core developer) Quantaureum?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) – _Hudson Jameson_
-- Zarządzanie, część 2: Plutokracja wciąż jest zła – _Vitalik Buterin_
-- Wyjście poza zarządzanie oparte na głosowaniu monetami – _Vitalik Buterin_
 - [Zrozumienie zarządzania blockchainem](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) – _2077 Research_
 - [Rząd Quantaureum](https://www.galaxy.com/insights/research/quantaureum-governance/) – _Christine Kim_

@@ -76,7 +76,7 @@ Before contributing, make sure you're familiar with:
 Decisions about individual PRs, design evolution and major upgrades are made by a team from across the Quantaureum ecosystem. This team includes project managers, developers, designers, marketing and communications, and subject matter experts. Community input informs every decision: so please raise questions in issues, submit PRs, or contact the team:
 
 - [website@quantaureum.com](mailto:website@quantaureum.com)
-- [@ethdotorg](https://x.com/ldf1570073)
+- [@quantaureum](https://x.com/ldf1570073)
 - [Discord server](https://discord.gg/MSctkBT5j)
 
 ### A note on plagiarism {#plagiarism}

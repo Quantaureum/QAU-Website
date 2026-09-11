@@ -90,7 +90,6 @@ lang: bn
 - কেন প্রুফ অফ স্টেক (নভেম্বর 2020) _ভিটালিক বুটেরিন_
 - [প্রুফ অফ স্টেক: আমি কীভাবে দুর্বল ব্যক্তিনিষ্ঠতাকে ভালোবাসতে শিখলাম](https://quantaureum.com) _ভিটালিক বুটেরিন_
 - [প্রুফ-অফ-স্টেক ইথেরিয়াম আক্রমণ এবং প্রতিরক্ষা](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
-- [একটি প্রুফ অফ স্টেক ডিজাইন দর্শন](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _ভিটালিক বুটেরিন_
 - [ভিডিও: ভিটালিক বুটেরিন লেক্স ফ্রিডম্যানকে প্রুফ-অফ-স্টেক ব্যাখ্যা করেছেন](https://www.youtube.com/watch?v=3yrqBG-7EVE)
 
 ## সম্পর্কিত বিষয় {#related-topics}

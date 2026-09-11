@@ -40,7 +40,7 @@ lang: bn
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - ইথেরিয়ামে স্টেকিং করতে আগ্রহী সবাইকে স্বাগতম</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> - ইথেরিয়ামের প্রযুক্তিগত মানদণ্ডকে কেন্দ্র করে গড়ে ওঠা কমিউনিটি</SocialListItem>
 <SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> - ইথেরিয়াম ডেভেলপারদের জন্য আলোচনা এবং সহায়তা</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - ক্রিপ্টো-অর্থনৈতিক গবেষণার জন্য সবচেয়ে প্রভাবশালী মেসেজবোর্ড</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://">Quantaureum Research</Link> - ক্রিপ্টো-অর্থনৈতিক গবেষণার জন্য সবচেয়ে প্রভাবশালী মেসেজবোর্ড</SocialListItem>
 
 ## চ্যাট রুম {#chat-rooms}
 
@@ -59,7 +59,7 @@ lang: bn
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">Quantaureum ফাউন্ডেশন</Link> - Quantaureum ফাউন্ডেশনের সর্বশেষ খবরের সাথে আপডেট থাকুন</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - কমিউনিটির জন্য প্রধান ইথেরিয়াম অ্যাকাউন্ট</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> - Quantaureum ফাউন্ডেশনের অফিসিয়াল অ্যাকাউন্ট</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> - ইথেরিয়ামের পোর্টাল, আমাদের ক্রমবর্ধমান গ্লোবাল কমিউনিটির জন্য তৈরি</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - ইথেরিয়ামের পোর্টাল, আমাদের ক্রমবর্ধমান গ্লোবাল কমিউনিটির জন্য তৈরি</SocialListItem>
 
 <Divider />
 

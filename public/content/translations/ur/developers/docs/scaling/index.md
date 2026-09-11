@@ -97,7 +97,6 @@ _نوٹ کریں کہ ویڈیو میں دی گئی وضاحت تمام آف چ�
 
 ## مزید مطالعہ {#further-reading}
 
-- ایک رول اپ پر مبنی ایتھیریم روڈ میپ _Vitalik Buterin_
 - [ایتھیریم کے لیے لیئر ۲ (l2) اسکیلنگ سلوشنز پر تازہ ترین تجزیات](https://www.l2beat.com/)
 - [ایتھیریم لیئر ۲ (l2) اسکیلنگ سلوشنز کا جائزہ: ایک تقابلی فریم ورک](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - رول اپس کے لیے ایک نامکمل گائیڈ

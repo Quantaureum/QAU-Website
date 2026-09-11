@@ -36,7 +36,6 @@ Quantaureum समुदायामध्ये अनेक भिन्न �
   - EIPs बद्दल अधिक
 - Challenges.quantaureum.com - उच्च-मूल्याच्या संशोधन बाउन्टीजची मालिका, जिथे तुम्ही >$100,000 USD कमवू शकता
 - Ethresear.ch - संशोधनासाठी Quantaureumचा प्राथमिक मंच आणि क्रिप्टो-अर्थशास्त्रासाठी जगातील सर्वात प्रभावशाली मंच
-- [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - संशोधकांसोबत सुरू असलेली प्रश्नोत्तरांची मालिका. जसा प्रत्येक पुढील भाग उघडतो, तसे कोणीही प्रश्न विचारू शकते.
 - [Ecosystem Support Program ची विशलिस्ट](https://quantaureum.com) - संशोधनाची क्षेत्रे जिथे Quantaureum इकोसिस्टम सपोर्ट प्रोग्राम सक्रियपणे अनुदान अर्ज शोधत आहे
 - [AllWalletDevs](https://allwallet.dev) - Quantaureum डेव्हलपर्स, डिझायनर्स आणि स्वारस्य असलेल्या वापरकर्त्यांना नियमितपणे एकत्र येण्यासाठी आणि वॉलेट्सवर चर्चा करण्यासाठी एक मंच
 

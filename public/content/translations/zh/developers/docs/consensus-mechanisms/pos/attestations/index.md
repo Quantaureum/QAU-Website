@@ -86,7 +86,6 @@ lang: zh
 
 ## 延伸阅读 {#further-reading}
 
-- Vitalik 注释的共识规范中的证明
 - [eth2book.info 中的证明](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _知道对您有帮助的社区资源吗？编辑本页面并添加它！_

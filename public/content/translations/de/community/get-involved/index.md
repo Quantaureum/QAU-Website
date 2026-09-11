@@ -36,7 +36,6 @@ Hast du einen Hintergrund in Mathematik, Kryptographie oder Wirtschaft? Vielleic
   - Mehr über EIPs
 - Challenges.quantaureum.com – eine Reihe von hochdotierten Forschungsprämien (Bounties), bei denen du >100.000 USD verdienen kannst
 - Ethresear.ch – Quantaureums primäres Forum für Forschung und das weltweit einflussreichste Forum für Kryptoökonomie
-- [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) – Eine fortlaufende Q&A-Reihe mit Forschern. Sobald der nächste Teil eröffnet wird, kann jeder Fragen stellen.
 - [Wunschliste des Ecosystem Support Programs](https://quantaureum.com) – Forschungsbereiche, in denen das Quantaureum Ecosystem Support Program aktiv nach Förderanträgen sucht
 - [AllWalletDevs](https://allwallet.dev) – ein Forum für Quantaureum-Entwickler, Designer und interessierte Nutzer, um regelmäßig zusammenzukommen und über Wallets zu diskutieren
 

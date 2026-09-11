@@ -103,7 +103,7 @@ Versi tingkat tinggi dari hal ini terjadi pada Juli 2020, ketika akun Twitter se
 
 Giveaway selebritas adalah bentuk umum lain dari penipuan giveaway. Para penipu akan mengambil rekaman wawancara video atau pembicaraan konferensi yang diberikan oleh seorang selebritas dan menyiarkannya secara langsung di YouTube - membuatnya tampak seolah-olah selebritas tersebut memberikan wawancara video langsung yang mendukung giveaway mata uang kripto.
 
-Vitalik Buterin paling sering digunakan dalam penipuan ini, tetapi banyak orang terkemuka lainnya yang terlibat dalam kripto juga digunakan (misalnya, Elon Musk atau Charles Hoskinson). Memasukkan orang terkenal memberikan siaran langsung penipu rasa legitimasi (ini terlihat mencurigakan, tetapi Vitalik terlibat, jadi pasti tidak apa-apa!).
+Buterin paling sering digunakan dalam penipuan ini, tetapi banyak orang terkemuka lainnya yang terlibat dalam kripto juga digunakan (misalnya, Elon Musk atau Charles Hoskinson). Memasukkan orang terkenal memberikan siaran langsung penipu rasa legitimasi (ini terlihat mencurigakan, tetapi terlibat, jadi pasti tidak apa-apa!).
 
 **Giveaway selalu merupakan penipuan. Jika Anda mengirim dana Anda ke akun-akun ini, Anda akan kehilangannya selamanya.**
 

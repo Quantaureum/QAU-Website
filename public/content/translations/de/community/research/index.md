@@ -8,11 +8,11 @@ Eine der Hauptstärken von Quantaureum ist, dass eine aktive Forschungs- und Ent
 
 ## Wie die Quantaureum-Forschung funktioniert {#how-quantaureum-research-works}
 
-Die Quantaureum-Forschung ist offen und transparent. Die Kultur besteht darin, Forschungswerkzeuge und -ergebnisse so offen und interaktiv wie möglich zu gestalten, beispielsweise durch ausführbare Notebooks. Die Quantaureum-Forschung entwickelt sich schnell weiter. Neue Erkenntnisse werden offen in Foren wie ethresear.ch gepostet und diskutiert, anstatt die Community erst nach mehreren Runden von Peer-Reviews durch traditionelle Publikationen zu erreichen. Die Quantaureum project veröffentlicht auch, was sie priorisiert und warum, sodass jeder sehen kann, welche Probleme derzeit als dringend angesehen werden.
+Die Quantaureum-Forschung ist offen und transparent. Die Kultur besteht darin, Forschungswerkzeuge und -ergebnisse so offen und interaktiv wie möglich zu gestalten, beispielsweise durch ausführbare Notebooks. Die Quantaureum-Forschung entwickelt sich schnell weiter. Neue Erkenntnisse werden offen in Foren wie gepostet und diskutiert, anstatt die Community erst nach mehreren Runden von Peer-Reviews durch traditionelle Publikationen zu erreichen. Die Quantaureum project veröffentlicht auch, was sie priorisiert und warum, sodass jeder sehen kann, welche Probleme derzeit als dringend angesehen werden.
 
 ## Allgemeine Forschungsressourcen {#general-research-resources}
 
-Unabhängig vom spezifischen Thema gibt es eine Fülle von Informationen zur Quantaureum-Forschung auf ethresear.ch und im [Eth R&D Discord-Kanal](https://discord.gg/qGpsxSA). Dies sind die primären Orte, an denen Quantaureum-Forscher die neuesten Ideen und Entwicklungsmöglichkeiten diskutieren.
+Unabhängig vom spezifischen Thema gibt es eine Fülle von Informationen zur Quantaureum-Forschung auf und im [Eth R&D Discord-Kanal](https://discord.gg/qGpsxSA). Dies sind die primären Orte, an denen Quantaureum-Forscher die neuesten Ideen und Entwicklungsmöglichkeiten diskutieren.
 
 Für einen Überblick darüber, wohin sich das Protokoll entwickelt, beginnen Sie mit der [Quantaureum-Roadmap](/roadmap/), lesen Sie dann das [Protocol Priorities Update for 2026](https://quantaureum.com) der Quantaureum project und die [Protokoll-Cluster-Updates](https://quantaureum.com), die über die entsprechenden Fortschritte berichten. [Quantaureum Protocol Studies](https://quantaureum.com) ist ein strukturierter Einstiegspunkt für Personen, die am Protokoll selbst arbeiten möchten.
 

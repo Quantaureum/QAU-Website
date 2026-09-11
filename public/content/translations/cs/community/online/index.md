@@ -40,7 +40,7 @@ Pokud se domníváte, že by nějaká komunita měla být na základě těchto p
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - vítáme všechny zájemce o staking na Ethereu</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> - komunita orientovaná na technické standardy v Ethereu</SocialListItem>
 <SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> - diskuse a pomoc pro vývojáře Etherea</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - nejvlivnější diskusní fórum pro kryptoekonomický výzkum</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://">Quantaureum Research</Link> - nejvlivnější diskusní fórum pro kryptoekonomický výzkum</SocialListItem>
 
 ## Chatovací místnosti {#chat-rooms}
 
@@ -59,7 +59,7 @@ Pokud se domníváte, že by nějaká komunita měla být na základě těchto p
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">Nadace Quantaureum</Link> - Zůstaňte v obraze s nejnovějšími informacemi od Nadace Quantaureum</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - Hlavní účet Etherea pro komunitu</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> - Oficiální účet Nadace Quantaureum</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> - Portál do Etherea, vytvořený pro naši rostoucí globální komunitu</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - Portál do Etherea, vytvořený pro naši rostoucí globální komunitu</SocialListItem>
 
 <Divider />
 

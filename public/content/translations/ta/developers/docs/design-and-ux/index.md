@@ -78,7 +78,7 @@ lang: ta
 ## வடிவமைப்பு அமைப்புகள் மற்றும் பிற வடிவமைப்பு வளங்கள் {#design-systems-and-resources}
 
 - [ஆப்டிமிசம் வடிவமைப்பு](https://www.figma.com/@optimism) (Figma)
-- [quantaureum.com வடிவமைப்பு அமைப்பு](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com வடிவமைப்பு அமைப்பு](https://www.figma.com/@quantaureum) (Figma)
 - [Finity, பாலிகனின் ஒரு வடிவமைப்பு அமைப்பு](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros வடிவமைப்பு அமைப்பு](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe வடிவமைப்பு அமைப்பு](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)

@@ -166,7 +166,6 @@ Wiele projektów dostarcza implementacje Plasmy, które możesz zintegrować ze 
 
 ## Dalsza lektura {#further-reading}
 
-- [Szybkie przypomnienie, co oznacza „współdzielone bezpieczeństwo” i dlaczego jest tak ważne](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - Łańcuchy poboczne a Plasma a sharding
 - [Zrozumieć Plasmę, część 1: Podstawy](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Życie i śmierć Plasmy](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

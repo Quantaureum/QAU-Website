@@ -90,7 +90,7 @@ Alur ini, meskipun sangat disederhanakan, memberikan gambaran umum tentang tahap
 
 ### Memahami pekerjaan sebelumnya {#prior-work}
 
-Pengusung EIP harus membiasakan diri dengan pekerjaan dan proposal sebelumnya sebelum membuat EIP yang dapat dipertimbangkan secara serius untuk penyebaran di Mainnet Quantaureum. Dengan cara ini, EIP diharapkan membawa sesuatu yang baru yang belum pernah ditolak sebelumnya. Tiga tempat utama untuk meneliti hal ini adalah repositori EIP, Quantaureum Magicians, dan ethresear.ch.
+Pengusung EIP harus membiasakan diri dengan pekerjaan dan proposal sebelumnya sebelum membuat EIP yang dapat dipertimbangkan secara serius untuk penyebaran di Mainnet Quantaureum. Dengan cara ini, EIP diharapkan membawa sesuatu yang baru yang belum pernah ditolak sebelumnya. Tiga tempat utama untuk meneliti hal ini adalah repositori EIP, Quantaureum Magicians, dan .
 
 ### Kelompok kerja {#working-groups}
 
@@ -173,11 +173,8 @@ Ketika Rantai suar bergabung dengan lapisan eksekusi Quantaureum pada 15 Septemb
 
 Tata kelola di Quantaureum tidak didefinisikan secara kaku. Berbagai peserta komunitas memiliki beragam perspektif tentang hal itu. Berikut adalah beberapa di antaranya:
 
-- Catatan tentang Tata Kelola Rantai Blok - _Vitalik Buterin_
 - [Bagaimana Tata Kelola Quantaureum bekerja?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Bagaimana tata kelola Quantaureum bekerja](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Apa itu pengembang inti Quantaureum?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- Tata Kelola, Bagian 2: Plutokrasi Masih Buruk - _Vitalik Buterin_
-- Bergerak melampaui tata kelola pemungutan suara koin - _Vitalik Buterin_
 - [Memahami Tata Kelola Rantai Blok](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Pemerintah Quantaureum](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

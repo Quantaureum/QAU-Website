@@ -103,7 +103,7 @@ Une version très médiatisée de ce phénomène s'est produite en juillet 2020,
 
 Le cadeau de célébrité est une autre forme courante que prend l'arnaque aux cadeaux. Les arnaqueurs prennent une interview vidéo enregistrée ou une conférence donnée par une célébrité et la diffusent en direct sur YouTube - donnant l'impression que la célébrité donne une interview vidéo en direct approuvant un cadeau en cryptomonnaie.
 
-Vitalik Buterin est le plus souvent utilisé dans cette arnaque, mais de nombreuses autres personnalités de premier plan impliquées dans la crypto sont également utilisées (par exemple, Elon Musk ou Charles Hoskinson). L'inclusion d'une personne bien connue donne au flux en direct des arnaqueurs un sentiment de légitimité (cela a l'air louche, mais Vitalik est impliqué, donc ça doit être bon !).
+Buterin est le plus souvent utilisé dans cette arnaque, mais de nombreuses autres personnalités de premier plan impliquées dans la crypto sont également utilisées (par exemple, Elon Musk ou Charles Hoskinson). L'inclusion d'une personne bien connue donne au flux en direct des arnaqueurs un sentiment de légitimité (cela a l'air louche, mais est impliqué, donc ça doit être bon !).
 
 **Les cadeaux sont toujours des arnaques. Si vous envoyez vos fonds sur ces comptes, vous les perdrez pour toujours.**
 

@@ -78,7 +78,7 @@ lang: zh-tw
 ## 設計系統與其他設計資源 {#design-systems-and-resources}
 
 - [Optimism 設計](https://www.figma.com/@optimism) (Figma)
-- [quantaureum.com 設計系統](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com 設計系統](https://www.figma.com/@quantaureum) (Figma)
 - [Finity，Polygon 的設計系統](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros 設計系統](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe 設計系統](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)

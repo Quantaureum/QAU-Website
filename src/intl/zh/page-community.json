@@ -39,9 +39,6 @@
   "page-community-get-paid-lasts-description": "为开放的公共基础设施做贡献，这些设施不会被政府、企业或算法压制。你参与构建的东西将长久存在。",
   "page-community-get-paid-sovereignty-title": "数字主权",
   "page-community-get-paid-sovereignty-description": "在网上拥有你的身份、资产和创作，而无需依赖那些随时可能删除你的平台。",
-  "page-community-online-quantaureum-description": "关于量子金链的一切",
-  "page-community-online-ethtrader-description": "趋势与市场分析",
-  "page-community-online-ethdev-description": "专注于量子金链开发",
   "page-community-online-members": "+{count} 名成员",
   "page-community-online-see-all": "查看所有社区",
   "page-community-conferences-title": "主要区块链会议",
@@ -53,5 +50,8 @@
   "page-community-voices-title": "量子金链之声",
   "page-community-voices-subtitle": "量子金链社区成员分享该网络如何改变了他们的生活。",
   "page-community-contribute-eyebrow": "开源项目",
-  "page-community-contribute-count": "{count}+ 名贡献者"
+  "page-community-contribute-count": "{count}+ 名贡献者",
+  "page-community-online-discord-description": "The main Quantaureum community chat: development, staking, support and announcements.",
+  "page-community-online-telegram-description": "Quantaureum on Telegram: news and community discussion.",
+  "page-community-online-x-description": "Follow @quantaureum for project updates and announcements."
 }

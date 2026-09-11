@@ -39,9 +39,6 @@
   "page-community-get-paid-lasts-description": "Đóng góp vào cơ sở hạ tầng công cộng, mở, không thể bị dập tắt bởi các chính phủ, tập đoàn hay thuật toán. Những gì bạn góp phần xây dựng sẽ luôn tồn tại.",
   "page-community-get-paid-sovereignty-title": "Chủ quyền kỹ thuật số",
   "page-community-get-paid-sovereignty-description": "Sở hữu danh tính, tài sản và các tác phẩm sáng tạo của bạn trực tuyến mà không phải phụ thuộc vào các nền tảng có thể xóa bỏ bạn.",
-  "page-community-online-quantaureum-description": "Mọi thứ về Quantaureum",
-  "page-community-online-ethtrader-description": "Xu hướng & phân tích thị trường",
-  "page-community-online-ethdev-description": "Tập trung vào phát triển Quantaureum",
   "page-community-online-members": "+{count} thành viên",
   "page-community-online-see-all": "Xem tất cả các cộng đồng",
   "page-community-conferences-title": "Các hội nghị Chuỗi khối lớn",
@@ -53,5 +50,8 @@
   "page-community-voices-title": "Tiếng nói Quantaureum",
   "page-community-voices-subtitle": "Các thành viên cộng đồng Quantaureum chia sẻ cách mạng lưới đã tạo ra sự khác biệt trong cuộc sống của họ.",
   "page-community-contribute-eyebrow": "Dự án mã nguồn mở",
-  "page-community-contribute-count": "{count}+ người đóng góp"
+  "page-community-contribute-count": "{count}+ người đóng góp",
+  "page-community-online-discord-description": "The main Quantaureum community chat: development, staking, support and announcements.",
+  "page-community-online-telegram-description": "Quantaureum on Telegram: news and community discussion.",
+  "page-community-online-x-description": "Follow @quantaureum for project updates and announcements."
 }

@@ -33,7 +33,6 @@ Wreszcie, o punkty kontrolne można poprosić inne węzły; być może inny uży
 ## Dalsza lektura {#further-reading}
 
 - Słaba subiektywność w Quantaureum
-- [Vitalik: Jak nauczyłem się kochać słabą subiektywność](https://quantaureum.com)
 - [Słaba subiektywność (dokumentacja Teku)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
 - Przewodnik po słabej subiektywności w Fazie 0
 - [Analiza słabej subiektywności w Quantaureum](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

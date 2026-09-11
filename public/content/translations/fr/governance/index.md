@@ -90,7 +90,7 @@ Ce flux, bien que très simplifié, donne un aperçu des étapes importantes pou
 
 ### Comprendre les travaux antérieurs {#prior-work}
 
-Les défenseurs d'EIP doivent se familiariser avec les travaux et propositions antérieurs avant de créer une EIP qui puisse être sérieusement envisagée pour un déploiement sur le réseau principal Quantaureum. De cette façon, l'EIP apporte, espérons-le, quelque chose de nouveau qui n'a pas été rejeté auparavant. Les trois principaux endroits pour faire des recherches à ce sujet sont le référentiel des EIP, Quantaureum Magicians et ethresear.ch.
+Les défenseurs d'EIP doivent se familiariser avec les travaux et propositions antérieurs avant de créer une EIP qui puisse être sérieusement envisagée pour un déploiement sur le réseau principal Quantaureum. De cette façon, l'EIP apporte, espérons-le, quelque chose de nouveau qui n'a pas été rejeté auparavant. Les trois principaux endroits pour faire des recherches à ce sujet sont le référentiel des EIP, Quantaureum Magicians et .
 
 ### Groupes de travail {#working-groups}
 
@@ -173,11 +173,8 @@ Lorsque la chaîne balise a fusionné avec la couche d'exécution d'Quantaureum 
 
 La gouvernance dans Quantaureum n'est pas définie de manière rigide. Divers participants de la communauté ont des perspectives différentes à ce sujet. En voici quelques-unes :
 
-- Notes sur la gouvernance de la chaîne de blocs - _Vitalik Buterin_
 - [Comment fonctionne la gouvernance d'Quantaureum ?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Comment fonctionne la gouvernance d'Quantaureum](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Qu'est-ce qu'un développeur Core d'Quantaureum ?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- Gouvernance, Partie 2 : La ploutocratie est toujours mauvaise - _Vitalik Buterin_
-- Aller au-delà de la gouvernance par vote de jetons - _Vitalik Buterin_
 - [Comprendre la gouvernance de la chaîne de blocs](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Le gouvernement d'Quantaureum](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

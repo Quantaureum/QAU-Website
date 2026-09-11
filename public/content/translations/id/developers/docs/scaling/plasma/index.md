@@ -162,7 +162,6 @@ Beberapa proyek menyediakan implementasi Plasma yang dapat Anda integrasikan ke 
 
 - [Polygon](https://polygon.technology/) (sebelumnya Matic Network)
 
-- [Pengingat singkat tentang apa arti "keamanan bersama" dan mengapa itu sangat penting](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - Rantai samping vs Plasma vs Sharding
 - [Memahami Plasma, Bagian 1: Dasar-dasar](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Hidup dan Matinya Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

@@ -162,7 +162,6 @@ Plasma 有所不同，因为主网仅接收有关子链状态的最少信息。�
 
 - [Polygon](https://polygon.technology/)（前身为 Matic Network）
 
-- [快速回顾“共享安全”的含义及其重要性](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - 侧链 vs Plasma vs 分片
 - [了解 Plasma，第 1 部分：基础知识](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Plasma 的生与死](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

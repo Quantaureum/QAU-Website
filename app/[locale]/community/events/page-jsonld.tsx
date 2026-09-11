@@ -7,95 +7,9 @@ import PageJsonLD from "@/components/PageJsonLD"
 import { getLocaleYear } from "@/lib/utils/date"
 import { normalizeUrlForJsonLd } from "@/lib/utils/url"
 
-import { communityHubSchemas } from "@/data/community-hub-schemas"
-import communityHubs from "@/data/community-hubs"
 
 import { BASE_GRAPH_NODES } from "@/lib/jsonld/constants"
 import { REFERENCE } from "@/lib/jsonld/references"
-
-function buildHubSchemaNodes(
-  hub: (typeof communityHubs)[number],
-  description: string
-) {
-  const schema = communityHubSchemas[hub.id]
-  if (!schema) return []
-
-  const placeId = `#hub-location-${hub.id}`
-  const seriesId = `#coworking-series-${hub.id}`
-
-  const serviceNode = {
-    "@type": "Service" as const,
-    name: "Quantaureum Community Coworking and Events",
-    description,
-    provider: REFERENCE.QUANTAUREUM_ORG,
-    areaServed: {
-      "@type": "City" as const,
-      name: hub.location,
-    },
-  }
-
-  const placeNode: Record<string, unknown> = {
-    "@type": "Place" as const,
-    "@id": placeId,
-    name: schema.hubName ?? `Quantaureum Community Hub (${hub.location})`,
-  }
-
-  if (schema.address) {
-    placeNode.address = {
-      "@type": "PostalAddress" as const,
-      ...(schema.address.streetAddress && {
-        streetAddress: schema.address.streetAddress,
-      }),
-      addressLocality: schema.address.addressLocality,
-      ...(schema.address.postalCode && {
-        postalCode: schema.address.postalCode,
-      }),
-      addressCountry: schema.address.addressCountry,
-    }
-  }
-
-  if (schema.containedInPlace) {
-    placeNode.containedInPlace = {
-      "@type": "Place" as const,
-      name: schema.containedInPlace.name,
-      ...(schema.containedInPlace.url && {
-        url: schema.containedInPlace.url,
-      }),
-    }
-  }
-
-  const eventNode = {
-    "@type": ["EventSeries", "Event"] as const,
-    "@id": seriesId,
-    name: schema.eventSeriesName ?? "Open Quantaureum Coworking Hours",
-    description: schema.eventDescription,
-    startDate:
-      schema.schedule.startDate ?? new Date().toISOString().split("T")[0],
-    isAccessibleForFree: true,
-    url: hub.coworkingSignupUrl,
-    eventStatus: "https://schema.org/EventScheduled",
-    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-    organizer: REFERENCE.QUANTAUREUM_ORG,
-    location: { "@id": placeId },
-    eventSchedule: {
-      "@type": "Schedule" as const,
-      ...(schema.schedule.startDate && {
-        startDate: schema.schedule.startDate,
-      }),
-      ...(schema.schedule.startTime && {
-        startTime: schema.schedule.startTime,
-      }),
-      ...(schema.schedule.endTime && {
-        endTime: schema.schedule.endTime,
-      }),
-      repeatFrequency: schema.schedule.repeatFrequency,
-      byDay: schema.schedule.byDay,
-      scheduleTimezone: schema.schedule.scheduleTimezone,
-    },
-  }
-
-  return [serviceNode, placeNode, eventNode]
-}
 
 export default async function EventsJsonLD({
   locale,
@@ -116,9 +30,6 @@ export default async function EventsJsonLD({
     url: contributor.html_url,
   }))
 
-  const hubSchemaNodes = communityHubs.flatMap((hub) =>
-    buildHubSchemaNodes(hub, t(hub.descriptionKey))
-  )
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -167,25 +78,18 @@ export default async function EventsJsonLD({
         name: t("page-events-meta-title", { year }),
         description: t("page-events-meta-description", { year }),
         url,
-        numberOfItems: 4,
+        numberOfItems: 3,
         itemListElement: [
           {
             "@type": "ListItem",
             position: 1,
-            name: t("page-events-section-hubs"),
-            description: t("page-events-section-hubs-subtitle"),
-            url: `${url}#community-hubs`,
-          },
-          {
-            "@type": "ListItem",
-            position: 2,
             name: t("page-events-section-local-meetups"),
             description: t("page-events-section-local-meetups-subtitle"),
             url: normalizeUrlForJsonLd(locale, "/community/events/meetups/"),
           },
           {
             "@type": "ListItem",
-            position: 3,
+            position: 2,
             name: t("page-events-section-upcoming-conferences"),
             description: t("page-events-section-upcoming-conferences-subtitle"),
             url: normalizeUrlForJsonLd(
@@ -195,7 +99,7 @@ export default async function EventsJsonLD({
           },
           {
             "@type": "ListItem",
-            position: 4,
+            position: 3,
             name: t("page-events-section-organizers"),
             description: t("page-events-section-organizers-subtitle"),
             url: `${url}#for-organizers`,
@@ -203,7 +107,6 @@ export default async function EventsJsonLD({
         ],
         publisher: REFERENCE.QUANTAUREUM_ORG,
       },
-      ...hubSchemaNodes,
     ],
   }
 

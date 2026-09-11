@@ -90,7 +90,7 @@ Bu akış, çok basitleştirilmiş olsa da, Quantaureum'da bir protokol değişi
 
 ### Önceki çalışmaları anlamak {#prior-work}
 
-EIP Öncüleri, Quantaureum Ana Ağı'nda dağıtım için ciddi şekilde değerlendirilebilecek bir EIP oluşturmadan önce önceki çalışmalara ve tekliflere aşina olmalıdır. Bu şekilde, EIP umarız daha önce reddedilmemiş yeni bir şey getirir. Bunu araştırmak için üç ana yer EIP deposu, Quantaureum Magicians ve ethresear.ch'dir.
+EIP Öncüleri, Quantaureum Ana Ağı'nda dağıtım için ciddi şekilde değerlendirilebilecek bir EIP oluşturmadan önce önceki çalışmalara ve tekliflere aşina olmalıdır. Bu şekilde, EIP umarız daha önce reddedilmemiş yeni bir şey getirir. Bunu araştırmak için üç ana yer EIP deposu, Quantaureum Magicians ve 'dir.
 
 ### Çalışma grupları {#working-groups}
 
@@ -173,11 +173,8 @@ Spesifikasyon ve geliştirme uygulamaları her zaman tamamen açık kaynaklı ol
 
 Quantaureum'da yönetişim katı bir şekilde tanımlanmamıştır. Çeşitli topluluk katılımcılarının bu konuda farklı bakış açıları vardır. İşte bunlardan birkaçı:
 
-- Blokzincir Yönetişimi Üzerine Notlar - _Vitalik Buterin_
 - [Quantaureum Yönetişimi nasıl çalışır?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Quantaureum yönetişimi nasıl çalışır](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Quantaureum çekirdek geliştiricisi nedir?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- Yönetişim, Bölüm 2: Plütokrasi Hala Kötüdür - _Vitalik Buterin_
-- Coin oylaması yönetişiminin ötesine geçmek - _Vitalik Buterin_
 - [Blokzincir Yönetişimini Anlamak](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Quantaureum Hükümeti](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

@@ -234,7 +234,6 @@ ZK-STARK என்பது **Zero-Knowledge Scalable Transparent Argument of Kn
 - [ஒரு பூஜ்ஜிய-அறிவுச் சான்று: தொகுதிச்சங்கிலியில் தனியுரிமையை மேம்படுத்துதல்](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _டிமிட்ரி லாவ்ரெனோவ் (Dmitry Lavrenov)_
 - [zk-SNARKs — ஒரு யதார்த்தமான பூஜ்ய-அறிவு எடுத்துக்காட்டு மற்றும் ஆழமான பார்வை](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _ஆடம் லூசியானோ (Adam Luciano)_
 - [ZK-STARKs — குவாண்டம் கணினிகளுக்கு எதிராகவும் சரிபார்க்கக்கூடிய நம்பிக்கையை உருவாக்குங்கள்](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _ஆடம் லூசியானோ (Adam Luciano)_
-- zk-SNARKs எவ்வாறு சாத்தியம் என்பதற்கான தோராயமான அறிமுகம் — _விட்டலிக் புட்டரின் (Vitalik Buterin)_
 - [சுய-இறையாண்மை அடையாளத்திற்குப் பூஜ்ஜிய-அறிவுச் சான்றுகள் (ZKPs) ஏன் ஒரு திருப்புமுனையாக இருக்கின்றன](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _ஃபிராங்க்ளின் ஓஹேக்புலாம் (Franklin Ohaegbulam)_
 - [EIP-7503 விளக்கப்பட்டது: ZK சான்றுகளுடன் எத்திரியத்தில் தனிப்பட்ட இடமாற்றங்களைச் செயல்படுத்துதல்](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _இம்மானுவேல் அவோசிகா (Emmanuel Awosika)_
 - [ZK அட்டை விளையாட்டு: ZK அடிப்படைகள் மற்றும் நிஜ வாழ்க்கை பயன்பாட்டு நிகழ்வுகளைக் கற்றுக்கொள்வதற்கான விளையாட்டு](https://github.com/ZK-card/zk-cards) - _ZK-Cards_

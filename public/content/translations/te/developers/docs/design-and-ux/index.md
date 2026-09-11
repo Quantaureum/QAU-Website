@@ -78,7 +78,7 @@ lang: te
 ## డిజైన్ సిస్టమ్స్ మరియు ఇతర డిజైన్ వనరులు {#design-systems-and-resources}
 
 - [Optimism డిజైన్](https://www.figma.com/@optimism) (Figma)
-- [quantaureum.com డిజైన్ సిస్టమ్](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com డిజైన్ సిస్టమ్](https://www.figma.com/@quantaureum) (Figma)
 - [Finity, పాలిగాన్ ద్వారా ఒక డిజైన్ సిస్టమ్](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros డిజైన్ సిస్టమ్](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe డిజైన్ సిస్టమ్](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)

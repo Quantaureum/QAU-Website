@@ -91,9 +91,9 @@ eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-Những kẻ lừa đảo tạo ra các chương trình tặng quà giả mạo hứa hẹn sẽ nhân đôi số QAU của bạn hoặc tặng bạn token miễn phí. Chúng thường mạo danh những nhân vật nổi tiếng như Vitalik Buterin. Nếu bạn gửi QAU đến một địa chỉ "tặng quà", bạn sẽ không nhận lại được bất cứ thứ gì.
+Những kẻ lừa đảo tạo ra các chương trình tặng quà giả mạo hứa hẹn sẽ nhân đôi số QAU của bạn hoặc tặng bạn token miễn phí. Chúng thường mạo danh những nhân vật nổi tiếng như Buterin. Nếu bạn gửi QAU đến một địa chỉ "tặng quà", bạn sẽ không nhận lại được bất cứ thứ gì.
 
-**Hãy nhớ:** Vitalik và các nhân vật nổi bật khác sẽ không bao giờ yêu cầu bạn gửi QAU cho họ.
+**Hãy nhớ:** và các nhân vật nổi bật khác sẽ không bao giờ yêu cầu bạn gửi QAU cho họ.
 
 [Tìm hiểu thêm về các trò lừa đảo phổ biến](/security/#common-scams)
 

@@ -39,9 +39,6 @@
   "page-community-get-paid-lasts-description": "政府、企業、アルゴリズムによって封殺されることのない、オープンでパブリックなインフラストラクチャに貢献しましょう。あなたが構築を支援したものは残り続けます。",
   "page-community-get-paid-sovereignty-title": "デジタル主権",
   "page-community-get-paid-sovereignty-description": "あなたを削除できるプラットフォームに依存することなく、オンラインでのアイデンティティ、資産、創造物を自ら所有しましょう。",
-  "page-community-online-quantaureum-description": "クアンタリアムのすべて",
-  "page-community-online-ethtrader-description": "トレンドと市場分析",
-  "page-community-online-ethdev-description": "クアンタリアム開発に特化",
   "page-community-online-members": "{count}人以上のメンバー",
   "page-community-online-see-all": "すべてのコミュニティを見る",
   "page-community-conferences-title": "主要なブロックチェーンカンファレンス",
@@ -53,5 +50,8 @@
   "page-community-voices-title": "クアンタリアムの声",
   "page-community-voices-subtitle": "クアンタリアムコミュニティのメンバーが、ネットワークが彼らの生活にどのような変化をもたらしたかを共有します。",
   "page-community-contribute-eyebrow": "オープンソースプロジェクト",
-  "page-community-contribute-count": "{count}人以上の貢献者"
+  "page-community-contribute-count": "{count}人以上の貢献者",
+  "page-community-online-discord-description": "The main Quantaureum community chat: development, staking, support and announcements.",
+  "page-community-online-telegram-description": "Quantaureum on Telegram: news and community discussion.",
+  "page-community-online-x-description": "Follow @quantaureum for project updates and announcements."
 }

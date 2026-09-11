@@ -149,7 +149,7 @@ SSZ का अर्थ सरल क्रमांकन (simple serialization
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-सर्वसम्मति और निष्पादन क्लाइंट्स के लिए नेटवर्क परत योजनाबद्ध, ethresear.ch से
+सर्वसम्मति और निष्पादन क्लाइंट्स के लिए नेटवर्क परत योजनाबद्ध, से
 
 ## आगे की पढ़ाई {#further-reading}
 

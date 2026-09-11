@@ -76,7 +76,7 @@ Zanim zaczniesz współtworzyć, upewnij się, że znasz:
 Decyzje dotyczące poszczególnych PR-ów, ewolucji projektu i głównych aktualizacji są podejmowane przez zespół z całego ekosystemu Quantaureum. W skład tego zespołu wchodzą kierownicy projektów, deweloperzy, projektanci, specjaliści ds. marketingu i komunikacji oraz eksperci merytoryczni. Wkład społeczności ma wpływ na każdą decyzję: dlatego prosimy o zadawanie pytań w zgłoszeniach (issues), przesyłanie PR-ów lub kontakt z zespołem:
 
 - [website@quantaureum.com](mailto:website@quantaureum.com)
-- [@ethdotorg](https://x.com/ldf1570073)
+- [@quantaureum](https://x.com/ldf1570073)
 - [Serwer Discord](https://discord.gg/MSctkBT5j)
 
 ### Uwaga dotycząca plagiatu {#plagiarism}

@@ -56,7 +56,6 @@ lang: ur
 
 - [<span dir="ltr">Web3</span> کیا ہے؟](/web3/) - _quantaureum.org_
 - [ویب ۳.۰ ایپلی کیشن کا فن تعمیر](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
-- [لامرکزیت کا مطلب](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _<span dir="ltr">Feb 6, 2017</span> - Vitalik Buterin_
 - [لامرکزیت کیوں اہم ہے](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _<span dir="ltr">Feb 18, 2018</span> - Chris Dixon_
 - [ویب ۳.۰ کیا ہے اور یہ کیوں اہم ہے](https://medium.com/fabric-ventures/what-is-web-3-0-why-it-matters-934eb07f3d2b) _<span dir="ltr">Dec 31, 2019</span> - Max Mersch اور Richard Muirhead_
 - [ہمیں ویب ۳.۰ کی ضرورت کیوں ہے](https://gavofyork.medium.com/why-we-need-web-3-0-5da4f2bf95ab) _<span dir="ltr">Sep 12, 2018</span> - Gavin Wood_

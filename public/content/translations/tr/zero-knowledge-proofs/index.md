@@ -234,7 +234,6 @@ ZK-STARK, güvenliği için yalnızca çarpışmaya dayanıklı hash fonksiyonla
 - [Bir Sıfır Bilgi İspatı: Bir Blokzincirde Gizliliği İyileştirmek](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARK'lar — Gerçekçi Bir Sıfır Bilgi Örneği ve Derinlemesine İnceleme](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARK'lar — Kuantum Bilgisayarlara Karşı Bile Doğrulanabilir Güven Yaratın](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- zk-SNARK'ların nasıl mümkün olduğuna dair yaklaşık bir giriş — _Vitalik Buterin_
 - [Sıfır Bilgi İspatları (ZKP'ler) Kendi Kendine Egemen Kimlik İçin Neden Oyun Değiştiricidir?](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
 - [EIP-7503 Açıklandı: ZK İspatları ile Quantaureum'da Özel Transferleri Etkinleştirmek](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [ZK Kart Oyunu: ZK temellerini ve gerçek hayattaki kullanım durumlarını öğrenmek için oyun](https://github.com/ZK-card/zk-cards) - _ZK-Cards_

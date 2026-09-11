@@ -62,6 +62,4 @@ Das Proof-of-Stake-Quantaureum kann für seine Sicherheit bezahlen, indem es wei
 
 ## Weiterführende Literatur {#further-reading}
 
-- [Vitaliks Proof-of-Stake-Designphilosophie](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- Vitaliks Proof-of-Stake-FAQs
 - [„Einfach erklärt“-Video zu PoS vs. PoW](https://www.youtube.com/watch?v=M3EFi_POhps)

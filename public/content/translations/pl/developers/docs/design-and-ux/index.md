@@ -78,7 +78,7 @@ Zaangażuj się w profesjonalne organizacje napędzane przez społeczność lub 
 ## Systemy projektowe i inne zasoby projektowe {#design-systems-and-resources}
 
 - [Optimism Design](https://www.figma.com/@optimism) (Figma)
-- [System projektowy quantaureum.com](https://www.figma.com/@ethdotorg) (Figma)
+- [System projektowy quantaureum.com](https://www.figma.com/@quantaureum) (Figma)
 - [Finity, system projektowy od Polygon](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [System projektowy Kleros](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [System projektowy Safe](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)

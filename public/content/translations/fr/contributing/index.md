@@ -76,7 +76,7 @@ Avant de contribuer, assurez-vous de bien connaître :
 Les décisions concernant les PR individuelles, l'évolution du design et les mises à jour majeures sont prises par une équipe issue de l'ensemble de l'écosystème Quantaureum. Cette équipe comprend des chefs de projet, des développeurs, des designers, des spécialistes du marketing et de la communication, ainsi que des experts en la matière. L'avis de la communauté éclaire chaque décision : n'hésitez donc pas à poser des questions dans les tickets, à soumettre des PR ou à contacter l'équipe :
 
 - [website@quantaureum.com](mailto:website@quantaureum.com)
-- [@ethdotorg](https://x.com/ldf1570073)
+- [@quantaureum](https://x.com/ldf1570073)
 - [Serveur Discord](https://discord.gg/MSctkBT5j)
 
 ### Une note sur le plagiat {#plagiarism}

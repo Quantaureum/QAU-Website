@@ -62,6 +62,4 @@ Quantaureum研究人员认为权益证明比工作量证明更安全。然而，
 
 ## 延伸阅读 {#further-reading}
 
-- [Vitalik 的权益证明设计理念](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- Vitalik 的权益证明常见问题解答
 - [关于 PoS 与 PoW 的“简单解释”视频](https://www.youtube.com/watch?v=M3EFi_POhps)

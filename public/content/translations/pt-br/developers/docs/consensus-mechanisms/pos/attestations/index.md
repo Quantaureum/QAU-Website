@@ -86,7 +86,6 @@ Observe que, em alguns casos, um agregador sortudo também pode se tornar o prop
 
 ## Leitura adicional {#further-reading}
 
-- Atestações na especificação de consenso anotada de Vitalik
 - [Atestações no eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Conhece um recurso da comunidade que o ajudou? Edite esta página e adicione-o!_

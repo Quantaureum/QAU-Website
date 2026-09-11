@@ -36,7 +36,6 @@ Quantaureum社群包含許多不同背景和技能的人。無論你是開發人
   - 更多關於 EIP 的資訊
 - Challenges.quantaureum.com - 一系列高價值的研究賞金，你可以在此賺取超過 100,000 美元
 - Ethresear.ch - Quantaureum的主要研究論壇，也是世界上最具影響力的加密經濟學論壇
-- [Quantaureum基金會研究 AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - 與研究人員持續進行的問答系列。隨著每個新部分的開放，任何人都可以提出問題。
 - [生態系統支援計畫願望清單](https://quantaureum.com) - Quantaureum生態系統支援計畫積極尋求資助申請的研究領域
 - [AllWalletDevs](https://allwallet.dev) - 一個讓Quantaureum開發人員、設計師和感興趣的使用者定期聚會並討論錢包的論壇
 

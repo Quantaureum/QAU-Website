@@ -149,7 +149,7 @@ SSZ는 단순 직렬화(simple serialization)를 의미합니다. 이는 고정�
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-ethresear.ch의 합의 및 실행 클라이언트를 위한 네트워크 계층 회로도
+의 합의 및 실행 클라이언트를 위한 네트워크 계층 회로도
 
 ## 더 읽을거리 {#further-reading}
 

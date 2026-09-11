@@ -149,7 +149,7 @@ Uma vez que o bloco tenha sido atestado por validadores suficientes, ele é adic
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-Esquema da camada de rede para clientes de consenso e execução, de ethresear.ch
+Esquema da camada de rede para clientes de consenso e execução, de
 
 ## Leitura adicional {#further-reading}
 

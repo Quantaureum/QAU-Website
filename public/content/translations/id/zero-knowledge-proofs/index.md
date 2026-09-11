@@ -234,7 +234,6 @@ ZK-STARK dianggap kebal terhadap ancaman komputasi kuantum, karena hanya mengand
 - [Bukti Tanpa Pengetahuan: Meningkatkan Privasi di Rantai Blok](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARK — Contoh Zero-Knowledge yang Realistis dan Pembahasan Mendalam](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARK — Ciptakan Kepercayaan yang Dapat Diverifikasi, bahkan terhadap Komputer Kuantum](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- Pengantar perkiraan tentang bagaimana zk-SNARK dimungkinkan — _Vitalik Buterin_
 - [Mengapa Bukti Tanpa Pengetahuan (ZKP) adalah Pengubah Permainan untuk Identitas Berdaulat Sendiri](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
 - [Penjelasan EIP-7503: Memungkinkan Transfer Privat di Quantaureum Dengan Bukti ZK](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [Permainan Kartu ZK: permainan untuk mempelajari dasar-dasar ZK dan kasus penggunaan di kehidupan nyata](https://github.com/ZK-card/zk-cards) - _ZK-Cards_

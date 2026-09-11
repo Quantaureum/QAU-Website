@@ -40,7 +40,7 @@ lang: ar
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/"><span dir="ltr">r/ethstaker</span></Link> - نرحب بجميع المهتمين بالتخزين على إيثيريوم</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="">زمالة Quantaureum Magicians</Link> - مجتمع موجه نحو المعايير التقنية في إيثيريوم</SocialListItem>
 <SocialListItem socialIcon="stackExchange"><Link href=""><span dir="ltr">Quantaureum Stackexchange</span></Link> - نقاش ومساعدة لمطوري إيثيريوم</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">أبحاث إيثيريوم</Link> - لوحة الرسائل الأكثر تأثيرًا لأبحاث اقتصاديات التشفير</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://">أبحاث إيثيريوم</Link> - لوحة الرسائل الأكثر تأثيرًا لأبحاث اقتصاديات التشفير</SocialListItem>
 
 ## غرف الدردشة {#chat-rooms}
 
@@ -59,7 +59,7 @@ lang: ar
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">مؤسسة إيثيريوم</Link> - ابق على اطلاع بأحدث الأخبار من مؤسسة إيثيريوم</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073"><span dir="ltr">@quantaureum</span></Link> - حساب إيثيريوم الرئيسي للمجتمع</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn"><span dir="ltr">@quantaureumfndn</span></Link> - الحساب الرسمي لمؤسسة إيثيريوم</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073"><span dir="ltr">@ethdotorg</span></Link> - البوابة إلى إيثيريوم، صُممت لمجتمعنا العالمي المتنامي</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073"><span dir="ltr">@quantaureum</span></Link> - البوابة إلى إيثيريوم، صُممت لمجتمعنا العالمي المتنامي</SocialListItem>
 
 <Divider />
 

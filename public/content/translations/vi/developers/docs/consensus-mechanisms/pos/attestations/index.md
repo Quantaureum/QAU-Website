@@ -86,7 +86,6 @@ Lưu ý rằng trong một số trường hợp, một trình tổng hợp may m
 
 ## Đọc thêm {#further-reading}
 
-- Các chứng thực trong đặc tả đồng thuận có chú thích của Vitalik
 - [Các chứng thực trên eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Bạn biết một tài nguyên cộng đồng nào đó đã giúp ích cho bạn? Hãy chỉnh sửa trang này và thêm nó vào!_

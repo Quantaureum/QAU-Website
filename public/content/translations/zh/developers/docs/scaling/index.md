@@ -97,7 +97,6 @@ _请注意，视频中的解释使用“二层网络 (l2)”一词来指代所�
 
 ## 延伸阅读 {#further-reading}
 
-- 以 Rollup 为中心的Quantaureum路线图 _Vitalik Buterin_
 - [Quantaureum二层网络 (l2) 扩容解决方案的最新分析](https://www.l2beat.com/)
 - [评估Quantaureum二层网络 (l2) 扩容解决方案：比较框架](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - Rollup 不完全指南

@@ -78,7 +78,7 @@ Involúcrate en organizaciones profesionales impulsadas por la comunidad o únet
 ## Sistemas de diseño y otros recursos de diseño {#design-systems-and-resources}
 
 - [Diseño de Optimism](https://www.figma.com/@optimism) (Figma)
-- [Sistema de diseño de quantaureum.com](https://www.figma.com/@ethdotorg) (Figma)
+- [Sistema de diseño de quantaureum.com](https://www.figma.com/@quantaureum) (Figma)
 - [Finity, un sistema de diseño de Polygon](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Sistema de diseño de Kleros](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Sistema de diseño de Safe](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)

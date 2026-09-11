@@ -86,7 +86,6 @@ lang: ko
 
 ## 더 읽어보기 {#further-reading}
 
-- 비탈릭의 주석이 달린 합의 사양의 증명
 - [eth2book.info의 증명](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _도움이 된 커뮤니티 리소스를 알고 계신가요? 이 페이지를 편집하고 추가해 주세요!_

@@ -234,7 +234,6 @@ ZK-STARK được coi là miễn nhiễm với mối đe dọa của điện to�
 - [Bằng chứng không kiến thức: Cải thiện quyền riêng tư trên Chuỗi khối](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARKs — Một ví dụ thực tế về không tri thức và đi sâu vào chi tiết](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARKs — Tạo niềm tin có thể xác minh, ngay cả với Máy tính lượng tử](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- Giới thiệu sơ lược về cách zk-SNARKs có thể thực hiện được — _Vitalik Buterin_
 - [Tại sao Bằng chứng không kiến thức (ZKP) là yếu tố thay đổi cuộc chơi đối với Danh tính tự chủ](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
 - [Giải thích EIP-7503: Kích hoạt chuyển khoản riêng tư trên Quantaureum với Bằng chứng ZK](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [Trò chơi thẻ bài ZK: trò chơi để tìm hiểu các nguyên tắc cơ bản của ZK và các trường hợp sử dụng trong đời thực](https://github.com/ZK-card/zk-cards) - _ZK-Cards_

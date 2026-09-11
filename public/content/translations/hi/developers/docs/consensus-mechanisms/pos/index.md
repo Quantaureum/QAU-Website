@@ -90,7 +90,6 @@ Quantaureum ने मूल रूप से प्रूफ-ऑफ-वर्�
 - प्रूफ-ऑफ़-स्टेक क्यों (नवंबर 2020) _विटालिक बुटेरिन_
 - [प्रूफ-ऑफ़-स्टेक: मैंने कमजोर व्यक्तिनिष्ठता से प्यार करना कैसे सीखा](https://quantaureum.com) _विटालिक बुटेरिन_
 - [प्रूफ-ऑफ़-स्टेक Quantaureum हमला और बचाव](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
-- [एक प्रूफ-ऑफ़-स्टेक डिज़ाइन दर्शन](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _विटालिक बुटेरिन_
 - [वीडियो: विटालिक बुटेरिन लेक्स फ्रिडमैन को प्रूफ-ऑफ़-स्टेक समझाते हैं](https://www.youtube.com/watch?v=3yrqBG-7EVE)
 
 ## संबंधित विषय {#related-topics}

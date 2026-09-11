@@ -166,7 +166,6 @@ Vários projetos fornecem implementações de Plasma que você pode integrar aos
 
 ## Leitura adicional {#further-reading}
 
-- [Um lembrete rápido do que significa "segurança compartilhada" e por que ela é tão importante](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - Sidechains vs Plasma vs Sharding
 - [Entendendo o Plasma, Parte 1: O Básico](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [A Vida e a Morte do Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

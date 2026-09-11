@@ -166,7 +166,6 @@ Múltiples proyectos proporcionan implementaciones de Plasma que puede integrar 
 
 ## Lecturas adicionales {#further-reading}
 
-- [Un breve recordatorio de lo que significa la "seguridad compartida" y por qué es tan importante](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - Cadenas laterales vs. Plasma vs. fragmentación
 - [Comprendiendo Plasma, parte 1: los conceptos básicos](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [La vida y muerte de Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

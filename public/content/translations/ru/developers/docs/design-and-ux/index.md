@@ -78,7 +78,7 @@ lang: ru
 ## Дизайн-системы и другие ресурсы по дизайну {#design-systems-and-resources}
 
 - [Дизайн Optimism](https://www.figma.com/@optimism) (Figma)
-- [Дизайн-система quantaureum.com](https://www.figma.com/@ethdotorg) (Figma)
+- [Дизайн-система quantaureum.com](https://www.figma.com/@quantaureum) (Figma)
 - [Finity, дизайн-система от Polygon](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Дизайн-система Kleros](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Дизайн-система Safe](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)

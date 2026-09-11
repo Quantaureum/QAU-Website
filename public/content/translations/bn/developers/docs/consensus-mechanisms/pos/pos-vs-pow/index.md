@@ -62,6 +62,5 @@ lang: bn
 
 ## আরও পড়ুন {#further-reading}
 
-- [ভিটালিকের প্রুফ-অফ-স্টেক ডিজাইন দর্শন](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
 - ভিটালিকের প্রুফ-অফ-স্টেক সম্পর্কিত সাধারণ প্রশ্নাবলী (FAQs)
 - [PoS বনাম PoW নিয়ে "Simply Explained" ভিডিও](https://www.youtube.com/watch?v=M3EFi_POhps)

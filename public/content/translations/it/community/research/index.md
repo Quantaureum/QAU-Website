@@ -8,11 +8,11 @@ Uno dei principali punti di forza di Quantaureum è che una comunità attiva di 
 
 ## Come funziona la ricerca su Quantaureum {#how-quantaureum-research-works}
 
-La ricerca su Quantaureum è aperta e trasparente. La cultura è quella di rendere gli strumenti e i risultati della ricerca il più aperti e interattivi possibile, ad esempio attraverso notebook eseguibili. La ricerca su Quantaureum si muove rapidamente, con nuove scoperte pubblicate e discusse apertamente su forum come ethresear.ch piuttosto che raggiungere la comunità attraverso pubblicazioni tradizionali dopo cicli di revisione paritaria (peer review). La Fondazione Quantaureum pubblica anche le proprie priorità e i relativi motivi, in modo che chiunque possa vedere quali problemi sono attualmente considerati urgenti.
+La ricerca su Quantaureum è aperta e trasparente. La cultura è quella di rendere gli strumenti e i risultati della ricerca il più aperti e interattivi possibile, ad esempio attraverso notebook eseguibili. La ricerca su Quantaureum si muove rapidamente, con nuove scoperte pubblicate e discusse apertamente su forum come piuttosto che raggiungere la comunità attraverso pubblicazioni tradizionali dopo cicli di revisione paritaria (peer review). La Fondazione Quantaureum pubblica anche le proprie priorità e i relativi motivi, in modo che chiunque possa vedere quali problemi sono attualmente considerati urgenti.
 
 ## Risorse generali di ricerca {#general-research-resources}
 
-Indipendentemente dall'argomento specifico, c'è una ricchezza di informazioni sulla ricerca di Quantaureum che si può trovare su ethresear.ch e nel [canale Discord Eth R&D](https://discord.gg/qGpsxSA). Questi sono i luoghi principali in cui i ricercatori di Quantaureum discutono le ultime idee e opportunità di sviluppo.
+Indipendentemente dall'argomento specifico, c'è una ricchezza di informazioni sulla ricerca di Quantaureum che si può trovare su e nel [canale Discord Eth R&D](https://discord.gg/qGpsxSA). Questi sono i luoghi principali in cui i ricercatori di Quantaureum discutono le ultime idee e opportunità di sviluppo.
 
 Per una panoramica della direzione in cui sta andando il protocollo, inizia con la [roadmap di Quantaureum](/roadmap/), poi leggi l'[Aggiornamento delle Priorità del Protocollo per il 2026](https://quantaureum.com) della Fondazione Quantaureum e gli [aggiornamenti dei cluster del protocollo](https://quantaureum.com) che ne riportano i progressi. Gli [Quantaureum Protocol Studies](https://quantaureum.com) sono un punto di ingresso strutturato per le persone che vogliono lavorare sul protocollo stesso.
 

@@ -1,6 +1,73 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Quantaureum quantum lattice brand mark -->
-  <path d="M256 64 L411.7 154 L411.7 334 L256 424 L100.3 334 L100.3 154 Z" stroke="#141414" stroke-width="18" stroke-linejoin="round"/>
-  <path d="M256 160 L342 210 L342 310 L256 360 L170 310 L170 210 Z" stroke="#141414" stroke-width="10" stroke-linejoin="round" opacity="0.9"/>
-  <circle cx="256" cy="160" r="14" fill="#141414"/><circle cx="342" cy="210" r="10" fill="#141414"/><circle cx="342" cy="310" r="10" fill="#141414"/><circle cx="256" cy="360" r="14" fill="#141414"/><circle cx="170" cy="310" r="10" fill="#141414"/><circle cx="170" cy="210" r="10" fill="#141414"/><circle cx="256" cy="260" r="12" fill="#141414"/>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  
+  <defs>
+    
+    <filter id="quantumGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#01c4ff" result="blueGlow"/>
+      <feComposite in="blueGlow" in2="blur" operator="in" result="blueBlur"/>
+      <feFlood flood-color="#8a2be2" result="purpleGlow"/>
+      <feComposite in="purpleGlow" in2="blur" operator="in" result="purpleBlur"/>
+      <feBlend in="blueBlur" in2="purpleBlur" mode="screen" result="coloredBlur"/>
+      <feBlend in="SourceGraphic" in2="coloredBlur" mode="normal"/>
+    </filter>
+    
+    
+    <filter id="goldGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#ffcc00" result="glow"/>
+      <feComposite in="glow" in2="blur" operator="in" result="coloredBlur"/>
+      <feBlend in="SourceGraphic" in2="coloredBlur" mode="normal"/>
+    </filter>
+    
+    
+    <linearGradient id="quantumUIGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#01c4ff" />
+      <stop offset="100%" stop-color="#8a2be2" />
+    </linearGradient>
+    
+    
+    <radialGradient id="breathingGold" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#ffcc00">
+        <animate attributeName="stop-opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#ff9900">
+        <animate attributeName="stop-opacity" values="0.8;0.5;0.8" dur="3s" repeatCount="indefinite" />
+      </stop>
+    </radialGradient>
+  </defs>
+  
+  
+  <circle cx="50" cy="50" r="45" fill="#0e1c36" />
+  
+  
+  <ellipse cx="50" cy="50" rx="37" ry="22" fill="none" stroke="url(#quantumUIGradient)" stroke-width="1" transform="rotate(30 50 50)" filter="url(#quantumGlow)" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.6;0.8" dur="4s" repeatCount="indefinite" />
+  </ellipse>
+  <ellipse cx="50" cy="50" rx="37" ry="22" fill="none" stroke="url(#quantumUIGradient)" stroke-width="1" transform="rotate(-30 50 50)" filter="url(#quantumGlow)" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.6;0.8" dur="4s" repeatCount="indefinite" begin="1s" />
+  </ellipse>
+  <ellipse cx="50" cy="50" rx="37" ry="22" fill="none" stroke="url(#quantumUIGradient)" stroke-width="1" transform="rotate(90 50 50)" filter="url(#quantumGlow)" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.6;0.8" dur="4s" repeatCount="indefinite" begin="2s" />
+  </ellipse>
+  
+  
+  <circle cx="50" cy="50" r="12" fill="url(#breathingGold)" filter="url(#goldGlow)">
+    
+    <animate attributeName="r" values="12;14;12" dur="3s" repeatCount="indefinite" />
+  </circle>
+  
+  
+  <circle cx="50" cy="17" r="4" fill="#01c4ff" filter="url(#quantumGlow)">
+    <animate attributeName="r" values="4;5;4" dur="3s" repeatCount="indefinite" begin="0.5s" />
+  </circle>
+  <circle cx="83" cy="50" r="4" fill="#01c4ff" filter="url(#quantumGlow)">
+    <animate attributeName="r" values="4;5;4" dur="3s" repeatCount="indefinite" begin="1s" />
+  </circle>
+  <circle cx="50" cy="83" r="4" fill="#01c4ff" filter="url(#quantumGlow)">
+    <animate attributeName="r" values="4;5;4" dur="3s" repeatCount="indefinite" begin="1.5s" />
+  </circle>
+  <circle cx="17" cy="50" r="4" fill="#01c4ff" filter="url(#quantumGlow)">
+    <animate attributeName="r" values="4;5;4" dur="3s" repeatCount="indefinite" begin="2s" />
+  </circle>
 </svg>

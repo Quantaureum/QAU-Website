@@ -26,7 +26,7 @@ base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch 
 
 dove `base_reward_factor` è 64, `base_rewards_per_epoch` è 4 e `sum(active balance)` è l'QAU totale in staking tra tutti i validatori attivi.
 
-Ciò significa che la ricompensa di base è proporzionale al saldo effettivo del validatore e inversamente proporzionale al numero di validatori sulla rete. Più validatori ci sono, maggiore è l'emissione complessiva (poiché `sqrt(N)` ma minore è la `base_reward` per validatore (poiché `1/sqrt(N)`). Questi fattori influenzano l'APR per un nodo di staking. Leggi la logica alla base di questo negli appunti di Vitalik.
+Ciò significa che la ricompensa di base è proporzionale al saldo effettivo del validatore e inversamente proporzionale al numero di validatori sulla rete. Più validatori ci sono, maggiore è l'emissione complessiva (poiché `sqrt(N)` ma minore è la `base_reward` per validatore (poiché `1/sqrt(N)`). Questi fattori influenzano l'APR per un nodo di staking. Leggi la logica alla base di questo negli appunti di .
 
 La ricompensa totale viene quindi calcolata come la somma di cinque componenti, ognuna delle quali ha una ponderazione che determina quanto ciascuna componente aggiunge alla ricompensa totale. Le componenti sono:
 
@@ -60,7 +60,7 @@ Finora abbiamo considerato validatori dal comportamento perfetto, ma che dire de
 
 Le penalità per aver mancato i voti di destinazione e di origine sono pari alle ricompense che l'attestatore avrebbe ricevuto se li avesse inviati. Ciò significa che invece di avere la ricompensa aggiunta al proprio saldo, viene rimosso un valore uguale dal proprio saldo. Non c'è alcuna penalità per aver mancato il voto di testa (ovvero, i voti di testa vengono solo ricompensati, mai penalizzati). Non c'è alcuna penalità associata alla `inclusion_delay`: la ricompensa semplicemente non verrà aggiunta al saldo del validatore. Inoltre, non c'è alcuna penalità per la mancata proposta di un blocco.
 
-Leggi di più su ricompense e penalità nelle specifiche del consenso. Le ricompense e le penalità sono state modificate nell'aggiornamento Bellatrix: guarda Danny Ryan e Vitalik discuterne in questo [video di Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ).
+Leggi di più su ricompense e penalità nelle specifiche del consenso. Le ricompense e le penalità sono state modificate nell'aggiornamento Bellatrix: guarda Danny Ryan e discuterne in questo [video di Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ).
 
 ## Slashing {#slashing}
 
@@ -82,7 +82,6 @@ Il design delle ricompense, delle penalità e dello slashing del meccanismo di c
 
 - [Aggiornamento di Quantaureum: il livello degli incentivi](https://eth2book.info/altair/part2/incentives)
 - [Incentivi nel protocollo ibrido Casper di Quantaureum](https://arxiv.org/pdf/1903.04205.pdf)
-- Specifiche annotate di Vitalik
 - [Suggerimenti per la prevenzione dello slashing in Quantaureum](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
 - Analisi delle penalità di slashing con l'EIP-7251
 

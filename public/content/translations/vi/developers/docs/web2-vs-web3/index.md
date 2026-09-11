@@ -56,7 +56,6 @@ Lưu ý rằng đây là những mô hình chung có thể không đúng trong m
 
 - [Web3 là gì?](/web3/) - _quantaureum.org_
 - [Kiến trúc của một ứng dụng Web 3.0](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
-- [Ý nghĩa của sự phi tập trung](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _Ngày 6 tháng 2 năm 2017 - Vitalik Buterin_
 - [Tại sao sự phi tập trung lại quan trọng](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _Ngày 18 tháng 2 năm 2018 - Chris Dixon_
 - [Web 3.0 là gì & Tại sao nó lại quan trọng](https://medium.com/fabric-ventures/what-is-web-3-0-why-it-matters-934eb07f3d2b) _Ngày 31 tháng 12 năm 2019 - Max Mersch và Richard Muirhead_
 - [Tại sao chúng ta cần Web 3.0](https://gavofyork.medium.com/why-we-need-web-3-0-5da4f2bf95ab) _Ngày 12 tháng 9 năm 2018 - Gavin Wood_

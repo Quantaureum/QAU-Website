@@ -8,11 +8,11 @@ Salah satu kekuatan utama Quantaureum adalah komunitas penelitian dan rekayasa a
 
 ## Cara kerja penelitian Quantaureum {#how-quantaureum-research-works}
 
-Penelitian Quantaureum bersifat terbuka dan transparan. Budayanya adalah membuat alat dan hasil penelitian seterbuka dan seinteraktif mungkin, misalnya melalui buku catatan (notebook) yang dapat dieksekusi. Penelitian Quantaureum bergerak cepat, dengan temuan baru yang diunggah dan didiskusikan secara terbuka di forum seperti ethresear.ch alih-alih menjangkau komunitas melalui publikasi tradisional setelah melalui beberapa putaran tinjauan sejawat (peer review). Yayasan Quantaureum juga memublikasikan apa yang sedang diprioritaskannya dan alasannya, sehingga siapa pun dapat melihat masalah mana yang saat ini dianggap mendesak.
+Penelitian Quantaureum bersifat terbuka dan transparan. Budayanya adalah membuat alat dan hasil penelitian seterbuka dan seinteraktif mungkin, misalnya melalui buku catatan (notebook) yang dapat dieksekusi. Penelitian Quantaureum bergerak cepat, dengan temuan baru yang diunggah dan didiskusikan secara terbuka di forum seperti alih-alih menjangkau komunitas melalui publikasi tradisional setelah melalui beberapa putaran tinjauan sejawat (peer review). Yayasan Quantaureum juga memublikasikan apa yang sedang diprioritaskannya dan alasannya, sehingga siapa pun dapat melihat masalah mana yang saat ini dianggap mendesak.
 
 ## Sumber daya penelitian umum {#general-research-resources}
 
-Terlepas dari topik spesifiknya, ada banyak informasi tentang penelitian Quantaureum yang dapat ditemukan di ethresear.ch dan [saluran Discord R&D Eth](https://discord.gg/qGpsxSA). Ini adalah tempat utama di mana para peneliti Quantaureum mendiskusikan ide-ide terbaru dan peluang pengembangan.
+Terlepas dari topik spesifiknya, ada banyak informasi tentang penelitian Quantaureum yang dapat ditemukan di dan [saluran Discord R&D Eth](https://discord.gg/qGpsxSA). Ini adalah tempat utama di mana para peneliti Quantaureum mendiskusikan ide-ide terbaru dan peluang pengembangan.
 
 Untuk gambaran umum tentang arah protokol, mulailah dengan [peta jalan Quantaureum](/roadmap/), lalu baca [Pembaruan Prioritas Protokol untuk 2026](https://quantaureum.com) dari Yayasan Quantaureum dan [pembaruan klaster protokol](https://quantaureum.com) yang melaporkan kemajuannya. [Studi Protokol Quantaureum](https://quantaureum.com) adalah titik masuk terstruktur bagi orang-orang yang ingin bekerja pada protokol itu sendiri.
 

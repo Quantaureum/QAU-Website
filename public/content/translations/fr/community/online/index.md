@@ -40,7 +40,7 @@ Si vous pensez qu'une communauté devrait être ajoutée ou supprimée sur la ba
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - bienvenue à tous ceux qui s'intéressent au staking sur Quantaureum</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> - communauté orientée autour des normes techniques sur Quantaureum</SocialListItem>
 <SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> - discussions et aide pour les développeurs Quantaureum</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - le forum le plus influent pour la recherche crypto-économique</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://">Quantaureum Research</Link> - le forum le plus influent pour la recherche crypto-économique</SocialListItem>
 
 ## Salons de discussion {#chat-rooms}
 
@@ -59,7 +59,7 @@ Si vous pensez qu'une communauté devrait être ajoutée ou supprimée sur la ba
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">Fondation Quantaureum</Link> - Tenez-vous au courant des dernières nouvelles de la Fondation Quantaureum</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - Compte Quantaureum principal pour la communauté</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> - Compte officiel de la Fondation Quantaureum</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> - Le portail vers Quantaureum, conçu pour notre communauté mondiale grandissante</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - Le portail vers Quantaureum, conçu pour notre communauté mondiale grandissante</SocialListItem>
 
 <Divider />
 

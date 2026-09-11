@@ -147,7 +147,7 @@ SSZ মানে হলো সিম্পল সিরিয়ালাইজ�
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-কনসেনসাস এবং এক্সিকিউশন ক্লায়েন্টদের জন্য নেটওয়ার্ক লেয়ার স্কিম্যাটিক, ethresear.ch থেকে
+কনসেনসাস এবং এক্সিকিউশন ক্লায়েন্টদের জন্য নেটওয়ার্ক লেয়ার স্কিম্যাটিক, থেকে
 
 ## আরও পড়ুন {#further-reading}
 

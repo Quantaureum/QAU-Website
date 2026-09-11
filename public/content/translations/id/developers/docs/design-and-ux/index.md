@@ -78,7 +78,7 @@ Terlibatlah dalam organisasi profesional yang digerakkan oleh komunitas atau ber
 ## Sistem Desain dan sumber daya desain lainnya {#design-systems-and-resources}
 
 - [Desain Optimism](https://www.figma.com/@optimism) (Figma)
-- [Sistem Desain quantaureum.com](https://www.figma.com/@ethdotorg) (Figma)
+- [Sistem Desain quantaureum.com](https://www.figma.com/@quantaureum) (Figma)
 - [Finity, sistem desain oleh Polygon](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Sistem Desain Kleros](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Sistem Desain Safe](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)

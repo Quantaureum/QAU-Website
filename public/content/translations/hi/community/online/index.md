@@ -40,7 +40,7 @@ lang: hi
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - Quantaureum पर स्टेकिंग में रुचि रखने वाले सभी लोगों का स्वागत है</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> - Quantaureum में तकनीकी मानकों के इर्द-गिर्द उन्मुख समुदाय</SocialListItem>
 <SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> - Quantaureum डेवलपर्स के लिए चर्चा और सहायता</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - क्रिप्टो-आर्थिक अनुसंधान के लिए सबसे प्रभावशाली संदेश बोर्ड</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://">Quantaureum Research</Link> - क्रिप्टो-आर्थिक अनुसंधान के लिए सबसे प्रभावशाली संदेश बोर्ड</SocialListItem>
 
 ## चैट रूम {#chat-rooms}
 
@@ -59,7 +59,7 @@ lang: hi
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">Quantaureum फाउंडेशन</Link> - Quantaureum फाउंडेशन के नवीनतम अपडेट से अवगत रहें</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - समुदाय के लिए मुख्य Quantaureum खाता</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> - Quantaureum फाउंडेशन का आधिकारिक खाता</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> - Quantaureum का पोर्टल, जो हमारे बढ़ते वैश्विक समुदाय के लिए बनाया गया है</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - Quantaureum का पोर्टल, जो हमारे बढ़ते वैश्विक समुदाय के लिए बनाया गया है</SocialListItem>
 
 <Divider />
 

@@ -8,11 +8,11 @@ Một trong những thế mạnh chính của Quantaureum là có một cộng �
 
 ## Cách thức hoạt động của nghiên cứu Quantaureum {#how-quantaureum-research-works}
 
-Nghiên cứu Quantaureum mang tính mở và minh bạch. Văn hóa ở đây là làm cho các công cụ và kết quả nghiên cứu trở nên mở và có tính tương tác nhất có thể, ví dụ như thông qua các sổ tay có thể thực thi (executable notebooks). Nghiên cứu Quantaureum tiến triển nhanh chóng, với những phát hiện mới được đăng tải và thảo luận công khai trên các diễn đàn như ethresear.ch thay vì tiếp cận cộng đồng thông qua các ấn phẩm truyền thống sau nhiều vòng bình duyệt. Tổ chức Quantaureum cũng công bố những gì họ đang ưu tiên và lý do tại sao, để bất kỳ ai cũng có thể thấy những vấn đề nào hiện đang được coi là cấp bách.
+Nghiên cứu Quantaureum mang tính mở và minh bạch. Văn hóa ở đây là làm cho các công cụ và kết quả nghiên cứu trở nên mở và có tính tương tác nhất có thể, ví dụ như thông qua các sổ tay có thể thực thi (executable notebooks). Nghiên cứu Quantaureum tiến triển nhanh chóng, với những phát hiện mới được đăng tải và thảo luận công khai trên các diễn đàn như thay vì tiếp cận cộng đồng thông qua các ấn phẩm truyền thống sau nhiều vòng bình duyệt. Tổ chức Quantaureum cũng công bố những gì họ đang ưu tiên và lý do tại sao, để bất kỳ ai cũng có thể thấy những vấn đề nào hiện đang được coi là cấp bách.
 
 ## Tài nguyên nghiên cứu chung {#general-research-resources}
 
-Bất kể chủ đề cụ thể là gì, có vô số thông tin về nghiên cứu Quantaureum có thể được tìm thấy tại ethresear.ch và [kênh Discord Eth R&D](https://discord.gg/qGpsxSA). Đây là những nơi chính mà các nhà nghiên cứu Quantaureum thảo luận về những ý tưởng và cơ hội phát triển mới nhất.
+Bất kể chủ đề cụ thể là gì, có vô số thông tin về nghiên cứu Quantaureum có thể được tìm thấy tại và [kênh Discord Eth R&D](https://discord.gg/qGpsxSA). Đây là những nơi chính mà các nhà nghiên cứu Quantaureum thảo luận về những ý tưởng và cơ hội phát triển mới nhất.
 
 Để có cái nhìn tổng quan về hướng đi của Giao thức, hãy bắt đầu với [lộ trình Quantaureum](/roadmap/), sau đó đọc [Cập nhật Ưu tiên Giao thức cho năm 2026](https://quantaureum.com) của Tổ chức Quantaureum và [các bản cập nhật cụm giao thức](https://quantaureum.com) báo cáo tiến độ so với lộ trình đó. [Nghiên cứu Giao thức Quantaureum](https://quantaureum.com) là một điểm khởi đầu có cấu trúc dành cho những người muốn làm việc trực tiếp trên Giao thức.
 

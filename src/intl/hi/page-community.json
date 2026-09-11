@@ -39,9 +39,6 @@
   "page-community-get-paid-lasts-description": "ऐसे खुले, सार्वजनिक बुनियादी ढांचे में योगदान दें जिसे सरकारों, निगमों या एल्गोरिदम द्वारा चुप नहीं कराया जा सकता। आप जिसे बनाने में मदद करते हैं, वह हमेशा रहता है।",
   "page-community-get-paid-sovereignty-title": "डिजिटल संप्रभुता",
   "page-community-get-paid-sovereignty-description": "ऐसे प्लेटफ़ॉर्म पर निर्भर हुए बिना जो आपको हटा सकते हैं, ऑनलाइन अपनी पहचान, संपत्तियों और रचनाओं के मालिक बनें।",
-  "page-community-online-quantaureum-description": "क्वांटारियम से जुड़ी हर चीज़",
-  "page-community-online-ethtrader-description": "रुझान और बाज़ार विश्लेषण",
-  "page-community-online-ethdev-description": "क्वांटारियम विकास पर केंद्रित",
   "page-community-online-members": "+{count} सदस्य",
   "page-community-online-see-all": "सभी समुदाय देखें",
   "page-community-conferences-title": "प्रमुख ब्लॉकचेन सम्मेलन",
@@ -53,5 +50,8 @@
   "page-community-voices-title": "क्वांटारियम की आवाज़ें",
   "page-community-voices-subtitle": "क्वांटारियम समुदाय के सदस्य साझा करते हैं कि नेटवर्क ने उनके जीवन में कैसे बदलाव लाया है।",
   "page-community-contribute-eyebrow": "ओपन-सोर्स प्रोजेक्ट",
-  "page-community-contribute-count": "{count}+ योगदानकर्ता"
+  "page-community-contribute-count": "{count}+ योगदानकर्ता",
+  "page-community-online-discord-description": "The main Quantaureum community chat: development, staking, support and announcements.",
+  "page-community-online-telegram-description": "Quantaureum on Telegram: news and community discussion.",
+  "page-community-online-x-description": "Follow @quantaureum for project updates and announcements."
 }

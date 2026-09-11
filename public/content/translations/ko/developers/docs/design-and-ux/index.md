@@ -78,7 +78,7 @@ Web3에 대한 더 기초적인 이해가 먼저 필요하신가요? [**학습 �
 ## 디자인 시스템 및 기타 디자인 리소스 {#design-systems-and-resources}
 
 - [옵티미즘(Optimism) 디자인](https://www.figma.com/@optimism) (Figma)
-- [quantaureum.com 디자인 시스템](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com 디자인 시스템](https://www.figma.com/@quantaureum) (Figma)
 - [폴리곤(Polygon)의 디자인 시스템, Finity](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros 디자인 시스템](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe 디자인 시스템](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)

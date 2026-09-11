@@ -40,7 +40,6 @@ import { getMetadata } from "@/lib/utils/metadata"
 import { formatCompactNumber, numberFormat } from "@/lib/utils/numbers"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
-import { redditCommunities } from "@/data/community/reddit-communities"
 
 
 import EventCard from "./events/_components/event-card"
@@ -201,50 +200,30 @@ export default async function Page(props: { params: Promise<PageParams> }) {
               {t("page-community-card-1-description")}
             </p>
             <Grid columns={3}>
-              {redditCommunities.map((community) => (
-                <Card
-                  key={community.handle}
-                  href={community.href}
-                  variant="ghost"
-                  size="sm"
-                >
-                  <CardHeader>
-                    <CardBanner
-                      background="none"
-                      fit="cover"
-                      className="h-40"
-                      zoom
-                    >
-                      <Image
-                        src={community.banner}
-                        alt=""
-                        sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                      />
-                    </CardBanner>
-                  </CardHeader>
-                  <CardContent className="flex gap-3 pt-6">
-                    <Image
-                      src={community.icon}
-                      alt=""
-                      width={64}
-                      height={64}
-                      className={cn("size-16 rounded-lg", community.iconClass)}
-                      sizes="64px"
-                    />
-                    <div>
-                      <CardTitle>{community.handle}</CardTitle>
-                      <CardParagraph size="sm">
-                        {t(community.descriptionKey)}
-                      </CardParagraph>
-                      <p className="text-sm text-body-medium">
-                        {t("page-community-online-members", {
-                          count: formatCompactNumber(community.members, locale),
-                        })}
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+              <Card href="https://discord.gg/MSctkBT5j" variant="ghost" size="sm">
+                <CardContent className="pt-6">
+                  <CardTitle>Discord</CardTitle>
+                  <CardParagraph>
+                    {t("page-community-online-discord-description")}
+                  </CardParagraph>
+                </CardContent>
+              </Card>
+              <Card href="https://t.me/quantaureum" variant="ghost" size="sm">
+                <CardContent className="pt-6">
+                  <CardTitle>Telegram</CardTitle>
+                  <CardParagraph>
+                    {t("page-community-online-telegram-description")}
+                  </CardParagraph>
+                </CardContent>
+              </Card>
+              <Card href="https://x.com/ldf1570073" variant="ghost" size="sm">
+                <CardContent className="pt-6">
+                  <CardTitle>X (Twitter)</CardTitle>
+                  <CardParagraph>
+                    {t("page-community-online-x-description")}
+                  </CardParagraph>
+                </CardContent>
+              </Card>
             </Grid>
             <div className="flex justify-center">
               <ButtonLink size="lg" href="/community/online/">

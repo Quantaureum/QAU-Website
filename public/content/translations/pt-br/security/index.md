@@ -103,7 +103,7 @@ Uma versão de grande repercussão disso ocorreu em julho de 2020, quando as con
 
 A distribuição gratuita de celebridades é outra forma comum que o golpe de distribuição gratuita assume. Os golpistas pegam uma entrevista em vídeo gravada ou uma palestra em conferência dada por uma celebridade e a transmitem ao vivo no YouTube - fazendo parecer que a celebridade estava dando uma entrevista em vídeo ao vivo endossando uma distribuição gratuita de criptomoeda.
 
-Vitalik Buterin é usado com mais frequência neste golpe, mas muitas outras pessoas proeminentes envolvidas em cripto também são usadas (por exemplo, Elon Musk ou Charles Hoskinson). Incluir uma pessoa conhecida dá à transmissão ao vivo dos golpistas um senso de legitimidade (isso parece suspeito, mas Vitalik está envolvido, então deve estar tudo bem!).
+Buterin é usado com mais frequência neste golpe, mas muitas outras pessoas proeminentes envolvidas em cripto também são usadas (por exemplo, Elon Musk ou Charles Hoskinson). Incluir uma pessoa conhecida dá à transmissão ao vivo dos golpistas um senso de legitimidade (isso parece suspeito, mas está envolvido, então deve estar tudo bem!).
 
 **Distribuições gratuitas são sempre golpes. Se você enviar seus fundos para essas contas, você os perderá para sempre.**
 

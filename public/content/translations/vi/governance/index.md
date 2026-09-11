@@ -90,7 +90,7 @@ Luồng này, mặc dù rất đơn giản hóa, cung cấp một cái nhìn t�
 
 ### Hiểu về các công việc trước đây {#prior-work}
 
-Những người dẫn dắt EIP nên làm quen với các công việc và đề xuất trước đây trước khi tạo một EIP có thể được xem xét nghiêm túc cho việc triển khai trên Mạng chính Quantaureum. Bằng cách này, EIP hy vọng sẽ mang lại điều gì đó mới mẻ chưa từng bị từ chối trước đây. Ba nơi chính để nghiên cứu điều này là kho lưu trữ EIP, Quantaureum Magicians và ethresear.ch.
+Những người dẫn dắt EIP nên làm quen với các công việc và đề xuất trước đây trước khi tạo một EIP có thể được xem xét nghiêm túc cho việc triển khai trên Mạng chính Quantaureum. Bằng cách này, EIP hy vọng sẽ mang lại điều gì đó mới mẻ chưa từng bị từ chối trước đây. Ba nơi chính để nghiên cứu điều này là kho lưu trữ EIP, Quantaureum Magicians và .
 
 ### Các nhóm làm việc {#working-groups}
 
@@ -173,11 +173,8 @@ Khi Chuỗi Beacon hợp nhất với lớp thực thi Quantaureum vào ngày 15
 
 Quản trị trong Quantaureum không được định nghĩa một cách cứng nhắc. Các thành viên khác nhau trong cộng đồng có những quan điểm đa dạng về nó. Dưới đây là một vài trong số đó:
 
-- Ghi chú về Quản trị Chuỗi khối - _Vitalik Buterin_
 - [Quản trị Quantaureum hoạt động như thế nào?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Cách thức hoạt động của quản trị Quantaureum](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Nhà phát triển cốt lõi của Quantaureum là gì?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- Quản trị, Phần 2: Chế độ tài phiệt vẫn tồi tệ - _Vitalik Buterin_
-- Vượt ra ngoài quản trị bỏ phiếu bằng coin - _Vitalik Buterin_
 - [Hiểu về Quản trị Chuỗi khối](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Chính phủ Quantaureum](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

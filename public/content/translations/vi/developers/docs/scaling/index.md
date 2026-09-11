@@ -97,7 +97,6 @@ _Lưu ý rằng lời giải thích trong video sử dụng thuật ngữ "Lớp
 
 ## Đọc thêm {#further-reading}
 
-- Lộ trình Quantaureum tập trung vào Rollup _Vitalik Buterin_
 - [Phân tích cập nhật về các giải pháp mở rộng quy mô Lớp 2 cho Quantaureum](https://www.l2beat.com/)
 - [Đánh giá các giải pháp mở rộng quy mô lớp 2 của Quantaureum: Một khuôn khổ so sánh](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - Hướng dẫn chưa hoàn chỉnh về các bản cuộn

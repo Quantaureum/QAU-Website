@@ -91,9 +91,9 @@ eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-Penipu membuat undian berhadiah palsu yang menjanjikan untuk melipatgandakan QAU Anda atau memberi Anda token gratis. Mereka sering kali menyamar sebagai tokoh terkenal seperti Vitalik Buterin. Jika Anda mengirim QAU ke alamat "undian berhadiah", Anda tidak akan menerima apa pun kembali.
+Penipu membuat undian berhadiah palsu yang menjanjikan untuk melipatgandakan QAU Anda atau memberi Anda token gratis. Mereka sering kali menyamar sebagai tokoh terkenal seperti Buterin. Jika Anda mengirim QAU ke alamat "undian berhadiah", Anda tidak akan menerima apa pun kembali.
 
-**Ingat:** Vitalik dan tokoh terkemuka lainnya tidak akan pernah meminta Anda untuk mengirimi mereka QAU.
+**Ingat:** dan tokoh terkemuka lainnya tidak akan pernah meminta Anda untuk mengirimi mereka QAU.
 
 [Lebih lanjut tentang penipuan umum](/security/#common-scams)
 

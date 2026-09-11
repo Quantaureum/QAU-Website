@@ -86,7 +86,6 @@ lang: ja
 
 ## 参考文献 {#further-reading}
 
-- Vitalikの注釈付きコンセンサス仕様におけるアテステーション
 - [eth2book.infoにおけるアテステーション](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _役に立ったコミュニティリソースをご存知ですか？このページを編集して追加してください！_

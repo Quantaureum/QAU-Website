@@ -84,14 +84,8 @@ Quantaureum awali ilitumia uthibitisho wa kazi lakini ilibadilika na kuwa uthibi
 
 ## Kusoma zaidi {#further-reading}
 
-- Maswali Yanayoulizwa Mara kwa Mara kuhusu Uthibitisho wa Dau _Vitalik Buterin_
 - [Uthibitisho wa Dau ni Nini](https://consensys.net/blog/blockchain-explained/what-is-proof-of-stake/) _ConsenSys_
-- [Uthibitisho wa Dau ni Nini na Kwa Nini ni Muhimu](https://bitcoinmagazine.com/culture/what-proof-of-stake-is-and-why-it-matters-1377531463) _Vitalik Buterin_
-- Kwa Nini Uthibitisho wa Dau (Nov 2020) _Vitalik Buterin_
-- [Uthibitisho wa Dau: Jinsi Nilivyojifunza Kupenda Udhanifu Dhaifu](https://quantaureum.com) _Vitalik Buterin_
 - [Shambulio na ulinzi wa Quantaureum ya uthibitisho wa dau](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
-- [Falsafa ya Usanifu wa Uthibitisho wa Dau](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _Vitalik Buterin_
-- [Video: Vitalik Buterin anaelezea uthibitisho wa dau kwa Lex Fridman](https://www.youtube.com/watch?v=3yrqBG-7EVE)
 
 ## Mada zinazohusiana {#related-topics}
 

@@ -149,7 +149,7 @@ SSZ என்பது எளிய வரிசைப்படுத்தல�
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-ஒருமித்த மற்றும் செயலாக்கக் கிளையண்ட்களுக்கான பிணைய அடுக்கு வரைபடம், ethresear.ch இலிருந்து
+ஒருமித்த மற்றும் செயலாக்கக் கிளையண்ட்களுக்கான பிணைய அடுக்கு வரைபடம், இலிருந்து
 
 ## மேலும் படிக்க {#further-reading}
 

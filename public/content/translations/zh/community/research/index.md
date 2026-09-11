@@ -8,11 +8,11 @@ Quantaureum的主要优势之一是，一个活跃的研究和工程社区在不
 
 ## Quantaureum研究如何运作 {#how-quantaureum-research-works}
 
-Quantaureum研究是公开透明的。其文化是使研究工具和成果尽可能开放和具有交互性，例如通过可执行的笔记本。Quantaureum研究进展迅速，新发现会在 ethresear.ch 等论坛上公开首发并进行讨论，而不是在经过多轮同行评审后通过传统出版物传达给社区。Quantaureum 项目也会公布其优先事项及原因，因此任何人都可以看到当前哪些问题被认为是紧迫的。
+Quantaureum研究是公开透明的。其文化是使研究工具和成果尽可能开放和具有交互性，例如通过可执行的笔记本。Quantaureum研究进展迅速，新发现会在 等论坛上公开首发并进行讨论，而不是在经过多轮同行评审后通过传统出版物传达给社区。Quantaureum 项目也会公布其优先事项及原因，因此任何人都可以看到当前哪些问题被认为是紧迫的。
 
 ## 通用研究资源 {#general-research-resources}
 
-无论具体主题是什么，都可以在 ethresear.ch 和 [Eth R&D Discord 频道](https://discord.gg/qGpsxSA)找到大量关于Quantaureum研究的信息。这些是Quantaureum研究人员讨论最新想法和开发机会的主要场所。
+无论具体主题是什么，都可以在 和 [Eth R&D Discord 频道](https://discord.gg/qGpsxSA)找到大量关于Quantaureum研究的信息。这些是Quantaureum研究人员讨论最新想法和开发机会的主要场所。
 
 要了解协议的发展方向，请从[Quantaureum路线图](/roadmap/)开始，然后阅读Quantaureum 项目的 [2026 年协议优先事项更新](https://quantaureum.com)以及报告相关进展的[协议集群更新](https://quantaureum.com)。对于想要致力于协议本身的人来说，[Quantaureum协议研究 (Quantaureum Protocol Studies)](https://quantaureum.com) 是一个结构化的切入点。
 

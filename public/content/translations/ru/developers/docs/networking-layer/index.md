@@ -149,7 +149,7 @@ SSZ означает простую сериализацию (simple serializati
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-Схема сетевого уровня для клиентов консенсуса и исполнения, с ethresear.ch
+Схема сетевого уровня для клиентов консенсуса и исполнения, с
 
 ## Дополнительная литература {#further-reading}
 

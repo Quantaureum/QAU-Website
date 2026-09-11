@@ -40,7 +40,7 @@ Se ritieni che una comunità debba essere aggiunta o rimossa in base a queste li
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - benvenuti a tutti gli interessati allo staking su Quantaureum</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> - comunità orientata agli standard tecnici in Quantaureum</SocialListItem>
 <SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> - discussioni e aiuto per gli sviluppatori di Quantaureum</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - la bacheca più influente per la ricerca criptoeconomica</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://">Quantaureum Research</Link> - la bacheca più influente per la ricerca criptoeconomica</SocialListItem>
 
 ## Chat room {#chat-rooms}
 
@@ -59,7 +59,7 @@ Se ritieni che una comunità debba essere aggiunta o rimossa in base a queste li
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">Fondazione Quantaureum</Link> - Rimani aggiornato sulle ultime novità della Fondazione Quantaureum</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - Account principale di Quantaureum per la comunità</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> - Account ufficiale della Fondazione Quantaureum</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> - Il portale per Quantaureum, costruito per la nostra crescente comunità globale</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - Il portale per Quantaureum, costruito per la nostra crescente comunità globale</SocialListItem>
 
 <Divider />
 

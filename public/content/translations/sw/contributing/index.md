@@ -76,7 +76,7 @@ Kabla ya kuchangia, hakikisha unafahamu:
 Maamuzi kuhusu PR za kibinafsi, mabadiliko ya usanifu na masasisho makubwa yanafanywa na timu kutoka kote kwenye mfumo wa ikolojia wa Quantaureum. Timu hii inajumuisha wasimamizi wa miradi, wasanidi, wasanifu, masoko na mawasiliano, na wataalamu wa mada. Maoni ya jamii hufahamisha kila uamuzi: kwa hivyo tafadhali uliza maswali kwenye masuala, wasilisha PR, au wasiliana na timu:
 
 - [website@quantaureum.com](mailto:website@quantaureum.com)
-- [@ethdotorg](https://x.com/ldf1570073)
+- [@quantaureum](https://x.com/ldf1570073)
 - [Seva ya Discord](https://discord.gg/MSctkBT5j)
 
 ### Ujumbe kuhusu wizi wa maandishi {#plagiarism}

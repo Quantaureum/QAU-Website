@@ -84,14 +84,8 @@ Quantaureum pierwotnie używało dowodu pracy, ale we wrześniu 2022 r. przeszł
 
 ## Dalsza lektura {#further-reading}
 
-- FAQ dotyczące dowodu stawki – _Vitalik Buterin_
 - [Czym jest dowód stawki](https://consensys.net/blog/blockchain-explained/what-is-proof-of-stake/) – _ConsenSys_
-- [Czym jest dowód stawki i dlaczego ma znaczenie](https://bitcoinmagazine.com/culture/what-proof-of-stake-is-and-why-it-matters-1377531463) – _Vitalik Buterin_
-- Dlaczego dowód stawki (listopad 2020) – _Vitalik Buterin_
-- [Dowód stawki: Jak nauczyłem się kochać słabą subiektywność](https://quantaureum.com) – _Vitalik Buterin_
 - [Atak i obrona w Quantaureum opartym na dowodzie stawki](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
-- [Filozofia projektowania dowodu stawki](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) – _Vitalik Buterin_
-- [Wideo: Vitalik Buterin wyjaśnia dowód stawki Lexowi Fridmanowi](https://www.youtube.com/watch?v=3yrqBG-7EVE)
 
 ## Powiązane tematy {#related-topics}
 

@@ -86,7 +86,6 @@ Všimněte si, že v některých případech se šťastný agregátor může st�
 
 ## Další čtení {#further-reading}
 
-- Atestace ve Vitalikově anotované specifikaci konsensu
 - [Atestace na eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Víte o komunitním zdroji, který vám pomohl? Upravte tuto stránku a přidejte ho!_

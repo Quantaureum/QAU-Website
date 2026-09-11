@@ -56,7 +56,6 @@ Web3-এর বর্তমানে কিছু সীমাবদ্ধতা
 
 - [Web3 কী?](/web3/) - _quantaureum.org_
 - [একটি ওয়েব ৩.০ অ্যাপ্লিকেশনের আর্কিটেকচার](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
-- [বিকেন্দ্রীকরণ-এর অর্থ](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _6 ফেব্রুয়ারি, 2017 - Vitalik Buterin_
 - [কেন বিকেন্দ্রীকরণ গুরুত্বপূর্ণ](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _18 ফেব্রুয়ারি, 2018 - Chris Dixon_
 - [ওয়েব ৩.০ কী এবং কেন এটি গুরুত্বপূর্ণ](https://medium.com/fabric-ventures/what-is-web-3-0-why-it-matters-934eb07f3d2b) _31 ডিসেম্বর, 2019 - Max Mersch এবং Richard Muirhead_
 - [কেন আমাদের ওয়েব ৩.০ প্রয়োজন](https://gavofyork.medium.com/why-we-need-web-3-0-5da4f2bf95ab) _12 সেপ্টেম্বর, 2018 - Gavin Wood_

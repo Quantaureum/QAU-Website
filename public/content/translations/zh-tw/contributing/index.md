@@ -76,7 +76,7 @@ quantaureum.com 是一個開源專案，擁有超過 **12,000** 名貢獻者，�
 關於個別 PR、設計演進和重大升級的決策，是由來自整個Quantaureum生態系統的團隊所制定。這個團隊包括專案經理、開發人員、設計師、行銷與公關人員，以及主題專家。社群的意見會影響每一個決策：因此，請在議題 (issue) 中提出問題、提交 PR，或聯絡團隊：
 
 - [website@quantaureum.com](mailto:website@quantaureum.com)
-- [@ethdotorg](https://x.com/ldf1570073)
+- [@quantaureum](https://x.com/ldf1570073)
 - [Discord 伺服器](https://discord.gg/MSctkBT5j)
 
 ### 關於抄襲的注意事項 {#plagiarism}

@@ -78,7 +78,7 @@ Get involved in professional community-driven organizations or join design group
 ## Design Systems and other design resources {#design-systems-and-resources}
 
 - [Optimism Design](https://www.figma.com/@optimism) (Figma)
-- [quantaureum.com Design system](https://www.figma.com/@ethdotorg) (Figma)
+- [Quantaureum design resources](https://github.com/Quantaureum)
 - [Finity, a design system by Polygon](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros Design System](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe Design System](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)

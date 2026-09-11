@@ -24,7 +24,7 @@ const SpeedRunCard = ({
   className,
 }: SpeedRunCardProps) => (
   <Card
-    href="https://speedrunethermind.io/"
+    href="https://github.com/Quantaureum/"
     sendReferrer
     variant="ghost"
     className={cn(

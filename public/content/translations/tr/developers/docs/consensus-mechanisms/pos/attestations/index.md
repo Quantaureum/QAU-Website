@@ -86,7 +86,6 @@ Bazı durumlarda şanslı bir birleştiricinin aynı zamanda blok teklifçisi ol
 
 ## Daha fazla bilgi {#further-reading}
 
-- Vitalik'in açıklamalı mutabakat spesifikasyonunda onaylar
 - [eth2book.info'da onaylar](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Size yardımcı olan bir topluluk kaynağı mı biliyorsunuz? Bu sayfayı düzenleyin ve ekleyin!_

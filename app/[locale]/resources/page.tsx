@@ -6,7 +6,6 @@ import { HubHero } from "@/components/Hero"
 import Github from "@/components/icons/github.svg"
 import StackIcon from "@/components/icons/stack.svg"
 import MainArticle from "@/components/MainArticle"
-import Translation from "@/components/Translation"
 import { Alert } from "@/components/ui/alert"
 import { ButtonLink } from "@/components/ui/buttons/Button"
 import { Stack, VStack } from "@/components/ui/flex"
@@ -18,7 +17,6 @@ import TabNav, { StickyContainer } from "@/components/ui/TabNav"
 import { cn } from "@/lib/utils/cn"
 import { getAppPageContributorInfo } from "@/lib/utils/contributors"
 import { getMetadata } from "@/lib/utils/metadata"
-import { numberFormat } from "@/lib/utils/numbers"
 
 import { GITHUB_REPO_URL } from "@/lib/constants"
 
@@ -26,7 +24,6 @@ import { ResourceItem, ResourcesContainer } from "./_components/ResourcesUI"
 import PageJsonLD from "./page-jsonld"
 import { getResources } from "./utils"
 
-import { getBlobStats, getGrowThePieData } from "@/lib/data"
 import heroImg from "@/public/images/heroes/guides-hub-hero.jpg"
 
 const EVENT_CATEGORY = "dashboard"
@@ -39,37 +36,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
 
   const t = await getTranslations("page-resources")
 
-  // Fetch data using the new data-layer functions (already cached)
-  const [growThePieData, blobOverallStats] = await Promise.all([
-    getGrowThePieData(),
-    getBlobStats(),
-  ])
-
-  // Handle null cases - throw error if required data is missing
-  if (!growThePieData) {
-    throw new Error("Failed to fetch GrowThePie data")
-  }
-  if (!blobOverallStats) {
-    throw new Error("Failed to fetch blob stats data")
-  }
-
-  const txCostsMedianUsd = growThePieData?.txCostsMedianUsd ?? {
-    error: "No data available",
-  }
-
-  // Extract blob stats directly (getBlobStats returns BlobStats, not wrapped in MetricReturnData)
-  const blobStats = {
-    avgBlobFee: blobOverallStats.avgBlobFee,
-    totalBlobs: numberFormat(locale, {
-      notation: "compact",
-      maximumFractionDigits: 1,
-    }).format(blobOverallStats.totalBlobs),
-  }
-
-  const resourceSections = await getResources({
-    txCostsMedianUsd,
-    ...blobStats,
-  })
+  const resourceSections = await getResources()
 
   const { contributors } = await getAppPageContributorInfo(
     "resources",
@@ -161,23 +128,6 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               </Stack>
             ))}
           </Stack>
-
-          <VStack className="gap-4 py-16">
-            <div className="text-center font-bold">
-              <Translation id="page-resources:page-resources-find-more" />
-            </div>
-            <ButtonLink
-              href="https://quantaureumdashboards.com"
-              size="lg"
-              customEventOptions={{
-                eventCategory: EVENT_CATEGORY,
-                eventAction: "links",
-                eventName: "quantaureumdashboards.com",
-              }}
-            >
-              quantaureumdashboards.com
-            </ButtonLink>
-          </VStack>
 
           <Section
             id="contribute"

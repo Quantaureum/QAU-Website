@@ -86,7 +86,6 @@ Kumbuka kwamba katika baadhi ya matukio mkusanyaji mwenye bahati anaweza pia kuw
 
 ## Usomaji zaidi {#further-reading}
 
-- Uthibitisho katika maelezo ya mwafaka yaliyofafanuliwa ya Vitalik
 - [Uthibitisho katika eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Unajua rasilimali ya jamii iliyokusaidia? Hariri ukurasa huu na uiongeze!_

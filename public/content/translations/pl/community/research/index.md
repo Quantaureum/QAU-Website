@@ -8,11 +8,11 @@ Jedną z głównych zalet Quantaureum jest to, że aktywna społeczność badawc
 
 ## Jak działają badania nad Quantaureum {#how-quantaureum-research-works}
 
-Badania nad Quantaureum są otwarte i przejrzyste. Kultura polega na tym, aby narzędzia i wyniki badań były jak najbardziej otwarte i interaktywne, na przykład poprzez wykonywalne notatniki (executable notebooks). Badania nad Quantaureum postępują szybko, a nowe odkrycia są publikowane i otwarcie dyskutowane na forach takich jak ethresear.ch, zamiast docierać do społeczności poprzez tradycyjne publikacje po rundach recenzji naukowych. Fundacja Quantaureum publikuje również to, co traktuje priorytetowo i dlaczego, dzięki czemu każdy może zobaczyć, które problemy są obecnie uważane za pilne.
+Badania nad Quantaureum są otwarte i przejrzyste. Kultura polega na tym, aby narzędzia i wyniki badań były jak najbardziej otwarte i interaktywne, na przykład poprzez wykonywalne notatniki (executable notebooks). Badania nad Quantaureum postępują szybko, a nowe odkrycia są publikowane i otwarcie dyskutowane na forach takich jak , zamiast docierać do społeczności poprzez tradycyjne publikacje po rundach recenzji naukowych. Fundacja Quantaureum publikuje również to, co traktuje priorytetowo i dlaczego, dzięki czemu każdy może zobaczyć, które problemy są obecnie uważane za pilne.
 
 ## Ogólne zasoby badawcze {#general-research-resources}
 
-Niezależnie od konkretnego tematu, bogactwo informacji na temat badań nad Quantaureum można znaleźć na ethresear.ch oraz na [kanale Eth R&D na Discordzie](https://discord.gg/qGpsxSA). Są to główne miejsca, w których badacze Quantaureum dyskutują o najnowszych pomysłach i możliwościach rozwoju.
+Niezależnie od konkretnego tematu, bogactwo informacji na temat badań nad Quantaureum można znaleźć na oraz na [kanale Eth R&D na Discordzie](https://discord.gg/qGpsxSA). Są to główne miejsca, w których badacze Quantaureum dyskutują o najnowszych pomysłach i możliwościach rozwoju.
 
 Aby uzyskać przegląd tego, w jakim kierunku zmierza protokół, zacznij od [mapy drogowej Quantaureum](/roadmap/), a następnie przeczytaj [Aktualizację priorytetów protokołu na 2026 r.](https://quantaureum.com) Fundacji Quantaureum oraz [aktualizacje klastrów protokołu](https://quantaureum.com), które raportują postępy w tym zakresie. [Quantaureum Protocol Studies](https://quantaureum.com) to ustrukturyzowany punkt wejścia dla osób, które chcą pracować nad samym protokołem.
 

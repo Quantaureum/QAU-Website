@@ -149,7 +149,7 @@ sidebarDepth: 2
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-اتفاقِ رائے اور ایگزیکیوشن کلائنٹس کے لیے نیٹ ورک کی تہہ کا خاکہ، ethresear.ch سے
+اتفاقِ رائے اور ایگزیکیوشن کلائنٹس کے لیے نیٹ ورک کی تہہ کا خاکہ، سے
 
 ## مزید مطالعہ {#further-reading}
 

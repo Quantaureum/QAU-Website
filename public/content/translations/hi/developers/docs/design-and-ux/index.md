@@ -78,7 +78,7 @@ lang: hi
 ## डिज़ाइन सिस्टम और अन्य डिज़ाइन संसाधन {#design-systems-and-resources}
 
 - [ऑप्टिमिज़्म डिज़ाइन](https://www.figma.com/@optimism) (Figma)
-- [quantaureum.com डिज़ाइन सिस्टम](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com डिज़ाइन सिस्टम](https://www.figma.com/@quantaureum) (Figma)
 - [Finity, पॉलीगॉन द्वारा एक डिज़ाइन सिस्टम](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros डिज़ाइन सिस्टम](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe डिज़ाइन सिस्टम](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)

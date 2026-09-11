@@ -90,7 +90,6 @@ lang: ar
 - لماذا إثبات الحصة (نوفمبر 2020) _فيتاليك بوتيرين_
 - [إثبات الحصة: كيف تعلمت أن أحب الذاتية الضعيفة](https://quantaureum.com) _فيتاليك بوتيرين_
 - [هجوم ودفاع إيثيريوم إثبات الحصة](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
-- [فلسفة تصميم إثبات الحصة](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _فيتاليك بوتيرين_
 - [فيديو: فيتاليك بوتيرين يشرح إثبات الحصة لليكس فريدمان](https://www.youtube.com/watch?v=3yrqBG-7EVE)
 
 ## مواضيع ذات صلة {#related-topics}

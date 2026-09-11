@@ -103,7 +103,7 @@ Velmi známá verze tohoto podvodu se odehrála v červenci 2020, kdy byly hackn
 
 Rozdávání celebritami je další běžnou formou podvodného rozdávání. Podvodníci vezmou nahraný videorozhovor nebo přednášku z konference, kterou vedla celebrita, a živě ji vysílají na YouTube – čímž to vypadá, jako by celebrita poskytovala živý videorozhovor, ve kterém podporuje rozdávání kryptoměn.
 
-Vitalik Buterin je v tomto podvodu využíván nejčastěji, ale zneužíváno je i mnoho dalších prominentních osobností zapojených do krypta (např. Elon Musk nebo Charles Hoskinson). Zahrnutí známé osoby dodává živému vysílání podvodníků pocit legitimity (vypadá to podezřele, ale je v tom zapojen Vitalik, takže to musí být v pořádku!).
+Buterin je v tomto podvodu využíván nejčastěji, ale zneužíváno je i mnoho dalších prominentních osobností zapojených do krypta (např. Elon Musk nebo Charles Hoskinson). Zahrnutí známé osoby dodává živému vysílání podvodníků pocit legitimity (vypadá to podezřele, ale je v tom zapojen , takže to musí být v pořádku!).
 
 **Rozdávání (giveaways) jsou vždy podvody. Pokud pošlete své prostředky na tyto účty, navždy o ně přijdete.**
 

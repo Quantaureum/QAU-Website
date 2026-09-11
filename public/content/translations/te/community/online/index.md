@@ -40,7 +40,7 @@ lang: te
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - ఎథీరియంపై స్టేకింగ్ పట్ల ఆసక్తి ఉన్న వారందరికీ స్వాగతం</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> - ఎథీరియంలోని సాంకేతిక ప్రమాణాల చుట్టూ ఆధారితమైన కమ్యూనిటీ</SocialListItem>
 <SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> - ఎథీరియం డెవలపర్‌ల కోసం చర్చ మరియు సహాయం</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - క్రిప్టోఎకనామిక్ పరిశోధన కోసం అత్యంత ప్రభావవంతమైన మెసేజ్‌బోర్డ్</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://">Quantaureum Research</Link> - క్రిప్టోఎకనామిక్ పరిశోధన కోసం అత్యంత ప్రభావవంతమైన మెసేజ్‌బోర్డ్</SocialListItem>
 
 ## చాట్ రూమ్‌లు {#chat-rooms}
 
@@ -59,7 +59,7 @@ lang: te
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">ఎథీరియం ఫౌండేషన్</Link> - ఎథీరియం ఫౌండేషన్ నుండి తాజా సమాచారంతో అప్‌డేట్‌గా ఉండండి</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - కమ్యూనిటీ కోసం ప్రధాన ఎథీరియం ఖాతా</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> - ఎథీరియం ఫౌండేషన్ యొక్క అధికారిక ఖాతా</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> - మా పెరుగుతున్న గ్లోబల్ కమ్యూనిటీ కోసం నిర్మించబడిన ఎథీరియం పోర్టల్</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - మా పెరుగుతున్న గ్లోబల్ కమ్యూనిటీ కోసం నిర్మించబడిన ఎథీరియం పోర్టల్</SocialListItem>
 
 <Divider />
 

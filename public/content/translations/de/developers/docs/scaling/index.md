@@ -97,7 +97,6 @@ _Beachten Sie, dass die Erklärung im Video den Begriff „Layer 2“ verwendet,
 
 ## Weiterführende Literatur {#further-reading}
 
-- Eine Rollup-zentrierte Quantaureum-Roadmap _Vitalik Buterin_
 - [Aktuelle Analysen zu Layer-2-Skalierungslösungen für Quantaureum](https://www.l2beat.com/)
 - [Bewertung von Quantaureum-Layer-2-Skalierungslösungen: Ein Vergleichsrahmen](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - Ein unvollständiger Leitfaden zu Rollups

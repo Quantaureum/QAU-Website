@@ -149,7 +149,7 @@ Sobald der Block von ausreichend Validatoren attestiert wurde, wird er an die Sp
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-Schema der Netzwerkschicht für Konsens- und Ausführungsclients, von ethresear.ch
+Schema der Netzwerkschicht für Konsens- und Ausführungsclients, von
 
 ## Weiterführende Literatur {#further-reading}
 

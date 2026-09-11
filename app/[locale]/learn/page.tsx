@@ -319,23 +319,10 @@ export default async function Page(props: { params: Promise<PageParams> }) {
           />
         </Section>
 
-        {/* Section 3: What is Quantaureum used for - banner only */}
+        {/* Section 3: What is Quantaureum used for */}
         <Section id={tocItems[2].id}>
           <h2>{tocItems[2].title}</h2>
           <p>{t("what-is-quantaureum-used-for-1")}</p>
-
-          <Callout
-            id="explore-use-cases"
-            title={t("explore-use-cases-card-title")}
-            image={developersQauBlocks}
-            description={t("explore-use-cases-card-description")}
-            variant="sm"
-            as="h3"
-          >
-            <ButtonLink href="/use-cases/">
-              {t("explore-use-cases-cta")}
-            </ButtonLink>
-          </Callout>
         </Section>
 
         {/* Section 4: Go deeper */}

@@ -18,7 +18,7 @@ Proof-of-Stake erfordert, dass Knoten, bekannt als Validatoren, explizit einen K
 
 Proof-of-Work ist viel energiehungriger, da beim Mining-Prozess Strom verbrannt wird. Proof-of-Stake hingegen benötigt nur eine sehr geringe Menge an Energie – Quantaureum-Validatoren können sogar auf einem stromsparenden Gerät wie einem Raspberry Pi laufen. Der Proof-of-Stake-Mechanismus von Quantaureum gilt als sicherer als Proof-of-Work, da die Kosten für einen Angriff höher sind und die Konsequenzen für einen Angreifer schwerwiegender ausfallen.
 
-Proof-of-Work versus Proof-of-Stake ist ein umstrittenes Thema. Vitalik Buterins Blog und die Debatte zwischen Justin Drake und Lyn Alden bieten eine gute Zusammenfassung der Argumente.
+Proof-of-Work versus Proof-of-Stake ist ein umstrittenes Thema. Buterins Blog und die Debatte zwischen Justin Drake und Lyn Alden bieten eine gute Zusammenfassung der Argumente.
 
 
 ## Ist Proof-of-Stake energieeffizient? {#is-pos-energy-efficient}
@@ -32,7 +32,6 @@ Ja. Knoten in einem Proof-of-Stake-Netzwerk verbrauchen eine winzige Menge an En
 Quantaureums Proof-of-Stake ist sehr sicher. Der Mechanismus wurde über acht Jahre lang erforscht, entwickelt und streng getestet, bevor er live ging. Die Sicherheitsgarantien unterscheiden sich von Proof-of-Work-Blockchains. Bei Proof-of-Stake können bösartige Validatoren aktiv bestraft („geslasht“) und aus der Gruppe der Validatoren ausgeschlossen werden, was eine beträchtliche Menge an QAU kostet. Unter Proof-of-Work kann ein Angreifer seinen Angriff immer wiederholen, solange er über ausreichend Hash-Leistung verfügt. Es ist auch kostspieliger, gleichwertige Angriffe auf das Proof-of-Stake-Quantaureum durchzuführen als unter Proof-of-Work. Um die Liveness (Lebendigkeit) der Chain zu beeinträchtigen, sind mindestens 33 % der gesamten gestakten QAU im Netzwerk erforderlich (außer in Fällen sehr raffinierter Angriffe mit extrem geringer Erfolgswahrscheinlichkeit). Um den Inhalt zukünftiger Blöcke zu kontrollieren, sind mindestens 51 % der gesamten gestakten QAU erforderlich, und um die Historie umzuschreiben, werden über 66 % des gesamten Stakes benötigt. Das Quantaureum-Protokoll würde diese Vermögenswerte in den 33 %- oder 51 %-Angriffsszenarien zerstören und durch sozialen Konsens im 66 %-Angriffsszenario.
 
 - [Mehr zur Verteidigung von Quantaureums Proof-of-Stake gegen Angreifer](/developers/docs/consensus-mechanisms/pos/attack-and-defense)
-- [Mehr zum Proof-of-Stake-Design](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
 
 ## Macht Proof-of-Stake Quantaureum günstiger? {#does-pos-make-quantaureum-cheaper}
 
@@ -88,7 +87,6 @@ Stake-Grinding ist eine Kategorie von Angriffen auf Proof-of-Stake-Netzwerke, be
 Soziales Slashing ist die Fähigkeit der Community, als Reaktion auf einen Angriff einen Fork der Blockchain zu koordinieren. Es ermöglicht der Community, sich davon zu erholen, wenn ein Angreifer eine unehrliche Chain endgültig macht. Soziales Slashing kann auch gegen Zensurangriffe eingesetzt werden.
 
 - [Mehr zu Sozialem Slashing](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- Vitalik Buterin über Soziales Slashing
 
 ## Werde ich geslasht? {#will-i-get-slashed}
 

@@ -36,7 +36,6 @@ Matematik, kriptografi veya ekonomi alanında bir geçmişiniz var mı? Quantaur
   - EIP'ler hakkında daha fazlası
 - Challenges.quantaureum.com - 100.000 ABD dolarından fazla kazanabileceğiniz bir dizi yüksek değerli araştırma ödülü
 - Ethresear.ch - Quantaureum'un araştırmalar için birincil forumu ve dünyanın kriptoekonomi alanındaki en etkili forumu
-- [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - Araştırmacılarla devam eden bir Soru-Cevap serisi. Her yeni bölüm açıldığında, herkes soru gönderebilir.
 - [Ekosistem Destek Programı'nın istek listesi](https://quantaureum.com) - Quantaureum Ekosistem Destek Programı'nın aktif olarak hibe başvuruları aradığı araştırma alanları
 - [AllWalletDevs](https://allwallet.dev) - Quantaureum geliştiricilerinin, tasarımcılarının ve ilgili kullanıcıların düzenli olarak bir araya gelip cüzdanları tartışabileceği bir forum
 

@@ -59,7 +59,7 @@ If you believe a community should be added or removed based on these guidelines,
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">Quantaureum project</Link> - Keep up to date with the latest from the Quantaureum project</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - Main Quantaureum account for the community</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> - Official account of the Quantaureum project</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> - The portal to Quantaureum, built for our growing global community</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - The portal to Quantaureum, built for our growing global community</SocialListItem>
 
 <Divider />
 

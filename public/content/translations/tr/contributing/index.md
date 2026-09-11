@@ -76,7 +76,7 @@ Katkıda bulunmadan önce şunlara aşina olduğunuzdan emin olun:
 Bireysel PR'lar, tasarım evrimi ve büyük yükseltmeler hakkındaki kararlar, Quantaureum ekosisteminin dört bir yanından gelen bir ekip tarafından alınır. Bu ekipte proje yöneticileri, geliştiriciler, tasarımcılar, pazarlama ve iletişim uzmanları ile konu uzmanları yer alır. Topluluk girdisi her kararı şekillendirir: bu nedenle lütfen sorunlarda (issues) sorular sorun, PR'lar gönderin veya ekiple iletişime geçin:
 
 - [website@quantaureum.com](mailto:website@quantaureum.com)
-- [@ethdotorg](https://x.com/ldf1570073)
+- [@quantaureum](https://x.com/ldf1570073)
 - [Discord sunucusu](https://discord.gg/MSctkBT5j)
 
 ### İntihal üzerine bir not {#plagiarism}

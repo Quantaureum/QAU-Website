@@ -78,7 +78,7 @@ lang: ur
 ## ڈیزائن سسٹمز اور دیگر ڈیزائن کے وسائل {#design-systems-and-resources}
 
 - [آپٹیمزم ڈیزائن](https://www.figma.com/@optimism) (Figma)
-- [quantaureum.com ڈیزائن سسٹم](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com ڈیزائن سسٹم](https://www.figma.com/@quantaureum) (Figma)
 - [Finity، پولی گون کا ایک ڈیزائن سسٹم](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros ڈیزائن سسٹم](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe ڈیزائن سسٹم](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)

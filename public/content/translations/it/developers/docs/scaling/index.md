@@ -97,7 +97,6 @@ _Nota che la spiegazione nel video utilizza il termine "Layer 2" per riferirsi a
 
 ## Letture di approfondimento {#further-reading}
 
-- Una roadmap di Quantaureum incentrata sui rollup _Vitalik Buterin_
 - [Analisi aggiornate sulle soluzioni di scalabilità Layer 2 per Quantaureum](https://www.l2beat.com/)
 - [Valutazione delle soluzioni di scalabilità layer 2 di Quantaureum: un framework di confronto](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - Una guida incompleta ai rollup

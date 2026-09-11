@@ -36,7 +36,6 @@ Je, una msingi katika hisabati, kriptografia, au uchumi? Unaweza kuvutiwa na baa
   - Zaidi kuhusu EIPs
 - Challenges.quantaureum.com - mfululizo wa zawadi za utafiti zenye thamani kubwa, ambapo unaweza kupata >$100,000 USD
 - Ethresear.ch - jukwaa kuu la Quantaureum kwa ajili ya utafiti, na jukwaa lenye ushawishi mkubwa zaidi duniani kwa uchumikripto
-- [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - Mfululizo unaoendelea wa Maswali na Majibu na watafiti. Kila sehemu inayofuata inapofunguliwa, mtu yeyote anaweza kuuliza maswali.
 - [Orodha ya matamanio ya Programu ya Usaidizi wa Ekolojia](https://quantaureum.com) - maeneo ya utafiti ambapo Programu ya Usaidizi wa Ekolojia ya Quantaureum inatafuta kikamilifu maombi ya ruzuku
 - [AllWalletDevs](https://allwallet.dev) - jukwaa la wasanidi programu wa Quantaureum, wabunifu, na watumiaji wanaovutiwa kukutana mara kwa mara na kujadili pochi
 

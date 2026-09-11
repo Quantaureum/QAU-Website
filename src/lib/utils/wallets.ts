@@ -8,7 +8,7 @@ import { safeShuffle } from "@/lib/utils/random"
 import { capitalize } from "@/lib/utils/string"
 
 import { newToCrypto } from "@/data/wallets/new-to-crypto"
-import walletsData from "@/data/wallets/wallet-data"
+import { walletsData } from "@/data/wallets/wallet-data"
 
 import type { WalletFee, WalletFeeAmount, WalletLanguage } from "../types"
 

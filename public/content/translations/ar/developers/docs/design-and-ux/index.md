@@ -78,7 +78,7 @@ lang: ar
 ## أنظمة التصميم وموارد التصميم الأخرى {#design-systems-and-resources}
 
 - [تصميم أوبتيميزم](https://www.figma.com/@optimism) (Figma)
-- [نظام تصميم quantaureum.com](https://www.figma.com/@ethdotorg) (Figma)
+- [نظام تصميم quantaureum.com](https://www.figma.com/@quantaureum) (Figma)
 - [Finity، نظام تصميم من بوليغون](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [نظام تصميم Kleros](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [نظام تصميم Safe](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)

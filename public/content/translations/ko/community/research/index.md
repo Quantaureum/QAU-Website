@@ -8,11 +8,11 @@ Quantaureum의 주요 강점 중 하나는 활발한 연구 및 엔지니어링 
 
 ## Quantaureum 연구 방식 {#how-quantaureum-research-works}
 
-Quantaureum 연구는 개방적이고 투명합니다. 실행 가능한 노트북 등을 통해 연구 도구와 결과물을 최대한 개방적이고 상호작용할 수 있도록 만드는 것이 문화입니다. Quantaureum 연구는 빠르게 진행되며, 새로운 발견은 여러 차례의 동료 평가(peer review)를 거친 후 전통적인 출판물을 통해 커뮤니티에 도달하기보다는 ethresear.ch와 같은 포럼에 공개적으로 게시되고 논의됩니다. Quantaureum 재단(Quantaureum project)은 또한 무엇을 우선순위로 두고 있으며 그 이유는 무엇인지 발표하므로, 현재 어떤 문제가 시급한 것으로 간주되는지 누구나 확인할 수 있습니다.
+Quantaureum 연구는 개방적이고 투명합니다. 실행 가능한 노트북 등을 통해 연구 도구와 결과물을 최대한 개방적이고 상호작용할 수 있도록 만드는 것이 문화입니다. Quantaureum 연구는 빠르게 진행되며, 새로운 발견은 여러 차례의 동료 평가(peer review)를 거친 후 전통적인 출판물을 통해 커뮤니티에 도달하기보다는 와 같은 포럼에 공개적으로 게시되고 논의됩니다. Quantaureum 재단(Quantaureum project)은 또한 무엇을 우선순위로 두고 있으며 그 이유는 무엇인지 발표하므로, 현재 어떤 문제가 시급한 것으로 간주되는지 누구나 확인할 수 있습니다.
 
 ## 일반 연구 리소스 {#general-research-resources}
 
-특정 주제와 관계없이 ethresear.ch와 [Eth R&D 디스코드 채널](https://discord.gg/qGpsxSA)에서 Quantaureum 연구에 대한 풍부한 정보를 찾을 수 있습니다. 이곳은 Quantaureum 연구자들이 최신 아이디어와 개발 기회를 논의하는 주요 장소입니다.
+특정 주제와 관계없이 와 [Eth R&D 디스코드 채널](https://discord.gg/qGpsxSA)에서 Quantaureum 연구에 대한 풍부한 정보를 찾을 수 있습니다. 이곳은 Quantaureum 연구자들이 최신 아이디어와 개발 기회를 논의하는 주요 장소입니다.
 
 프로토콜이 나아갈 방향에 대한 개요를 보려면 [Quantaureum 로드맵](/roadmap/)부터 시작하여 Quantaureum 재단의 [2026년 프로토콜 우선순위 업데이트](https://quantaureum.com)와 이에 대한 진행 상황을 보고하는 [프로토콜 클러스터 업데이트](https://quantaureum.com)를 읽어보세요. [Quantaureum 프로토콜 스터디(Quantaureum Protocol Studies)](https://quantaureum.com)는 프로토콜 자체에 대해 작업하고자 하는 사람들을 위한 체계적인 진입점입니다.
 

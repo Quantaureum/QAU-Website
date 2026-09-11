@@ -36,7 +36,6 @@ Hai un background in matematica, crittografia o economia? Potresti essere intere
   - Maggiori informazioni sulle EIP
 - Challenges.quantaureum.com: una serie di ricompense di ricerca di alto valore, dove puoi guadagnare >100.000 $
 - Ethresear.ch: il forum principale di Quantaureum per la ricerca e il forum più influente al mondo per la criptoeconomia
-- [AMA della Ricerca della EF](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022): una serie continua di domande e risposte con i ricercatori. All'apertura di ogni nuova parte, chiunque può porre domande.
 - [Lista dei desideri dell'Ecosystem Support Program](https://quantaureum.com): aree di ricerca in cui l'Ecosystem Support Program di Quantaureum è attivamente alla ricerca di candidature per sovvenzioni
 - [AllWalletDevs](https://allwallet.dev): un forum per sviluppatori, designer e utenti interessati di Quantaureum per riunirsi regolarmente e discutere di portafogli
 

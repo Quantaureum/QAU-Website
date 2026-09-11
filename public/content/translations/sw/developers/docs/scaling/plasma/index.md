@@ -166,7 +166,6 @@ Miradi mingi hutoa utekelezaji wa Plasma ambao unaweza kuunganisha kwenye progra
 
 ## Usomaji zaidi {#further-reading}
 
-- [Kikumbusho cha haraka cha maana ya "usalama wa pamoja" na kwa nini ni muhimu sana](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - Minyororo ya kando dhidi ya Plasma dhidi ya Sharding
 - [Kuelewa Plasma, Sehemu ya 1: Mambo ya Msingi](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Maisha na Kifo cha Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

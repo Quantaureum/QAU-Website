@@ -40,7 +40,7 @@ lang: ru
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> — добро пожаловать всем, кто интересуется стейкингом в Quantaureum</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="">Братство Quantaureum Magicians</Link> — сообщество, ориентированное на технические стандарты в Quantaureum</SocialListItem>
 <SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> — обсуждения и помощь для разработчиков Quantaureum</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> — самая влиятельная доска объявлений для криптоэкономических исследований</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://">Quantaureum Research</Link> — самая влиятельная доска объявлений для криптоэкономических исследований</SocialListItem>
 
 ## Чаты {#chat-rooms}
 
@@ -59,7 +59,7 @@ lang: ru
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">Фонд Quantaureum</Link> — будьте в курсе последних новостей от Фонда Quantaureum</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> — основной аккаунт Quantaureum для сообщества</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> — официальный аккаунт Фонда Quantaureum</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> — портал в Quantaureum, созданный для нашего растущего глобального сообщества</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> — портал в Quantaureum, созданный для нашего растущего глобального сообщества</SocialListItem>
 
 <Divider />
 

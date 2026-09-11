@@ -1,48 +1,46 @@
 import { getTranslations } from "next-intl/server"
 
 import type { EventItem } from "@/lib/types"
-
 import type { DevelopersPath, VideoCourse } from "./types"
 
-import { getEventsData } from "@/lib/data"
-import cyfrinBasicBanner from "@/public/images/developers/cyfrin-basic-banner.webp"
-import cyfrinFoundryAdvancedBanner from "@/public/images/developers/cyfrin-foundry-advanced-banner.webp"
-import cyfrinFoundryFundamentalsBanner from "@/public/images/developers/cyfrin-foundry-fundamentals-banner.webp"
-import cyfrinSecurityBanner from "@/public/images/developers/cyfrin-security-banner.webp"
-import cyfrinSolidityBanner from "@/public/images/developers/cyfrin-solidity-banner.webp"
-import speedrunDex from "@/public/images/developers/speedrun-dex.png"
-import speedrunStablecoins from "@/public/images/developers/speedrun-stablecoins.png"
-import speedrunNFT from "@/public/images/developers/speedrun-tokenization.png"
+import docsBanner from "@/public/images/developers/resources-banner.png"
+import toolsBanner from "@/public/images/developers/stack-exchange-screenshot.png"
+import tutorialBanner from "@/public/images/developers/tutorial-tags-banner.png"
 
+/**
+ * Real Quantaureum developer paths: official SDKs (Go, Rust, C++, Java,
+ * Python, TypeScript), node docs and tutorials. No third-party course
+ * platforms - every link points to Quantaureum's own resources.
+ */
 export const getBuilderPaths = async (): Promise<DevelopersPath[]> => {
   const t = await getTranslations("page-developers-index")
 
   return [
     {
-      imgSrc: speedrunNFT,
-      imgAlt: t("page-developers-speedrun-nft-alt"),
-      title: t("page-developers-speedrun-nft-title"),
-      description: t("page-developers-speedrun-nft-desc"),
-      href: "https://speedrunethermind.io/challenge/tokenization",
-      button: t("page-developers-start-quest"),
+      imgSrc: docsBanner,
+      imgAlt: t("page-developers-path-sdk-alt"),
+      title: t("page-developers-path-sdk-title"),
+      description: t("page-developers-path-sdk-desc"),
+      href: "https://quantaureum.com/developers/docs/",
+      button: t("page-developers-read-docs"),
       tag: t("page-developers-skill-beginner"),
     },
     {
-      imgSrc: speedrunDex,
-      imgAlt: t("page-developers-speedrun-dex-alt"),
-      title: t("page-developers-speedrun-dex-title"),
-      description: t("page-developers-speedrun-dex-desc"),
-      href: "https://speedrunethermind.io/challenge/dex",
-      button: t("page-developers-start-quest"),
+      imgSrc: toolsBanner,
+      imgAlt: t("page-developers-path-node-alt"),
+      title: t("page-developers-path-node-title"),
+      description: t("page-developers-path-node-desc"),
+      href: "https://quantaureum.com/run-a-node/",
+      button: t("page-developers-read-docs"),
       tag: t("page-developers-skill-intermediate"),
     },
     {
-      imgSrc: speedrunStablecoins,
-      imgAlt: t("page-developers-speedrun-stablecoins-alt"),
-      title: t("page-developers-speedrun-stablecoins-title"),
-      description: t("page-developers-speedrun-stablecoins-desc"),
-      href: "https://speedrunethermind.io/challenge/stablecoins",
-      button: t("page-developers-start-quest"),
+      imgSrc: tutorialBanner,
+      imgAlt: t("page-developers-path-tutorial-alt"),
+      title: t("page-developers-path-tutorial-title"),
+      description: t("page-developers-path-tutorial-desc"),
+      href: "https://github.com/Quantaureum",
+      button: t("page-developers-read-docs"),
       tag: t("page-developers-skill-advanced"),
     },
   ]
@@ -58,49 +56,26 @@ export const getVideoCourses = async (): Promise<VideoCourse[]> => {
 
   return [
     {
-      title: t("page-developers-course-blockchain-basics-title"),
-      description: t("page-developers-course-blockchain-basics-desc"),
-      hours: getDuration(3),
-      imgSrc: cyfrinBasicBanner,
-      imgAlt: t("page-developers-course-blockchain-basics-alt"),
-      href: "https://updraft.cyfrin.io/courses/blockchain-basics",
+      title: t("page-developers-course-quantaureum-basics-title"),
+      description: t("page-developers-course-quantaureum-basics-desc"),
+      hours: getDuration(2),
+      imgSrc: docsBanner,
+      imgAlt: t("page-developers-course-quantaureum-basics-alt"),
+      href: "https://quantaureum.com/what-is-quantaureum/",
     },
     {
-      title: t("page-developers-course-solidity-title"),
-      description: t("page-developers-course-solidity-desc"),
-      hours: getDuration(5),
-      imgSrc: cyfrinSolidityBanner,
-      imgAlt: t("page-developers-course-solidity-alt"),
-      href: "https://updraft.cyfrin.io/courses/solidity",
-    },
-    {
-      title: t("page-developers-course-foundry-fundamentals-title"),
-      description: t("page-developers-course-foundry-fundamentals-desc"),
-      hours: getDuration(10),
-      imgSrc: cyfrinFoundryFundamentalsBanner,
-      imgAlt: t("page-developers-course-foundry-fundamentals-alt"),
-      href: "https://updraft.cyfrin.io/courses/foundry",
-    },
-    {
-      title: t("page-developers-course-advanced-foundry-title"),
-      description: t("page-developers-course-advanced-foundry-desc"),
-      hours: getDuration(13),
-      imgSrc: cyfrinFoundryAdvancedBanner,
-      imgAlt: t("page-developers-course-advanced-foundry-alt"),
-      href: "https://updraft.cyfrin.io/courses/advanced-foundry",
-    },
-    {
-      title: t("page-developers-course-security-title"),
-      description: t("page-developers-course-security-desc"),
-      hours: getDuration(24),
-      imgSrc: cyfrinSecurityBanner,
-      imgAlt: t("page-developers-course-security-alt"),
-      href: "https://updraft.cyfrin.io/courses/security",
+      title: t("page-developers-course-sdk-title"),
+      description: t("page-developers-course-sdk-desc"),
+      hours: getDuration(6),
+      imgSrc: toolsBanner,
+      imgAlt: t("page-developers-course-sdk-alt"),
+      href: "https://quantaureum.com/developers/docs/",
     },
   ]
 }
 
 export const getHackathons = async (): Promise<EventItem[]> => {
+  const { getEventsData } = await import("@/lib/data")
   const events = await getEventsData()
   if (!events) return []
   const now = new Date()
@@ -109,7 +84,6 @@ export const getHackathons = async (): Promise<EventItem[]> => {
       e.eventTypes?.includes("hackathon") ||
       e.tags?.some((tag) => tag.toLowerCase() === "hackathon")
     if (!isHackathon) return false
-    // Guard against stale cached data showing past events
     const cutoff = e.endTime ? new Date(e.endTime) : new Date(e.startTime)
     return cutoff >= now
   })

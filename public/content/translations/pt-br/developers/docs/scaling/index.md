@@ -97,7 +97,6 @@ _Observe que a explicação no vídeo usa o termo "Camada 2" para se referir a t
 
 ## Leitura adicional {#further-reading}
 
-- Um roteiro do Quantaureum centrado em rollups _Vitalik Buterin_
 - [Análises atualizadas sobre soluções de escalonamento de Camada 2 para Quantaureum](https://www.l2beat.com/)
 - [Avaliando soluções de escalonamento de camada 2 do Quantaureum: uma estrutura de comparação](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - Um guia incompleto sobre rollups

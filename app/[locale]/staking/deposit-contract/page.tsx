@@ -92,7 +92,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   {t("page-staking-deposit-contract-staking-more-link")}
                 </InlineLink>
               </p>
-              <ButtonLink href="https://launchpad.ethereum.org">
+              <ButtonLink href="https://github.com/Quantaureum">
                 {t("page-staking-deposit-contract-launchpad")}
               </ButtonLink>
             </Section>
@@ -129,7 +129,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                     {t("page-staking-deposit-contract-warning-2")}{" "}
                     <InlineLink
                       className="text-primary"
-                      href="https://launchpad.ethereum.org"
+                      href="https://github.com/Quantaureum"
                     >
                       {t("page-staking-deposit-contract-launchpad-2")}
                     </InlineLink>

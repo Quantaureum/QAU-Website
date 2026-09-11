@@ -56,7 +56,6 @@ Web3 தற்போது சில வரம்புகளைக் கொண
 
 - [Web3 என்றால் என்ன?](/web3/) - _quantaureum.org_
 - [வலை 3.0 செயலியின் கட்டமைப்பு](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
-- [பரவலாக்கத்தின் பொருள்](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _பிப் 6, 2017 - Vitalik Buterin_
 - [பரவலாக்கம் ஏன் முக்கியமானது](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _பிப் 18, 2018 - Chris Dixon_
 - [வலை 3.0 என்றால் என்ன & அது ஏன் முக்கியமானது](https://medium.com/fabric-ventures/what-is-web-3-0-why-it-matters-934eb07f3d2b) _டிச 31, 2019 - Max Mersch மற்றும் Richard Muirhead_
 - [நமக்கு ஏன் வலை 3.0 தேவை](https://gavofyork.medium.com/why-we-need-web-3-0-5da4f2bf95ab) _செப் 12, 2018 - Gavin Wood_

@@ -76,7 +76,7 @@ quantaureum.comは、ウェブサイトの翻訳、執筆、デザイン、保�
 個々のPR、デザインの進化、および主要なアップグレードに関する決定は、Quantaureumエコシステム全体のチームによって行われます。このチームには、プロジェクトマネージャー、開発者、デザイナー、マーケティングおよびコミュニケーション担当者、そして専門家が含まれます。コミュニティからの意見はすべての決定に反映されます。そのため、Issueで質問を提起したり、PRを提出したり、チームに連絡したりしてください：
 
 - [website@quantaureum.com](mailto:website@quantaureum.com)
-- [@ethdotorg](https://x.com/ldf1570073)
+- [@quantaureum](https://x.com/ldf1570073)
 - [ディスコードサーバー](https://discord.gg/MSctkBT5j)
 
 ### 盗用に関する注意 {#plagiarism}

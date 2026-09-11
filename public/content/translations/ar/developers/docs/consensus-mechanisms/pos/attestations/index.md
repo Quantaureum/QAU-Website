@@ -86,7 +86,6 @@ lang: ar
 
 ## قراءة إضافية {#further-reading}
 
-- التصديقات في مواصفات الإجماع المشروحة لفيتاليك (Vitalik)
 - [التصديقات في eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _هل تعرف موردًا مجتمعيًا ساعدك؟ قم بتعديل هذه الصفحة وأضفه!_

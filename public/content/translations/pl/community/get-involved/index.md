@@ -36,7 +36,6 @@ Masz wykształcenie w dziedzinie matematyki, kryptografii lub ekonomii? Mogą Ci
   - Więcej o EIP
 - Challenges.quantaureum.com – seria wysokowartościowych nagród badawczych, w których można zarobić >100 000 USD
 - Ethresear.ch – główne forum badawcze Quantaureum i najbardziej wpływowe forum dotyczące kryptoekonomii na świecie
-- [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) – trwająca seria pytań i odpowiedzi z badaczami. Gdy otwiera się kolejna część, każdy może zadawać pytania.
 - [Lista życzeń Ecosystem Support Program](https://quantaureum.com) – obszary badawcze, w których program wsparcia ekosystemu Quantaureum aktywnie poszukuje wniosków o granty
 - [AllWalletDevs](https://allwallet.dev) – forum dla programistów, projektantów i zainteresowanych użytkowników Quantaureum, aby regularnie się spotykać i dyskutować o portfelach
 

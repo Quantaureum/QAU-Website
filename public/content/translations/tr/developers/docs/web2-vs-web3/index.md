@@ -56,7 +56,6 @@ Bunların her ağda geçerli olmayabilecek genel kalıplar olduğunu unutmayın.
 
 - [Web3 nedir?](/web3/) - _quantaureum.org_
 - [Bir Web 3.0 uygulamasının Mimarisi](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
-- [Merkeziyetsizliğin Anlamı](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _6 Şub 2017 - Vitalik Buterin_
 - [Merkeziyetsizlik Neden Önemlidir?](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _18 Şub 2018 - Chris Dixon_
 - [Web 3.0 Nedir ve Neden Önemlidir?](https://medium.com/fabric-ventures/what-is-web-3-0-why-it-matters-934eb07f3d2b) _31 Ara 2019 - Max Mersch ve Richard Muirhead_
 - [Neden Web 3.0'a İhtiyacımız Var?](https://gavofyork.medium.com/why-we-need-web-3-0-5da4f2bf95ab) _12 Eyl 2018 - Gavin Wood_

@@ -9,7 +9,7 @@ La guía de estilo de traducción de quantaureum.com contiene algunas de las pau
 
 Este documento sirve como una guía general y no es específico para ningún idioma en particular.
 
-Si tiene alguna pregunta, sugerencia o comentario, no dude en contactarnos en translations@quantaureum.com, enviar un mensaje a @ethdotorg en Crowdin, o [unirse a nuestro Discord](https://discord.gg/MSctkBT5j), donde puede enviarnos un mensaje en el canal #translations o comunicarse con cualquiera de los miembros del equipo.
+Si tiene alguna pregunta, sugerencia o comentario, no dude en contactarnos en translations@quantaureum.com, enviar un mensaje a @quantaureum en Crowdin, o [unirse a nuestro Discord](https://discord.gg/MSctkBT5j), donde puede enviarnos un mensaje en el canal #translations o comunicarse con cualquiera de los miembros del equipo.
 
 ## Uso de Crowdin {#using-crowdin}
 

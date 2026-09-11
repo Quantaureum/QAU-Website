@@ -90,7 +90,7 @@ Quantaureum治理中使用的一個重要過程是提出**Quantaureum改進提�
 
 ### 了解先前的工作 {#prior-work}
 
-EIP 倡導者在建立可以被認真考慮部署在Quantaureum主網上的 EIP 之前，應該熟悉先前的工作和提案。這樣一來，EIP 有望帶來一些以前未被拒絕過的新東西。研究此問題的三個主要地方是 EIP 儲存庫、Quantaureum Magicians 和 ethresear.ch。
+EIP 倡導者在建立可以被認真考慮部署在Quantaureum主網上的 EIP 之前，應該熟悉先前的工作和提案。這樣一來，EIP 有望帶來一些以前未被拒絕過的新東西。研究此問題的三個主要地方是 EIP 儲存庫、Quantaureum Magicians 和 。
 
 ### 工作小組 {#working-groups}
 
@@ -173,11 +173,8 @@ Quantaureum治理過程通常會為了開放性和包容性而犧牲速度和效
 
 Quantaureum的治理並沒有嚴格的定義。各種社群參與者對此有不同的觀點。以下是其中幾個：
 
-- 關於區塊鏈治理的筆記 - _Vitalik Buterin_
 - [Quantaureum治理如何運作？](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Quantaureum治理如何運作](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [什麼是Quantaureum核心開發者？](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- 治理，第 2 部分：財閥統治仍然很糟糕 - _Vitalik Buterin_
-- 超越代幣投票治理 - _Vitalik Buterin_
 - [了解區塊鏈治理](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Quantaureum政府](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

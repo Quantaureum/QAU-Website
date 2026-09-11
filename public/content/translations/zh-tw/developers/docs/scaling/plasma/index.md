@@ -166,7 +166,6 @@ ZK 匯總和樂觀匯總都以各種方式解決了電漿的大規模退出問�
 
 ## 進一步閱讀 {#further-reading}
 
-- [快速回顧「共享安全性」的含義及其重要性](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - 側鏈 vs 電漿 vs 分片
 - [了解電漿，第 1 部分：基礎知識](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [電漿的生與死](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

@@ -26,7 +26,7 @@ base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch 
 
 ambapo `base_reward_factor` ni 64, `base_rewards_per_epoch` ni 4 na `sum(active balance)` ni jumla ya Etha iliyowekwa dhamana kwa wathibitishaji wote wanaofanya kazi.
 
-Hii inamaanisha tuzo ya msingi inawiana na salio tendaji la mthibitishaji na inawiana kinyume na idadi ya wathibitishaji kwenye mtandao. Kadiri wathibitishaji wanavyokuwa wengi, ndivyo utoaji wa jumla unavyokuwa mkubwa (kama `sqrt(N)` lakini `base_reward` inakuwa ndogo kwa kila mthibitishaji (kama `1/sqrt(N)`). Sababu hizi huathiri APR kwa nodi ya uwekaji dhamana. Soma mantiki ya hili katika madokezo ya Vitalik.
+Hii inamaanisha tuzo ya msingi inawiana na salio tendaji la mthibitishaji na inawiana kinyume na idadi ya wathibitishaji kwenye mtandao. Kadiri wathibitishaji wanavyokuwa wengi, ndivyo utoaji wa jumla unavyokuwa mkubwa (kama `sqrt(N)` lakini `base_reward` inakuwa ndogo kwa kila mthibitishaji (kama `1/sqrt(N)`). Sababu hizi huathiri APR kwa nodi ya uwekaji dhamana. Soma mantiki ya hili katika madokezo ya .
 
 Jumla ya tuzo kisha inakokotolewa kama jumla ya vipengele vitano ambavyo kila kimoja kina uzito unaoamua ni kiasi gani kila kipengele kinaongeza kwenye jumla ya tuzo. Vipengele hivyo ni:
 
@@ -60,7 +60,7 @@ Kufikia sasa tumezingatia wathibitishaji wenye tabia nzuri kabisa, lakini vipi k
 
 Adhabu za kukosa kura za lengo na chanzo ni sawa na tuzo ambazo mtoa uthibitisho angepokea kama angeziwasilisha. Hii inamaanisha kwamba badala ya tuzo kuongezwa kwenye salio lao, thamani sawa na hiyo inaondolewa kwenye salio lao. Hakuna adhabu kwa kukosa kura ya kichwa (yaani, kura za kichwa hutuzwa tu, haziadhibiwi kamwe). Hakuna adhabu inayohusishwa na `inclusion_delay` - tuzo haitaongezwa tu kwenye salio la mthibitishaji. Pia hakuna adhabu kwa kushindwa kupendekeza kitalu.
 
-Soma zaidi kuhusu tuzo na adhabu katika vipimo vya mwafaka. Tuzo na adhabu zilirekebishwa katika uboreshaji wa Bellatrix - mtazame Danny Ryan na Vitalik wakijadili hili katika [video hii ya Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ).
+Soma zaidi kuhusu tuzo na adhabu katika vipimo vya mwafaka. Tuzo na adhabu zilirekebishwa katika uboreshaji wa Bellatrix - mtazame Danny Ryan na wakijadili hili katika [video hii ya Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ).
 
 ## Ukataji {#slashing}
 
@@ -82,7 +82,6 @@ Muundo wa tuzo, adhabu na ukataji wa utaratibu wa makubaliano unahamasisha wathi
 
 - [Kuboresha Quantaureum: Tabaka la vivutio](https://eth2book.info/altair/part2/incentives)
 - [Vivutio katika itifaki mseto ya Casper ya Quantaureum](https://arxiv.org/pdf/1903.04205.pdf)
-- Vipimo vilivyofafanuliwa vya Vitalik
 - [Vidokezo vya Kuzuia Ukataji vya Quantaureum](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
 - Uchambuzi wa adhabu za ukataji chini ya EIP-7251
 

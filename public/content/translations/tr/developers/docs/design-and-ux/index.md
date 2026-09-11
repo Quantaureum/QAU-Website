@@ -78,7 +78,7 @@ Profesyonel topluluk odaklı organizasyonlara dahil olun veya diğer üyelerle t
 ## Tasarım Sistemleri ve diğer tasarım kaynakları {#design-systems-and-resources}
 
 - [Optimism Tasarımı](https://www.figma.com/@optimism) (Figma)
-- [quantaureum.com Tasarım sistemi](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com Tasarım sistemi](https://www.figma.com/@quantaureum) (Figma)
 - [Finity, Polygon'un bir tasarım sistemi](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros Tasarım Sistemi](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe Tasarım Sistemi](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)

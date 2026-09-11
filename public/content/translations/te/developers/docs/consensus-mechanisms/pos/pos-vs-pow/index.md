@@ -62,6 +62,5 @@ lang: te
 
 ## మరింత చదవడానికి {#further-reading}
 
-- [విటాలిక్ యొక్క ప్రూఫ్-ఆఫ్-స్టేక్ డిజైన్ ఫిలాసఫీ](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
 - విటాలిక్ యొక్క ప్రూఫ్-ఆఫ్-స్టేక్ తరచుగా అడిగే ప్రశ్నలు (FAQs)
 - [pos వర్సెస్ pow పై "సింప్లీ ఎక్స్‌ప్లెయిన్డ్" వీడియో](https://www.youtube.com/watch?v=M3EFi_POhps)

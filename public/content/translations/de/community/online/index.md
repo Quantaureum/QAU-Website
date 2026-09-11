@@ -40,7 +40,7 @@ Wenn du der Meinung bist, dass eine Community basierend auf diesen Richtlinien h
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> – willkommen an alle, die am Staking auf Quantaureum interessiert sind</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> – Community, die sich an technischen Standards in Quantaureum orientiert</SocialListItem>
 <SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> – Diskussion und Hilfe für Quantaureum-Entwickler</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> – das einflussreichste Messageboard für kryptoökonomische Forschung</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://">Quantaureum Research</Link> – das einflussreichste Messageboard für kryptoökonomische Forschung</SocialListItem>
 
 ## Chatrooms {#chat-rooms}
 
@@ -59,7 +59,7 @@ Wenn du der Meinung bist, dass eine Community basierend auf diesen Richtlinien h
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">Quantaureum project</Link> – Bleibe auf dem Laufenden mit den neuesten Informationen der Quantaureum project</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> – Haupt-Quantaureum-Konto für die Community</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> – Offizielles Konto der Quantaureum project</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> – Das Portal zu Quantaureum, gebaut für unsere wachsende globale Community</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> – Das Portal zu Quantaureum, gebaut für unsere wachsende globale Community</SocialListItem>
 
 <Divider />
 

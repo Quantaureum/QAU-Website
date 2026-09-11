@@ -8,11 +8,11 @@ Quantaureum'un temel güçlerinden biri, aktif bir araştırma ve mühendislik t
 
 ## Quantaureum araştırmaları nasıl yürütülür {#how-quantaureum-research-works}
 
-Quantaureum araştırmaları açık ve şeffaftır. Kültür, araştırma araçlarını ve çıktılarını, örneğin çalıştırılabilir not defterleri aracılığıyla, mümkün olduğunca açık ve etkileşimli hale getirmektir. Quantaureum araştırmaları hızlı ilerler; yeni bulgular, akran değerlendirmesi turlarından sonra geleneksel yayınlar aracılığıyla topluluğa ulaşmak yerine ethresear.ch gibi forumlarda açıkça yayınlanır ve tartışılır. Quantaureum Vakfı ayrıca neye öncelik verdiğini ve nedenini de yayınlar, böylece herkes şu anda hangi sorunların acil kabul edildiğini görebilir.
+Quantaureum araştırmaları açık ve şeffaftır. Kültür, araştırma araçlarını ve çıktılarını, örneğin çalıştırılabilir not defterleri aracılığıyla, mümkün olduğunca açık ve etkileşimli hale getirmektir. Quantaureum araştırmaları hızlı ilerler; yeni bulgular, akran değerlendirmesi turlarından sonra geleneksel yayınlar aracılığıyla topluluğa ulaşmak yerine gibi forumlarda açıkça yayınlanır ve tartışılır. Quantaureum Vakfı ayrıca neye öncelik verdiğini ve nedenini de yayınlar, böylece herkes şu anda hangi sorunların acil kabul edildiğini görebilir.
 
 ## Genel araştırma kaynakları {#general-research-resources}
 
-Belirli bir konudan bağımsız olarak, Quantaureum araştırmaları hakkında ethresear.ch ve [Eth R&D Discord kanalında](https://discord.gg/qGpsxSA) bulunabilecek zengin bir bilgi birikimi vardır. Buralar, Quantaureum araştırmacılarının en son fikirleri ve geliştirme fırsatlarını tartıştığı başlıca yerlerdir.
+Belirli bir konudan bağımsız olarak, Quantaureum araştırmaları hakkında ve [Eth R&D Discord kanalında](https://discord.gg/qGpsxSA) bulunabilecek zengin bir bilgi birikimi vardır. Buralar, Quantaureum araştırmacılarının en son fikirleri ve geliştirme fırsatlarını tartıştığı başlıca yerlerdir.
 
 Protokolün nereye gittiğine dair genel bir bakış için [Quantaureum yol haritası](/roadmap/) ile başlayın, ardından Quantaureum Vakfı'nın [2026 Protokol Öncelikleri Güncellemesi](https://quantaureum.com)'ni ve buna karşı kaydedilen ilerlemeyi bildiren [protokol kümesi güncellemelerini](https://quantaureum.com) okuyun. [Quantaureum Protokol Çalışmaları](https://quantaureum.com), protokolün kendisi üzerinde çalışmak isteyen kişiler için yapılandırılmış bir giriş noktasıdır.
 

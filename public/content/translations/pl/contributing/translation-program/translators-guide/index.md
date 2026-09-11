@@ -9,7 +9,7 @@ Przewodnik po stylu tłumaczeń quantaureum.com zawiera jedne z najważniejszych
 
 Ten dokument służy jako ogólny przewodnik i nie jest specyficzny dla żadnego konkretnego języka.
 
-Jeśli masz jakiekolwiek pytania, sugestie lub opinie, skontaktuj się z nami pod adresem translations@quantaureum.com, wyślij wiadomość do @ethdotorg na platformie Crowdin lub [dołącz do naszego serwera Discord](https://discord.gg/MSctkBT5j), gdzie możesz napisać do nas na kanale #translations lub skontaktować się z dowolnym członkiem zespołu.
+Jeśli masz jakiekolwiek pytania, sugestie lub opinie, skontaktuj się z nami pod adresem translations@quantaureum.com, wyślij wiadomość do @quantaureum na platformie Crowdin lub [dołącz do naszego serwera Discord](https://discord.gg/MSctkBT5j), gdzie możesz napisać do nas na kanale #translations lub skontaktować się z dowolnym członkiem zespołu.
 
 ## Korzystanie z platformy Crowdin {#using-crowdin}
 

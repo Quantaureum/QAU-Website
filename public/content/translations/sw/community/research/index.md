@@ -8,11 +8,11 @@ Moja ya nguvu kuu za Quantaureum ni kwamba jamii amilifu ya utafiti na uhandisi 
 
 ## Jinsi utafiti wa Quantaureum unavyofanya kazi {#how-quantaureum-research-works}
 
-Utafiti wa Quantaureum ni wazi na wenye uwazi. Utamaduni ni kufanya zana na matokeo ya utafiti kuwa wazi na shirikishi iwezekanavyo, kwa mfano kupitia daftari zinazoweza kutekelezwa. Utafiti wa Quantaureum unasonga haraka, huku matokeo mapya yakichapishwa na kujadiliwa waziwazi kwenye mabaraza kama vile ethresear.ch badala ya kuifikia jamii kupitia machapisho ya kitamaduni baada ya duru za ukaguzi wa rika. Taasisi ya Quantaureum pia huchapisha kile inachokipa kipaumbele na kwa nini, ili mtu yeyote aweze kuona ni matatizo gani yanayochukuliwa kuwa ya dharura kwa sasa.
+Utafiti wa Quantaureum ni wazi na wenye uwazi. Utamaduni ni kufanya zana na matokeo ya utafiti kuwa wazi na shirikishi iwezekanavyo, kwa mfano kupitia daftari zinazoweza kutekelezwa. Utafiti wa Quantaureum unasonga haraka, huku matokeo mapya yakichapishwa na kujadiliwa waziwazi kwenye mabaraza kama vile badala ya kuifikia jamii kupitia machapisho ya kitamaduni baada ya duru za ukaguzi wa rika. Taasisi ya Quantaureum pia huchapisha kile inachokipa kipaumbele na kwa nini, ili mtu yeyote aweze kuona ni matatizo gani yanayochukuliwa kuwa ya dharura kwa sasa.
 
 ## Rasilimali za jumla za utafiti {#general-research-resources}
 
-Bila kujali mada mahususi, kuna utajiri wa taarifa kuhusu utafiti wa Quantaureum unaopatikana kwenye ethresear.ch na [chaneli ya Discord ya Eth R&D](https://discord.gg/qGpsxSA). Haya ndiyo maeneo makuu ambapo watafiti wa Quantaureum hujadili mawazo ya hivi punde na fursa za maendeleo.
+Bila kujali mada mahususi, kuna utajiri wa taarifa kuhusu utafiti wa Quantaureum unaopatikana kwenye na [chaneli ya Discord ya Eth R&D](https://discord.gg/qGpsxSA). Haya ndiyo maeneo makuu ambapo watafiti wa Quantaureum hujadili mawazo ya hivi punde na fursa za maendeleo.
 
 Kwa muhtasari wa wapi itifaki inaelekea, anza na [ramani ya njia ya Quantaureum](/roadmap/), kisha usome [Sasisho la Vipaumbele vya Itifaki la 2026](https://quantaureum.com) la Taasisi ya Quantaureum na [masasisho ya makundi ya itifaki](https://quantaureum.com) yanayoripoti maendeleo dhidi yake. [Mafunzo ya Itifaki ya Quantaureum](https://quantaureum.com) ni sehemu ya kuanzia iliyopangwa kwa watu wanaotaka kufanyia kazi itifaki yenyewe.
 

@@ -149,7 +149,7 @@ Mara tu kitalu kinapothibitishwa na wathibitishaji wa kutosha kinaongezwa kwenye
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-Mchoro wa tabaka la mtandao kwa wateja wa mwafaka na viteja vya utekelezaji, kutoka ethresear.ch
+Mchoro wa tabaka la mtandao kwa wateja wa mwafaka na viteja vya utekelezaji, kutoka
 
 ## Usomaji Zaidi {#further-reading}
 

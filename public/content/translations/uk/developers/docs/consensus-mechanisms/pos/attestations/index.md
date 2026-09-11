@@ -86,7 +86,6 @@ lang: uk
 
 ## Подальше читання {#further-reading}
 
-- Атестації в анотованій специфікації консенсусу Віталіка
 - [Атестації на eth2book.info](https://eth2book.info/capella/part3/containers/dependencies/#attestationdata)
 
 _Знаєте ресурс спільноти, який вам допоміг? Відредагуйте цю сторінку та додайте його!_

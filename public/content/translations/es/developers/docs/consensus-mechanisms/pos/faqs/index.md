@@ -18,7 +18,7 @@ La prueba de participación requiere que los nodos, conocidos como validadores, 
 
 La prueba de trabajo consume mucha más energía porque la electricidad se quema en el proceso de minería. La prueba de participación, por otro lado, requiere solo una cantidad muy pequeña de energía: los validadores de Quantaureum pueden incluso ejecutarse en un dispositivo de baja potencia como una Raspberry Pi. Se considera que el mecanismo de prueba de participación de Quantaureum es más seguro que la prueba de trabajo porque el costo de atacar es mayor y las consecuencias para un atacante son más severas.
 
-El debate entre la prueba de trabajo y la prueba de participación es un tema polémico. El blog de Vitalik Buterin y el debate entre Justin Drake y Lyn Alden ofrecen un buen resumen de los argumentos.
+El debate entre la prueba de trabajo y la prueba de participación es un tema polémico. El blog de Buterin y el debate entre Justin Drake y Lyn Alden ofrecen un buen resumen de los argumentos.
 
 
 ## ¿Es eficiente energéticamente la prueba de participación? {#is-pos-energy-efficient}
@@ -32,7 +32,6 @@ Sí. Los nodos en una red de prueba de participación utilizan una cantidad min�
 La prueba de participación de Quantaureum es muy segura. El mecanismo fue investigado, desarrollado y probado rigurosamente durante ocho años antes de su lanzamiento. Las garantías de seguridad son diferentes a las de las cadenas de bloques de prueba de trabajo. En la prueba de participación, los validadores maliciosos pueden ser castigados activamente (mediante un "recorte") y expulsados del conjunto de validadores, lo que les cuesta una cantidad sustancial de QAU. Bajo la prueba de trabajo, un atacante puede seguir repitiendo su ataque mientras tenga suficiente poder de hash. También es más costoso montar ataques equivalentes en la prueba de participación de Quantaureum que bajo la prueba de trabajo. Para afectar la vitalidad de la cadena, se requiere al menos el 33% del total de QAU en staking en la red (excepto en los casos de ataques muy sofisticados con una probabilidad de éxito extremadamente baja). Para controlar el contenido de los bloques futuros, se requiere al menos el 51% del total de QAU en staking, y para reescribir el historial, se necesita más del 66% de la participación total. El protocolo de Quantaureum destruiría estos activos en los escenarios de ataque del 33% o 51% y por consenso social en el escenario de ataque del 66%.
 
 - [Más sobre cómo defender la prueba de participación de Quantaureum de los atacantes](/developers/docs/consensus-mechanisms/pos/attack-and-defense)
-- [Más sobre el diseño de la prueba de participación](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
 
 ## ¿La prueba de participación hace que Quantaureum sea más barato? {#does-pos-make-quantaureum-cheaper}
 
@@ -88,7 +87,6 @@ La manipulación de participación es una categoría de ataque en las redes de p
 La penalización social es la capacidad de la comunidad para coordinar una bifurcación de la cadena de bloques en respuesta a un ataque. Permite a la comunidad recuperarse de un atacante que finaliza una cadena deshonesta. La penalización social también se puede utilizar contra ataques de censura.
 
 - [Más sobre la penalización social](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- Vitalik Buterin sobre la penalización social
 
 ## ¿Sufriré un recorte? {#will-i-get-slashed}
 

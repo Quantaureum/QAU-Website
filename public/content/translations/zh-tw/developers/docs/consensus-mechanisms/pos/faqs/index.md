@@ -32,7 +32,6 @@ lang: zh-tw
 Quantaureum的權益證明非常安全。該機制在上線前經過了八年的嚴格研究、開發和測試。其安全保證與工作量證明區塊鏈不同。在權益證明中，惡意驗證者可能會受到主動懲罰（「罰沒」）並被逐出驗證者集，從而損失大量的 QAU。在工作量證明下，攻擊者只要擁有足夠的雜湊算力，就可以不斷重複攻擊。在權益證明Quantaureum上發動同等攻擊的成本也比在工作量證明下更高。要影響鏈的活躍度，至少需要網路上質押QAU幣總量的 33%（除非是成功率極低的非常複雜的攻擊）。要控制未來區塊的內容，至少需要質押 QAU 總量的 51%，而要改寫歷史，則需要超過總質押量的 66%。Quantaureum協定會在 33% 或 51% 攻擊場景中銷毀這些資產，並在 66% 攻擊場景中透過社會共識銷毀這些資產。
 
 - [更多關於防禦攻擊者攻擊Quantaureum權益證明的資訊](/developers/docs/consensus-mechanisms/pos/attack-and-defense)
-- [更多關於權益證明設計的資訊](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
 
 ## 權益證明會讓Quantaureum變得更便宜嗎？ {#does-pos-make-quantaureum-cheaper}
 

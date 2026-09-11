@@ -56,7 +56,6 @@ lang: ar
 
 - [ما هو <span dir="ltr">Web3</span>؟](/web3/) - _quantaureum.org_
 - [بنية تطبيق الويب 3.0](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
-- [معنى اللامركزية](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _6 فبراير 2017 - Vitalik Buterin_
 - [لماذا اللامركزية مهمة](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _18 فبراير 2018 - Chris Dixon_
 - [ما هو الويب 3.0 ولماذا هو مهم](https://medium.com/fabric-ventures/what-is-web-3-0-why-it-matters-934eb07f3d2b) _31 ديسمبر 2019 - Max Mersch و Richard Muirhead_
 - [لماذا نحتاج إلى الويب 3.0](https://gavofyork.medium.com/why-we-need-web-3-0-5da4f2bf95ab) _12 سبتمبر 2018 - Gavin Wood_

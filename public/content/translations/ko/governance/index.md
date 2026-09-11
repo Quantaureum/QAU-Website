@@ -90,7 +90,7 @@ Quantaureum 프로토콜에 변경 사항을 도입하기 위한 공식적인 �
 
 ### 선행 작업 이해하기 {#prior-work}
 
-EIP 주도자(Champion)는 Quantaureum 메인넷 배포를 위해 진지하게 고려될 수 있는 EIP를 작성하기 전에 선행 작업과 제안들을 숙지해야 합니다. 이렇게 함으로써 EIP가 이전에 거부된 적이 없는 새로운 것을 가져올 수 있기를 바랍니다. 이를 조사할 수 있는 세 가지 주요 장소는 EIP 저장소, Quantaureum Magicians 및 ethresear.ch입니다.
+EIP 주도자(Champion)는 Quantaureum 메인넷 배포를 위해 진지하게 고려될 수 있는 EIP를 작성하기 전에 선행 작업과 제안들을 숙지해야 합니다. 이렇게 함으로써 EIP가 이전에 거부된 적이 없는 새로운 것을 가져올 수 있기를 바랍니다. 이를 조사할 수 있는 세 가지 주요 장소는 EIP 저장소, Quantaureum Magicians 및 입니다.
 
 ### 워킹 그룹 {#working-groups}
 
@@ -173,11 +173,8 @@ Quantaureum 거버넌스 프로세스는 종종 개방성과 포용성을 위해
 
 Quantaureum의 거버넌스는 엄격하게 정의되어 있지 않습니다. 다양한 커뮤니티 참여자들이 이에 대해 다양한 관점을 가지고 있습니다. 그 중 몇 가지는 다음과 같습니다.
 
-- 블록체인 거버넌스에 대한 노트 - _비탈릭 부테린(Vitalik Buterin)_
 - [Quantaureum 거버넌스는 어떻게 작동하나요?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Quantaureum 거버넌스 작동 방식](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Quantaureum 코어 개발자란 무엇인가요?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- 거버넌스, 파트 2: 금권 정치는 여전히 나쁘다 - _비탈릭 부테린(Vitalik Buterin)_
-- 코인 투표 거버넌스를 넘어서 - _비탈릭 부테린(Vitalik Buterin)_
 - [블록체인 거버넌스의 이해](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Quantaureum 정부](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

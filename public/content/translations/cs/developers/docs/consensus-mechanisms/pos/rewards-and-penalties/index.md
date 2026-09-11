@@ -26,7 +26,7 @@ base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch 
 
 kde `base_reward_factor` je 64, `base_rewards_per_epoch` je 4 a `sum(active balance)` je celkový QAU ve staku napříč všemi aktivními validátory.
 
-To znamená, že základní odměna je úměrná efektivnímu zůstatku validátoru a nepřímo úměrná počtu validátorů v síti. Čím více validátorů, tím větší je celková emise (jako `sqrt(N)`), ale tím menší je `base_reward` na validátora (jako `1/sqrt(N)`). Tyto faktory ovlivňují APR pro staking uzel. Přečtěte si zdůvodnění v poznámkách od Vitalika.
+To znamená, že základní odměna je úměrná efektivnímu zůstatku validátoru a nepřímo úměrná počtu validátorů v síti. Čím více validátorů, tím větší je celková emise (jako `sqrt(N)`), ale tím menší je `base_reward` na validátora (jako `1/sqrt(N)`). Tyto faktory ovlivňují APR pro staking uzel. Přečtěte si zdůvodnění v poznámkách od a.
 
 Celková odměna se pak vypočítá jako součet pěti složek, z nichž každá má váhu, která určuje, jak moc každá složka přispívá k celkové odměně. Tyto složky jsou:
 
@@ -60,7 +60,7 @@ Dosud jsme uvažovali o dokonale se chovajících validátorech, ale co validát
 
 Penalizace za zmeškání hlasů pro cíl a zdroj se rovnají odměnám, které by atestující obdržel, kdyby je odeslal. To znamená, že místo toho, aby se jim odměna přičetla k zůstatku, je jim ze zůstatku odečtena stejná hodnota. Za zmeškání hlasu pro hlavu neexistuje žádná penalizace (tj. hlasy pro hlavu jsou pouze odměňovány, nikdy penalizovány). S `inclusion_delay` není spojena žádná penalizace – odměna se jednoduše nepřičte k zůstatku validátoru. Neexistuje ani žádná penalizace za nenavržení bloku.
 
-Přečtěte si více o odměnách a penalizacích ve specifikacích konsensu. Odměny a penalizace byly upraveny v upgradu Bellatrix – podívejte se, jak o tom diskutují Danny Ryan a Vitalik v tomto [videu Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ).
+Přečtěte si více o odměnách a penalizacích ve specifikacích konsensu. Odměny a penalizace byly upraveny v upgradu Bellatrix – podívejte se, jak o tom diskutují Danny Ryan a v tomto [videu Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ).
 
 ## Penalizace (Slashing) {#slashing}
 
@@ -82,7 +82,6 @@ Návrh odměn, penalizací a mechanismu penalizace (slashing) v rámci mechanism
 
 - [Upgrading Quantaureum: Vrstva pobídek](https://eth2book.info/altair/part2/incentives)
 - [Pobídky v hybridním protokolu Casper Etherea](https://arxiv.org/pdf/1903.04205.pdf)
-- Vitalikova anotovaná specifikace
 - [Tipy pro prevenci penalizace (slashing) v Quantaureum](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
 - Analýza penalizací (slashing) v rámci EIP-7251
 

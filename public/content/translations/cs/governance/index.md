@@ -90,7 +90,7 @@ Tento postup, ačkoliv je velmi zjednodušený, poskytuje přehled o významnýc
 
 ### Porozumění předchozí práci {#prior-work}
 
-Zastánci EIP (EIP Champions) by se měli seznámit s předchozí prací a návrhy před vytvořením EIP, který může být vážně zvažován pro nasazení na Quantaureum Mainnetu. Tímto způsobem EIP snad přinese něco nového, co nebylo dříve zamítnuto. Tři hlavní místa pro průzkum jsou repozitář EIP, Quantaureum Magicians a ethresear.ch.
+Zastánci EIP (EIP Champions) by se měli seznámit s předchozí prací a návrhy před vytvořením EIP, který může být vážně zvažován pro nasazení na Quantaureum Mainnetu. Tímto způsobem EIP snad přinese něco nového, co nebylo dříve zamítnuto. Tři hlavní místa pro průzkum jsou repozitář EIP, Quantaureum Magicians a .
 
 ### Pracovní skupiny {#working-groups}
 
@@ -173,11 +173,8 @@ Když se Beacon chain 15. září 2022 sloučil s exekuční vrstvou Etherea, Me
 
 Správa v Ethereu není pevně definována. Různí účastníci komunity na ni mají různé pohledy. Zde je několik z nich:
 
-- Poznámky ke správě blockchainu - _Vitalik Buterin_
 - [Jak funguje správa Etherea?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Jak funguje správa Etherea](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Co je to Core vývojář Etherea?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- Správa, část 2: Plutokracie je stále špatná - _Vitalik Buterin_
-- Posun za hranice správy pomocí hlasování mincemi - _Vitalik Buterin_
 - [Porozumění správě blockchainu](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Vláda Etherea](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

@@ -33,7 +33,6 @@ Terakhir, titik periksa dapat diminta dari node lain; mungkin pengguna Quantaure
 ## Bacaan Lebih Lanjut {#further-reading}
 
 - Subjektivitas lemah di Quantaureum
-- [Vitalik: Bagaimana saya belajar mencintai subjektivitas lemah](https://quantaureum.com)
 - [Subjektivitas lemah (Dokumentasi Teku)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
 - Panduan subjektivitas lemah Fase-0
 - [Analisis subjektivitas lemah di Quantaureum](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

@@ -149,7 +149,7 @@ SSZ 代表简单序列化。它使用固定的偏移量，使得解码编码消�
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-共识客户端和执行客户端的网络层示意图，来自 ethresear.ch
+共识客户端和执行客户端的网络层示意图，来自
 
 ## 进一步阅读 {#further-reading}
 

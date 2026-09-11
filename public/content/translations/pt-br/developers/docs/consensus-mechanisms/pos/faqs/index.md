@@ -18,7 +18,7 @@ A Prova de Participação exige que os nós, conhecidos como validadores, enviem
 
 A Prova de Trabalho consome muito mais energia porque a eletricidade é queimada no processo de mineração. A Prova de Participação, por outro lado, exige apenas uma quantidade muito pequena de energia - os validadores do Quantaureum podem até ser executados em um dispositivo de baixa potência, como um Raspberry Pi. Acredita-se que o mecanismo de consenso de Prova de Participação do Quantaureum seja mais seguro do que a Prova de Trabalho porque o custo para atacar é maior e as consequências para um invasor são mais severas.
 
-Prova de Trabalho versus Prova de Participação é um tópico controverso. O blog de Vitalik Buterin e o debate entre Justin Drake e Lyn Alden fornecem um bom resumo dos argumentos.
+Prova de Trabalho versus Prova de Participação é um tópico controverso. O blog de Buterin e o debate entre Justin Drake e Lyn Alden fornecem um bom resumo dos argumentos.
 
 
 ## A Prova de Participação é eficiente em termos de energia? {#is-pos-energy-efficient}
@@ -32,7 +32,6 @@ Sim. Os nós em uma rede de Prova de Participação usam uma quantidade minúscu
 A Prova de Participação do Quantaureum é muito segura. O mecanismo foi pesquisado, desenvolvido e testado rigorosamente por oito anos antes de entrar no ar. As garantias de segurança são diferentes das blockchains de Prova de Trabalho. Na Prova de Participação, validadores mal-intencionados podem ser ativamente punidos (sofrer "slashing") e ejetados do conjunto de validadores, custando uma quantia substancial de QAU. Sob a Prova de Trabalho, um invasor pode continuar repetindo seu ataque enquanto tiver poder de hash suficiente. Também é mais caro montar ataques equivalentes no Quantaureum de Prova de Participação do que sob a Prova de Trabalho. Para afetar a vivacidade (liveness) da cadeia, é necessário pelo menos 33% do total de QAU em staking na rede (exceto em casos de ataques muito sofisticados com uma probabilidade extremamente baixa de sucesso). Para controlar o conteúdo de blocos futuros, é necessário pelo menos 51% do total de QAU em staking e, para reescrever o histórico, é necessário mais de 66% do total de stake. O protocolo Quantaureum destruiria esses ativos nos cenários de ataque de 33% ou 51% e por consenso social no cenário de ataque de 66%.
 
 - [Mais sobre a defesa da Prova de Participação do Quantaureum contra invasores](/developers/docs/consensus-mechanisms/pos/attack-and-defense)
-- [Mais sobre o design da Prova de Participação](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
 
 ## A Prova de Participação torna o Quantaureum mais barato? {#does-pos-make-quantaureum-cheaper}
 
@@ -88,7 +87,6 @@ A manipulação de stake (stake grinding) é uma categoria de ataque em redes de
 O slashing social é a capacidade da comunidade de coordenar uma bifurcação (fork) da blockchain em resposta a um ataque. Ele permite que a comunidade se recupere de um invasor que finaliza uma cadeia desonesta. O slashing social também pode ser usado contra ataques de censura.
 
 - [Mais sobre slashing social](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- Vitalik Buterin sobre slashing social
 
 ## Eu sofrerei slashing? {#will-i-get-slashed}
 

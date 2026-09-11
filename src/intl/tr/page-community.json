@@ -39,9 +39,6 @@
   "page-community-get-paid-lasts-description": "Hükümetler, şirketler veya algoritmalar tarafından susturulamayan açık, halka açık altyapıya katkıda bulunun. İnşa etmeye yardımcı olduğunuz şeyler kalıcıdır.",
   "page-community-get-paid-sovereignty-title": "Dijital egemenlik",
   "page-community-get-paid-sovereignty-description": "Sizi silebilecek platformlara güvenmek zorunda kalmadan çevrimiçi kimliğinize, varlıklarınıza ve eserlerinize sahip olun.",
-  "page-community-online-quantaureum-description": "Quantaureum'a dair her şey",
-  "page-community-online-ethtrader-description": "Trendler ve piyasa analizi",
-  "page-community-online-ethdev-description": "Quantaureum geliştirmeye odaklı",
   "page-community-online-members": "+{count} üye",
   "page-community-online-see-all": "Tüm toplulukları görün",
   "page-community-conferences-title": "Önemli Blokzincir konferansları",
@@ -53,5 +50,8 @@
   "page-community-voices-title": "Quantaureum sesleri",
   "page-community-voices-subtitle": "Quantaureum topluluğu üyeleri, ağın hayatlarında nasıl bir fark yarattığını paylaşıyor.",
   "page-community-contribute-eyebrow": "Açık kaynaklı proje",
-  "page-community-contribute-count": "{count}+ katkıda bulunan"
+  "page-community-contribute-count": "{count}+ katkıda bulunan",
+  "page-community-online-discord-description": "The main Quantaureum community chat: development, staking, support and announcements.",
+  "page-community-online-telegram-description": "Quantaureum on Telegram: news and community discussion.",
+  "page-community-online-x-description": "Follow @quantaureum for project updates and announcements."
 }

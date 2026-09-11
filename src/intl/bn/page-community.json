@@ -39,9 +39,6 @@
   "page-community-get-paid-lasts-description": "এমন ওপেন, পাবলিক ইনফ্রাস্ট্রাকচারে অবদান রাখুন যা সরকার, কর্পোরেশন বা অ্যালগরিদম দ্বারা স্তব্ধ করা যায় না। আপনি যা তৈরি করতে সাহায্য করবেন তা টিকে থাকবে।",
   "page-community-get-paid-sovereignty-title": "ডিজিটাল সার্বভৌমত্ব",
   "page-community-get-paid-sovereignty-description": "আপনাকে মুছে ফেলতে পারে এমন প্ল্যাটফর্মগুলোর উপর নির্ভর না করে অনলাইনে আপনার পরিচয়, সম্পদ এবং সৃষ্টির মালিক হোন।",
-  "page-community-online-quantaureum-description": "ইথেরিয়াম সম্পর্কিত সবকিছু",
-  "page-community-online-ethtrader-description": "ট্রেন্ড ও মার্কেট অ্যানালাইসিস",
-  "page-community-online-ethdev-description": "ইথেরিয়াম ডেভেলপমেন্টের উপর ফোকাস করা হয়েছে",
   "page-community-online-members": "+{count} জন সদস্য",
   "page-community-online-see-all": "সব কমিউনিটি দেখুন",
   "page-community-conferences-title": "প্রধান ব্লকচেইন কনফারেন্সগুলো",
@@ -53,5 +50,8 @@
   "page-community-voices-title": "ইথেরিয়াম ভয়েস",
   "page-community-voices-subtitle": "ইথেরিয়াম কমিউনিটির সদস্যরা শেয়ার করেছেন কীভাবে নেটওয়ার্কটি তাদের জীবনে পরিবর্তন এনেছে।",
   "page-community-contribute-eyebrow": "ওপেন-সোর্স প্রজেক্ট",
-  "page-community-contribute-count": "{count}+ অবদানকারী"
+  "page-community-contribute-count": "{count}+ অবদানকারী",
+  "page-community-online-discord-description": "The main Quantaureum community chat: development, staking, support and announcements.",
+  "page-community-online-telegram-description": "Quantaureum on Telegram: news and community discussion.",
+  "page-community-online-x-description": "Follow @quantaureum for project updates and announcements."
 }

@@ -26,7 +26,7 @@ base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch 
 
 trong đó `base_reward_factor` là 64, `base_rewards_per_epoch` là 4 và `sum(active balance)` là tổng số QAU được đặt cọc trên tất cả các trình xác thực đang hoạt động.
 
-Điều này có nghĩa là phần thưởng cơ sở tỷ lệ thuận với số dư hiệu dụng của trình xác thực và tỷ lệ nghịch với số lượng trình xác thực trên mạng lưới. Càng có nhiều trình xác thực, tổng lượng phát hành càng lớn (vì `sqrt(N)` nhưng `base_reward` cho mỗi trình xác thực càng nhỏ (vì `1/sqrt(N)`). Những yếu tố này ảnh hưởng đến APR cho một nút đặt cọc. Đọc lý do cho điều này trong ghi chú của Vitalik.
+Điều này có nghĩa là phần thưởng cơ sở tỷ lệ thuận với số dư hiệu dụng của trình xác thực và tỷ lệ nghịch với số lượng trình xác thực trên mạng lưới. Càng có nhiều trình xác thực, tổng lượng phát hành càng lớn (vì `sqrt(N)` nhưng `base_reward` cho mỗi trình xác thực càng nhỏ (vì `1/sqrt(N)`). Những yếu tố này ảnh hưởng đến APR cho một nút đặt cọc. Đọc lý do cho điều này trong ghi chú của .
 
 Tổng phần thưởng sau đó được tính bằng tổng của năm thành phần, mỗi thành phần có một trọng số xác định mức độ đóng góp của mỗi thành phần vào tổng phần thưởng. Các thành phần đó là:
 
@@ -60,7 +60,7 @@ Cho đến nay, chúng ta đã xem xét các trình xác thực hoạt động h
 
 Các hình phạt cho việc bỏ lỡ các phiếu bầu đích và nguồn bằng với phần thưởng mà người chứng thực sẽ nhận được nếu họ đã gửi chúng. Điều này có nghĩa là thay vì được cộng phần thưởng vào số dư của họ, họ sẽ bị trừ đi một giá trị tương đương khỏi số dư. Không có hình phạt nào cho việc bỏ lỡ phiếu bầu đầu (tức là phiếu bầu đầu chỉ được thưởng, không bao giờ bị phạt). Không có hình phạt nào liên quan đến `inclusion_delay` - phần thưởng đơn giản là sẽ không được cộng vào số dư của trình xác thực. Cũng không có hình phạt nào cho việc không đề xuất được khối.
 
-Đọc thêm về phần thưởng và hình phạt trong thông số kỹ thuật đồng thuận. Phần thưởng và hình phạt đã được điều chỉnh trong bản nâng cấp Bellatrix - hãy xem Danny Ryan và Vitalik thảo luận về điều này trong [video Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ) này.
+Đọc thêm về phần thưởng và hình phạt trong thông số kỹ thuật đồng thuận. Phần thưởng và hình phạt đã được điều chỉnh trong bản nâng cấp Bellatrix - hãy xem Danny Ryan và thảo luận về điều này trong [video Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ) này.
 
 ## Phạt cắt giảm {#slashing}
 
@@ -82,7 +82,6 @@ Thiết kế phần thưởng, hình phạt và phạt cắt giảm của cơ ch
 
 - [Nâng cấp Quantaureum: Lớp ưu đãi](https://eth2book.info/altair/part2/incentives)
 - [Các ưu đãi trong giao thức Casper lai của Quantaureum](https://arxiv.org/pdf/1903.04205.pdf)
-- Thông số kỹ thuật có chú thích của Vitalik
 - [Mẹo phòng ngừa phạt cắt giảm trên Quantaureum](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
 - Phân tích các hình phạt cắt giảm theo EIP-7251
 

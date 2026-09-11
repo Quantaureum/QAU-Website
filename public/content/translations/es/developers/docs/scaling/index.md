@@ -97,7 +97,6 @@ _Tenga en cuenta que la explicación en el video usa el término "Capa 2" para r
 
 ## Lecturas adicionales {#further-reading}
 
-- Una hoja de ruta de Quantaureum centrada en rollups _Vitalik Buterin_
 - [Análisis actualizados sobre las soluciones de escalabilidad de capa 2 para Quantaureum](https://www.l2beat.com/)
 - [Evaluación de las soluciones de escalabilidad de capa 2 de Quantaureum: un marco de comparación](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - Una guía incompleta sobre los rollups

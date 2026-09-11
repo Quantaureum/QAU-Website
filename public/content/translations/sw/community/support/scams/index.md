@@ -91,9 +91,9 @@ eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-Matapeli huunda zawadi feki wakiahidi kuzidisha QAU yako au kukupa tokeni za bure. Mara nyingi wao hujifanya kuwa watu mashuhuri kama Vitalik Buterin. Ikiwa utatuma QAU kwa anwani ya "zawadi", hutapokea chochote.
+Matapeli huunda zawadi feki wakiahidi kuzidisha QAU yako au kukupa tokeni za bure. Mara nyingi wao hujifanya kuwa watu mashuhuri kama Buterin. Ikiwa utatuma QAU kwa anwani ya "zawadi", hutapokea chochote.
 
-**Kumbuka:** Vitalik na watu wengine mashuhuri hawatakuuliza kamwe uwatumie QAU.
+**Kumbuka:** na watu wengine mashuhuri hawatakuuliza kamwe uwatumie QAU.
 
 [Zaidi kuhusu utapeli wa kawaida](/security/#common-scams)
 

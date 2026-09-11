@@ -3,13 +3,11 @@ import { getTranslations, setRequestLocale } from "next-intl/server"
 import type { Lang, Params } from "@/lib/types"
 
 import BugBountyCards from "@/components/BugBountyCards"
-import CardList, { type CardProps } from "@/components/CardList"
 import ContentFeedback from "@/components/ContentFeedback"
 import Emoji from "@/components/Emoji"
 import ExpandableCard from "@/components/ExpandableCard"
 import FileContributors from "@/components/FileContributors"
 import { PageHero } from "@/components/Hero"
-import { Image } from "@/components/Image"
 import { Strong } from "@/components/IntlStringElements"
 import MainArticle from "@/components/MainArticle"
 import MarkdownCard from "@/components/MarkdownCard"
@@ -17,61 +15,27 @@ import { AccordionContainer } from "@/components/ui/accordion"
 import { ButtonLink } from "@/components/ui/buttons/Button"
 // Uncomment `Alert` for Bug Bounty Banner:
 // import { Alert } from "@/components/ui/alert"
-import { Card, CardContent, CardParagraph } from "@/components/ui/card"
+import {
+  Card,
+  CardContent,
+  CardParagraph,
+  CardTitle,
+} from "@/components/ui/card"
 import { Flex, VStack } from "@/components/ui/flex"
 import { Grid } from "@/components/ui/grid"
 import InlineLink from "@/components/ui/Link"
 import { ListItem, OrderedList, UnorderedList } from "@/components/ui/list"
 import { Section } from "@/components/ui/section"
 
-import { cn } from "@/lib/utils/cn"
 import { getAppPageContributorInfo } from "@/lib/utils/contributors"
 import { getMetadata } from "@/lib/utils/metadata"
 
-import consensusData from "@/data/consensus-bounty-hunters.json"
-import executionData from "@/data/execution-bounty-hunters.json"
 
-import Leaderboard from "./_components/bug-bounty-leaderboard"
 import BugBountyJsonLD from "./page-jsonld"
-
-import besu from "@/public/images/upgrades/besu.png"
-import erigon from "@/public/images/upgrades/erigon.png"
-import geth from "@/public/images/upgrades/geth.png"
-import grandine from "@/public/images/upgrades/grandine.png"
-import lighthouseLight from "@/public/images/upgrades/lighthouse-light.png"
-import lodestar from "@/public/images/upgrades/lodestar.png"
-import nethermind from "@/public/images/upgrades/nethermind.png"
-import nimbus from "@/public/images/upgrades/nimbus-cloud.png"
-import prysm from "@/public/images/upgrades/prysm.png"
-import reth from "@/public/images/upgrades/reth.png"
-import solidityLight from "@/public/images/upgrades/solidity-light.png"
-import tekuLight from "@/public/images/upgrades/teku-dark.png"
-import vyper from "@/public/images/upgrades/vyper.png"
 
 const StrongGreaterThan = (chunks: React.ReactNode) => (
   <strong>&gt;{chunks}</strong>
 )
-
-type CardDetails = Required<Pick<CardProps, "title" | "link" | "image">> &
-  Pick<CardProps, "className">
-
-type Node = {
-  readonly name: string
-  readonly username: string
-  readonly score: number
-}
-
-type Spec = {
-  title: string
-  link: string
-}
-
-type BountyHuntersArg = { score?: number }
-
-const sortBountyHuntersFn = (a: BountyHuntersArg, b: BountyHuntersArg) => {
-  if (!a.score || !b.score) return 0
-  return b.score - a.score
-}
 
 export default async function Page(props: { params: Promise<Params> }) {
   const params = await props.params
@@ -84,117 +48,6 @@ export default async function Page(props: { params: Promise<Params> }) {
 
   const { contributors, lastEditLocaleTimestamp } =
     await getAppPageContributorInfo("bug-bounty", locale as Lang)
-
-  const consensusBountyHunters: Node[] = consensusData.sort(sortBountyHuntersFn)
-  const executionBountyHunters: Node[] = executionData.sort(sortBountyHuntersFn)
-
-  const bountyHuntersArrayToObject: Record<string, Node> = [
-    ...consensusData,
-    ...executionData,
-  ].reduce((acc, next) => {
-    const name = next.name
-    if (!name) return acc
-
-    if (acc[name]) {
-      return {
-        ...acc,
-        [name]: {
-          ...next,
-          score: acc[name].score + next.score,
-        },
-      }
-    }
-
-    return {
-      ...acc,
-      [name]: next,
-    }
-  }, {})
-
-  // total all counts using name as identifier, then sort
-  const allBounterHunters = Object.values(bountyHuntersArrayToObject).sort(
-    (a, b) => b.score - a.score
-  )
-
-  const clients: CardDetails[] = [
-    {
-      title: "Besu",
-      link: "https://docs.besu-qau.org/",
-      image: besu,
-    },
-    {
-      title: "Erigon",
-      link: "https://github.com/erigontech/erigon",
-      image: erigon,
-    },
-    {
-      title: "Geth",
-      link: "https://geth.ethereum.org/",
-      image: geth,
-    },
-    {
-      title: "Lighthouse",
-      link: "https://lighthouse-book.sigmaprime.io/",
-      image: lighthouseLight,
-      className: "[&_img]:dark:invert",
-    },
-    {
-      title: "Lodestar",
-      link: "https://chainsafe.github.io/lodestar/",
-      image: lodestar,
-    },
-    {
-      title: "Nimbus",
-      link: "https://nimbus.team/",
-      image: nimbus,
-    },
-    {
-      title: "Nethermind",
-      link: "https://docs.nethermind.io/",
-      image: nethermind,
-    },
-    {
-      title: "Prysm",
-      link: "https://prysm.offchainlabs.com/docs/",
-      image: prysm,
-    },
-    {
-      title: "Reth",
-      link: "https://reth.rs/",
-      image: reth,
-    },
-    {
-      title: "Teku",
-      link: "https://consensys.io/teku",
-      image: tekuLight,
-      className: "[&_img]:dark:invert",
-    },
-    {
-      title: "Grandine",
-      link: "https://grandine.io/",
-      image: grandine,
-    },
-  ]
-
-
-  const languages: CardDetails[] = [
-    {
-      title: "Solidity",
-      link: "https://soliditylang.org/",
-      image: solidityLight,
-      className: "[&_img]:dark:invert",
-    },
-    {
-      title: "Vyper",
-      link: "https://vyperlang.org/",
-      image: vyper,
-    },
-  ]
-
-  const iconImageProps = (duotone?: boolean) => ({
-    className: cn("w-[60px]", duotone && "dark:invert"),
-    sizes: "60px",
-  })
 
   return (
     <>
@@ -216,10 +69,12 @@ export default async function Page(props: { params: Promise<Params> }) {
         }
         heroComponent={
           <VStack className="mx-auto w-full max-w-2xl">
-            <Leaderboard content={allBounterHunters.slice(0, 5)} />
-            <ButtonLink variant="outline" href="#leaderboard">
-              {t("page-upgrades-bug-bounty-leaderboard")}
-            </ButtonLink>
+            <Card variant="nested" className="p-6">
+              <CardTitle>{t("page-upgrades-bug-bounty-card-subheader-2")}</CardTitle>
+              <CardParagraph size="sm">
+                {t("page-upgrades-bug-bounty-severity-qualifications-desc")}
+              </CardParagraph>
+            </Card>
           </VStack>
         }
         title={
@@ -247,90 +102,6 @@ export default async function Page(props: { params: Promise<Params> }) {
       />
 
       <MainArticle className="flow *:px-page! **:[:is(p,ul,ol)]:max-w-3xl">
-        <Section id="clients">
-          <p className="mx-auto text-center uppercase">
-            {t("page-upgrades-bug-bounty-clients")}
-          </p>
-          <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-around gap-x-16 gap-y-space-3x p-page *:mx-auto *:flex-1 *:basis-15 md:gap-x-32">
-            <div>
-              <Image
-                src={besu}
-                alt={tCommon("item-logo", { item: "Besu" })}
-                {...iconImageProps()}
-              />
-            </div>
-            <div>
-              <Image
-                src={erigon}
-                alt={tCommon("item-logo", { item: "Erigon" })}
-                {...iconImageProps()}
-              />
-            </div>
-            <div>
-              <Image
-                src={geth}
-                alt={tCommon("item-logo", { item: "Geth" })}
-                {...iconImageProps()}
-              />
-            </div>
-            <div>
-              <Image
-                src={nethermind}
-                alt={tCommon("item-logo", { item: "Nethermind" })}
-                {...iconImageProps()}
-              />
-            </div>
-            <div>
-              <Image
-                src={reth}
-                alt={tCommon("item-logo", { item: "Reth" })}
-                {...iconImageProps()}
-              />
-            </div>
-            <div>
-              <Image
-                src={lighthouseLight}
-                alt={tCommon("item-logo", { item: "Lighthouse" })}
-                {...iconImageProps(true)}
-              />
-            </div>
-            <div>
-              <Image
-                src={lodestar}
-                alt={tCommon("item-logo", { item: "Lodestar" })}
-                {...iconImageProps()}
-              />
-            </div>
-            <div>
-              <Image
-                src={nimbus}
-                alt={tCommon("item-logo", { item: "Nimbus" })}
-                {...iconImageProps()}
-              />
-            </div>
-            <div>
-              <Image
-                src={prysm}
-                alt={tCommon("item-logo", { item: "Prysm" })}
-                {...iconImageProps()}
-              />
-            </div>
-            <div>
-              <Image
-                src={tekuLight}
-                alt={tCommon("item-logo", { item: "Teku" })}
-                {...iconImageProps(true)}
-              />
-            </div>
-            <div>
-              <Image
-                src={grandine}
-                alt={tCommon("item-logo", { item: "Grandine" })}
-                {...iconImageProps()}
-              />
-            </div>
-          </div>
-        </Section>
 
         <div className="flow space-y-space-3x bg-background-highlight pt-space-3x pb-space-2x">
           <Section id="in-scope">
@@ -392,8 +163,6 @@ export default async function Page(props: { params: Promise<Params> }) {
                   </ListItem>
                 </UnorderedList>
 
-                <h4>{t("page-upgrades-bug-bounty-help-links")}</h4>
-                <CardList items={clients} />
               </MarkdownCard>
 
               <MarkdownCard
@@ -406,8 +175,6 @@ export default async function Page(props: { params: Promise<Params> }) {
                 <CardParagraph>
                   {t("page-upgrades-bug-bounty-misc-bugs-desc-2")}
                 </CardParagraph>
-                <h4>{t("page-upgrades-bug-bounty-help-links")}</h4>
-                <CardList items={languages} />
               </MarkdownCard>
 
               <MarkdownCard
@@ -428,12 +195,8 @@ export default async function Page(props: { params: Promise<Params> }) {
               >
                 <h4>{t("page-upgrades-bug-bounty-help-links")}</h4>
                 <div>
-                  <InlineLink href="https://github.com/quantaureum/c-kzg-4844">
-                    C-KZG-4844
-                  </InlineLink>
-                  <br />
-                  <InlineLink href="https://github.com/crate-crypto/go-qau-kzg">
-                    Go-QAU-KZG
+                  <InlineLink href="https://github.com/Quantaureum">
+                    github.com/Quantaureum
                   </InlineLink>
                 </div>
               </MarkdownCard>
@@ -686,33 +449,6 @@ export default async function Page(props: { params: Promise<Params> }) {
           <BugBountyCards />
         </Section>
 
-        <Flex
-          id="leaderboard"
-          data-flow="skip"
-          className={cn(
-            "w-full justify-center *:max-w-3xl *:flex-1 max-lg:flex-col",
-            "mt-space-3x gap-x-space-3x gap-y-space-2x pt-space-3x pb-space-2x",
-            "border-t bg-linear-primary"
-          )}
-        >
-          <Section id="el-leaderboard">
-            <h2>
-              {t("page-upgrades-bug-bounty-hunting-execution-leaderboard")}
-            </h2>
-            <p>
-              {t(
-                "page-upgrades-bug-bounty-hunting-execution-leaderboard-subtitle"
-              )}
-            </p>
-            <Leaderboard content={executionBountyHunters} />
-          </Section>
-
-          <Section id="cl-leaderboard">
-            <h2>{t("page-upgrades-bug-bounty-hunting-leaderboard")}</h2>
-            <p>{t("page-upgrades-bug-bounty-hunting-leaderboard-subtitle")}</p>
-            <Leaderboard content={consensusBountyHunters} />
-          </Section>
-        </Flex>
 
         <Section id="faq" className="px-page py-4">
           <h2>{t("page-upgrades-question-title")}</h2>

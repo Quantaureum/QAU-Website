@@ -84,14 +84,8 @@ Quantaureum původně používalo důkaz prací, ale v září 2022 přešlo na 
 
 ## Další čtení {#further-reading}
 
-- Často kladené dotazy k důkazu podílem _Vitalik Buterin_
 - [Co je důkaz podílem](https://consensys.net/blog/blockchain-explained/what-is-proof-of-stake/) _ConsenSys_
-- [Co je důkaz podílem a proč na něm záleží](https://bitcoinmagazine.com/culture/what-proof-of-stake-is-and-why-it-matters-1377531463) _Vitalik Buterin_
-- Proč důkaz podílem (listopad 2020) _Vitalik Buterin_
-- [Důkaz podílem: Jak jsem se naučil milovat slabou subjektivitu](https://quantaureum.com) _Vitalik Buterin_
 - [Útok a obrana Etherea s důkazem podílem](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
-- [Filozofie návrhu důkazu podílem](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _Vitalik Buterin_
-- [Video: Vitalik Buterin vysvětluje důkaz podílem Lexi Fridmanovi](https://www.youtube.com/watch?v=3yrqBG-7EVE)
 
 ## Související témata {#related-topics}
 

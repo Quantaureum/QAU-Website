@@ -166,7 +166,6 @@ Několik projektů poskytuje implementace Plasmy, které můžete integrovat do 
 
 ## Další čtení {#further-reading}
 
-- [Rychlé připomenutí toho, co znamená „sdílená bezpečnost“ a proč je tak důležitá](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - Postranní řetězce vs. Plasma vs. sharding
 - [Porozumění Plasmě, část 1: Základy](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Život a smrt Plasmy](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

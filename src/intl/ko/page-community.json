@@ -39,9 +39,6 @@
   "page-community-get-paid-lasts-description": "정부, 기업 또는 알고리즘에 의해 통제될 수 없는 개방형 공공 인프라에 기여해 보세요. 여러분이 구축한 것은 계속 유지됩니다.",
   "page-community-get-paid-sovereignty-title": "디지털 주권",
   "page-community-get-paid-sovereignty-description": "여러분을 삭제할 수 있는 플랫폼에 의존하지 않고 온라인에서 자신의 신원, 자산 및 창작물을 소유하세요.",
-  "page-community-online-quantaureum-description": "쿠앤타리움의 모든 것",
-  "page-community-online-ethtrader-description": "트렌드 및 시장 분석",
-  "page-community-online-ethdev-description": "쿠앤타리움 개발에 집중",
   "page-community-online-members": "+{count} 멤버",
   "page-community-online-see-all": "모든 커뮤니티 보기",
   "page-community-conferences-title": "주요 블록체인 컨퍼런스",
@@ -53,5 +50,8 @@
   "page-community-voices-title": "쿠앤타리움의 목소리",
   "page-community-voices-subtitle": "쿠앤타리움 커뮤니티 멤버들이 네트워크가 그들의 삶에 어떤 변화를 가져왔는지 공유합니다.",
   "page-community-contribute-eyebrow": "오픈 소스 프로젝트",
-  "page-community-contribute-count": "{count}명 이상의 기여자"
+  "page-community-contribute-count": "{count}명 이상의 기여자",
+  "page-community-online-discord-description": "The main Quantaureum community chat: development, staking, support and announcements.",
+  "page-community-online-telegram-description": "Quantaureum on Telegram: news and community discussion.",
+  "page-community-online-x-description": "Follow @quantaureum for project updates and announcements."
 }

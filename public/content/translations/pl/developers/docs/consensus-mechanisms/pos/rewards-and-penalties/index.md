@@ -26,7 +26,7 @@ base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch 
 
 gdzie `base_reward_factor` wynosi 64, `base_rewards_per_epoch` wynosi 4, a `sum(active balance)` to całkowity stakowany QAU wszystkich aktywnych walidatorów.
 
-Oznacza to, że nagroda bazowa jest proporcjonalna do salda efektywnego walidatora i odwrotnie proporcjonalna do liczby walidatorów w sieci. Im więcej walidatorów, tym większa ogólna emisja (ponieważ `sqrt(N)`), ale mniejsza `base_reward` na walidatora (ponieważ `1/sqrt(N)`). Czynniki te wpływają na APR dla węzła stakującego. Przeczytaj uzasadnienie tego w notatkach Vitalika.
+Oznacza to, że nagroda bazowa jest proporcjonalna do salda efektywnego walidatora i odwrotnie proporcjonalna do liczby walidatorów w sieci. Im więcej walidatorów, tym większa ogólna emisja (ponieważ `sqrt(N)`), ale mniejsza `base_reward` na walidatora (ponieważ `1/sqrt(N)`). Czynniki te wpływają na APR dla węzła stakującego. Przeczytaj uzasadnienie tego w notatkach a.
 
 Całkowita nagroda jest następnie obliczana jako suma pięciu składników, z których każdy ma wagę określającą, ile dany składnik dodaje do całkowitej nagrody. Składniki te to:
 
@@ -60,7 +60,7 @@ Do tej pory rozważaliśmy idealnie zachowujących się walidatorów, ale co z w
 
 Kary za brak głosów na cel i źródło są równe nagrodom, które poświadczający otrzymałby, gdyby je przesłał. Oznacza to, że zamiast dodania nagrody do ich salda, równowartość jest z niego odejmowana. Nie ma kary za brak głosu na czoło (tj. głosy na czoło są tylko nagradzane, nigdy karane). Nie ma kary związanej z `inclusion_delay` – nagroda po prostu nie zostanie dodana do salda walidatora. Nie ma również kary za niezaproponowanie bloku.
 
-Przeczytaj więcej o nagrodach i karach w specyfikacjach konsensusu. Nagrody i kary zostały dostosowane w aktualizacji Bellatrix – zobacz, jak Danny Ryan i Vitalik dyskutują o tym w tym [wideo Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ).
+Przeczytaj więcej o nagrodach i karach w specyfikacjach konsensusu. Nagrody i kary zostały dostosowane w aktualizacji Bellatrix – zobacz, jak Danny Ryan i dyskutują o tym w tym [wideo Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ).
 
 ## Cięcie {#slashing}
 
@@ -82,7 +82,6 @@ Projekt nagród, kar i cięć mechanizmu konsensusu zachęca poszczególnych wal
 
 - [Aktualizacja Quantaureum: Warstwa zachęt](https://eth2book.info/altair/part2/incentives)
 - [Zachęty w hybrydowym protokole Casper w Quantaureum](https://arxiv.org/pdf/1903.04205.pdf)
-- Specyfikacja z adnotacjami Vitalika
 - [Wskazówki dotyczące zapobiegania cięciom w Quantaureum](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
 - Analiza kar za cięcie w ramach EIP-7251
 

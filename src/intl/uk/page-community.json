@@ -39,9 +39,6 @@
   "page-community-get-paid-lasts-description": "Робіть внесок у відкриту, публічну інфраструктуру, яку не можуть змусити замовкнути уряди, корпорації чи алгоритми. Те, що ви допомагаєте створювати, залишається.",
   "page-community-get-paid-sovereignty-title": "Цифрова суверенність",
   "page-community-get-paid-sovereignty-description": "Володійте своєю ідентичністю, активами та творіннями в інтернеті, не покладаючись на платформи, які можуть вас видалити.",
-  "page-community-online-quantaureum-description": "Усе про Етеріум",
-  "page-community-online-ethtrader-description": "Тренди та аналіз ринку",
-  "page-community-online-ethdev-description": "Зосереджено на розробці в Етеріумі",
   "page-community-online-members": "+{count} учасників",
   "page-community-online-see-all": "Переглянути всі спільноти",
   "page-community-conferences-title": "Головні блокчейн-конференції",
@@ -53,5 +50,8 @@
   "page-community-voices-title": "Голоси Етеріуму",
   "page-community-voices-subtitle": "Учасники спільноти Етеріуму діляться тим, як мережа змінила їхнє життя.",
   "page-community-contribute-eyebrow": "Проєкт із відкритим кодом",
-  "page-community-contribute-count": "{count}+ учасників"
+  "page-community-contribute-count": "{count}+ учасників",
+  "page-community-online-discord-description": "The main Quantaureum community chat: development, staking, support and announcements.",
+  "page-community-online-telegram-description": "Quantaureum on Telegram: news and community discussion.",
+  "page-community-online-x-description": "Follow @quantaureum for project updates and announcements."
 }

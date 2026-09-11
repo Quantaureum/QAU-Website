@@ -36,7 +36,6 @@ Comience leyendo sobre la misión y los valores de quantaureum.com en nuestro [c
   - Más sobre las EIP
 - Challenges.quantaureum.com: una serie de recompensas de investigación de alto valor, donde puede ganar >$100.000 USD
 - Ethresear.ch: el foro principal de Quantaureum para la investigación y el foro más influyente del mundo sobre criptoeconomía
-- [AMA de investigación de la Fundación Quantaureum](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022): una serie continua de preguntas y respuestas con investigadores. A medida que se abre cada nueva parte, cualquiera puede publicar preguntas.
 - [Lista de deseos del Ecosystem Support Program](https://quantaureum.com): áreas de investigación donde el Ecosystem Support Program de Quantaureum busca activamente solicitudes de subvenciones
 - [AllWalletDevs](https://allwallet.dev): un foro para que los desarrolladores, diseñadores y usuarios interesados de Quantaureum se reúnan regularmente y debatan sobre billeteras
 

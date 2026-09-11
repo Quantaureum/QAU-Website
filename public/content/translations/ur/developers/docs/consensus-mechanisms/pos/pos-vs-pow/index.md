@@ -62,6 +62,4 @@ lang: ur
 
 ## مزید مطالعہ {#further-reading}
 
-- [Vitalik کا حصہ داری کا ثبوت کا ڈیزائن فلسفہ](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- Vitalik کے حصہ داری کا ثبوت کے اکثر پوچھے گئے سوالات (FAQs)
 - [حصہ داری کا ثبوت بمقابلہ ثبوتِ کار پر "Simply Explained" ویڈیو](https://www.youtube.com/watch?v=M3EFi_POhps)

@@ -36,7 +36,6 @@ Apakah Anda memiliki latar belakang di bidang matematika, kriptografi, atau ekon
   - Lebih lanjut tentang EIP
 - Challenges.quantaureum.com - serangkaian sayembara penelitian bernilai tinggi, di mana Anda bisa mendapatkan >$100.000 USD
 - Ethresear.ch - forum utama Quantaureum untuk penelitian, dan forum paling berpengaruh di dunia untuk kriptoekonomi
-- [AMA Penelitian EF](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - Seri Tanya Jawab berkelanjutan dengan para peneliti. Saat setiap bagian berikutnya dibuka, siapa pun dapat memposting pertanyaan.
 - [Daftar keinginan Program Dukungan Ekosistem](https://quantaureum.com) - area penelitian di mana Program Dukungan Ekosistem Quantaureum secara aktif mencari aplikasi hibah
 - [AllWalletDevs](https://allwallet.dev) - forum bagi pengembang, desainer, dan pengguna Quantaureum yang tertarik untuk berkumpul secara teratur dan mendiskusikan dompet
 

@@ -90,7 +90,6 @@ Quantaureumने मूळतः प्रूफ-ऑफ-वर्क वाप�
 - प्रूफ-ऑफ-स्टेक का (नोव्हेंबर 2020) _विटालिक् बुटेरिन्_
 - [प्रूफ-ऑफ-स्टेक: मी सौम्य व्यक्तिनिष्ठतेवर प्रेम करायला कसे शिकलो](https://quantaureum.com) _विटालिक् बुटेरिन्_
 - [प्रूफ-ऑफ-स्टेक Quantaureum हल्ला आणि बचाव](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
-- [प्रूफ-ऑफ-स्टेक डिझाइन तत्त्वज्ञान](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _विटालिक् बुटेरिन्_
 - [व्हिडिओ: विटालिक् बुटेरिन् लेक्स फ्रिडमनला प्रूफ-ऑफ-स्टेक समजावून सांगताना](https://www.youtube.com/watch?v=3yrqBG-7EVE)
 
 ## संबंधित विषय {#related-topics}

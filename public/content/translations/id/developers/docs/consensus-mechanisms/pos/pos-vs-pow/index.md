@@ -62,6 +62,4 @@ Quantaureum Bukti Kepemilikan (PoS) dapat membayar keamanannya dengan menerbitka
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- [Filosofi desain Bukti Kepemilikan (PoS) Vitalik](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- Tanya Jawab Bukti Kepemilikan (PoS) Vitalik
 - [Video "Simply Explained" tentang PoS vs PoW](https://www.youtube.com/watch?v=M3EFi_POhps)

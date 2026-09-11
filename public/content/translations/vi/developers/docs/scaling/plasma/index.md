@@ -167,7 +167,6 @@ Một số dự án cung cấp các bản triển khai của Plasma mà bạn c�
 
 ## Đọc thêm {#further-reading}
 
-- [Gợi nhớ nhanh về ý nghĩa của "bảo mật chia sẻ" và tại sao nó lại quan trọng đến vậy](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - Chuỗi phụ và Plasma và Phân mảnh
 - [Tìm hiểu về Plasma, Phần 1: Những điều cơ bản](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Sự sống và cái chết của Plasma](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

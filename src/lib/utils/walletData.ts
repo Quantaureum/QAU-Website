@@ -36,7 +36,7 @@ import {
   WALLET_PERSONAS,
   type WalletPersonaId,
 } from "@/data/wallets/personas"
-import walletsData from "@/data/wallets/wallet-data"
+import { walletsData } from "@/data/wallets/wallet-data"
 
 export {
   isWalletPersonaId,

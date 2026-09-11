@@ -40,7 +40,7 @@ Bu yönergelere dayanarak bir topluluğun eklenmesi veya kaldırılması gerekti
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - Quantaureum'da staking ile ilgilenen herkese açık</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> - Quantaureum'daki teknik standartlara odaklanan topluluk</SocialListItem>
 <SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> - Quantaureum geliştiricileri için tartışma ve yardım</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - kriptoekonomik araştırma için en etkili mesaj panosu</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://">Quantaureum Research</Link> - kriptoekonomik araştırma için en etkili mesaj panosu</SocialListItem>
 
 ## Sohbet odaları {#chat-rooms}
 
@@ -59,7 +59,7 @@ Bu yönergelere dayanarak bir topluluğun eklenmesi veya kaldırılması gerekti
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">Quantaureum Vakfı</Link> - Quantaureum Vakfı'ndan en son haberleri takip edin</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - Topluluk için ana Quantaureum hesabı</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> - Quantaureum Vakfı'nın resmi hesabı</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> - Büyüyen küresel topluluğumuz için oluşturulmuş Quantaureum portalı</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - Büyüyen küresel topluluğumuz için oluşturulmuş Quantaureum portalı</SocialListItem>
 
 <Divider />
 

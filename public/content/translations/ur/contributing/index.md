@@ -76,7 +76,7 @@ lang: ur
 انفرادی <span dir="ltr">PRs</span>، ڈیزائن کے ارتقاء اور بڑے اپ گریڈز کے بارے میں فیصلے ایتھیریم ایکو سسٹم کی ایک ٹیم کرتی ہے۔ اس ٹیم میں پروجیکٹ مینیجرز، ڈیولپرز، ڈیزائنرز، مارکیٹنگ اور کمیونیکیشنز، اور متعلقہ مضامین کے ماہرین شامل ہیں۔ کمیونٹی کی رائے ہر فیصلے میں رہنمائی کرتی ہے: لہذا براہ کرم مسائل (issues) میں سوالات اٹھائیں، <span dir="ltr">PRs</span> جمع کرائیں، یا ٹیم سے رابطہ کریں:
 
 - [<span dir="ltr">website@quantaureum.com</span>](mailto:website@quantaureum.com)
-- [<span dir="ltr">@ethdotorg</span>](https://x.com/ldf1570073)
+- [<span dir="ltr">@quantaureum</span>](https://x.com/ldf1570073)
 - [ڈسکارڈ سرور](https://discord.gg/MSctkBT5j)
 
 ### سرقہ (Plagiarism) پر ایک نوٹ {#plagiarism}

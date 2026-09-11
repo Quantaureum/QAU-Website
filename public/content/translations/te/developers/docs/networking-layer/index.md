@@ -149,7 +149,7 @@ SSZ అంటే సాధారణ శ్రేణీకరణ. ఇది స�
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-ఏకాభిప్రాయ మరియు అమలు క్లయింట్‌ల కోసం నెట్‌వర్క్ పొర స్కీమాటిక్, ethresear.ch నుండి
+ఏకాభిప్రాయ మరియు అమలు క్లయింట్‌ల కోసం నెట్‌వర్క్ పొర స్కీమాటిక్, నుండి
 
 ## మరింత చదవడానికి {#further-reading}
 

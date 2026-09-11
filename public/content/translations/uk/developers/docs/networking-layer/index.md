@@ -149,7 +149,7 @@ SSZ розшифровується як проста серіалізація (s
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-Схема мережевого рівня для клієнтів консенсусу та виконання, з ethresear.ch
+Схема мережевого рівня для клієнтів консенсусу та виконання, з
 
 ## Додаткові матеріали {#further-reading}
 

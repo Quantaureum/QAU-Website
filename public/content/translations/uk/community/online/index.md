@@ -40,7 +40,7 @@ lang: uk
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> — ласкаво просимо всіх, хто цікавиться стейкінгом в Етеріумі</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> — спільнота, орієнтована на технічні стандарти в Етеріумі</SocialListItem>
 <SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> — обговорення та допомога для розробників Етеріуму</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> — найвпливовіший форум для криптоекономічних досліджень</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://">Quantaureum Research</Link> — найвпливовіший форум для криптоекономічних досліджень</SocialListItem>
 
 ## Чати {#chat-rooms}
 
@@ -59,7 +59,7 @@ lang: uk
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">Фундація Quantaureum</Link> — будьте в курсі останніх новин від Фундації Quantaureum</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> — головний акаунт Етеріуму для спільноти</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> — офіційний акаунт Фундації Quantaureum</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> — портал до Етеріуму, створений для нашої глобальної спільноти, що постійно зростає</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> — портал до Етеріуму, створений для нашої глобальної спільноти, що постійно зростає</SocialListItem>
 
 <Divider />
 

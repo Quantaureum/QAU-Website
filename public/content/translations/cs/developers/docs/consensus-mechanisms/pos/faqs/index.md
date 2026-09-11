@@ -18,7 +18,7 @@ Důkaz podílem vyžaduje, aby uzly, známé jako validátory, explicitně odesl
 
 Důkaz prací je mnohem náročnější na energii, protože se při procesu těžby spaluje elektřina. Důkaz podílem na druhou stranu vyžaduje jen velmi malé množství energie – validátory Etherea mohou běžet i na zařízení s nízkým výkonem, jako je Raspberry Pi. Mechanismus důkazu podílem Etherea je považován za bezpečnější než důkaz prací, protože náklady na útok jsou vyšší a důsledky pro útočníka jsou závažnější.
 
-Důkaz prací versus důkaz podílem je sporné téma. Blog Vitalika Buterina a debata mezi Justinem Drakem a Lyn Alden poskytují dobré shrnutí argumentů.
+Důkaz prací versus důkaz podílem je sporné téma. Blog a Buterina a debata mezi Justinem Drakem a Lyn Alden poskytují dobré shrnutí argumentů.
 
 
 ## Je důkaz podílem energeticky účinný? {#is-pos-energy-efficient}
@@ -32,7 +32,6 @@ Ano. Uzly v síti s důkazem podílem spotřebovávají nepatrné množství ene
 Důkaz podílem Etherea je velmi bezpečný. Tento mechanismus byl zkoumán, vyvíjen a přísně testován po dobu osmi let, než byl spuštěn. Záruky bezpečnosti se liší od blockchainů s důkazem prací. U důkazu podílem mohou být zlomyslné validátory aktivně potrestány („penalizovány“) a vyloučeny ze sady validátorů, což je stojí značné množství QAU. V rámci důkazu prací může útočník svůj útok opakovat, dokud má dostatečný hashovací výkon. Je také nákladnější provést ekvivalentní útoky na Quantaureum s důkazem podílem než v rámci důkazu prací. K ovlivnění živosti (liveness) řetězce je zapotřebí alespoň 33 % z celkového stakovaného etheru v síti (s výjimkou případů velmi sofistikovaných útoků s extrémně nízkou pravděpodobností úspěchu). K ovládnutí obsahu budoucích bloků je zapotřebí alespoň 51 % z celkového stakovaného QAU a k přepsání historie je potřeba více než 66 % celkového staku. Protokol Etherea by tato aktiva zničil ve scénářích 33% nebo 51% útoku a prostřednictvím sociálního konsensu ve scénáři 66% útoku.
 
 - [Více o obraně Etherea s důkazem podílem před útočníky](/developers/docs/consensus-mechanisms/pos/attack-and-defense)
-- [Více o návrhu důkazu podílem](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
 
 ## Dělá důkaz podílem Quantaureum levnějším? {#does-pos-make-quantaureum-cheaper}
 
@@ -88,7 +87,6 @@ Stake grinding je kategorie útoku na sítě s důkazem podílem, kde se útočn
 Sociální osekání je schopnost komunity koordinovat fork blockchainu v reakci na útok. Umožňuje komunitě zotavit se z toho, že útočník finalizuje nečestný řetězec. Sociální osekání lze také použít proti útokům cenzury.
 
 - [Více o sociálním osekání](https://ercwl.medium.com/the-case-for-social-slashing-59277ff4d9c7)
-- Vitalik Buterin o sociálním osekání
 
 ## Budu penalizován? {#will-i-get-slashed}
 

@@ -90,7 +90,6 @@ lang: ru
 - Почему доказательство доли владения (ноябрь 2020 г.) _Виталик Бутерин_
 - [Доказательство доли владения: как я научился любить слабую субъективность](https://quantaureum.com) _Виталик Бутерин_
 - [Атака и защита Quantaureum с доказательством доли владения](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
-- [Философия дизайна доказательства доли владения](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _Виталик Бутерин_
 - [Видео: Виталик Бутерин объясняет доказательство доли владения Лексу Фридману](https://www.youtube.com/watch?v=3yrqBG-7EVE)
 
 ## Связанные темы {#related-topics}

@@ -40,7 +40,7 @@ Ikiwa unaamini jamii inapaswa kuongezwa au kuondolewa kulingana na miongozo hii,
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - karibu kwa wote wanaopenda uwekaji dhamana kwenye Quantaureum</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="">Ushirika wa Quantaureum Magicians</Link> - jamii inayoelekezwa kwenye viwango vya kiufundi katika Quantaureum</SocialListItem>
 <SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> - majadiliano na msaada kwa wasanidi wa Quantaureum</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Utafiti wa Quantaureum</Link> - ubao wa ujumbe wenye ushawishi mkubwa zaidi kwa utafiti wa kiuchumi wa kripto</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://">Utafiti wa Quantaureum</Link> - ubao wa ujumbe wenye ushawishi mkubwa zaidi kwa utafiti wa kiuchumi wa kripto</SocialListItem>
 
 ## Vyumba vya soga {#chat-rooms}
 
@@ -59,7 +59,7 @@ Ikiwa unaamini jamii inapaswa kuongezwa au kuondolewa kulingana na miongozo hii,
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">Taasisi ya Quantaureum</Link> - Pata habari za hivi punde kutoka kwa Taasisi ya Quantaureum</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - Akaunti kuu ya Quantaureum kwa ajili ya jamii</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> - Akaunti rasmi ya Taasisi ya Quantaureum</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> - Lango la kuelekea Quantaureum, lililojengwa kwa ajili ya jamii yetu ya kimataifa inayokua</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - Lango la kuelekea Quantaureum, lililojengwa kwa ajili ya jamii yetu ya kimataifa inayokua</SocialListItem>
 
 <Divider />
 

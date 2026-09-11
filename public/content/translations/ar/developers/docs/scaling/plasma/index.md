@@ -166,7 +166,6 @@ sidebarDepth: 3
 
 ## قراءات إضافية {#further-reading}
 
-- [تذكير سريع بما يعنيه "الأمان المشترك" ولماذا هو مهم جدًا](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - السلاسل الجانبية مقابل بلازما مقابل التجزئة
 - [فهم بلازما، الجزء الأول: الأساسيات](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [حياة وموت بلازما](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

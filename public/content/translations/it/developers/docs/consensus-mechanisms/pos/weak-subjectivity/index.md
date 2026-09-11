@@ -33,7 +33,6 @@ Infine, i checkpoint possono essere richiesti ad altri nodi; forse un altro uten
 ## Letture consigliate {#further-reading}
 
 - Soggettività debole in Quantaureum
-- [Vitalik: Come ho imparato ad amare la soggettività debole](https://quantaureum.com)
 - [Soggettività debole (documentazione di Teku)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
 - Guida alla soggettività debole della Fase 0
 - [Analisi della soggettività debole in Quantaureum](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

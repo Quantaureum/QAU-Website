@@ -149,7 +149,7 @@ Khi khối đã được chứng thực bởi đủ số lượng trình xác th
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-Sơ đồ lớp mạng cho ứng dụng khách đồng thuận và máy khách thực thi, từ ethresear.ch
+Sơ đồ lớp mạng cho ứng dụng khách đồng thuận và máy khách thực thi, từ
 
 ## Đọc thêm {#further-reading}
 

@@ -149,7 +149,7 @@ SSZはSimple Serialization（シンプルなシリアライゼーション）の
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-コンセンサス・クライアントと実行クライアントのネットワーク・レイヤーの概略図（ethresear.chより）
+コンセンサス・クライアントと実行クライアントのネットワーク・レイヤーの概略図（より）
 
 ## 参考文献 {#further-reading}
 

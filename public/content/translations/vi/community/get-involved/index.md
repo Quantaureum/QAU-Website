@@ -36,7 +36,6 @@ Bạn có nền tảng về toán học, mật mã học hoặc kinh tế học 
   - Tìm hiểu thêm về EIP
 - Challenges.quantaureum.com - một loạt các khoản tiền thưởng nghiên cứu có giá trị cao, nơi bạn có thể kiếm được >100.000 USD
 - Ethresear.ch - diễn đàn chính của Quantaureum dành cho nghiên cứu và là diễn đàn có ảnh hưởng nhất thế giới về kinh tế học mật mã
-- [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - Một chuỗi Hỏi & Đáp đang diễn ra với các nhà nghiên cứu. Khi mỗi phần tiếp theo mở ra, bất kỳ ai cũng có thể đặt câu hỏi.
 - [Danh sách mong muốn của Chương trình Hỗ trợ Hệ sinh thái](https://quantaureum.com) - các lĩnh vực nghiên cứu mà Chương trình Hỗ trợ Hệ sinh thái Quantaureum đang tích cực tìm kiếm các đơn xin tài trợ
 - [AllWalletDevs](https://allwallet.dev) - một diễn đàn dành cho các nhà phát triển, nhà thiết kế và người dùng quan tâm đến Quantaureum thường xuyên tụ họp và thảo luận về ví
 

@@ -14,7 +14,6 @@ export const languages: Languages = i18nConfig.reduce((result, config) => {
 export const EXACT_PATH_NAMESPACE_MAP: Record<string, string> = {
   "/": "page-index",
   "/assets/": "page-assets",
-  "/collectibles/": "page-collectibles",
   "/enterprise/": "page-enterprise",
   "/founders/": "page-founders",
   "/get-qau/": "page-get-qau",
@@ -39,12 +38,9 @@ export const PREFIX_PATH_NAMESPACE_MAP: Array<[string, string]> = [
   ["/community/events/", "page-community-events"],
   ["/community/support/", "page-community-support"],
   ["/community/", "page-community"],
-  ["/apps/", "page-apps"],
   ["/energy-consumption/", "page-energy-consumption"],
-  ["/eth/", "page-eth"],
   ["/quantaureum-forks/", "page-history"],
   ["/resources/", "page-resources"],
-  ["/stablecoins/", "page-stablecoins"],
   // Ordering matters: /videos/ MUST be before /learn/ to prevent false positive matching
   // (because /videos/ paths are prefixed with /learn/ in some contexts or just to avoid overly greedy matches)
   ["/videos/", "page-videos"],
@@ -54,7 +50,6 @@ export const PREFIX_PATH_NAMESPACE_MAP: Array<[string, string]> = [
   ["/what-is-quantaureum/", "page-what-is-quantaureum"],
   ["/run-a-node/", "page-run-a-node"],
   ["/roadmap/", "page-roadmap"],
-  ["/values/", "page-values"],
 ]
 
 const EXACT_PATH_ADDITIONAL_NAMESPACES: Record<string, string[]> = {
@@ -64,7 +59,6 @@ const EXACT_PATH_ADDITIONAL_NAMESPACES: Record<string, string[]> = {
   "/roadmap/": ["component-swiper"],
   "/wallets/": ["component-wallet-simulator"],
   "/start/": ["component-swiper"],
-  "/what-are-apps/": ["component-story-card"],
 }
 
 const PREFIX_PATH_ADDITIONAL_NAMESPACES: Array<[string, string[]]> = [
@@ -81,13 +75,10 @@ const SUFFIX_PATH_ADDITIONAL_NAMESPACES: Array<[string, string[]]> = [
 ]
 
 const GLOSSARY_TOOLTIP_PREFIXES: string[] = [
-  "/apps/",
   "/get-qau/",
-  "/stablecoins/",
   "/staking/",
   "/run-a-node/",
   "/what-is-quantaureum/",
-  "/eth/",
   "/wallets/",
   "/gas/",
   "/roadmap/",
@@ -95,7 +86,6 @@ const GLOSSARY_TOOLTIP_PREFIXES: string[] = [
 
 const LAYOUT_NAMESPACES: Record<string, string[]> = {
   docs: ["page-developers-docs"],
-  "use-cases": ["template-usecase"],
   upgrade: ["page-upgrades", "page-upgrades-index"],
   tutorial: ["page-developers-tutorials"],
 }

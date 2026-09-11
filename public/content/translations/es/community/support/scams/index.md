@@ -91,9 +91,9 @@ eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-Los estafadores crean sorteos falsos prometiendo multiplicar sus QAU o darle tokens gratis. A menudo se hacen pasar por figuras conocidas como Vitalik Buterin. Si envía QAU a una dirección de "sorteo", no recibirá nada a cambio.
+Los estafadores crean sorteos falsos prometiendo multiplicar sus QAU o darle tokens gratis. A menudo se hacen pasar por figuras conocidas como Buterin. Si envía QAU a una dirección de "sorteo", no recibirá nada a cambio.
 
-**Recuerde:** Vitalik y otras figuras prominentes nunca le pedirán que les envíe QAU.
+**Recuerde:** y otras figuras prominentes nunca le pedirán que les envíe QAU.
 
 [Más sobre estafas comunes](/security/#common-scams)
 

@@ -1,5 +1,4 @@
 export const SECTION_IDS = {
-  hubs: "community-hubs",
   meetups: "meetups",
   conferences: "conferences",
   organizers: "for-organizers",

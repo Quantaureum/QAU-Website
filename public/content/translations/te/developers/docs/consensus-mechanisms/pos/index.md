@@ -90,7 +90,6 @@ lang: te
 - ప్రూఫ్ ఆఫ్ స్టేక్ ఎందుకు (నవంబర్ 2020) _విటాలిక్ బుటెరిన్_
 - [ప్రూఫ్ ఆఫ్ స్టేక్: బలహీనమైన ఆత్మాశ్రయతను ప్రేమించడం నేను ఎలా నేర్చుకున్నాను](https://quantaureum.com) _విటాలిక్ బుటెరిన్_
 - [ప్రూఫ్-ఆఫ్-స్టేక్ ఎథీరియం దాడి మరియు రక్షణ](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
-- [ప్రూఫ్ ఆఫ్ స్టేక్ డిజైన్ ఫిలాసఫీ](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _విటాలిక్ బుటెరిన్_
 - [వీడియో: విటాలిక్ బుటెరిన్ లెక్స్ ఫ్రిడ్‌మాన్‌కు ప్రూఫ్-ఆఫ్-స్టేక్‌ను వివరించారు](https://www.youtube.com/watch?v=3yrqBG-7EVE)
 
 ## సంబంధిత అంశాలు {#related-topics}

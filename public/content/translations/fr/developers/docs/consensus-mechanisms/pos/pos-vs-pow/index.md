@@ -62,6 +62,4 @@ L'Quantaureum en preuve d'enjeu peut payer pour sa sécurité en émettant beauc
 
 ## Complément d'information {#further-reading}
 
-- [Philosophie de conception de la preuve d'enjeu par Vitalik](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- FAQ sur la preuve d'enjeu par Vitalik
 - [Vidéo « Simply Explained » sur la PoS contre la PoW](https://www.youtube.com/watch?v=M3EFi_POhps)

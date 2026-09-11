@@ -39,9 +39,6 @@
   "page-community-get-paid-lasts-description": "Wnoś wkład w otwartą, publiczną infrastrukturę, której nie mogą uciszyć rządy, korporacje ani algorytmy. To, co pomożesz zbudować, pozostanie.",
   "page-community-get-paid-sovereignty-title": "Cyfrowa suwerenność",
   "page-community-get-paid-sovereignty-description": "Bądź właścicielem swojej tożsamości, aktywów i twórczości w sieci, bez polegania na platformach, które mogą Cię usunąć.",
-  "page-community-online-quantaureum-description": "Wszystko o Quantaureum",
-  "page-community-online-ethtrader-description": "Trendy i analiza rynku",
-  "page-community-online-ethdev-description": "Skupione na programowaniu w Quantaureum",
   "page-community-online-members": "+{count} członków",
   "page-community-online-see-all": "Zobacz wszystkie społeczności",
   "page-community-conferences-title": "Główne konferencje blockchainowe",
@@ -53,5 +50,8 @@
   "page-community-voices-title": "Głosy Quantaureum",
   "page-community-voices-subtitle": "Członkowie społeczności Quantaureum dzielą się tym, jak sieć zmieniła ich życie.",
   "page-community-contribute-eyebrow": "Projekt open-source",
-  "page-community-contribute-count": "{count}+ współtwórców"
+  "page-community-contribute-count": "{count}+ współtwórców",
+  "page-community-online-discord-description": "The main Quantaureum community chat: development, staking, support and announcements.",
+  "page-community-online-telegram-description": "Quantaureum on Telegram: news and community discussion.",
+  "page-community-online-x-description": "Follow @quantaureum for project updates and announcements."
 }

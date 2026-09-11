@@ -166,7 +166,6 @@ ZK-ролапи та оптимістичні ролапи вирішують п
 
 ## Додаткова література {#further-reading}
 
-- [Коротке нагадування про те, що означає «спільна безпека» і чому це так важливо](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - Сайдчейни проти Плазми та шардингу
 - [Розуміння Плазми, частина 1: Основи](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Життя та смерть Плазми](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

@@ -103,7 +103,7 @@ Una versión de alto perfil de esto ocurrió en julio de 2020, cuando las cuenta
 
 El sorteo de celebridades es otra forma común que toma la estafa de sorteos. Los estafadores tomarán una entrevista en video grabada o una charla de conferencia dada por una celebridad y la transmitirán en vivo en YouTube, haciendo que parezca que la celebridad estaba dando una entrevista en video en vivo respaldando un sorteo de criptomonedas.
 
-Vitalik Buterin se usa con mayor frecuencia en esta estafa, pero también se usan muchas otras personas prominentes involucradas en las cripto (por ejemplo, Elon Musk o Charles Hoskinson). Incluir a una persona conocida le da a la transmisión en vivo de los estafadores un sentido de legitimidad (¡esto parece sospechoso, pero Vitalik está involucrado, así que debe estar bien!).
+Buterin se usa con mayor frecuencia en esta estafa, pero también se usan muchas otras personas prominentes involucradas en las cripto (por ejemplo, Elon Musk o Charles Hoskinson). Incluir a una persona conocida le da a la transmisión en vivo de los estafadores un sentido de legitimidad (¡esto parece sospechoso, pero está involucrado, así que debe estar bien!).
 
 **Los sorteos siempre son estafas. Si envías tus fondos a estas cuentas, los perderás para siempre.**
 

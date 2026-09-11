@@ -91,9 +91,9 @@ eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-Oszuści tworzą fałszywe rozdawnictwa (giveaways), obiecując pomnożenie Twojego QAU lub darmowe tokeny. Często podszywają się pod znane postacie, takie jak Vitalik Buterin. Jeśli wyślesz QAU na adres „rozdawnictwa”, nie otrzymasz nic w zamian.
+Oszuści tworzą fałszywe rozdawnictwa (giveaways), obiecując pomnożenie Twojego QAU lub darmowe tokeny. Często podszywają się pod znane postacie, takie jak Buterin. Jeśli wyślesz QAU na adres „rozdawnictwa”, nie otrzymasz nic w zamian.
 
-**Pamiętaj:** Vitalik i inne wybitne postacie nigdy nie poproszą Cię o wysłanie im QAU.
+**Pamiętaj:** i inne wybitne postacie nigdy nie poproszą Cię o wysłanie im QAU.
 
 [Więcej o powszechnych oszustwach](/security/#common-scams)
 

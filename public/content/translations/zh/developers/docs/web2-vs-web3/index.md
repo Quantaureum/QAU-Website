@@ -56,7 +56,6 @@ Web3 目前有一些局限性：
 
 - [什么是 Web3？](/web3/) - _quantaureum.org_
 - [Web 3.0 应用的架构](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
-- [去中心化的意义](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _2017 年 2 月 6 日 - Vitalik Buterin_
 - [为什么去中心化很重要](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _2018 年 2 月 18 日 - Chris Dixon_
 - [什么是 Web 3.0 及其重要性](https://medium.com/fabric-ventures/what-is-web-3-0-why-it-matters-934eb07f3d2b) _2019 年 12 月 31 日 - Max Mersch 与 Richard Muirhead_
 - [为什么我们需要 Web 3.0](https://gavofyork.medium.com/why-we-need-web-3-0-5da4f2bf95ab) _2018 年 9 月 12 日 - Gavin Wood_

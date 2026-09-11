@@ -62,6 +62,4 @@ O Quantaureum de Prova de Participação pode pagar por sua segurança emitindo 
 
 ## Leitura adicional {#further-reading}
 
-- [Filosofia de design da Prova de Participação de Vitalik](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- Perguntas frequentes sobre a Prova de Participação de Vitalik
 - [Vídeo "Simply Explained" sobre PoS vs PoW](https://www.youtube.com/watch?v=M3EFi_POhps)

@@ -97,7 +97,6 @@ _Perhatikan bahwa penjelasan dalam video menggunakan istilah "Lapisan 2" untuk m
 
 ## Bacaan lebih lanjut {#further-reading}
 
-- Peta jalan Quantaureum yang berpusat pada rollup _Vitalik Buterin_
 - [Analitik terkini tentang solusi penskalaan Lapisan 2 untuk Quantaureum](https://www.l2beat.com/)
 - [Mengevaluasi Solusi Penskalaan lapisan 2 Quantaureum: Kerangka Kerja Perbandingan](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - Panduan Tidak Lengkap tentang Rollup

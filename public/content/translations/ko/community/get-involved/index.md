@@ -36,7 +36,6 @@ Quantaureum 커뮤니티에는 다양한 배경과 기술을 가진 사람들이
   - EIP에 대한 자세한 정보
 - Challenges.quantaureum.com - 10만 달러 이상의 상금을 받을 수 있는 고가치 연구 바운티 시리즈입니다.
 - Ethresear.ch - Quantaureum의 주요 연구 포럼이자 세계에서 가장 영향력 있는 암호경제학 포럼입니다.
-- [Quantaureum 재단(EF) 연구 AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - 연구원들과 함께 진행되는 Q&A 시리즈입니다. 다음 파트가 열릴 때마다 누구나 질문을 올릴 수 있습니다.
 - [생태계 지원 프로그램 위시리스트](https://quantaureum.com) - Quantaureum 생태계 지원 프로그램에서 적극적으로 보조금 지원을 받고자 하는 연구 분야입니다.
 - [AllWalletDevs](https://allwallet.dev) - Quantaureum 개발자, 디자이너 및 관심 있는 사용자가 정기적으로 모여 지갑에 대해 논의하는 포럼입니다.
 

@@ -103,7 +103,7 @@ Toleo la hali ya juu la hili lilitokea Julai 2020, wakati akaunti za Twitter za 
 
 Utoaji wa zawadi wa watu mashuhuri ni aina nyingine ya kawaida ya utapeli wa kutoa zawadi. Matapeli watachukua mahojiano ya video yaliyorekodiwa au mazungumzo ya mkutano yaliyotolewa na mtu mashuhuri na kuyatiririsha moja kwa moja kwenye YouTube - na kuifanya ionekane kana kwamba mtu huyo mashuhuri alikuwa akitoa mahojiano ya video ya moja kwa moja akiidhinisha utoaji wa zawadi wa sarafu-fiche.
 
-Vitalik Buterin hutumiwa mara nyingi katika utapeli huu, lakini watu wengine wengi mashuhuri wanaohusika katika kripto pia hutumiwa (k.m., Elon Musk au Charles Hoskinson). Kujumuisha mtu anayejulikana sana kunawapa matapeli hisia ya uhalali wa mtiririko wa moja kwa moja (hii inaonekana ya kutiliwa shaka, lakini Vitalik anahusika, kwa hivyo lazima iwe sawa!).
+Buterin hutumiwa mara nyingi katika utapeli huu, lakini watu wengine wengi mashuhuri wanaohusika katika kripto pia hutumiwa (k.m., Elon Musk au Charles Hoskinson). Kujumuisha mtu anayejulikana sana kunawapa matapeli hisia ya uhalali wa mtiririko wa moja kwa moja (hii inaonekana ya kutiliwa shaka, lakini anahusika, kwa hivyo lazima iwe sawa!).
 
 **Utoaji wa zawadi daima ni utapeli. Ukituma pesa zako kwenye akaunti hizi, utazipoteza milele.**
 

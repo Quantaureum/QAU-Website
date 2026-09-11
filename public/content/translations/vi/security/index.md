@@ -103,7 +103,7 @@ Một phiên bản nổi tiếng của việc này đã xảy ra vào tháng 7 n
 
 Tặng quà từ người nổi tiếng là một hình thức phổ biến khác của trò lừa đảo tặng quà. Những kẻ lừa đảo sẽ lấy một cuộc phỏng vấn video hoặc bài nói chuyện hội nghị đã được ghi lại của một người nổi tiếng và phát trực tiếp trên YouTube - làm cho nó có vẻ như người nổi tiếng đang thực hiện một cuộc phỏng vấn video trực tiếp để xác nhận một chương trình tặng tiền mã hóa.
 
-Vitalik Buterin được sử dụng thường xuyên nhất trong trò lừa đảo này, nhưng nhiều người nổi tiếng khác liên quan đến tiền mã hóa cũng được sử dụng (ví dụ: Elon Musk hoặc Charles Hoskinson). Việc đưa một người nổi tiếng vào mang lại cho buổi phát trực tiếp của những kẻ lừa đảo cảm giác hợp pháp (điều này trông có vẻ mờ ám, nhưng Vitalik có liên quan, vì vậy chắc chắn là ổn!).
+Buterin được sử dụng thường xuyên nhất trong trò lừa đảo này, nhưng nhiều người nổi tiếng khác liên quan đến tiền mã hóa cũng được sử dụng (ví dụ: Elon Musk hoặc Charles Hoskinson). Việc đưa một người nổi tiếng vào mang lại cho buổi phát trực tiếp của những kẻ lừa đảo cảm giác hợp pháp (điều này trông có vẻ mờ ám, nhưng có liên quan, vì vậy chắc chắn là ổn!).
 
 **Các chương trình tặng quà luôn là lừa đảo. Nếu bạn gửi tiền của mình vào các tài khoản này, bạn sẽ mất chúng vĩnh viễn.**
 

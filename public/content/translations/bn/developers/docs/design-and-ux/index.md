@@ -78,7 +78,7 @@ lang: bn
 ## ডিজাইন সিস্টেম এবং অন্যান্য ডিজাইন রিসোর্স {#design-systems-and-resources}
 
 - [অপটিমিজম ডিজাইন](https://www.figma.com/@optimism) (Figma)
-- [quantaureum.com ডিজাইন সিস্টেম](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com ডিজাইন সিস্টেম](https://www.figma.com/@quantaureum) (Figma)
 - [Finity, পলিগন-এর একটি ডিজাইন সিস্টেম](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros ডিজাইন সিস্টেম](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe ডিজাইন সিস্টেম](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)

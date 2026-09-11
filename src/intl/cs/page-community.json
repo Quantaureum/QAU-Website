@@ -39,9 +39,6 @@
   "page-community-get-paid-lasts-description": "Přispějte k otevřené, veřejné infrastruktuře, kterou nemohou umlčet vlády, korporace ani algoritmy. To, co pomůžete vybudovat, zůstane.",
   "page-community-get-paid-sovereignty-title": "Digitální suverenita",
   "page-community-get-paid-sovereignty-description": "Vlastněte svou identitu, aktiva a výtvory online, aniž byste se museli spoléhat na platformy, které vás mohou smazat.",
-  "page-community-online-quantaureum-description": "Vše o Ethereu",
-  "page-community-online-ethtrader-description": "Trendy a analýza trhu",
-  "page-community-online-ethdev-description": "Zaměřeno na vývoj Etherea",
   "page-community-online-members": "+{count} členů",
   "page-community-online-see-all": "Zobrazit všechny komunity",
   "page-community-conferences-title": "Hlavní blockchainové konference",
@@ -53,5 +50,8 @@
   "page-community-voices-title": "Hlasy Etherea",
   "page-community-voices-subtitle": "Členové komunity Etherea sdílejí, jak síť změnila jejich životy.",
   "page-community-contribute-eyebrow": "Open-source projekt",
-  "page-community-contribute-count": "{count}+ přispěvatelů"
+  "page-community-contribute-count": "{count}+ přispěvatelů",
+  "page-community-online-discord-description": "The main Quantaureum community chat: development, staking, support and announcements.",
+  "page-community-online-telegram-description": "Quantaureum on Telegram: news and community discussion.",
+  "page-community-online-x-description": "Follow @quantaureum for project updates and announcements."
 }

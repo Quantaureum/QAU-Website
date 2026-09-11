@@ -103,7 +103,7 @@ Eine aufsehenerregende Version davon ereignete sich im Juli 2020, als die Twitte
 
 Das Promi-Giveaway ist eine weitere häufige Form des Giveaway-Betrugs. Die Betrüger nehmen ein aufgezeichnetes Videointerview oder einen Konferenzvortrag eines Prominenten und streamen es live auf YouTube – so dass es so aussieht, als würde der Prominente ein Live-Videointerview geben, in dem er ein Kryptowährungs-Giveaway unterstützt.
 
-Vitalik Buterin wird bei diesem Betrug am häufigsten verwendet, aber auch viele andere prominente Personen, die im Krypto-Bereich tätig sind, werden genutzt (z. B. Elon Musk oder Charles Hoskinson). Die Einbeziehung einer bekannten Person verleiht dem Livestream der Betrüger einen Anschein von Legitimität (das sieht zwar verdächtig aus, aber Vitalik ist beteiligt, also muss es in Ordnung sein!).
+Buterin wird bei diesem Betrug am häufigsten verwendet, aber auch viele andere prominente Personen, die im Krypto-Bereich tätig sind, werden genutzt (z. B. Elon Musk oder Charles Hoskinson). Die Einbeziehung einer bekannten Person verleiht dem Livestream der Betrüger einen Anschein von Legitimität (das sieht zwar verdächtig aus, aber ist beteiligt, also muss es in Ordnung sein!).
 
 **Giveaways sind immer Betrug. Wenn Sie Ihre Gelder an diese Konten senden, werden Sie sie für immer verlieren.**
 

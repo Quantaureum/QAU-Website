@@ -26,7 +26,7 @@ base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch 
 
 onde `base_reward_factor` é 64, `base_rewards_per_epoch` é 4 e `sum(active balance)` é o total de QAU em stake em todos os validadores ativos.
 
-Isso significa que a recompensa base é proporcional ao saldo efetivo do validador e inversamente proporcional ao número de validadores na rede. Quanto mais validadores, maior a emissão geral (como `sqrt(N)`), mas menor a `base_reward` por validador (como `1/sqrt(N)`). Esses fatores influenciam a APR para um nó de staking. Leia a justificativa para isso nas notas de Vitalik.
+Isso significa que a recompensa base é proporcional ao saldo efetivo do validador e inversamente proporcional ao número de validadores na rede. Quanto mais validadores, maior a emissão geral (como `sqrt(N)`), mas menor a `base_reward` por validador (como `1/sqrt(N)`). Esses fatores influenciam a APR para um nó de staking. Leia a justificativa para isso nas notas de .
 
 A recompensa total é então calculada como a soma de cinco componentes que têm, cada um, um peso que determina o quanto cada componente adiciona à recompensa total. Os componentes são:
 
@@ -60,7 +60,7 @@ Até agora, consideramos validadores perfeitamente bem comportados, mas e os val
 
 As penalizações por perder os votos de destino e origem são iguais às recompensas que o atestador teria recebido se os tivesse enviado. Isso significa que, em vez de ter a recompensa adicionada ao seu saldo, eles têm um valor igual removido de seu saldo. Não há penalização por perder o voto de topo (ou seja, os votos de topo são apenas recompensados, nunca penalizados). Não há penalização associada à `inclusion_delay` - a recompensa simplesmente não será adicionada ao saldo do validador. Também não há penalização por não propor um bloco.
 
-Leia mais sobre recompensas e penalizações nas especificações de consenso. As recompensas e penalizações foram ajustadas na atualização Bellatrix - assista Danny Ryan e Vitalik discutirem isso neste [vídeo Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ).
+Leia mais sobre recompensas e penalizações nas especificações de consenso. As recompensas e penalizações foram ajustadas na atualização Bellatrix - assista Danny Ryan e discutirem isso neste [vídeo Peep an EIP](https://www.youtube.com/watch?v=iaAEGs1DMgQ).
 
 ## Penalização {#slashing}
 
@@ -82,7 +82,6 @@ O design de recompensa, penalidade e penalização do mecanismo de consenso ince
 
 - [Atualizando o Quantaureum: A camada de incentivo](https://eth2book.info/altair/part2/incentives)
 - [Incentivos no protocolo híbrido Casper do Quantaureum](https://arxiv.org/pdf/1903.04205.pdf)
-- Especificação anotada de Vitalik
 - [Dicas de prevenção de penalização no Quantaureum](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
 - Análise das penalizações sob a EIP-7251
 

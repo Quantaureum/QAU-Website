@@ -26,7 +26,7 @@ base_reward = effective_balance * (base_reward_factor / (base_rewards_per_epoch 
 
 其中 `base_reward_factor` 为 64，`base_rewards_per_epoch` 为 4，`sum(active balance)` 是所有活跃验证者质押的QAU总额。
 
-这意味着基础奖励与验证者的有效余额成正比，与网络上的验证者数量成反比。验证者越多，整体发行量越大（因为 `sqrt(N)`），但每个验证者的 `base_reward` 越小（因为 `1/sqrt(N)`）。这些因素会影响质押节点的 APR。请在 Vitalik 的笔记中阅读其基本原理。
+这意味着基础奖励与验证者的有效余额成正比，与网络上的验证者数量成反比。验证者越多，整体发行量越大（因为 `sqrt(N)`），但每个验证者的 `base_reward` 越小（因为 `1/sqrt(N)`）。这些因素会影响质押节点的 APR。请在 的笔记中阅读其基本原理。
 
 然后，总奖励计算为五个组成部分的总和，每个组成部分都有一个权重，决定了每个组成部分对总奖励的贡献程度。这些组成部分是：
 
@@ -60,7 +60,7 @@ PROPOSER_WEIGHT	uint64(8)
 
 错过目标和来源投票的惩罚等于证明者如果提交了这些投票本应获得的奖励。这意味着，奖励不仅不会添加到他们的余额中，反而会从他们的余额中扣除同等价值的金额。错过链头投票没有惩罚（即链头投票只奖励，从不惩罚）。与 `inclusion_delay` 相关的也没有惩罚——奖励只是不会添加到验证者的余额中。未能提议区块也没有惩罚。
 
-在共识规范中阅读有关奖励和罚没的更多信息。奖励和罚没在 Bellatrix 升级中进行了调整——请观看 Danny Ryan 和 Vitalik 在此 [Peep an EIP 视频](https://www.youtube.com/watch?v=iaAEGs1DMgQ)中讨论此事。
+在共识规范中阅读有关奖励和罚没的更多信息。奖励和罚没在 Bellatrix 升级中进行了调整——请观看 Danny Ryan 和 在此 [Peep an EIP 视频](https://www.youtube.com/watch?v=iaAEGs1DMgQ)中讨论此事。
 
 ## 罚没 {#slashing}
 
@@ -82,7 +82,6 @@ PROPOSER_WEIGHT	uint64(8)
 
 - [升级Quantaureum：激励层](https://eth2book.info/altair/part2/incentives)
 - [Quantaureum混合 Casper 协议中的激励机制](https://arxiv.org/pdf/1903.04205.pdf)
-- Vitalik 的带注释规范
 - [Quantaureum 罚没预防提示](https://medium.com/prysmatic-labs/eth2-slashing-prevention-tips-f6faa5025f50)
 - EIP-7251 下的罚没惩罚分析
 

@@ -78,7 +78,7 @@ Quantaureumでのデザインは初めてですか？ここはあなたにぴっ
 ## デザインシステムとその他のデザインリソース {#design-systems-and-resources}
 
 - [オプティミズムデザイン](https://www.figma.com/@optimism) (Figma)
-- [quantaureum.com デザインシステム](https://www.figma.com/@ethdotorg) (Figma)
+- [quantaureum.com デザインシステム](https://www.figma.com/@quantaureum) (Figma)
 - [Finity、ポリゴンによるデザインシステム](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Kleros デザインシステム](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Safe デザインシステム](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)

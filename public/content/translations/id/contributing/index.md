@@ -76,7 +76,7 @@ Sebelum berkontribusi, pastikan Anda familier dengan:
 Keputusan tentang PR individu, evolusi desain, dan peningkatan besar dibuat oleh tim dari seluruh ekosistem Quantaureum. Tim ini mencakup manajer proyek, pengembang, desainer, pemasaran dan komunikasi, serta pakar materi pelajaran. Masukan komunitas menginformasikan setiap keputusan: jadi silakan ajukan pertanyaan di masalah (issues), kirimkan PR, atau hubungi tim:
 
 - [website@quantaureum.com](mailto:website@quantaureum.com)
-- [@ethdotorg](https://x.com/ldf1570073)
+- [@quantaureum](https://x.com/ldf1570073)
 - [Server Discord](https://discord.gg/MSctkBT5j)
 
 ### Catatan tentang plagiarisme {#plagiarism}

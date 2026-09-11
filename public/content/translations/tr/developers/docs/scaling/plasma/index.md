@@ -166,7 +166,6 @@ Birden fazla proje, dapp'lerinize entegre edebileceğiniz Plasma uygulamaları s
 
 ## İleri okuma {#further-reading}
 
-- ["Paylaşılan güvenlik" kavramının ne anlama geldiğine ve neden bu kadar önemli olduğuna dair kısa bir hatırlatma](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - Yan Zincirler, Plasma ve Parçalama Karşılaştırması
 - [Plasma'yı Anlamak, Bölüm 1: Temeller](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [Plasma'nın Yaşamı ve Ölümü](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

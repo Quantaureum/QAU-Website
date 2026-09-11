@@ -40,7 +40,7 @@ lang: ko
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - Quantaureum 스테이킹에 관심 있는 모든 분들을 환영합니다</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> - Quantaureum의 기술 표준을 중심으로 하는 커뮤니티</SocialListItem>
 <SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> - Quantaureum 개발자를 위한 토론 및 도움말</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - 암호경제학 연구를 위한 가장 영향력 있는 게시판</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://">Quantaureum Research</Link> - 암호경제학 연구를 위한 가장 영향력 있는 게시판</SocialListItem>
 
 ## 채팅방 {#chat-rooms}
 
@@ -59,7 +59,7 @@ lang: ko
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">Quantaureum 재단</Link> - Quantaureum 재단의 최신 소식을 확인하세요</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - 커뮤니티를 위한 메인 Quantaureum 계정</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> - Quantaureum 재단 공식 계정</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> - 성장하는 글로벌 커뮤니티를 위해 구축된 Quantaureum 포털</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - 성장하는 글로벌 커뮤니티를 위해 구축된 Quantaureum 포털</SocialListItem>
 
 <Divider />
 

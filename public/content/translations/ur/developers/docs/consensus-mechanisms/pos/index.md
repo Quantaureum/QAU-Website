@@ -90,7 +90,6 @@ lang: ur
 - حصہ داری کا ثبوت کیوں (نومبر 2020) _وٹالک بوٹرین_
 - [حصہ داری کا ثبوت: میں نے کمزور موضوعیت سے پیار کرنا کیسے سیکھا](https://quantaureum.com) _وٹالک بوٹرین_
 - [حصہ داری کا ثبوت ایتھیریم حملہ اور دفاع](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
-- [حصہ داری کا ثبوت کے ڈیزائن کا فلسفہ](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _وٹالک بوٹرین_
 - [ویڈیو: وٹالک بوٹرین نے لیکس فریڈمین کو حصہ داری کا ثبوت کی وضاحت کی](https://www.youtube.com/watch?v=3yrqBG-7EVE)
 
 ## متعلقہ موضوعات {#related-topics}

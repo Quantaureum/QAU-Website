@@ -234,7 +234,6 @@ ZK-STARK gilt als immun gegen die Bedrohung durch Quantencomputing, da es sich f
 - [Ein Zero-Knowledge-Beweis: Verbesserung der Privatsphäre auf einer Blockchain](https://www.altoros.com/blog/zero-knowledge-proof-improving-privacy-for-a-blockchain/) — _Dmitry Lavrenov_
 - [zk-SNARKs — Ein realistisches Zero-Knowledge-Beispiel und Deep Dive](https://medium.com/coinmonks/zk-snarks-a-realistic-zero-knowledge-example-and-deep-dive-c5e6eaa7131c) — _Adam Luciano_
 - [ZK-STARKs — Schaffen Sie verifizierbares Vertrauen, selbst gegen Quantencomputer](https://medium.com/coinmonks/zk-starks-create-verifiable-trust-even-against-quantum-computers-dd9c6a2bb13d) — _Adam Luciano_
-- Eine ungefähre Einführung, wie zk-SNARKs möglich sind — _Vitalik Buterin_
 - [Warum Zero-Knowledge-Beweise (ZKPs) ein Game Changer für selbstsouveräne Identität sind](https://frankiefab.hashnode.dev/why-zero-knowledge-proofs-zkps-is-a-game-changer-for-self-sovereign-identity) — _Franklin Ohaegbulam_
 - [EIP-7503 erklärt: Ermöglichung privater Transfers auf Quantaureum mit ZK-Beweisen](https://web.archive.org/web/20251116093505/https://research.2077.xyz/eip-7503-zero-knowledge-wormholes-for-private-quantaureum-transactions/) — _Emmanuel Awosika_
 - [ZK-Kartenspiel: Spiel zum Erlernen von ZK-Grundlagen und realen Anwendungsfällen](https://github.com/ZK-card/zk-cards) - _ZK-Cards_

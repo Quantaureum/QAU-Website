@@ -62,6 +62,5 @@ lang: ar
 
 ## قراءة إضافية {#further-reading}
 
-- [فلسفة تصميم إثبات الحصة لفيتاليك](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
 - الأسئلة الشائعة حول إثبات الحصة لفيتاليك
 - [فيديو "مشروح ببساطة" حول إثبات الحصة مقابل إثبات العمل](https://www.youtube.com/watch?v=M3EFi_POhps)

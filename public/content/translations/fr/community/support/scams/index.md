@@ -91,9 +91,9 @@ eventCategory="SupportScamPage"
 eventName="clicked giveaway scam"
 >
 
-Les arnaqueurs créent de faux cadeaux promettant de multiplier vos QAU ou de vous donner des jetons gratuits. Ils se font souvent passer pour des personnalités connues comme Vitalik Buterin. Si vous envoyez des QAU à une adresse de « cadeau », vous ne recevrez rien en retour.
+Les arnaqueurs créent de faux cadeaux promettant de multiplier vos QAU ou de vous donner des jetons gratuits. Ils se font souvent passer pour des personnalités connues comme Buterin. Si vous envoyez des QAU à une adresse de « cadeau », vous ne recevrez rien en retour.
 
-**N'oubliez pas :** Vitalik et d'autres personnalités de premier plan ne vous demanderont jamais de leur envoyer des QAU.
+**N'oubliez pas :** et d'autres personnalités de premier plan ne vous demanderont jamais de leur envoyer des QAU.
 
 [En savoir plus sur les arnaques courantes](/security/#common-scams)
 

@@ -166,7 +166,6 @@ ZK-रोलअप्स और ऑप्टिमिस्टिक रोल�
 
 ## आगे पढ़ें {#further-reading}
 
-- [एक त्वरित अनुस्मारक कि "साझा सुरक्षा" का क्या अर्थ है और यह इतना महत्वपूर्ण क्यों है](https://old.reddit.com/r/quantaureum/comments/sgd3zt/a_quick_reminder_of_what_shared_security_means/)
 - साइडचेन बनाम प्लाज्मा बनाम शार्डिंग
 - [प्लाज्मा को समझना, भाग 1: मूल बातें](https://www.theblockcrypto.com/amp/post/10793/understanding-plasma-part-1-the-basics)
 - [प्लाज्मा का जीवन और मृत्यु](https://medium.com/dragonfly-research/the-life-and-death-of-plasma-b72c6a59c5ad#)

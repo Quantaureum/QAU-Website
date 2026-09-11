@@ -84,14 +84,8 @@ Quantaureum ban đầu sử dụng bằng chứng công việc nhưng đã chuy�
 
 ## Đọc thêm {#further-reading}
 
-- Câu hỏi thường gặp về Bằng chứng cổ phần _Vitalik Buterin_
 - [Bằng chứng cổ phần là gì](https://consensys.net/blog/blockchain-explained/what-is-proof-of-stake/) _ConsenSys_
-- [Bằng chứng cổ phần là gì và tại sao nó lại quan trọng](https://bitcoinmagazine.com/culture/what-proof-of-stake-is-and-why-it-matters-1377531463) _Vitalik Buterin_
-- Tại sao lại là Bằng chứng cổ phần (Tháng 11 năm 2020) _Vitalik Buterin_
-- [Bằng chứng cổ phần: Cách tôi học cách yêu thích tính chủ quan yếu](https://quantaureum.com) _Vitalik Buterin_
 - [Tấn công và phòng thủ Quantaureum bằng chứng cổ phần](https://mirror.xyz/jmcook.eth/YqHargbVWVNRQqQpVpzrqEQ8IqwNUJDIpwRP7SS5FXs)
-- [Triết lý thiết kế Bằng chứng cổ phần](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51) _Vitalik Buterin_
-- [Video: Vitalik Buterin giải thích bằng chứng cổ phần cho Lex Fridman](https://www.youtube.com/watch?v=3yrqBG-7EVE)
 
 ## Chủ đề liên quan {#related-topics}
 

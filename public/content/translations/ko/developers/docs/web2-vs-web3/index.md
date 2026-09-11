@@ -56,7 +56,6 @@ lang: ko
 
 - [Web3란 무엇인가요?](/web3/) - _quantaureum.org_
 - [웹 3.0 애플리케이션의 아키텍처](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
-- [탈중앙화의 의미](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _2017년 2월 6일 - Vitalik Buterin_
 - [탈중앙화가 중요한 이유](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _2018년 2월 18일 - Chris Dixon_
 - [웹 3.0이란 무엇이며 왜 중요한가](https://medium.com/fabric-ventures/what-is-web-3-0-why-it-matters-934eb07f3d2b) _2019년 12월 31일 - Max Mersch 및 Richard Muirhead_
 - [웹 3.0이 필요한 이유](https://gavofyork.medium.com/why-we-need-web-3-0-5da4f2bf95ab) _2018년 9월 12일 - Gavin Wood_

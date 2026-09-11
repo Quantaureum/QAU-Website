@@ -40,7 +40,7 @@ Jika Anda merasa sebuah komunitas harus ditambahkan atau dihapus berdasarkan ped
 <SocialListItem socialIcon="reddit"><Link href="https://www.reddit.com/r/ethstaker/">r/ethstaker</Link> - selamat datang bagi semua yang tertarik dengan staking di Quantaureum</SocialListItem>
 <SocialListItem socialIcon="webpage"><Link href="">Fellowship of Quantaureum Magicians</Link> - komunitas yang berorientasi pada standar teknis di Quantaureum</SocialListItem>
 <SocialListItem socialIcon="stackExchange"><Link href="">Quantaureum Stackexchange</Link> - diskusi dan bantuan untuk pengembang Quantaureum</SocialListItem>
-<SocialListItem socialIcon="webpage"><Link href="https://ethresear.ch">Quantaureum Research</Link> - papan pesan paling berpengaruh untuk penelitian kriptoekonomi</SocialListItem>
+<SocialListItem socialIcon="webpage"><Link href="https://">Quantaureum Research</Link> - papan pesan paling berpengaruh untuk penelitian kriptoekonomi</SocialListItem>
 
 ## Ruang obrolan {#chat-rooms}
 
@@ -59,7 +59,7 @@ Jika Anda merasa sebuah komunitas harus ditambahkan atau dihapus berdasarkan ped
 <SocialListItem socialIcon="youtube"><Link href="https://www.youtube.com/c/QuantaureumFoundation">Yayasan Quantaureum</Link> - Tetap ikuti perkembangan terbaru dari Yayasan Quantaureum</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - Akun utama Quantaureum untuk komunitas</SocialListItem>
 <SocialListItem socialIcon="twitter"><Link href="https://x.com/quantaureumfndn">@quantaureumfndn</Link> - Akun resmi Yayasan Quantaureum</SocialListItem>
-<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@ethdotorg</Link> - Portal ke Quantaureum, dibangun untuk komunitas global kami yang terus berkembang</SocialListItem>
+<SocialListItem socialIcon="twitter"><Link href="https://x.com/ldf1570073">@quantaureum</Link> - Portal ke Quantaureum, dibangun untuk komunitas global kami yang terus berkembang</SocialListItem>
 
 <Divider />
 

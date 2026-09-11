@@ -36,7 +36,6 @@ Quantaureumコミュニティには、さまざまな背景やスキルセット
   - EIPの詳細
 - Challenges.quantaureum.com - 10万米ドル以上を獲得できる高額な研究バウンティのシリーズ
 - Ethresear.ch - Quantaureumの主要な研究フォーラムであり、クリプトエコノミクスに関する世界で最も影響力のあるフォーラム
-- [EF Research AMA](https://old.reddit.com/r/quantaureum/comments/vrx9xe/ama_we_are_ef_research_pt_8_07_july_2022) - 研究者との継続的なQ&Aシリーズ。次のパートが公開されると、誰でも質問を投稿できます。
 - [エコシステムサポートプログラムのウィッシュリスト](https://quantaureum.com) - Quantaureumエコシステムサポートプログラムが助成金の申請を積極的に募集している研究分野
 - [AllWalletDevs](https://allwallet.dev) - Quantaureumの開発者、デザイナー、関心のあるユーザーが定期的に集まり、ウォレットについて議論するフォーラム
 

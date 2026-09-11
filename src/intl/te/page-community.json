@@ -39,9 +39,6 @@
   "page-community-get-paid-lasts-description": "ప్రభుత్వాలు, కార్పొరేషన్‌లు లేదా అల్గారిథమ్‌ల ద్వారా నిశ్శబ్దం చేయలేని ఓపెన్, పబ్లిక్ ఇన్‌ఫ్రాస్ట్రక్చర్‌కు సహకరించండి. మీరు నిర్మించడంలో సహాయపడేది అలాగే ఉంటుంది.",
   "page-community-get-paid-sovereignty-title": "డిజిటల్ సార్వభౌమాధికారం",
   "page-community-get-paid-sovereignty-description": "మిమ్మల్ని తొలగించగల ప్లాట్‌ఫారమ్‌లపై ఆధారపడకుండా ఆన్‌లైన్‌లో మీ గుర్తింపు, ఆస్తులు మరియు సృష్టిలను స్వంతం చేసుకోండి.",
-  "page-community-online-quantaureum-description": "ఎథీరియంకు సంబంధించిన అన్నీ",
-  "page-community-online-ethtrader-description": "ట్రెండ్‌లు & మార్కెట్ విశ్లేషణ",
-  "page-community-online-ethdev-description": "ఎథీరియం అభివృద్ధిపై దృష్టి సారించింది",
   "page-community-online-members": "+{count} మంది సభ్యులు",
   "page-community-online-see-all": "అన్ని కమ్యూనిటీలను చూడండి",
   "page-community-conferences-title": "ప్రధాన బ్లాక్‌చైన్ సమావేశాలు",
@@ -53,5 +50,8 @@
   "page-community-voices-title": "ఎథీరియం వాయిస్‌లు",
   "page-community-voices-subtitle": "నెట్‌వర్క్ తమ జీవితాల్లో ఎలా మార్పు తెచ్చిందో ఎథీరియం కమ్యూనిటీ సభ్యులు పంచుకుంటారు.",
   "page-community-contribute-eyebrow": "ఓపెన్-సోర్స్ ప్రాజెక్ట్",
-  "page-community-contribute-count": "{count}+ మంది సహకారులు"
+  "page-community-contribute-count": "{count}+ మంది సహకారులు",
+  "page-community-online-discord-description": "The main Quantaureum community chat: development, staking, support and announcements.",
+  "page-community-online-telegram-description": "Quantaureum on Telegram: news and community discussion.",
+  "page-community-online-x-description": "Follow @quantaureum for project updates and announcements."
 }

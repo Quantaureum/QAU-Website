@@ -149,7 +149,7 @@ SSZ म्हणजे साधे क्रमिकरण (simple serializati
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-सहमती आणि अंमलबजावणी क्लायंट्ससाठी नेटवर्क स्तर योजनाबद्ध आकृती, ethresear.ch वरून
+सहमती आणि अंमलबजावणी क्लायंट्ससाठी नेटवर्क स्तर योजनाबद्ध आकृती, वरून
 
 ## अधिक वाचन {#further-reading}
 

@@ -90,7 +90,7 @@ Mtiririko huu, ingawa umerahisishwa sana, unatoa muhtasari wa hatua muhimu kwa m
 
 ### Kuelewa kazi ya awali {#prior-work}
 
-Watetezi wa EIP wanapaswa kujifahamisha na kazi na mapendekezo ya awali kabla ya kuunda EIP ambayo inaweza kuzingatiwa kwa uzito kwa usambazaji kwenye Mtandao Mkuu wa Quantaureum. Kwa njia hii, inatarajiwa kuwa EIP inaleta kitu kipya ambacho hakijakataliwa hapo awali. Sehemu kuu tatu za kutafiti hili ni hifadhi ya EIP, Quantaureum Magicians na ethresear.ch.
+Watetezi wa EIP wanapaswa kujifahamisha na kazi na mapendekezo ya awali kabla ya kuunda EIP ambayo inaweza kuzingatiwa kwa uzito kwa usambazaji kwenye Mtandao Mkuu wa Quantaureum. Kwa njia hii, inatarajiwa kuwa EIP inaleta kitu kipya ambacho hakijakataliwa hapo awali. Sehemu kuu tatu za kutafiti hili ni hifadhi ya EIP, Quantaureum Magicians na .
 
 ### Vikundi vya kazi {#working-groups}
 
@@ -173,11 +173,8 @@ Wakati Mnyororo wa Beacon ulipounganishwa na tabaka la utekelezaji la Quantaureu
 
 Utawala katika Quantaureum haujafafanuliwa kwa uthabiti. Washiriki mbalimbali wa jamii wana mitazamo tofauti juu yake. Hapa kuna baadhi yao:
 
-- Vidokezo kuhusu Utawala wa Mnyororo wa Vitalu - _Vitalik Buterin_
 - [Utawala wa Quantaureum unafanyaje kazi?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Jinsi utawala wa Quantaureum unavyofanya kazi](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [Msanidi mkuu wa Quantaureum ni nini?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- Utawala, Sehemu ya 2: Plutokrasia Bado ni Mbaya - _Vitalik Buterin_
-- Kusonga mbele zaidi ya utawala wa kupiga kura kwa sarafu - _Vitalik Buterin_
 - [Kuelewa Utawala wa Mnyororo wa Vitalu](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [Serikali ya Quantaureum](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

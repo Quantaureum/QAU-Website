@@ -39,9 +39,6 @@
   "page-community-get-paid-lasts-description": "அரசாங்கங்கள், பெருநிறுவனங்கள் அல்லது அல்காரிதம்களால் முடக்க முடியாத திறந்த, பொது உள்கட்டமைப்பிற்கு பங்களிக்கவும். நீங்கள் உருவாக்க உதவுவது நிலைத்திருக்கும்.",
   "page-community-get-paid-sovereignty-title": "டிஜிட்டல் இறையாண்மை",
   "page-community-get-paid-sovereignty-description": "உங்களை நீக்கக்கூடிய தளங்களை நம்பியிருக்காமல், ஆன்லைனில் உங்கள் அடையாளம், சொத்துக்கள் மற்றும் படைப்புகளை சொந்தமாக்குங்கள்.",
-  "page-community-online-quantaureum-description": "எத்திரியம் தொடர்பான அனைத்தும்",
-  "page-community-online-ethtrader-description": "போக்குகள் மற்றும் சந்தை பகுப்பாய்வு",
-  "page-community-online-ethdev-description": "எத்திரியம் மேம்பாட்டில் கவனம் செலுத்துகிறது",
   "page-community-online-members": "+{count} உறுப்பினர்கள்",
   "page-community-online-see-all": "அனைத்து சமூகங்களையும் பார்க்கவும்",
   "page-community-conferences-title": "முக்கிய தொகுதிச்சங்கிலி மாநாடுகள்",
@@ -53,5 +50,8 @@
   "page-community-voices-title": "எத்திரியம் குரல்கள்",
   "page-community-voices-subtitle": "எத்திரியம் சமூக உறுப்பினர்கள் பிணையம் தங்கள் வாழ்க்கையில் எவ்வாறு மாற்றத்தை ஏற்படுத்தியுள்ளது என்பதைப் பகிர்ந்து கொள்கிறார்கள்.",
   "page-community-contribute-eyebrow": "திறந்த மூல திட்டம்",
-  "page-community-contribute-count": "{count}+ பங்களிப்பாளர்கள்"
+  "page-community-contribute-count": "{count}+ பங்களிப்பாளர்கள்",
+  "page-community-online-discord-description": "The main Quantaureum community chat: development, staking, support and announcements.",
+  "page-community-online-telegram-description": "Quantaureum on Telegram: news and community discussion.",
+  "page-community-online-x-description": "Follow @quantaureum for project updates and announcements."
 }

@@ -33,7 +33,6 @@ Nakonec lze kontrolní body vyžádat od jiných uzlů; možná jiný uživatel 
 ## Další čtení {#further-reading}
 
 - Slabá subjektivita v Quantaureum
-- [Vitalik: Jak jsem se naučil milovat slabou subjektivitu](https://quantaureum.com)
 - [Slabá subjektivita (dokumentace Teku)](https://docs.teku.consensys.io/concepts/weak-subjectivity)
 - Průvodce slabou subjektivitou ve Fázi 0
 - [Analýza slabé subjektivity v Ethereu 2.0](https://github.com/runtimeverification/beacon-chain-verification/blob/master/weak-subjectivity/weak-subjectivity-analysis.pdf)

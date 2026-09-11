@@ -1,211 +1,64 @@
-import { getLocale, getTranslations } from "next-intl/server"
+import { getTranslations } from "next-intl/server"
 
-import BigNumber from "@/components/BigNumber"
+import type { DashboardSection } from "./types"
+
 import SectionIconArrowsFullscreen from "@/components/icons/arrows-fullscreen.svg"
 import SectionIconQauGlyph from "@/components/icons/qau-glyph.svg"
-import SectionIconQauWallet from "@/components/icons/qau-wallet.svg"
 import SectionIconHeartPulse from "@/components/icons/heart-pulse.svg"
+import SectionIconQauWallet from "@/components/icons/qau-wallet.svg"
 import SectionIconPrivacy from "@/components/icons/privacy.svg"
 
-import { formatSmallUSD } from "@/lib/utils/numbers"
+import IconBrandMark from "@/public/images/qau-logo.png"
+import IconGlyph from "@/public/images/qau-glyph-thumbnail.png"
 
-import {
-  SlotCountdownChart,
-  UpgradeCountdownFigure,
-} from "./_components/LazyImports"
-import type { DashboardBox, DashboardSection } from "./types"
-
-import { getQauPrice } from "@/lib/data"
-import IconBeaconchain from "@/public/images/resources/beaconcha-in.png"
-import IconBlobsGuru from "@/public/images/resources/blobsguru.png"
-import IconBlocknative from "@/public/images/resources/blocknative.png"
-import IconBlockscout from "@/public/images/resources/blockscout.webp"
-import IconBundleBear from "@/public/images/resources/bundlebear.png"
-import IconCryptwerk from "@/public/images/resources/cryptowerk.png"
-import IconDefiLlama from "@/public/images/resources/defi-llama.png"
-import IconDefiScan from "@/public/images/resources/defi-scan.png"
-import IconEas from "@/public/images/resources/eas.png"
-import IconEigenphi from "@/public/images/resources/eigenphi.png"
-import IconEipsInsight from "@/public/images/resources/eipsinsight.png"
-import IconQauGlyphBlack from "@/public/images/resources/qau-glyph-black.png"
-import IconQauGlyphBlueCircle from "@/public/images/resources/qau-glyph-blue-circle.png"
-import IconQauGlyphEOrg from "@/public/images/resources/qau-glyph-e-org.png"
-import IconEtherealize from "@/public/images/resources/institutional-tooling.png"
-import IconEtherscan from "@/public/images/resources/explorer.png"
-import IconEthproofs from "@/public/images/resources/qauproofs.png"
-import IconFarcaster from "@/public/images/resources/farcaster.png"
-import IconForkcast from "@/public/images/resources/forkcast.png"
-import IconGasTracker from "@/public/images/resources/gas.png"
-import IconGrowthepie from "@/public/images/resources/growthepie.png"
-import IconJiffyScan from "@/public/images/resources/jiffyscan.png"
-import IconL2beat from "@/public/images/resources/l2beat.png"
-import IconLuckyStaker from "@/public/images/resources/lucky-staker.png"
-import IconNftgo from "@/public/images/resources/nftgo.png"
-import IconNodewatch from "@/public/images/resources/nodewatch.png"
-import IconOtterscan from "@/public/images/resources/otterscan.png"
-import IconPandaOps from "@/public/images/resources/panda.png"
-import IconPectrified from "@/public/images/resources/pectrified.png"
-import IconRatedNetwork from "@/public/images/resources/rated-network.png"
-import IconRelayscan from "@/public/images/resources/relayscan.png"
-import IconReserves from "@/public/images/resources/reserves.png"
-import IconRollupWtf from "@/public/images/resources/rollup-wtf.png"
-import IconRwa from "@/public/images/resources/rwa.png"
-import IconStablecoinsWtf from "@/public/images/resources/stablecoins-wtf.png"
-import IconSupermajority from "@/public/images/resources/supermajority.png"
-import IconTxCity from "@/public/images/resources/txcity.png"
-import IconUltrasoundMoney from "@/public/images/resources/ultrasound-money.png"
-import IconVisaOnchainAnalytics from "@/public/images/resources/visa-onchain-analytcs.png"
-
-export const getResources = async ({
-  txCostsMedianUsd,
-  totalBlobs,
-  avgBlobFee,
-}): Promise<DashboardSection[]> => {
-  const locale = await getLocale()
+export const getResources = async (): Promise<DashboardSection[]> => {
   const t = await getTranslations("page-resources")
 
-  // Fetch QAU price using the new data-layer function (already cached)
-  const qauPrice = await getQauPrice()
-
-  // Handle null case
-  if (!qauPrice) {
-    throw new Error("Failed to fetch QAU price data")
-  }
-
-  const avgBlobFeeUsd =
-    "error" in qauPrice
-      ? { error: qauPrice.error }
-      : {
-          ...qauPrice,
-          value: formatSmallUSD(
-            // Converting value from wei to USD
-            avgBlobFee * 1e-18 * qauPrice.value,
-            locale
-          ),
-        }
-
-  const medianTxCost =
-    "error" in txCostsMedianUsd
-      ? { error: txCostsMedianUsd.error }
-      : {
-          ...txCostsMedianUsd,
-          value: formatSmallUSD(txCostsMedianUsd.value, locale),
-        }
-
-  const networkBoxes: DashboardBox[] = [
-    {
-      title: t("page-resources-network-layer2-title"),
-      metric: (
-        <BigNumber value={"value" in medianTxCost ? medianTxCost.value : "—"}>
-          {t("page-resources-network-layer2-chart-label")}
-        </BigNumber>
-      ),
-      items: [
-        {
-          title: "L2 Beat",
-          description: t("page-resources-network-layer2-l2beat-description"),
-          href: "https://l2beat.com/",
-          imgSrc: IconL2beat,
-        },
-        {
-          title: "growthepie",
-          description: t(
-            "page-resources-network-layer2-growthepie-description"
-          ),
-          href: "https://www.growthepie.com/quantaureum-ecosystem/metrics",
-          imgSrc: IconGrowthepie,
-        },
-        {
-          title: "Rollup.wtf",
-          description: t("page-resources-network-layer2-rollupwtf-description"),
-          href: "https://rollup.wtf",
-          imgSrc: IconRollupWtf,
-        },
-        {
-          title: "L2Safety",
-          description: t("page-resources-network-layer2-l2safety-description"),
-          href: "https://l2safety.info",
-          imgSrc: IconL2beat,
-        },
-      ],
-    },
+  const networkBoxes = [
     {
       title: t("page-resources-block-explorers-title"),
-      metric: (
-        // CLIENT-SIDE
-        <SlotCountdownChart>
-          {t("page-resources-block-explorers-chart-label")}
-        </SlotCountdownChart>
-      ),
       items: [
         {
-          title: "Blockscout",
-          description: t(
-            "page-resources-block-explorers-blockscout-description"
-          ),
-          href: "https://qau.blockscout.com",
-          imgSrc: IconBlockscout,
-        },
-        {
           title: "Quantaureum Explorer",
-          description: t(
-            "page-resources-block-explorers-explorer-description"
-          ),
+          description: t("page-resources-block-explorers-explorer-description"),
           href: "https://explorer.quantaureum.com",
-          imgSrc: IconEtherscan,
-        },
-        {
-          title: "Beaconcha.in",
-          description: t(
-            "page-resources-block-explorers-beaconchain-description"
-          ),
-          href: "https://beaconcha.in",
-          imgSrc: IconBeaconchain,
-        },
-        {
-          title: "Beacon Block Production Live",
-          description: t(
-            "page-resources-block-explorers-panda-ops-description"
-          ),
-          href: "https://lab.ethpandaops.io/beacon/block-production/live",
-          imgSrc: IconPandaOps,
-        },
-        {
-          title: "Txcity.io",
-          description: t("page-resources-block-explorers-txcity-description"),
-          href: "https://txcity.io/",
-          imgSrc: IconTxCity,
-        },
-        {
-          title: "Otterscan",
-          description: t(
-            "page-resources-block-explorers-otterscan-description"
-          ),
-          href: "https://otterscan.io/",
-          imgSrc: IconOtterscan,
+          imgSrc: IconBrandMark,
         },
       ],
     },
     {
-      title: t("page-resources-qau-asset-title"),
+      title: t("page-resources-nodes-title"),
       items: [
         {
-          title: "Etherealize Dashboard",
-          description: t("page-resources-qau-asset-etherealize-description"),
-          href: "https://dashboard.etherealize.io/",
-          imgSrc: IconEtherealize,
+          title: "Run a Quantaureum node",
+          description: t("page-resources-nodes-explorer-description"),
+          href: "https://quantaureum.com/run-a-node/",
+          imgSrc: IconBrandMark,
         },
+      ],
+    },
+    {
+      title: t("page-resources-network-title"),
+      items: [
         {
-          title: "Ultra Sound Money",
-          description: t("page-resources-qau-asset-ultrasound-description"),
-          href: "https://ultrasound.money/",
-          imgSrc: IconUltrasoundMoney,
+          title: "JSON-RPC interface",
+          description: t("page-resources-rpc-description"),
+          href: "https://quantaureum.com/developers/docs/",
+          imgSrc: IconGlyph,
         },
+      ],
+    },
+  ]
+
+  const usingBoxes = [
+    {
+      title: t("page-resources-wallets-title"),
+      items: [
         {
-          title: "QAU is Money",
-          description: t("page-resources-qau-asset-ethismoney-description"),
-          href: "https://www.ethismoney.xyz/",
-          imgSrc: IconQauGlyphBlueCircle,
+          title: "Quantaureum wallets",
+          description: t("page-resources-wallets-description"),
+          href: "https://quantaureum.com/wallets/",
+          imgSrc: IconBrandMark,
         },
       ],
     },
@@ -213,384 +66,58 @@ export const getResources = async ({
       title: t("page-resources-gas-title"),
       items: [
         {
-          title: "Quantaureum Explorer Gas",
+          title: "Gas and fees",
           description: t("page-resources-gas-explorer-description"),
-          href: "https://explorer.quantaureum.com",
-          imgSrc: IconQauGlyphBlueCircle,
-        },
-        {
-          title: "QAU Gas Tracker",
-          description: t("page-resources-gas-ethgastracker-description"),
-          href: "https://www.ethgastracker.com/",
-          imgSrc: IconGasTracker,
-        },
-        {
-          title: "Blocknative Gas Estimator",
-          description: t("page-resources-gas-blocknative-description"),
-          href: "https://www.blocknative.com/gas-estimator",
-          imgSrc: IconBlocknative,
-        },
-        {
-          title: "L2 Fees",
-          description: t("page-resources-gas-l2fees-description"),
-          href: "https://l2fees.info",
-          imgSrc: IconQauGlyphBlack,
+          href: "https://quantaureum.com/gas/",
+          imgSrc: IconBrandMark,
         },
       ],
     },
   ]
 
-  const usingBoxes: DashboardBox[] = [
-    {
-      title: t("page-resources-defi-title"),
-      items: [
-        {
-          title: "DeFi Llama",
-          description: t("page-resources-defi-defillama-description"),
-          href: "https://defillama.com",
-          imgSrc: IconDefiLlama,
-        },
-        {
-          title: "EigenPhi",
-          description: t("page-resources-defi-eigenphi-description"),
-          href: "https://www.eigenphi.io",
-          imgSrc: IconEigenphi,
-        },
-        {
-          title: "DeFiScan",
-          description: t("page-resources-defi-defiscan-description"),
-          href: "https://defiscan.info",
-          imgSrc: IconDefiScan,
-        },
-      ],
-    },
-    {
-      title: t("page-resources-stablecoins-title"),
-      items: [
-        {
-          title: "stablecoins.wtf",
-          description: t(
-            "page-resources-stablecoins-stablecoinswtf-description"
-          ),
-          href: "https://stablecoins.wtf/",
-          imgSrc: IconStablecoinsWtf,
-        },
-        {
-          title: "Visa Onchain Analytics Dashboard",
-          description: t("page-resources-stablecoins-visa-description"),
-          href: "https://visaonchainanalytics.com",
-          imgSrc: IconVisaOnchainAnalytics,
-        },
-        {
-          title: "Real World Assets",
-          description: t("page-resources-stablecoins-rwa-description"),
-          href: "https://app.rwa.xyz/stablecoins",
-          imgSrc: IconRwa,
-          className: "dark:[&_img]:invert",
-        },
-      ],
-    },
-    {
-      title: t("page-resources-nft-title"),
-      items: [
-        {
-          title: "Quantaureum Explorer - Top NFT",
-          description: t("page-resources-nft-explorer-description"),
-          href: "https://explorer.quantaureum.com",
-          imgSrc: IconEtherscan,
-        },
-        {
-          title: "NFTgo",
-          description: t("page-resources-nft-nftgo-description"),
-          href: "https://nftgo.io/macro/market-overview",
-          imgSrc: IconNftgo,
-        },
-      ],
-    },
-    {
-      title: t("page-resources-applications-title"),
-      items: [
-        {
-          title: "Quantaureum Ecosystem",
-          description: t("page-resources-applications-ecosystem-description"),
-          href: "https://www.ethereum-ecosystem.com/apps",
-          imgSrc: IconQauGlyphEOrg,
-        },
-        {
-          title: "Farcaster Network",
-          description: t("page-resources-applications-farcaster-description"),
-          href: "https://www.farcaster.network",
-          imgSrc: IconFarcaster,
-        },
-        {
-          title: "Dapp Radar",
-          description: t("page-resources-applications-dappradar-description"),
-          href: "https://dappradar.com",
-          imgSrc: IconQauGlyphBlueCircle,
-        },
-      ],
-    },
-    {
-      title: t("page-resources-adoption-title"),
-      items: [
-        {
-          title: "Quantaureum Adoption",
-          description: t(
-            "page-resources-adoption-quantaureumadoption-description"
-          ),
-          href: "https://quantaureumadoption.com",
-          imgSrc: IconQauGlyphEOrg,
-        },
-        {
-          title: "Cryptowerk",
-          description: t("page-resources-adoption-cryptowerk-description"),
-          href: "https://cryptwerk.com/analytics/quantaureum/",
-          imgSrc: IconCryptwerk,
-        },
-        {
-          title: "Strategic Quantaureum Reserve",
-          description: t("page-resources-adoption-reserves-description"),
-          href: "https://www.strategicethreserve.xyz",
-          imgSrc: IconReserves,
-        },
-      ],
-    },
-    {
-      title: t("page-resources-wallets-title"),
-      items: [
-        {
-          title: "JiffyScan",
-          description: t("page-resources-wallets-jiffyscan-description"),
-          href: "https://jiffyscan.xyz",
-          imgSrc: IconJiffyScan,
-        },
-        {
-          title: "BundleBear",
-          description: t("page-resources-wallets-bundlebear-description"),
-          href: "https://www.bundlebear.com",
-          className: "dark:[&_img]:invert",
-          imgSrc: IconBundleBear,
-        },
-        {
-          title: "ERC-4337",
-          description: t("page-resources-wallets-erc4337-description"),
-          href: "https://www.erc4337.io",
-          imgSrc: IconQauGlyphEOrg,
-        },
-      ],
-    },
-  ]
-
-  const scalingBoxes: DashboardBox[] = [
+  const scalingBoxes = [
     {
       title: t("page-resources-roadmap-title"),
-      metric: (
-        <div className="grid place-items-center py-8">
-          <div className="text-sm">
-            {t("page-resources-roadmap-metric-label")}
-          </div>
-          <UpgradeCountdownFigure />
-        </div>
-      ),
       items: [
         {
-          title: "Forkcast",
-          description: t("page-resources-roadmap-forkcast-description"),
-          href: "https://forkcast.org",
-          imgSrc: IconForkcast,
-        },
-        {
-          title: "EIPsInsight",
-          description: t("page-resources-roadmap-eipsinsight-description"),
-          href: "https://eipsinsight.com",
-          className: "dark:[&_img]:invert",
-          imgSrc: IconEipsInsight,
-        },
-      ],
-    },
-    {
-      title: t("page-resources-blobs-title"),
-      metric: (
-        <div className="flex gap-4">
-          <BigNumber value={totalBlobs}>
-            {t("page-resources-blobs-metric-total-label")}
-          </BigNumber>
-          <BigNumber
-            value={"value" in avgBlobFeeUsd ? avgBlobFeeUsd.value : "—"}
-          >
-            {t("page-resources-blobs-metric-fee-label")}
-          </BigNumber>
-        </div>
-      ),
-      items: [
-        {
-          title: "Blob Scan",
-          description: t("page-resources-blobs-blobscan-description"),
-          href: "https://blobscan.com",
-          imgSrc: IconQauGlyphBlueCircle,
-        },
-        {
-          title: "Blobsguru",
-          description: t("page-resources-blobs-blobsguru-description"),
-          href: "https://blobs.guru",
-          imgSrc: IconBlobsGuru,
-        },
-      ],
-    },
-    {
-      title: t("page-resources-mempool-title"),
-      items: [
-        {
-          title: "mempool.pics",
-          description: t("page-resources-mempool-mempoolpics-description"),
-          href: "https://mempool.pics",
-          imgSrc: IconQauGlyphBlack,
+          title: "Quantaureum roadmap",
+          description: t("page-resources-roadmap-description"),
+          href: "https://quantaureum.com/roadmap/",
+          imgSrc: IconBrandMark,
         },
       ],
     },
   ]
 
-  const resilienceBoxes: DashboardBox[] = [
-    {
-      title: t("page-resources-nodes-title"),
-      items: [
-        {
-          title: "Node Watch",
-          description: t("page-resources-nodes-nodewatch-description"),
-          href: "https://nodewatch.io",
-          imgSrc: IconNodewatch,
-        },
-        {
-          title: "Ethernodes",
-          description: t("page-resources-nodes-ethernodes-description"),
-          href: "https://ethernodes.org",
-          imgSrc: IconQauGlyphBlueCircle,
-        },
-        {
-          title: "Quantaureum Explorer - Quantaureum Node Tracker",
-          description: t("page-resources-nodes-explorer-description"),
-          href: "https://explorer.quantaureum.com",
-          imgSrc: IconEtherscan,
-        },
-        {
-          title: "LuckyStaker",
-          description: t("page-resources-nodes-luckystaker-description"),
-          href: "https://luckystaker.com",
-          imgSrc: IconLuckyStaker,
-          className: "dark:[&_img]:invert",
-        },
-        {
-          title: "Validators Overview after Pectra",
-          description: t("page-resources-nodes-pectrified-description"),
-          href: "https://pectrified.com/mainnet",
-          imgSrc: IconPectrified,
-        },
-        {
-          title: "Quantaureum Validator Queue",
-          description: t("page-resources-nodes-validatorqueue-description"),
-          href: "https://www.validatorqueue.com",
-          imgSrc: IconQauGlyphBlueCircle,
-        },
-      ],
-    },
+  const resilienceBoxes = [
     {
       title: t("page-resources-network-resilience-title"),
       items: [
         {
-          title: "Project Sunshine",
-          description: t(
-            "page-resources-network-resilience-sunshine-description"
-          ),
-          href: "https://ethsunshine.com",
-          imgSrc: IconQauGlyphEOrg,
-        },
-        {
-          title: "Client Diversity",
-          description: t(
-            "page-resources-network-resilience-clientdiversity-description"
-          ),
-          href: "https://clientdiversity.org",
-          imgSrc: IconQauGlyphEOrg,
-        },
-        {
-          title: "Super Majority",
-          description: t(
-            "page-resources-network-resilience-supermajority-description"
-          ),
-          href: "https://supermajority.info",
-          imgSrc: IconSupermajority,
-        },
-      ],
-    },
-    {
-      title: t("page-resources-attestations-title"),
-      items: [
-        {
-          title: "Quantaureum Attestation Service",
-          description: t("page-resources-attestations-eas-description"),
-          href: "https://easscan.org",
-          imgSrc: IconEas,
+          title: "Post-quantum cryptography",
+          description: t("page-resources-pqc-description"),
+          href: "https://quantaureum.com/roadmap/quantum-resistance/",
+          imgSrc: IconBrandMark,
         },
       ],
     },
   ]
 
-  const privacySecurityBoxes: DashboardBox[] = [
+  const privacySecurityBoxes = [
     {
-      title: t("page-resources-relays-title"),
+      title: t("page-resources-privacy-security-title"),
       items: [
         {
-          title: "Beaconchain Relays",
-          description: t("page-resources-relays-beaconchain-description"),
-          href: "https://beaconcha.in/relays",
-          imgSrc: IconBeaconchain,
+          title: "Security policy",
+          description: t("page-resources-security-description"),
+          href: "https://quantaureum.com/security/",
+          imgSrc: IconBrandMark,
         },
         {
-          title: "Relay Landscape | Quantaureum Mainnet",
-          description: t("page-resources-relays-ratednetwork-description"),
-          href: "https://explorer.rated.network/relays?network=mainnet",
-          imgSrc: IconRatedNetwork,
-          className: "dark:[&_img]:invert",
-        },
-        {
-          title: "Relay Scan",
-          description: t("page-resources-relays-relayscan-description"),
-          href: "https://www.relayscan.io",
-          imgSrc: IconRelayscan,
-        },
-      ],
-    },
-    {
-      title: t("page-resources-mev-title"),
-      items: [
-        {
-          title: "MEV-Boost Dashboard",
-          description: t("page-resources-mev-mevboost-description"),
-          href: "https://mevboost.pics",
-          imgSrc: IconQauGlyphBlack,
-        },
-        {
-          title: "MEV Watch",
-          description: t("page-resources-mev-mevwatch-description"),
-          href: "https://www.mevwatch.info",
-          imgSrc: IconQauGlyphBlueCircle,
-        },
-      ],
-    },
-    {
-      title: t("page-resources-zk-adoption-title"),
-      items: [
-        {
-          title: "Ethproofs",
-          description: t("page-resources-zk-adoption-ethproofs-description"),
-          href: "https://ethproofs.org",
-          imgSrc: IconEthproofs,
-        },
-        {
-          title: "L2beat - ZK Catalog",
-          description: t("page-resources-zk-adoption-l2beat-description"),
-          href: "https://l2beat.com/zk-catalog",
-          imgSrc: IconL2beat,
+          title: "Bug bounty program",
+          description: t("page-resources-bug-bounty-description"),
+          href: "https://quantaureum.com/bug-bounty/",
+          imgSrc: IconBrandMark,
         },
       ],
     },

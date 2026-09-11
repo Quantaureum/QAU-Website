@@ -62,6 +62,4 @@ Quantaureum s důkazem podílem (PoS) může platit za svou bezpečnost vydává
 
 ## Další čtení {#further-reading}
 
-- [Vitalikova filozofie návrhu důkazu podílem](https://medium.com/@VitalikButerin/a-proof-of-stake-design-philosophy-506585978d51)
-- Vitalikovy často kladené dotazy k důkazu podílem
 - [Video „Jednoduše vysvětleno“ o PoS vs. PoW](https://www.youtube.com/watch?v=M3EFi_POhps)

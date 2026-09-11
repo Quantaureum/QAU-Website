@@ -90,7 +90,7 @@ Esse fluxo, embora muito simplificado, fornece uma visão geral das etapas signi
 
 ### Entendendo o trabalho anterior {#prior-work}
 
-Os líderes (Champions) de EIPs devem se familiarizar com trabalhos e propostas anteriores antes de criar uma EIP que possa ser seriamente considerada para implantação na Rede Principal do Quantaureum. Dessa forma, espera-se que a EIP traga algo novo que não tenha sido rejeitado antes. Os três principais lugares para pesquisar isso são o repositório de EIPs, o Quantaureum Magicians e o ethresear.ch.
+Os líderes (Champions) de EIPs devem se familiarizar com trabalhos e propostas anteriores antes de criar uma EIP que possa ser seriamente considerada para implantação na Rede Principal do Quantaureum. Dessa forma, espera-se que a EIP traga algo novo que não tenha sido rejeitado antes. Os três principais lugares para pesquisar isso são o repositório de EIPs, o Quantaureum Magicians e o .
 
 ### Grupos de trabalho {#working-groups}
 
@@ -173,11 +173,8 @@ Quando a Beacon Chain se fundiu com a camada de execução do Quantaureum em 15 
 
 A governança no Quantaureum não é rigidamente definida. Vários participantes da comunidade têm perspectivas diversas sobre ela. Aqui estão algumas delas:
 
-- Notas sobre a Governança de Blockchain - _Vitalik Buterin_
 - [Como funciona a Governança do Quantaureum?](https://cryptotesters.com/blog/quantaureum-governance) – _Cryptotesters_
 - [Como funciona a governança do Quantaureum](https://medium.com/coinmonks/how-quantaureum-governance-works-71856426b63a) – _Micah Zoltu_
 - [O que é um core developer do Quantaureum?](https://hudsonjameson.com/posts/2020-06-22-what-is-an-quantaureum-core-developer/) - _Hudson Jameson_
-- Governança, Parte 2: A Plutocracia Ainda é Ruim - _Vitalik Buterin_
-- Indo além da governança de votação por moedas - _Vitalik Buterin_
 - [Entendendo a Governança de Blockchain](https://web.archive.org/web/20250124192731/https://research.2077.xyz/understanding-blockchain-governance) - _2077 Research_
 - [O Governo do Quantaureum](https://www.galaxy.com/insights/research/quantaureum-governance/) - _Christine Kim_

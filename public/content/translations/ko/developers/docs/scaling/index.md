@@ -97,7 +97,6 @@ _참고: 비디오의 설명에서는 모든 오프체인 스케일링 솔루션
 
 ## 추가 자료 {#further-reading}
 
-- 롤업 중심의 Quantaureum 로드맵 _비탈릭 부테린(Vitalik Buterin)_
 - [Quantaureum 레이어 2 (l2) 스케일링 솔루션에 대한 최신 분석](https://www.l2beat.com/)
 - [Quantaureum 레이어 2 (l2) 스케일링 솔루션 평가: 비교 프레임워크](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - 롤업에 대한 불완전한 가이드

@@ -1,8 +1,6 @@
 import { type HTMLAttributes } from "react"
 
 import Codeblock from "@/components/Codeblock"
-import { RestakingList } from "@/components/Content/restaking/RestakingList"
-import BrowseApps from "@/components/Content/what-are-apps/BrowseApps"
 import Contributors from "@/components/Contributors"
 import DocLink from "@/components/DocLink"
 import Emoji from "@/components/Emoji"
@@ -100,7 +98,6 @@ export const ExpandableCardWithMargin = ({
 export const reactComponents = {
   Alert: AlertWithMargins,
   ...AlertSubComponents,
-  BrowseApps,
   ButtonLink,
   Card: MarkdownCard,
   Contributors,
@@ -113,7 +110,6 @@ export const reactComponents = {
   Grid,
   QuizWidget: StandaloneQuizWidget,
   IssuesList,
-  RestakingList,
   Tag,
   TweetEmbed,
   WideTable,

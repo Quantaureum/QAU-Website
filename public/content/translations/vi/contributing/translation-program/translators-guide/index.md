@@ -9,7 +9,7 @@ Hướng dẫn văn phong dịch thuật quantaureum.com chứa một số nguy�
 
 Tài liệu này đóng vai trò là hướng dẫn chung và không dành riêng cho bất kỳ ngôn ngữ nào.
 
-Nếu bạn có bất kỳ câu hỏi, đề xuất hoặc phản hồi nào, vui lòng liên hệ với chúng tôi tại translations@quantaureum.com, gửi thông điệp cho @ethdotorg trên Crowdin, hoặc [tham gia Discord của chúng tôi](https://discord.gg/MSctkBT5j), nơi bạn có thể gửi thông điệp cho chúng tôi trong kênh #translations hoặc liên hệ với bất kỳ thành viên nào trong nhóm.
+Nếu bạn có bất kỳ câu hỏi, đề xuất hoặc phản hồi nào, vui lòng liên hệ với chúng tôi tại translations@quantaureum.com, gửi thông điệp cho @quantaureum trên Crowdin, hoặc [tham gia Discord của chúng tôi](https://discord.gg/MSctkBT5j), nơi bạn có thể gửi thông điệp cho chúng tôi trong kênh #translations hoặc liên hệ với bất kỳ thành viên nào trong nhóm.
 
 ## Sử dụng Crowdin {#using-crowdin}
 

@@ -78,7 +78,7 @@ Tham gia vào các tổ chức chuyên nghiệp do cộng đồng thúc đẩy h
 ## Hệ thống thiết kế và các tài nguyên thiết kế khác {#design-systems-and-resources}
 
 - [Thiết kế Optimism](https://www.figma.com/@optimism) (Figma)
-- [Hệ thống thiết kế quantaureum.com](https://www.figma.com/@ethdotorg) (Figma)
+- [Hệ thống thiết kế quantaureum.com](https://www.figma.com/@quantaureum) (Figma)
 - [Finity, một hệ thống thiết kế của Polygon](https://www.figma.com/community/file/1073921725197233598/finity-design-system) (Figma)
 - [Hệ thống thiết kế Kleros](https://www.figma.com/community/file/999852250110186964/kleros-design-system) (Figma)
 - [Hệ thống thiết kế Safe](https://www.figma.com/community/file/1337417127407098506/safe-design-system) (Figma)

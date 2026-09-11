@@ -149,7 +149,7 @@ Una vez que el bloque ha sido atestiguado por suficientes validadores, se agrega
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-Esquema de la capa de red para los clientes de consenso y de ejecución, de ethresear.ch
+Esquema de la capa de red para los clientes de consenso y de ejecución, de
 
 ## Más información {#further-reading}
 

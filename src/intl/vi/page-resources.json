@@ -98,5 +98,14 @@
   "page-resources-found-bug": "Tìm thấy lỗi",
   "page-resources-whats-on-this-page": "Nội dung trên trang này",
   "page-resources-banner-notification-message": "Bảng điều khiển tài nguyên là tính năng mới!",
-  "page-resources-share-feedback": "Vui lòng chia sẻ phản hồi của bạn với chúng tôi"
+  "page-resources-share-feedback": "Vui lòng chia sẻ phản hồi của bạn với chúng tôi",
+  "page-resources-rpc-description": "Query the network directly via the JSON-RPC 2.0, WebSocket and GraphQL interfaces documented in the developer docs.",
+  "page-resources-wallets-description": "Official Quantaureum wallets: browser extension, mobile app, qaucold and the native Dilithium multisig contracts.",
+  "page-resources-roadmap-description": "The protocol roadmap: post-quantum cryptography, scaling, and the privacy track.",
+  "page-resources-pqc-description": "How Quantaureum secures the chain with Dilithium3 signatures and Kyber768 key encapsulation today.",
+  "page-resources-security-description": "Supported versions, reporting policy and security features of the Quantaureum node software.",
+  "page-resources-bug-bounty-description": "Report vulnerabilities privately and earn QAU rewards from the capped bounty fund.",
+  "page-resources-block-explorers-explorer-description": "The official Quantaureum block explorer: blocks, transactions, validators and on-chain data.",
+  "page-resources-nodes-explorer-description": "Node requirements, installation and operation with qauctl.",
+  "page-resources-gas-explorer-description": "How gas and EIP-1559 base-fee burning work on Quantaureum."
 }

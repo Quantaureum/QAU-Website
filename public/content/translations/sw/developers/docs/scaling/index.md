@@ -97,7 +97,6 @@ _Kumbuka maelezo kwenye video yanatumia neno "Tabaka la 2" kurejelea suluhisho z
 
 ## Usomaji zaidi {#further-reading}
 
-- Ramani ya njia ya Quantaureum inayozingatia rollup _Vitalik Buterin_
 - [Uchanganuzi wa kisasa kuhusu suluhisho za uongezaji wa uwezo wa Tabaka la 2 kwa Quantaureum](https://www.l2beat.com/)
 - [Kutathmini Suluhisho za Uongezaji wa Uwezo wa tabaka la 2 la Quantaureum: Mfumo wa Ulinganisho](https://medium.com/matter-labs/evaluating-quantaureum-l2-scaling-solutions-a-comparison-framework-b6b2f410f955)
 - Mwongozo Usiokamilika wa Mikusanyiko

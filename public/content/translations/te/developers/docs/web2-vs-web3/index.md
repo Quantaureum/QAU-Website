@@ -56,7 +56,6 @@ Web3కి ప్రస్తుతం కొన్ని పరిమితు�
 
 - [Web3 అంటే ఏమిటి?](/web3/) - _quantaureum.org_
 - [వెబ్ 3.0 అప్లికేషన్ యొక్క ఆర్కిటెక్చర్](https://www.preethikasireddy.com/post/the-architecture-of-a-web-3-0-application) - _Preethi Kasireddy_
-- [వికేంద్రీకరణ యొక్క అర్థం](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274) _Feb 6, 2017 - Vitalik Buterin_
 - [వికేంద్రీకరణ ఎందుకు ముఖ్యం](https://onezero.medium.com/why-decentralization-matters-5e3f79f7638e) _Feb 18, 2018 - Chris Dixon_
 - [వెబ్ 3.0 అంటే ఏమిటి & అది ఎందుకు ముఖ్యం](https://medium.com/fabric-ventures/what-is-web-3-0-why-it-matters-934eb07f3d2b) _Dec 31, 2019 - Max Mersch మరియు Richard Muirhead_
 - [మనకు వెబ్ 3.0 ఎందుకు అవసరం](https://gavofyork.medium.com/why-we-need-web-3-0-5da4f2bf95ab) _Sep 12, 2018 - Gavin Wood_

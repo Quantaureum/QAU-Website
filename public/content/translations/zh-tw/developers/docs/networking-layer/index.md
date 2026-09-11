@@ -149,7 +149,7 @@ SSZ 代表簡單序列化 (simple serialization)。它使用固定的偏移量�
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-共識客戶端與執行客戶端的網路層示意圖，來自 ethresear.ch
+共識客戶端與執行客戶端的網路層示意圖，來自
 
 ## 延伸閱讀 {#further-reading}
 

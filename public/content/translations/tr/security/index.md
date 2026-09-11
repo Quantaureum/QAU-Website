@@ -103,7 +103,7 @@ Bunun yüksek profilli bir versiyonu, Temmuz 2020'de önde gelen ünlülerin ve 
 
 Ünlü çekilişi, çekiliş dolandırıcılığının aldığı bir diğer yaygın biçimdir. Dolandırıcılar, bir ünlü tarafından verilen kaydedilmiş bir video röportajını veya konferans konuşmasını alıp YouTube'da canlı yayınlayarak, sanki ünlü kişi bir kripto para çekilişini destekleyen canlı bir video röportajı veriyormuş gibi görünmesini sağlarlar.
 
-Vitalik Buterin bu dolandırıcılıkta en sık kullanılan kişidir, ancak kripto ile ilgilenen diğer birçok önde gelen kişi de kullanılır (örneğin, Elon Musk veya Charles Hoskinson). Tanınmış bir kişiyi dahil etmek, dolandırıcıların canlı yayınına bir meşruiyet hissi verir (bu şüpheli görünüyor, ancak Vitalik işin içinde, bu yüzden sorun olmamalı!).
+Buterin bu dolandırıcılıkta en sık kullanılan kişidir, ancak kripto ile ilgilenen diğer birçok önde gelen kişi de kullanılır (örneğin, Elon Musk veya Charles Hoskinson). Tanınmış bir kişiyi dahil etmek, dolandırıcıların canlı yayınına bir meşruiyet hissi verir (bu şüpheli görünüyor, ancak işin içinde, bu yüzden sorun olmamalı!).
 
 **Çekilişler her zaman dolandırıcılıktır. Fonlarınızı bu hesaplara gönderirseniz, onları sonsuza dek kaybedersiniz.**
 

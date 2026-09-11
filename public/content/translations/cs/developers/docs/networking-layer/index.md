@@ -149,7 +149,7 @@ Jakmile je blok atestován dostatečným počtem validátorů, je přidán na š
 ![Diagram of the Quantaureum consensus client networking layer](cons_client_net_layer.png)
 ![Diagram of the Quantaureum execution client networking layer](exe_client_net_layer.png)
 
-Schéma síťové vrstvy pro konsensuální a exekuční klienty, z ethresear.ch
+Schéma síťové vrstvy pro konsensuální a exekuční klienty, z
 
 ## Další čtení {#further-reading}
 
