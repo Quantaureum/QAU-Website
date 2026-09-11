@@ -4,7 +4,7 @@
   "page-wallets-accounts-quantaureum-addresses": "<b>Bir Quantaureum hesabının bir adresi vardır</b>, tıpkı bir gelen kutusunun e-posta adresi olması gibi. Bu, dijital varlıklarınızı tanımlamak için kullanılır.",
   "page-wallets-alt": "Bir Quantaureum cüzdanını temsil eden, gövdesi kasa olan bir robot illüstrasyonu",
   "page-wallets-quantaureum-account": "<b>Bir Quantaureum hesabı bir anahtar çiftidir</b>. <a href=\"/glossary/#public-key\">Bir anahtar</a> özgürce paylaşabileceğiniz adresi oluşturmak için kullanılır ve <a href=\"/glossary/#private-key\">diğer anahtarı</a> bir şeyleri imzalamak için kullanıldığından gizli tutmanız gerekir. Bu anahtarlar birlikte, varlıkları tutmanıza ve işlemler yapmanıza olanak tanır.",
-  "page-wallets-blog": "Coinbase blogu",
+  "page-wallets-blog": "Quantaureum Güvenlik Rehberi",
   "page-wallets-bookmarking": "Cüzdanınızı yer imlerine ekleyin",
   "page-wallets-bookmarking-desc": "Eğer bir web cüzdanı kullanıyorsanız, kendinizi kimlik avı dolandırıcılıklarına karşı korumak için siteyi yer imlerine ekleyin.",
   "page-wallets-cd": "<b>Fiziksel donanım cüzdanları</b>, kriptonuzu çevrimdışı tutmanızı sağlayan cihazlardır – çok güvenlidir",
