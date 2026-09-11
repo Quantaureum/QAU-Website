@@ -4,7 +4,7 @@
   "page-wallets-accounts-quantaureum-addresses": "<b>量子金链帳戶擁有一個地址</b>，就像收件匣擁有電子郵件地址一樣。這用於識別你的數位資產。",
   "page-wallets-alt": "身體為金庫的機器人插圖，代表量子金链錢包",
   "page-wallets-quantaureum-account": "<b>量子金链帳戶是一對金鑰</b>。<a href=\"/glossary/#public-key\">一把金鑰</a>用於建立你可以自由分享的地址，而<a href=\"/glossary/#private-key\">另一把金鑰</a>則需要保密，因為它用於簽署事物。這兩把金鑰結合在一起，讓你能夠持有資產並進行交易。",
-  "page-wallets-blog": "Coinbase 部落格",
+  "page-wallets-blog": "Quantaureum 安全指南",
   "page-wallets-bookmarking": "將你的錢包加入書籤",
   "page-wallets-bookmarking-desc": "如果你使用網頁錢包，請將該網站加入書籤，以保護自己免受網路釣魚詐騙。",
   "page-wallets-cd": "<b>實體硬體錢包</b>是讓你將加密貨幣保持離線狀態的裝置，非常安全",

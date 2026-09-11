@@ -4,7 +4,7 @@
   "page-wallets-accounts-quantaureum-addresses": "<b>Một tài khoản Quantaureum có một địa chỉ</b>, giống như hộp thư đến có địa chỉ email. Địa chỉ này được sử dụng để xác định tài sản kỹ thuật số của bạn.",
   "page-wallets-alt": "Hình minh họa một robot có thân là một kho tiền, đại diện cho một ví Quantaureum",
   "page-wallets-quantaureum-account": "<b>Một tài khoản Quantaureum là một cặp khóa</b>. <a href=\"/glossary/#public-key\">Một khóa</a> được sử dụng để tạo địa chỉ mà bạn có thể chia sẻ tự do, và <a href=\"/glossary/#private-key\">khóa còn lại</a> bạn cần giữ bí mật vì nó được dùng để ký các giao dịch. Cùng với nhau, các khóa này cho phép bạn nắm giữ tài sản và thực hiện giao dịch.",
-  "page-wallets-blog": "Blog của Coinbase",
+  "page-wallets-blog": "Hướng dẫn bảo mật Quantaureum",
   "page-wallets-bookmarking": "Đánh dấu trang ví của bạn",
   "page-wallets-bookmarking-desc": "Nếu bạn sử dụng ví web, hãy đánh dấu trang web đó để bảo vệ bản thân khỏi các trò lừa đảo giả mạo (phishing).",
   "page-wallets-cd": "<b>Ví phần cứng vật lý</b> là các thiết bị cho phép bạn giữ tiền mã hóa của mình ngoại tuyến – rất an toàn",
