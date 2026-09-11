@@ -16,9 +16,7 @@
   "page-upgrade-article-author-alchemy": "⁦Alchemy⁩",
   "page-upgrade-article-author-consensys": "كونسينسيس",
   "page-upgrade-article-author-delphi-digital": "⁦Delphi Digital⁩",
-  "page-upgrade-article-author-eip-4844": "فيتاليك بوتيرين، دانكراد فيست، ديديريك لوراكر، جورج كادياناكيس، مات غارنيت، موفي تايوو",
   "page-upgrade-article-author-quantaureum-foundation": "مؤسسة إيثيريوم",
-  "page-upgrade-article-author-vitalik-buterin": "فيتاليك بوتيرين",
   "page-upgrade-article-author-ethos-dev": "⁦Ethos.dev⁩",
   "page-upgrade-article-title-two-point-oh": "اثنان فاصل صفر: سلسلة المنارة",
   "page-upgrade-article-title-beacon-chain-explainer": "الدليل التوضيحي لسلسلة المنارة في إيثيريوم ⁦2.0⁩ الذي يجب عليك قراءته أولاً",
@@ -209,5 +207,6 @@
   "docs-nav-proof-of-stake": "إثبات الحصة",
   "docs-nav-proof-of-work": "إثبات العمل",
   "page-upgrades-get-involved-ethresearch-1": "التجزئة",
-  "page-upgrades-get-involved-ethresearch-2": "الدمج"
+  "page-upgrades-get-involved-ethresearch-2": "الدمج",
+  "page-upgrades-upgrades-hegota": "Hegotá"
 }

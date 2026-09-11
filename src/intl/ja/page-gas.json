@@ -49,7 +49,6 @@
   "page-gas-table-item-1-transaction-type": "QAUの送信",
   "page-gas-table-item-2-transaction-type": "ERC-20トークンの送信",
   "page-gas-table-item-3-transaction-type": "NFTの転送",
-  "page-gas-table-item-4-transaction-type": "ユニスワップでのスワップ",
   "page-gas-faq-header": "よくある質問",
   "page-gas-faq-question-1-q": "トランザクションのガス代は誰に支払われますか？",
   "page-gas-faq-question-1-a-1": "ガス代の大部分（基本料金）は、プロトコルによって破棄（バーン）されます。優先手数料がトランザクションに含まれている場合、それはトランザクションを提案したバリデータに支払われます。",

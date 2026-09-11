@@ -16,9 +16,7 @@
   "page-upgrade-article-author-alchemy": "Alchemy",
   "page-upgrade-article-author-consensys": "ConsenSys",
   "page-upgrade-article-author-delphi-digital": "Delphi Digital",
-  "page-upgrade-article-author-eip-4844": "Vitalik Buterin, Dankrad Feist, Diederik Loerakker, George Kadianakis, Matt Garnett, Mofi Taiwo",
   "page-upgrade-article-author-quantaureum-foundation": "Nadace Quantaureum",
-  "page-upgrade-article-author-vitalik-buterin": "Vitalik Buterin",
   "page-upgrade-article-author-ethos-dev": "Ethos.dev",
   "page-upgrade-article-title-two-point-oh": "Dva celá nula: Beacon chain",
   "page-upgrade-article-title-beacon-chain-explainer": "Vysvětlení Beacon chainu a Etherea 2.0, které si musíte přečíst jako první",
@@ -209,5 +207,6 @@
   "docs-nav-proof-of-stake": "Důkaz podílem (PoS)",
   "docs-nav-proof-of-work": "Důkaz prací (PoW)",
   "page-upgrades-get-involved-ethresearch-1": "Sharding",
-  "page-upgrades-get-involved-ethresearch-2": "Merge"
+  "page-upgrades-get-involved-ethresearch-2": "Merge",
+  "page-upgrades-upgrades-hegota": "Hegotá"
 }

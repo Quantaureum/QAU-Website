@@ -4,8 +4,6 @@
   "page-layer-2-networks-more-advanced-title": "మరింత అధునాతన అవలోకనం కోసం చూస్తున్నారా?",
   "page-layer-2-networks-more-advanced-descripton-1": "చాలా ప్రాజెక్ట్‌లు",
   "page-layer-2-networks-more-advanced-descripton-2": "ఇంకా ప్రారంభ దశలో మరియు కొంతవరకు ప్రయోగాత్మకంగా ఉన్నాయి.",
-  "page-layer-2-networks-more-advanced-descripton-3": "ఈ నెట్‌వర్క్‌ల సాంకేతికత, నష్టాలు మరియు విశ్వాస ఉపకల్పనలు గురించి మరింత సమాచారం కోసం, ప్రతి ప్రాజెక్ట్ యొక్క సమగ్ర ప్రమాద అంచనా ఫ్రేమ్‌వర్క్‌ను అందించే L2BEAT మరియు సాధారణ డేటా విశ్లేషణ కోసం growthepie ని తనిఖీ చేయాలని మేము సిఫార్సు చేస్తున్నాము.",
-  "page-layer-2-networks-more-advanced-link-1": "l2beat.com ని సందర్శించండి",
   "page-layer-2-networks-more-advanced-link-2": "growthepie.com ని సందర్శించండి",
   "page-layer-2-networks-callout-1-title": "ప్రయోజనాలు ఏమిటి?",
   "page-layer-2-networks-callout-1-description": "ఎథీరియం యొక్క బలం మరియు భద్రత ఇతర నెట్‌వర్క్‌లు నిర్మించుకోవడానికి ఒక ప్లాట్‌ఫారమ్‌ను అందిస్తుంది.",
@@ -51,7 +49,6 @@
   "page-layer-2-networks-actions": "చర్యలు",
   "page-layer-2-networks-official-website": "అధికారిక వెబ్‌సైట్",
   "page-layer-2-networks-risk-analysis": "ప్రమాద విశ్లేషణ",
-  "page-layer-2-networks-assessment-by-l2beat": "L2BEAT ద్వారా అంచనా",
   "page-layer-2-networks-detailed-analytics": "వివరణాత్మక విశ్లేషణలు",
   "page-layer-2-networks-assessment-by-growthepie": "growthepie ద్వారా అంచనా",
   "page-layer-2-networks-bridge-to": "దీనికి వారధి",
@@ -81,7 +78,5 @@
   "page-layer-2-network-maturity-component-13": "• కనీసం $150M TVL",
   "page-layer-2-network-maturity-component-14": "• ఉత్పత్తిలో 6+ నెలలు ప్రత్యక్షంగా",
   "page-layer-2-network-maturity-component-15": "• దశ 0",
-  "page-layer-2-network-maturity-component-16": "• ప్రమాద అంచనా: 3/5 (L2BEAT)",
-  "page-layer-2-network-maturity-component-17": "• ప్రమాద అంచనా: 2/5 (L2BEAT)",
   "page-layer-2-network-maturity-component-18": "• కనీసం $150M TVL లేదా ఉత్పత్తిలో 6+ నెలలు ప్రత్యక్షంగా"
 }

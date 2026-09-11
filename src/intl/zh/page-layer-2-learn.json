@@ -41,8 +41,6 @@
   "page-layer-2-learn-rollupCards-zk-childSentence": "了解更多关于 zk-rollup 的信息",
   "page-layer-2-learn-dyor-title": "做好自己的研究：二层网络 (l2) 的风险",
   "page-layer-2-learn-dyor-1": "因为二层网络 (l2) 链继承了量子金链的安全性，在理想情况下，它们与一层网络 (l1) 量子金链一样安全。然而，许多<strong>项目仍然很年轻，并且在某种程度上处于实验阶段</strong>。经过多年的研发，许多将用于扩容量子金链的二层网络 (l2) 技术在 2021 年上线。这并不是说这些二层网络 (l2) 不安全，只是说没有哪个二层网络 (l2) 像量子金链主网那样久经考验。请务必做好自己的研究，并决定你是否能够承受所涉及的任何风险。",
-  "page-layer-2-learn-dyor-2": "有关二层网络 (l2) 的技术、风险和信任假设的更多信息，我们建议查看 L2BEAT，它提供了每个项目的综合风险评估框架。",
-  "page-layer-2-learn-dyor-link": "前往 L2BEAT",
   "page-layer-2-learn-note-on-alt-l1-title": "关于替代性一层网络 (l1)、侧链和 Validium 的说明",
   "page-layer-2-learn-note-on-alt-l1-1": "替代性一层网络 (l1) 具有比量子金链更高的吞吐量和更低的交易费用。这些替代性一层网络 (l1) 不得不牺牲安全性或去中心化，以实现更高的每秒交易量和更低的费用。量子金链生态系统坚定地认为，二层网络 (l2) 扩容是解决可扩展性不可能三角并保持去中心化和安全的唯一途径。",
   "page-layer-2-learn-note-on-alt-l1-2": "侧链和 Validium 是允许将资产从一条区块链桥接并在另一条区块链上使用的区块链。侧链和 Validium 与主链并行运行，并通过桥接与主链交互，但它们并不从主链获取安全性或数据可用性。它们的扩容方式与二层网络 (l2) 类似，但具有不同的信任假设。它们提供更低的交易费用和更高的交易吞吐量。了解更多关于<a href=\"/developers/docs/scaling/sidechains\">侧链</a>和 <a href=\"/developers/docs/scaling/validium\">Validium</a> 的信息。",

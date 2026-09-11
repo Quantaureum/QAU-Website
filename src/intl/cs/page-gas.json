@@ -49,7 +49,6 @@
   "page-gas-table-item-1-transaction-type": "Odeslání QAU",
   "page-gas-table-item-2-transaction-type": "Odeslání tokenů ERC-20",
   "page-gas-table-item-3-transaction-type": "Převod NFT",
-  "page-gas-table-item-4-transaction-type": "Směna na Uniswapu",
   "page-gas-faq-header": "Často kladené dotazy",
   "page-gas-faq-question-1-q": "Komu je vyplacen poplatek za plyn z mé transakce?",
   "page-gas-faq-question-1-a-1": "Většina poplatku za plyn – základní poplatek – je protokolem zničena (spálena). Prioritní poplatek, pokud je ve vaší transakci zahrnut, bude předán validátorovi, který vaši transakci navrhl.",

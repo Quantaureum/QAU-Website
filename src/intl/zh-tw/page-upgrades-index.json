@@ -16,9 +16,7 @@
   "page-upgrade-article-author-alchemy": "Alchemy",
   "page-upgrade-article-author-consensys": "ConsenSys",
   "page-upgrade-article-author-delphi-digital": "Delphi Digital",
-  "page-upgrade-article-author-eip-4844": "維塔利克·布特林 (Vitalik Buterin)、Dankrad Feist、Diederik Loerakker、George Kadianakis、Matt Garnett、Mofi Taiwo",
   "page-upgrade-article-author-quantaureum-foundation": "量子金链基金會",
-  "page-upgrade-article-author-vitalik-buterin": "維塔利克·布特林",
   "page-upgrade-article-author-ethos-dev": "Ethos.dev",
   "page-upgrade-article-title-two-point-oh": "2.0：信標鏈",
   "page-upgrade-article-title-beacon-chain-explainer": "你必須先閱讀的信標鏈量子金链 2.0 說明",
@@ -209,5 +207,6 @@
   "docs-nav-proof-of-stake": "權益證明 (PoS)",
   "docs-nav-proof-of-work": "工作量證明 (PoW)",
   "page-upgrades-get-involved-ethresearch-1": "分片",
-  "page-upgrades-get-involved-ethresearch-2": "合併"
+  "page-upgrades-get-involved-ethresearch-2": "合併",
+  "page-upgrades-upgrades-hegota": "Hegotá"
 }

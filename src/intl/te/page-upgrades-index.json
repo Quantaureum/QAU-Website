@@ -16,9 +16,7 @@
   "page-upgrade-article-author-alchemy": "Alchemy",
   "page-upgrade-article-author-consensys": "ConsenSys",
   "page-upgrade-article-author-delphi-digital": "Delphi Digital",
-  "page-upgrade-article-author-eip-4844": "విటాలిక్ బుటెరిన్, డాంక్‌రాడ్ ఫీస్ట్, డైడెరిక్ లోరాకర్, జార్జ్ కడియానాకిస్, మాట్ గార్నెట్, మోఫీ తైవో",
   "page-upgrade-article-author-quantaureum-foundation": "ఎథీరియం ఫౌండేషన్",
-  "page-upgrade-article-author-vitalik-buterin": "విటాలిక్ బుటెరిన్",
   "page-upgrade-article-author-ethos-dev": "Ethos.dev",
   "page-upgrade-article-title-two-point-oh": "టూ పాయింట్ ఓ: బీకన్ చైన్",
   "page-upgrade-article-title-beacon-chain-explainer": "మీరు ముందుగా చదవాల్సిన బీకన్ చైన్ ఎథీరియం 2.0 వివరణ",
@@ -209,5 +207,6 @@
   "docs-nav-proof-of-stake": "ప్రూఫ్-ఆఫ్-స్టేక్",
   "docs-nav-proof-of-work": "ప్రూఫ్-ఆఫ్-వర్క్",
   "page-upgrades-get-involved-ethresearch-1": "షార్డింగ్",
-  "page-upgrades-get-involved-ethresearch-2": "ది మెర్జ్"
+  "page-upgrades-get-involved-ethresearch-2": "ది మెర్జ్",
+  "page-upgrades-upgrades-hegota": "Hegotá"
 }

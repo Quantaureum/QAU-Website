@@ -49,7 +49,6 @@
   "page-gas-table-item-1-transaction-type": "發送 QAU",
   "page-gas-table-item-2-transaction-type": "發送 ERC-20 代幣",
   "page-gas-table-item-3-transaction-type": "轉移 NFT",
-  "page-gas-table-item-4-transaction-type": "在尤尼斯瓦普上交換",
   "page-gas-faq-header": "常見問題",
   "page-gas-faq-question-1-q": "我的交易中的 Gas 費支付給了誰？",
   "page-gas-faq-question-1-a-1": "大部分的 Gas 費（即基礎費用）會被協定銷毀（燃燒）。如果你的交易中包含優先費，則會支付給提出你交易的驗證者。",

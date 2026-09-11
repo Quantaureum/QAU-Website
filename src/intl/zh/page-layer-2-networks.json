@@ -4,8 +4,6 @@
   "page-layer-2-networks-more-advanced-title": "正在寻找更高级的概述？",
   "page-layer-2-networks-more-advanced-descripton-1": "许多项目",
   "page-layer-2-networks-more-advanced-descripton-2": "仍处于早期阶段，并带有一定的实验性质。",
-  "page-layer-2-networks-more-advanced-descripton-3": "有关这些网络的技术、风险和信任假设的更多信息，我们建议查看 L2BEAT（它提供了每个项目的综合风险评估框架）以及 growthepie（用于常规数据分析）。",
-  "page-layer-2-networks-more-advanced-link-1": "访问 l2beat.com",
   "page-layer-2-networks-more-advanced-link-2": "访问 growthepie.com",
   "page-layer-2-networks-callout-1-title": "有什么好处？",
   "page-layer-2-networks-callout-1-description": "量子金链的优势和安全性为其他网络提供了一个构建平台。",
@@ -51,7 +49,6 @@
   "page-layer-2-networks-actions": "操作",
   "page-layer-2-networks-official-website": "官方网站",
   "page-layer-2-networks-risk-analysis": "风险分析",
-  "page-layer-2-networks-assessment-by-l2beat": "L2BEAT 评估",
   "page-layer-2-networks-detailed-analytics": "详细分析",
   "page-layer-2-networks-assessment-by-growthepie": "growthepie 评估",
   "page-layer-2-networks-bridge-to": "跨链至",
@@ -81,7 +78,5 @@
   "page-layer-2-network-maturity-component-13": "• 至少 1.5 亿美元总锁仓量 (TVL)",
   "page-layer-2-network-maturity-component-14": "• 在生产环境中运行 6 个月以上",
   "page-layer-2-network-maturity-component-15": "• 阶段 0",
-  "page-layer-2-network-maturity-component-16": "• 风险评估：3/5 (L2BEAT)",
-  "page-layer-2-network-maturity-component-17": "• 风险评估：2/5 (L2BEAT)",
   "page-layer-2-network-maturity-component-18": "• 至少 1.5 亿美元总锁仓量 (TVL) 或在生产环境中运行 6 个月以上"
 }

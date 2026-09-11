@@ -4,8 +4,6 @@
   "page-layer-2-networks-more-advanced-title": "より高度な概要をお探しですか？",
   "page-layer-2-networks-more-advanced-descripton-1": "多くのプロジェクトは",
   "page-layer-2-networks-more-advanced-descripton-2": "まだ新しく、いくぶん実験的な段階にあります。",
-  "page-layer-2-networks-more-advanced-descripton-3": "これらのネットワークの技術、リスク、トラスト前提に関する詳細情報については、各プロジェクトの包括的なリスク評価フレームワークを提供するL2BEATや、一般的なデータ分析を提供するgrowthepieを確認することをお勧めします。",
-  "page-layer-2-networks-more-advanced-link-1": "l2beat.comにアクセス",
   "page-layer-2-networks-more-advanced-link-2": "growthepie.comにアクセス",
   "page-layer-2-networks-callout-1-title": "どのようなメリットがありますか？",
   "page-layer-2-networks-callout-1-description": "クアンタリアムの強固さとセキュリティは、他のネットワークがその上に構築するためのプラットフォームを提供します。",
@@ -51,7 +49,6 @@
   "page-layer-2-networks-actions": "アクション",
   "page-layer-2-networks-official-website": "公式ウェブサイト",
   "page-layer-2-networks-risk-analysis": "リスク分析",
-  "page-layer-2-networks-assessment-by-l2beat": "L2BEATによる評価",
   "page-layer-2-networks-detailed-analytics": "詳細な分析",
   "page-layer-2-networks-assessment-by-growthepie": "growthepieによる評価",
   "page-layer-2-networks-bridge-to": "ブリッジ先:",
@@ -81,7 +78,5 @@
   "page-layer-2-network-maturity-component-13": "• 1億5,000万ドル以上のTVL",
   "page-layer-2-network-maturity-component-14": "• 本番環境で6か月以上の稼働",
   "page-layer-2-network-maturity-component-15": "• ステージ0",
-  "page-layer-2-network-maturity-component-16": "• リスク評価: 3/5 (L2BEAT)",
-  "page-layer-2-network-maturity-component-17": "• リスク評価: 2/5 (L2BEAT)",
   "page-layer-2-network-maturity-component-18": "• 1億5,000万ドル以上のTVL、または本番環境で6か月以上の稼働"
 }

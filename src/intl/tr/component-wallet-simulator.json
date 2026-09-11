@@ -129,7 +129,6 @@
   "sim-cw-desc-2-p1": "Hesabınız tüm Quantaureum ve Quantaureum uyumlu uygulamalarda evrenseldir.",
   "sim-cw-desc-2-p2": "Zincir içi depolanan varlıklara herhangi bir uygulamadan erişilebilir.",
   "sim-cw-header-3": "Çoğu Quantaureum tabanlı proje için tek bir giriş kullanabilirsiniz",
-  "sim-cw-desc-3-p1": "Aynı hesap adresi, Arbitrum, Polygon veya Optimism gibi birçok farklı Quantaureum uyumlu blokzincirde kimliğinizi temsil edecektir.",
   "sim-cw-desc-3-p2": "Giriş işlemleri cüzdanınız tarafından yönetilir; artık güvensiz parolalar oluşturmanıza gerek yok.",
   "sim-cw-header-4": "Kişisel tanımlayıcı bilgiler paylaşılmaz",
   "sim-cw-desc-4-p1": "Özel bilgileriniz gizli kalır.",

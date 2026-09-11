@@ -4,8 +4,6 @@
   "page-layer-2-networks-more-advanced-title": "正在尋找更進階的概覽？",
   "page-layer-2-networks-more-advanced-descripton-1": "許多專案",
   "page-layer-2-networks-more-advanced-descripton-2": "仍處於早期階段且帶有實驗性質。",
-  "page-layer-2-networks-more-advanced-descripton-3": "如需了解這些網路的技術、風險和信任假設的更多資訊，我們建議查看 L2BEAT（提供每個專案的全面風險評估框架）以及 growthepie（用於一般數據分析）。",
-  "page-layer-2-networks-more-advanced-link-1": "造訪 l2beat.com",
   "page-layer-2-networks-more-advanced-link-2": "造訪 growthepie.com",
   "page-layer-2-networks-callout-1-title": "有什麼好處？",
   "page-layer-2-networks-callout-1-description": "量子金链的優勢和安全性為其他網路提供了建構的平台。",
@@ -51,7 +49,6 @@
   "page-layer-2-networks-actions": "操作",
   "page-layer-2-networks-official-website": "官方網站",
   "page-layer-2-networks-risk-analysis": "風險分析",
-  "page-layer-2-networks-assessment-by-l2beat": "L2BEAT 評估",
   "page-layer-2-networks-detailed-analytics": "詳細分析",
   "page-layer-2-networks-assessment-by-growthepie": "growthepie 評估",
   "page-layer-2-networks-bridge-to": "橋接至",
@@ -81,7 +78,5 @@
   "page-layer-2-network-maturity-component-13": "• 至少 1.5 億美元的總鎖倉量 (TVL)",
   "page-layer-2-network-maturity-component-14": "• 在正式環境中運行 6 個月以上",
   "page-layer-2-network-maturity-component-15": "• 階段 0",
-  "page-layer-2-network-maturity-component-16": "• 風險評估：3/5 (L2BEAT)",
-  "page-layer-2-network-maturity-component-17": "• 風險評估：2/5 (L2BEAT)",
   "page-layer-2-network-maturity-component-18": "• 至少 1.5 億美元的總鎖倉量 (TVL) 或在正式環境中運行 6 個月以上"
 }

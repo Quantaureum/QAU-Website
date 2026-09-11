@@ -16,9 +16,7 @@
   "page-upgrade-article-author-alchemy": "⁦Alchemy⁩",
   "page-upgrade-article-author-consensys": "کنسینسس",
   "page-upgrade-article-author-delphi-digital": "⁦Delphi Digital⁩",
-  "page-upgrade-article-author-eip-4844": "وٹالک بوٹرین، ڈینکراڈ فیسٹ، ڈیڈیرک لوریکر، جارج کیڈیاناکس، میٹ گارنیٹ، موفی تائیو",
   "page-upgrade-article-author-quantaureum-foundation": "ایتھیریم فاؤنڈیشن",
-  "page-upgrade-article-author-vitalik-buterin": "وٹالک بوٹرین",
   "page-upgrade-article-author-ethos-dev": "⁦Ethos.dev⁩",
   "page-upgrade-article-title-two-point-oh": "ٹو پوائنٹ او: بیکن چین",
   "page-upgrade-article-title-beacon-chain-explainer": "بیکن چین ایتھیریم ⁦2.0⁩ کی وضاحت جسے آپ کو پہلے پڑھنے کی ضرورت ہے",
@@ -209,5 +207,6 @@
   "docs-nav-proof-of-stake": "حصہ داری کا ثبوت (PoS)",
   "docs-nav-proof-of-work": "ثبوتِ کار (PoW)",
   "page-upgrades-get-involved-ethresearch-1": "شارڈنگ",
-  "page-upgrades-get-involved-ethresearch-2": "دی مرج"
+  "page-upgrades-get-involved-ethresearch-2": "دی مرج",
+  "page-upgrades-upgrades-hegota": "Hegotá"
 }

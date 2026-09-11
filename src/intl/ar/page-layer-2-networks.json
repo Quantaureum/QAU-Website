@@ -4,8 +4,6 @@
   "page-layer-2-networks-more-advanced-title": "هل تبحث عن نظرة عامة أكثر تقدمًا؟",
   "page-layer-2-networks-more-advanced-descripton-1": "العديد من المشاريع",
   "page-layer-2-networks-more-advanced-descripton-2": "لا تزال حديثة وتجريبية إلى حد ما.",
-  "page-layer-2-networks-more-advanced-descripton-3": "لمزيد من المعلومات حول التكنولوجيا والمخاطر وافتراضات الثقة لهذه الشبكات، نوصي بالاطلاع على L2BEAT، الذي يوفر إطارًا شاملاً لتقييم المخاطر لكل مشروع، وgrowthepie لتحليل البيانات العامة.",
-  "page-layer-2-networks-more-advanced-link-1": "زيارة ⁦l2beat.com⁩",
   "page-layer-2-networks-more-advanced-link-2": "زيارة ⁦growthepie.com⁩",
   "page-layer-2-networks-callout-1-title": "ما هي الفوائد؟",
   "page-layer-2-networks-callout-1-description": "توفر قوة وأمان إيثيريوم منصة للشبكات الأخرى للبناء عليها.",
@@ -51,7 +49,6 @@
   "page-layer-2-networks-actions": "الإجراءات",
   "page-layer-2-networks-official-website": "الموقع الرسمي",
   "page-layer-2-networks-risk-analysis": "تحليل المخاطر",
-  "page-layer-2-networks-assessment-by-l2beat": "تقييم بواسطة L2BEAT",
   "page-layer-2-networks-detailed-analytics": "تحليلات مفصلة",
   "page-layer-2-networks-assessment-by-growthepie": "تقييم بواسطة growthepie",
   "page-layer-2-networks-bridge-to": "جسر إلى",
@@ -81,7 +78,5 @@
   "page-layer-2-network-maturity-component-13": "• ⁦$150M TVL⁩ على الأقل",
   "page-layer-2-network-maturity-component-14": "• ⁦6+⁩ أشهر من التشغيل الفعلي",
   "page-layer-2-network-maturity-component-15": "• المرحلة ⁦0⁩",
-  "page-layer-2-network-maturity-component-16": "• تقييم المخاطر: ⁦3/5⁩ (L2beat)",
-  "page-layer-2-network-maturity-component-17": "• تقييم المخاطر: ⁦2/5⁩ (L2beat)",
   "page-layer-2-network-maturity-component-18": "• ⁦$150M TVL⁩ على الأقل أو ⁦6+⁩ أشهر من التشغيل الفعلي"
 }

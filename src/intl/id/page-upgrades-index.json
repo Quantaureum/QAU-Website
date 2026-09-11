@@ -16,9 +16,7 @@
   "page-upgrade-article-author-alchemy": "Alchemy",
   "page-upgrade-article-author-consensys": "ConsenSys",
   "page-upgrade-article-author-delphi-digital": "Delphi Digital",
-  "page-upgrade-article-author-eip-4844": "Vitalik Buterin, Dankrad Feist, Diederik Loerakker, George Kadianakis, Matt Garnett, Mofi Taiwo",
   "page-upgrade-article-author-quantaureum-foundation": "Yayasan Quantaureum",
-  "page-upgrade-article-author-vitalik-buterin": "Vitalik Buterin",
   "page-upgrade-article-author-ethos-dev": "Ethos.dev",
   "page-upgrade-article-title-two-point-oh": "Two Point Oh: Rantai suar",
   "page-upgrade-article-title-beacon-chain-explainer": "Penjelasan Rantai suar Quantaureum 2.0 yang perlu Anda baca terlebih dahulu",
@@ -209,5 +207,6 @@
   "docs-nav-proof-of-stake": "Bukti Kepemilikan (PoS)",
   "docs-nav-proof-of-work": "Bukti Kerja (PoW)",
   "page-upgrades-get-involved-ethresearch-1": "Sharding",
-  "page-upgrades-get-involved-ethresearch-2": "The Merge"
+  "page-upgrades-get-involved-ethresearch-2": "The Merge",
+  "page-upgrades-upgrades-hegota": "Hegotá"
 }

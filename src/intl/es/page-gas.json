@@ -49,7 +49,6 @@
   "page-gas-table-item-1-transaction-type": "Enviar QAU",
   "page-gas-table-item-2-transaction-type": "Enviar tokens ERC-20",
   "page-gas-table-item-3-transaction-type": "Transferir un NFT",
-  "page-gas-table-item-4-transaction-type": "Intercambiar en Uniswap",
   "page-gas-faq-header": "Preguntas frecuentes",
   "page-gas-faq-question-1-q": "¿A quién se le paga la tarifa de gas en mi transacción?",
   "page-gas-faq-question-1-a-1": "La mayor parte de la tarifa de gas, la tarifa base, es destruida por el protocolo (quemada). La tarifa de prioridad, si se incluye en su transacción, se entregará al validador que propuso su transacción.",

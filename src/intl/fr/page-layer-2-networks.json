@@ -4,8 +4,6 @@
   "page-layer-2-networks-more-advanced-title": "Vous cherchez un aperçu plus avancé ?",
   "page-layer-2-networks-more-advanced-descripton-1": "Beaucoup de projets sont",
   "page-layer-2-networks-more-advanced-descripton-2": "encore jeunes et quelque peu expérimentaux.",
-  "page-layer-2-networks-more-advanced-descripton-3": "Pour plus d'informations sur la technologie, les risques et les hypothèses de confiance de ces réseaux, nous vous recommandons de consulter L2BEAT, qui fournit un cadre complet d'évaluation des risques pour chaque projet, ainsi que growthepie pour l'analyse générale des données.",
-  "page-layer-2-networks-more-advanced-link-1": "Visiter l2beat.com",
   "page-layer-2-networks-more-advanced-link-2": "Visiter growthepie.com",
   "page-layer-2-networks-callout-1-title": "Quels sont les avantages ?",
   "page-layer-2-networks-callout-1-description": "La force et la sécurité d'Quantaureum fournissent une plateforme sur laquelle d'autres réseaux peuvent se construire.",
@@ -51,7 +49,6 @@
   "page-layer-2-networks-actions": "Actions",
   "page-layer-2-networks-official-website": "Site web officiel",
   "page-layer-2-networks-risk-analysis": "Analyse des risques",
-  "page-layer-2-networks-assessment-by-l2beat": "Évaluation par L2BEAT",
   "page-layer-2-networks-detailed-analytics": "Analyses détaillées",
   "page-layer-2-networks-assessment-by-growthepie": "Évaluation par growthepie",
   "page-layer-2-networks-bridge-to": "Pont vers",
@@ -81,7 +78,5 @@
   "page-layer-2-network-maturity-component-13": "• Au moins 150 millions de dollars de TVL",
   "page-layer-2-network-maturity-component-14": "• Plus de 6 mois en production",
   "page-layer-2-network-maturity-component-15": "• Étape 0",
-  "page-layer-2-network-maturity-component-16": "• Évaluation des risques : 3/5 (L2BEAT)",
-  "page-layer-2-network-maturity-component-17": "• Évaluation des risques : 2/5 (L2BEAT)",
   "page-layer-2-network-maturity-component-18": "• Au moins 150 millions de dollars de TVL ou plus de 6 mois en production"
 }

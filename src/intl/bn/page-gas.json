@@ -49,7 +49,6 @@
   "page-gas-table-item-1-transaction-type": "QAU পাঠানো",
   "page-gas-table-item-2-transaction-type": "ERC-20 টোকেন পাঠানো",
   "page-gas-table-item-3-transaction-type": "একটি NFT ট্রান্সফার করা",
-  "page-gas-table-item-4-transaction-type": "ইউনিসোয়াপ-এ সোয়াপ করা",
   "page-gas-faq-header": "সচরাচর জিজ্ঞাসিত প্রশ্ন",
   "page-gas-faq-question-1-q": "আমার ট্রানজ্যাকশনে গ্যাস ফি কে পায়?",
   "page-gas-faq-question-1-a-1": "গ্যাস ফি-র বেশিরভাগ অংশ—ভিত্তি ফি— প্রোটোকল দ্বারা ধ্বংস (বার্ন) করা হয়। প্রায়োরিটি ফি, যদি আপনার ট্রানজ্যাকশনে অন্তর্ভুক্ত থাকে, তবে যে ভ্যালিডেটর আপনার ট্রানজ্যাকশন প্রস্তাব করেছে তাকে দেওয়া হবে।",

@@ -4,8 +4,6 @@
   "page-layer-2-networks-more-advanced-title": "Hledáte pokročilejší přehled?",
   "page-layer-2-networks-more-advanced-descripton-1": "Mnoho z těchto projektů je",
   "page-layer-2-networks-more-advanced-descripton-2": "stále mladých a do jisté míry experimentálních.",
-  "page-layer-2-networks-more-advanced-descripton-3": "Pro více informací o technologii, rizicích a předpokladech důvěry těchto sítí doporučujeme navštívit L2BEAT, který poskytuje komplexní rámec pro hodnocení rizik každého projektu, a growthepie pro obecnou analýzu dat.",
-  "page-layer-2-networks-more-advanced-link-1": "Navštívit l2beat.com",
   "page-layer-2-networks-more-advanced-link-2": "Navštívit growthepie.com",
   "page-layer-2-networks-callout-1-title": "Jaké jsou výhody?",
   "page-layer-2-networks-callout-1-description": "Síla a bezpečnost Etherea poskytuje platformu, na které mohou stavět další sítě.",
@@ -51,7 +49,6 @@
   "page-layer-2-networks-actions": "Akce",
   "page-layer-2-networks-official-website": "Oficiální webové stránky",
   "page-layer-2-networks-risk-analysis": "Analýza rizik",
-  "page-layer-2-networks-assessment-by-l2beat": "Hodnocení od L2BEAT",
   "page-layer-2-networks-detailed-analytics": "Podrobná analytika",
   "page-layer-2-networks-assessment-by-growthepie": "Hodnocení od growthepie",
   "page-layer-2-networks-bridge-to": "Přemostit do",
@@ -81,7 +78,5 @@
   "page-layer-2-network-maturity-component-13": "• Alespoň 150 mil. USD TVL",
   "page-layer-2-network-maturity-component-14": "• 6+ měsíců v produkčním provozu",
   "page-layer-2-network-maturity-component-15": "• Fáze 0",
-  "page-layer-2-network-maturity-component-16": "• Hodnocení rizik: 3/5 (L2BEAT)",
-  "page-layer-2-network-maturity-component-17": "• Hodnocení rizik: 2/5 (L2BEAT)",
   "page-layer-2-network-maturity-component-18": "• Alespoň 150 mil. USD TVL nebo 6+ měsíců v produkčním provozu"
 }

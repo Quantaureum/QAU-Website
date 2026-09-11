@@ -4,8 +4,6 @@
   "page-layer-2-networks-more-advanced-title": "کیا آپ مزید تفصیلی جائزہ تلاش کر رہے ہیں؟",
   "page-layer-2-networks-more-advanced-descripton-1": "بہت سے پروجیکٹس",
   "page-layer-2-networks-more-advanced-descripton-2": "ابھی نئے اور کسی حد تک تجرباتی ہیں۔",
-  "page-layer-2-networks-more-advanced-descripton-3": "ان نیٹ ورکس کی ٹیکنالوجی، خطرات اور اعتماد کے مفروضے کے بارے میں مزید معلومات کے لیے، ہم ⁦L2BEAT⁩ دیکھنے کی تجویز کرتے ہیں، جو ہر پروجیکٹ کے خطرے کی تشخیص کا ایک جامع فریم ورک فراہم کرتا ہے، اور عمومی ڈیٹا کے تجزیے کے لیے ⁦growthepie⁩ پیش کرتا ہے۔",
-  "page-layer-2-networks-more-advanced-link-1": "⁦l2beat.com⁩ ملاحظہ کریں",
   "page-layer-2-networks-more-advanced-link-2": "⁦growthepie.com⁩ ملاحظہ کریں",
   "page-layer-2-networks-callout-1-title": "اس کے کیا فوائد ہیں؟",
   "page-layer-2-networks-callout-1-description": "ایتھیریم کی مضبوطی اور سیکیورٹی دیگر نیٹ ورکس کو تعمیر کے لیے ایک پلیٹ فارم مہیا کرتی ہے۔",
@@ -51,7 +49,6 @@
   "page-layer-2-networks-actions": "اقدامات",
   "page-layer-2-networks-official-website": "سرکاری ویب سائٹ",
   "page-layer-2-networks-risk-analysis": "خطرے کا تجزیہ",
-  "page-layer-2-networks-assessment-by-l2beat": "⁦L2BEAT⁩ کی طرف سے تشخیص",
   "page-layer-2-networks-detailed-analytics": "تفصیلی تجزیات",
   "page-layer-2-networks-assessment-by-growthepie": "⁦growthepie⁩ کی طرف سے تشخیص",
   "page-layer-2-networks-bridge-to": "پل برائے",
@@ -81,7 +78,5 @@
   "page-layer-2-network-maturity-component-13": "• کم از کم ⁦$150M⁩ ٹی وی ایل",
   "page-layer-2-network-maturity-component-14": "• پروڈکشن میں ⁦6+⁩ ماہ لائیو",
   "page-layer-2-network-maturity-component-15": "• مرحلہ ⁦0⁩",
-  "page-layer-2-network-maturity-component-16": "• خطرے کی تشخیص: ⁦3/5⁩ (⁦L2beat⁩)",
-  "page-layer-2-network-maturity-component-17": "• خطرے کی تشخیص: ⁦2/5⁩ (⁦L2beat⁩)",
   "page-layer-2-network-maturity-component-18": "• کم از کم ⁦$150M⁩ ٹی وی ایل یا پروڈکشن میں ⁦6+⁩ ماہ لائیو"
 }

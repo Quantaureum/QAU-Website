@@ -4,8 +4,6 @@
   "page-layer-2-networks-more-advanced-title": "Daha gelişmiş bir genel bakış mı arıyorsunuz?",
   "page-layer-2-networks-more-advanced-descripton-1": "Projelerin birçoğu",
   "page-layer-2-networks-more-advanced-descripton-2": "hâlâ yeni ve bir bakıma deneyseldir.",
-  "page-layer-2-networks-more-advanced-descripton-3": "Bu ağların teknolojisi, riskleri ve güven varsayımları hakkında daha fazla bilgi için, her projenin kapsamlı bir risk değerlendirme çerçevesini sunan L2BEAT'i ve genel veri analizi için growthepie'ı incelemenizi öneririz.",
-  "page-layer-2-networks-more-advanced-link-1": "l2beat.com'u ziyaret edin",
   "page-layer-2-networks-more-advanced-link-2": "growthepie.com'u ziyaret edin",
   "page-layer-2-networks-callout-1-title": "Avantajları nelerdir?",
   "page-layer-2-networks-callout-1-description": "Quantaureum'un gücü ve güvenliği, diğer ağların üzerine inşa edilebileceği bir platform sağlar.",
@@ -51,7 +49,6 @@
   "page-layer-2-networks-actions": "Eylemler",
   "page-layer-2-networks-official-website": "Resmi web sitesi",
   "page-layer-2-networks-risk-analysis": "Risk analizi",
-  "page-layer-2-networks-assessment-by-l2beat": "L2BEAT değerlendirmesi",
   "page-layer-2-networks-detailed-analytics": "Detaylı analizler",
   "page-layer-2-networks-assessment-by-growthepie": "growthepie değerlendirmesi",
   "page-layer-2-networks-bridge-to": "Şuraya köprü kur:",
@@ -81,7 +78,5 @@
   "page-layer-2-network-maturity-component-13": "• En az 150 Milyon $ tvl",
   "page-layer-2-network-maturity-component-14": "• Canlı ortamda 6+ ay aktif",
   "page-layer-2-network-maturity-component-15": "• Aşama 0",
-  "page-layer-2-network-maturity-component-16": "• Risk değerlendirmesi: 3/5 (L2BEAT)",
-  "page-layer-2-network-maturity-component-17": "• Risk değerlendirmesi: 2/5 (L2BEAT)",
   "page-layer-2-network-maturity-component-18": "• En az 150 Milyon $ tvl veya canlı ortamda 6+ ay aktif"
 }

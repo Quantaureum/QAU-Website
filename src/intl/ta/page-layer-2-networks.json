@@ -4,8 +4,6 @@
   "page-layer-2-networks-more-advanced-title": "மேலும் மேம்பட்ட கண்ணோட்டத்தைத் தேடுகிறீர்களா?",
   "page-layer-2-networks-more-advanced-descripton-1": "பல திட்டங்கள்",
   "page-layer-2-networks-more-advanced-descripton-2": "இன்னும் புதியவையாகவும் ஓரளவு பரிசோதனை முறையிலும் உள்ளன.",
-  "page-layer-2-networks-more-advanced-descripton-3": "இந்த பிணையங்களின் தொழில்நுட்பம், அபாயங்கள் மற்றும் நம்பிக்கை அனுமானங்கள் பற்றிய கூடுதல் தகவலுக்கு, ஒவ்வொரு திட்டத்தின் விரிவான இடர் மதிப்பீட்டு கட்டமைப்பை வழங்கும் L2BEAT மற்றும் பொதுவான தரவு பகுப்பாய்விற்கான growthepie ஆகியவற்றைச் சரிபார்க்க பரிந்துரைக்கிறோம்.",
-  "page-layer-2-networks-more-advanced-link-1": "l2beat.com ஐப் பார்வையிடவும்",
   "page-layer-2-networks-more-advanced-link-2": "growthepie.com ஐப் பார்வையிடவும்",
   "page-layer-2-networks-callout-1-title": "நன்மைகள் என்ன?",
   "page-layer-2-networks-callout-1-description": "எத்திரியம் வலிமை மற்றும் பாதுகாப்பு மற்ற பிணையங்களை உருவாக்குவதற்கான தளத்தை வழங்குகிறது.",
@@ -51,7 +49,6 @@
   "page-layer-2-networks-actions": "செயல்கள்",
   "page-layer-2-networks-official-website": "அதிகாரப்பூர்வ இணையதளம்",
   "page-layer-2-networks-risk-analysis": "இடர் பகுப்பாய்வு",
-  "page-layer-2-networks-assessment-by-l2beat": "L2BEAT மதிப்பீடு",
   "page-layer-2-networks-detailed-analytics": "விரிவான பகுப்பாய்வு",
   "page-layer-2-networks-assessment-by-growthepie": "growthepie மதிப்பீடு",
   "page-layer-2-networks-bridge-to": "இதற்கு பாலம்",
@@ -81,7 +78,5 @@
   "page-layer-2-network-maturity-component-13": "• குறைந்தபட்சம் $150M TVL",
   "page-layer-2-network-maturity-component-14": "• உற்பத்தியில் 6+ மாதங்கள் நேரலையில்",
   "page-layer-2-network-maturity-component-15": "• நிலை 0",
-  "page-layer-2-network-maturity-component-16": "• இடர் மதிப்பீடு: 3/5 (L2BEAT)",
-  "page-layer-2-network-maturity-component-17": "• இடர் மதிப்பீடு: 2/5 (L2BEAT)",
   "page-layer-2-network-maturity-component-18": "• குறைந்தபட்சம் $150M TVL அல்லது உற்பத்தியில் 6+ மாதங்கள் நேரலையில்"
 }

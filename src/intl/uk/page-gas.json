@@ -49,7 +49,6 @@
   "page-gas-table-item-1-transaction-type": "Надсилання QAU",
   "page-gas-table-item-2-transaction-type": "Надсилання токенів ERC-20",
   "page-gas-table-item-3-transaction-type": "Переказ NFT",
-  "page-gas-table-item-4-transaction-type": "Обмін на Юнісвоп",
   "page-gas-faq-header": "Часті запитання",
   "page-gas-faq-question-1-q": "Хто отримує комісію за газ у моїй транзакції?",
   "page-gas-faq-question-1-a-1": "Більша частина комісії за газ — базова комісія — знищується протоколом (спалюється). Пріоритетна комісія, якщо вона включена у вашу транзакцію, буде передана валідатору, який запропонував вашу транзакцію.",

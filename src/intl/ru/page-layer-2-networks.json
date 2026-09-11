@@ -4,8 +4,6 @@
   "page-layer-2-networks-more-advanced-title": "Ищете более подробный обзор?",
   "page-layer-2-networks-more-advanced-descripton-1": "Многие из проектов",
   "page-layer-2-networks-more-advanced-descripton-2": "все еще молоды и в некоторой степени экспериментальны.",
-  "page-layer-2-networks-more-advanced-descripton-3": "Для получения дополнительной информации о технологии, рисках и допущениях о доверии этих сетей мы рекомендуем ознакомиться с L2BEAT, который предоставляет комплексную систему оценки рисков каждого проекта, и growthepie для общего анализа данных.",
-  "page-layer-2-networks-more-advanced-link-1": "Посетить l2beat.com",
   "page-layer-2-networks-more-advanced-link-2": "Посетить growthepie.com",
   "page-layer-2-networks-callout-1-title": "Каковы преимущества?",
   "page-layer-2-networks-callout-1-description": "Надежность и безопасность Квантариума предоставляют платформу для создания других сетей.",
@@ -51,7 +49,6 @@
   "page-layer-2-networks-actions": "Действия",
   "page-layer-2-networks-official-website": "Официальный веб-сайт",
   "page-layer-2-networks-risk-analysis": "Анализ рисков",
-  "page-layer-2-networks-assessment-by-l2beat": "Оценка от L2BEAT",
   "page-layer-2-networks-detailed-analytics": "Подробная аналитика",
   "page-layer-2-networks-assessment-by-growthepie": "Оценка от growthepie",
   "page-layer-2-networks-bridge-to": "Мост в",
@@ -81,7 +78,5 @@
   "page-layer-2-network-maturity-component-13": "• Не менее $150 млн TVL",
   "page-layer-2-network-maturity-component-14": "• 6+ месяцев работы в рабочей среде",
   "page-layer-2-network-maturity-component-15": "• Стадия 0",
-  "page-layer-2-network-maturity-component-16": "• Оценка рисков: 3/5 (L2BEAT)",
-  "page-layer-2-network-maturity-component-17": "• Оценка рисков: 2/5 (L2BEAT)",
   "page-layer-2-network-maturity-component-18": "• Не менее $150 млн TVL или 6+ месяцев работы в рабочей среде"
 }

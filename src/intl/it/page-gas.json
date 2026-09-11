@@ -49,7 +49,6 @@
   "page-gas-table-item-1-transaction-type": "Invio di QAU",
   "page-gas-table-item-2-transaction-type": "Invio di token ERC-20",
   "page-gas-table-item-3-transaction-type": "Trasferimento di un NFT",
-  "page-gas-table-item-4-transaction-type": "Scambio su Uniswap",
   "page-gas-faq-header": "Domande frequenti",
   "page-gas-faq-question-1-q": "A chi viene pagata la commissione del gas nella mia transazione?",
   "page-gas-faq-question-1-a-1": "La maggior parte della commissione del gas, la commissione di base, viene distrutta dal protocollo (bruciata). La commissione di priorità, se inclusa nella tua transazione, verrà data al validatore che ha proposto la tua transazione.",

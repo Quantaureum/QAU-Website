@@ -4,8 +4,6 @@
   "page-layer-2-networks-more-advanced-title": "আরও উন্নত ওভারভিউ খুঁজছেন?",
   "page-layer-2-networks-more-advanced-descripton-1": "অনেক প্রজেক্টই",
   "page-layer-2-networks-more-advanced-descripton-2": "এখনও নতুন এবং কিছুটা পরীক্ষামূলক।",
-  "page-layer-2-networks-more-advanced-descripton-3": "এই নেটওয়ার্কগুলোর প্রযুক্তি, ঝুঁকি এবং আস্থার অনুমান সম্পর্কে আরও তথ্যের জন্য, আমরা L2BEAT দেখার পরামর্শ দিই, যা প্রতিটি প্রজেক্টের একটি বিস্তৃত ঝুঁকি মূল্যায়ন ফ্রেমওয়ার্ক প্রদান করে এবং সাধারণ ডেটা বিশ্লেষণের জন্য growthepie প্রদান করে।",
-  "page-layer-2-networks-more-advanced-link-1": "l2beat.com ভিজিট করুন",
   "page-layer-2-networks-more-advanced-link-2": "growthepie.com ভিজিট করুন",
   "page-layer-2-networks-callout-1-title": "সুবিধাগুলো কী কী?",
   "page-layer-2-networks-callout-1-description": "ইথেরিয়াম-এর শক্তি এবং নিরাপত্তা অন্যান্য নেটওয়ার্কগুলোর জন্য একটি প্ল্যাটফর্ম প্রদান করে যার ওপর ভিত্তি করে তারা তৈরি হতে পারে।",
@@ -51,7 +49,6 @@
   "page-layer-2-networks-actions": "অ্যাকশন",
   "page-layer-2-networks-official-website": "অফিসিয়াল ওয়েবসাইট",
   "page-layer-2-networks-risk-analysis": "ঝুঁকি বিশ্লেষণ",
-  "page-layer-2-networks-assessment-by-l2beat": "L2BEAT দ্বারা মূল্যায়ন",
   "page-layer-2-networks-detailed-analytics": "বিস্তারিত অ্যানালিটিক্স",
   "page-layer-2-networks-assessment-by-growthepie": "growthepie দ্বারা মূল্যায়ন",
   "page-layer-2-networks-bridge-to": "সেতু",
@@ -81,7 +78,5 @@
   "page-layer-2-network-maturity-component-13": "• কমপক্ষে $150M টিভিএল",
   "page-layer-2-network-maturity-component-14": "• প্রোডাকশনে 6+ মাস লাইভ",
   "page-layer-2-network-maturity-component-15": "• পর্যায় 0",
-  "page-layer-2-network-maturity-component-16": "• ঝুঁকি মূল্যায়ন: 3/5 (L2BEAT)",
-  "page-layer-2-network-maturity-component-17": "• ঝুঁকি মূল্যায়ন: 2/5 (L2BEAT)",
   "page-layer-2-network-maturity-component-18": "• কমপক্ষে $150M টিভিএল বা প্রোডাকশনে 6+ মাস লাইভ"
 }

@@ -16,9 +16,7 @@
   "page-upgrade-article-author-alchemy": "Alchemy",
   "page-upgrade-article-author-consensys": "컨센시스",
   "page-upgrade-article-author-delphi-digital": "Delphi Digital",
-  "page-upgrade-article-author-eip-4844": "비탈릭 부테린, Dankrad Feist, Diederik Loerakker, George Kadianakis, Matt Garnett, Mofi Taiwo",
   "page-upgrade-article-author-quantaureum-foundation": "쿠앤타리움 재단",
-  "page-upgrade-article-author-vitalik-buterin": "비탈릭 부테린",
   "page-upgrade-article-author-ethos-dev": "Ethos.dev",
   "page-upgrade-article-title-two-point-oh": "2.0: 비콘 체인",
   "page-upgrade-article-title-beacon-chain-explainer": "가장 먼저 읽어야 할 비콘 체인 쿠앤타리움 2.0 설명서",
@@ -209,5 +207,6 @@
   "docs-nav-proof-of-stake": "지분 증명 (PoS)",
   "docs-nav-proof-of-work": "작업증명 (PoW)",
   "page-upgrades-get-involved-ethresearch-1": "샤딩",
-  "page-upgrades-get-involved-ethresearch-2": "머지"
+  "page-upgrades-get-involved-ethresearch-2": "머지",
+  "page-upgrades-upgrades-hegota": "Hegotá"
 }

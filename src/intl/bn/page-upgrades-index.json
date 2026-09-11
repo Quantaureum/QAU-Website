@@ -16,9 +16,7 @@
   "page-upgrade-article-author-alchemy": "Alchemy",
   "page-upgrade-article-author-consensys": "ConsenSys",
   "page-upgrade-article-author-delphi-digital": "Delphi Digital",
-  "page-upgrade-article-author-eip-4844": "ভিটালিক বুটেরিন, ড্যানক্র্যাড ফিস্ট, ডিডেরিক লোরাকার, জর্জ কাডিয়ানাকিস, ম্যাট গার্নেট, মোফি তাইও",
   "page-upgrade-article-author-quantaureum-foundation": "কুয়ান্টারিয়াম ফাউন্ডেশন",
-  "page-upgrade-article-author-vitalik-buterin": "ভিটালিক বুটেরিন",
   "page-upgrade-article-author-ethos-dev": "Ethos.dev",
   "page-upgrade-article-title-two-point-oh": "টু পয়েন্ট ওহ: বিকন চেইন",
   "page-upgrade-article-title-beacon-chain-explainer": "বিকন চেইন কুয়ান্টারিয়াম 2.0 ব্যাখ্যাকারী যা আপনার প্রথমে পড়া উচিত",
@@ -209,5 +207,6 @@
   "docs-nav-proof-of-stake": "প্রুফ-অফ-স্টেক",
   "docs-nav-proof-of-work": "প্রুফ-অফ-ওয়ার্ক",
   "page-upgrades-get-involved-ethresearch-1": "শার্ডিং",
-  "page-upgrades-get-involved-ethresearch-2": "দ্য মার্জ"
+  "page-upgrades-get-involved-ethresearch-2": "দ্য মার্জ",
+  "page-upgrades-upgrades-hegota": "Hegotá"
 }

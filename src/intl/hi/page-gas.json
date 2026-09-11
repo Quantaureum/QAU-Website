@@ -49,7 +49,6 @@
   "page-gas-table-item-1-transaction-type": "QAU भेजना",
   "page-gas-table-item-2-transaction-type": "ERC-20 टोकन भेजना",
   "page-gas-table-item-3-transaction-type": "NFT ट्रांसफर करना",
-  "page-gas-table-item-4-transaction-type": "यूनिस्वैप पर स्वैप करना",
   "page-gas-faq-header": "अक्सर पूछे जाने वाले प्रश्न",
   "page-gas-faq-question-1-q": "मेरे लेन-देन में गैस शुल्क का भुगतान किसे मिलता है?",
   "page-gas-faq-question-1-a-1": "गैस शुल्क का अधिकांश हिस्सा—आधार शुल्क—प्रोटोकॉल द्वारा नष्ट (बर्न) कर दिया जाता है। प्राथमिकता शुल्क, यदि आपके लेन-देन में शामिल है, तो उस सत्यापक को दिया जाएगा जिसने आपका लेन-देन प्रस्तावित किया था।",

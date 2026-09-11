@@ -49,7 +49,6 @@
   "page-gas-table-item-1-transaction-type": "Enviando QAU",
   "page-gas-table-item-2-transaction-type": "Enviando tokens ERC-20",
   "page-gas-table-item-3-transaction-type": "Transferindo um NFT",
-  "page-gas-table-item-4-transaction-type": "Trocando no Uniswap",
   "page-gas-faq-header": "Perguntas frequentes",
   "page-gas-faq-question-1-q": "Quem recebe a taxa de gas na minha transação?",
   "page-gas-faq-question-1-a-1": "A maior parte da taxa de gas — a taxa básica — é destruída pelo protocolo (queimada). A taxa de prioridade, se incluída na sua transação, será dada ao validador que propôs a sua transação.",

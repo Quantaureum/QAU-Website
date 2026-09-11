@@ -49,7 +49,6 @@
   "page-gas-table-item-1-transaction-type": "Mengirim QAU",
   "page-gas-table-item-2-transaction-type": "Mengirim token ERC-20",
   "page-gas-table-item-3-transaction-type": "Mentransfer NFT",
-  "page-gas-table-item-4-transaction-type": "Menukar di Uniswap",
   "page-gas-faq-header": "Pertanyaan yang sering diajukan",
   "page-gas-faq-question-1-q": "Siapa yang dibayar biaya gas dalam transaksi saya?",
   "page-gas-faq-question-1-a-1": "Sebagian besar biaya gas—biaya dasar—dihancurkan oleh protokol (dibakar). Biaya prioritas, jika disertakan dalam transaksi Anda, akan diberikan kepada validator yang mengusulkan transaksi Anda.",

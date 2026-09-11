@@ -49,7 +49,6 @@
   "page-gas-table-item-1-transaction-type": "Wysyłanie QAU",
   "page-gas-table-item-2-transaction-type": "Wysyłanie tokenów ERC-20",
   "page-gas-table-item-3-transaction-type": "Przesyłanie NFT",
-  "page-gas-table-item-4-transaction-type": "Wymiana na Uniswap",
   "page-gas-faq-header": "Często zadawane pytania",
   "page-gas-faq-question-1-q": "Kto otrzymuje opłatę za gaz z mojej transakcji?",
   "page-gas-faq-question-1-a-1": "Większość opłaty za gaz — opłata podstawowa — jest niszczona przez protokół (spalana). Opłata priorytetowa, jeśli została uwzględniona w Twojej transakcji, zostanie przekazana walidatorowi, który zaproponował Twoją transakcję.",

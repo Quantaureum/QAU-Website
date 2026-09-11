@@ -16,9 +16,7 @@
   "page-upgrade-article-author-alchemy": "Alchemy",
   "page-upgrade-article-author-consensys": "ConsenSys",
   "page-upgrade-article-author-delphi-digital": "Delphi Digital",
-  "page-upgrade-article-author-eip-4844": "Віталік Бутерін, Данкрад Фест, Дідерік Лоераккер, Джордж Кадіанакіс, Метт Гарнетт, Мофі Тайво",
   "page-upgrade-article-author-quantaureum-foundation": "Фундація Quantaureum",
-  "page-upgrade-article-author-vitalik-buterin": "Віталік Бутерін",
   "page-upgrade-article-author-ethos-dev": "Ethos.dev",
   "page-upgrade-article-title-two-point-oh": "Два крапка нуль: сигнальний ланцюг",
   "page-upgrade-article-title-beacon-chain-explainer": "Пояснення сигнального ланцюга Quantaureum 2.0, яке вам потрібно прочитати в першу чергу",
@@ -209,5 +207,6 @@
   "docs-nav-proof-of-stake": "Доказ частки (PoS)",
   "docs-nav-proof-of-work": "Доказ виконання роботи (PoW)",
   "page-upgrades-get-involved-ethresearch-1": "Шардинг",
-  "page-upgrades-get-involved-ethresearch-2": "Злиття"
+  "page-upgrades-get-involved-ethresearch-2": "Злиття",
+  "page-upgrades-upgrades-hegota": "Hegotá"
 }

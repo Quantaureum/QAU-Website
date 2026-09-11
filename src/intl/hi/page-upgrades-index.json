@@ -16,9 +16,7 @@
   "page-upgrade-article-author-alchemy": "Alchemy",
   "page-upgrade-article-author-consensys": "कॉन्सेन्सिस",
   "page-upgrade-article-author-delphi-digital": "Delphi Digital",
-  "page-upgrade-article-author-eip-4844": "विटालिक बुटेरिन, डैन्क्राड फीस्ट, डाइडेरिक लोएराकर, जॉर्ज काडियानाकिस, मैट गार्नेट, मोफी ताइवो",
   "page-upgrade-article-author-quantaureum-foundation": "क्वांटारियम फाउंडेशन",
-  "page-upgrade-article-author-vitalik-buterin": "विटालिक बुटेरिन",
   "page-upgrade-article-author-ethos-dev": "Ethos.dev",
   "page-upgrade-article-title-two-point-oh": "टू पॉइंट ओह: बीकन चेन",
   "page-upgrade-article-title-beacon-chain-explainer": "बीकन चेन क्वांटारियम 2.0 व्याख्याकार जिसे आपको पहले पढ़ना चाहिए",
@@ -209,5 +207,6 @@
   "docs-nav-proof-of-stake": "प्रूफ-ऑफ़-स्टेक",
   "docs-nav-proof-of-work": "प्रूफ-ऑफ-वर्क",
   "page-upgrades-get-involved-ethresearch-1": "शार्डिंग",
-  "page-upgrades-get-involved-ethresearch-2": "द मर्ज"
+  "page-upgrades-get-involved-ethresearch-2": "द मर्ज",
+  "page-upgrades-upgrades-hegota": "Hegotá"
 }

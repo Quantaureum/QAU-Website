@@ -49,7 +49,6 @@
   "page-gas-table-item-1-transaction-type": "Envoi d'QAU",
   "page-gas-table-item-2-transaction-type": "Envoi de jetons ERC-20",
   "page-gas-table-item-3-transaction-type": "Transfert d'un NFT",
-  "page-gas-table-item-4-transaction-type": "Échange sur Uniswap",
   "page-gas-faq-header": "Foire aux questions",
   "page-gas-faq-question-1-q": "À qui sont payés les frais de gaz de ma transaction ?",
   "page-gas-faq-question-1-a-1": "La majorité des frais de gaz — les frais de base — est détruite par le protocole (brûlée). Les frais de priorité, s'ils sont inclus dans votre transaction, seront versés au validateur qui a proposé votre transaction.",

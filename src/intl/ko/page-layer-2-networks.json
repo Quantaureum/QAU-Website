@@ -4,8 +4,6 @@
   "page-layer-2-networks-more-advanced-title": "더 심층적인 개요를 찾고 계신가요?",
   "page-layer-2-networks-more-advanced-descripton-1": "많은 프로젝트가",
   "page-layer-2-networks-more-advanced-descripton-2": "아직 초기 단계이며 다소 실험적입니다.",
-  "page-layer-2-networks-more-advanced-descripton-3": "이러한 네트워크의 기술, 위험 및 신뢰 가정에 대한 자세한 내용은 각 프로젝트의 포괄적인 위험 평가 프레임워크를 제공하는 L2BEAT와 일반적인 데이터 분석을 위한 growthepie를 확인하는 것을 권장합니다.",
-  "page-layer-2-networks-more-advanced-link-1": "l2beat.com 방문하기",
   "page-layer-2-networks-more-advanced-link-2": "growthepie.com 방문하기",
   "page-layer-2-networks-callout-1-title": "어떤 이점이 있나요?",
   "page-layer-2-networks-callout-1-description": "쿠앤타리움의 강점과 보안은 다른 네트워크가 구축될 수 있는 플랫폼을 제공합니다.",
@@ -51,7 +49,6 @@
   "page-layer-2-networks-actions": "작업",
   "page-layer-2-networks-official-website": "공식 웹사이트",
   "page-layer-2-networks-risk-analysis": "위험 분석",
-  "page-layer-2-networks-assessment-by-l2beat": "L2BEAT의 평가",
   "page-layer-2-networks-detailed-analytics": "상세 분석",
   "page-layer-2-networks-assessment-by-growthepie": "growthepie의 평가",
   "page-layer-2-networks-bridge-to": "브릿지 연결",
@@ -81,7 +78,5 @@
   "page-layer-2-network-maturity-component-13": "• 최소 1억 5천만 달러의 총 예치 가치 (TVL)",
   "page-layer-2-network-maturity-component-14": "• 6개월 이상의 프로덕션 환경 운영",
   "page-layer-2-network-maturity-component-15": "• 0단계",
-  "page-layer-2-network-maturity-component-16": "• 위험 평가: 3/5 (L2BEAT)",
-  "page-layer-2-network-maturity-component-17": "• 위험 평가: 2/5 (L2BEAT)",
   "page-layer-2-network-maturity-component-18": "• 최소 1억 5천만 달러의 총 예치 가치 (TVL) 또는 6개월 이상의 프로덕션 환경 운영"
 }

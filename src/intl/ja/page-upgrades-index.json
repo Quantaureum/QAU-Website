@@ -16,9 +16,7 @@
   "page-upgrade-article-author-alchemy": "Alchemy",
   "page-upgrade-article-author-consensys": "コンセンシス",
   "page-upgrade-article-author-delphi-digital": "Delphi Digital",
-  "page-upgrade-article-author-eip-4844": "ヴィタリック・ブテリン、Dankrad Feist、Diederik Loerakker、George Kadianakis、Matt Garnett、Mofi Taiwo",
   "page-upgrade-article-author-quantaureum-foundation": "クアンタリアム財団",
-  "page-upgrade-article-author-vitalik-buterin": "ヴィタリック・ブテリン",
   "page-upgrade-article-author-ethos-dev": "Ethos.dev",
   "page-upgrade-article-title-two-point-oh": "Two Point Oh: ビーコン・チェーン",
   "page-upgrade-article-title-beacon-chain-explainer": "最初に読むべきビーコン・チェーンとクアンタリアム2.0の解説",
@@ -209,5 +207,6 @@
   "docs-nav-proof-of-stake": "プルーフ・オブ・ステーク",
   "docs-nav-proof-of-work": "プルーフ・オブ・ワーク",
   "page-upgrades-get-involved-ethresearch-1": "シャーディング",
-  "page-upgrades-get-involved-ethresearch-2": "マージ"
+  "page-upgrades-get-involved-ethresearch-2": "マージ",
+  "page-upgrades-upgrades-hegota": "Hegotá"
 }

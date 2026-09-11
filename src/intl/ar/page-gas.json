@@ -49,7 +49,6 @@
   "page-gas-table-item-1-transaction-type": "إرسال ⁦QAU⁩",
   "page-gas-table-item-2-transaction-type": "إرسال رموز ⁦ERC-20⁩",
   "page-gas-table-item-3-transaction-type": "نقل رمز غير قابل للاستبدال (⁦NFT⁩)",
-  "page-gas-table-item-4-transaction-type": "التبديل على يونيسواب",
   "page-gas-faq-header": "الأسئلة الشائعة",
   "page-gas-faq-question-1-q": "من يحصل على رسوم الغاز في معاملتي؟",
   "page-gas-faq-question-1-a-1": "يتم إتلاف (حرق) الجزء الأكبر من رسوم الغاز — الرسم الأساسي — بواسطة البروتوكول. سيتم إعطاء رسم الأولوية، إذا تم تضمينه في معاملتك، للمُدَقِّق الذي اقترح معاملتك.",

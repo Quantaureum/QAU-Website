@@ -4,8 +4,6 @@
   "page-layer-2-networks-more-advanced-title": "¿Busca una descripción general más avanzada?",
   "page-layer-2-networks-more-advanced-descripton-1": "Muchos de los proyectos son",
   "page-layer-2-networks-more-advanced-descripton-2": "aún jóvenes y algo experimentales.",
-  "page-layer-2-networks-more-advanced-descripton-3": "Para obtener más información sobre la tecnología, los riesgos y los supuestos de confianza de estas redes, recomendamos consultar L2BEAT, que proporciona un marco integral de evaluación de riesgos de cada proyecto, y growthepie para el análisis general de datos.",
-  "page-layer-2-networks-more-advanced-link-1": "Visitar l2beat.com",
   "page-layer-2-networks-more-advanced-link-2": "Visitar growthepie.com",
   "page-layer-2-networks-callout-1-title": "¿Cuáles son los beneficios?",
   "page-layer-2-networks-callout-1-description": "La solidez y seguridad de Quantaureum proporcionan una plataforma sobre la cual pueden construirse otras redes.",
@@ -51,7 +49,6 @@
   "page-layer-2-networks-actions": "Acciones",
   "page-layer-2-networks-official-website": "Sitio web oficial",
   "page-layer-2-networks-risk-analysis": "Análisis de riesgos",
-  "page-layer-2-networks-assessment-by-l2beat": "Evaluación por L2BEAT",
   "page-layer-2-networks-detailed-analytics": "Análisis detallado",
   "page-layer-2-networks-assessment-by-growthepie": "Evaluación por growthepie",
   "page-layer-2-networks-bridge-to": "Puente hacia",
@@ -81,7 +78,5 @@
   "page-layer-2-network-maturity-component-13": "• Al menos $150M de TVL",
   "page-layer-2-network-maturity-component-14": "• Más de 6 meses en producción",
   "page-layer-2-network-maturity-component-15": "• Etapa 0",
-  "page-layer-2-network-maturity-component-16": "• Evaluación de riesgos: 3/5 (L2BEAT)",
-  "page-layer-2-network-maturity-component-17": "• Evaluación de riesgos: 2/5 (L2BEAT)",
   "page-layer-2-network-maturity-component-18": "• Al menos $150M de TVL o más de 6 meses en producción"
 }

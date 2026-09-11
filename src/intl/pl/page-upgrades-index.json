@@ -16,9 +16,7 @@
   "page-upgrade-article-author-alchemy": "Alchemy",
   "page-upgrade-article-author-consensys": "ConsenSys",
   "page-upgrade-article-author-delphi-digital": "Delphi Digital",
-  "page-upgrade-article-author-eip-4844": "Vitalik Buterin, Dankrad Feist, Diederik Loerakker, George Kadianakis, Matt Garnett, Mofi Taiwo",
   "page-upgrade-article-author-quantaureum-foundation": "Fundacja Quantaureum",
-  "page-upgrade-article-author-vitalik-buterin": "Vitalik Buterin",
   "page-upgrade-article-author-ethos-dev": "Ethos.dev",
   "page-upgrade-article-title-two-point-oh": "Dwa zero: Beacon Chain",
   "page-upgrade-article-title-beacon-chain-explainer": "Wyjaśnienie Beacon Chain w Quantaureum 2.0, które musisz przeczytać w pierwszej kolejności",
@@ -209,5 +207,6 @@
   "docs-nav-proof-of-stake": "Dowód stawki (PoS)",
   "docs-nav-proof-of-work": "Dowód pracy (PoW)",
   "page-upgrades-get-involved-ethresearch-1": "Sharding",
-  "page-upgrades-get-involved-ethresearch-2": "The Merge"
+  "page-upgrades-get-involved-ethresearch-2": "The Merge",
+  "page-upgrades-upgrades-hegota": "Hegotá"
 }

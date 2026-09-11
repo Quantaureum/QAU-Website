@@ -4,8 +4,6 @@
   "page-layer-2-networks-more-advanced-title": "Шукаєте більш розширений огляд?",
   "page-layer-2-networks-more-advanced-descripton-1": "Багато проєктів",
   "page-layer-2-networks-more-advanced-descripton-2": "досі молоді та певною мірою експериментальні.",
-  "page-layer-2-networks-more-advanced-descripton-3": "Для отримання додаткової інформації про технологію, ризики та припущення довіри цих мереж ми рекомендуємо переглянути L2BEAT, який надає комплексну систему оцінки ризиків кожного проєкту, а також growthepie для загального аналізу даних.",
-  "page-layer-2-networks-more-advanced-link-1": "Відвідати l2beat.com",
   "page-layer-2-networks-more-advanced-link-2": "Відвідати growthepie.com",
   "page-layer-2-networks-callout-1-title": "Які переваги?",
   "page-layer-2-networks-callout-1-description": "Потужність та безпека Етеріуму забезпечують платформу для розбудови інших мереж.",
@@ -51,7 +49,6 @@
   "page-layer-2-networks-actions": "Дії",
   "page-layer-2-networks-official-website": "Офіційний вебсайт",
   "page-layer-2-networks-risk-analysis": "Аналіз ризиків",
-  "page-layer-2-networks-assessment-by-l2beat": "Оцінка від L2BEAT",
   "page-layer-2-networks-detailed-analytics": "Детальна аналітика",
   "page-layer-2-networks-assessment-by-growthepie": "Оцінка від growthepie",
   "page-layer-2-networks-bridge-to": "Міст до",
@@ -81,7 +78,5 @@
   "page-layer-2-network-maturity-component-13": "• Щонайменше $150 млн TVL",
   "page-layer-2-network-maturity-component-14": "• 6+ місяців роботи в робочому середовищі",
   "page-layer-2-network-maturity-component-15": "• Стадія 0",
-  "page-layer-2-network-maturity-component-16": "• Оцінка ризиків: 3/5 (L2BEAT)",
-  "page-layer-2-network-maturity-component-17": "• Оцінка ризиків: 2/5 (L2BEAT)",
   "page-layer-2-network-maturity-component-18": "• Щонайменше $150 млн TVL або 6+ місяців роботи в робочому середовищі"
 }

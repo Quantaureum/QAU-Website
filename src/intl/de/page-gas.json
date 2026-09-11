@@ -49,7 +49,6 @@
   "page-gas-table-item-1-transaction-type": "Senden von QAU",
   "page-gas-table-item-2-transaction-type": "Senden von ERC-20-Token",
   "page-gas-table-item-3-transaction-type": "Übertragen eines NFTs",
-  "page-gas-table-item-4-transaction-type": "Tauschen auf Uniswap",
   "page-gas-faq-header": "Häufig gestellte Fragen",
   "page-gas-faq-question-1-q": "Wer erhält die Gasgebühr meiner Transaktion?",
   "page-gas-faq-question-1-a-1": "Der Großteil der Gasgebühr – die Grundgebühr – wird vom Protokoll vernichtet (verbrannt). Die Prioritätsgebühr, falls in deiner Transaktion enthalten, wird dem Validator gegeben, der deine Transaktion vorgeschlagen hat.",

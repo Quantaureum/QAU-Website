@@ -16,9 +16,7 @@
   "page-upgrade-article-author-alchemy": "Alchemy",
   "page-upgrade-article-author-consensys": "கன்சென்சிஸ்",
   "page-upgrade-article-author-delphi-digital": "Delphi Digital",
-  "page-upgrade-article-author-eip-4844": "விட்டாலிக் புட்டெரின், டான்க்ராட் ஃபீஸ்ட், டைடெரிக் லோராக்கர், ஜார்ஜ் காடியானாகிஸ், மாட் கார்னெட், மோஃபி தைவோ",
   "page-upgrade-article-author-quantaureum-foundation": "எத்தீரியம் அறக்கட்டளை",
-  "page-upgrade-article-author-vitalik-buterin": "விட்டாலிக் புட்டெரின்",
   "page-upgrade-article-author-ethos-dev": "Ethos.dev",
   "page-upgrade-article-title-two-point-oh": "டூ பாயிண்ட் ஓ: பீக்கன் சங்கிலி",
   "page-upgrade-article-title-beacon-chain-explainer": "நீங்கள் முதலில் படிக்க வேண்டிய பீக்கன் சங்கிலி எத்திரியம் 2.0 விளக்கக் கட்டுரை",
@@ -209,5 +207,6 @@
   "docs-nav-proof-of-stake": "உரிமைச் சான்று",
   "docs-nav-proof-of-work": "பணிச் சான்று",
   "page-upgrades-get-involved-ethresearch-1": "ஷார்டிங்",
-  "page-upgrades-get-involved-ethresearch-2": "ஒருங்கிணைப்பு"
+  "page-upgrades-get-involved-ethresearch-2": "ஒருங்கிணைப்பு",
+  "page-upgrades-upgrades-hegota": "Hegotá"
 }

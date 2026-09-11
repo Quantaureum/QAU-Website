@@ -49,7 +49,6 @@
   "page-gas-table-item-1-transaction-type": "Gửi QAU",
   "page-gas-table-item-2-transaction-type": "Gửi token ERC-20",
   "page-gas-table-item-3-transaction-type": "Chuyển một NFT",
-  "page-gas-table-item-4-transaction-type": "Hoán đổi trên Uniswap",
   "page-gas-faq-header": "Câu hỏi thường gặp",
   "page-gas-faq-question-1-q": "Ai được trả phí gas trong giao dịch của tôi?",
   "page-gas-faq-question-1-a-1": "Phần lớn phí gas—phí cơ sở—bị Giao thức tiêu hủy (đốt). Phí ưu tiên, nếu được bao gồm trong giao dịch của bạn, sẽ được trao cho trình xác thực đã đề xuất giao dịch của bạn.",
