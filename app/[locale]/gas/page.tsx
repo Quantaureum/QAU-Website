@@ -178,7 +178,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                     "page-gas-how-do-i-pay-less-gas-card-3-description"
                   )}
                   ctaLabel={t("page-gas-try-layer-2")}
-                  href="/layer-2/"
+                  href="/roadmap/scaling/"
                 />
               </Grid>
 
@@ -324,7 +324,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   <p>
                     <Translation id="page-gas:page-gas-faq-question-2-a-1" />
                   </p>
-                  <BaseLink href="/eth/">
+                  <BaseLink href="/what-is-qau/">
                     <Translation id="page-gas:page-gas-faq-question-2-a-2" />
                   </BaseLink>
                 </ExpandableCard>
@@ -349,7 +349,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   )}
                   image={bazaarImg}
                 >
-                  <ButtonLink href="/layer-2/">
+                  <ButtonLink href="/roadmap/scaling/">
                     {t("page-gas-use-layer-2")}
                   </ButtonLink>
                 </Callout>

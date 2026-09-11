@@ -29,9 +29,6 @@ export const EXACT_PATH_NAMESPACE_MAP: Record<string, string> = {
 export const PREFIX_PATH_NAMESPACE_MAP: Array<[string, string]> = [
   ["/staking/deposit-contract/", "page-staking-deposit-contract"],
   ["/staking/", "page-staking"],
-  ["/layer-2/networks/", "page-layer-2-networks"],
-  ["/layer-2/learn/", "page-layer-2-learn"],
-  ["/layer-2/", "page-layer-2"],
   ["/developers/local-environment/", "page-developers-local-environment"],
   ["/developers/learning-tools/", "page-developers-learning-tools"],
   ["/latest/", "page-latest"],
@@ -57,7 +54,6 @@ export const PREFIX_PATH_NAMESPACE_MAP: Array<[string, string]> = [
   ["/what-is-quantaureum/", "page-what-is-quantaureum"],
   ["/run-a-node/", "page-run-a-node"],
   ["/roadmap/", "page-roadmap"],
-  ["/start/", "page-start"],
   ["/values/", "page-values"],
 ]
 
@@ -66,8 +62,8 @@ const EXACT_PATH_ADDITIONAL_NAMESPACES: Record<string, string[]> = {
   "/community/": ["component-story-card"],
   "/developers/": ["component-swiper"],
   "/roadmap/": ["component-swiper"],
-  "/start/": ["component-swiper"],
   "/wallets/": ["component-wallet-simulator"],
+  "/start/": ["component-swiper"],
   "/what-are-apps/": ["component-story-card"],
 }
 
@@ -75,7 +71,6 @@ const PREFIX_PATH_ADDITIONAL_NAMESPACES: Array<[string, string[]]> = [
   ["/developers/docs/scaling/", ["page-layer-2"]],
   ["/developers/tools/", ["page-developers-tools-descriptions"]],
   ["/gas/", ["page-gas", "page-community"]],
-  ["/layer-2/networks/", ["table"]],
   ["/energy-consumption/", ["page-about"]],
   ["/glossary/", ["glossary"]],
   ["/apps/", ["page-app-descriptions", "component-swiper"]],
@@ -86,8 +81,6 @@ const SUFFIX_PATH_ADDITIONAL_NAMESPACES: Array<[string, string[]]> = [
 ]
 
 const GLOSSARY_TOOLTIP_PREFIXES: string[] = [
-  "/layer-2/learn/",
-  "/layer-2/",
   "/apps/",
   "/get-qau/",
   "/stablecoins/",

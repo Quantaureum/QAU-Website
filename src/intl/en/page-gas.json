@@ -49,7 +49,6 @@
   "page-gas-table-item-1-transaction-type": "Sending QAU",
   "page-gas-table-item-2-transaction-type": "Sending ERC-20 tokens",
   "page-gas-table-item-3-transaction-type": "Transferring an NFT",
-  "page-gas-table-item-4-transaction-type": "Swapping on Uniswap",
   "page-gas-faq-header": "Frequently asked questions",
   "page-gas-faq-question-1-q": "Who gets paid the gas fee in my transaction?",
   "page-gas-faq-question-1-a-1": "The majority of the gas fee—the base fee— is destroyed by the protocol (burned). The priority fee, if included in your transaction, will be given to the validator who proposed your transaction.",

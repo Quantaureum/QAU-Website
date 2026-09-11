@@ -610,7 +610,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               </CardParagraph>
             </CardContent>
             <CardFooter>
-              <ButtonLink href="/start/">
+              <ButtonLink href="/wallets/">
                 {t("page-what-is-quantaureum-start-individuals-cta-1")}
               </ButtonLink>
               <ButtonLink href="/apps/" variant="outline">
@@ -877,7 +877,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               </DocLink>
             </ListItem>
             <ListItem>
-              <DocLink href="/eth/">
+              <DocLink href="/what-is-qau/">
                 {t("page-what-is-quantaureum-further-reading-eth")}
               </DocLink>
             </ListItem>
@@ -887,7 +887,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               </DocLink>
             </ListItem>
             <ListItem>
-              <DocLink href="/layer-2/networks/">
+              <DocLink href="/roadmap/scaling/">
                 {t("page-what-is-quantaureum-further-reading-networks")}
               </DocLink>
             </ListItem>

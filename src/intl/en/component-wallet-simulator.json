@@ -129,7 +129,6 @@
   "sim-cw-desc-2-p1": "Your account is universal across all Quantaureum and Quantaureum-compatible applications.",
   "sim-cw-desc-2-p2": "Assets stored onchain can be accessed from any application.",
   "sim-cw-header-3": "You can have a single login for most Quantaureum based projects",
-  "sim-cw-desc-3-p1": "The same account address will represent your identity on many different Quantaureum compatible blockchains such as Arbitrum, Polygon or Optimism.",
   "sim-cw-desc-3-p2": "Logins are handled by your wallet—no more creating insecure passwords.",
   "sim-cw-header-4": "Personal identifying information is not shared",
   "sim-cw-desc-4-p1": "Your private information stays private.",
