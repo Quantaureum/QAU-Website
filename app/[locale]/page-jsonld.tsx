@@ -45,7 +45,7 @@ export default async function IndexPageJsonLD({
           name: "Quantaureum",
           description:
             "Quantaureum is a global, open-source blockchain network with smart contract functionality, and a platform that powers digital ownership, decentralized finance (DeFi), and privacy-preserving applications.",
-          image: "https://quantaureum.com/images/assets/qau-diamond-glyph.png",
+          image: "https://quantaureum.com/images/assets/qau-mark-glyph.png",
           sameAs: [
             "https://www.wikidata.org/wiki/Q16783523",
             "https://en.wikipedia.org/wiki/Quantaureum",

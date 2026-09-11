@@ -17,14 +17,14 @@ import { getMetadata } from "@/lib/utils/metadata"
 
 import AssetsJsonLD from "./page-jsonld"
 
-import qauDiamondBlack from "@/public/images/assets/qau-diamond-black.png"
-import qauDiamondBlackGray from "@/public/images/assets/qau-diamond-black-gray.png"
-import qauDiamondBlackWhite from "@/public/images/assets/qau-diamond-black-white.jpg"
-import qauDiamondGlyph from "@/public/images/assets/qau-diamond-glyph.png"
-import qauDiamondPurple from "@/public/images/assets/qau-diamond-purple.png"
-import qauDiamondPurplePurple from "@/public/images/assets/qau-diamond-purple-purple.png"
-import qauDiamondPurpleWhite from "@/public/images/assets/qau-diamond-purple-white.jpg"
-import qauDiamondColor from "@/public/images/assets/qau-diamond-rainbow.png"
+import qauDiamondBlack from "@/public/images/assets/qau-mark-black.png"
+import qauDiamondBlackGray from "@/public/images/assets/qau-mark-black-gray.png"
+import qauDiamondBlackWhite from "@/public/images/assets/qau-mark-black-white.jpg"
+import qauDiamondGlyph from "@/public/images/assets/qau-mark-glyph.png"
+import qauDiamondPurple from "@/public/images/assets/qau-mark-purple.png"
+import qauDiamondPurplePurple from "@/public/images/assets/qau-mark-purple-purple.png"
+import qauDiamondPurpleWhite from "@/public/images/assets/qau-mark-purple-white.jpg"
+import qauDiamondColor from "@/public/images/assets/qau-mark-rainbow.png"
 import qauGlyphColored from "@/public/images/assets/qau-glyph-colored.png"
 import qauLandscapeBlack from "@/public/images/assets/quantaureum-logo-landscape-black.png"
 import qauLandscapeBlackGray from "@/public/images/assets/quantaureum-logo-landscape-black-gray.png"
@@ -184,33 +184,33 @@ export default async function Page(props: { params: Promise<PageParams> }) {
   const brandTransparentRows: AssetItem[][] = [
     [
       {
-        title: t("page-assets-qau-diamond-glyph"),
+        title: t("page-assets-qau-mark-glyph"),
         image: qauDiamondGlyph,
-        svgUrl: `${svgPath}/qau-diamond-glyph.svg`,
+        svgUrl: `${svgPath}/qau-mark-glyph.svg`,
         bgWhite: true,
         padded: true,
       },
       {
-        title: t("page-assets-qau-diamond-gray"),
+        title: t("page-assets-qau-mark-gray"),
         image: qauDiamondBlack,
-        svgUrl: `${svgPath}/qau-diamond-black.svg`,
+        svgUrl: `${svgPath}/qau-mark-black.svg`,
         bgWhite: true,
         padded: true,
       },
       {
-        title: t("page-assets-qau-diamond-color"),
+        title: t("page-assets-qau-mark-color"),
         image: qauDiamondColor,
-        svgUrl: `${svgPath}/qau-diamond-rainbow.svg`,
+        svgUrl: `${svgPath}/qau-mark-rainbow.svg`,
       },
     ],
     [
       {
-        title: t("page-assets-qau-diamond-purple"),
+        title: t("page-assets-qau-mark-purple"),
         image: qauDiamondPurple,
-        svgUrl: `${svgPath}/qau-diamond-purple.svg`,
+        svgUrl: `${svgPath}/qau-mark-purple.svg`,
       },
       {
-        title: t("page-assets-qau-diamond-colored"),
+        title: t("page-assets-qau-mark-colored"),
         image: qauGlyphColored,
         svgUrl: `${svgPath}/qau-glyph-colored.svg`,
       },
@@ -263,27 +263,27 @@ export default async function Page(props: { params: Promise<PageParams> }) {
   const brandSolidRows: AssetItem[][] = [
     [
       {
-        title: t("page-assets-qau-diamond-white"),
+        title: t("page-assets-qau-mark-white"),
         image: qauDiamondBlackWhite,
-        svgUrl: `${svgPath}/qau-diamond-black-white.svg`,
+        svgUrl: `${svgPath}/qau-mark-black-white.svg`,
         bgWhite: true,
       },
       {
-        title: t("page-assets-qau-diamond-gray"),
+        title: t("page-assets-qau-mark-gray"),
         image: qauDiamondBlackGray,
-        svgUrl: `${svgPath}/qau-diamond-black-gray.svg`,
+        svgUrl: `${svgPath}/qau-mark-black-gray.svg`,
       },
       {
-        title: t("page-assets-qau-diamond-purple"),
+        title: t("page-assets-qau-mark-purple"),
         image: qauDiamondPurplePurple,
-        svgUrl: `${svgPath}/qau-diamond-purple-purple.svg`,
+        svgUrl: `${svgPath}/qau-mark-purple-purple.svg`,
       },
     ],
     [
       {
-        title: t("page-assets-qau-diamond-white"),
+        title: t("page-assets-qau-mark-white"),
         image: qauDiamondPurpleWhite,
-        svgUrl: `${svgPath}/qau-diamond-purple-white.svg`,
+        svgUrl: `${svgPath}/qau-mark-purple-white.svg`,
         bgWhite: true,
       },
       {
@@ -350,13 +350,13 @@ export default async function Page(props: { params: Promise<PageParams> }) {
             <Image
               className="w-20 dark:hidden"
               src={qauDiamondBlack}
-              alt={t("page-assets-qau-diamond-gray")}
+              alt={t("page-assets-qau-mark-gray")}
               sizes="80px"
             />
             <Image
               className="hidden w-20 dark:block"
               src={qauDiamondPurple}
-              alt={t("page-assets-qau-diamond-purple")}
+              alt={t("page-assets-qau-mark-purple")}
               sizes="80px"
             />
             <h1>{t("page-assets-h1")}</h1>

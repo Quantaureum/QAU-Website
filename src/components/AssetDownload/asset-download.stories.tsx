@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/nextjs"
 
 import AssetDownload from "."
 
-import qauDiamondBlack from "@/public/images/assets/qau-diamond-black.png"
+import qauDiamondBlack from "@/public/images/assets/qau-mark-black.png"
 import hero from "@/public/images/home/hero.png"
 
 const meta = {
@@ -33,6 +33,6 @@ export const BrandAsset: Story = {
     title: "QAU diamond (gray)",
     image: qauDiamondBlack,
     perRow: 3,
-    svgUrl: "/images/assets/svgs/qau-diamond-black.svg",
+    svgUrl: "/images/assets/svgs/qau-mark-black.svg",
   },
 }

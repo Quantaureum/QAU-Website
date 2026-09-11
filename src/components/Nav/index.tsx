@@ -28,7 +28,7 @@ const Nav = async () => {
           className="inline-flex items-center no-underline"
           data-testid="nav-logo"
         >
-          <QauHomeIcon className="text-[35px] opacity-85 hover:opacity-100" />
+          <QauHomeIcon className="text-[32px] opacity-90 hover:opacity-100" />
         </BaseLink>
 
         <div className="ms-3 flex w-full justify-end md:justify-between xl:ms-8">
