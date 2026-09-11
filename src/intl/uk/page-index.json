@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "Досвід користувача",
   "page-index-roadmap-topic-verkle": "Дерева Verkle",
   "page-index-roadmap-cta": "Переглянути повну дорожню карту",
-  "page-index-roadmap-cta-community": "Приєднатися до спільноти"
+  "page-index-roadmap-cta-community": "Приєднатися до спільноти",
+  "page-index-get-started-wallet-title": "Завантажити гаманець",
+  "page-index-get-started-wallet-description": "Віддайте повну владу своїм ключам з офіційним гаманцем Quantaureum.",
+  "page-index-get-started-wallet-bullet-1": "Розширення браузера для Chrome, Edge та Firefox",
+  "page-index-get-started-wallet-bullet-2": "Додаток для Android (APK)",
+  "page-index-get-started-wallet-bullet-3": "Акаунти з двигуном Dilithium, квантово-захищені за замовчуванням",
+  "page-index-get-started-wallet-cta": "Отримати гаманець",
+  "page-index-get-started-wallet-dl-android": "Android-додаток (APK)",
+  "page-index-get-started-wallet-dl-chrome": "Розширення для Chrome / Edge",
+  "page-index-get-started-wallet-dl-firefox": "Розширення Firefox"
 }

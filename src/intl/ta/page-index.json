@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "பயனர் அனுபவம்",
   "page-index-roadmap-topic-verkle": "Verkle மரங்கள்",
   "page-index-roadmap-cta": "முழு திட்டப் பாதையைக் காண்க",
-  "page-index-roadmap-cta-community": "சமூகத்தில் இணையுங்கள்"
+  "page-index-roadmap-cta-community": "சமூகத்தில் இணையுங்கள்",
+  "page-index-get-started-wallet-title": "விரைவுப் பங்கை பதிவிறக்குக",
+  "page-index-get-started-wallet-description": "அதிகாரப்பூரமான Quantaureum வாலெட் மூலம் உங்கள் சொந்த விசைகளை வைத்திருங்கள்.",
+  "page-index-get-started-wallet-bullet-1": "Chrome, Edge மற்றும் Firefox சார்ந்த உலாவி நீட்டிப்பு",
+  "page-index-get-started-wallet-bullet-2": "ஆண்ட்ராய்ட் அப்ப் (APK)",
+  "page-index-get-started-wallet-bullet-3": "Dilithium சக்தியுள்ள கணக்குகள், இயல்பாகவே குவாண்டம் பாதுகாப்பானவை",
+  "page-index-get-started-wallet-cta": "വാட்லெட் அருள்பொருள் பெறுக",
+  "page-index-get-started-wallet-dl-android": "அன்டிராய்ட் ஆப் (APK)",
+  "page-index-get-started-wallet-dl-chrome": "Chrome / Edge நீட்சி",
+  "page-index-get-started-wallet-dl-firefox": "Firefox நீட்டிப்பு"
 }

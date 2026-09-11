@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "ユーザー体験",
   "page-index-roadmap-topic-verkle": "Verkleツリー",
   "page-index-roadmap-cta": "全ロードマップを見る",
-  "page-index-roadmap-cta-community": "コミュニティに参加する"
+  "page-index-roadmap-cta-community": "コミュニティに参加する",
+  "page-index-get-started-wallet-title": "ウォレットをダウンロード",
+  "page-index-get-started-wallet-description": "公式Quantaureumウォレットで、ご自身の鍵を安全に管理してください。",
+  "page-index-get-started-wallet-bullet-1": "Chrome、Edge、Firefox用ブラウザ拡張機能",
+  "page-index-get-started-wallet-bullet-2": "Androidアプリ（APK）",
+  "page-index-get-started-wallet-bullet-3": "Dilithiumで動作するアカウント、デフォルトで量子耐性",
+  "page-index-get-started-wallet-cta": "ウォレットを手に入れる",
+  "page-index-get-started-wallet-dl-android": "Androidアプリ(APK)",
+  "page-index-get-started-wallet-dl-chrome": "Chrome / Edge 拡張機能",
+  "page-index-get-started-wallet-dl-firefox": "Firefox 拡張機能"
 }

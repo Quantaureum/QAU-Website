@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "Uzoefu wa mtumiaji",
   "page-index-roadmap-topic-verkle": "Miti ya Verkle",
   "page-index-roadmap-cta": "Ona ramani ya njia kamili",
-  "page-index-roadmap-cta-community": "Jiunge na jamii"
+  "page-index-roadmap-cta-community": "Jiunge na jamii",
+  "page-index-get-started-wallet-title": "Pakua msaada",
+  "page-index-get-started-wallet-description": "Simamaa vifaa vyako kwa siri pamoja na Quantaureum Wallet rasmi.",
+  "page-index-get-started-wallet-bullet-1": "Kikwajuishi cha kivinjari cha Chrome, Edge na Firefox",
+  "page-index-get-started-wallet-bullet-2": "Programu Androidi (APK)",
+  "page-index-get-started-wallet-bullet-3": "Hesabu za Dilithium, za usalama wa quantum kwa chaguo msingi",
+  "page-index-get-started-wallet-cta": "Pata wallet",
+  "page-index-get-started-wallet-dl-android": "programu wa Android (APK)",
+  "page-index-get-started-wallet-dl-chrome": "Sasisho la Chrome / Edge",
+  "page-index-get-started-wallet-dl-firefox": "programu wa Firefox"
 }

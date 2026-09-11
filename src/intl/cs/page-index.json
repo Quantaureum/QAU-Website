@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "Uživatelský zážitek",
   "page-index-roadmap-topic-verkle": "Verkle stromy",
   "page-index-roadmap-cta": "Zobrazit celou roadmapu",
-  "page-index-roadmap-cta-community": "Přidejte se ke komunitě"
+  "page-index-roadmap-cta-community": "Přidejte se ke komunitě",
+  "page-index-get-started-wallet-title": "Stáhnout peněženku",
+  "page-index-get-started-wallet-description": "Přestože máte v přehledu pouze stručnou instrukci o překladu, nebyl zadán konkrétní text k překladu. Pokud mi označíte anglický string, který má být převeden do češtiny, ihned ho přeložím.",
+  "page-index-get-started-wallet-bullet-1": "Rozšíření pro Chrome, Edge a Firefox",
+  "page-index-get-started-wallet-bullet-2": "Aplikace pro Android (APK)",
+  "page-index-get-started-wallet-bullet-3": "Účty poháněné Dilithiemi, ve výchozím stavu bezpečné vůči kvantovým útokům",
+  "page-index-get-started-wallet-cta": "Získejte peněženku",
+  "page-index-get-started-wallet-dl-android": "Android aplikace (APK)",
+  "page-index-get-started-wallet-dl-chrome": "Rozšíření pro Chrome / Edge",
+  "page-index-get-started-wallet-dl-firefox": "Rozšíření Firefox"
 }

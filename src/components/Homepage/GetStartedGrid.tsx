@@ -1,5 +1,6 @@
-import { Code, HardDrive } from "lucide-react"
+import { Code, Download, HardDrive } from "lucide-react"
 import { getTranslations } from "next-intl/server"
+
 
 import { Image } from "@/components/Image"
 import {
@@ -19,6 +20,7 @@ import { cn } from "@/lib/utils/cn"
 
 import learnImage from "@/public/images/heroes/guides-hub-hero.jpg"
 import developersImage from "@/public/images/homepage/get-started/developers.png"
+import walletImage from "@/public/images/heroes/wallets-hub-hero.png"
 
 type GetStartedGridProps = {
   className?: string
@@ -65,6 +67,37 @@ const GetStartedGrid = async ({
       cta: t("page-index-get-started-node-cta"),
       href: "/run-a-node/",
       image: learnImage,
+    },
+    {
+      id: "wallet",
+      icon: Download,
+      iconBg: "bg-gold-100 dark:bg-gold-900",
+      iconColor: "text-gold-600",
+      title: t("page-index-get-started-wallet-title"),
+      description: t("page-index-get-started-wallet-description"),
+      bullets: [
+        t("page-index-get-started-wallet-bullet-1"),
+        t("page-index-get-started-wallet-bullet-2"),
+        t("page-index-get-started-wallet-bullet-3"),
+      ],
+      bulletColor: "bg-gold-500",
+      cta: t("page-index-get-started-wallet-cta"),
+      href: "/downloads/quantaureum-wallet.apk",
+      image: walletImage,
+      downloads: [
+        {
+          label: t("page-index-get-started-wallet-dl-android"),
+          href: "/downloads/quantaureum-wallet.apk",
+        },
+        {
+          label: t("page-index-get-started-wallet-dl-chrome"),
+          href: "/downloads/quantaureum-wallet-extension-chrome.zip",
+        },
+        {
+          label: t("page-index-get-started-wallet-dl-firefox"),
+          href: "/downloads/quantaureum-wallet-extension-firefox.zip",
+        },
+      ],
     },
   ]
 
@@ -138,7 +171,23 @@ const GetStartedGrid = async ({
                 </ul>
               </CardContent>
               <CardFooter>
-                <CardButtonFake withChevron>{card.cta}</CardButtonFake>
+                {"downloads" in card && card.downloads ? (
+                  <div className="flex flex-col gap-2">
+                    {card.downloads.map((dl) => (
+                      <a
+                        key={dl.href}
+                        href={dl.href}
+                        download
+                        className="flex items-center justify-between rounded-lg border px-4 py-2 text-sm text-body transition-colors hover:border-primary hover:text-primary"
+                      >
+                        <span>{dl.label}</span>
+                        <Download className="size-4" />
+                      </a>
+                    ))}
+                  </div>
+                ) : (
+                  <CardButtonFake withChevron>{card.cta}</CardButtonFake>
+                )}
               </CardFooter>
             </Card>
           ))}

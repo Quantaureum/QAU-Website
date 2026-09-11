@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "వినియోగదారు అనుభవం",
   "page-index-roadmap-topic-verkle": "Verkle ట్రీలు",
   "page-index-roadmap-cta": "పూర్తి రోడ్‌మాప్‌ను చూడండి",
-  "page-index-roadmap-cta-community": "కమ్యూనిటీలో చేరండి"
+  "page-index-roadmap-cta-community": "కమ్యూనిటీలో చేరండి",
+  "page-index-get-started-wallet-title": "والد را بارگیری کنید",
+  "page-index-get-started-wallet-description": "رسمی Quantaureum کیسے خود کے ٹوکنز کو محفوظ رکھیں۔",
+  "page-index-get-started-wallet-bullet-1": "Chrome, Edge اور Firefox کے لیے براؤزر ایکسٹینشن",
+  "page-index-get-started-wallet-bullet-2": "Android ऐप (APK)",
+  "page-index-get-started-wallet-bullet-3": "Dilithium-temelli hesabatlar, standart olaraq kvant-əmin",
+  "page-index-get-started-wallet-cta": "بورس دریافت کنید",
+  "page-index-get-started-wallet-dl-android": "Android অ্যাপ (APK)",
+  "page-index-get-started-wallet-dl-chrome": "Chrome / Edge擴充功能",
+  "page-index-get-started-wallet-dl-firefox": "Firefox extension"
 }

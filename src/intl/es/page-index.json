@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "Experiencia de usuario",
   "page-index-roadmap-topic-verkle": "Árboles Verkle",
   "page-index-roadmap-cta": "Ver la hoja de ruta completa",
-  "page-index-roadmap-cta-community": "Únete a la comunidad"
+  "page-index-roadmap-cta-community": "Únete a la comunidad",
+  "page-index-get-started-wallet-title": "Descargar la cartera",
+  "page-index-get-started-wallet-description": "Guarda tus propias llaves con la Billetera oficial de Quantaureum.",
+  "page-index-get-started-wallet-bullet-1": "Extensión de navegador para Chrome, Edge y Firefox",
+  "page-index-get-started-wallet-bullet-2": "Aplicación para Android (APK)",
+  "page-index-get-started-wallet-bullet-3": "Cuentas impulsadas por Dilithium, seguras ante cuánticas por defecto",
+  "page-index-get-started-wallet-cta": "Obtener la wallet",
+  "page-index-get-started-wallet-dl-android": "Aplicación para Android (APK)",
+  "page-index-get-started-wallet-dl-chrome": "Extensión para Chrome / Edge",
+  "page-index-get-started-wallet-dl-firefox": "Extensión de Firefox"
 }

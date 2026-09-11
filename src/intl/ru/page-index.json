@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "Пользовательский опыт",
   "page-index-roadmap-topic-verkle": "Деревья Verkle",
   "page-index-roadmap-cta": "Посмотреть полную дорожную карту",
-  "page-index-roadmap-cta-community": "Присоединиться к сообществу"
+  "page-index-roadmap-cta-community": "Присоединиться к сообществу",
+  "page-index-get-started-wallet-title": "Скачать кошелёк",
+  "page-index-get-started-wallet-description": "Храните ключи самостоятельно в официальном кошельке Quantaureum.",
+  "page-index-get-started-wallet-bullet-1": "Расширение для Chrome, Edge и Firefox",
+  "page-index-get-started-wallet-bullet-2": "Android app (APK)",
+  "page-index-get-started-wallet-bullet-3": "Аккаунты на базе Dilithium, квантовоустойчивые по умолчанию",
+  "page-index-get-started-wallet-cta": "Получить кошелёк",
+  "page-index-get-started-wallet-dl-android": "Приложение для Android (APK)",
+  "page-index-get-started-wallet-dl-chrome": "Расширение для Chrome / Edge",
+  "page-index-get-started-wallet-dl-firefox": "Расширение для Firefox"
 }

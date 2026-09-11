@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "Trải nghiệm người dùng",
   "page-index-roadmap-topic-verkle": "Cây Verkle",
   "page-index-roadmap-cta": "Xem lộ trình đầy đủ",
-  "page-index-roadmap-cta-community": "Tham gia cộng đồng"
+  "page-index-roadmap-cta-community": "Tham gia cộng đồng",
+  "page-index-get-started-wallet-title": "Tải xuống ví",
+  "page-index-get-started-wallet-description": "Sở hữu chìa khóa của bạn với Ví Quantaureum chính thức.",
+  "page-index-get-started-wallet-bullet-1": "Gói mở rộng trình duyệt cho Chrome, Edge và Firefox",
+  "page-index-get-started-wallet-bullet-2": "Ứng dụng Android (APK)",
+  "page-index-get-started-wallet-bullet-3": "Tài khoản chạy bằng Dilithium, an toàn lượng tử mặc định",
+  "page-index-get-started-wallet-cta": "Tải ví",
+  "page-index-get-started-wallet-dl-android": "Ứng dụng Android (APK)",
+  "page-index-get-started-wallet-dl-chrome": "Trình mở rộng Chrome / Edge",
+  "page-index-get-started-wallet-dl-firefox": "Trình bổ sung Firefox"
 }

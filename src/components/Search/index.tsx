@@ -1,17 +1,12 @@
 "use client"
 
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 import dynamic from "next/dynamic"
 import { useLocale, useTranslations } from "next-intl"
-import { type DocSearchHit, useDocSearchKeyboardEvents } from "@docsearch/react"
 import * as Portal from "@radix-ui/react-portal"
 import { Slot } from "@radix-ui/react-slot"
 
-import { ErrorBoundary } from "@/components/ui/error-boundary"
-
 import { trackCustomEvent } from "@/lib/utils/matomo"
-import { sanitizeHitTitle } from "@/lib/utils/sanitizeHitTitle"
-import { sanitizeHitUrl } from "@/lib/utils/url"
 
 import SearchButton from "./SearchButton"
 import SearchInputButton from "./SearchInputButton"
@@ -42,76 +37,21 @@ const Search = ({ asChild = false, children }: SearchProps) => {
     })
   }
 
-  useDocSearchKeyboardEvents({
-    isOpen,
-    onOpen: handleOpen,
-    onClose,
-    searchButtonRef,
+  // Keyboard shortcut: cmd/ctrl+K toggles the local search modal
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault()
+        isOpen ? onClose() : handleOpen()
+      }
+    }
+    window.addEventListener("keydown", onKey)
+    return () => window.removeEventListener("keydown", onKey)
   })
 
-  const appId = process.env.NEXT_PUBLIC_ALGOLIA_APP_ID || ""
-  const apiKey = process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_KEY || ""
-  const indexName =
-    process.env.NEXT_PUBLIC_ALGOLIA_BASE_SEARCH_INDEX_NAME || "quantaureumorg"
-
   const searchModalProps = {
-    apiKey,
-    appId,
-    indexName,
     onClose,
-    searchParameters: {
-      facetFilters: [`lang:${locale}`],
-    },
-    transformItems: (items: DocSearchHit[]) =>
-      items.map((item: DocSearchHit) => {
-        // Use JSON clone for browser compatibility (structuredClone not available in Chrome < 98)
-        const newItem: DocSearchHit = JSON.parse(JSON.stringify(item))
-        newItem.url = sanitizeHitUrl(item.url)
-        const newTitle = sanitizeHitTitle(item.hierarchy.lvl0 || "")
-        newItem.hierarchy.lvl0 = newTitle
-        return newItem
-      }),
-    placeholder: t("search-quantaureum-org"),
-    translations: {
-      searchBox: {
-        resetButtonTitle: t("clear"),
-        resetButtonAriaLabel: t("clear"),
-        cancelButtonText: t("close"),
-        cancelButtonAriaLabel: t("close"),
-      },
-      footer: {
-        selectText: t("docsearch-to-select"),
-        selectKeyAriaLabel: t("docsearch-to-select"),
-        navigateText: t("docsearch-to-navigate"),
-        navigateUpKeyAriaLabel: t("up"),
-        navigateDownKeyAriaLabel: t("down"),
-        closeText: t("docsearch-to-close"),
-        closeKeyAriaLabel: t("docsearch-to-close"),
-        searchByText: t("docsearch-search-by"),
-      },
-      errorScreen: {
-        titleText: t("docsearch-error-title"),
-        helpText: t("docsearch-error-help"),
-      },
-      startScreen: {
-        recentSearchesTitle: t("docsearch-start-recent-searches-title"),
-        noRecentSearchesText: t("docsearch-start-no-recent-searches"),
-        saveRecentSearchButtonTitle: t("docsearch-start-save-recent-search"),
-        removeRecentSearchButtonTitle: t(
-          "docsearch-start-remove-recent-search"
-        ),
-        favoriteSearchesTitle: t("docsearch-start-favorite-searches"),
-        removeFavoriteSearchButtonTitle: t(
-          "docsearch-start-remove-favorite-search"
-        ),
-      },
-      noResultsScreen: {
-        noResultsText: t("docsearch-no-results-text"),
-        suggestedQueryText: t("docsearch-no-results-suggested-query"),
-        reportMissingResultsText: t("docsearch-no-results-missing"),
-        reportMissingResultsLinkText: t("docsearch-no-results-missing-link"),
-      },
-    },
+    locale: locale as string,
   }
 
   return (
@@ -135,35 +75,7 @@ const Search = ({ asChild = false, children }: SearchProps) => {
         </>
       )}
       <Portal.Root>
-        {isOpen && (
-          <ErrorBoundary
-            fallback={() => (
-              <div className="fixed inset-0 z-modal flex items-center justify-center bg-overlay">
-                <div className="mx-4 flex flex-col items-center gap-4 rounded-lg bg-background p-8 text-center shadow-lg">
-                  <p className="text-body-medium">
-                    {t("loading-error-refresh")}
-                  </p>
-                  <div className="flex gap-3">
-                    <button
-                      className="rounded-md bg-primary px-4 py-2 text-sm text-white hover:bg-primary-hover"
-                      onClick={() => window.location.reload()}
-                    >
-                      {t("refresh")}
-                    </button>
-                    <button
-                      className="rounded-md border border-body-light px-4 py-2 text-sm text-body hover:bg-background-highlight"
-                      onClick={onClose}
-                    >
-                      {t("close")}
-                    </button>
-                  </div>
-                </div>
-              </div>
-            )}
-          >
-            <SearchModal {...searchModalProps} />
-          </ErrorBoundary>
-        )}
+        {isOpen && <SearchModal {...searchModalProps} />}
       </Portal.Root>
     </>
   )

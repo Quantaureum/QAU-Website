@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "Pengalaman pengguna",
   "page-index-roadmap-topic-verkle": "Pohon Verkle",
   "page-index-roadmap-cta": "Lihat roadmap lengkap",
-  "page-index-roadmap-cta-community": "Gabung komunitas"
+  "page-index-roadmap-cta-community": "Gabung komunitas",
+  "page-index-get-started-wallet-title": "Unduh dompet",
+  "page-index-get-started-wallet-description": "Kuasai kunci Anda sendiri dengan Quantaureum Wallet resmi.",
+  "page-index-get-started-wallet-bullet-1": "Ekstensi browser untuk Chrome, Edge, dan Firefox",
+  "page-index-get-started-wallet-bullet-2": "Aplikasi Android (APK)",
+  "page-index-get-started-wallet-bullet-3": "Akun bertenaga Dilithium, aman secara kuantum secara default",
+  "page-index-get-started-wallet-cta": "Ambil dompet",
+  "page-index-get-started-wallet-dl-android": "Aplikasi Android (APK)",
+  "page-index-get-started-wallet-dl-chrome": "Ekstensi Chrome / Edge",
+  "page-index-get-started-wallet-dl-firefox": "Ekstensi Firefox"
 }

@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "यूज़र एक्सपेरियंस",
   "page-index-roadmap-topic-verkle": "Verkle ट्रीज़",
   "page-index-roadmap-cta": "पूरा रोडमैप देखें",
-  "page-index-roadmap-cta-community": "कम्युनिटी से जुड़ें"
+  "page-index-roadmap-cta-community": "कम्युनिटी से जुड़ें",
+  "page-index-get-started-wallet-title": "वॉलेट डाउनलोड करें",
+  "page-index-get-started-wallet-description": "अपने ही कुंजियों को आधिकारिक Quantaureum वॉलेट के साथ सुरक्षित रखें।",
+  "page-index-get-started-wallet-bullet-1": "Chrome, Edge aur Firefox ke liye browser extension",
+  "page-index-get-started-wallet-bullet-2": "Android ऐप (APK)",
+  "page-index-get-started-wallet-bullet-3": "Dilithium-संचालित खाते, डिफ़ॉल्ट रूप से क्वॉंटम-सुरक्षित",
+  "page-index-get-started-wallet-cta": "Wallet प्राप्त करें",
+  "page-index-get-started-wallet-dl-android": "एंड्रॉइड ऐप (APK)",
+  "page-index-get-started-wallet-dl-chrome": "Chrome / Edge एक्सटेंशन",
+  "page-index-get-started-wallet-dl-firefox": "Firefox एक्सटेंशन"
 }

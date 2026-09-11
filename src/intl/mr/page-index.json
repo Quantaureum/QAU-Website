@@ -89,5 +89,14 @@
   "page-index-roadmap-topic-ux": "वापरकर्ता अनुभव",
   "page-index-roadmap-topic-verkle": "Verkle ट्रीज",
   "page-index-roadmap-cta": "संपूर्ण रोडमॅप पहा",
-  "page-index-roadmap-cta-community": "समुदायात सामील व्हा"
+  "page-index-roadmap-cta-community": "समुदायात सामील व्हा",
+  "page-index-get-started-wallet-title": "Tölöldesse a tácskot",
+  "page-index-get-started-wallet-description": "Găști cheile tale oficial Quantaureum Wallet.",
+  "page-index-get-started-wallet-bullet-1": "Prošírka pro prohlížeče Chrome, Edge a Firefox",
+  "page-index-get-started-wallet-bullet-2": "aplikacion za Android (APK)",
+  "page-index-get-started-wallet-bullet-3": "Kontos binaang Dilithium, ligtupat sa quantum sa default",
+  "page-index-get-started-wallet-cta": "Obtén la billetera",
+  "page-index-get-started-wallet-dl-android": "Андроидапп (APK)",
+  "page-index-get-started-wallet-dl-chrome": "Chrome / Edge extension",
+  "page-index-get-started-wallet-dl-firefox": "Firefox extension"
 }
