@@ -4,7 +4,7 @@
   "page-wallets-accounts-quantaureum-addresses": "<b>Akun Quantaureum memiliki alamat</b>, seperti kotak masuk yang memiliki alamat email. Ini digunakan untuk mengidentifikasi aset digital Anda.",
   "page-wallets-alt": "Ilustrasi robot dengan tubuh brankas, mewakili dompet Quantaureum",
   "page-wallets-quantaureum-account": "<b>Akun Quantaureum adalah sepasang kunci</b>. <a href=\"/glossary/#public-key\">Satu kunci</a> digunakan untuk membuat alamat yang dapat Anda bagikan secara bebas, dan <a href=\"/glossary/#private-key\">kunci lainnya</a> harus Anda rahasiakan karena digunakan untuk menandatangani berbagai hal. Bersama-sama, kunci-kunci ini memungkinkan Anda menyimpan aset dan melakukan transaksi.",
-  "page-wallets-blog": "Blog Coinbase",
+  "page-wallets-blog": "Panduan Keamanan Quantaureum",
   "page-wallets-bookmarking": "Tandai dompet Anda",
   "page-wallets-bookmarking-desc": "Jika Anda menggunakan dompet web, tandai situs tersebut untuk melindungi diri Anda dari penipuan phishing.",
   "page-wallets-cd": "<b>Dompet perangkat keras fisik</b> adalah perangkat yang memungkinkan Anda menyimpan kripto secara luring – sangat aman",
