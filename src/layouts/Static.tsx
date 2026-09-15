@@ -15,7 +15,6 @@ import MatomoOptOut from "@/components/MatomoOptOut"
 import PageActions from "@/components/PageActions"
 import SocialListItem from "@/components/SocialListItem"
 import TableOfContents from "@/components/TableOfContents"
-import TranslationChartImage from "@/components/TranslationChartImage"
 import { Alert } from "@/components/ui/alert"
 import Callout from "@/components/ui/callout"
 import { Flex } from "@/components/ui/flex"
@@ -38,7 +37,6 @@ export const staticComponents = {
   Logo,
   MatomoOptOut,
   SocialListItem,
-  TranslationChartImage,
   ListenToPlayer,
 }
 

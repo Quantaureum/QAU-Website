@@ -291,7 +291,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
               {
                 strong: Strong,
                 howToUseWallet: (chunks) => (
-                  <Link href="/guides/how-to-use-a-wallet/">{chunks}</Link>
+                  <Link href="/wallets/">{chunks}</Link>
                 ),
               }
             )}
@@ -448,7 +448,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
             </ListItem>
           </UnorderedList>
           <p>{t("page-what-is-qau-what-is-wrapping-qau-description-6")}</p>
-          <LinkWithArrow href="/wrapped-qau/">
+          <LinkWithArrow href="/what-is-qau/">
             {t("page-what-is-qau-what-is-wrapping-qau-description-7")}
           </LinkWithArrow>
         </Section>

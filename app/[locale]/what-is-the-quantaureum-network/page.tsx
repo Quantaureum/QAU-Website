@@ -409,7 +409,7 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
                 "page-what-is-quantaureum-network-live-network-data-section-description-11",
                 {
                   ultrasound: (chunks) => (
-                    <Link href="/developers/docs/">{chunks}</Link>
+                    <Link href="https://github.com/Quantaureum">{chunks}</Link>
                   ),
                 }
               )}
@@ -456,7 +456,7 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
               </DocLink>
             </ListItem>
             <ListItem>
-              <DocLink href="/web3">
+              <DocLink href="/learn/">
                 {t("page-what-is-quantaureum-network-read-next-item-3")}
               </DocLink>
             </ListItem>

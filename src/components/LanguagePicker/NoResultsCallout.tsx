@@ -14,7 +14,7 @@ const NoResultsCallout = ({ onClose }: NoResultsCalloutProps) => {
           a: (chunks) => (
             <BaseLink
               key="item-no-results"
-              href="/contributing/translation-program/"
+              href="https://github.com/Quantaureum"
               onClick={onClose}
             >
               {chunks}

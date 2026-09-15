@@ -50,8 +50,8 @@ import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
 import GetQauPageJsonLD from "./page-jsonld"
 
-import handEth from "@/public/images/developers-qau-blocks.png"
 import dapps from "@/public/images/doge-computer.png"
+import handEth from "@/public/images/get-qau/developers-qau-blocks.png"
 import qauCoins from "@/public/images/get-qau-coins.png"
 import wallet from "@/public/images/wallet.png"
 
@@ -91,7 +91,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
       title: t("page-get-qau-receive"),
       description: t("page-get-qau-peers-desc"),
       linkText: t("page-get-qau-receive-link"),
-      href: "/guides/how-to-use-a-wallet/",
+      href: "/wallets/",
     },
     {
       icon: CircleDashed,
@@ -308,7 +308,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
                   </CardContent>
                 </Card>
 
-                <Card variant="nested" href="/security/">
+                <Card variant="nested" href="/bug-bounty/">
                   <CardContent>
                     <CardTitle>
                       {t("page-get-qau-wallet-instructions")}
@@ -338,7 +338,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
                 image={dapps}
                 alt=""
               >
-                <ButtonLink href="/apps/">
+                <ButtonLink href="https://discord.gg/MSctkBT5j">
                   {t("page-get-qau-checkout-dapps-btn")}
                 </ButtonLink>
               </Callout>

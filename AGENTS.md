@@ -276,3 +276,13 @@ The following external-looking services are managed by the quantaureum.com team:
 
 - **`s3-dcl1.ethquokkaops.io`** — S3-compatible object storage for app screenshots and media. Used by the data layer to serve images for the `/dapps` and app listing pages. Downtime here means broken images on the live site.
 - **Netlify Blobs** (`@netlify/blobs`) — Key-value store used by the data layer to cache API responses. Accessed via `src/data-layer/storage.ts`.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->

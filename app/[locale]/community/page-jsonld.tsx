@@ -6,8 +6,6 @@ import PageJsonLD from "@/components/PageJsonLD"
 
 import { normalizeUrlForJsonLd } from "@/lib/utils/url"
 
-import { SITE_URL } from "@/lib/constants"
-
 import { BASE_GRAPH_NODES } from "@/lib/jsonld/constants"
 import { REFERENCE } from "@/lib/jsonld/references"
 
@@ -83,7 +81,7 @@ export default async function CommunityJsonLD({
             position: 2,
             name: t("page-community-conferences-title"),
             description: t("page-community-conferences-subtitle"),
-            url: normalizeUrlForJsonLd(locale, "/community/events/"),
+            url: normalizeUrlForJsonLd(locale, "https://discord.gg/MSctkBT5j"),
           },
           {
             "@type": "ListItem",
@@ -106,7 +104,10 @@ export default async function CommunityJsonLD({
             position: 5,
             name: t("page-community-contribute"),
             description: t("page-community-contribute-description"),
-            url: normalizeUrlForJsonLd(locale, "/contributing/"),
+            url: normalizeUrlForJsonLd(
+              locale,
+              "https://github.com/Quantaureum"
+            ),
           },
         ],
         publisher: REFERENCE.QUANTAUREUM_ORG,

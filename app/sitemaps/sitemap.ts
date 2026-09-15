@@ -5,6 +5,7 @@ import { getFullUrl, toLanguageTag } from "@/lib/utils/url"
 import { DEFAULT_LOCALE, LOCALES_CODES } from "@/lib/constants"
 
 import { getAllPagesWithTranslations } from "@/lib/i18n/translationRegistry"
+import { isPublicSiteRoute } from "@/lib/public-site-boundary"
 
 // Generate at build time only. Without this the route's transitive data-layer
 // dependency (finite-revalidate getters) opts it into ISR, so Netlify re-renders
@@ -39,6 +40,8 @@ export default async function sitemap({
   const seenUrls = new Set<string>()
 
   for (const { slug, translatedLocales } of pages) {
+    if (!isPublicSiteRoute(slug)) continue
+
     // This shard only carries URLs for its own locale; the full hreflang
     // alternates block is still emitted so each URL cross-references every
     // translated version.

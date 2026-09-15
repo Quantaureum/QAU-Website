@@ -1,0 +1,16 @@
+{
+  "page-feedback-title": "استبيان الملاحظات",
+  "page-feedback-sub-title": "ساعدنا في تحسين موقع Quantaureum. لا يستغرق الأمر دقيقة.",
+  "rating-label": "ما مدى مفيدة هذه الصفحة؟",
+  "rating-aria": "{value} من 5 نجوم",
+  "topic-label": "What is this about?",
+  "topic-general": "ملاحظات عامة",
+  "topic-content": "مشكلة في المحتوى",
+  "topic-bug": "إبلاغ عن خلل",
+  "topic-feature": "طلب ميزة",
+  "message-label": "أخبرنا المزيد",
+  "message-placeholder": "ماذا يجب أن نحسّنه أو نصلّحه؟ (اختياري)",
+  "submit": "أرسل ملاحظاتك",
+  "thanks-title": "شكرًا لملاحظاتكم!",
+  "thanks-body": "انطلقت عميل البريد الإلكتروني الخاص بك مع رسالتك. وإذا لم يحدث ذلك، أرسل رسالة إلى hello@quantaureum.com."
+}

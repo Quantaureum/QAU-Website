@@ -1,11 +1,6 @@
-import { pick } from "lodash"
 import { Atom } from "lucide-react"
 import { getImageProps } from "next/image"
-import {
-  getMessages,
-  getTranslations,
-  setRequestLocale,
-} from "next-intl/server"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 
 import type { Lang, PageParams } from "@/lib/types"
 
@@ -41,14 +36,13 @@ import { Section } from "@/components/ui/section"
 import { getAppPageContributorInfo } from "@/lib/utils/contributors"
 import { getMetadata } from "@/lib/utils/metadata"
 import { breakpointAsNumber } from "@/lib/utils/screen"
-import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
 import RoadmapPageJsonLD from "./page-jsonld"
 
-import qauBlocksImg from "@/public/images/developers-qau-blocks.png"
 import communityHeroImg from "@/public/images/heroes/community-hero.png"
 import communityHeroPortraitImg from "@/public/images/heroes/community-hero-portrait.png"
 import roadmapHeroImg from "@/public/images/heroes/roadmap-hub-hero.jpg"
+import qauBlocksImg from "@/public/images/roadmap/developers-qau-blocks.png"
 
 const Page = async (props: { params: Promise<PageParams> }) => {
   const params = await props.params
@@ -57,11 +51,6 @@ const Page = async (props: { params: Promise<PageParams> }) => {
   setRequestLocale(locale)
 
   const t = await getTranslations("page-roadmap")
-
-  // Messages for the client-only ReleaseCarousel island
-  const allMessages = await getMessages({ locale })
-  const requiredNamespaces = getRequiredNamespacesForPage("/roadmap")
-  const messages = pick(allMessages, requiredNamespaces)
 
   const { contributors } = await getAppPageContributorInfo(
     "roadmap",
@@ -232,7 +221,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               <p>
                 <Translation id="page-roadmap:page-roadmap-how-defined-p3" />
               </p>
-              <ButtonLink href="/governance" variant="outline" data-flow="cta">
+              <ButtonLink href="/community/" variant="outline" data-flow="cta">
                 {t("page-roadmap-governance-button")}
               </ButtonLink>
             </div>

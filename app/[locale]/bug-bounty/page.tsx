@@ -30,7 +30,6 @@ import { Section } from "@/components/ui/section"
 import { getAppPageContributorInfo } from "@/lib/utils/contributors"
 import { getMetadata } from "@/lib/utils/metadata"
 
-
 import BugBountyJsonLD from "./page-jsonld"
 
 const StrongGreaterThan = (chunks: React.ReactNode) => (
@@ -44,7 +43,6 @@ export default async function Page(props: { params: Promise<Params> }) {
   setRequestLocale(locale)
 
   const t = await getTranslations("page-bug-bounty")
-  const tCommon = await getTranslations("common")
 
   const { contributors, lastEditLocaleTimestamp } =
     await getAppPageContributorInfo("bug-bounty", locale as Lang)
@@ -70,7 +68,9 @@ export default async function Page(props: { params: Promise<Params> }) {
         heroComponent={
           <VStack className="mx-auto w-full max-w-2xl">
             <Card variant="nested" className="p-6">
-              <CardTitle>{t("page-upgrades-bug-bounty-card-subheader-2")}</CardTitle>
+              <CardTitle>
+                {t("page-upgrades-bug-bounty-card-subheader-2")}
+              </CardTitle>
               <CardParagraph size="sm">
                 {t("page-upgrades-bug-bounty-severity-qualifications-desc")}
               </CardParagraph>
@@ -102,7 +102,6 @@ export default async function Page(props: { params: Promise<Params> }) {
       />
 
       <MainArticle className="flow *:px-page! **:[:is(p,ul,ol)]:max-w-3xl">
-
         <div className="flow space-y-space-3x bg-background-highlight pt-space-3x pb-space-2x">
           <Section id="in-scope">
             <h2>{t("page-upgrades-bug-bounty-validity")}</h2>
@@ -125,7 +124,7 @@ export default async function Page(props: { params: Promise<Params> }) {
                 className="flex-[1_1_464px]"
               >
                 <div>
-                  <InlineLink href="/developers/docs/">
+                  <InlineLink href="https://github.com/Quantaureum">
                     {t("page-upgrades-bug-bounty-specs")}
                   </InlineLink>
                 </div>
@@ -137,7 +136,6 @@ export default async function Page(props: { params: Promise<Params> }) {
                   <ListItem>{t("page-upgrades-bug-bounty-type-3")}</ListItem>
                   <ListItem>{t("page-upgrades-bug-bounty-type-4")}</ListItem>
                 </UnorderedList>
-
               </MarkdownCard>
 
               <MarkdownCard
@@ -162,7 +160,6 @@ export default async function Page(props: { params: Promise<Params> }) {
                     {t("page-upgrades-bug-bounty-clients-type-3")}
                   </ListItem>
                 </UnorderedList>
-
               </MarkdownCard>
 
               <MarkdownCard
@@ -183,8 +180,7 @@ export default async function Page(props: { params: Promise<Params> }) {
                 description={t("page-upgrades-bug-bounty-deposit-bugs-desc")}
                 variant="nested"
                 className="flex-[1_1_464px]"
-              >
-              </MarkdownCard>
+              ></MarkdownCard>
 
               <MarkdownCard
                 emoji=":bug:"
@@ -448,7 +444,6 @@ export default async function Page(props: { params: Promise<Params> }) {
           <h2>{t("page-upgrades-bug-bounty-submit")}</h2>
           <BugBountyCards />
         </Section>
-
 
         <Section id="faq" className="px-page py-4">
           <h2>{t("page-upgrades-question-title")}</h2>

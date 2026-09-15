@@ -64,7 +64,7 @@ import poolsImg from "@/public/images/staking/leslie-pool.png"
 import saasImg from "@/public/images/staking/leslie-saas.png"
 import soloImg from "@/public/images/staking/leslie-solo.png"
 import cexImg from "@/public/images/staking/leslie-withdrawal.png"
-import heroImg from "@/public/images/qau-logo.png"
+import heroImg from "@/public/images/staking/staking-hero.png"
 
 type IndicatorLevel = "good" | "meh" | "poor"
 
@@ -135,7 +135,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
       Icon: BenefitMoreSustainableIcon,
       description: t("page-staking-benefits-3-description"),
       ctaLabel: t("page-staking-benefits-3-link"),
-      href: "/energy-consumption/",
+      href: "/what-is-the-quantaureum-network/",
     },
   ]
 
@@ -168,7 +168,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
         t("page-staking-hierarchy-solo-p1"),
         t("page-staking-hierarchy-solo-p2"),
         t.rich("page-staking-hierarchy-solo-p3", {
-          a: (chunks) => <InlineLink href="/staking/dvt/">{chunks}</InlineLink>,
+          a: (chunks) => <InlineLink href="/staking/">{chunks}</InlineLink>,
         }),
       ],
       image: soloImg,
@@ -223,7 +223,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
       ],
       image: poolsImg,
       imageAlt: "",
-      href: "/staking/pools/",
+      href: "/staking/",
       buttonLabel: t("page-staking-more-on-pools"),
     },
     {
@@ -356,7 +356,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
         t("page-staking-section-comparison-pools-requirements-li1"),
         t("page-staking-section-comparison-pools-requirements-li2"),
       ],
-      href: "/staking/pools/",
+      href: "/staking/",
       buttonLabel: t("page-staking-more-on-pools"),
     },
   ]
@@ -728,7 +728,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
             <p>
               {t.rich("page-staking-glance-restaking", {
                 a: (chunks) => (
-                  <InlineLink href="/restaking/">{chunks}</InlineLink>
+                  <InlineLink href="/staking/#faq">{chunks}</InlineLink>
                 ),
                 strong: Strong,
               })}
@@ -746,14 +746,14 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 <p>{t("page-staking-faq-4-answer-p1")}</p>
                 <p>{t("page-staking-faq-4-answer-p2")}</p>
                 <p>{t("page-staking-faq-4-answer-p3")}</p>
-                <ButtonLink className="self-start" href="/roadmap/merge/">
+                <ButtonLink className="self-start" href="/roadmap/">
                   {t("page-upgrades-merge-btn")}
                 </ButtonLink>
               </ExpandableCard>
               <ExpandableCard title={t("page-staking-faq-5-question")}>
                 <p>{t("page-staking-faq-5-answer-p1")}</p>
                 <p>{t("page-staking-faq-5-answer-p2")}</p>
-                <ButtonLink className="self-start" href="/staking/withdrawals/">
+                <ButtonLink className="self-start" href="/staking/">
                   {t("page-staking-faq-5-answer-link")}
                 </ButtonLink>
               </ExpandableCard>
@@ -776,14 +776,14 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 <p>
                   {t.rich("page-staking-faq-3-answer-p2", {
                     a: (chunks) => (
-                      <InlineLink href="/staking/pools/">{chunks}</InlineLink>
+                      <InlineLink href="/staking/">{chunks}</InlineLink>
                     ),
                   })}
                 </p>
               </ExpandableCard>
               <ExpandableCard title={t("page-staking-faq-8-question")}>
                 <p>{t("page-staking-faq-8-answer-p1")}</p>
-                <ButtonLink className="self-start" href="/restaking/">
+                <ButtonLink className="self-start" href="/staking/#faq">
                   {t("page-staking-faq-8-answer-link")}
                 </ButtonLink>
               </ExpandableCard>
@@ -794,43 +794,23 @@ const Page = async (props: { params: Promise<PageParams> }) => {
             <h2>{tocItems.further.title}</h2>
             <UnorderedList>
               <ListItem>
-                <InlineLink href="/roadmap/pectra/">
+                <InlineLink href="/roadmap/">
                   {t("page-staking-further-reading-1-link")}
                 </InlineLink>
               </ListItem>
               <ListItem>
                 <InlineLink href="https://github.com/Quantaureum">
                   {t("page-staking-further-reading-2-link")}
-                </InlineLink>{" "}
-                -{" "}
-                <i>
-                  {t("page-staking-further-reading-author-vitalik-buterin")}
-                </i>
+                </InlineLink>
               </ListItem>
               <ListItem>
-                <InlineLink href="https://eth2book.info/latest/">
+                <InlineLink href="/what-is-quantaureum/">
                   {t("page-staking-further-reading-4-link")}
-                </InlineLink>{" "}
-                - <i>{t("page-staking-further-reading-4-author")}</i>
+                </InlineLink>
               </ListItem>
               <ListItem>
-                <InlineLink href="https://www.attestant.io/posts/">
+                <InlineLink href="/bug-bounty/">
                   {t("page-staking-further-reading-6-link")}
-                </InlineLink>
-              </ListItem>
-              <ListItem>
-                <InlineLink href="https://beaconcha.in/education">
-                  {t("page-staking-further-reading-8-link")}
-                </InlineLink>
-              </ListItem>
-              <ListItem>
-                <InlineLink href="https://github.com/Quantaureum">
-                  {t("page-staking-further-reading-9-link")}
-                </InlineLink>
-              </ListItem>
-              <ListItem>
-                <InlineLink href="https://ethstaker.gitbook.io/ethstaker-knowledge-base/">
-                  {t("page-staking-further-reading-10-link")}
                 </InlineLink>
               </ListItem>
             </UnorderedList>

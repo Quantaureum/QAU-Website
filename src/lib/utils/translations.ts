@@ -18,6 +18,7 @@ export const EXACT_PATH_NAMESPACE_MAP: Record<string, string> = {
   "/founders/": "page-founders",
   "/get-qau/": "page-get-qau",
   "/bug-bounty/": "page-bug-bounty",
+  "/feedback/": "page-feedback",
   "/open-source/": "page-open-source",
   "/wallets/find-wallet/": "page-wallets-find-wallet",
   "/wallets/": "page-wallets",

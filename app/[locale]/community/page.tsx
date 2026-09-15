@@ -1,10 +1,5 @@
-import { pick } from "lodash"
 import { HandCoins, MessageCircleHeart, Sparkles } from "lucide-react"
-import {
-  getMessages,
-  getTranslations,
-  setRequestLocale,
-} from "next-intl/server"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 
 import type { Lang, PageParams } from "@/lib/types"
 
@@ -14,7 +9,6 @@ import ChecklistGrid, {
 import ContentFeedback from "@/components/ContentFeedback"
 import { HubHero } from "@/components/Hero"
 import FloatingCard from "@/components/Homepage/FloatingCard"
-import I18nProvider from "@/components/I18nProvider"
 import Github from "@/components/icons/github.svg"
 import { Image } from "@/components/Image"
 import MainArticle from "@/components/MainArticle"
@@ -22,7 +16,6 @@ import { ButtonLink } from "@/components/ui/buttons/Button"
 import Callout from "@/components/ui/callout"
 import {
   Card,
-  CardBanner,
   CardButtonFake,
   CardContent,
   CardFooter,
@@ -34,22 +27,15 @@ import {
 import { Grid } from "@/components/ui/grid"
 import { Section, SectionContent } from "@/components/ui/section"
 
-import { cn } from "@/lib/utils/cn"
 import { getAppPageContributorInfo } from "@/lib/utils/contributors"
 import { getMetadata } from "@/lib/utils/metadata"
-import { formatCompactNumber, numberFormat } from "@/lib/utils/numbers"
-import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
+import { numberFormat } from "@/lib/utils/numbers"
 
-
-
-import EventCard from "./events/_components/event-card"
-import { mapEventTranslations } from "./events/utils"
 import PageJsonLD from "./page-jsonld"
 
-import { getEventsData } from "@/lib/data"
 import dogeComputerImg from "@/public/images/doge-computer.png"
-import qauImg from "@/public/images/qau.png"
 import heroImg from "@/public/images/heroes/community-hero.png"
+import qauImg from "@/public/images/qau.png"
 import contributeImg from "@/public/images/three-people-cat-butterflies-petting-dog.png"
 
 export default async function Page(props: { params: Promise<PageParams> }) {
@@ -64,15 +50,6 @@ export default async function Page(props: { params: Promise<PageParams> }) {
   )
 
   const t = await getTranslations("page-community")
-  const tEvents = await getTranslations("page-community-events")
-
-  // Client story components (StoryCard / TagFilter) read the "common" and
-  // "component-story-card" namespaces -- provide them for the voices grid.
-  const allMessages = await getMessages({ locale })
-  const messages = pick(
-    allMessages,
-    getRequiredNamespacesForPage("/community/")
-  )
 
   const whyGetInvolvedCards = [
     {
@@ -80,14 +57,14 @@ export default async function Page(props: { params: Promise<PageParams> }) {
       title: t("page-community-why-get-involved-card-1-title"),
       description: t("page-community-why-get-involved-card-1-description"),
       cta: t("page-community-why-get-involved-card-1-cta"),
-      href: "/community/events/",
+      href: "https://discord.gg/MSctkBT5j",
     },
     {
       icon: <HandCoins />,
       title: t("page-community-why-get-involved-card-2-title"),
       description: t("page-community-why-get-involved-card-2-description"),
       cta: t("page-community-why-get-involved-card-2-cta"),
-      href: "/community/get-involved#quantaureum-jobs",
+      href: "https://github.com/Quantaureum",
     },
     {
       icon: <MessageCircleHeart />,
@@ -116,18 +93,6 @@ export default async function Page(props: { params: Promise<PageParams> }) {
       description: t("page-community-get-paid-sovereignty-description"),
     },
   ]
-
-  // Upcoming conferences for the strip, reusing the events data + card.
-  const rawEvents = (await getEventsData()) ?? []
-  const events = mapEventTranslations(rawEvents, tEvents, locale)
-  const conferences = events
-    .filter(
-      (e) =>
-        e.eventTypes?.includes("conference") ||
-        e.eventTypes?.includes("hackathon")
-    )
-    .slice(0, 6)
-
 
   return (
     <>
@@ -175,7 +140,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
               <h2>{t("page-community-open-source")}</h2>
               <p>{t("page-community-get-paid-subtitle")}</p>
               <div className="flex gap-4 max-md:flex-col max-md:items-start">
-                <ButtonLink href="/community/grants/">
+                <ButtonLink href="https://github.com/Quantaureum">
                   {t("page-community-explore-grants")}
                 </ButtonLink>
                 <ButtonLink
@@ -200,7 +165,11 @@ export default async function Page(props: { params: Promise<PageParams> }) {
               {t("page-community-card-1-description")}
             </p>
             <Grid columns={3}>
-              <Card href="https://discord.gg/MSctkBT5j" variant="ghost" size="sm">
+              <Card
+                href="https://discord.gg/MSctkBT5j"
+                variant="ghost"
+                size="sm"
+              >
                 <CardContent className="pt-6">
                   <CardTitle>Discord</CardTitle>
                   <CardParagraph>
@@ -226,42 +195,11 @@ export default async function Page(props: { params: Promise<PageParams> }) {
               </Card>
             </Grid>
             <div className="flex justify-center">
-              <ButtonLink size="lg" href="/community/online/">
+              <ButtonLink size="lg" href="https://discord.gg/MSctkBT5j">
                 {t("page-community-online-see-all")}
               </ButtonLink>
             </div>
           </Section>
-
-          {/* Major blockchain conferences */}
-          {conferences.length > 0 && (
-            <Section id="conferences" className="*:[:is(h2,p)]:max-w-3xl">
-              <h2>{t("page-community-conferences-title")}</h2>
-              <p className="text-body-medium">
-                {t("page-community-conferences-subtitle")}
-              </p>
-              <Grid columns={3}>
-                {conferences.map((event) => (
-                  <EventCard
-                    key={event.id}
-                    event={event}
-                    variant="grid"
-                    locale={locale}
-                    customEventOptions={{
-                      eventCategory: "Community",
-                      eventAction: "events_clicked",
-                      eventName: "conferences",
-                    }}
-                  />
-                ))}
-              </Grid>
-              <div className="flex justify-center">
-                <ButtonLink size="lg" href="/community/events/">
-                  {t("page-community-conferences-see-all")}
-                </ButtonLink>
-              </div>
-            </Section>
-          )}
-
 
           {/* Contribute to quantaureum.com */}
           <Section
@@ -295,7 +233,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
               </p>
 
               <div className="flex gap-4 @max-lg:flex-col @max-lg:*:[a]:w-full">
-                <ButtonLink href="/contributing/">
+                <ButtonLink href="https://github.com/Quantaureum">
                   {t("page-community-contribute-button")}
                 </ButtonLink>
                 <ButtonLink
@@ -329,7 +267,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
                 description={t("page-community-explore-dapps-description")}
                 image={dogeComputerImg}
               >
-                <ButtonLink href="/apps/">
+                <ButtonLink href="https://discord.gg/MSctkBT5j">
                   {t("page-community-explore-dapps")}
                 </ButtonLink>
               </Callout>

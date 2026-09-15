@@ -45,8 +45,8 @@ import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 import PageJsonLD from "./page-jsonld"
 
 import dogeComputerImg from "@/public/images/doge-computer.png"
-import qauImg from "@/public/images/qau.png"
 import heroImg from "@/public/images/infrastructure_transparent.png"
+import qauImg from "@/public/images/qau.png"
 import robotImg from "@/public/images/wallet.png"
 import bazaarImg from "@/public/images/what-is-quantaureum.png"
 
@@ -178,7 +178,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                     "page-gas-how-do-i-pay-less-gas-card-3-description"
                   )}
                   ctaLabel={t("page-gas-try-layer-2")}
-                  href="/roadmap/scaling/"
+                  href="/roadmap/"
                 />
               </Grid>
 
@@ -197,7 +197,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   <p>{t("page-gas-what-causes-high-gas-fees-text-3")}</p>
                   <p>
                     {t("page-gas-want-to-dive-deeper")}{" "}
-                    <InlineLink href="/developers/docs/gas/">
+                    <InlineLink href="https://github.com/Quantaureum">
                       {t("page-gas-check-out-the-developer-docs")}
                     </InlineLink>
                   </p>
@@ -349,7 +349,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   )}
                   image={bazaarImg}
                 >
-                  <ButtonLink href="/roadmap/scaling/">
+                  <ButtonLink href="/roadmap/">
                     {t("page-gas-use-layer-2")}
                   </ButtonLink>
                 </Callout>
@@ -360,7 +360,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   )}
                   image={dogeComputerImg}
                 >
-                  <ButtonLink href="/apps/">
+                  <ButtonLink href="https://discord.gg/MSctkBT5j">
                     {tCommunity("page-community-explore-dapps")}
                   </ButtonLink>
                 </Callout>

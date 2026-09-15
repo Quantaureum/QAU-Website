@@ -1,6 +1,6 @@
 import { type ReactNode } from "react"
 import { pick } from "lodash"
-import { TriangleAlert } from "lucide-react"
+import { Cpu, Server, TerminalSquare, TriangleAlert } from "lucide-react"
 import {
   getMessages,
   getTranslations,
@@ -59,11 +59,8 @@ import RunANodePageJsonLD from "./page-jsonld"
 import community from "@/public/images/enterprise-qau.png"
 import hackathon from "@/public/images/hackathon_transparent.png"
 import impact from "@/public/images/impact_transparent.png"
-import Dappnode from "@/public/images/run-a-node/dappnode.svg"
-import Dapptap from "@/public/images/run-a-node/dapptap.svg"
-import heroImg from "@/public/images/run-a-node/quantaureum-inside.png"
-import Terminal from "@/public/images/run-a-node/terminal.svg"
 import qauBrandMark from "@/public/images/qau-logo.png"
+import heroImg from "@/public/images/run-a-node/quantaureum-inside.png"
 
 type RunANodeCard = {
   Svg: React.FC<React.SVGProps<SVGElement>>
@@ -271,7 +268,10 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               >
                 <div className="bg-tint-accent-a gradient-reverse md:flex-row-reverse">
                   <div data-label="decoration">
-                    <Terminal aria-hidden focusable="false" />
+                    <TerminalSquare
+                      className="size-12 text-primary"
+                      aria-hidden
+                    />
                   </div>
                   <div data-label="content" className="flow">
                     <p>
@@ -283,7 +283,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                         "page-run-a-node-getting-started-software-section-1-alert"
                       )}
                     </p>
-                    <LinkWithArrow href="/developers/docs/nodes-and-clients/run-a-node/">
+                    <LinkWithArrow href="/run-a-node/">
                       {t(
                         "page-run-a-node-getting-started-software-section-1-link"
                       )}
@@ -293,7 +293,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
 
                 <div className="bg-tint-accent-b gradient-reverse">
                   <div data-label="decoration">
-                    <Dappnode aria-hidden focusable="false" />
+                    <Server className="size-12 text-primary" aria-hidden />
                   </div>
                   <p data-label="content">
                     {t.rich(
@@ -305,7 +305,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
 
                 <div className="bg-tint-accent-c gradient-reverse md:flex-row-reverse">
                   <div data-label="decoration">
-                    <Dapptap aria-hidden focusable="false" />
+                    <Cpu className="size-12 text-primary" aria-hidden />
                   </div>
                   <div data-label="content" className="flow">
                     <p>
@@ -481,7 +481,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               </div>
 
               <Grid balanced={2}>
-                <Card href="/developers/docs/">
+                <Card href="https://github.com/Quantaureum">
                   <CardContent>
                     <CardTitle asChild>
                       <h4>
@@ -551,7 +551,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                     {t("page-run-a-node-community-link-1")}
                   </ButtonLink>
                   <ButtonLink
-                    href="/community/online/"
+                    href="https://discord.gg/MSctkBT5j"
                     variant="outline"
                     isSecondary
                   >
@@ -577,12 +577,12 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   - <i>{t("page-run-a-node-further-reading-1-author")}</i>
                 </ListItem>
                 <ListItem>
-                  <InlineLink href="/developers/docs/">
+                  <InlineLink href="https://github.com/Quantaureum">
                     {t("page-run-a-node-further-reading-2-link")}
                   </InlineLink>
                 </ListItem>
                 <ListItem>
-                  <InlineLink href="/community/online/">
+                  <InlineLink href="https://discord.gg/MSctkBT5j">
                     {t("page-run-a-node-further-reading-3-link")}
                   </InlineLink>{" "}
                   - <i>{t("page-run-a-node-further-reading-3-author")}</i>
@@ -616,7 +616,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                     "page-run-a-node-staking-plans-ethstaker-link-description"
                   )}{" "}
                   -{" "}
-                  <InlineLink href="/developers/docs/">
+                  <InlineLink href="https://github.com/Quantaureum">
                     {t("page-run-a-node-staking-plans-ethstaker-link-label")}
                   </InlineLink>
                 </p>
@@ -634,7 +634,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                     - <i>{t("page-run-a-node-rasp-pi-note-2-description")}</i>
                   </ListItem>
                   <ListItem>
-                    <InlineLink href="/developers/tutorials/run-node-raspberry-pi">
+                    <InlineLink href="https://github.com/Quantaureum">
                       {t("page-run-a-node-rasp-pi-note-3-link")}
                     </InlineLink>{" "}
                     - <i>{t("page-run-a-node-rasp-pi-note-3-description")}</i>

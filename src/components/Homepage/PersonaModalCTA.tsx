@@ -52,7 +52,7 @@ function useCategories() {
         },
         {
           label: t("page-index-modal-pick-wallet"),
-          href: "/wallets/find-wallet/",
+          href: "/wallets/",
           eventName: "pick_wallet",
         },
       ],

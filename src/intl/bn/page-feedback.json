@@ -1,0 +1,16 @@
+{
+  "page-feedback-title": "ফিডব্যাক জরিপ",
+  "page-feedback-sub-title": "Quantaureum ওয়েবসাইটটি উন্নত করতে আমাদের সাহায্য করুন। এটি এক মিনিটেও কম সময় নেয়।",
+  "rating-label": "এই পৃষ্ঠাটি কতটা সহায়ক ছিল?",
+  "rating-aria": "৫-এর মধ্যে {value} তারা",
+  "topic-label": "এটি সম্পর্কে যা:",
+  "topic-general": "সাধারণ মতামত",
+  "topic-content": "কন্টেন্ট সমস্যা",
+  "topic-bug": "বাজ রিপোর্ট",
+  "topic-feature": "বৈশিষ্ট্যের অনুরোধ",
+  "message-label": "আমাদের আরও কথা বলুন",
+  "message-placeholder": "আমাদের কী উন্নত বা সংশোধন করতে হবে? (ঐচ্ছিক)",
+  "submit": "ফিডব্যাক পাঠান",
+  "thanks-title": "আপনার মতামতের জন্য ধন্যবাদ!",
+  "thanks-body": "আপনার ই-মেইল ক্লায়েন্ট আপনার বার্তার সাথে খোলা আছে। যদি তা না হয়, hello@quantaureum.com-এ লিখুন।"
+}

@@ -1,7 +1,6 @@
 import { Code, Download, HardDrive } from "lucide-react"
 import { getTranslations } from "next-intl/server"
 
-
 import { Image } from "@/components/Image"
 import {
   Card,
@@ -18,9 +17,9 @@ import { Section, SectionHeader } from "@/components/ui/section"
 
 import { cn } from "@/lib/utils/cn"
 
-import learnImage from "@/public/images/heroes/guides-hub-hero.jpg"
-import developersImage from "@/public/images/homepage/get-started/developers.png"
 import walletImage from "@/public/images/heroes/wallets-hub-hero.png"
+import developersImage from "@/public/images/homepage/get-started/developers.png"
+import learnImage from "@/public/images/homepage/get-started/node.png"
 
 type GetStartedGridProps = {
   className?: string
@@ -82,7 +81,7 @@ const GetStartedGrid = async ({
       ],
       bulletColor: "bg-gold-500",
       cta: t("page-index-get-started-wallet-cta"),
-      href: "/downloads/quantaureum-wallet.apk",
+      href: undefined,
       image: walletImage,
       downloads: [
         {
@@ -178,7 +177,7 @@ const GetStartedGrid = async ({
                         key={dl.href}
                         href={dl.href}
                         download
-                        className="flex items-center justify-between rounded-lg border px-4 py-2 text-sm text-body transition-colors hover:border-primary hover:text-primary"
+                        className="flex items-center justify-center rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-primary-hover"
                       >
                         <span>{dl.label}</span>
                         <Download className="size-4" />
