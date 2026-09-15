@@ -119,7 +119,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           </p>
           <p>
             {t.rich("page-what-is-quantaureum-quantaureum-intro-2", {
-              a: (chunks) => <Link href="/smart-contracts/">{chunks}</Link>,
+              a: (chunks) => <Link href="/developers/">{chunks}</Link>,
             })}
           </p>
           <p>
@@ -309,7 +309,9 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           <p>
             {t.rich("page-what-is-quantaureum-how-intro-3", {
               strong: Strong,
-              a: (chunks) => <Link href="/energy-consumption/">{chunks}</Link>,
+              a: (chunks) => (
+                <Link href="/what-is-the-quantaureum-network/">{chunks}</Link>
+              ),
             })}
           </p>
           <p>{t("page-what-is-quantaureum-how-intro-4")}</p>
@@ -367,7 +369,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           <LinkWithArrow href="/learn/">
             {t("page-what-is-quantaureum-how-learn-more-1")}
           </LinkWithArrow>
-          <LinkWithArrow href="/developers/docs/">
+          <LinkWithArrow href="https://github.com/Quantaureum">
             {t("page-what-is-quantaureum-how-learn-more-2")}
           </LinkWithArrow>
         </Section>
@@ -613,7 +615,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               <ButtonLink href="/wallets/">
                 {t("page-what-is-quantaureum-start-individuals-cta-1")}
               </ButtonLink>
-              <ButtonLink href="/apps/" variant="outline">
+              <ButtonLink href="https://discord.gg/MSctkBT5j" variant="outline">
                 {t("page-what-is-quantaureum-start-individuals-cta-2")}
               </ButtonLink>
             </CardFooter>
@@ -632,7 +634,9 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               </CardParagraph>
               <CardParagraph>
                 {t.rich("page-what-is-quantaureum-start-developers-desc-2", {
-                  a: (chunks) => <Link href="/developers/docs/">{chunks}</Link>,
+                  a: (chunks) => (
+                    <Link href="https://github.com/Quantaureum">{chunks}</Link>
+                  ),
                 })}
               </CardParagraph>
               <CardParagraph>
@@ -739,7 +743,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           <p>{t("page-what-is-quantaureum-bitcoin-comparison-4-desc-2")}</p>
           <p>{t("page-what-is-quantaureum-bitcoin-comparison-4-desc-3")}</p>
 
-          <LinkWithArrow href="/quantaureum-vs-bitcoin/">
+          <LinkWithArrow href="/what-is-quantaureum/">
             {t("page-what-is-quantaureum-bitcoin-learn-more")}
           </LinkWithArrow>
         </Section>
@@ -827,7 +831,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           </p>
           <p>{t("page-what-is-quantaureum-when-who-governance-4")}</p>
 
-          <LinkWithArrow href="/quantaureum-history-founder-and-ownership/">
+          <LinkWithArrow href="/community/">
             {t("page-what-is-quantaureum-when-who-learn-more")}
           </LinkWithArrow>
         </Section>
@@ -838,7 +842,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           <p>{t("page-what-is-quantaureum-roadmap-intro-2")} </p>
           <p>
             {t.rich("page-what-is-quantaureum-roadmap-intro-3", {
-              a: (chunks) => <Link href="/roadmap/pectra/">{chunks}</Link>,
+              a: (chunks) => <Link href="/roadmap/">{chunks}</Link>,
             })}
           </p>
           <p>
@@ -882,12 +886,12 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               </DocLink>
             </ListItem>
             <ListItem>
-              <DocLink href="/web3/">
+              <DocLink href="/learn/">
                 {t("page-what-is-quantaureum-further-reading-web3")}
               </DocLink>
             </ListItem>
             <ListItem>
-              <DocLink href="/roadmap/scaling/">
+              <DocLink href="/roadmap/">
                 {t("page-what-is-quantaureum-further-reading-networks")}
               </DocLink>
             </ListItem>

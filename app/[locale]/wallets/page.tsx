@@ -160,7 +160,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
         description={t("page-wallets-subtitle")}
         buttons={[
           {
-            href: "/wallets/find-wallet/",
+            href: "/#downloads-modal",
             content: t("page-wallets-find-wallet-link"),
             matomo: {
               eventCategory: "Header buttons",
@@ -169,7 +169,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
             },
           },
           {
-            href: "/guides/how-to-use-a-wallet/",
+            href: "/wallets/",
             content: t("page-wallets-how-to-use-wallet"),
             matomo: {
               eventCategory: "Header buttons",
@@ -336,7 +336,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   description={t("page-wallets-try-dapps-desc")}
                   as="h3"
                 >
-                  <ButtonLink href="/apps/">
+                  <ButtonLink href="https://discord.gg/MSctkBT5j">
                     {t("page-wallets-more-on-dapps-btn")}
                   </ButtonLink>
                 </Callout>

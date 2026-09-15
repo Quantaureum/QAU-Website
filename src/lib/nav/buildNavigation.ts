@@ -42,12 +42,6 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
           description: t("nav2-wallets-desc"),
           href: "/wallets/",
         },
-        {
-          id: "learn/glossary",
-          label: t("nav2-glossary"),
-          description: t("nav2-glossary-desc"),
-          href: "/glossary/",
-        },
       ],
     },
     build: {
@@ -59,18 +53,6 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
           label: t("nav2-developers-hub"),
           description: t("nav2-developers-hub-desc"),
           href: "/developers/",
-        },
-        {
-          id: "build/docs",
-          label: t("nav2-docs"),
-          description: t("nav2-docs-desc"),
-          href: "/developers/docs/",
-        },
-        {
-          id: "build/tutorials",
-          label: t("nav2-tutorials"),
-          description: t("nav2-tutorials-desc"),
-          href: "/developers/tutorials/",
         },
         {
           id: "build/bounty",
@@ -88,7 +70,7 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
           id: "network/explorer",
           label: t("nav2-explorer"),
           description: t("nav2-explorer-desc"),
-          href: "https://explorer.quantaureum.com",
+          href: "/explorer/",
         },
         {
           id: "network/staking",
@@ -127,30 +109,6 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
           href: "/roadmap/",
         },
         {
-          id: "roadmap/security",
-          label: t("nav2-roadmap-security"),
-          description: t("nav2-roadmap-security-desc"),
-          href: "/roadmap/security/",
-        },
-        {
-          id: "roadmap/scaling",
-          label: t("nav2-roadmap-scaling"),
-          description: t("nav2-roadmap-scaling-desc"),
-          href: "/roadmap/scaling/",
-        },
-        {
-          id: "roadmap/privacy",
-          label: t("nav2-roadmap-privacy"),
-          description: t("nav2-roadmap-privacy-desc"),
-          href: "/roadmap/privacy/",
-        },
-        {
-          id: "roadmap/ux",
-          label: t("nav2-roadmap-ux"),
-          description: t("nav2-roadmap-ux-desc"),
-          href: "/roadmap/user-experience/",
-        },
-        {
           id: "roadmap/verkle",
           label: t("nav2-roadmap-verkle"),
           description: t("nav2-roadmap-verkle-desc"),
@@ -167,12 +125,6 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
           label: t("nav2-community-hub"),
           description: t("nav2-community-hub-desc"),
           href: "/community/",
-        },
-        {
-          id: "community/get-involved",
-          label: t("nav2-get-involved"),
-          description: t("nav2-get-involved-desc"),
-          href: "/community/get-involved/",
         },
         {
           id: "community/x",

@@ -20,8 +20,8 @@ import heroBase from "@/public/images/home/hero.png"
 import hero2xl from "@/public/images/home/hero-2xl.png"
 
 type HomeHeroProps = ClassNameProp & {
-  image?: StaticImageData
-  image2xl?: StaticImageData
+  image?: StaticImageData | string
+  image2xl?: StaticImageData | string
   alt?: string
   eventCategory?: string
 }
@@ -37,6 +37,14 @@ const HomeHero = async ({
   const baseImage = image ?? heroBase
   const xlImage = image2xl ?? image ?? hero2xl
   const alt = altProp ?? t("page-index-hero-image-alt")
+  const baseImageProps =
+    typeof baseImage === "string"
+      ? { src: baseImage, width: 2624, height: 1472 }
+      : baseImage
+  const xlImageProps =
+    typeof xlImage === "string"
+      ? { src: xlImage, width: 2624, height: 1472 }
+      : xlImage
 
   const common = {
     alt,
@@ -46,15 +54,15 @@ const HomeHero = async ({
 
   const {
     props: { srcSet: srcSet2xl },
-  } = getImageProps({ ...common, ...xlImage, quality: 20 })
+  } = getImageProps({ ...common, ...xlImageProps, quality: 20 })
 
   const {
     props: { srcSet: srcSetMd },
-  } = getImageProps({ ...common, ...baseImage, quality: 10 })
+  } = getImageProps({ ...common, ...baseImageProps, quality: 10 })
 
   const {
     props: { srcSet: srcSetBase, ...rest },
-  } = getImageProps({ ...common, ...baseImage, quality: 5 })
+  } = getImageProps({ ...common, ...baseImageProps, quality: 5 })
 
   // Remove blurWidth/blurHeight from rest to avoid React DOM warnings
   // (Next.js getImageProps includes them but they're not valid HTML attributes)

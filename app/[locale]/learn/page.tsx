@@ -8,8 +8,6 @@ import DocLink, { type DocLinkProps } from "@/components/DocLink"
 import { HubHero } from "@/components/Hero"
 import type { HubHeroProps } from "@/components/Hero/HubHero"
 import { Image, type ImageProps } from "@/components/Image"
-import { ButtonLink } from "@/components/ui/buttons/Button"
-import Callout from "@/components/ui/callout"
 import {
   Card,
   CardBanner,
@@ -31,12 +29,12 @@ import { getMetadata } from "@/lib/utils/metadata"
 import PageJsonLD from "./page-jsonld"
 
 import { ContentLayout } from "@/layouts/ContentLayout"
-import developersQauBlocks from "@/public/images/developers-qau-blocks.png"
 import financeTransparent from "@/public/images/finance_transparent.png"
 import futureTransparent from "@/public/images/future_transparent.png"
 import hackathon from "@/public/images/hackathon_transparent.png"
 import heroImage from "@/public/images/heroes/learn-hub-hero.png"
 import impact from "@/public/images/impact_transparent.png"
+import developersQauBlocks from "@/public/images/learn/developers-qau-blocks.png"
 import eth from "@/public/images/qau.png"
 import merge from "@/public/images/upgrades/merge.png"
 import wallet from "@/public/images/wallet.png"
@@ -170,7 +168,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
         },
         {
           label: t("official-docs-title"),
-          href: "/developers/docs/",
+          href: "https://github.com/Quantaureum",
           description: t("official-docs-description"),
         },
         {
@@ -228,7 +226,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
               ctaLabel={t("what-is-qau-cta")}
             />
             <LearnCard
-              href="/quantaureum-vs-bitcoin/"
+              href="/what-is-quantaureum/"
               image={financeTransparent}
               title={t("quantaureum-vs-bitcoin-card-title")}
               description={t("quantaureum-vs-bitcoin-card-description")}
@@ -246,14 +244,14 @@ export default async function Page(props: { params: Promise<PageParams> }) {
               ctaLabel={t("quantaureum-network-cta")}
             />
             <LearnCard
-              href="/web3/"
+              href="/learn/"
               image={impact}
               title={t("what-is-web3-card-title")}
               description={t("what-is-web3-card-description")}
               ctaLabel={t("what-is-web3-cta")}
             />
             <LearnCard
-              href="/smart-contracts/"
+              href="/developers/"
               image={hackathon}
               title={t("smart-contracts-card-title")}
               description={t("smart-contracts-card-description")}
@@ -287,7 +285,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
               ctaLabel={t("wallets-cta")}
             />
             <LearnCard
-              href="/wallets/find-wallet/"
+              href="/wallets/"
               image={futureTransparent}
               title={t("find-a-wallet-card-title")}
               description={t("find-a-wallet-card-description")}
@@ -312,7 +310,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
                 ),
               },
               {
-                href: "/guides/how-to-use-a-wallet/",
+                href: "/wallets/",
                 children: t("additional-reading-how-to-use-a-wallet"),
               },
             ]}
@@ -339,7 +337,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
               ctaLabel={t("quantaureum-upgrades-card-button")}
             />
             <LearnCard
-              href="/security/"
+              href="/bug-bounty/"
               image={hackathon}
               title={t("privacy-card-title")}
               description={t("privacy-card-description")}

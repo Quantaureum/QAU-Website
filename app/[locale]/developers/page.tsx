@@ -7,7 +7,6 @@ import {
 
 import type { Lang, PageParams } from "@/lib/types"
 
-import BigNumber from "@/components/BigNumber"
 import ChecklistGrid from "@/components/ChecklistGrid"
 import ContentFeedback from "@/components/ContentFeedback"
 import { CopyButton } from "@/components/CopyToClipboard"
@@ -34,30 +33,25 @@ import {
 import { Grid } from "@/components/ui/grid"
 import InlineLink from "@/components/ui/Link"
 import { Section } from "@/components/ui/section"
-import { TagsInlineText } from "@/components/ui/tag"
-import { TerminalTypewriter } from "@/components/ui/terminal-typewriter"
 
 import { cn } from "@/lib/utils/cn"
 import { getAppPageContributorInfo } from "@/lib/utils/contributors"
-import { formatDate, formatDateRange } from "@/lib/utils/date"
+import { formatDateRange } from "@/lib/utils/date"
 import { getMetadata } from "@/lib/utils/metadata"
 import { screens } from "@/lib/utils/screen"
 
 import BuilderCard from "./_components/BuilderCard"
 import BuilderSwiper from "./_components/BuilderSwiper/lazy"
-import SpeedRunCard from "./_components/SpeedRunCard"
 import VideoCourseCard from "./_components/VideoCourseCard"
 import VideoCourseSwiper from "./_components/VideoCourseSwiper/lazy"
 import PageJsonLD from "./page-jsonld"
 import { getBuilderPaths, getHackathons, getVideoCourses } from "./utils"
 
 import resourcesBanner from "@/public/images/developers/resources-banner.png"
-import scaffoldDebugScreenshot from "@/public/images/developers/scaffold-debug-screenshot.png"
-import stackExchangeScreenshot from "@/public/images/developers/stack-exchange-screenshot.png"
 import tutorialTagsBanner from "@/public/images/developers/tutorial-tags-banner.png"
 import dogeImage from "@/public/images/doge-computer.png"
-import fallbackThumbnail from "@/public/images/qau-glyph-thumbnail.png"
 import heroImage from "@/public/images/heroes/developers-hub-hero.png"
+import fallbackThumbnail from "@/public/images/qau-glyph-thumbnail.png"
 
 const DocsColumn = ({
   heading,
@@ -92,11 +86,6 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
   const messages = pick(allMessages, "component-swiper")
 
   const paths = await getBuilderPaths()
-  const speedRunDetails = {
-    title: t("page-developers-start"),
-    description: t("page-developers-speedrunquantaureum-description"),
-    ctaLabel: t("page-developers-speedrunquantaureum-link"),
-  }
 
   const whyGridItems = [
     {
@@ -120,7 +109,6 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
   const courses = await getVideoCourses()
 
   const hackathons = (await getHackathons()).slice(0, 5)
-
 
   const { contributors } = await getAppPageContributorInfo(
     "developers",
@@ -158,17 +146,12 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
               {paths.map((path, idx) => (
                 <BuilderCard path={path} key={idx} />
               ))}
-
-              <SpeedRunCard {...speedRunDetails} />
             </Grid>
 
             {/* Mobile */}
             <div className="-mx-page md:hidden">
               <I18nProvider locale={locale} messages={messages}>
-                <BuilderSwiper
-                  paths={paths}
-                  speedRunDetails={speedRunDetails}
-                />
+                <BuilderSwiper paths={paths} />
               </I18nProvider>
             </div>
           </Section>
@@ -182,74 +165,8 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
             <div className="flow">
               <h2>{t("page-developers-why-title")}</h2>
               <p>{t("page-developers-why-subtitle")}</p>
-              <div className="flex flex-wrap gap-x-6 md:gap-x-8">
-                <BigNumber
-                  variant="light"
-                  value="$93 - 169K"
-                  sourceName="Glassdoor"
-                  sourceUrl="https://www.glassdoor.com/Salaries/developer-salary-SRCH_KO0%2C9.htm"
-                  lastUpdated="2025-04-10T12:00:00Z"
-                  center={false}
-                >
-                  {t("page-developers-why-avg-salary-dev")}
-                </BigNumber>
-                <BigNumber
-                  variant="light"
-                  value="$80 - 255K"
-                  sourceName="Web3 Jobs"
-                  sourceUrl="https://web3.career/web3-salaries/united-states"
-                  lastUpdated="2025-08-01T12:00:00Z"
-                  center={false}
-                >
-                  {t("page-developers-why-avg-salary-blockchain")}
-                </BigNumber>
-              </div>
             </div>
             <ChecklistGrid items={whyGridItems} />
-          </Section>
-
-          {/* ETHSKILLS */}
-          <Section
-            id="ethskills"
-            data-flow="skip"
-            className="flex flex-col gap-8 py-space-3x sm:items-center"
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/developers/ethskills.svg"
-              alt="ETHSKILLS"
-              className="h-auto max-h-24 w-full max-w-2xl object-contain"
-            />
-
-            <div className="max-w-xl space-y-2 md:text-center">
-              <h2>{t("page-developers-ethskills-title")}</h2>
-              <p className="text-body-medium">
-                {t("page-developers-ethskills-desc")}
-              </p>
-            </div>
-
-            <TerminalTypewriter
-              messages={[
-                t("page-developers-ethskills-msg-1"),
-                t("page-developers-ethskills-msg-2"),
-                t("page-developers-ethskills-msg-3"),
-                t("page-developers-ethskills-msg-4"),
-                t("page-developers-ethskills-msg-5"),
-              ]}
-            />
-
-            <ButtonLink
-              href="https://ethskills.com/"
-              size="lg"
-              className="max-md:w-full"
-              customEventOptions={{
-                eventCategory: "ethskills",
-                eventAction: "click",
-                eventName: "ethskills-section-cta",
-              }}
-            >
-              {t("page-developers-ethskills-cta", { ethskills: "ethskills" })}
-            </ButtonLink>
           </Section>
 
           {/* Resources */}
@@ -268,7 +185,7 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
                 <CardHeader>
                   <CardBanner background="none" size="lg">
                     <Image
-                      src={scaffoldDebugScreenshot}
+                      src={tutorialTagsBanner}
                       alt=""
                       sizes={`(max-width: ${screens.sm}) 100vw, calc(50vw - 14rem)`}
                       className="h-56 object-cover"
@@ -280,64 +197,37 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
                     {t("page-developers-jump-right-in-title")}
                   </CardTitle>
                   <CardParagraph>
-                    {t("page-developers-quickstart-scaffold-subtext")}{" "}
-                    <InlineLink
-                      href="https://docs.scaffoldeth.io/"
-                      customEventOptions={{
-                        eventCategory: "mid_boxes",
-                        eventAction: "click",
-                        eventName: "scaffold-docs",
-                      }}
-                      sendReferrer
-                    >
-                      {t("page-developers-quickstart-scaffold-docs")}
-                    </InlineLink>
+                    {t("page-developers-quickstart-scaffold-subtext")}
                   </CardParagraph>
 
                   <div className="flex items-center rounded-lg border bg-background px-3 py-1">
                     <span className="flex-1 font-mono text-sm">
-                      npx create-eth@latest
+                      git clone https://github.com/Quantaureum/qau.git && cd qau
+                      && go build -o build/qaud ./cmd/qaud
                     </span>
                     <CopyButton
-                      message="npx create-eth@latest"
+                      message="git clone https://github.com/Quantaureum/qau.git && cd qau && go build -o build/qaud ./cmd/qaud"
                       size="sm"
-                      customEventOptions={{
-                        eventCategory: "mid_boxes",
-                        eventAction: "click",
-                        eventName: "scaffold-npx-copy",
-                      }}
                     />
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <InlineLink
-                    href="https://docs.scaffoldeth.io/llms-full.txt"
-                    customEventOptions={{
-                      eventCategory: "mid_boxes",
-                      eventAction: "click",
-                      eventName: "scaffold-llms-full",
-                    }}
-                  >
-                    Scaffold-QAU 2 <code>llms-full.txt</code>
+                  <InlineLink href="https://github.com/Quantaureum">
+                    {t("page-developers-quickstart-scaffold-docs")}
                   </InlineLink>
                 </CardFooter>
               </Card>
 
               {/* Get help */}
               <Card
-                href="https://ethereum.stackexchange.com/"
+                href="https://discord.gg/MSctkBT5j"
                 variant="nested"
                 size="lg"
-                customEventOptions={{
-                  eventCategory: "mid_boxes",
-                  eventAction: "click",
-                  eventName: "stack-exchange",
-                }}
               >
                 <CardHeader>
                   <CardBanner background="none" size="lg">
                     <Image
-                      src={stackExchangeScreenshot}
+                      src={resourcesBanner}
                       alt=""
                       sizes={`(max-width: ${screens.sm}) 100vw, calc(50vw - 14rem)`}
                       className="object-top"
@@ -354,14 +244,14 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
                 </CardContent>
                 <CardFooter>
                   <CardButtonFake variant="outline" isSecondary>
-                    {t("page-developers-stack-exchange")}
+                    Discord
                   </CardButtonFake>
                 </CardFooter>
               </Card>
 
               {/* Resources */}
               <Card
-                href="/developers/learning-tools/"
+                href="/learn/"
                 variant="nested"
                 size="lg"
                 customEventOptions={{
@@ -396,7 +286,7 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
 
               {/* Tutorials */}
               <Card
-                href="/developers/tutorials/"
+                href="/open-source/"
                 variant="nested"
                 size="lg"
                 customEventOptions={{
@@ -454,7 +344,6 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
               </I18nProvider>
             </div>
           </Section>
-
 
           {/* Explore the documentation */}
           <Section id="docs" className="bg-background-highlight py-space-3x">
@@ -531,7 +420,7 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
                     description: t("page-developers-evm-desc"),
                   },
                   {
-                    href: "/developers/docs/gas/",
+                    href: "https://github.com/Quantaureum",
                     label: t("page-developers-gas-link"),
                     description: t("page-developers-gas-desc"),
                   },
@@ -704,7 +593,7 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
                   {t("page-developers-get-in-touch")}
                 </ButtonLink>
                 <ButtonLink
-                  href="/community/grants/"
+                  href="https://github.com/Quantaureum"
                   isSecondary
                   variant="outline"
                   customEventOptions={{

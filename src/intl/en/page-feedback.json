@@ -1,0 +1,16 @@
+{
+  "page-feedback-title": "Feedback survey",
+  "page-feedback-sub-title": "Help us improve the Quantaureum website. Takes less than a minute.",
+  "rating-label": "How helpful was this page?",
+  "rating-aria": "{value} out of 5 stars",
+  "topic-label": "What is this about?",
+  "topic-general": "General feedback",
+  "topic-content": "Content problem",
+  "topic-bug": "Bug report",
+  "topic-feature": "Feature request",
+  "message-label": "Tell us more",
+  "message-placeholder": "What should we improve or fix? (optional)",
+  "submit": "Send feedback",
+  "thanks-title": "Thank you for your feedback!",
+  "thanks-body": "Your e-mail client opened with your message. If it did not, write to hello@quantaureum.com."
+}
