@@ -3,3 +3,16 @@ node_modules/
 .env.local
 .local-only/
 .manifests/
+# Build artifacts / caches
+*.tsbuildinfo
+
+# Playwright local test reports
+tests/__report__/
+tests/__results__/
+
+# AI-tool local dirs (never push)
+.claude/
+docs/superpowers/
+
+# Local scratch output
+tmp/
