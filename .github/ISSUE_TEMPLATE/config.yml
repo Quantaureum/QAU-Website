@@ -1,11 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Questions and discussion
-    url: https://discord.gg/MSctkBT5j
-    about: Join the quantaureum.com Discord to ask questions or discuss ideas with the community.
   - name: Report a security vulnerability
-    url: https://quantaureum.com/en/security/
+    url: https://github.com/Quantaureum/QAU-Website/blob/master/SECURITY.md
     about: Please do not report security vulnerabilities in public issues — see our security page for how to reach us.
   - name: How to contribute
-    url: https://quantaureum.com/en/contributing/
-    about: Read the contributing guide, including listing policies for wallets, exchanges, dapps and other products.
+    url: https://github.com/Quantaureum/QAU-Website/blob/master/CONTRIBUTING.md
+    about: Learn how to set up a checkout, check a change, and submit a pull request.
