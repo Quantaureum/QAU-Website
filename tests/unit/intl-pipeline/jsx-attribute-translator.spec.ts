@@ -67,12 +67,7 @@ test.describe("JSX Attribute Translator", () => {
       expect(leaves).toHaveLength(0)
     })
 
-    // TODO: parseMarkdown from intl-content-tree treats multi-line JSX
-    // components as prose rather than parsing them as components, so the
-    // attribute walker can't see them. This is a parser limitation outside
-    // this module's scope. The vast majority of real content uses single-line
-    // JSX, which works correctly (covered by the test above).
-    test.skip("handles multi-line components", () => {
+    test("handles multi-line components", () => {
       const md = `<ExpandableCard
   title="A real human readable title"
   eventCategory="/x"

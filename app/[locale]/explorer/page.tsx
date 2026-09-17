@@ -1,6 +1,5 @@
-import Link from "next/link"
 import { redirect } from "next/navigation"
-import { setRequestLocale } from "next-intl/server"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 
 import type { PageParams } from "@/lib/types"
 
@@ -18,6 +17,7 @@ import { Image } from "@/components/Image"
 
 import { getMetadata } from "@/lib/utils/metadata"
 
+import { Link } from "@/i18n/navigation"
 import {
   getRecentBlocks,
   getStats,
@@ -40,14 +40,24 @@ export default async function ExplorerPage(props: {
   const { locale } = await props.params
   const { q } = await props.searchParams
   setRequestLocale(locale)
+  const t = await getTranslations("page-explorer")
 
   // Search redirect (old-site behavior): /explorer?q=... → matching detail page
   const query = q?.trim() ?? ""
   if (query) {
     const kind = getExplorerLookupKind(query)
-    if (kind === "address") redirect(`/explorer/address/${query}/`)
-    if (kind === "transaction") redirect(`/explorer/tx/${query}/`)
-    if (kind === "block") redirect(`/explorer/block/${query}/`)
+    // Keep the current locale when redirecting into a detail page.
+    const detailPath =
+      kind === "address"
+        ? `/explorer/address/${query}/`
+        : kind === "transaction"
+          ? `/explorer/tx/${query}/`
+          : kind === "block"
+            ? `/explorer/block/${query}/`
+            : null
+    if (detailPath) {
+      redirect(locale === "en" ? detailPath : `/${locale}${detailPath}`)
+    }
   }
 
   // Kick the indexer so stats/list pages fill progressively
@@ -79,7 +89,7 @@ export default async function ExplorerPage(props: {
         </p>
         <h1 className="mb-5 text-5xl font-bold tracking-tight">QAU Explorer</h1>
         <p className="text-lg text-body-medium">
-          Search blocks, transactions, and addresses on the QAU network.
+          {t("page-explorer-hero-sub")}
         </p>
       </header>
 
@@ -95,7 +105,7 @@ export default async function ExplorerPage(props: {
       <form
         className="mb-10 flex max-w-3xl gap-3"
         method="get"
-        action="/explorer/"
+        action="./explorer/"
       >
         <label className="sr-only" htmlFor="explorer-query">
           Search
@@ -103,58 +113,96 @@ export default async function ExplorerPage(props: {
         <input
           id="explorer-query"
           name="q"
-          placeholder="Search by address, transaction hash, or block number"
+          placeholder={t("page-explorer-search-placeholder")}
           className="min-h-12 min-w-0 flex-1 rounded-md border border-border bg-background px-4 font-mono text-sm"
         />
         <button
           type="submit"
           className="text-primary-foreground min-h-12 rounded-md bg-primary px-6 font-semibold"
         >
-          Search
+          {t("page-explorer-search")}
         </button>
       </form>
+
+      {/* Quick links */}
+      <section aria-labelledby="quick-links" className="mb-10">
+        <h2 id="quick-links" className="mb-4 text-2xl font-semibold">
+          {t("page-explorer-explore")}
+        </h2>
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+          {[
+            [t("page-explorer-validators"), "/explorer/validators/"],
+            [t("page-explorer-miners"), "/explorer/miners/"],
+            [t("page-explorer-contracts"), "/explorer/contracts/"],
+            [t("page-explorer-qpos-short"), "/explorer/qpos/"],
+            [t("page-explorer-network"), "/explorer/network/"],
+            [t("page-explorer-quantum-verify"), "/explorer/quantum-verify/"],
+          ].map(([label, href]) => (
+            <Link
+              key={href}
+              href={href}
+              className="rounded-xl border border-border p-4 text-center font-semibold transition-colors hover:bg-background-highlight"
+            >
+              {label}
+            </Link>
+          ))}
+        </div>
+      </section>
 
       {/* Network stats */}
       <section aria-labelledby="network-stats" className="mb-10">
         <h2 id="network-stats" className="mb-4 text-2xl font-semibold">
-          Network status
+          {t("page-explorer-network-status")}
         </h2>
         <dl className="grid grid-cols-2 gap-4 md:grid-cols-4">
           <div className="rounded-xl border border-border p-4">
-            <dt className="text-sm text-body-medium">Latest block</dt>
+            <dt className="text-sm text-body-medium">
+              {t("page-explorer-latest-block")}
+            </dt>
             <dd className="mt-1 font-mono text-xl font-semibold">
               {stats.latestBlock.toLocaleString()}
             </dd>
           </div>
           <div className="rounded-xl border border-border p-4">
-            <dt className="text-sm text-body-medium">Total transactions</dt>
+            <dt className="text-sm text-body-medium">
+              {t("page-explorer-total-transactions")}
+            </dt>
             <dd className="mt-1 font-mono text-xl font-semibold">
               {stats.totalTransactions.toLocaleString()}
             </dd>
           </div>
           <div className="rounded-xl border border-border p-4">
-            <dt className="text-sm text-body-medium">Peers</dt>
+            <dt className="text-sm text-body-medium">
+              {t("page-explorer-peers")}
+            </dt>
             <dd className="mt-1 font-mono text-xl font-semibold">
               {stats.peerCount}
             </dd>
           </div>
           <div className="rounded-xl border border-border p-4">
-            <dt className="text-sm text-body-medium">Gas price</dt>
+            <dt className="text-sm text-body-medium">
+              {t("page-explorer-gas-price")}
+            </dt>
             <dd className="mt-1 font-mono text-xl font-semibold">
               {gweiFromHex(stats.gasPrice)} gwei
             </dd>
           </div>
         </dl>
         <p className="mt-3 text-xs text-body-medium">
-          Index progress: {Math.round(stats.txIndex.progress * 100)}% ·{" "}
-          {stats.txIndex.scanning ? "scanning…" : "up to date"}
+          {t("page-explorer-index-progress")}:{" "}
+          {Math.round(stats.txIndex.progress * 100)}% ·{" "}
+          {stats.txIndex.scanning
+            ? t("page-explorer-scanning")
+            : t("page-explorer-up-to-date")}
         </p>
       </section>
 
       {/* Charts */}
       <section className="mb-10 grid gap-6 lg:grid-cols-2">
         <div className="rounded-xl border border-border p-5">
-          <h3 className="mb-4 text-lg font-semibold">Gas used per block</h3>
+          <h3 className="mb-4 text-lg font-semibold">
+            {t("page-explorer-gas-used-per-block")}
+          </h3>
           <BlockBarChart
             labels={gasLabels}
             values={gasValues}
@@ -162,7 +210,9 @@ export default async function ExplorerPage(props: {
           />
         </div>
         <div className="rounded-xl border border-border p-5">
-          <h3 className="mb-4 text-lg font-semibold">Transactions per block</h3>
+          <h3 className="mb-4 text-lg font-semibold">
+            {t("page-explorer-txs-per-block")}
+          </h3>
           <BlockBarChart labels={txLabels} values={txValues} unit="Txs" />
         </div>
       </section>
@@ -171,24 +221,24 @@ export default async function ExplorerPage(props: {
       <section aria-labelledby="latest-blocks" className="mb-10">
         <div className="mb-4 flex items-center justify-between">
           <h2 id="latest-blocks" className="text-2xl font-semibold">
-            Latest blocks
+            {t("page-explorer-latest-blocks")}
           </h2>
           <Link
             href="/explorer/blocks/"
             className="text-sm font-semibold text-primary hover:underline"
           >
-            View all blocks
+            {t("page-explorer-view-all-blocks")}
           </Link>
         </div>
         <div className="overflow-x-auto rounded-xl border border-border">
           <table className="w-full text-sm">
             <thead className="border-b border-border text-left text-body-medium">
               <tr>
-                <th className="p-3">Block</th>
-                <th className="p-3">Age</th>
-                <th className="p-3">Miner</th>
-                <th className="p-3">Txs</th>
-                <th className="p-3">Gas used</th>
+                <th className="p-3">{t("page-explorer-block")}</th>
+                <th className="p-3">{t("page-explorer-age")}</th>
+                <th className="p-3">{t("page-explorer-miner")}</th>
+                <th className="p-3">{t("page-explorer-txs")}</th>
+                <th className="p-3">{t("page-explorer-gas-used")}</th>
               </tr>
             </thead>
             <tbody>
@@ -224,25 +274,25 @@ export default async function ExplorerPage(props: {
       <section aria-labelledby="latest-txs" className="mb-10">
         <div className="mb-4 flex items-center justify-between">
           <h2 id="latest-txs" className="text-2xl font-semibold">
-            Latest transactions
+            {t("page-explorer-latest-transactions")}
           </h2>
           <Link
             href="/explorer/transactions/"
             className="text-sm font-semibold text-primary hover:underline"
           >
-            View all transactions
+            {t("page-explorer-view-all-transactions")}
           </Link>
         </div>
         <div className="overflow-x-auto rounded-xl border border-border">
           <table className="w-full text-sm">
             <thead className="border-b border-border text-left text-body-medium">
               <tr>
-                <th className="p-3">Tx hash</th>
-                <th className="p-3">Block</th>
-                <th className="p-3">From</th>
-                <th className="p-3">To</th>
-                <th className="p-3">Value</th>
-                <th className="p-3">Status</th>
+                <th className="p-3">{t("page-explorer-tx-hash")}</th>
+                <th className="p-3">{t("page-explorer-block")}</th>
+                <th className="p-3">{t("page-explorer-from")}</th>
+                <th className="p-3">{t("page-explorer-to")}</th>
+                <th className="p-3">{t("page-explorer-value")}</th>
+                <th className="p-3">{t("page-explorer-status")}</th>
               </tr>
             </thead>
             <tbody>
@@ -266,7 +316,9 @@ export default async function ExplorerPage(props: {
                     {shortHash(tx!.from, 8, 6)}
                   </td>
                   <td className="p-3 font-mono text-xs">
-                    {tx!.to ? shortHash(tx!.to, 8, 6) : "contract creation"}
+                    {tx!.to
+                      ? shortHash(tx!.to, 8, 6)
+                      : t("page-explorer-contract-creation")}
                   </td>
                   <td className="p-3 font-mono">
                     {qauFromWeiHex(tx!.value, 4)} QAU
@@ -281,7 +333,7 @@ export default async function ExplorerPage(props: {
                             : "rounded-full bg-warning/10 px-2 py-0.5 text-xs font-semibold text-warning"
                       }
                     >
-                      {tx!.status}
+                      {t(`page-explorer-${tx!.status}`)}
                     </span>
                   </td>
                 </tr>

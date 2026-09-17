@@ -121,7 +121,9 @@ const readMetaTitle = (relPath: string): string | null => {
 const storyFiles = SEARCH_ROOTS.flatMap(findStoryFiles).sort()
 
 const sectionFor = (relPath: string): string | null =>
-  TAXONOMY.find(({ prefix }) => relPath.startsWith(prefix))?.section ?? null
+  TAXONOMY.find(({ prefix }) =>
+    relPath.split(path.sep).join("/").startsWith(prefix)
+  )?.section ?? null
 
 /** `langViewportModes` on `meta` multiplies every story in the file -- fine
  * with one story, a problem with more than one. See `.storybook/modes.ts`. */

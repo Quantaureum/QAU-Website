@@ -13,6 +13,7 @@ import {
   fetchBalance,
   fetchBlock,
   fetchBlockByHash,
+  fetchBlockNumber,
   fetchCode,
   fetchGasPrice,
   fetchPeerCount,
@@ -346,4 +347,61 @@ function range(from: number, to: number): number[] {
   const out: number[] = []
   for (let i = from; i <= to; i++) out.push(i)
   return out
+}
+
+// ── additional composite endpoints (old-site parity) ─────────────────────
+
+/** Miner leaderboard derived from recent indexed blocks. */
+export async function getMinerStats(network: RpcNetwork, sampleBlocks = 200) {
+  const head = await fetchBlock(network, "latest", false)
+  if (!head)
+    return { miners: [] as MinerStat[], sampleBlocks: 0, latestBlock: 0 }
+  const headNum = hexToInt(head.number)
+  const start = Math.max(0, headNum - sampleBlocks + 1)
+  const batch = await Promise.all(
+    range(start, headNum).map((n) => fetchBlock(network, intToHex(n), false))
+  )
+  const counts = new Map<string, number>()
+  let scanned = 0
+  for (const b of batch) {
+    if (!b) continue
+    scanned++
+    counts.set(b.miner, (counts.get(b.miner) ?? 0) + 1)
+  }
+  const miners: MinerStat[] = [...counts.entries()]
+    .map(([miner, blocks]) => ({
+      miner,
+      blocks,
+      share: scanned > 0 ? Number(((blocks / scanned) * 100).toFixed(2)) : 0,
+    }))
+    .sort((a, b) => b.blocks - a.blocks)
+  return { miners, sampleBlocks: scanned, latestBlock: headNum }
+}
+
+export interface MinerStat {
+  miner: string
+  blocks: number
+  share: number
+}
+
+/** Network overview for the /explorer/network page. */
+export async function getNetworkInfo(network: RpcNetwork) {
+  const [blockNumber, gas, peers] = await Promise.all([
+    fetchBlockNumber(network),
+    fetchGasPrice(network),
+    fetchPeerCount(network),
+  ])
+  return {
+    latestBlock: blockNumber,
+    gasPrice: gas ?? "0x0",
+    peerCount: peers ? hexToInt(peers) : 0,
+    chainId: network === "mainnet" ? 1668 : 1669,
+    network: network === "mainnet" ? "QAU Mainnet" : "QAU Testnet",
+    rpcEndpoint:
+      network === "mainnet"
+        ? (process.env.QAU_RPC_URL_MAINNET ?? "https://rpc.quantaureum.com/")
+        : (process.env.QAU_RPC_URL_TESTNET ?? ""),
+    consensus: "QPOS (Proof of Stake)",
+    slotTime: 12,
+  }
 }

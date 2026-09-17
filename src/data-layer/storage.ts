@@ -9,6 +9,14 @@ import { getStore } from "@netlify/blobs"
 
 const USE_MOCK = process.env.USE_MOCK_DATA === "true"
 
+// Self-hosted production has no Netlify Blobs store. Keep the deployment
+// buildable with the repository's snapshots for stats that pages require,
+// without opting the whole site into mock mode.
+const SELF_HOSTED_FALLBACK_KEYS = new Set([
+  "fetch-total-qau-staked",
+  "fetch-staked-percentage",
+])
+
 // Netlify Blobs store (lazy init)
 let blobStore: ReturnType<typeof getStore> | null = null
 
@@ -19,7 +27,8 @@ function getBlobs() {
   const token = process.env.NETLIFY_BLOBS_TOKEN
 
   if (!siteID || !token) {
-    throw new Error("Missing SITE_ID or NETLIFY_BLOBS_TOKEN")
+    // Self-hosted deployments can render from the built-in fallbacks.
+    return null
   }
 
   const storeName = process.env.BLOB_STORE_NAME || "data-layer"
@@ -38,15 +47,24 @@ function mockPath(key: string): string {
   return path.resolve(process.cwd(), `src/data-layer/mocks/${key}.json`)
 }
 
+function readMock<T>(key: string): T | null {
+  const filePath = mockPath(key)
+  if (!fs.existsSync(filePath)) return null
+  return JSON.parse(fs.readFileSync(filePath, "utf-8")) as T
+}
+
 /** Get data by key */
 export async function get<T>(key: string): Promise<T | null> {
   if (USE_MOCK) {
-    const filePath = mockPath(key)
-    if (!fs.existsSync(filePath)) return null
-    return JSON.parse(fs.readFileSync(filePath, "utf-8")) as T
+    return readMock<T>(key)
   }
 
-  const blob = await getBlobs().get(key, { type: "text" })
+  const store = getBlobs()
+  if (!store) {
+    return SELF_HOSTED_FALLBACK_KEYS.has(key) ? readMock<T>(key) : null
+  }
+
+  const blob = await store.get(key, { type: "text" })
   return blob ? (JSON.parse(blob) as T) : null
 }
 
@@ -57,7 +75,10 @@ export async function set(key: string, data: unknown): Promise<void> {
     return
   }
 
-  await getBlobs().set(key, JSON.stringify(data), {
+  const store = getBlobs()
+  if (!store) return
+
+  await store.set(key, JSON.stringify(data), {
     metadata: { storedAt: new Date().toISOString() },
   })
 }

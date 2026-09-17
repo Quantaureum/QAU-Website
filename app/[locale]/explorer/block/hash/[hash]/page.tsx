@@ -1,6 +1,5 @@
-import Link from "next/link"
 import { notFound } from "next/navigation"
-import { setRequestLocale } from "next-intl/server"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 
 import type { PageParams } from "@/lib/types"
 
@@ -8,6 +7,7 @@ import { hexToNumber } from "@/components/Explorer/format"
 
 import { getMetadata } from "@/lib/utils/metadata"
 
+import { Link } from "@/i18n/navigation"
 import { getBlockByNumberOrTag } from "@/lib/explorer/api"
 import { isTxHash } from "@/lib/explorer/rpc"
 
@@ -18,6 +18,7 @@ export default async function BlockByHashPage(props: {
 }) {
   const { locale, hash } = await props.params
   setRequestLocale(locale)
+  const t = await getTranslations("page-explorer")
   if (!isTxHash(hash)) notFound()
 
   const block = await getBlockByNumberOrTag("mainnet", hash, false)
@@ -28,26 +29,26 @@ export default async function BlockByHashPage(props: {
     <main className="mx-auto w-full max-w-6xl px-page py-page-2x">
       <nav className="mb-6 text-sm text-body-medium">
         <Link href="/explorer/" className="hover:underline">
-          Explorer
+          {t("page-explorer-breadcrumb-explorer")}
         </Link>{" "}
         /{" "}
         <Link href={`/explorer/block/${num}/`} className="hover:underline">
-          Block {num.toLocaleString()}
+          {t("page-explorer-block")} {num.toLocaleString()}
         </Link>
       </nav>
       <h1 className="mb-4 text-4xl font-bold tracking-tight">
-        Block #{num.toLocaleString()}
+        {t("page-explorer-block-title", { number: num.toLocaleString() })}
       </h1>
       <p className="mb-8 font-mono text-sm break-all text-body-medium">
         {hash}
       </p>
       <p className="rounded-xl border border-border p-6 text-body-medium">
-        Opened via block hash.{" "}
+        {t("page-explorer-opened-via-hash")}{" "}
         <Link
           href={`/explorer/block/${num}/`}
           className="font-semibold text-primary hover:underline"
         >
-          View full block details →
+          {t("page-explorer-view-full-block")} →
         </Link>
       </p>
     </main>

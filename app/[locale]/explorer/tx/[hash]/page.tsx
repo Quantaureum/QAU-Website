@@ -1,6 +1,5 @@
-import Link from "next/link"
 import { notFound } from "next/navigation"
-import { setRequestLocale } from "next-intl/server"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 
 import type { PageParams } from "@/lib/types"
 
@@ -14,6 +13,7 @@ import {
 
 import { getMetadata } from "@/lib/utils/metadata"
 
+import { Link } from "@/i18n/navigation"
 import { getTxDetail } from "@/lib/explorer/api"
 import { isTxHash } from "@/lib/explorer/rpc"
 
@@ -24,6 +24,7 @@ export default async function TxPage(props: {
 }) {
   const { locale, hash } = await props.params
   setRequestLocale(locale)
+  const t = await getTranslations("page-explorer")
   if (!isTxHash(hash)) notFound()
 
   const tx = await getTxDetail("mainnet", hash)
@@ -35,17 +36,19 @@ export default async function TxPage(props: {
     <main className="mx-auto w-full max-w-6xl px-page py-page-2x">
       <nav className="mb-6 text-sm text-body-medium">
         <Link href="/explorer/" className="hover:underline">
-          Explorer
+          {t("page-explorer-breadcrumb-explorer")}
         </Link>{" "}
         /{" "}
         <Link href="/explorer/transactions/" className="hover:underline">
-          Transactions
+          {t("page-explorer-breadcrumb-transactions")}
         </Link>{" "}
         / <span className="font-mono">{hash.slice(0, 14)}…</span>
       </nav>
 
       <div className="mb-8 flex flex-wrap items-center gap-4">
-        <h1 className="text-3xl font-bold tracking-tight">Transaction</h1>
+        <h1 className="text-3xl font-bold tracking-tight">
+          {t("page-explorer-transaction")}
+        </h1>
         <span
           className={
             tx.status === "success"
@@ -55,16 +58,16 @@ export default async function TxPage(props: {
                 : "rounded-full bg-warning/10 px-3 py-1 text-sm font-semibold text-warning"
           }
         >
-          {tx.status}
+          {t(`page-explorer-${tx.status}`)}
         </span>
       </div>
 
       <section className="mb-10 overflow-x-auto rounded-xl border border-border">
         <table className="w-full text-sm">
           <tbody>
-            <Row label="Tx hash" value={tx.hash} mono />
+            <Row label={t("page-explorer-tx-hash")} value={tx.hash} mono />
             <Row
-              label="Block"
+              label={t("page-explorer-block")}
               value={
                 <Link
                   href={`/explorer/block/${blockNum}/`}
@@ -74,9 +77,12 @@ export default async function TxPage(props: {
                 </Link>
               }
             />
-            <Row label="Timestamp" value={dateFromHex(tx.timestamp)} />
             <Row
-              label="From"
+              label={t("page-explorer-timestamp")}
+              value={dateFromHex(tx.timestamp)}
+            />
+            <Row
+              label={t("page-explorer-from")}
               value={
                 <Link
                   href={`/explorer/address/${tx.from}/`}
@@ -87,7 +93,7 @@ export default async function TxPage(props: {
               }
             />
             <Row
-              label="To"
+              label={t("page-explorer-to")}
               value={
                 tx.to ? (
                   <Link
@@ -97,34 +103,48 @@ export default async function TxPage(props: {
                     {tx.to}
                   </Link>
                 ) : (
-                  "Contract creation"
+                  t("page-explorer-contract-creation")
                 )
               }
             />
             <Row
-              label="Value"
+              label={t("page-explorer-value")}
               value={`${qauFromWeiHex(tx.value, 6)} QAU`}
               mono
             />
-            <Row label="Gas" value={gasFromHex(tx.gas)} mono />
             <Row
-              label="Gas used"
+              label={t("page-explorer-gas")}
+              value={gasFromHex(tx.gas)}
+              mono
+            />
+            <Row
+              label={t("page-explorer-gas-used")}
               value={tx.gasUsed ? gasFromHex(tx.gasUsed) : "—"}
               mono
             />
             <Row
-              label="Gas price"
+              label={t("page-explorer-gas-price")}
               value={tx.gasPrice ? `${gweiFromHex(tx.gasPrice)} gwei` : "—"}
               mono
             />
-            <Row label="Nonce" value={hexToNumber(tx.nonce).toString()} mono />
-            <Row label="Tx type" value={tx.txType} mono />
-            <Row label="Signature type" value={tx.signatureType} mono />
             <Row
-              label="Input"
+              label={t("page-explorer-nonce")}
+              value={hexToNumber(tx.nonce).toString()}
+              mono
+            />
+            <Row label={t("page-explorer-tx-type")} value={tx.txType} mono />
+            <Row
+              label={t("page-explorer-signature-type")}
+              value={tx.signatureType}
+              mono
+            />
+            <Row
+              label={t("page-explorer-input")}
               value={
                 <span className="break-all">
-                  {tx.input && tx.input !== "0x" ? tx.input : "(empty)"}
+                  {tx.input && tx.input !== "0x"
+                    ? tx.input
+                    : t("page-explorer-input-empty")}
                 </span>
               }
               mono

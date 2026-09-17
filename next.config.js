@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
+const path = require("path")
 const { PHASE_DEVELOPMENT_SERVER } = require("next/constants")
 
 const createNextIntlPlugin = require("next-intl/plugin")
@@ -29,6 +30,8 @@ const experimental = LIMIT_CPUS
 /** @type {import('next').NextConfig} */
 module.exports = (phase) => {
   let nextConfig = {
+    // Emit a self-contained server for PM2 (server.js + traced deps).
+    output: "standalone",
     reactStrictMode: true,
     env: {
       // Netlify build-time vars inlined so they're available at SSR runtime.
@@ -97,7 +100,10 @@ module.exports = (phase) => {
 
       // Stub optional @x402/* peer packages that @coinbase/cdp-sdk imports
       // lazily; we do not enable x402 payment flows.
-      const x402Stub = path.resolve(__dirname, "src/lib/stubs/optional-package.ts")
+      const x402Stub = path.resolve(
+        __dirname,
+        "src/lib/stubs/optional-package.ts"
+      )
       for (const mod of [
         "@x402/core/client",
         "@x402/core",
@@ -150,6 +156,9 @@ module.exports = (phase) => {
     // Replaces config.externals.push("pino-pretty", "lokijs", "encoding")
     serverExternalPackages: ["pino-pretty", "lokijs", "encoding"],
     trailingSlash: true,
+    // Next 16 normalizes URLs before invoking proxy.ts. Preserve the original
+    // pathname so next-intl's internal default-locale rewrite stays internal.
+    skipProxyUrlNormalize: true,
     images: {
       // Disable Next's on-disk image LRU: its eager mkdir('.next/cache/images')
       // crashes on Netlify's read-only Lambda FS as an unhandled rejection.

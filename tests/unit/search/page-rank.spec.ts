@@ -52,7 +52,7 @@ test.describe("pageRankForSlug", () => {
       pageRankForSlug(["developers", "docs", "blocks"]),
       pageRankForSlug(["glossary"]),
       pageRankForSlug(["developers", "tutorials", "some-tutorial"]),
-      pageRankForSlug(["videos", "a-talk"]),
+      pageRankForSlug(["contributing", "adding-a-quiz"]),
     ]
     expect(order).toEqual([...order].sort((a, b) => b - a))
     expect(new Set(order).size).toBe(order.length)
@@ -69,8 +69,7 @@ test.describe("pageRankForSlug", () => {
     }
   })
 
-  test("demotes transcripts and contributor docs furthest", () => {
-    expect(pageRankForSlug(["videos", "a-talk"])).toBe(PAGE_RANK.lowest)
+  test("demotes contributor docs furthest", () => {
     expect(pageRankForSlug(["contributing", "adding-a-quiz"])).toBe(
       PAGE_RANK.lowest
     )
@@ -93,8 +92,8 @@ test.describe("pageRankForSlug", () => {
 })
 
 test.describe("categoryForSlug", () => {
-  test("gives videos their own facet so transcripts can be filtered", () => {
-    expect(categoryForSlug(["videos", "a-talk"])).toBe("videos")
+  test("removed video routes use the default facet", () => {
+    expect(categoryForSlug(["videos", "a-talk"])).toBe("other")
   })
 
   test("marks the homepage so it can be withheld from results", () => {

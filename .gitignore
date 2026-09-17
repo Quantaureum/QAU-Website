@@ -12,6 +12,7 @@ tests/__results__/
 
 # AI-tool local dirs (never push)
 .claude/
+.pi-glla/
 docs/superpowers/
 
 # Local scratch output

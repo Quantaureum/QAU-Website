@@ -1,4 +1,4 @@
-import { extname, join } from "path"
+import { extname, posix } from "path"
 
 import { Lang } from "@/lib/types"
 
@@ -66,14 +66,14 @@ export const getIdFromHash = (href: string): string => href.split("#")[1] ?? ""
 
 export const addSlashes = (href: string): string => {
   if (isExternal(href)) return href
-  return join("/", href, "/")
+  return posix.join("/", href, "/")
 }
 
 export const getFullUrl = (locale: string | undefined, path: string) => {
   const url =
     DEFAULT_LOCALE === locale || !locale
       ? new URL(path, SITE_URL)
-      : new URL(join(locale, path), SITE_URL)
+      : new URL(posix.join(locale, path), SITE_URL)
 
   if (!url.pathname.endsWith("/")) {
     url.pathname += "/"
@@ -137,7 +137,10 @@ export const normalizeUrlForJsonLd = (
   if (!locale) {
     return new URL(pathWithoutLocale, SITE_URL).toString()
   }
-  const path = join(locale === DEFAULT_LOCALE ? "" : locale, pathWithoutLocale)
+  const path = posix.join(
+    locale === DEFAULT_LOCALE ? "" : locale,
+    pathWithoutLocale
+  )
   const url = new URL(path, SITE_URL)
   return url.toString()
 }
