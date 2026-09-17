@@ -150,7 +150,7 @@ const FeatureCards = async ({
 
         <div className="mt-12 flex justify-center">
           <ButtonLink
-            href="/developers/docs/"
+            href="/developers/#docs"
             size="lg"
             customEventOptions={{
               eventCategory,

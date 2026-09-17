@@ -71,7 +71,7 @@ function useCategories() {
         },
         {
           label: t("page-index-modal-try-apps"),
-          href: "/apps/",
+          href: "/explorer/",
           eventName: "try_apps",
         },
       ],
@@ -90,7 +90,7 @@ function useCategories() {
         },
         {
           label: t("page-index-modal-docs"),
-          href: "/developers/docs/",
+          href: "/developers/#docs",
           eventName: "docs",
         },
       ],

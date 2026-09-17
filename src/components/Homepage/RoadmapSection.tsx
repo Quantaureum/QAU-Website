@@ -8,11 +8,11 @@ import { Section, SectionHeader, SectionTag } from "@/components/ui/section"
 import { cn } from "@/lib/utils/cn"
 
 const TOPICS = [
-  { id: "security", href: "/roadmap/security/" },
-  { id: "scaling", href: "/roadmap/scaling/" },
-  { id: "privacy", href: "/roadmap/privacy/" },
-  { id: "ux", href: "/roadmap/user-experience/" },
-  { id: "verkle", href: "/roadmap/verkle-trees/" },
+  { id: "security", href: "/roadmap/#technical-upgrades" },
+  { id: "scaling", href: "/roadmap/#technical-upgrades" },
+  { id: "privacy", href: "/roadmap/#technical-upgrades" },
+  { id: "ux", href: "/roadmap/#changes-coming" },
+  { id: "verkle", href: "/roadmap/#technical-upgrades" },
 ]
 
 type RoadmapSectionProps = {
