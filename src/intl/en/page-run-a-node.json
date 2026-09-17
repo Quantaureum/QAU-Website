@@ -109,7 +109,7 @@
   "page-run-a-node-sovereignty-title": "Sovereignty",
   "page-run-a-node-sovereignty-preview": "Think of running a node like the next step beyond getting your own Quantaureum wallet.",
   "page-run-a-node-sovereignty-1": "An Quantaureum wallet allows you to take full custody and control of your digital assets by holding the private keys to your addresses, but those keys don't tell you the current state of the blockchain, such as your wallet balance.",
-  "page-run-a-node-sovereignty-2": "By default, Quantaureum wallets typically reach out to a 3rd-party node, such as Infura or Alchemy, when looking up your balances. Running your own node allows you to have your own copy of the Quantaureum blockchain.",
+  "page-run-a-node-sovereignty-2": "By default, Quantaureum wallets typically reach out to a third-party RPC node, such as the public Quantaureum RPC, when looking up your balances. Running your own node allows you to have your own copy of the Quantaureum blockchain.",
   "page-run-a-node-title": "Run a node",
   "page-run-a-node-meta-title": "How to Run an Quantaureum Node",
   "page-run-a-node-voice-your-choice-title": "Voice your choice",

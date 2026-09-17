@@ -29,10 +29,10 @@ import { getAppPageContributorInfo } from "@/lib/utils/contributors"
 import { getMetadata } from "@/lib/utils/metadata"
 import { getRequiredNamespacesForPage } from "@/lib/utils/translations"
 
+import { walletsData } from "@/data/wallets/wallet-data"
+
 import WalletsPageJsonLD from "./page-jsonld"
 
-import DappsImage from "@/public/images/doge-computer.png"
-import ETHImage from "@/public/images/qau-logo.png"
 import heroImg from "@/public/images/wallets/wallet-hero.png"
 
 const Page = async (props: { params: Promise<PageParams> }) => {
@@ -105,7 +105,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
     {
       title: t("page-wallets-protecting-yourself"),
       description: t("page-wallets-blog"),
-      link: "/security/",
+      link: "/bug-bounty/",
       customEventOptions: {
         eventCategory: "Link",
         eventAction: "Clicked_external",
@@ -115,7 +115,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
     {
       title: t("page-wallets-keys-to-safety"),
       description: t("page-wallets-blog"),
-      link: "/guides/how-to-use-a-wallet/",
+      link: "/wallets/",
       customEventOptions: {
         eventCategory: "Link",
         eventAction: "Clicked_external",
@@ -127,7 +127,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
   const guides = [
     {
       title: t("additional-reading-how-to-create-an-quantaureum-account"),
-      link: "/guides/how-to-create-an-quantaureum-account/",
+      link: "/wallets/",
       customEventOptions: {
         eventCategory: "Link",
         eventAction: "Clicked",
@@ -136,7 +136,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
     },
     {
       title: t("additional-reading-how-to-use-a-wallet"),
-      link: "/guides/how-to-use-a-wallet/",
+      link: "/wallets/",
       customEventOptions: {
         eventCategory: "Link",
         eventAction: "Clicked",
@@ -317,29 +317,22 @@ const Page = async (props: { params: Promise<PageParams> }) => {
 
             <Divider className="mx-page" />
 
-            <Section id="explore">
+            <Section id="wallets">
               <h2>{t("page-wallets-explore")}</h2>
-              <Grid balanced={2}>
-                <Callout
-                  image={ETHImage}
-                  title={t("page-wallets-get-some")}
-                  description={t("page-wallets-get-some-desc")}
-                  as="h3"
-                >
-                  <ButtonLink href="/get-qau/">
-                    {t("page-wallets-get-some-btn")}
-                  </ButtonLink>
-                </Callout>
-                <Callout
-                  image={DappsImage}
-                  title={t("page-wallets-try-dapps")}
-                  description={t("page-wallets-try-dapps-desc")}
-                  as="h3"
-                >
-                  <ButtonLink href="https://discord.gg/MSctkBT5j">
-                    {t("page-wallets-more-on-dapps-btn")}
-                  </ButtonLink>
-                </Callout>
+              <Grid columns={2}>
+                {walletsData.map((wallet) => (
+                  <Callout
+                    key={wallet.name}
+                    image={wallet.image}
+                    title={wallet.name}
+                    description={wallet.description ?? ""}
+                    as="h3"
+                  >
+                    <ButtonLink href={wallet.url}>
+                      {t("page-wallets-get-some-btn")}
+                    </ButtonLink>
+                  </Callout>
+                ))}
               </Grid>
             </Section>
 

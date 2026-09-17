@@ -18,7 +18,7 @@ export const buildFooterLinkSections = (
         text: t("nav2-the-network"),
       },
       { href: "/what-is-qau/", text: t("nav2-what-is-qau") },
-      { href: "/security/", text: t("nav2-quantum-security") },
+      { href: "/bug-bounty/", text: t("nav2-quantum-security") },
       { href: "/wallets/", text: t("nav2-wallets") },
     ],
   },

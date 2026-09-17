@@ -16,7 +16,7 @@ import {
   setRequestLocale,
 } from "next-intl/server"
 
-import type { Lang, PageParams, StakingStatsData } from "@/lib/types"
+import type { Lang, PageParams } from "@/lib/types"
 
 import ExpandableCard from "@/components/ExpandableCard"
 import PageHero from "@/components/Hero/PageHero"
@@ -29,8 +29,6 @@ import {
 import { Image, type ImageProps } from "@/components/Image"
 import { Emphasis, Strong } from "@/components/IntlStringElements"
 import StakingCommunityCallout from "@/components/Staking/StakingCommunityCallout"
-import StakingStatsBox from "@/components/Staking/StakingStatsBox"
-import TooltipLink from "@/components/TooltipLink"
 import { AccordionContainer } from "@/components/ui/accordion"
 import { ButtonLink } from "@/components/ui/buttons/Button"
 import {
@@ -51,7 +49,6 @@ import { Tag } from "@/components/ui/tag"
 import { cn } from "@/lib/utils/cn"
 import { getAppPageContributorInfo } from "@/lib/utils/contributors"
 import { getMetadata } from "@/lib/utils/metadata"
-import { computeStakingApr } from "@/lib/utils/staking"
 import { buildTopicDropdown } from "@/lib/utils/topicDropdown"
 
 import { staking } from "@/data/topics/staking"
@@ -59,7 +56,6 @@ import { staking } from "@/data/topics/staking"
 import StakingPageJsonLD from "./page-jsonld"
 
 import { ContentLayout } from "@/layouts/ContentLayout"
-import { getStakedPercentageData, getTotalQauStakedData } from "@/lib/data"
 import poolsImg from "@/public/images/staking/leslie-pool.png"
 import saasImg from "@/public/images/staking/leslie-saas.png"
 import soloImg from "@/public/images/staking/leslie-solo.png"
@@ -82,26 +78,6 @@ const Page = async (props: { params: Promise<PageParams> }) => {
 
   setRequestLocale(locale)
 
-  const [totalQauStaked, stakedPercentage] = await Promise.all([
-    getTotalQauStakedData(),
-    getStakedPercentageData(),
-  ])
-
-  if (
-    !totalQauStaked ||
-    !stakedPercentage ||
-    "error" in totalQauStaked ||
-    "error" in stakedPercentage
-  ) {
-    throw new Error("Failed to fetch staking stats data")
-  }
-
-  const data: StakingStatsData = {
-    totalQauStaked: totalQauStaked.value,
-    stakedPercentage: stakedPercentage.value,
-    apr: computeStakingApr(totalQauStaked.value),
-  }
-
   const { contributors, lastEditLocaleTimestamp } =
     await getAppPageContributorInfo("staking", locale as Lang)
 
@@ -110,10 +86,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
   // Glossary tooltips mount client-side, so their namespace has to reach the
   // client; the root layout only provides `common`. A nested provider replaces
   // the outer messages rather than merging, so `common` has to be re-listed.
-  const clientMessages = pick(await getMessages({ locale }), [
-    "common",
-    "glossary-tooltip",
-  ])
+  const clientMessages = pick(await getMessages({ locale }), ["common"])
 
   const benefits = [
     {
@@ -121,7 +94,9 @@ const Page = async (props: { params: Promise<PageParams> }) => {
       Icon: BenefitEarnRewardsIcon,
       description: t.rich("page-staking-benefits-1-description", {
         a: (chunks) => (
-          <TooltipLink href="/glossary/#consensus">{chunks}</TooltipLink>
+          <InlineLink href="/what-is-the-quantaureum-network/">
+            {chunks}
+          </InlineLink>
         ),
       }),
     },
@@ -173,7 +148,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
       ],
       image: soloImg,
       imageAlt: "",
-      href: "/staking/solo/",
+      href: "/run-a-node/",
       buttonLabel: t("page-staking-more-on-solo"),
     },
     {
@@ -193,7 +168,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
       ],
       image: saasImg,
       imageAlt: "",
-      href: "/staking/saas/",
+      href: "/staking/#faq",
       buttonLabel: t("page-staking-more-on-saas"),
     },
     {
@@ -210,14 +185,10 @@ const Page = async (props: { params: Promise<PageParams> }) => {
       paragraphs: [
         t("page-staking-hierarchy-pools-p1"),
         t.rich("page-staking-hierarchy-pools-p2", {
-          a: (chunks) => (
-            <TooltipLink href="/glossary/#erc-20">{chunks}</TooltipLink>
-          ),
+          a: (chunks) => <InlineLink href="/staking/#faq">{chunks}</InlineLink>,
         }),
         t.rich("page-staking-hierarchy-pools-p3", {
-          a: (chunks) => (
-            <TooltipLink href="/glossary/#wallet">{chunks}</TooltipLink>
-          ),
+          a: (chunks) => <InlineLink href="/wallets/">{chunks}</InlineLink>,
         }),
         t("page-staking-hierarchy-pools-p4"),
       ],
@@ -239,16 +210,14 @@ const Page = async (props: { params: Promise<PageParams> }) => {
         t("page-staking-hierarchy-cex-p1"),
         t("page-staking-hierarchy-cex-p2"),
         t.rich("page-staking-hierarchy-cex-p3", {
-          link1: (chunks) => (
-            <TooltipLink href="/glossary/#key">{chunks}</TooltipLink>
-          ),
+          link1: (chunks) => <InlineLink href="/wallets/">{chunks}</InlineLink>,
           link2: (chunks) => <InlineLink href="/wallets/">{chunks}</InlineLink>,
         }),
       ],
       image: cexImg,
       imageAlt: "",
       // There is no CEX page; the pools page covers custodial products in this section
-      href: "/staking/pools/#opaque-pooled-products",
+      href: "/staking/#faq",
       buttonLabel: t("page-staking-more-on-cex"),
     },
   ]
@@ -283,14 +252,10 @@ const Page = async (props: { params: Promise<PageParams> }) => {
       requirements: [
         t.rich("page-staking-section-comparison-solo-requirements-li2", {
           link1: (chunks) => (
-            <TooltipLink href="/glossary/#execution-client">
-              {chunks}
-            </TooltipLink>
+            <InlineLink href="/run-a-node/">{chunks}</InlineLink>
           ),
           link2: (chunks) => (
-            <TooltipLink href="/glossary/#consensus-client">
-              {chunks}
-            </TooltipLink>
+            <InlineLink href="/run-a-node/">{chunks}</InlineLink>
           ),
         }),
         t.rich("page-staking-section-comparison-solo-requirements-li3", {
@@ -301,7 +266,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           ),
         }),
       ],
-      href: "/staking/solo/",
+      href: "/run-a-node/",
       buttonLabel: t("page-staking-more-on-solo"),
     },
     {
@@ -322,7 +287,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
         t("page-staking-section-comparison-saas-requirements-li2"),
         t("page-staking-section-comparison-saas-requirements-li3"),
       ],
-      href: "/staking/saas/",
+      href: "/staking/#faq",
       buttonLabel: t("page-staking-more-on-saas"),
     },
     {
@@ -333,23 +298,15 @@ const Page = async (props: { params: Promise<PageParams> }) => {
       rewards: [
         t("page-staking-section-comparison-pools-rewards-li1"),
         t.rich("page-staking-section-comparison-pools-rewards-li2", {
-          a: (chunks) => (
-            <TooltipLink href="/glossary/#liquidity-tokens">
-              {chunks}
-            </TooltipLink>
-          ),
+          a: (chunks) => <InlineLink href="/staking/#faq">{chunks}</InlineLink>,
         }),
         t.rich("page-staking-section-comparison-pools-rewards-li3", {
-          a: (chunks) => (
-            <TooltipLink href="/glossary/#defi">{chunks}</TooltipLink>
-          ),
+          a: (chunks) => <InlineLink href="/staking/#faq">{chunks}</InlineLink>,
         }),
       ],
       risks: [
         t.rich("page-staking-section-comparison-pools-risks-li2", {
-          a: (chunks) => (
-            <TooltipLink href="/glossary/#smart-contract">{chunks}</TooltipLink>
-          ),
+          a: (chunks) => <InlineLink href="/bug-bounty/">{chunks}</InlineLink>,
         }),
       ],
       requirements: [
@@ -488,14 +445,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
             breadcrumbs={{ slug: "staking" }}
             heroImg={heroImg}
             title={t("page-staking-hero-header")}
-            description={
-              <>
-                {t("page-staking-hero-subtitle")}
-                <div className="mt-space-3x">
-                  <StakingStatsBox data={data} />
-                </div>
-              </>
-            }
+            description={<>{t("page-staking-hero-subtitle")}</>}
           />
         }
       >

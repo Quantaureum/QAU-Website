@@ -169,7 +169,7 @@
   "page-open-source-qau-app-bridge-name": "Merkle bridge",
   "page-open-source-qau-app-bridge-description": "The trust-minimized bridge connecting Quantaureum with external networks.",
   "page-open-source-qau-app-extension-name": "Quantaureum Wallet",
-  "page-open-source-qau-app-extension-description": "The official browser extension wallet with post-quantum Dilithium3 accounts.",
+  "page-open-source-qau-app-extension-description": "The official browser extension wallet with post-quantum ML-DSA-65 accounts.",
   "page-open-source-qau-app-mobile-name": "Quantaureum Mobile",
   "page-open-source-qau-app-mobile-description": "The official mobile wallet for managing QAU and staking on the go.",
   "page-open-source-qau-app-sdks-name": "Official SDKs",

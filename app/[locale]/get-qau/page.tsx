@@ -5,7 +5,6 @@ import {
   DatabaseCheck,
   HandCoins,
   Users,
-  Wallet as WalletIcon,
 } from "lucide-react"
 import {
   getMessages,
@@ -98,13 +97,6 @@ export default async function Page(props: { params: Promise<PageParams> }) {
       title: t("page-get-qau-dex"),
       description: <Translation id="page-get-qau:page-get-qau-dex-desc" />,
       linkText: t("page-get-qau-try-dex"),
-      href: "/apps/categories/defi/",
-    },
-    {
-      icon: WalletIcon,
-      title: t("page-get-qau-wallets"),
-      description: t("page-get-qau-wallets-purchasing"),
-      linkText: t("page-get-qau-wallets-link"),
       href: "/wallets/",
     },
     {
@@ -119,12 +111,12 @@ export default async function Page(props: { params: Promise<PageParams> }) {
   const safetyArticles: CardListCardProps[] = [
     {
       title: t("page-get-qau-article-protecting-yourself"),
-      link: "/security/",
+      link: "/bug-bounty/",
       description: t("page-get-qau-article-protecting-yourself-desc"),
     },
     {
       title: t("page-get-qau-article-keeping-crypto-safe"),
-      link: "/guides/how-to-use-a-wallet/",
+      link: "/wallets/",
       description: t("page-get-qau-article-keeping-crypto-safe-desc"),
     },
   ]

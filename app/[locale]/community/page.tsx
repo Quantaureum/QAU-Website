@@ -29,7 +29,6 @@ import { Section, SectionContent } from "@/components/ui/section"
 
 import { getAppPageContributorInfo } from "@/lib/utils/contributors"
 import { getMetadata } from "@/lib/utils/metadata"
-import { numberFormat } from "@/lib/utils/numbers"
 
 import PageJsonLD from "./page-jsonld"
 
@@ -214,9 +213,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
                   {t("page-community-contribute-eyebrow")}
                 </p>
                 <p className="text-xl font-bold text-body md:text-2xl">
-                  {t("page-community-contribute-count", {
-                    count: numberFormat(locale).format(12000),
-                  })}
+                  {t("page-community-contribute-count")}
                 </p>
               </FloatingCard>
               <Image

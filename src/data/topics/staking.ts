@@ -1,5 +1,7 @@
 import type { TopicConfig } from "."
 
+// All dropdown destinations must exist. Sub-page guides (solo/saas/pools) were
+// ethereum.org template residue and are removed until real pages exist.
 export const staking: TopicConfig = {
   translationNs: "page-staking",
   dropdown: {
@@ -13,29 +15,9 @@ export const staking: TopicConfig = {
         matomoEvent: "clicked staking home",
       },
       {
-        textKey: "page-staking-dropdown-solo",
-        href: "/staking/solo/",
-        matomoEvent: "clicked solo staking",
-      },
-      {
-        textKey: "page-staking-dropdown-saas",
-        href: "/staking/saas/",
-        matomoEvent: "clicked staking as a service",
-      },
-      {
-        textKey: "page-staking-dropdown-pools",
-        href: "/staking/pools/",
-        matomoEvent: "clicked pooled staking",
-      },
-      {
         textKey: "page-staking-dropdown-withdrawals",
-        href: "/staking/withdrawals/",
+        href: "/staking/#faq",
         matomoEvent: "clicked about withdrawals",
-      },
-      {
-        textKey: "page-staking-dropdown-dvt",
-        href: "/staking/dvt/",
-        matomoEvent: "clicked about dvt",
       },
     ],
   },
