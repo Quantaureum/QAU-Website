@@ -64,7 +64,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
       description: t("page-roadmap-cheaper-transactions-description"),
       button: {
         label: t("page-roadmap-cheaper-transactions-button"),
-        href: "/roadmap/scaling",
+        href: "/roadmap/#technical-upgrades",
       },
     },
     {
@@ -73,7 +73,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
       description: t("page-roadmap-extra-security-description"),
       button: {
         label: t("page-roadmap-extra-security-button"),
-        href: "/roadmap/security",
+        href: "/roadmap/#technical-upgrades",
       },
     },
     {
@@ -82,7 +82,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
       description: t("page-roadmap-better-user-experience-description"),
       button: {
         label: t("page-roadmap-better-user-experience-button"),
-        href: "/roadmap/user-experience",
+        href: "/roadmap/#changes-coming",
       },
     },
     {
@@ -91,7 +91,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
       description: t("page-roadmap-privacy-description"),
       button: {
         label: t("page-roadmap-privacy-button"),
-        href: "/roadmap/privacy",
+        href: "/roadmap/#technical-upgrades",
       },
     },
   ]
@@ -101,37 +101,37 @@ const Page = async (props: { params: Promise<PageParams> }) => {
       icon: <Atom className="size-7" />,
       title: t("page-roadmap-post-quantum-title"),
       description: t("page-roadmap-post-quantum-description"),
-      href: "/roadmap/security/quantum-resistance",
+      href: "/roadmap/#technical-upgrades",
     },
     {
       icon: <BetterUserExperienceIcon className="size-7" />,
       title: t("page-roadmap-qvm-title"),
       description: t("page-roadmap-qvm-description"),
-      href: "/developers/docs/qvm/",
+      href: "/developers/#docs",
     },
     {
       icon: <ExtraSecurityIcon className="size-7" />,
       title: t("page-roadmap-threshold-finality-title"),
       description: t("page-roadmap-threshold-finality-description"),
-      href: "/roadmap/security",
+      href: "/roadmap/#technical-upgrades",
     },
     {
       icon: <StatelessnessIcon className="size-7" />,
       title: t("page-roadmap-verkle-title"),
       description: t("page-roadmap-verkle-description"),
-      href: "/roadmap/verkle-trees",
+      href: "/roadmap/#technical-upgrades",
     },
     {
       icon: <CheaperTransactionsIcon className="size-7" />,
       title: t("page-roadmap-scaling-item-title"),
       description: t("page-roadmap-scaling-item-description"),
-      href: "/roadmap/scaling",
+      href: "/roadmap/#technical-upgrades",
     },
     {
       icon: <PrivacyIcon className="size-7" />,
       title: t("page-roadmap-privacy-item-title"),
       description: t("page-roadmap-privacy-item-description"),
-      href: "/roadmap/privacy",
+      href: "/roadmap/#technical-upgrades",
     },
   ]
 

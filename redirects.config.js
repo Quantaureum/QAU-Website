@@ -51,7 +51,10 @@ module.exports = [
   ["/beginners", "/what-is-quantaureum/"],
 
   // Developer docs legacy paths (generic, chain-agnostic)
-  ["/developers/learning-tools", "/developers/tools/categories/education-standards/"],
+  [
+    "/developers/learning-tools",
+    "/developers/tools/categories/education-standards/",
+  ],
   ["/developers/local-environment", "/developers/tools/"],
   ["/developers/docs/scaling/layer-2-rollups", "/developers/docs/scaling"],
   ["/developers/docs/layer-2-scaling", "/layer-2/"],
@@ -79,7 +82,10 @@ module.exports = [
   ],
   ["/developers/docs/ides/%23web-based-ides", "/developers/docs/"],
   ["/developers/docs/scaling/rollups", "/developers/docs/scaling/#rollups"],
-  ["/developers/docs/scaling/layer-2", "/developers/docs/scaling/#layer-2-scaling"],
+  [
+    "/developers/docs/scaling/layer-2",
+    "/developers/docs/scaling/#layer-2-scaling",
+  ],
 
   // Removed legacy ethereum.org hub pages — point at the closest Quantaureum equivalent
   ["/enterprise", "/about/"],
@@ -94,15 +100,39 @@ module.exports = [
   ["/10-years", "/"],
   ["/10years", "/"],
   ["/about/:path*", "/about/"],
-  ["/guides/how-to-register-an-ethereum-account", "/guides/how-to-create-an-account/"],
-  ["/guides/how-to-create-an-ethereum-account", "/guides/how-to-create-an-account/"],
+  [
+    "/guides/how-to-register-an-ethereum-account",
+    "/guides/how-to-create-an-account/",
+  ],
+  [
+    "/guides/how-to-create-an-ethereum-account",
+    "/guides/how-to-create-an-account/",
+  ],
   ["/wlan", "/wallets/find-wallet/"],
   ["/wallets/security", "/security/"],
   ["/zero-knowledge", "/zero-knowledge-proofs/"],
   ["/layer-2-scaling", "/layer-2/"],
   ["/layer-2-scaling/rollups", "/developers/docs/scaling/"],
   ["/layer-1-scaling/sidechains", "/developers/docs/scaling/sidechains/"],
-  ["/layer-2-scaling/state-channels", "/developers/docs/scaling/state-channels/"],
+  [
+    "/layer-2-scaling/state-channels",
+    "/developers/docs/scaling/state-channels/",
+  ],
   ["/staking/withdraws", "/staking/withdrawals/"],
   ["/languages", "/community/language-resources/"],
+
+  // Pages removed from the QAU site: send old URLs to the closest live hub.
+  ["/apps", "/explorer/"],
+  ["/developers/docs", "/developers/#docs"],
+  ["/developers/docs/qvm", "/developers/#docs"],
+  ["/developers/docs/consensus-mechanisms", "/developers/#docs"],
+  ["/developers/docs/nodes-and-clients", "/run-a-node/"],
+  ["/developers/docs/nodes-and-clients/run-a-node", "/run-a-node/"],
+  ["/developers/docs/nodes-and-clients/client-diversity", "/run-a-node/"],
+  ["/roadmap/security", "/roadmap/#technical-upgrades"],
+  ["/roadmap/security/quantum-resistance", "/roadmap/#technical-upgrades"],
+  ["/roadmap/scaling", "/roadmap/#technical-upgrades"],
+  ["/roadmap/privacy", "/roadmap/#technical-upgrades"],
+  ["/roadmap/user-experience", "/roadmap/#changes-coming"],
+  ["/roadmap/verkle-trees", "/roadmap/#technical-upgrades"],
 ]
