@@ -23,7 +23,7 @@ Before you start, please take a moment to read our [CONTRIBUTING.md](CONTRIBUTIN
 
 ### 1. Submit an issue
 
-- Create a [new issue](https://github.com/Quantaureum/quantaureum-website/issues).
+- Create a [new issue](https://github.com/Quantaureum/QAU-Website/issues).
 - Comment on the issue if you'd like to be assigned to it.
 
 ### 2. Fork the repository
