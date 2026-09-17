@@ -357,34 +357,24 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
                 heading={t("page-developers-docs-introductions")}
                 links={[
                   {
-                    href: "/developers/docs/intro-to-quantaureum/",
+                    href: "/what-is-quantaureum/",
                     label: t("page-developers-intro-qau-link"),
                     description: t("page-developers-into-qau-desc"),
                   },
                   {
-                    href: "/developers/docs/intro-to-QAU/",
+                    href: "/what-is-qau/",
                     label: t("page-developers-intro-QAU-link"),
                     description: t("page-developers-intro-QAU-desc"),
                   },
                   {
-                    href: "/developers/docs/dapps/",
-                    label: t("page-developers-intro-dapps-link"),
-                    description: t("page-developers-intro-dapps-desc"),
-                  },
-                  {
-                    href: "/developers/docs/quantaureum-stack/",
+                    href: "/roadmap/",
                     label: t("page-developers-intro-stack"),
                     description: t("page-developers-intro-stack-desc"),
                   },
                   {
-                    href: "/developers/docs/web2-vs-web3/",
+                    href: "https://github.com/Quantaureum",
                     label: t("page-developers-web3-link"),
                     description: t("page-developers-web3-desc"),
-                  },
-                  {
-                    href: "/developers/docs/programming-languages/",
-                    label: t("page-developers-languages"),
-                    description: t("page-developers-language-desc"),
                   },
                 ]}
               >
@@ -400,37 +390,17 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
                 heading={t("page-developers-fundamentals")}
                 links={[
                   {
-                    href: "/developers/docs/accounts/",
-                    label: t("page-developers-accounts-link"),
-                    description: t("page-developers-account-desc"),
-                  },
-                  {
-                    href: "/developers/docs/transactions/",
-                    label: t("page-developers-transactions-link"),
-                    description: t("page-developers-transactions-desc"),
-                  },
-                  {
-                    href: "/developers/docs/blocks/",
-                    label: t("page-developers-blocks-link"),
-                    description: t("page-developers-block-desc"),
-                  },
-                  {
-                    href: "/developers/docs/evm/",
-                    label: t("page-developers-evm-link"),
-                    description: t("page-developers-evm-desc"),
-                  },
-                  {
-                    href: "https://github.com/Quantaureum",
-                    label: t("page-developers-gas-link"),
-                    description: t("page-developers-gas-desc"),
-                  },
-                  {
-                    href: "/developers/docs/nodes-and-clients/",
+                    href: "/run-a-node/",
                     label: t("page-developers-node-clients-link"),
                     description: t("page-developers-node-clients-desc"),
                   },
                   {
-                    href: "/developers/docs/networks/",
+                    href: "/gas/",
+                    label: t("page-developers-gas-link"),
+                    description: t("page-developers-gas-desc"),
+                  },
+                  {
+                    href: "/what-is-the-quantaureum-network/",
                     label: t("page-developers-networks-link"),
                     description: t("page-developers-networks-desc"),
                   },
@@ -441,46 +411,21 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
                 heading={t("page-developers-stack")}
                 links={[
                   {
-                    href: "/developers/docs/smart-contracts/",
-                    label: t("page-developers-smart-contracts-link"),
-                    description: t("page-developers-smart-contracts-desc"),
-                  },
-                  {
-                    href: "/developers/docs/frameworks/",
-                    label: t("page-developers-frameworks-link"),
-                    description: t("page-developers-frameworks-desc"),
-                  },
-                  {
-                    href: "/developers/docs/apis/javascript/",
-                    label: t("page-developers-js-libraries-link"),
-                    description: t("page-developers-js-libraries-desc"),
-                  },
-                  {
-                    href: "/developers/docs/apis/backend/",
-                    label: t("page-developers-api-link"),
-                    description: t("page-developers-api-desc"),
-                  },
-                  {
-                    href: "/developers/docs/data-and-analytics/block-explorers/",
-                    label: t("page-developers-block-explorers-link"),
-                    description: t("page-developers-block-explorers-desc"),
-                  },
-                  {
-                    href: "/developers/docs/smart-contracts/security/",
+                    href: "/bug-bounty/",
                     label: t("page-developers-smart-contract-security-link"),
                     description: t(
                       "page-developers-smart-contract-security-desc"
                     ),
                   },
                   {
-                    href: "/developers/docs/storage/",
-                    label: t("page-developers-storage-link"),
-                    description: t("page-developers-storage-desc"),
+                    href: "/explorer/",
+                    label: t("page-developers-block-explorers-link"),
+                    description: t("page-developers-block-explorers-desc"),
                   },
                   {
-                    href: "/developers/docs/ides/",
-                    label: t("page-developers-dev-env-link"),
-                    description: t("page-developers-dev-env-desc"),
+                    href: "https://github.com/Quantaureum",
+                    label: t("page-developers-smart-contracts-link"),
+                    description: t("page-developers-smart-contracts-desc"),
                   },
                 ]}
               />
@@ -561,15 +506,15 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
               className={cn("flex", hackathons.length > 0 && "justify-center")}
             >
               <ButtonLink
-                href="https://ethglobal.com/"
+                href="https://discord.gg/MSctkBT5j"
                 className="max-md:w-full"
                 customEventOptions={{
                   eventCategory: "hackathons",
                   eventAction: "click",
-                  eventName: "visit-ethglobal",
+                  eventName: "join-discord",
                 }}
               >
-                {t("page-developers-visit-ethglobal")}
+                {t("page-developers-get-help-title")}
               </ButtonLink>
             </div>
           </Section>

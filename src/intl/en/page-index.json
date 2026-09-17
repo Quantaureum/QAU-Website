@@ -22,7 +22,7 @@
   "page-index-features-title-highlight": "quantum era",
   "page-index-features-subtitle": "Quantaureum is built from scratch around post-quantum cryptography — not patched on top of legacy schemes.",
   "page-index-features-pq-title": "Post-quantum, by default",
-  "page-index-features-pq-description-1": "Every signature uses Dilithium3 (NIST FIPS 204) and every key exchange uses Kyber768 (NIST FIPS 203). There is no classical fallback left to attack.",
+  "page-index-features-pq-description-1": "Every signature uses ML-DSA-65 (FIPS 204, derived from CRYSTALS-Dilithium) and every key exchange uses ML-KEM-768 (FIPS 203, derived from CRYSTALS-Kyber). There is no classical fallback left to attack.",
   "page-index-features-pq-description-2": "Your account stays secure when large quantum computers arrive.",
   "page-index-features-pq-stat": "2 NIST standards",
   "page-index-features-pq-stat-label": "FIPS 203 + FIPS 204 at the protocol core",

@@ -34,7 +34,7 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
           id: "learn/security",
           label: t("nav2-quantum-security"),
           description: t("nav2-quantum-security-desc"),
-          href: "/security/",
+          href: "/bug-bounty/",
         },
         {
           id: "learn/wallets",

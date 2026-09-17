@@ -41,7 +41,7 @@
   "page-what-is-qau-how-to-send-and-receive-qau-description-8": "Learn about Quantaureum and how it works.",
   "page-what-is-qau-how-to-send-and-receive-qau-callout": "Only share your Quantaureum address with trusted contacts. Since Quantaureum is a public ledger, they can view your balance and transactions. They can't access your funds, but privacy is recommended.",
   "page-what-is-qau-how-long-does-it-take-to-send-eth": "How long does it take to send QAU?",
-  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-1": "Every QAU transaction is signed with a post-quantum Dilithium3 signature, then broadcast to the network and included in a block by a validator.",
+  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-1": "Every QAU transaction is signed with a post-quantum ML-DSA-65 signature, then broadcast to the network and included in a block by a validator.",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-2": "A block is finalized when the validator committee co-signs it with a threshold signature (GM-QTD) — no waiting for multiple probabilistic confirmations.",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "During high network traffic, you can speed up transactions by paying higher priority fees, placing you ahead in line. The base fee is burned; the priority fee goes to the block proposer.",
   "page-what-is-qau-how-much-does-it-cost-to-send-eth": "How much does it cost to send QAU?",

@@ -386,19 +386,6 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           <p>
             {t.rich("page-what-is-quantaureum-what-intro-2", {
               strong: Strong,
-              insurance: (chunks) => (
-                <Link href="https://blog.etherisc.com/etherisc-teams-up-with-chainlink-to-deliver-crop-insurance-in-kenya-137e433c29dc">
-                  {chunks}
-                </Link>
-              ),
-              payment: (chunks) => (
-                <Link href="https://usa.visa.com/about-visa/newsroom/press-releases.releaseId.19881.html">
-                  {chunks}
-                </Link>
-              ),
-              aid: (chunks) => (
-                <Link href="https://www.wfp.org/building-blocks">{chunks}</Link>
-              ),
             })}
           </p>
           <p>{t("page-what-is-quantaureum-what-intro-3")}</p>
@@ -475,13 +462,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   </ListItem>
                 </UnorderedList>
                 <CardParagraph>
-                  {t.rich("page-what-is-quantaureum-what-businesses-example", {
-                    a: (chunks) => (
-                      <Link href="https://newsroom.paypal-corp.com/2023-08-07-PayPal-Launches-U-S-Dollar-Stablecoin">
-                        {chunks}
-                      </Link>
-                    ),
-                  })}
+                  {t("page-what-is-quantaureum-what-businesses-example")}
                 </CardParagraph>
               </CardContent>
             </HighlightCard>
