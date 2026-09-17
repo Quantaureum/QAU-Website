@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Before suggesting an exchange, make sure you've read [our exchange listing policy](https://quantaureum.com/contributing/adding-exchanges/). If it's a decentralized exchange (DEX) you'd like to list, please take a look at our [policy for listing dapps](https://quantaureum.com/contributing/adding-products/).
+        Read the [contribution guide](https://github.com/Quantaureum/QAU-Website/blob/master/CONTRIBUTING.md) before submitting. Describe the exchange's actual Quantaureum support and provide public evidence of legitimacy. A suggestion does not guarantee listing or endorsement. Never include private keys, seed phrases, or credentials.
   - type: markdown
     attributes:
       value: |

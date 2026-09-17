@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        We'll consider [our content resources policy](https://quantaureum.com/contributing/content-resources/) when reviewing the tutorial, so please take a look there first.
+        Read the [contribution guide](https://github.com/Quantaureum/QAU-Website/blob/master/CONTRIBUTING.md) before submitting. Tutorials are reviewed for technical accuracy before publication; a suggestion does not guarantee publication.
   - type: markdown
     id: tutorial_info
     attributes:
