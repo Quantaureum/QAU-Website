@@ -43,11 +43,13 @@ export interface IndexState {
 }
 
 const BLOB_KEY = "explorer-index-v1"
-const MAX_SCAN_PER_TICK = 50
+const MAX_SCAN_PER_TICK = 5
+const SCAN_INTERVAL_MS = 5_000
 
 interface PersistedData {
   state: IndexState
   txs: IndexedTx[]
+  lastScanAt?: number
 }
 
 // ── storage backend ────────────────────────────────────────────────────────
@@ -125,23 +127,37 @@ export async function syncIndex(
   const data = await loadIndex()
   const wantFull = opts.full ?? true
   const head = await fetchBlockNumber(network)
+  if (head === null) {
+    data.state.lastError = "Explorer RPC is temporarily unavailable"
+    return data.state
+  }
+  const headChanged = data.state.head !== head
   data.state.head = head
 
   if (data.state.scanning) return data.state
+  if (
+    !headChanged &&
+    !data.state.lastError &&
+    data.lastScanAt !== undefined &&
+    Date.now() - data.lastScanAt < SCAN_INTERVAL_MS
+  )
+    return data.state
 
   data.state.scanning = true
   try {
     // First run: begin from head and walk downward, so recent txs are
     // available immediately; deeper history backfills on later calls.
     let scanned = 0
+    data.state.lastError = null
     while (scanned < MAX_SCAN_PER_TICK) {
       let target: number
       if (data.state.indexedUpTo < 0) {
         target = head // start at head, no blocks indexed yet
-      } else if (data.state.indexedDownTo <= 0) {
-        // everything above indexedDownTo is done; stop if full history reached
-        if (data.state.indexedDownTo === 0) break
-        target = data.state.indexedDownTo - 1
+      } else if (data.state.indexedUpTo < head) {
+        // Catch up with new blocks before continuing historical backfill.
+        target = data.state.indexedUpTo + 1
+      } else if (data.state.indexedDownTo === 0) {
+        break
       } else {
         target = data.state.indexedDownTo - 1
       }
@@ -150,7 +166,10 @@ export async function syncIndex(
 
       // if we're backfilling and reached block 0, mark complete
       const block = await fetchBlock(network, "0x" + target.toString(16), true)
-      if (!block) break
+      if (!block) {
+        data.state.lastError = "Explorer RPC could not fetch an indexed block"
+        break
+      }
 
       const ts = block.timestamp
       const txs = (block.transactions as QauTx[]) ?? []
@@ -159,7 +178,7 @@ export async function syncIndex(
       }
       data.state.totalTx += txs.length
 
-      if (data.state.indexedUpTo < 0) data.state.indexedUpTo = target
+      if (target > data.state.indexedUpTo) data.state.indexedUpTo = target
       if (data.state.indexedDownTo < 0 || target < data.state.indexedDownTo) {
         data.state.indexedDownTo = target
       }
@@ -168,10 +187,6 @@ export async function syncIndex(
         break
       }
       scanned++
-      if (target > 0) {
-        data.state.indexedDownTo = target
-        // next iteration continues downward
-      }
       if (!wantFull) break
     }
 
@@ -185,11 +200,11 @@ export async function syncIndex(
       data.txs = data.txs.slice(0, 12_000)
     }
 
-    data.state.lastError = null
     await saveIndex(data)
   } catch (e) {
     data.state.lastError = e instanceof Error ? e.message : String(e)
   } finally {
+    data.lastScanAt = Date.now()
     data.state.scanning = false
   }
   return data.state

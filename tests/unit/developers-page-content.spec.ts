@@ -18,5 +18,5 @@ test("developers page no longer renders a fake docs tree of 404 links", () => {
   )
   expect(source).not.toMatch(/\/developers\/docs\//)
   expect(source).not.toMatch(/ethglobal\.com/)
-  expect(source).not.toContain('page-developers-evm-link')
+  expect(source).not.toContain("page-developers-evm-link")
 })

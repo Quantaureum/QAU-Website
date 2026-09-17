@@ -1,3 +1,7 @@
+# Keep parser inputs and byte-exact fixtures consistent across platforms.
+*.md text eol=lf
+*.json text eol=lf
+
 deploy.sh linguist-documentation
 README.md linguist-documentation
 *.md linguist-vendored=false

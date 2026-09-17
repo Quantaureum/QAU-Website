@@ -1,13 +1,13 @@
 import { expect, test } from "@playwright/test"
 
-import networkMsg from "@/intl/en/page-what-is-the-quantaureum-network.json"
-import communityMsg from "@/intl/en/page-community.json"
-import whatIsMsg from "@/intl/en/page-what-is-quantaureum.json"
-import roadmapMsg from "@/intl/en/page-roadmap.json"
-import resourcesMsg from "@/intl/en/page-resources.json"
 import bugBountyMsg from "@/intl/en/page-bug-bounty.json"
-import whatIsQauMsg from "@/intl/en/page-what-is-qau.json"
+import communityMsg from "@/intl/en/page-community.json"
 import openSourceMsg from "@/intl/en/page-open-source.json"
+import resourcesMsg from "@/intl/en/page-resources.json"
+import roadmapMsg from "@/intl/en/page-roadmap.json"
+import whatIsQauMsg from "@/intl/en/page-what-is-qau.json"
+import whatIsMsg from "@/intl/en/page-what-is-quantaureum.json"
+import networkMsg from "@/intl/en/page-what-is-the-quantaureum-network.json"
 
 // NIST standardized the CRYSTALS primitives under new names: FIPS 204 → ML-DSA,
 // FIPS 203 → ML-KEM. Writing "Dilithium3 (NIST FIPS 204)" is technically

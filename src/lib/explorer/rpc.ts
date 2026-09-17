@@ -7,20 +7,47 @@ const DEFAULT_MAINNET =
   process.env.QAU_RPC_URL_MAINNET || "https://rpc.quantaureum.com/"
 const DEFAULT_TESTNET = process.env.QAU_RPC_URL_TESTNET || ""
 
-const CACHE_TAGS: Record<string, string[]> = {
-  eth_blockNumber: ["explorer/head"],
-  eth_getBlockByNumber: ["explorer/blocks"],
-  eth_getBlockByHash: ["explorer/blocks"],
-  eth_getTransactionByHash: ["explorer/txs"],
-  eth_getTransactionReceipt: ["explorer/txs"],
-  eth_getBalance: ["explorer/balances"],
-  eth_getTransactionCount: ["explorer/balances"],
-  eth_getCode: ["explorer/balances"],
-  eth_gasPrice: ["explorer/head"],
-  net_peerCount: ["explorer/head"],
+interface EndpointState {
+  tail: Promise<void>
+  pending: Map<string, Promise<unknown | null>>
+  cache: Map<string, { value: unknown; expires: number }>
+  nextStart: number
+  blockedUntil: number
 }
 
-let nextId = 0
+// Share budgets across route bundles within this server process. Multiple
+// processes must use an external shared budget or divide the upstream quota.
+function endpointState(url: string): EndpointState {
+  const g = globalThis as typeof globalThis & {
+    __qauRpcEndpoints?: Map<string, EndpointState>
+  }
+  const endpoints = (g.__qauRpcEndpoints ??= new Map())
+  let state = endpoints.get(url)
+  if (!state) {
+    state = {
+      tail: Promise.resolve(),
+      pending: new Map(),
+      cache: new Map(),
+      nextStart: 0,
+      blockedUntil: 0,
+    }
+    endpoints.set(url, state)
+  }
+  return state
+}
+
+const REQUEST_INTERVAL_MS = 200
+const CACHE_TTL_MS = 5_000
+const MAX_PENDING = 64
+const MAX_QUEUE_WAIT_MS = 10_000
+const RATE_LIMIT_COOLDOWN_MS = 60_000
+
+export class RpcUnavailableError extends Error {
+  constructor() {
+    super("Explorer RPC is temporarily unavailable")
+    this.name = "RpcUnavailableError"
+  }
+}
 
 /**
  * Raw JSON-RPC call against a QAU node. Returns null on any failure
@@ -33,20 +60,89 @@ export async function rpc<T = unknown>(
 ): Promise<T | null> {
   const url = network === "mainnet" ? DEFAULT_MAINNET : DEFAULT_TESTNET
   if (!url) return null
-  try {
-    const res = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ jsonrpc: "2.0", id: ++nextId, method, params }),
-      signal: AbortSignal.timeout(10_000),
-      next: { revalidate: 5, tags: CACHE_TAGS[method] },
-    })
-    if (!res.ok) return null
-    const body = (await res.json()) as { result?: T; error?: unknown }
-    if (body.error !== undefined) return null
-    return (body.result ?? null) as T | null
-  } catch {
+  const state = endpointState(url)
+  const key = JSON.stringify([method, params])
+  const cached = state.cache.get(key)
+  if (cached && cached.expires > Date.now()) return cached.value as T
+  state.cache.delete(key)
+  const pending = state.pending.get(key)
+  if (pending) return pending as Promise<T | null>
+  if (Date.now() < state.blockedUntil || state.pending.size >= MAX_PENDING)
     return null
+
+  const queuedAt = Date.now()
+  const request = state.tail.then(async (): Promise<T | null> => {
+    if (
+      Date.now() < state.blockedUntil ||
+      Date.now() - queuedAt > MAX_QUEUE_WAIT_MS
+    )
+      return null
+    const delay = state.nextStart - Date.now()
+    if (delay > 0) await new Promise((resolve) => setTimeout(resolve, delay))
+    state.nextStart = Date.now() + REQUEST_INTERVAL_MS
+    try {
+      // Cache validated successes ourselves; never persist an HTTP-200 RPC
+      // error, and never vary cache identity with a monotonically growing ID.
+      const res = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ jsonrpc: "2.0", id: 1, method, params }),
+        signal: AbortSignal.timeout(10_000),
+        cache: "no-store",
+      })
+      if (res.status === 429) {
+        const retry = res.headers.get("retry-after")
+        const seconds = retry ? Number(retry) : NaN
+        const until =
+          retry && !Number.isFinite(seconds)
+            ? Date.parse(retry)
+            : Date.now() + (seconds || 0) * 1000
+        state.blockedUntil = Math.max(
+          Date.now() + RATE_LIMIT_COOLDOWN_MS,
+          Number.isFinite(until) ? until : 0
+        )
+        return null
+      }
+      if (!res.ok) {
+        state.blockedUntil = Date.now() + CACHE_TTL_MS
+        return null
+      }
+      const body = (await res.json()) as {
+        result?: T
+        error?: { message?: string }
+      }
+      if (body.error !== undefined) {
+        state.blockedUntil =
+          Date.now() +
+          (/rate limit/i.test(body.error?.message ?? "")
+            ? RATE_LIMIT_COOLDOWN_MS
+            : CACHE_TTL_MS)
+        return null
+      }
+      const result = body.result ?? null
+      if (result !== null) {
+        if (state.cache.size >= 512)
+          state.cache.delete(state.cache.keys().next().value!)
+        state.cache.set(key, {
+          value: result,
+          expires: Date.now() + CACHE_TTL_MS,
+        })
+      }
+      return result
+    } catch {
+      state.blockedUntil = Date.now() + CACHE_TTL_MS
+      return null
+    }
+  })
+  state.pending.set(key, request)
+  state.tail = request.then(
+    () => undefined,
+    () => undefined
+  )
+  try {
+    return await request
+  } finally {
+    state.pending.delete(key)
   }
 }
 
@@ -150,9 +246,11 @@ export interface QauTxReceipt {
 
 // ── typed convenience wrappers (all null on failure) ─────────────────────
 
-export async function fetchBlockNumber(network: RpcNetwork): Promise<number> {
+export async function fetchBlockNumber(
+  network: RpcNetwork
+): Promise<number | null> {
   const r = await rpc<string>(network, "eth_blockNumber", [])
-  return hexToInt(r)
+  return r !== null && /^0x[0-9a-f]+$/i.test(r) ? hexToInt(r) : null
 }
 
 export async function fetchBlock(

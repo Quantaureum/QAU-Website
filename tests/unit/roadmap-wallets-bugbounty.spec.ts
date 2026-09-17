@@ -30,9 +30,9 @@ test("wallets page renders the real wallet product list", () => {
     path.resolve("app/[locale]/wallets/page.tsx"),
     "utf8"
   )
-  expect(
-    fs.existsSync(path.resolve("src/data/wallets/wallet-data.ts"))
-  ).toBe(true)
+  expect(fs.existsSync(path.resolve("src/data/wallets/wallet-data.ts"))).toBe(
+    true
+  )
   expect(source).toMatch(/walletsData|wallet-data/)
 })
 

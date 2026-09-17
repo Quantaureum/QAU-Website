@@ -1,5 +1,4 @@
-import Link from "next/link"
-import { setRequestLocale } from "next-intl/server"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 
 import type { PageParams } from "@/lib/types"
 
@@ -14,6 +13,7 @@ import {
 
 import { getMetadata } from "@/lib/utils/metadata"
 
+import { Link } from "@/i18n/navigation"
 import { getRecentBlocks } from "@/lib/explorer/api"
 import { QAU_MAINNET } from "@/lib/explorer/config"
 
@@ -26,6 +26,7 @@ export default async function BlocksPage(props: {
   const { locale } = await props.params
   const { page: pageParam, limit: limitParam } = await props.searchParams
   setRequestLocale(locale)
+  const t = await getTranslations("page-explorer")
 
   const page = Math.max(1, Number(pageParam ?? 1) || 1)
   const limit = Math.min(50, Math.max(10, Number(limitParam ?? 25) || 25))
@@ -36,27 +37,29 @@ export default async function BlocksPage(props: {
     <main className="mx-auto w-full max-w-6xl px-page py-page-2x">
       <nav className="mb-6 text-sm text-body-medium">
         <Link href="/explorer/" className="hover:underline">
-          Explorer
+          {t("page-explorer-breadcrumb-explorer")}
         </Link>{" "}
-        / Blocks
+        / {t("page-explorer-breadcrumb-blocks")}
       </nav>
-      <h1 className="mb-2 text-4xl font-bold tracking-tight">Blocks</h1>
+      <h1 className="mb-2 text-4xl font-bold tracking-tight">
+        {t("page-explorer-breadcrumb-blocks")}
+      </h1>
       <p className="mb-8 text-body-medium">
-        {QAU_MAINNET.name} · {result.totalBlocks.toLocaleString()} blocks
-        indexed
+        {QAU_MAINNET.name} · {result.totalBlocks.toLocaleString()}{" "}
+        {t("page-explorer-blocks-indexed")}
       </p>
 
       <div className="overflow-x-auto rounded-xl border border-border">
         <table className="w-full text-sm">
           <thead className="border-b border-border text-left text-body-medium">
             <tr>
-              <th className="p-3">Block</th>
-              <th className="p-3">Age</th>
-              <th className="p-3">Timestamp</th>
-              <th className="p-3">Miner</th>
-              <th className="p-3">Txs</th>
-              <th className="p-3">Gas used</th>
-              <th className="p-3">Gas limit</th>
+              <th className="p-3">{t("page-explorer-block")}</th>
+              <th className="p-3">{t("page-explorer-age")}</th>
+              <th className="p-3">{t("page-explorer-timestamp")}</th>
+              <th className="p-3">{t("page-explorer-miner")}</th>
+              <th className="p-3">{t("page-explorer-txs")}</th>
+              <th className="p-3">{t("page-explorer-gas-used")}</th>
+              <th className="p-3">{t("page-explorer-gas-limit")}</th>
             </tr>
           </thead>
           <tbody>
@@ -93,20 +96,20 @@ export default async function BlocksPage(props: {
             href={`/explorer/blocks/?page=${page - 1}&limit=${limit}`}
             className="rounded-md border border-border px-4 py-2 font-semibold hover:bg-background-highlight"
           >
-            ← Newer
+            ← {t("page-explorer-newer")}
           </Link>
         ) : (
           <span />
         )}
         <span className="text-body-medium">
-          Page {page} of {totalPages.toLocaleString()}
+          {t("page-explorer-page-of", { page, total: totalPages })}
         </span>
         {page < totalPages ? (
           <Link
             href={`/explorer/blocks/?page=${page + 1}&limit=${limit}`}
             className="rounded-md border border-border px-4 py-2 font-semibold hover:bg-background-highlight"
           >
-            Older →
+            {t("page-explorer-older")} →
           </Link>
         ) : (
           <span />

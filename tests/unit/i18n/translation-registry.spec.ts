@@ -24,37 +24,28 @@ async function localesWithNamespace(namespace: string): Promise<string[]> {
 }
 
 test.describe("getTranslatedLocales — content-first resolution", () => {
-  test("video detail page returns exactly the locales whose markdown exists", async () => {
-    const slug = "videos/decentralized-social-media"
+  test("legal pages return exactly the locales whose markdown exists", async () => {
+    const slug = "cookie-policy"
     const result = await getTranslatedLocales(slug)
     const expected = localesWithContent(slug)
 
     expect(result).toContain("en")
-    expect(expected.length).toBeGreaterThan(1)
+    expect(expected).toEqual(["en"])
     expect([...result].sort()).toEqual([...expected].sort())
   })
 
-  test("hybrid page (markdown + UI namespace) gates on markdown, not namespace", async () => {
-    // /community/research/ has both a markdown source AND a page-community
-    // namespace mapped via prefix. Resolution must follow markdown.
-    const slug = "community/research"
+  test("pages without markdown or namespace fall back to the default locale", async () => {
+    const slug = "unmapped-registry-test-page"
+    expect(localesWithContent(slug)).toEqual([])
     const result = await getTranslatedLocales(slug)
-    const expected = localesWithContent(slug)
 
-    expect([...result].sort()).toEqual([...expected].sort())
+    expect(result).toEqual(["en"])
   })
 
   test("every returned locale has a corresponding markdown source", async () => {
     // The strongest invariant: for any content-driven slug, the resolver
     // must never claim translation for a locale that has no md on disk.
-    const slugs = [
-      "videos/decentralized-social-media",
-      "videos/blockchain-qau-build",
-      "developers/docs/accounts",
-      "developers/tutorials/gasless-token",
-      "community/research",
-      "about",
-    ]
+    const slugs = ["cookie-policy", "privacy-policy", "terms-of-use"]
     for (const slug of slugs) {
       const result = await getTranslatedLocales(slug)
       for (const loc of result) {
@@ -82,18 +73,13 @@ test.describe("getTranslatedLocales — pure-intl fallback", () => {
 
 test.describe("getTranslatedLocales — input handling", () => {
   test("slug normalization: with and without surrounding slashes return the same set", async () => {
-    const a = await getTranslatedLocales("videos/decentralized-social-media")
-    const b = await getTranslatedLocales("/videos/decentralized-social-media/")
+    const a = await getTranslatedLocales("cookie-policy")
+    const b = await getTranslatedLocales("/cookie-policy/")
     expect([...a].sort()).toEqual([...b].sort())
   })
 
   test("default locale is always present for any known page", async () => {
-    const slugs = [
-      "videos/decentralized-social-media",
-      "developers/tutorials/gasless-token",
-      "/wallets/",
-      "community/research",
-    ]
+    const slugs = ["cookie-policy", "/wallets/", "community/research"]
     for (const slug of slugs) {
       const result = await getTranslatedLocales(slug)
       expect(result, `default locale missing for ${slug}`).toContain("en")

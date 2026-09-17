@@ -1,6 +1,5 @@
-import Link from "next/link"
 import { notFound } from "next/navigation"
-import { setRequestLocale } from "next-intl/server"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 
 import type { PageParams } from "@/lib/types"
 
@@ -16,6 +15,7 @@ import {
 
 import { getMetadata } from "@/lib/utils/metadata"
 
+import { Link } from "@/i18n/navigation"
 import { getBlockByNumberOrTag, getBlockTxs } from "@/lib/explorer/api"
 
 export const dynamic = "force-dynamic"
@@ -25,6 +25,7 @@ export default async function BlockDetailPage(props: {
 }) {
   const { locale, number } = await props.params
   setRequestLocale(locale)
+  const t = await getTranslations("page-explorer")
 
   if (!/^\d+$/.test(number) && !/^0x[0-9a-fA-F]+$/.test(number)) notFound()
   const block = await getBlockByNumberOrTag("mainnet", number, false)
@@ -37,28 +38,32 @@ export default async function BlockDetailPage(props: {
     <main className="mx-auto w-full max-w-6xl px-page py-page-2x">
       <nav className="mb-6 text-sm text-body-medium">
         <Link href="/explorer/" className="hover:underline">
-          Explorer
+          {t("page-explorer-breadcrumb-explorer")}
         </Link>{" "}
         /{" "}
         <Link href="/explorer/blocks/" className="hover:underline">
-          Blocks
+          {t("page-explorer-breadcrumb-blocks")}
         </Link>{" "}
         / {blockNum.toLocaleString()}
       </nav>
       <h1 className="mb-8 text-4xl font-bold tracking-tight">
-        Block #{blockNum.toLocaleString()}
+        {t("page-explorer-block-title", { number: blockNum.toLocaleString() })}
       </h1>
 
       <section className="mb-10 overflow-x-auto rounded-xl border border-border">
         <table className="w-full text-sm">
           <tbody>
-            <Row label="Block height" value={blockNum.toLocaleString()} mono />
             <Row
-              label="Timestamp"
+              label={t("page-explorer-block-height")}
+              value={blockNum.toLocaleString()}
+              mono
+            />
+            <Row
+              label={t("page-explorer-timestamp")}
               value={`${dateFromHex(block.timestamp)} (${timeAgo(hexToTimestamp(block.timestamp))})`}
             />
             <Row
-              label="Miner"
+              label={t("page-explorer-miner")}
               value={
                 <Link
                   href={`/explorer/address/${block.miner}/`}
@@ -68,13 +73,32 @@ export default async function BlockDetailPage(props: {
                 </Link>
               }
             />
-            <Row label="Transactions" value={String(block.transactionCount)} />
-            <Row label="Gas used" value={gasFromHex(block.gasUsed)} mono />
-            <Row label="Gas limit" value={gasFromHex(block.gasLimit)} mono />
-            <Row label="Base fee" value={block.baseFeePerGas ?? "—"} mono />
-            <Row label="Hash" value={block.hash} mono />
             <Row
-              label="Parent hash"
+              label={t("page-explorer-transactions")}
+              value={String(block.transactionCount)}
+            />
+            <Row
+              label={t("page-explorer-gas-used")}
+              value={gasFromHex(block.gasUsed)}
+              mono
+            />
+            <Row
+              label={t("page-explorer-gas-limit")}
+              value={gasFromHex(block.gasLimit)}
+              mono
+            />
+            <Row
+              label={t("page-explorer-base-fee")}
+              value={block.baseFeePerGas ?? "—"}
+              mono
+            />
+            <Row
+              label={t("page-explorer-block-hash")}
+              value={block.hash}
+              mono
+            />
+            <Row
+              label={t("page-explorer-parent-hash")}
               value={
                 <Link
                   href={`/explorer/block/hash/${block.parentHash}/`}
@@ -84,32 +108,36 @@ export default async function BlockDetailPage(props: {
                 </Link>
               }
             />
-            <Row label="Difficulty" value={block.difficulty} mono />
-            <Row label="Size" value={block.size} mono />
-            <Row label="Nonce" value={block.nonce} mono />
+            <Row
+              label={t("page-explorer-difficulty")}
+              value={block.difficulty}
+              mono
+            />
+            <Row label={t("page-explorer-size")} value={block.size} mono />
+            <Row label={t("page-explorer-nonce")} value={block.nonce} mono />
           </tbody>
         </table>
       </section>
 
       <section>
         <h2 className="mb-4 text-2xl font-semibold">
-          Transactions ({txs.length})
+          {t("page-explorer-transactions")} ({txs.length})
         </h2>
         {txs.length === 0 ? (
           <p className="rounded-xl border border-border p-6 text-body-medium">
-            No transactions in this block.
+            {t("page-explorer-block-no-txs")}
           </p>
         ) : (
           <div className="overflow-x-auto rounded-xl border border-border">
             <table className="w-full text-sm">
               <thead className="border-b border-border text-left text-body-medium">
                 <tr>
-                  <th className="p-3">Tx hash</th>
-                  <th className="p-3">From</th>
-                  <th className="p-3">To</th>
-                  <th className="p-3">Value</th>
-                  <th className="p-3">Gas</th>
-                  <th className="p-3">Status</th>
+                  <th className="p-3">{t("page-explorer-tx-hash")}</th>
+                  <th className="p-3">{t("page-explorer-from")}</th>
+                  <th className="p-3">{t("page-explorer-to")}</th>
+                  <th className="p-3">{t("page-explorer-value")}</th>
+                  <th className="p-3">{t("page-explorer-gas")}</th>
+                  <th className="p-3">{t("page-explorer-status")}</th>
                 </tr>
               </thead>
               <tbody>
@@ -130,13 +158,15 @@ export default async function BlockDetailPage(props: {
                       {shortHash(tx.from, 8, 6)}
                     </td>
                     <td className="p-3 font-mono text-xs">
-                      {tx.to ? shortHash(tx.to, 8, 6) : "creation"}
+                      {tx.to
+                        ? shortHash(tx.to, 8, 6)
+                        : t("page-explorer-creation")}
                     </td>
                     <td className="p-3 font-mono">
                       {qauFromWeiHex(tx.value, 4)} QAU
                     </td>
                     <td className="p-3 font-mono">{gasFromHex(tx.gas)}</td>
-                    <td className="p-3">{tx.status}</td>
+                    <td className="p-3">{t(`page-explorer-${tx.status}`)}</td>
                   </tr>
                 ))}
               </tbody>
