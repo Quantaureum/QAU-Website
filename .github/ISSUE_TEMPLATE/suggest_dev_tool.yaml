@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Before submitting this suggestion, be sure to read our [listing policy for dev tools](https://quantaureum.com/contributing/adding-developer-tools/)
+        Read the [contribution guide](https://github.com/Quantaureum/QAU-Website/blob/master/CONTRIBUTING.md) before submitting. Describe the tool's actual Quantaureum compatibility and provide public evidence. A suggestion does not guarantee listing or endorsement. Never include private keys, seed phrases, or credentials.
   - type: markdown
     id: project_info
     attributes:
