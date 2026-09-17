@@ -384,6 +384,9 @@ export interface MinerStat {
   share: number
 }
 
+/** Public RPC endpoint shown to visitors — never the server transport. */
+export const PUBLIC_RPC_ENDPOINT_MAINNET = "https://rpc.quantaureum.com/"
+
 /** Network overview for the /explorer/network page. */
 export async function getNetworkInfo(network: RpcNetwork) {
   const [blockNumber, gas, peers] = await Promise.all([
@@ -397,10 +400,7 @@ export async function getNetworkInfo(network: RpcNetwork) {
     peerCount: peers ? hexToInt(peers) : 0,
     chainId: network === "mainnet" ? 1668 : 1669,
     network: network === "mainnet" ? "QAU Mainnet" : "QAU Testnet",
-    rpcEndpoint:
-      network === "mainnet"
-        ? (process.env.QAU_RPC_URL_MAINNET ?? "https://rpc.quantaureum.com/")
-        : (process.env.QAU_RPC_URL_TESTNET ?? ""),
+    rpcEndpoint: network === "mainnet" ? PUBLIC_RPC_ENDPOINT_MAINNET : "",
     consensus: "QPOS (Proof of Stake)",
     slotTime: 12,
   }
