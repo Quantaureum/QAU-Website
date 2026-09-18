@@ -32,7 +32,13 @@ export const useNavMenu = (sections: NavSections) => {
 
   // Focus corresponding nav section when number keys pressed
   useEventListener("keydown", (event) => {
-    if (!document || !event.key.match(/^[1-9]$/) || isModified(event)) return
+    if (
+      !document ||
+      typeof event.key !== "string" ||
+      !event.key.match(/^[1-9]$/) ||
+      isModified(event)
+    )
+      return
     if (event.target instanceof HTMLInputElement) return
     if (event.target instanceof HTMLTextAreaElement) return
     if (event.target instanceof HTMLSelectElement) return

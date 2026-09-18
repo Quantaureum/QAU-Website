@@ -40,7 +40,11 @@ const Search = ({ asChild = false, children }: SearchProps) => {
   // Keyboard shortcut: cmd/ctrl+K toggles the local search modal
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+      if (
+        (e.metaKey || e.ctrlKey) &&
+        typeof e.key === "string" &&
+        e.key.toLowerCase() === "k"
+      ) {
         e.preventDefault()
         isOpen ? onClose() : handleOpen()
       }
