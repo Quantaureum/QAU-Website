@@ -32,7 +32,7 @@ const CARDS: EcoCard[] = [
     titleKey: "explorer-title",
     descKey: "explorer-desc",
     ctaKey: "explorer-cta",
-    href: "https://explorer.quantaureum.com",
+    href: "/explorer/",
   },
   {
     id: "wallets",

@@ -380,9 +380,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           </p>
           <p>
             {t.rich("page-what-is-qau-what-is-the-qau-supply-description-6", {
-              explorer: (chunks) => (
-                <Link href="https://explorer.quantaureum.com">{chunks}</Link>
-              ),
+              explorer: (chunks) => <Link href="/explorer/">{chunks}</Link>,
             })}
           </p>
         </Section>
@@ -393,9 +391,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
             {t.rich(
               "page-what-is-qau-what-is-the-distribution-of-qau-description-1",
               {
-                explorer: (chunks) => (
-                  <Link href="https://explorer.quantaureum.com">{chunks}</Link>
-                ),
+                explorer: (chunks) => <Link href="/explorer/">{chunks}</Link>,
               }
             )}
           </p>

@@ -202,9 +202,7 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
             {t.rich(
               "page-what-is-quantaureum-network-gas-section-description-6",
               {
-                blog: (chunks) => (
-                  <Link href="https://explorer.quantaureum.com">{chunks}</Link>
-                ),
+                blog: (chunks) => <Link href="/explorer/">{chunks}</Link>,
                 strong: Strong,
               }
             )}
@@ -278,11 +276,9 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
             {t.rich(
               "page-what-is-quantaureum-network-staking-section-description-7",
               {
-                validators: (chunks) => (
-                  <Link href="https://explorer.quantaureum.com">{chunks}</Link>
-                ),
+                validators: (chunks) => <Link href="/explorer/">{chunks}</Link>,
                 stakedEther: (chunks) => (
-                  <Link href="https://explorer.quantaureum.com">{chunks}</Link>
+                  <Link href="/explorer/">{chunks}</Link>
                 ),
                 strong: Strong,
               }
@@ -384,11 +380,7 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
               {t.rich(
                 "page-what-is-quantaureum-network-live-network-data-section-description-9",
                 {
-                  explorer: (chunks) => (
-                    <Link href="https://explorer.quantaureum.com">
-                      {chunks}
-                    </Link>
-                  ),
+                  explorer: (chunks) => <Link href="/explorer/">{chunks}</Link>,
                 }
               )}
             </ListItem>
@@ -397,9 +389,7 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
                 "page-what-is-quantaureum-network-live-network-data-section-description-10",
                 {
                   beaconcha: (chunks) => (
-                    <Link href="https://explorer.quantaureum.com">
-                      {chunks}
-                    </Link>
+                    <Link href="/explorer/">{chunks}</Link>
                   ),
                 }
               )}
