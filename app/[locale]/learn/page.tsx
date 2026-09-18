@@ -173,7 +173,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
         },
         {
           label: t("official-explorer-title"),
-          href: "https://explorer.quantaureum.com",
+          href: "/explorer/",
           description: t("official-explorer-description"),
         },
         {

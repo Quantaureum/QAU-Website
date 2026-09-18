@@ -1,15 +1,15 @@
 import { getTranslations } from "next-intl/server"
 
+import SectionIconArrowsFullscreen from "@/components/icons/arrows-fullscreen.svg"
+import SectionIconHeartPulse from "@/components/icons/heart-pulse.svg"
+import SectionIconPrivacy from "@/components/icons/privacy.svg"
+import SectionIconQauGlyph from "@/components/icons/qau-glyph.svg"
+import SectionIconQauWallet from "@/components/icons/qau-wallet.svg"
+
 import type { DashboardSection } from "./types"
 
-import SectionIconArrowsFullscreen from "@/components/icons/arrows-fullscreen.svg"
-import SectionIconQauGlyph from "@/components/icons/qau-glyph.svg"
-import SectionIconHeartPulse from "@/components/icons/heart-pulse.svg"
-import SectionIconQauWallet from "@/components/icons/qau-wallet.svg"
-import SectionIconPrivacy from "@/components/icons/privacy.svg"
-
-import IconBrandMark from "@/public/images/qau-logo.png"
 import IconGlyph from "@/public/images/qau-glyph-thumbnail.png"
+import IconBrandMark from "@/public/images/qau-logo.png"
 
 export const getResources = async (): Promise<DashboardSection[]> => {
   const t = await getTranslations("page-resources")
@@ -21,7 +21,7 @@ export const getResources = async (): Promise<DashboardSection[]> => {
         {
           title: "Quantaureum Explorer",
           description: t("page-resources-block-explorers-explorer-description"),
-          href: "https://explorer.quantaureum.com",
+          href: "/explorer/",
           imgSrc: IconBrandMark,
         },
       ],
