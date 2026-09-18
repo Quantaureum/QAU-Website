@@ -1,0 +1,41 @@
+name: Deploy to production
+
+# Vercel-like auto-deploy: every push to master ships to the self-hosted
+# production server (quantaureum.com) over SSH. Fork pull requests never run
+# this workflow and never receive the deploy secrets.
+on:
+  push:
+    branches: [master]
+  workflow_dispatch: {}
+
+concurrency:
+  # Never let two deploys race; queue them instead of cancelling a live deploy.
+  group: deploy-production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Configure SSH from secrets
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+          ssh-keyscan -p "${{ secrets.DEPLOY_PORT || '22' }}" -H "${{ secrets.DEPLOY_HOST }}" >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Trigger deploy on server
+        run: |
+          ssh -i ~/.ssh/id_deploy \
+            -p "${{ secrets.DEPLOY_PORT || '22' }}" \
+            -o ConnectTimeout=20 \
+            "${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}" \
+            "bash ~/deploy-qau.sh ${{ github.sha }}"
+
+      - name: Cleanup key
+        if: always()
+        run: rm -f ~/.ssh/id_deploy
