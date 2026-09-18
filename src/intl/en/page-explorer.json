@@ -2,6 +2,7 @@
   "page-explorer-title": "QAU Explorer",
   "page-explorer-search-placeholder": "Search by address, transaction hash, or block number",
   "page-explorer-search": "Search",
+  "page-explorer-search-no-match": "No block, transaction, or address matches \"{query}\". Enter a 0x-prefixed 40-character address, a 66-character transaction hash, or a block number.",
   "page-explorer-explore": "Explore",
   "page-explorer-validators": "Validators",
   "page-explorer-miners": "Miners",

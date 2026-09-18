@@ -44,6 +44,7 @@ export default async function ExplorerPage(props: {
 
   // Search redirect (old-site behavior): /explorer?q=... → matching detail page
   const query = q?.trim() ?? ""
+  let searchNoMatch = false
   if (query) {
     const kind = getExplorerLookupKind(query)
     // Keep the current locale when redirecting into a detail page.
@@ -58,6 +59,8 @@ export default async function ExplorerPage(props: {
     if (detailPath) {
       redirect(locale === "en" ? detailPath : `/${locale}${detailPath}`)
     }
+    // Query present but not a recognizable address/tx/block shape.
+    searchNoMatch = true
   }
 
   // Kick the indexer so stats/list pages fill progressively
@@ -102,17 +105,21 @@ export default async function ExplorerPage(props: {
         />
       </div>
 
-      <form
-        className="mb-10 flex max-w-3xl gap-3"
-        method="get"
-        action="./explorer/"
-      >
+      {/*
+        Submit back to THIS explorer page (which handles ?q= server-side and
+        redirects to the matching detail page). Because trailingSlash is on, the
+        page URL is always /{locale}/explorer/ , so action="." resolves to the
+        current directory and preserves the locale prefix. A path like
+        "./explorer/" would resolve to /{locale}/explorer/explorer/ and 404.
+      */}
+      <form className="mb-10 flex max-w-3xl gap-3" method="get" action=".">
         <label className="sr-only" htmlFor="explorer-query">
           Search
         </label>
         <input
           id="explorer-query"
           name="q"
+          defaultValue={query}
           placeholder={t("page-explorer-search-placeholder")}
           className="min-h-12 min-w-0 flex-1 rounded-md border border-border bg-background px-4 font-mono text-sm"
         />
@@ -123,6 +130,12 @@ export default async function ExplorerPage(props: {
           {t("page-explorer-search")}
         </button>
       </form>
+
+      {searchNoMatch && (
+        <p role="alert" className="-mt-6 mb-10 max-w-3xl text-sm text-red-500">
+          {t("page-explorer-search-no-match", { query })}
+        </p>
+      )}
 
       {/* Quick links */}
       <section aria-labelledby="quick-links" className="mb-10">
