@@ -43,7 +43,7 @@
   "page-what-is-qau-how-long-does-it-take-to-send-eth": "QAU পাঠাতে কতক্ষণ সময় লাগে?",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-1": "প্রতিটি QAU লেনদেন post-quantum Dilithium3 সাইনেচার দিয়ে স্বাক্ষরিত, এরপর নেটওয়ার্কে প্রচারিত হয় এবং একটি ভ্যালিডেটর এটি ব্লকে অন্তর্ভুক্ত করে।",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-2": "ভ্যালিডেটর কমিটি threshold signature (GM-QTD) দিয়ে যৌথভাবে স্বাক্ষর করলে একটি ব্লক চূড়ান্ত হয় — একাধিক সম্ভাব্য নিশ্চিতকরণের অপেক্ষার প্রয়োজন নেই।",
-  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "উচ্চ নেটওয়ার্ক ট্রাফিকের সময়, বেশি priority fee প্রদান করে আপনি লেনদেন ত্বরান্বিত করতে পারেন, ফলে আপনি লাইনে এগিয়ে যান। বেস ফি পুড়িয়ে ফেলা হয়; priority fee ব্লক প্রস্পোজারকে যায়।",
+  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "নেটওয়ার্কে উচ্চ ট্র্যাফিক চলাকালীন, আপনি বেশি অগ্রাধিকার ফি পরিশোধ করে লেনদেন দ্রুত করতে পারেন, যা আপনাকে লাইনে সামনে রাখে। ফি লেনদেন প্রক্রিয়াকরণ এবং ব্লক প্রস্তাবককে পুরস্কৃত করার জন্য ব্যবহৃত হয়।",
   "page-what-is-qau-how-much-does-it-cost-to-send-eth": "QAU পাঠাতে কত খরচ হয়?",
   "page-what-is-qau-how-much-does-it-cost-to-send-qau-description-1": "Quantaureum লেনদেনের জন্য <strong>QAU-এ প্রদত্ত ফি</strong> প্রয়োজন। ফি গণনা করা হয় প্রয়োজনীয় গণনামূলক কাজ ('gas' এককে মাপা) এবং নেটওয়ার্কের বর্তমান চাহিদার ভিত্তিতে। Gas-এর দাম নেটওয়ার্ক ট্রাফিকের সাথে পরিবর্তনশীল, তাই অফ-পিক সময়ে লেনদেনের খরচ কম।",
   "page-what-is-qau-how-much-does-it-cost-note": "বর্তমান ফি মাত্রার জানতে ব্লক Explorer-এ দেখুন — লাইভ গ্যাস মূল্য বাস্তব নেটওয়ার্কের অবস্থার ওপর নির্ভর করে, তাই এই পৃষ্ঠাটি সচেতনভাবে কোনো নির্দিষ্ট সংখ্যা উদ্ধৃৎ করতে বিরত থাকে।",

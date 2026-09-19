@@ -124,7 +124,7 @@
   "page-find-wallet-methodology-criterion-maintenance": "Aktywnie utrzymywany, z dostępnym wsparciem dla użytkowników.",
   "page-find-wallet-methodology-criterion-honest-info": "Dostarcza uczciwych, dokładnych informacji o ofercie. Produkty, które fałszują szczegóły, są usuwane.",
   "page-find-wallet-methodology-criterion-contact": "Posiada wyznaczoną osobę kontaktową, dzięki czemu możemy weryfikować informacje w przypadku ich zmiany.",
-  "page-find-wallet-methodology-criterion-eip1559": "Obsługuje transakcje EIP-1559 (typu 2) w sieci głównej Quantaureum.",
+  "page-find-wallet-methodology-criterion-eip1559": "Poprawnie wysyła transakcje w sieci Quantaureum i w przejrzysty sposób obsługuje opłaty transakcyjne.",
   "page-find-wallet-methodology-criterion-ux": "Oferuje weryfikowalne doświadczenie użytkownika. Jeśli nasz zespół uzna produkt za trudny w użyciu, możemy poprosić o ulepszenia przed dodaniem go do listy.",
   "page-find-wallet-methodology-criterion-quantaureum-focused": "Skupia się na Quantaureum, z Quantaureum lub warstwą 2 ustawioną jako domyślna sieć.",
   "page-find-wallet-methodology-verification": "Listy nie są statyczne. Dostawcy portfeli są zobowiązani do ponownego przesyłania informacji co sześć miesięcy. Jeśli zespół nie odpowie, usuwamy portfel. Dzięki temu katalog pozostaje dokładny w miarę ewolucji produktów.",

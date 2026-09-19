@@ -124,7 +124,7 @@
   "page-find-wallet-methodology-criterion-maintenance": "Mantenuto attivamente, con supporto disponibile per gli utenti.",
   "page-find-wallet-methodology-criterion-honest-info": "Fornisce informazioni di inserimento oneste e accurate. I prodotti che falsificano i dettagli vengono rimossi.",
   "page-find-wallet-methodology-criterion-contact": "Ha un punto di contatto designato in modo da poter verificare le informazioni quando cambiano.",
-  "page-find-wallet-methodology-criterion-eip1559": "Supporta le transazioni EIP-1559 (tipo 2) sulla Mainnet di Quantaureum.",
+  "page-find-wallet-methodology-criterion-eip1559": "Invia correttamente le transazioni sulla rete Quantaureum e gestisce le commissioni di transazione in modo trasparente.",
   "page-find-wallet-methodology-criterion-ux": "Offre un'esperienza utente verificabile. Se il nostro team ritiene che un prodotto sia difficile da usare, potremmo richiedere miglioramenti prima di elencarlo.",
   "page-find-wallet-methodology-criterion-quantaureum-focused": "È incentrato su Quantaureum, con Quantaureum o un layer 2 impostato come rete predefinita.",
   "page-find-wallet-methodology-verification": "Gli elenchi non sono statici. Ai fornitori di portafogli è richiesto di inviare nuovamente le informazioni ogni sei mesi. Se un team non risponde, rimuoviamo il portafoglio. Questo mantiene la directory accurata man mano che i prodotti si evolvono.",

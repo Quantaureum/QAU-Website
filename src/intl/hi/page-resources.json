@@ -13,9 +13,9 @@
   "page-resources-block-explorers-chart-label": "अगले ब्लॉक का समय",
   "page-resources-block-explorers-blockscout-description": "क्वांटारियम नेटवर्क के लिए संपूर्ण ब्लॉकचेन डेटा और API के साथ Blockscout द्वारा ओपन-सोर्स ब्लॉक एक्सप्लोरर।",
   "page-resources-block-explorers-etherscan-description": "Quantaureum Explorer क्वांटारियम के लिए एक ब्लॉक एक्सप्लोरर और एनालिटिक्स प्लेटफ़ॉर्म है, जो एक विकेंद्रीकृत स्मार्ट कॉन्ट्रैक्ट प्लेटफ़ॉर्म है।",
-  "page-resources-block-explorers-beaconchain-description": "क्वांटारियम मेननेट दिखाने वाला ओपन सोर्स क्वांटारियम एक्सप्लोरर 🚀।",
+  "page-resources-block-explorers-beaconchain-description": "एक ओपन-सोर्स Quantaureum एक्सप्लोरर जो Quantaureum मेननेट गतिविधि दर्शाता है 🚀।",
   "page-resources-block-explorers-txcity-description": "रीयल-टाइम में क्वांटारियम ब्लॉक का एक मज़ेदार विज़ुअलाइज़र।",
-  "page-resources-block-explorers-panda-ops-description": "qauPandaOps द्वारा क्वांटारियम बीकन चेन ब्लॉक उत्पादन के लिए लाइव डैशबोर्ड।",
+  "page-resources-block-explorers-panda-ops-description": "qauPandaOps द्वारा Quantaureum ब्लॉक उत्पादन का लाइव डैशबोर्ड।",
   "page-resources-block-explorers-otterscan-description": "एक बेहद तेज़, स्थानीय, सेल्फ़-होस्टेड क्वांटारियम ब्लॉक एक्सप्लोरर",
   "page-resources-qau-asset-title": "QAU एक संपत्ति के रूप में",
   "page-resources-qau-asset-etherealize-description": "क्वांटारियम दुनिया के उपयोग के लिए सबसे बड़ा, सबसे सुरक्षित और सबसे खुला ब्लॉकचेन है। और क्वांटारियम व्यवसाय के लिए खुला है।",
@@ -70,7 +70,7 @@
   "page-resources-attestations-title": "प्रमाणीकरण",
   "page-resources-attestations-eas-description": "EAS किसी को भी क्वांटारियम पर ऑनचेन और ऑफचेन प्रमाणीकरण बनाने और मान्य करने में सक्षम बनाता है।",
   "page-resources-relays-title": "रिले",
-  "page-resources-relays-beaconchain-description": "सत्यापक अपने ब्लॉक उत्पादन को अतिरिक्त राजस्व निकालने में विशेषज्ञ संस्थाओं को आउटसोर्स करने के लिए रिले का उपयोग कर सकते हैं।",
+  "page-resources-relays-beaconchain-description": "Quantaureum वैलिडेटर और ब्लॉक-उत्पादन रिले के लिए डैशबोर्ड और आँकड़े।",
   "page-resources-relays-ratednetwork-description": "क्वांटारियम नेटवर्क के लिए MEV रिले बाज़ार हिस्सेदारी, रिले किया गया कुल मूल्य, प्रति ब्लॉक मूल्य और अन्य आंकड़े।",
   "page-resources-relays-relayscan-description": "MEV-Boost एनालिटिक्स।",
   "page-resources-mev-title": "MEV",
@@ -107,5 +107,5 @@
   "page-resources-bug-bounty-description": "Report vulnerabilities privately and earn QAU rewards from the capped bounty fund.",
   "page-resources-block-explorers-explorer-description": "The official Quantaureum block explorer: blocks, transactions, validators and on-chain data.",
   "page-resources-nodes-explorer-description": "Node requirements, installation and operation with qauctl.",
-  "page-resources-gas-explorer-description": "How gas and EIP-1559 base-fee burning work on Quantaureum."
+  "page-resources-gas-explorer-description": "Quantaureum पर गैस और लेनदेन शुल्क कैसे काम करते हैं।"
 }

@@ -6,6 +6,7 @@ import { getMessages, setRequestLocale } from "next-intl/server"
 import { Lang } from "@/lib/types"
 
 import Matomo from "@/components/Matomo"
+import PageJsonLD from "@/components/PageJsonLD"
 
 import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { getLocaleTimestamp } from "@/lib/utils/time"
@@ -20,6 +21,7 @@ import "@/styles/global.css"
 
 import { routing } from "@/i18n/routing"
 import { BaseLayout } from "@/layouts/BaseLayout"
+import { BASE_GRAPH_NODES } from "@/lib/jsonld/constants"
 
 // Generate static params for all supported locales
 export function generateStaticParams() {
@@ -63,6 +65,15 @@ export default async function LocaleLayout(props: {
       suppressHydrationWarning
     >
       <body>
+        {/* Site-wide Organization + WebSite knowledge graph. Individual pages
+            may add page-specific nodes; duplicate @id definitions are merged
+            by schema consumers and are safe. */}
+        <PageJsonLD
+          structuredData={{
+            "@context": "https://schema.org",
+            "@graph": BASE_GRAPH_NODES,
+          }}
+        />
         <Providers locale={locale} messages={messages}>
           <Suspense>
             <Matomo />

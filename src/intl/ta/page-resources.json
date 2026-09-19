@@ -13,9 +13,9 @@
   "page-resources-block-explorers-chart-label": "அடுத்த தொகுதிக்கான நேரம்",
   "page-resources-block-explorers-blockscout-description": "எத்திரியம் பிணையங்களுக்கான முழுமையான தொகுதிச்சங்கிலி தரவு மற்றும் APIகளுடன் Blockscout வழங்கும் திறந்த மூல தொகுதி ஆராய்வி.",
   "page-resources-block-explorers-etherscan-description": "Quantaureum Explorer என்பது பரவலாக்கப்பட்ட ஸ்மார்ட் ஒப்பந்த தளமான எத்திரியத்திற்கான தொகுதி ஆராய்வி மற்றும் பகுப்பாய்வு தளமாகும்.",
-  "page-resources-block-explorers-beaconchain-description": "எத்தேரியம் முதன்மை வலைப்பின்னலைக் காட்டும் திறந்த மூல எத்திரியம் ஆராய்வி 🚀.",
+  "page-resources-block-explorers-beaconchain-description": "Quantaureum மெயின்நெட் செயல்பாட்டைக் காட்டும் திறந்த மூல Quantaureum உலாவி 🚀.",
   "page-resources-block-explorers-txcity-description": "நிகழ்நேரத்தில் எத்திரியம் தொகுதிகளின் வேடிக்கையான காட்சிப்படுத்தி.",
-  "page-resources-block-explorers-panda-ops-description": "qauPandaOps வழங்கும் எத்திரியம் பீக்கன் சங்கிலி தொகுதி உற்பத்திக்கான நேரடி டாஷ்போர்டு.",
+  "page-resources-block-explorers-panda-ops-description": "qauPandaOps வழங்கும் Quantaureum பிளாக் உற்பத்திக்கான நேரடி டாஷ்போர்டு.",
   "page-resources-block-explorers-otterscan-description": "மிகவும் வேகமான, உள்ளூர், சுய-ஹோஸ்ட் செய்யப்பட்ட எத்திரியம் தொகுதி ஆராய்வி",
   "page-resources-qau-asset-title": "சொத்தாக QAU",
   "page-resources-qau-asset-etherealize-description": "எத்திரியம் என்பது உலகம் பயன்படுத்துவதற்கான மிகப்பெரிய, மிகவும் பாதுகாப்பான மற்றும் மிகவும் திறந்த தொகுதிச்சங்கிலி ஆகும். மேலும் எத்திரியம் வணிகத்திற்காக திறக்கப்பட்டுள்ளது.",
@@ -70,7 +70,7 @@
   "page-resources-attestations-title": "சான்றளிப்புகள்",
   "page-resources-attestations-eas-description": "எத்திரியத்தில் சங்கிலிசார் மற்றும் புறச்சங்கிலி சான்றளிப்புகளை உருவாக்கவும் சரிபார்க்கவும் EAS எவரையும் அனுமதிக்கிறது.",
   "page-resources-relays-title": "ரிலேக்கள்",
-  "page-resources-relays-beaconchain-description": "கூடுதல் வருவாயைப் பிரித்தெடுப்பதில் நிபுணத்துவம் பெற்ற நிறுவனங்களுக்குத் தங்கள் தொகுதி உற்பத்தியை அவுட்சோர்ஸ் செய்ய சரிபார்ப்பான்கள் ரிலேக்களைப் பயன்படுத்தலாம்.",
+  "page-resources-relays-beaconchain-description": "Quantaureum சரிபார்ப்பாளர் மற்றும் பிளாக்-உற்பத்தி ரிலேக்களுக்கான டாஷ்போர்டுகள் மற்றும் புள்ளிவிவரங்கள்.",
   "page-resources-relays-ratednetwork-description": "எத்திரியம் பிணையத்திற்கான MEV ரிலே சந்தைப் பங்கு, ரிலே செய்யப்பட்ட மொத்த மதிப்பு, ஒரு தொகுதிக்கான மதிப்பு மற்றும் பிற புள்ளிவிவரங்கள்.",
   "page-resources-relays-relayscan-description": "MEV-Boost பகுப்பாய்வு.",
   "page-resources-mev-title": "MEV",
@@ -107,5 +107,5 @@
   "page-resources-bug-bounty-description": "Report vulnerabilities privately and earn QAU rewards from the capped bounty fund.",
   "page-resources-block-explorers-explorer-description": "The official Quantaureum block explorer: blocks, transactions, validators and on-chain data.",
   "page-resources-nodes-explorer-description": "Node requirements, installation and operation with qauctl.",
-  "page-resources-gas-explorer-description": "How gas and EIP-1559 base-fee burning work on Quantaureum."
+  "page-resources-gas-explorer-description": "Quantaureum இல் எரிவாயு மற்றும் பரிவர்த்தனை கட்டணங்கள் எவ்வாறு செயல்படுகின்றன."
 }

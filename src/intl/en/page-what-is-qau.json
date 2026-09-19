@@ -43,7 +43,7 @@
   "page-what-is-qau-how-long-does-it-take-to-send-eth": "How long does it take to send QAU?",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-1": "Every QAU transaction is signed with a post-quantum ML-DSA-65 signature, then broadcast to the network and included in a block by a validator.",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-2": "A block is finalized when the validator committee co-signs it with a threshold signature (GM-QTD) — no waiting for multiple probabilistic confirmations.",
-  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "During high network traffic, you can speed up transactions by paying higher priority fees, placing you ahead in line. The base fee is burned; the priority fee goes to the block proposer.",
+  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "During high network traffic, you can speed up transactions by paying higher priority fees, placing you ahead in line. The fee goes toward processing the transaction and rewarding the block proposer.",
   "page-what-is-qau-how-much-does-it-cost-to-send-eth": "How much does it cost to send QAU?",
   "page-what-is-qau-how-much-does-it-cost-to-send-qau-description-1": "Quantaureum transactions require <strong>fees paid in QAU</strong>. The fee is calculated based on the computational work required (measured in 'gas') and the network's current demand. The price of gas fluctuates with network traffic, making transactions lower-cost during off-peak periods.",
   "page-what-is-qau-how-much-does-it-cost-note": "For current fee levels, check the block explorer — live gas prices depend on real network conditions, so this page intentionally avoids quoting fixed numbers.",

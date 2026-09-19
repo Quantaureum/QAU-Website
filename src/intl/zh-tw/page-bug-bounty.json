@@ -35,7 +35,7 @@
   "page-upgrades-bug-bounty-submit": "Submit a vulnerability report",
   "page-upgrades-bug-bounty-subtitle": "Earn up to 5,000 QAU per vulnerability from a capped fund of 25,000 QAU by finding protocol, node and cryptographic implementation bugs affecting the Quantaureum network.",
   "page-upgrades-bug-bounty-title": "Open for submissions",
-  "page-upgrades-bug-bounty-title-1": "Beacon Chain",
+  "page-upgrades-bug-bounty-title-1": "共識",
   "page-upgrades-bug-bounty-title-2": "Fork choice",
   "page-upgrades-bug-bounty-title-3": "Solidity deposit contract",
   "page-upgrades-bug-bounty-title-4": "Peer-to-peer networking",

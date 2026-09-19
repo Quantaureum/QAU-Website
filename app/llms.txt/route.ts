@@ -13,9 +13,18 @@ export const dynamic = "force-static"
 
 const INTRO = `# quantaureum.com
 
-> The official Quantaureum website providing comprehensive education, resources, and community information about Quantaureum — the decentralized world computer that enables smart contracts and decentralized applications.
+> The official Quantaureum website: education, resources, and community information about Quantaureum, an independent quantum-secure Layer-1 blockchain.
 
-quantaureum.com is the primary educational hub for Quantaureum, offering beginner-friendly explanations alongside advanced technical documentation. The site covers everything from basic concepts like "What is Quantaureum?" to detailed developer guides, staking information, and protocol research. For the developer-documentation-only index, see ${SITE_URL}/developers/docs/llms.txt. Markdown-backed pages (most educational and documentation content) serve their raw markdown source at the page URL plus a \`.md\` suffix — e.g. ${SITE_URL}/smart-contracts.md, or ${SITE_URL}/es/smart-contracts.md for a translation — and advertise it in HTML via \`<link rel="alternate" type="text/markdown">\`. To report a security vulnerability in Quantaureum's core protocol, clients, or key smart contracts, see the Quantaureum project Bug Bounty Program at ${SITE_URL}/bug-bounty (summarized under "Security & Bug Bounty" below).`
+Quantaureum is an independent post-quantum secure Layer-1 blockchain, built in Go — not an Ethereum fork or rollup. Core protocol facts:
+
+- Native token: QAU (18 decimals, 100,000,000 total supply)
+- Chain IDs: mainnet 1668, testnet 1669, devnet 1333
+- Post-quantum cryptography: Dilithium3 signatures (NIST FIPS 204) and Kyber768 KEM (NIST FIPS 203), replacing ECDSA
+- Consensus: QPOS (Quantum Proof of Stake) with threshold (QTD) key signing
+- Smart contracts: QVM virtual machine with QASM assembly
+- Block explorer: ${SITE_URL}/explorer (also explorer.quantaureum.com)
+
+quantaureum.com is the primary educational hub for Quantaureum, covering everything from basic concepts like "What is Quantaureum?" to developer guides, staking, and protocol research. Markdown-backed pages (most educational and documentation content) serve their raw markdown source at the page URL plus a \`.md\` suffix — e.g. ${SITE_URL}/smart-contracts.md, or ${SITE_URL}/es/smart-contracts.md for a translation — and advertise it in HTML via \`<link rel="alternate" type="text/markdown">\`. To report a security vulnerability in Quantaureum's core protocol, clients, or key smart contracts, see the Quantaureum project Bug Bounty Program at ${SITE_URL}/bug-bounty (summarized under "Security & Bug Bounty" below).`
 
 const SECURITY = `## Security & Bug Bounty
 

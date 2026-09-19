@@ -124,7 +124,7 @@
   "page-find-wallet-methodology-criterion-maintenance": "Kullanıcılar için destek mevcut olacak şekilde aktif olarak sürdürülmelidir.",
   "page-find-wallet-methodology-criterion-honest-info": "Dürüst, doğru listeleme bilgileri sağlamalıdır. Ayrıntıları tahrif eden ürünler kaldırılır.",
   "page-find-wallet-methodology-criterion-contact": "Bilgiler değiştiğinde doğrulayabilmemiz için belirli bir iletişim noktasına sahip olmalıdır.",
-  "page-find-wallet-methodology-criterion-eip1559": "Quantaureum Ana Ağı üzerinde EIP-1559 (tip 2) işlemlerini desteklemelidir.",
+  "page-find-wallet-methodology-criterion-eip1559": "Quantaureum ağında işlemleri doğru şekilde gönderir ve işlem ücretlerini şeffaf bir şekilde yönetir.",
   "page-find-wallet-methodology-criterion-ux": "İncelenebilir bir kullanıcı deneyimi sunmalıdır. Ekibimiz bir ürünü kullanmayı zor bulursa, listelemeden önce iyileştirmeler talep edebiliriz.",
   "page-find-wallet-methodology-criterion-quantaureum-focused": "Quantaureum odaklı olmalı, varsayılan ağ olarak Quantaureum veya bir Katman 2 ayarlanmış olmalıdır.",
   "page-find-wallet-methodology-verification": "Listelemeler statik değildir. Cüzdan sağlayıcılarının her altı ayda bir bilgileri yeniden göndermesi gerekir. Bir ekip yanıt vermezse cüzdanı kaldırırız. Bu, ürünler geliştikçe dizinin doğru kalmasını sağlar.",

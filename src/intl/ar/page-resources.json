@@ -13,9 +13,9 @@
   "page-resources-block-explorers-chart-label": "الوقت حتى الكتلة التالية",
   "page-resources-block-explorers-blockscout-description": "مستكشف كتل مفتوح المصدر من ⁦Blockscout⁩ مع بيانات سلسلة الكتل كاملة وواجهات برمجة التطبيقات (APIs) لشبكات إيثيريوم.",
   "page-resources-block-explorers-etherscan-description": "⁦Quantaureum Explorer⁩ هو مستكشف كتل ومنصة تحليلات لإيثيريوم، وهي منصة عقود ذكية لامركزية.",
-  "page-resources-block-explorers-beaconchain-description": "مستكشف إيثيريوم مفتوح المصدر يعرض شبكة إيثيريوم الرئيسية 🚀.",
+  "page-resources-block-explorers-beaconchain-description": "متصفح Quantaureum مفتوح المصدر يعرض نشاط شبكة Quantaureum الرئيسية 🚀.",
   "page-resources-block-explorers-txcity-description": "أداة تصوير مرئية ممتعة لكتل إيثيريوم في الوقت الفعلي.",
-  "page-resources-block-explorers-panda-ops-description": "لوحة تحكم مباشرة لإنتاج كتل سلسلة المنارة لإيثيريوم بواسطة ⁦qauPandaOps⁩.",
+  "page-resources-block-explorers-panda-ops-description": "لوحة معلومات مباشرة لإنتاج كتل Quantaureum بواسطة qauPandaOps.",
   "page-resources-block-explorers-otterscan-description": "مستكشف كتل إيثيريوم محلي وسريع للغاية ومستضاف ذاتيًا",
   "page-resources-qau-asset-title": "⁦QAU⁩ كأصل",
   "page-resources-qau-asset-etherealize-description": "إيثيريوم هي سلسلة الكتل الأكبر والأكثر أمانًا وانفتاحًا ليستخدمها العالم. وإيثيريوم مفتوحة للأعمال.",
@@ -70,7 +70,7 @@
   "page-resources-attestations-title": "الإثباتات",
   "page-resources-attestations-eas-description": "يُمكّن ⁦EAS⁩ أي شخص من إنشاء والتحقق من الإثباتات على السلسلة وخارج السلسلة على إيثيريوم.",
   "page-resources-relays-title": "المُرحِّلات",
-  "page-resources-relays-beaconchain-description": "يمكن للمُدَقِّقين استخدام المُرحِّلات للاستعانة بمصادر خارجية لإنتاج الكتل الخاصة بهم إلى كيانات متخصصة في استخراج إيرادات إضافية.",
+  "page-resources-relays-beaconchain-description": "لوحات معلومات وإحصاءات لمرحّلات المدقّقين وإنتاج الكتل في Quantaureum.",
   "page-resources-relays-ratednetwork-description": "الحصة السوقية لمُرحِّل ⁦MEV⁩، وإجمالي القيمة المُرحَّلة، والقيمة لكل كتلة، وإحصائيات أخرى لشبكة إيثيريوم.",
   "page-resources-relays-relayscan-description": "تحليلات ⁦MEV-Boost⁩.",
   "page-resources-mev-title": "⁦MEV⁩",
@@ -107,5 +107,5 @@
   "page-resources-bug-bounty-description": "Report vulnerabilities privately and earn QAU rewards from the capped bounty fund.",
   "page-resources-block-explorers-explorer-description": "The official Quantaureum block explorer: blocks, transactions, validators and on-chain data.",
   "page-resources-nodes-explorer-description": "Node requirements, installation and operation with qauctl.",
-  "page-resources-gas-explorer-description": "How gas and EIP-1559 base-fee burning work on Quantaureum."
+  "page-resources-gas-explorer-description": "كيف تعمل الرسوم وتكاليف الغاز في Quantaureum."
 }

@@ -124,7 +124,7 @@
   "page-find-wallet-methodology-criterion-maintenance": "Được bảo trì tích cực, có sẵn hỗ trợ cho người dùng.",
   "page-find-wallet-methodology-criterion-honest-info": "Cung cấp thông tin niêm yết trung thực, chính xác. Các sản phẩm làm sai lệch thông tin chi tiết sẽ bị xóa.",
   "page-find-wallet-methodology-criterion-contact": "Có một đầu mối liên hệ được chỉ định để chúng tôi có thể xác minh thông tin khi có thay đổi.",
-  "page-find-wallet-methodology-criterion-eip1559": "Hỗ trợ các giao dịch EIP-1559 (loại 2) trên Mạng chính Quantaureum.",
+  "page-find-wallet-methodology-criterion-eip1559": "Gửi giao dịch một cách chính xác trên mạng lưới Quantaureum và xử lý phí giao dịch một cách minh bạch.",
   "page-find-wallet-methodology-criterion-ux": "Cung cấp trải nghiệm người dùng có thể đánh giá được. Nếu đội ngũ của chúng tôi thấy một sản phẩm khó sử dụng, chúng tôi có thể yêu cầu cải thiện trước khi niêm yết.",
   "page-find-wallet-methodology-criterion-quantaureum-focused": "Tập trung vào Quantaureum, với Quantaureum hoặc một Lớp 2 được đặt làm mạng lưới mặc định.",
   "page-find-wallet-methodology-verification": "Các danh sách niêm yết không phải là tĩnh. Các nhà cung cấp ví được yêu cầu gửi lại thông tin sáu tháng một lần. Nếu một đội ngũ không phản hồi, chúng tôi sẽ xóa ví đó. Điều này giúp danh mục luôn chính xác khi các sản phẩm phát triển.",

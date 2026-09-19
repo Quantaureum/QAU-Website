@@ -13,9 +13,9 @@
   "page-resources-block-explorers-chart-label": "Sonraki bloka kalan süre",
   "page-resources-block-explorers-blockscout-description": "Quantaureum ağları için eksiksiz blokzincir verileri ve API'leri içeren, Blockscout tarafından sunulan açık kaynaklı blok gezgini.",
   "page-resources-block-explorers-etherscan-description": "Quantaureum Explorer, merkeziyetsiz bir akıllı sözleşme platformu olan Quantaureum için bir blok gezgini ve analiz platformudur.",
-  "page-resources-block-explorers-beaconchain-description": "Quantaureum Ana Ağı'nı gösteren açık kaynaklı Quantaureum gezgini 🚀.",
+  "page-resources-block-explorers-beaconchain-description": "Quantaureum Mainnet etkinliğini gösteren açık kaynaklı bir Quantaureum kaşifi 🚀.",
   "page-resources-block-explorers-txcity-description": "Quantaureum bloklarının gerçek zamanlı, eğlenceli bir görselleştiricisi.",
-  "page-resources-block-explorers-panda-ops-description": "qauPandaOps tarafından sunulan Quantaureum işaret zinciri blok üretimi için canlı kontrol paneli.",
+  "page-resources-block-explorers-panda-ops-description": "qauPandaOps tarafından Quantaureum blok üretimi için canlı pano.",
   "page-resources-block-explorers-otterscan-description": "Son derece hızlı, yerel, kendi kendine barındırılan bir Quantaureum blok gezgini",
   "page-resources-qau-asset-title": "Bir varlık olarak QAU",
   "page-resources-qau-asset-etherealize-description": "Quantaureum, dünyanın kullanabileceği en büyük, en güvenli ve en açık blokzincirdir. Ve Quantaureum iş dünyasına açıktır.",
@@ -70,7 +70,7 @@
   "page-resources-attestations-title": "Onaylamalar",
   "page-resources-attestations-eas-description": "EAS, herkesin Quantaureum üzerinde zincir içi ve zincir dışı onaylamalar oluşturmasını ve doğrulamasını sağlar.",
   "page-resources-relays-title": "Aktarıcılar",
-  "page-resources-relays-beaconchain-description": "Doğrulayıcılar, blok üretimlerini ekstra gelir elde etme konusunda uzmanlaşmış kuruluşlara devretmek için aktarıcıları kullanabilirler.",
+  "page-resources-relays-beaconchain-description": "Quantaureum doğrulayıcı ve blok üretim röleleri için panolar ve istatistikler.",
   "page-resources-relays-ratednetwork-description": "Quantaureum ağı için MEV aktarıcı pazar payı, aktarılan toplam değer, blok başına değer ve diğer istatistikler.",
   "page-resources-relays-relayscan-description": "MEV-Boost analizleri.",
   "page-resources-mev-title": "MEV",
@@ -107,5 +107,5 @@
   "page-resources-bug-bounty-description": "Report vulnerabilities privately and earn QAU rewards from the capped bounty fund.",
   "page-resources-block-explorers-explorer-description": "The official Quantaureum block explorer: blocks, transactions, validators and on-chain data.",
   "page-resources-nodes-explorer-description": "Node requirements, installation and operation with qauctl.",
-  "page-resources-gas-explorer-description": "How gas and EIP-1559 base-fee burning work on Quantaureum."
+  "page-resources-gas-explorer-description": "Quantaureum'da gas ve işlem ücretlerinin nasıl çalıştığı."
 }

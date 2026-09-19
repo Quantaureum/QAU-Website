@@ -124,7 +124,7 @@
   "page-find-wallet-methodology-criterion-maintenance": "تتم صيانتها بنشاط، مع توفر الدعم للمستخدمين.",
   "page-find-wallet-methodology-criterion-honest-info": "توفر معلومات إدراج صادقة ودقيقة. تتم إزالة المنتجات التي تزيف التفاصيل.",
   "page-find-wallet-methodology-criterion-contact": "لديها نقطة اتصال محددة حتى نتمكن من التحقق من المعلومات عند تغيرها.",
-  "page-find-wallet-methodology-criterion-eip1559": "تدعم معاملات ⁦EIP-1559⁩ (النوع 2) على شبكة إيثيريوم الرئيسية.",
+  "page-find-wallet-methodology-criterion-eip1559": "يرسل المعاملات بشكل صحيح على شبكة Quantaureum ويتعامل مع رسوم المعاملات بشفافية.",
   "page-find-wallet-methodology-criterion-ux": "تقدم تجربة مستخدم قابلة للمراجعة. إذا وجد فريقنا أن المنتج يصعب استخدامه، فقد نطلب تحسينات قبل إدراجه.",
   "page-find-wallet-methodology-criterion-quantaureum-focused": "تركز على إيثيريوم، مع تعيين إيثيريوم أو طبقة 2 (L2) كشبكة افتراضية.",
   "page-find-wallet-methodology-verification": "القوائم ليست ثابتة. يُطلب من مزودي المحافظ إعادة إرسال المعلومات كل ستة أشهر. إذا لم يستجب الفريق، نقوم بإزالة المحفظة. هذا يحافظ على دقة الدليل مع تطور المنتجات.",

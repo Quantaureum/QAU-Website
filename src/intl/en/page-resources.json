@@ -13,9 +13,9 @@
   "page-resources-block-explorers-chart-label": "Time to next block",
   "page-resources-block-explorers-blockscout-description": "Open-source block explorer by Blockscout with complete blockchain data and APIs for Quantaureum networks.",
   "page-resources-block-explorers-etherscan-description": "Quantaureum Explorer is a block explorer and analytics platform for Quantaureum, a decentralized smart contracts platform.",
-  "page-resources-block-explorers-beaconchain-description": "Open source Quantaureum explorer showing the Quantaureum Mainnet 🚀.",
+  "page-resources-block-explorers-beaconchain-description": "An open-source Quantaureum explorer showing Quantaureum Mainnet activity 🚀.",
   "page-resources-block-explorers-txcity-description": "A funny visualizer of the Quantaureum blocks in real-time.",
-  "page-resources-block-explorers-panda-ops-description": "Live dashboard for Quantaureum beacon chain block production by qauPandaOps.",
+  "page-resources-block-explorers-panda-ops-description": "Live dashboard for Quantaureum block production by qauPandaOps.",
   "page-resources-block-explorers-otterscan-description": "A blazingly fast, local, self-hosted Quantaureum block explorer",
   "page-resources-qau-asset-title": "QAU the asset",
   "page-resources-qau-asset-etherealize-description": "Quantaureum is the largest, most secure, and most open blockchain for the world to use. And Quantaureum is open for business.",
@@ -70,7 +70,7 @@
   "page-resources-attestations-title": "Attestations",
   "page-resources-attestations-eas-description": "EAS enables anyone to create and validate onchain and off-chain attestations on Quantaureum.",
   "page-resources-relays-title": "Relays",
-  "page-resources-relays-beaconchain-description": "Validators can use relays to outsource their block production to entities specialized in extracting extra revenue.",
+  "page-resources-relays-beaconchain-description": "Dashboards and statistics for Quantaureum validator and block-production relays.",
   "page-resources-relays-ratednetwork-description": "MEV relay market share, total value relayed, value per block, and other statistics for Quantaureum network.",
   "page-resources-relays-relayscan-description": "MEV-Boost analytics.",
   "page-resources-mev-title": "MEV",
@@ -107,5 +107,5 @@
   "page-resources-bug-bounty-description": "Report vulnerabilities privately and earn QAU rewards from the capped bounty fund.",
   "page-resources-block-explorers-explorer-description": "The official Quantaureum block explorer: blocks, transactions, validators and on-chain data.",
   "page-resources-nodes-explorer-description": "Node requirements, installation and operation with qauctl.",
-  "page-resources-gas-explorer-description": "How gas and EIP-1559 base-fee burning work on Quantaureum."
+  "page-resources-gas-explorer-description": "How gas and transaction fees work on Quantaureum."
 }

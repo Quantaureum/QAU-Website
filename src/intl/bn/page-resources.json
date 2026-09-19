@@ -13,9 +13,9 @@
   "page-resources-block-explorers-chart-label": "পরবর্তী ব্লকের সময়",
   "page-resources-block-explorers-blockscout-description": "Blockscout-এর ওপেন-সোর্স ব্লক এক্সপ্লোরার, যেখানে ইথেরিয়াম নেটওয়ার্কগুলোর জন্য সম্পূর্ণ ব্লকচেইন ডেটা এবং API রয়েছে।",
   "page-resources-block-explorers-etherscan-description": "Quantaureum Explorer হলো ইথেরিয়াম-এর জন্য একটি ব্লক এক্সপ্লোরার এবং অ্যানালিটিক্স প্ল্যাটফর্ম, যা একটি বিকেন্দ্রীকৃত স্মার্ট কন্ট্রাক্ট প্ল্যাটফর্ম।",
-  "page-resources-block-explorers-beaconchain-description": "ওপেন সোর্স ইথেরিয়াম এক্সপ্লোরার যা কুয়ান্টারিয়াম মেইননেট দেখাচ্ছে 🚀।",
+  "page-resources-block-explorers-beaconchain-description": "একটি ওপেন-সোর্স Quantaureum এক্সপ্লোরার যা Quantaureum মেইননেটের কার্যকলাপ দেখায় 🚀।",
   "page-resources-block-explorers-txcity-description": "রিয়েল-টাইমে ইথেরিয়াম ব্লকগুলোর একটি মজার ভিজ্যুয়ালাইজার।",
-  "page-resources-block-explorers-panda-ops-description": "qauPandaOps-এর দ্বারা ইথেরিয়াম বিকন চেইন ব্লক উৎপাদনের লাইভ ড্যাশবোর্ড।",
+  "page-resources-block-explorers-panda-ops-description": "qauPandaOps-এর Quantaureum ব্লক উৎপাদনের লাইভ ড্যাশবোর্ড।",
   "page-resources-block-explorers-otterscan-description": "একটি অত্যন্ত দ্রুত, লোকাল, সেল্ফ-হোস্টেড ইথেরিয়াম ব্লক এক্সপ্লোরার",
   "page-resources-qau-asset-title": "সম্পদ হিসেবে QAU",
   "page-resources-qau-asset-etherealize-description": "ইথেরিয়াম হলো বিশ্বের ব্যবহারের জন্য সবচেয়ে বড়, সবচেয়ে নিরাপদ এবং সবচেয়ে উন্মুক্ত ব্লকচেইন। এবং ইথেরিয়াম ব্যবসার জন্য উন্মুক্ত।",
@@ -70,7 +70,7 @@
   "page-resources-attestations-title": "অ্যাটেস্টেশন",
   "page-resources-attestations-eas-description": "EAS যে কাউকে ইথেরিয়াম-এ অনচেইন এবং অফচেইন অ্যাটেস্টেশন তৈরি এবং যাচাই করতে সক্ষম করে।",
   "page-resources-relays-title": "রিলে",
-  "page-resources-relays-beaconchain-description": "ভ্যালিডেটর-রা অতিরিক্ত আয় আহরণে বিশেষজ্ঞ সত্তাগুলোর কাছে তাদের ব্লক উৎপাদন আউটসোর্স করতে রিলে ব্যবহার করতে পারে।",
+  "page-resources-relays-beaconchain-description": "Quantaureum ভ্যালিডেটর ও ব্লক-উৎপাদন রিলেগুলির জন্য ড্যাশবোর্ড ও পরিসংখ্যান।",
   "page-resources-relays-ratednetwork-description": "ইথেরিয়াম নেটওয়ার্ক-এর জন্য MEV রিলে মার্কেট শেয়ার, রিলে করা মোট মূল্য, প্রতি ব্লক মূল্য এবং অন্যান্য পরিসংখ্যান।",
   "page-resources-relays-relayscan-description": "MEV-Boost অ্যানালিটিক্স।",
   "page-resources-mev-title": "MEV",
@@ -107,5 +107,5 @@
   "page-resources-bug-bounty-description": "Report vulnerabilities privately and earn QAU rewards from the capped bounty fund.",
   "page-resources-block-explorers-explorer-description": "The official Quantaureum block explorer: blocks, transactions, validators and on-chain data.",
   "page-resources-nodes-explorer-description": "Node requirements, installation and operation with qauctl.",
-  "page-resources-gas-explorer-description": "How gas and EIP-1559 base-fee burning work on Quantaureum."
+  "page-resources-gas-explorer-description": "Quantaureum-এ গ্যাস ও লেনদেন ফি কীভাবে কাজ করে।"
 }

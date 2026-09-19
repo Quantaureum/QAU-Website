@@ -43,7 +43,7 @@
   "page-what-is-qau-how-long-does-it-take-to-send-eth": "QAUの送信にはどのくらい時間がかかりますか？",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-1": "すべてのQAU取引は、ポスト量子署名アルゴリズムのDilithium3署名で署名された後、ネットワークにブロードキャストされ、バリデーターによってブロックに収められます。",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-2": "バリデーター委員会がしきい値署名（GM-QTD）で連署するとブロックが確定します。複数の確率的な確認を待つ必要はありません。",
-  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "ネットワークが混雑している場合、より高い優先度手数料を支払うことで取引を優先処理し、順番を前に繰り上げることができます。ベース手数料はバーン（破棄）され、優先度手数料はブロック提案者に支払われます。",
+  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "ネットワークのトラフィックが多いときは、より高い優先料金を支払うことで取引を速め、列の前へ進むことができます。その料金は取引の処理とブロック提案者への報酬に使われます。",
   "page-what-is-qau-how-much-does-it-cost-to-send-eth": "QAUの送信にはいくらかかりますか？",
   "page-what-is-qau-how-much-does-it-cost-to-send-qau-description-1": "Quantaureumの取引には<strong>QAUで支払われる手数料</strong>が必要です。手数料は、必要な計算量（「ガス」で計測）とネットワークの現在の需要に基づいて計算されます。ガスの価格はネットワークの混雑状況によって変動するため、オフピーク時には取引コストが低くなります。",
   "page-what-is-qau-how-much-does-it-cost-note": "現在の手数料水準については、ブロックエクスプローラーを確認してください。ガス価格はネットワークのリアルタイム状態に依存するため、本ページでは意図的に固定の数値を記載していません。",

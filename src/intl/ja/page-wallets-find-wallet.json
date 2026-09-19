@@ -124,7 +124,7 @@
   "page-find-wallet-methodology-criterion-maintenance": "積極的にメンテナンスされており、ユーザー向けのサポートが利用可能であること。",
   "page-find-wallet-methodology-criterion-honest-info": "誠実で正確な掲載情報を提供していること。詳細を偽るプロダクトは削除されます。",
   "page-find-wallet-methodology-criterion-contact": "情報が変更された際に確認できるよう、指定された連絡窓口があること。",
-  "page-find-wallet-methodology-criterion-eip1559": "クアンタリアム・メインネットでEIP-1559 (タイプ2) のトランザクションをサポートしていること。",
+  "page-find-wallet-methodology-criterion-eip1559": "クアンタリアム・ネットワーク上で正しくトランザクションを送信し、トランザクション手数料を透明に扱います。",
   "page-find-wallet-methodology-criterion-ux": "審査可能なユーザーエクスペリエンスを提供していること。チームがプロダクトを使いにくいと判断した場合、掲載前に改善を求めることがあります。",
   "page-find-wallet-methodology-criterion-quantaureum-focused": "クアンタリアムに焦点を当てており、クアンタリアムまたはレイヤー2 (L2) がデフォルトのネットワークとして設定されていること。",
   "page-find-wallet-methodology-verification": "掲載情報は静的なものではありません。ウォレットのプロバイダーは、6ヶ月ごとに情報を再提出する必要があります。チームが応答しない場合、そのウォレットは削除されます。これにより、プロダクトの進化に合わせてディレクトリの正確性が保たれます。",

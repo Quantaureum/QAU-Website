@@ -43,7 +43,7 @@
   "page-what-is-qau-how-long-does-it-take-to-send-eth": "发送 QAU 需要多长时间？",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-1": "每笔 QAU 交易都会使用后量子 Dilithium3 签名进行签署，然后广播到网络并由验证节点打包进区块。",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-2": "当验证者委员会使用门限签名（GM-QTD）对区块进行联合签署时，该区块即被最终确认——无需等待多次概率性确认。",
-  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "在网络流量高峰期，您可以通过支付更高的优先费用来加快交易确认，从而排在队列前面。基础费用将被永久销毁；优先费用将支付给区块提议者。",
+  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "在网络流量较高时，您可以通过支付更高的优先费用来加速交易，从而排到队列前面。这笔费用用于处理交易并奖励区块提议者。",
   "page-what-is-qau-how-much-does-it-cost-to-send-eth": "发送 QAU 需要多少费用？",
   "page-what-is-qau-how-much-does-it-cost-to-send-qau-description-1": "Quantaureum 交易需要支付<strong>以 QAU 计价的费用</strong>。费用根据所需的计算工作量（以\"gas\"衡量）和当前网络需求来计算。Gas 价格随网络流量波动，在低峰时段交易成本更低。",
   "page-what-is-qau-how-much-does-it-cost-note": "如需了解当前费用水平，请访问区块浏览器——实时 Gas 价格取决于实际网络状况，因此本页有意避免引用固定数值。",

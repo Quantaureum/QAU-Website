@@ -43,7 +43,7 @@
   "page-what-is-qau-how-long-does-it-take-to-send-eth": "Mất bao lâu để gửi QAU?",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-1": "Mỗi giao dịch QAU được ký bằng chữ ký hậu lượng tử Dilithium3, sau đó được phát đi trên mạng lưới và đưa vào một khối bởi validator.",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-2": "Một khối được xác nhận khi ủy ban validator đồng ký bằng chữ ký ngưỡng (GM-QTD) — không cần chờ nhiều lần xác nhận xác suất.",
-  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "Khi lưu lượng mạng cao, bạn có thể đẩy nhanh giao dịch bằng cách trả phí ưu tiên cao hơn, giúp bạn đứng trước trong hàng chờ. Phí cơ bản sẽ bị đốt; phí ưu tiên được chuyển cho người đề xuất khối.",
+  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "Khi lưu lượng mạng cao, bạn có thể tăng tốc giao dịch bằng cách trả phí ưu tiên cao hơn, đưa bạn lên trước hàng đợi. Phí được dùng để xử lý giao dịch và thưởng cho người đề xuất khối.",
   "page-what-is-qau-how-much-does-it-cost-to-send-eth": "Gửi QAU tốn bao nhiêu chi phí?",
   "page-what-is-qau-how-much-does-it-cost-to-send-qau-description-1": "Giao dịch Quantaureum yêu cầu <strong>phí được trả bằng QAU</strong>. Phí được tính dựa trên khối lượng công việc tính toán cần thiết (đo bằng 'gas') và nhu cầu hiện tại của mạng lưới. Giá gas biến động theo lưu lượng mạng, giúp giao dịch rẻ hơn vào giờ thấp điểm.",
   "page-what-is-qau-how-much-does-it-cost-note": "Để biết mức phí hiện tại, hãy xem Explorer — giá gas trực tiếp phụ thuộc vào điều kiện thực tế của mạng, vì vậy trang này cố ý không nêu các con số cố định.",
