@@ -32,10 +32,6 @@ import { getMetadata } from "@/lib/utils/metadata"
 
 import BugBountyJsonLD from "./page-jsonld"
 
-const StrongGreaterThan = (chunks: React.ReactNode) => (
-  <strong>&gt;{chunks}</strong>
-)
-
 export default async function Page(props: { params: Promise<Params> }) {
   const params = await props.params
   const { locale } = params
@@ -319,19 +315,13 @@ export default async function Page(props: { params: Promise<Params> }) {
                   </span>
                   <UnorderedList>
                     <ListItem>
-                      {t.rich("page-upgrades-bug-bounty-severity-low-li-1", {
-                        strong: StrongGreaterThan,
-                      })}
+                      {t("page-upgrades-bug-bounty-severity-low-li-1")}
                     </ListItem>
                     <ListItem>
-                      {t.rich("page-upgrades-bug-bounty-severity-low-li-2", {
-                        strong: StrongGreaterThan,
-                      })}
+                      {t("page-upgrades-bug-bounty-severity-low-li-2")}
                     </ListItem>
                     <ListItem>
-                      {t.rich("page-upgrades-bug-bounty-severity-low-li-3", {
-                        strong: StrongGreaterThan,
-                      })}
+                      {t("page-upgrades-bug-bounty-severity-low-li-3")}
                     </ListItem>
                   </UnorderedList>
                 </CardContent>
@@ -344,19 +334,13 @@ export default async function Page(props: { params: Promise<Params> }) {
                   </span>
                   <UnorderedList>
                     <ListItem>
-                      {t.rich("page-upgrades-bug-bounty-severity-medium-li-1", {
-                        strong: StrongGreaterThan,
-                      })}
+                      {t("page-upgrades-bug-bounty-severity-medium-li-1")}
                     </ListItem>
                     <ListItem>
-                      {t.rich("page-upgrades-bug-bounty-severity-medium-li-2", {
-                        strong: StrongGreaterThan,
-                      })}
+                      {t("page-upgrades-bug-bounty-severity-medium-li-2")}
                     </ListItem>
                     <ListItem>
-                      {t.rich("page-upgrades-bug-bounty-severity-medium-li-3", {
-                        strong: StrongGreaterThan,
-                      })}
+                      {t("page-upgrades-bug-bounty-severity-medium-li-3")}
                     </ListItem>
                   </UnorderedList>
                 </CardContent>
@@ -369,19 +353,13 @@ export default async function Page(props: { params: Promise<Params> }) {
                   </span>
                   <UnorderedList>
                     <ListItem>
-                      {t.rich("page-upgrades-bug-bounty-severity-high-li-1", {
-                        strong: StrongGreaterThan,
-                      })}
+                      {t("page-upgrades-bug-bounty-severity-high-li-1")}
                     </ListItem>
                     <ListItem>
-                      {t.rich("page-upgrades-bug-bounty-severity-high-li-2", {
-                        strong: StrongGreaterThan,
-                      })}
+                      {t("page-upgrades-bug-bounty-severity-high-li-2")}
                     </ListItem>
                     <ListItem>
-                      {t.rich("page-upgrades-bug-bounty-severity-high-li-3", {
-                        strong: StrongGreaterThan,
-                      })}
+                      {t("page-upgrades-bug-bounty-severity-high-li-3")}
                     </ListItem>
                   </UnorderedList>
                 </CardContent>
@@ -394,44 +372,19 @@ export default async function Page(props: { params: Promise<Params> }) {
                   </span>
                   <UnorderedList>
                     <ListItem>
-                      {t.rich(
-                        "page-upgrades-bug-bounty-severity-critical-li-1",
-                        {
-                          strong: StrongGreaterThan,
-                        }
-                      )}
+                      {t("page-upgrades-bug-bounty-severity-critical-li-1")}
                     </ListItem>
                     <ListItem>
-                      {t.rich(
-                        "page-upgrades-bug-bounty-severity-critical-li-2",
-                        {
-                          strong: Strong,
-                        }
-                      )}
+                      {t("page-upgrades-bug-bounty-severity-critical-li-2")}
                     </ListItem>
                     <ListItem>
-                      {t.rich(
-                        "page-upgrades-bug-bounty-severity-critical-li-3",
-                        {
-                          strong: Strong,
-                        }
-                      )}
+                      {t("page-upgrades-bug-bounty-severity-critical-li-3")}
                     </ListItem>
                     <ListItem>
-                      {t.rich(
-                        "page-upgrades-bug-bounty-severity-critical-li-4",
-                        {
-                          strong: Strong,
-                        }
-                      )}
+                      {t("page-upgrades-bug-bounty-severity-critical-li-4")}
                     </ListItem>
                     <ListItem>
-                      {t.rich(
-                        "page-upgrades-bug-bounty-severity-critical-li-5",
-                        {
-                          strong: Strong,
-                        }
-                      )}
+                      {t("page-upgrades-bug-bounty-severity-critical-li-5")}
                     </ListItem>
                   </UnorderedList>
                 </CardContent>
@@ -452,21 +405,13 @@ export default async function Page(props: { params: Promise<Params> }) {
               title={t("bug-bounty-faq-q2-title")}
               contentPreview={t("bug-bounty-faq-q2-contentPreview")}
             >
-              {t.rich("bug-bounty-faq-q2-content-1", {
-                a: (chunks) => (
-                  <InlineLink href="https://quantaureum.com">
-                    {chunks}
-                  </InlineLink>
-                ),
-              })}
+              {t("bug-bounty-faq-q2-content-1")}
             </ExpandableCard>
             <ExpandableCard
               title={t("bug-bounty-faq-q3-title")}
               contentPreview={t("bug-bounty-faq-q3-contentPreview")}
             >
-              {t.rich("bug-bounty-faq-q3-content-1", {
-                strong: Strong,
-              })}
+              {t.rich("bug-bounty-faq-q3-content-1", { strong: Strong })}
             </ExpandableCard>
             <ExpandableCard
               title={t("bug-bounty-faq-q4-title")}
