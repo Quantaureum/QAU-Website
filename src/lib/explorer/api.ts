@@ -3,6 +3,7 @@
 // Response shapes mirror the old site's explorer API contract.
 
 import {
+  addressDirectionCounts,
   addressTransactionList,
   indexState,
   listTransactions,
@@ -31,6 +32,7 @@ import {
 } from "./rpc"
 
 export {
+  addressDirectionCounts,
   addressTransactionList,
   indexState,
   listTransactions,

@@ -15,6 +15,7 @@ import { getMetadata } from "@/lib/utils/metadata"
 
 import { Link } from "@/i18n/navigation"
 import {
+  addressDirectionCounts,
   addressTransactionList,
   getAddressInfo,
   syncIndex,
@@ -57,6 +58,7 @@ export default async function AddressPage(props: {
 
   const page = Math.max(1, Number(pageParam ?? 1) || 1)
   const limit = Math.min(50, Math.max(10, Number(limitParam ?? 25) || 25))
+  const dirs = addressDirectionCounts(address)
   const txList = addressTransactionList(address, limit, page)
 
   return (
@@ -90,12 +92,24 @@ export default async function AddressPage(props: {
           <p className="text-sm text-body-medium">
             {t("page-explorer-transactions")}
           </p>
-          <p className="mt-1 font-mono text-2xl font-semibold">
-            {info.transactionCount.toLocaleString()}
-          </p>
-          <p className="mt-0.5 text-xs text-body-medium">
-            {t("page-explorer-transactions")}
-          </p>
+          <div className="mt-2 space-y-2 font-mono">
+            <div className="flex items-baseline justify-between gap-2">
+              <span className="flex items-center gap-1 text-sm text-primary">
+                ↑ {t("page-explorer-from")}
+              </span>
+              <span className="text-xl font-semibold">
+                {dirs.outgoing.toLocaleString()}
+              </span>
+            </div>
+            <div className="flex items-baseline justify-between gap-2">
+              <span className="flex items-center gap-1 text-sm text-primary">
+                ↓ {t("page-explorer-to")}
+              </span>
+              <span className="text-xl font-semibold">
+                {dirs.incoming.toLocaleString()}
+              </span>
+            </div>
+          </div>
         </div>
         <div className="rounded-xl border border-border p-4">
           <p className="text-sm text-body-medium">
