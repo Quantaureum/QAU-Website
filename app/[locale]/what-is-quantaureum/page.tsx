@@ -654,11 +654,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
           <p>{t("page-what-is-quantaureum-bitcoin-comparison-3-desc-2")}</p>
 
           <h3>{t("page-what-is-quantaureum-bitcoin-comparison-4-title")}</h3>
-          <p>
-            {t.rich("page-what-is-quantaureum-bitcoin-comparison-4-desc-1", {
-              strong: Strong,
-            })}
-          </p>
+          <p>{t("page-what-is-quantaureum-bitcoin-comparison-4-desc-1")}</p>
           <p>{t("page-what-is-quantaureum-bitcoin-comparison-4-desc-2")}</p>
           <p>{t("page-what-is-quantaureum-bitcoin-comparison-4-desc-3")}</p>
 
@@ -738,16 +734,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               strong: Strong,
             })}
           </p>
-          <p>
-            {t.rich("page-what-is-quantaureum-when-who-governance-3", {
-              eips: (chunks) => (
-                <Link href="https://github.com/Quantaureum">{chunks}</Link>
-              ),
-              governance: (chunks) => (
-                <Link href="/governance/#formal-process">{chunks}</Link>
-              ),
-            })}
-          </p>
+          <p>{t("page-what-is-quantaureum-when-who-governance-3")}</p>
           <p>{t("page-what-is-quantaureum-when-who-governance-4")}</p>
 
           <LinkWithArrow href="/community/">
