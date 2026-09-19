@@ -13,7 +13,6 @@ export const ns = [
   "component-wallet-simulator",
   "glossary",
   "glossary-tooltip",
-  "learn-quizzes",
   "page-about",
   "page-assets",
   "page-community",

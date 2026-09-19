@@ -14,7 +14,6 @@ import MarkdownImage from "@/components/Image/MarkdownImage" // TODO: Pull into 
 import IssuesList from "@/components/IssuesList"
 import LocaleDateTime from "@/components/LocaleDateTime"
 import MarkdownCard from "@/components/MarkdownCard"
-import { StandaloneQuizWidget } from "@/components/Quiz/QuizWidget"
 import TooltipLink from "@/components/TooltipLink"
 import TweetEmbed from "@/components/TweetEmbed"
 import * as AlertComponents from "@/components/ui/alert"
@@ -108,7 +107,6 @@ export const reactComponents = {
   FeaturedText,
   GlossaryTooltip,
   Grid,
-  QuizWidget: StandaloneQuizWidget,
   IssuesList,
   Tag,
   TweetEmbed,

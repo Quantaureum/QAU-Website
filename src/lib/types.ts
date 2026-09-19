@@ -19,8 +19,6 @@ import type { CallToActionProps } from "@/components/Hero/CallToAction"
 
 import chains from "@/data/chains"
 import { Rollup, Rollups } from "@/data/networks/networks"
-import allQuizData from "@/data/quizzes"
-import allQuestionData from "@/data/quizzes/questionBank"
 
 import { screens } from "./utils/screen"
 import { WALLETS_FILTERS_DEFAULT } from "./constants"
@@ -178,96 +176,6 @@ export type LoadingState<T> =
   | { loading: true }
   | { loading: false; data: T }
   | { loading: false; error: unknown }
-
-// Quiz data types
-
-export type ChoiceLetter = "a" | "b" | "c" | "d"
-
-type ChoiceNumber = 1 | 2 | 3 | 4
-type TotalAnswers = 2 | 3 | 4
-
-type QuestionTemplate = {
-  totalAnswers: TotalAnswers
-  correctAnswer: ChoiceNumber
-  explanationOverrides?: (ChoiceNumber | null)[] // Tuple<ChoiceNumber, QuestionTemplate["totalAnswers"]>
-}
-
-export type QuestionBankConfig = Record<string, QuestionTemplate[]>
-
-export type Answer = {
-  id: string
-  label: TranslationKey
-  explanation: TranslationKey
-  moreInfoLabel?: string
-  moreInfoUrl?: string
-}
-
-export type RawQuestion = {
-  prompt: TranslationKey
-  answers: Answer[]
-  correctAnswerId: string
-}
-
-export type QuestionBank = Record<string, RawQuestion>
-export type QuestionKey = keyof typeof allQuestionData
-export type AnswerKey =
-  (typeof allQuestionData)[QuestionKey]["answers"][number]["id"]
-
-export type Question = RawQuestion & {
-  id: QuestionKey
-}
-
-export type Quiz = {
-  title: TranslationKey
-  questions: Question[]
-}
-
-export type AnswerChoice = {
-  answerId: AnswerKey
-  isCorrect: boolean
-}
-
-export type RawQuiz = {
-  title: TranslationKey
-  questions: QuestionKey[]
-}
-
-export type QuizStatus = "neutral" | "success" | "error"
-
-export type QuizLevel = "beginner" | "intermediate" | "advanced"
-
-export type QuizzesSection = {
-  id: QuizKey
-  level: QuizLevel
-  next?: QuizKey
-}
-
-/** A hub section. Adding one here is enough: the hub and getNextQuiz both derive from it. */
-export type QuizzesHubSection = {
-  id: string
-  titleKey: string
-  descriptionKey: string
-  quizzes: QuizzesSection[]
-}
-
-export type RawQuizzes = Record<string, RawQuiz>
-export type QuizKey = keyof typeof allQuizData
-
-type HasScoredPerfect = boolean
-type QuestionsCorrect = number
-
-export type CompletedQuizzes = Record<
-  QuizKey,
-  [HasScoredPerfect, QuestionsCorrect]
->
-
-export type UserStats = {
-  score: number
-  average: number[]
-  completed: CompletedQuizzes
-}
-
-export type QuizShareStats = { score: number; total: number }
 
 /**
  * Staking

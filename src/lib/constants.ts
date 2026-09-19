@@ -52,12 +52,6 @@ export const TIMEOUT_MS = 5000 // (milliseconds)
 export const MAX_RETRIES = 1
 export const RETRY_DELAY_BASE_MS = 250 // (milliseconds)
 
-// Quiz Hub
-export const PROGRESS_BAR_GAP = "4px"
-export const PASSING_QUIZ_SCORE = 65
-export const USER_STATS_KEY = "quizzes-stats"
-export const INITIAL_QUIZ = "what-is-quantaureum"
-
 // Crowdin
 export const CROWDIN_PROJECT_URL = "https://crowdin.com/project/quantaureum"
 

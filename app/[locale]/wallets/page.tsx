@@ -16,7 +16,6 @@ import I18nProvider from "@/components/I18nProvider"
 import ListenToPlayer from "@/components/ListenToPlayer"
 import MainArticle from "@/components/MainArticle"
 import MarkdownCard from "@/components/MarkdownCard"
-import { StandaloneQuizWidget } from "@/components/Quiz/QuizWidget"
 import Translation from "@/components/Translation"
 import { ButtonLink } from "@/components/ui/buttons/Button"
 import Callout from "@/components/ui/callout"
@@ -334,10 +333,6 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   </Callout>
                 ))}
               </Grid>
-            </Section>
-
-            <Section id="quiz" className="py-16">
-              <StandaloneQuizWidget quizKey="wallets" />
             </Section>
 
             <Section id="contributors">

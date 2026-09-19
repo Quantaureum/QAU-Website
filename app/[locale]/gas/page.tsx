@@ -16,7 +16,6 @@ import I18nProvider from "@/components/I18nProvider"
 import { Image } from "@/components/Image"
 import MainArticle from "@/components/MainArticle"
 import MarkdownCard from "@/components/MarkdownCard"
-import { StandaloneQuizWidget } from "@/components/Quiz/QuizWidget"
 import Translation from "@/components/Translation"
 import { AccordionContainer } from "@/components/ui/accordion"
 import { Alert, AlertContent, AlertTitle } from "@/components/ui/alert"
@@ -365,10 +364,6 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   </ButtonLink>
                 </Callout>
               </Grid>
-            </Section>
-
-            <Section id="quiz-section">
-              <StandaloneQuizWidget quizKey="gas" />
             </Section>
 
             <FileContributors
