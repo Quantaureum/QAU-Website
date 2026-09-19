@@ -17,6 +17,8 @@ import { Image } from "@/components/Image"
 
 import { getMetadata } from "@/lib/utils/metadata"
 
+import { SITE_URL } from "@/lib/constants"
+
 import { Link } from "@/i18n/navigation"
 import {
   getRecentBlocks,
@@ -64,7 +66,16 @@ export default async function ExplorerPage(props: {
             ? `/explorer/block/${canonical}/`
             : null
     if (detailPath) {
-      redirect(locale === "en" ? detailPath : `/${locale}${detailPath}`)
+      const localePath =
+        locale === "en" ? detailPath : `/${locale}${detailPath}`
+      if (process.env.NODE_ENV === "production") {
+        // Resolve against an absolute, build-time site URL so the Location
+        // header never depends on the request Host. Some deployment layers
+        // (reverse proxy / load balancer) rewrite Host to localhost, which
+        // made the server-side redirect emit localhost:3000/explorer/... .
+        redirect(new URL(localePath, SITE_URL).toString())
+      }
+      redirect(localePath)
     }
     // Query present but not a recognizable address/tx/block shape.
     searchNoMatch = true
