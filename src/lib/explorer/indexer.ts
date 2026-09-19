@@ -4,6 +4,10 @@
 // scanning blocks lazily up to the chain head. Mirrors the old site's
 // txIndex semantics (indexedUpTo / indexedDownTo / complete / progress).
 
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs"
+import { tmpdir } from "node:os"
+import { dirname, join } from "node:path"
+
 import {
   fetchBlock,
   fetchBlockNumber,
@@ -43,8 +47,16 @@ export interface IndexState {
 }
 
 const BLOB_KEY = "explorer-index-v1"
-const MAX_SCAN_PER_TICK = 5
-const SCAN_INTERVAL_MS = 5_000
+// Faster backfill: scan ~10 blocks every 1s (~10 blocks/s) so history like
+// recent-day transfers becomes visible much sooner than the old 5-block/5s.
+// A local file cache (below) persists progress across process restarts, since
+// the index was previously in-memory only and reset on every pm2 restart —
+// which meant it could never fully reach older history.
+const MAX_SCAN_PER_TICK = 10
+const SCAN_INTERVAL_MS = 1_000
+const INDEX_FILE =
+  process.env.EXPLORER_INDEX_FILE || join(tmpdir(), "qau-explorer-index.json")
+let lastDiskSaveAt = 0
 
 interface PersistedData {
   state: IndexState
@@ -95,7 +107,23 @@ async function loadIndex(): Promise<PersistedData> {
       }
     }
   } catch {
-    // blobs unavailable (local dev) — stay in-memory
+    // blobs unavailable (non-Netlify deployment) — fall through to file cache
+  }
+  // Fallback cache: load a local file so the index survives process restarts.
+  try {
+    if (existsSync(INDEX_FILE)) {
+      const parsed = JSON.parse(
+        readFileSync(INDEX_FILE, "utf8")
+      ) as PersistedData
+      if (parsed?.state && Array.isArray(parsed.txs)) {
+        store.state = parsed.state
+        store.txs = parsed.txs
+        store.state.persisted = true
+        store.state.scanning = false
+      }
+    }
+  } catch {
+    // corrupt cache — ignore and start fresh
   }
   return store
 }
@@ -109,7 +137,19 @@ async function saveIndex(data: PersistedData): Promise<void> {
       data.state.persisted = true
     }
   } catch {
-    // ignore — in-memory only
+    // blobs unavailable (non-Netlify) — persist via the file cache below
+  }
+  // Local file cache: throttle to ~once per 10s to avoid churning disk IO on
+  // the frequent incremental scans (now ~10 blocks/s).
+  const now = Date.now()
+  if (now - lastDiskSaveAt < 10_000) return
+  lastDiskSaveAt = now
+  try {
+    mkdirSync(dirname(INDEX_FILE), { recursive: true })
+    writeFileSync(INDEX_FILE, JSON.stringify(data))
+    data.state.persisted = true
+  } catch {
+    // ignore — in-memory only (e.g. read-only tmp)
   }
 }
 
@@ -291,6 +331,24 @@ export function addressTransactionList(
     limit,
     hasMore: start + limit < filtered.length,
   }
+}
+
+export function addressDirectionCounts(address: string): {
+  outgoing: number
+  incoming: number
+} {
+  const s = store()
+  const a = address.toLowerCase()
+  let outgoing = 0
+  let incoming = 0
+  for (const t of s.txs) {
+    if (t.from.toLowerCase() === a) {
+      outgoing++
+    } else if (t.to && t.to.toLowerCase() === a) {
+      incoming++
+    }
+  }
+  return { outgoing, incoming }
 }
 
 export function totalTxCount(): number {
