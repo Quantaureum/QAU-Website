@@ -355,15 +355,11 @@ export default async function Page(props: { params: Promise<PageParams> }) {
                 ),
               },
               {
-                href: "/developers/docs/consensus-mechanisms/",
+                href: "/what-is-quantaureum/",
                 children: t("more-on-quantaureum-protocol-consensus"),
               },
               {
-                href: "/developers/docs/evm/",
-                children: t("more-on-quantaureum-protocol-evm"),
-              },
-              {
-                href: "/developers/docs/nodes-and-clients/",
+                href: "/run-a-node/",
                 children: t("more-on-quantaureum-protocol-nodes-and-clients"),
               },
             ]}
