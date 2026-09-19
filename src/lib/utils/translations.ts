@@ -59,7 +59,6 @@ const PREFIX_PATH_ADDITIONAL_NAMESPACES: Array<[string, string[]]> = [
   ["/developers/tools/", ["page-developers-tools-descriptions"]],
   ["/gas/", ["page-gas", "page-community"]],
   ["/energy-consumption/", ["page-about"]],
-  ["/glossary/", ["glossary"]],
   ["/apps/", ["page-app-descriptions", "component-swiper"]],
 ]
 
