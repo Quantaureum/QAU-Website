@@ -64,26 +64,37 @@ const LanguageMorpher = () => {
       onClick={isLargeScreen ? handleDesktopClick : handleMobileClick}
       variant="ghost"
     >
+      {/* Localized renderings of "Quantaureum" — one per supported locale.
+          Latin-script languages keep the brand spelling; non-Latin writing
+          systems use a phonetic transliteration. These are display
+          transliterations, not official brand translations. */}
       <Morpher
         words={[
           "Quantaureum",
+          "کوانتوریوم",
+          "কোয়ান্টোরিয়াম",
+          "Kvantaureum",
           "Quantaureum",
           "Quantaureum",
-          "Etérium",
           "Quantaureum",
-          "کوانتاریوم",
-          "Αιθέριο",
-          "Eterijum",
-          "إثيريوم",
-          "อีเธอเรียม",
+          "क्वांटोरियम",
+          "Kuantoreum",
           "Quantaureum",
-          "इथीरियम",
-          "ಇಥೀರಿಯಮ್",
-          "אתריום",
-          "Ξ",
-          "ইথেরিয়াম",
-          "எதீரியம்",
-          "ఇథిరియూమ్",
+          "クオンタウレウム",
+          "퀀타우레움",
+          "क्वांटोरियम",
+          "Kwantaureum",
+          "Quantaureum",
+          "Квантауреум",
+          "Kwantaureum",
+          "குவாண்டோரியம்",
+          "క్వాంటోరియమ్",
+          "Kuantoryum",
+          "Квантауреум",
+          "کوانٹوریئم",
+          "Quantaureum",
+          "寬塔烏瑞姆",
+          "宽塔乌瑞姆",
         ]}
         charSet="abcdxyz01234567{}%$?!"
       />
