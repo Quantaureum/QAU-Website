@@ -302,8 +302,9 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
             {t.rich(
               "page-what-is-quantaureum-network-staking-section-description-11",
               {
-                lido: (chunks) => <Link href="/staking/">{chunks}</Link>,
-                strong: Strong,
+                "staking-docs": (chunks) => (
+                  <Link href="/staking/">{chunks}</Link>
+                ),
               }
             )}
           </p>
@@ -376,9 +377,7 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
               {t.rich(
                 "page-what-is-quantaureum-network-live-network-data-section-description-9",
                 {
-                  etherscan: (chunks) => (
-                    <Link href="/explorer/">{chunks}</Link>
-                  ),
+                  explorer: (chunks) => <Link href="/explorer/">{chunks}</Link>,
                 }
               )}
             </ListItem>
