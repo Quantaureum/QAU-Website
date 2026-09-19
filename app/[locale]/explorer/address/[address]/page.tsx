@@ -33,6 +33,22 @@ export default async function AddressPage(props: {
   const t = await getTranslations("page-explorer")
   if (!isAddress(address)) notFound()
 
+  // Etherscan-style: highlight the current address in From/To and surface the
+  // full address on hover instead of only an ellipsized short form.
+  const self = address.toLowerCase()
+  const addrCell = (addr: string | null | undefined) => {
+    if (!addr) return null
+    const isSelf = addr.toLowerCase() === self
+    return (
+      <span
+        className={isSelf ? "font-semibold text-primary" : undefined}
+        title={addr}
+      >
+        {shortHash(addr, 8, 6)}
+      </span>
+    )
+  }
+
   const [info] = await Promise.all([
     getAddressInfo("mainnet", address),
     syncIndex("mainnet"),
@@ -59,32 +75,41 @@ export default async function AddressPage(props: {
       </h1>
       <p className="mb-8 font-mono text-sm break-all">{address}</p>
 
+      {/* Overview cards (Etherscan-style): Balance / Transactions / Type badge */}
       <section className="mb-10 grid gap-4 sm:grid-cols-3">
         <div className="rounded-xl border border-border p-4">
           <p className="text-sm text-body-medium">
             {t("page-explorer-balance")}
           </p>
-          <p className="mt-1 font-mono text-xl font-semibold">
-            {qauFromWeiHex(info.balance, 6)} QAU
+          <p className="mt-1 font-mono text-2xl font-semibold">
+            {qauFromWeiHex(info.balance, 6)}
           </p>
+          <p className="mt-0.5 font-mono text-xs text-body-medium"> QAU</p>
         </div>
         <div className="rounded-xl border border-border p-4">
           <p className="text-sm text-body-medium">
             {t("page-explorer-transactions")}
           </p>
-          <p className="mt-1 font-mono text-xl font-semibold">
+          <p className="mt-1 font-mono text-2xl font-semibold">
             {info.transactionCount.toLocaleString()}
+          </p>
+          <p className="mt-0.5 text-xs text-body-medium">
+            {t("page-explorer-transactions")}
           </p>
         </div>
         <div className="rounded-xl border border-border p-4">
           <p className="text-sm text-body-medium">
             {t("page-explorer-address-type")}
           </p>
-          <p className="mt-1 text-xl font-semibold">
-            {info.isContract
-              ? t("page-explorer-contract")
-              : t("page-explorer-eoa")}
-          </p>
+          {info.isContract ? (
+            <span className="mt-2 inline-flex rounded-full bg-primary/10 px-3 py-1 text-sm font-semibold text-primary">
+              {t("page-explorer-contract")}
+            </span>
+          ) : (
+            <span className="mt-2 inline-flex rounded-full bg-success/10 px-3 py-1 text-sm font-semibold text-success">
+              {t("page-explorer-eoa")}
+            </span>
+          )}
         </div>
       </section>
 
@@ -131,12 +156,10 @@ export default async function AddressPage(props: {
                       {timeAgo(hexToTimestamp(tx.timestamp))}
                     </td>
                     <td className="p-3 font-mono text-xs">
-                      {shortHash(tx.from, 8, 6)}
+                      {addrCell(tx.from)}
                     </td>
                     <td className="p-3 font-mono text-xs">
-                      {tx.to
-                        ? shortHash(tx.to, 8, 6)
-                        : t("page-explorer-creation")}
+                      {tx.to ? addrCell(tx.to) : t("page-explorer-creation")}
                     </td>
                     <td className="p-3 font-mono">
                       {qauFromWeiHex(tx.value, 4)} QAU
