@@ -526,7 +526,8 @@ export type StakingStatsData = {
 }
 
 export type ValueOrError<T> =
-  { value: T; timestamp?: number } | { error: string }
+  | { value: T; timestamp?: number }
+  | { error: string }
 
 export type EtherscanNodeResponse = {
   result: {
@@ -570,7 +571,11 @@ export type VideoData = {
 }
 
 export type VideoFormat =
-  "presentation" | "explainer" | "interview" | "tutorial" | "panel"
+  | "presentation"
+  | "explainer"
+  | "interview"
+  | "tutorial"
+  | "panel"
 /**
  * Flat, serializable video data for client components (e.g. VideoGalleryFilter).
  * thumbnailUrl is pre-resolved server-side from customThumbnailUrl or youtubeId.
@@ -679,7 +684,12 @@ export interface GeodeApiEventItem {
 }
 
 export type EventType =
-  "conference" | "hackathon" | "meetup" | "popup" | "group" | "other"
+  | "conference"
+  | "hackathon"
+  | "meetup"
+  | "popup"
+  | "group"
+  | "other"
 
 export interface EventItem extends GeodeApiEventItem {
   id: string // slugified title
@@ -998,28 +1008,6 @@ export type FeedbackWidgetContextType = {
   setShowFeedbackWidget: (showFeedbackWidget: boolean) => void
 }
 
-// Historical upgrades
-export type NetworkUpgradeDetails = {
-  blockNumber?: number
-  epochNumber?: number
-  slotNumber?: number
-} & (
-  | {
-      isPending: true
-      dateTimeAsString?: string
-      qauPriceInUSD?: never
-      waybackLink?: never
-    }
-  | {
-      qauPriceInUSD: number
-      waybackLink: string
-      dateTimeAsString: string
-      isPending?: never
-    }
-)
-
-export type NetworkUpgradeData = Record<string, NetworkUpgradeDetails>
-
 // Footer
 export type FooterLink = {
   href: string
@@ -1257,7 +1245,11 @@ export type PageWithContributorsProps = {
 export type BreakpointKey = keyof typeof screens
 
 export type MaturityLevel =
-  "N/A" | "robust" | "maturing" | "developing" | "emerging"
+  | "N/A"
+  | "robust"
+  | "maturing"
+  | "developing"
+  | "emerging"
 
 // Tutorials
 export enum Skill {
