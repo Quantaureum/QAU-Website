@@ -184,12 +184,8 @@ const Page = async (props: { params: Promise<PageParams> }) => {
       ],
       paragraphs: [
         t("page-staking-hierarchy-pools-p1"),
-        t.rich("page-staking-hierarchy-pools-p2", {
-          a: (chunks) => <InlineLink href="/staking/#faq">{chunks}</InlineLink>,
-        }),
-        t.rich("page-staking-hierarchy-pools-p3", {
-          a: (chunks) => <InlineLink href="/wallets/">{chunks}</InlineLink>,
-        }),
+        t("page-staking-hierarchy-pools-p2"),
+        t("page-staking-hierarchy-pools-p3"),
         t("page-staking-hierarchy-pools-p4"),
       ],
       image: poolsImg,
@@ -258,13 +254,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
             <InlineLink href="/run-a-node/">{chunks}</InlineLink>
           ),
         }),
-        t.rich("page-staking-section-comparison-solo-requirements-li3", {
-          a: (chunks) => (
-            <InlineLink href="https://github.com/Quantaureum">
-              {chunks}
-            </InlineLink>
-          ),
-        }),
+        t("page-staking-section-comparison-solo-requirements-li3"),
       ],
       href: "/run-a-node/",
       buttonLabel: t("page-staking-more-on-solo"),
@@ -300,15 +290,9 @@ const Page = async (props: { params: Promise<PageParams> }) => {
         t.rich("page-staking-section-comparison-pools-rewards-li2", {
           a: (chunks) => <InlineLink href="/staking/#faq">{chunks}</InlineLink>,
         }),
-        t.rich("page-staking-section-comparison-pools-rewards-li3", {
-          a: (chunks) => <InlineLink href="/staking/#faq">{chunks}</InlineLink>,
-        }),
+        t("page-staking-section-comparison-pools-rewards-li3"),
       ],
-      risks: [
-        t.rich("page-staking-section-comparison-pools-risks-li2", {
-          a: (chunks) => <InlineLink href="/bug-bounty/">{chunks}</InlineLink>,
-        }),
-      ],
+      risks: [t("page-staking-section-comparison-pools-risks-li2")],
       requirements: [
         t("page-staking-section-comparison-pools-requirements-li1"),
         t("page-staking-section-comparison-pools-requirements-li2"),
