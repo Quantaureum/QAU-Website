@@ -9,7 +9,7 @@ const visualUse: any = {
 }
 
 // Append "Chromatic" to the default UA so `isChromatic()` returns true client-side.
-// Several components (QuizWidget, Simulator) use this signal to skip randomization.
+// Several components (Simulator) use this signal to skip randomization.
 const userAgent =
   "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Chromatic"
 

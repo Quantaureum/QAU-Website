@@ -29,7 +29,6 @@ import {
 import { Image } from "@/components/Image"
 import { Emphasis, Strong } from "@/components/IntlStringElements"
 import MainArticle from "@/components/MainArticle"
-import { StandaloneQuizWidget as QuizWidget } from "@/components/Quiz/QuizWidget"
 import Translation from "@/components/Translation"
 import { ButtonLink } from "@/components/ui/buttons/Button"
 import Callout from "@/components/ui/callout"
@@ -641,10 +640,6 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   </ListItem>
                 </UnorderedList>
               </div>
-            </Section>
-
-            <Section>
-              <QuizWidget quizKey="run-a-node" />
             </Section>
 
             <FileContributors

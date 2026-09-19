@@ -19,7 +19,6 @@ import {
 } from "@/components/HighlightCard"
 import { Image } from "@/components/Image"
 import { Emphasis, Strong } from "@/components/IntlStringElements"
-import { StandaloneQuizWidget } from "@/components/Quiz/QuizWidget"
 import { ButtonLink } from "@/components/ui/buttons/Button"
 import {
   Card,
@@ -803,8 +802,6 @@ const Page = async (props: { params: Promise<PageParams> }) => {
             </ListItem>
           </UnorderedList>
         </Section>
-
-        <StandaloneQuizWidget quizKey="what-is-quantaureum" />
       </ContentLayout>
     </>
   )
