@@ -85,10 +85,12 @@ function absolutizeRedirectHost(response: NextResponse): NextResponse {
   const location = response.headers.get("location")
   if (!location) return response
   try {
-    const locUrl = new URL(location)
-    // Rebuild the location against SITE_URL to drop whatever host/port the
-    // reverse-proxy saw (e.g. :3000). Using pathname/search/hash avoids any
-    // residual port leaking from the original URL.
+    // Resolve against SITE_URL so both absolute and relative Location values
+    // are handled; relative redirects (what next-intl emits here) otherwise
+    // get resolved to the reverse-proxy host by the edge.
+    const locUrl = new URL(location, SITE_URL)
+    // Rebuild using only pathname/search/hash so no residual port (e.g. :3000)
+    // leaks from the original URL.
     const absolute = new URL(
       `${locUrl.pathname}${locUrl.search}${locUrl.hash}`,
       SITE_URL
