@@ -10,7 +10,7 @@ import {
 } from "./src/lib/ab-testing/constants"
 import { abTestRoutes, ALLOW_DEBUG_OVERRIDES } from "./src/lib/ab-testing/flags"
 import { getActiveExperimentNames } from "./src/lib/ab-testing/matomo-adapter"
-import { DEFAULT_LOCALE } from "./src/lib/constants"
+import { DEFAULT_LOCALE, SITE_URL } from "./src/lib/constants"
 import { getFirstSegment } from "./src/lib/utils/url"
 
 const handleI18nRouting = createMiddleware(routing)
@@ -74,6 +74,36 @@ function redirectTo(request: NextRequest, pathname: string, status: number) {
   return NextResponse.redirect(url, status)
 }
 
+// In production the standalone server sits behind a reverse proxy whose
+// upstream Host is localhost:3000. next-intl builds its locale redirects from
+// request.nextUrl, so the Location header leaks the proxy host (e.g. the
+// /explorer/address/... detail-route 301 → https://localhost:3000/...). Rewrite
+// the Location origin to SITE_URL so redirects never depend on the request
+// Host. Dev keeps the original behavior so a local server stays on localhost.
+function absolutizeRedirectHost(response: NextResponse): NextResponse {
+  if (process.env.NODE_ENV !== "production") return response
+  const location = response.headers.get("location")
+  if (!location) return response
+  try {
+    const locUrl = new URL(location)
+    // Rebuild the location against SITE_URL to drop whatever host/port the
+    // reverse-proxy saw (e.g. :3000). Using pathname/search/hash avoids any
+    // residual port leaking from the original URL.
+    const absolute = new URL(
+      `${locUrl.pathname}${locUrl.search}${locUrl.hash}`,
+      SITE_URL
+    )
+    const next = new NextResponse(null, {
+      status: response.status,
+      headers: response.headers,
+    })
+    next.headers.set("location", absolute.toString())
+    return next
+  } catch {
+    return response
+  }
+}
+
 export default async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl
 
@@ -131,7 +161,7 @@ export default async function proxy(request: NextRequest) {
   }
 
   // Handle i18n routing
-  const response = handleI18nRouting(request)
+  const response = absolutizeRedirectHost(handleI18nRouting(request))
 
   // Upgrade default-locale strip redirects from 307 to 301 for SEO
   if (response.status === 307) {
