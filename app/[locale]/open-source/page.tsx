@@ -61,7 +61,6 @@ import qauMobileImg from "@/public/images/qau-logo.png"
 import qauWebsiteImg from "@/public/images/qau-logo.png"
 import qauSdksImg from "@/public/images/qau-logo.png"
 
-
 // `ExpandableCard` hard-prefixes its category with "ExpandableCard", so the
 // leading underscore is what keeps the reported value readable.
 const TRACK_CATEGORY_SUFFIX = "_open_source"
@@ -770,20 +769,18 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
           </p>
           <p>{t("page-open-source-local-ai-description-3")}</p>
           <Grid columns={3} className="my-space-2x">
-            {localAiApps.map(
-              ({ id, href, name, description, tag, logo }) => (
-                <AppCard
-                  key={id}
-                  name={name}
-                  description={description}
-                  nameClassName="line-clamp-2 text-base leading-tight sm:text-lg"
-                  thumbnail={logo.src}
-                  tags={[tag]}
-                  href={href}
-                  customEventOptions={track(sections.ai.id, id)}
-                />
-              )
-            )}
+            {localAiApps.map(({ id, href, name, description, tag, logo }) => (
+              <AppCard
+                key={id}
+                name={name}
+                description={description}
+                nameClassName="line-clamp-2 text-base leading-tight sm:text-lg"
+                thumbnail={logo.src}
+                tags={[tag]}
+                href={href}
+                customEventOptions={track(sections.ai.id, id)}
+              />
+            ))}
           </Grid>
         </Section>
 
@@ -1126,45 +1123,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
                 ),
               })}
             </ListItem>
-            <ListItem>
-              {t.rich("page-open-source-resources-degoogled", {
-                grapheneos: linkTo(
-                  "https://grapheneos.org",
-                  sections.resources.id,
-                  "GrapheneOS"
-                ),
-                eos: linkTo(
-                  "https://e.foundation",
-                  sections.resources.id,
-                  "/e/OS"
-                ),
-                lineageos: linkTo(
-                  "https://lineageos.org",
-                  sections.resources.id,
-                  "LineageOS"
-                ),
-                fdroid: linkTo(
-                  "https://f-droid.org",
-                  sections.resources.id,
-                  "F-Droid"
-                ),
-                framework: linkTo(
-                  "https://frame.work",
-                  sections.resources.id,
-                  "Framework"
-                ),
-                pine64: linkTo(
-                  "https://pine64.org",
-                  sections.resources.id,
-                  "Pine64"
-                ),
-                mnt: linkTo(
-                  "https://mntre.com/reform.html",
-                  sections.resources.id,
-                  "MNT Reform"
-                ),
-              })}
-            </ListItem>
+            <ListItem>{t("page-open-source-resources-degoogled")}</ListItem>
           </UnorderedList>
         </Section>
       </ContentLayout>
