@@ -126,7 +126,7 @@
   "page-find-wallet-methodology-criterion-contact": "لديها نقطة اتصال محددة حتى نتمكن من التحقق من المعلومات عند تغيرها.",
   "page-find-wallet-methodology-criterion-eip1559": "يرسل المعاملات بشكل صحيح على شبكة Quantaureum ويتعامل مع رسوم المعاملات بشفافية.",
   "page-find-wallet-methodology-criterion-ux": "تقدم تجربة مستخدم قابلة للمراجعة. إذا وجد فريقنا أن المنتج يصعب استخدامه، فقد نطلب تحسينات قبل إدراجه.",
-  "page-find-wallet-methodology-criterion-quantaureum-focused": "تركز على إيثيريوم، مع تعيين إيثيريوم أو طبقة 2 (L2) كشبكة افتراضية.",
+  "page-find-wallet-methodology-criterion-quantaureum-focused": "تركز على Quantaureum، مع تعيين Quantaureum أو طبقة 2 (L2) كشبكة افتراضية.",
   "page-find-wallet-methodology-verification": "القوائم ليست ثابتة. يُطلب من مزودي المحافظ إعادة إرسال المعلومات كل ستة أشهر. إذا لم يستجب الفريق، نقوم بإزالة المحفظة. هذا يحافظ على دقة الدليل مع تطور المنتجات.",
   "page-find-wallet-methodology-filters": "تعكس مفاتيح التبديل لعوامل التصفية في هذه الصفحة (مفتوحة المصدر، والحفظ الذاتي، ودعم المحفظة العتادية، وغيرها) السمات التي يتم تتبعها لكل محفظة. تعرض كل قائمة أيضًا تاريخ آخر تحقق من معلوماتها.",
   "page-find-wallet-fee-row-label": "ما تدفع مقابله",

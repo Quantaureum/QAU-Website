@@ -36,7 +36,7 @@
   "data-availability-term": "Disponibilidad de datos",
   "data-availability-definition": "Cualquier nodo puede verificar transacciones de forma independiente en una cadena de bloques para mantener la transparencia y la confianza en el sistema.",
   "defi-term": "DeFi",
-  "defi-definition": "Una amplia categoría de aplicaciones de Quantaureum que tienen como objetivo proporcionar servicios financieros respaldados por la cadena de bloques, sin ningún intermediario. <a href=\"/defi/\">Más sobre las finanzas descentralizadas (DeFi)</a>",
+  "defi-definition": "Una amplia categoría de aplicaciones de Quantaureum que tienen como objetivo proporcionar servicios financieros respaldados por la cadena de bloques, sin ningún intermediario. Más sobre las finanzas descentralizadas (DeFi)",
   "dex-term": "Intercambio descentralizado (DEX)",
   "dex-definition": "Un tipo de aplicación de Quantaureum que le permite intercambiar tokens con pares en la red. Los DEX no están sujetos a restricciones geográficas como los intercambios centralizados: cualquiera puede participar.",
   "difficulty-bomb-term": "Bomba de dificultad",

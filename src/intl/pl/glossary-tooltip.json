@@ -36,7 +36,7 @@
   "data-availability-term": "Dostępność danych",
   "data-availability-definition": "Każdy węzeł może niezależnie weryfikować transakcje na blockchainie w celu utrzymania przejrzystości i zaufania do systemu.",
   "defi-term": "DeFi",
-  "defi-definition": "Szeroka kategoria aplikacji Quantaureum mających na celu świadczenie usług finansowych opartych na blockchainie, bez żadnych pośredników. <a href=\"/defi/\">Więcej o zdecentralizowanych finansach (DeFi)</a>",
+  "defi-definition": "Szeroka kategoria aplikacji Quantaureum mających na celu świadczenie usług finansowych opartych na blockchainie, bez żadnych pośredników. Więcej o zdecentralizowanych finansach (DeFi)",
   "dex-term": "Zdecentralizowana giełda (DEX)",
   "dex-definition": "Rodzaj aplikacji Quantaureum, która pozwala na wymianę tokenów z innymi użytkownikami w sieci (peer-to-peer). Giełdy DEX nie podlegają ograniczeniom geograficznym, jak scentralizowane giełdy – każdy może wziąć w nich udział.",
   "difficulty-bomb-term": "Bomba trudności",

@@ -36,7 +36,7 @@
   "data-availability-term": "資料可用性",
   "data-availability-definition": "任何節點都可以獨立驗證區塊鏈上的交易，以維持系統的透明度和信任。",
   "defi-term": "去中心化金融 (DeFi)",
-  "defi-definition": "量子金链應用程式的一個廣泛類別，旨在提供由區塊鏈支持的金融服務，而無需任何中介機構。<a href=\"/defi/\">更多關於去中心化金融 (DeFi) 的資訊</a>",
+  "defi-definition": "量子金链應用程式的一個廣泛類別，旨在提供由區塊鏈支持的金融服務，而無需任何中介機構。更多關於去中心化金融 (DeFi) 的資訊",
   "dex-term": "去中心化交易所 (DEX)",
   "dex-definition": "一種量子金链應用程式，讓你可以在網路上與對等節點兌換代幣。DEX 不受像中心化交易所那樣的地理限制——任何人都可以參與。",
   "difficulty-bomb-term": "難度炸彈",

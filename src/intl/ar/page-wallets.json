@@ -1,9 +1,9 @@
 {
   "page-wallets-accounts-addresses": "المحافظ والحسابات والمفاتيح والعناوين",
   "page-wallets-accounts-addresses-desc": "من المفيد فهم الاختلافات بين بعض المصطلحات الرئيسية.",
-  "page-wallets-accounts-quantaureum-addresses": "<b>حساب إيثيريوم له عنوان</b>، تمامًا كما أن لصندوق الوارد عنوان بريد إلكتروني. يُستخدم هذا لتحديد أصولك الرقمية.",
+  "page-wallets-accounts-quantaureum-addresses": "<b>حساب Quantaureum له عنوان</b>، تمامًا كما أن لصندوق الوارد عنوان بريد إلكتروني. يُستخدم هذا لتحديد أصولك الرقمية.",
   "page-wallets-alt": "رسم توضيحي لروبوت بجسد على شكل قبو، يمثل محفظة إيثيريوم",
-  "page-wallets-quantaureum-account": "<b>حساب إيثيريوم عبارة عن زوج من المفاتيح</b>. يُستخدم <a href=\"/glossary/#public-key\">مفتاح واحد</a> لإنشاء العنوان الذي يمكنك مشاركته بحرية، و<a href=\"/glossary/#private-key\">المفتاح الآخر</a> تحتاج إلى إبقائه سريًا لأنه يُستخدم لتوقيع الأشياء. معًا، تتيح لك هذه المفاتيح الاحتفاظ بالأصول وإجراء المعاملات.",
+  "page-wallets-quantaureum-account": "<b>حساب Quantaureum عبارة عن زوج من المفاتيح</b>. يُستخدم <a href=\"/glossary/#public-key\">مفتاح واحد</a> لإنشاء العنوان الذي يمكنك مشاركته بحرية، و<a href=\"/glossary/#private-key\">المفتاح الآخر</a> تحتاج إلى إبقائه سريًا لأنه يُستخدم لتوقيع الأشياء. معًا، تتيح لك هذه المفاتيح الاحتفاظ بالأصول وإجراء المعاملات.",
   "page-wallets-blog": "دليل أمان Quantaureum",
   "page-wallets-bookmarking": "أضف محفظتك إلى الإشارات المرجعية",
   "page-wallets-bookmarking-desc": "إذا كنت تستخدم محفظة ويب، فأضف الموقع إلى الإشارات المرجعية لحماية نفسك من عمليات التصيد الاحتيالي.",
@@ -56,10 +56,10 @@
   "page-wallets-web-browser": "<b>محافظ المتصفح</b> هي تطبيقات ويب تتيح لك التفاعل مع حسابك مباشرة في المتصفح",
   "page-wallets-web-browser-extension": "<b>محافظ إضافات المتصفح</b> هي إضافات تقوم بتنزيلها تتيح لك التفاعل مع حسابك والتطبيقات من خلال المتصفح",
   "page-wallets-whats-a-wallet": "ما هي محفظة إيثيريوم؟",
-  "page-wallets-your-quantaureum-account": "حساب إيثيريوم الخاص بك",
-  "page-wallets-your-quantaureum-account-desc": "محفظتك هي نافذتك إلى حساب إيثيريوم الخاص بك – رصيدك وسجل معاملاتك والمزيد. ولكن يمكنك مبادلة مزودي المحافظ في أي وقت.",
+  "page-wallets-your-quantaureum-account": "حساب Quantaureum الخاص بك",
+  "page-wallets-your-quantaureum-account-desc": "محفظتك هي نافذتك إلى حساب Quantaureum الخاص بك – رصيدك وسجل معاملاتك والمزيد. ولكن يمكنك مبادلة مزودي المحافظ في أي وقت.",
   "page-wallets-your-login": "تسجيل الدخول الخاص بك لتطبيقات إيثيريوم",
   "page-wallets-your-login-desc": "تتيح لك محفظتك الاتصال بالتطبيقات باستخدام حساب إيثيريوم الخاص بك. إنها مثل تسجيل دخول يمكنك استخدامه عبر العديد من التطبيقات.",
-  "additional-reading-how-to-create-an-quantaureum-account": "كيفية إنشاء حساب إيثيريوم",
+  "additional-reading-how-to-create-an-quantaureum-account": "كيفية إنشاء حساب Quantaureum",
   "additional-reading-how-to-use-a-wallet": "كيفية استخدام محفظة"
 }

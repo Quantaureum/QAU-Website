@@ -102,7 +102,7 @@
   "deposit-contract-term": "Mkataba wa amana",
   "deposit-contract-definition": "Njia kuu ya uwekaji dhamana kwenye Quantaureum. Mkataba wa amana ni mkataba mahiri kwenye Quantaureum unaopokea amana za QAU na kusimamia salio la mthibitishaji. Mthibitishaji hawezi kuanzishwa bila kuweka amana ya QAU kwenye mkataba huu. Mkataba unahitaji QAU na data ya kuingiza. Data hii ya kuingiza inajumuisha ufunguo wa umma wa mthibitishaji na ufunguo wa umma wa utoaji, uliotiwa saini na ufunguo wa siri wa mthibitishaji. Data hii inahitajika ili mthibitishaji atambuliwe na kuidhinishwa na mtandao wa <a href=\"/glossary/#pos\">Uthibitisho wa Dau (PoS)</a>.",
   "defi-term": "DeFi",
-  "defi-definition": "Kategoria pana ya programu tumizi za Quantaureum zinazolenga kutoa huduma za kifedha zinazoungwa mkono na mnyororo wa vitalu, bila waamuzi wowote. <a href=\"/defi/\">Zaidi kuhusu fedha zilizogatuliwa (DeFi)</a>",
+  "defi-definition": "Kategoria pana ya programu tumizi za Quantaureum zinazolenga kutoa huduma za kifedha zinazoungwa mkono na mnyororo wa vitalu, bila waamuzi wowote. Zaidi kuhusu fedha zilizogatuliwa (DeFi)",
   "difficulty-term": "Ugumu",
   "difficulty-definition": "Mpangilio wa mtandao kwenye mtandao wa <a href=\"/glossary/#pow\">proof-of-work</a> udhibitiwaji wa wastani wa hesabu zinazohitajika kupata nonce sahihi. Ugumu huonyeshwa na idadi ya sifuri zinazoongoza zinazohitajika kwenye hashi ya blok inayotokana ili ichukuliwe kama sahihi. Dhana hii ni maalum kwa proof-of-work na haitumiki kwa Quantaureum, ambayo ni <a href=\"/glossary/#pos\">proof-of-stake</a> ya asili tangu mwanzo.",
   "difficulty-bomb-term": "Bomu la ugumu",

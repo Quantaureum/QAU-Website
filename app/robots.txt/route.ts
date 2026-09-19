@@ -16,12 +16,6 @@ const PRODUCTION = `# Content Signals (https://contentsignals.org). Site content
 User-Agent: *
 Content-Signal: ai-train=yes, search=yes, ai-input=yes
 Allow: /
-Disallow: /flights/
-Disallow: /hotels/
-Disallow: /movies/
-Disallow: /tickets/
-Disallow: /exchange/
-Disallow: /defi/
 
 Host: ${SITE_URL}
 Sitemap: ${SITE_URL}/sitemap.xml

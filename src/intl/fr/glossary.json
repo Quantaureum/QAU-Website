@@ -102,7 +102,7 @@
   "deposit-contract-term": "Contrat de dépôt",
   "deposit-contract-definition": "La passerelle vers le staking sur Quantaureum. Le contrat de dépôt est un contrat intelligent sur Quantaureum qui accepte les dépôts d'QAU et gère les soldes des validateurs. Un validateur ne peut pas être activé sans déposer d'QAU dans ce contrat. Le contrat nécessite des QAU et des données d'entrée. Ces données d'entrée incluent la clé publique du validateur et la clé publique de retrait, signées par la clé privée du validateur. Ces données sont nécessaires pour qu'un validateur soit identifié et approuvé par le réseau de <a href=\"/glossary/#pos\">preuve d'enjeu (PoS)</a>.",
   "defi-term": "DeFi",
-  "defi-definition": "Une vaste catégorie d'applications Quantaureum visant à fournir des services financiers adossés à la chaîne de blocs, sans aucun intermédiaire. <a href=\"/defi/\">En savoir plus sur la finance décentralisée (DeFi)</a>",
+  "defi-definition": "Une vaste catégorie d'applications Quantaureum visant à fournir des services financiers adossés à la chaîne de blocs, sans aucun intermédiaire. En savoir plus sur la finance décentralisée (DeFi)",
   "difficulty-term": "Difficulté",
   "difficulty-definition": "Un paramètre à l'échelle du réseau dans les réseaux de <a href=\"/glossary/#pow\">preuve de travail</a> qui contrôle le calcul moyen requis pour trouver un nonce valide. La difficulté est représentée par le nombre de zéros de tête requis dans le hachage du bloc résultant pour qu'il soit considéré valide. Ce concept est spécifique à la preuve de travail et ne s'applique pas à Quantaureum, qui est nativement de <a href=\"/glossary/#pos\">preuve d'enjeu</a> depuis sa genèse.",
   "difficulty-bomb-term": "Bombe de difficulté",

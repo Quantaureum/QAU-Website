@@ -102,7 +102,7 @@
   "deposit-contract-term": "Yatırma sözleşmesi",
   "deposit-contract-definition": "Quantaureum'da staking'e açılan kapı. Yatırma sözleşmesi, Quantaureum üzerinde QAU yatırımlarını kabul eden ve doğrulayıcı bakiyelerini yöneten akıllı bir sözleşmedir. Bir doğrulayıcı, bu sözleşmeye QAU yatırmadan etkinleştirilemez. Sözleşme, QAU ve girdi verisi gerektirir. Bu girdi verisi, doğrulayıcının özel anahtarıyla imzalanmış doğrulayıcı açık anahtarını ve çekim açık anahtarını içerir. Bu veriler, bir doğrulayıcının <a href=\"/glossary/#pos\">Hisse Kanıtı (PoS)</a> ağı tarafından tanımlanması ve onaylanması için gereklidir.",
   "defi-term": "DeFi",
-  "defi-definition": "Herhangi bir aracı olmadan, blokzincir destekli finansal hizmetler sunmayı amaçlayan geniş bir Quantaureum uygulamaları kategorisi. <a href=\"/defi/\">Merkeziyetsiz finans (DeFi) hakkında daha fazla bilgi</a>",
+  "defi-definition": "Herhangi bir aracı olmadan, blokzincir destekli finansal hizmetler sunmayı amaçlayan geniş bir Quantaureum uygulamaları kategorisi. Merkeziyetsiz finans (DeFi) hakkında daha fazla bilgi",
   "difficulty-term": "Zorluk",
   "difficulty-definition": "Geçerli bir nonce bulmak için ortalama ne kadar hesaplama gerektiğini kontrol eden bir <a href=\"/glossary/#pow\">proof-of-work</a> ağındaki ağ çapında ayar. Zorluk, üretilen blok hashinin geçerli sayılması için gereken baştaki sıfır sayısıyla temsil edilir. Bu kavram proof-of-work'e özgüdür ve en başından beri yerel <a href=\"/glossary/#pos\">proof-of-stake</a> olan Quantaureum'a uygulanmaz.",
   "difficulty-bomb-term": "Zorluk bombası",

@@ -102,7 +102,7 @@
   "deposit-contract-term": "Kontrakt depozytowy",
   "deposit-contract-definition": "Brama do stakingu na Quantaureum. Kontrakt depozytowy to inteligentny kontrakt na Quantaureum, który przyjmuje depozyty w QAU i zarządza saldami walidatorów. Walidator nie może zostać aktywowany bez zdeponowania QAU w tym kontrakcie. Kontrakt wymaga QAU i danych wejściowych. Te dane wejściowe obejmują klucz publiczny walidatora i klucz publiczny wypłaty, podpisane kluczem prywatnym walidatora. Dane te są potrzebne, aby walidator mógł zostać zidentyfikowany i zatwierdzony przez sieć <a href=\"/glossary/#pos\">dowodu stawki (PoS)</a>.",
   "defi-term": "DeFi",
-  "defi-definition": "Szeroka kategoria aplikacji na Quantaureum, których celem jest świadczenie usług finansowych opartych na blockchainie, bez żadnych pośredników. <a href=\"/defi/\">Więcej o zdecentralizowanych finansach (DeFi)</a>",
+  "defi-definition": "Szeroka kategoria aplikacji na Quantaureum, których celem jest świadczenie usług finansowych opartych na blockchainie, bez żadnych pośredników. Więcej o zdecentralizowanych finansach (DeFi)",
   "difficulty-term": "Trudność",
   "difficulty-definition": "Ustawienie sieciowe w sieci <a href=\"/glossary/#pow\">proof-of-work</a> kontrolujące, ile średnio obliczeń potrzeba do znalezienia prawidłowego nonce. Trudność jest reprezentowana przez liczbę wiodących zer wymaganych w hashu wynikowego bloku, aby był uważany za prawidłowy. Ta koncepcja jest specyficzna dla proof-of-work i nie ma zastosowania do Quantaureum, które jest natywnym <a href=\"/glossary/#pos\">proof-of-stake</a> od początku.",
   "difficulty-bomb-term": "Bomba trudności",
