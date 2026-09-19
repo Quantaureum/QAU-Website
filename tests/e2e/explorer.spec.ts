@@ -1,6 +1,9 @@
 import { expect, test } from "@playwright/test"
 
-const BASE = "http://localhost:3000"
+// Follow the configured base URL (set by `pnpm test:e2e` in CI to the Netlify
+// preview; defaults to the local dev server). Do NOT hardcode localhost so the
+// suite is not accidentally pointed at a non-running local origin.
+const BASE = process.env.PLAYWRIGHT_TEST_BASE_URL || "http://localhost:3000"
 
 test.describe.configure({ timeout: 180_000 })
 
@@ -63,6 +66,19 @@ test.describe("QAU Explorer pages render (dev server)", () => {
       { waitUntil: "domcontentloaded", timeout: 120_000 }
     )
     await expect(page).toHaveURL(/\/explorer\/address\//)
+    await expect(page.getByText("Balance")).toBeVisible()
+  })
+
+  test("search normalizes trailing slash in an address query", async ({
+    page,
+  }) => {
+    await page.goto(
+      `${BASE}/explorer/?q=0xcfc340764e17595157121ac76c5c5c5605cb8c67/`,
+      { waitUntil: "domcontentloaded", timeout: 120_000 }
+    )
+    await expect(page).toHaveURL(
+      /\/explorer\/address\/0xcfc340764e17595157121ac76c5c5c5605cb8c67\/$/
+    )
     await expect(page.getByText("Balance")).toBeVisible()
   })
 })

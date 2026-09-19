@@ -25,7 +25,11 @@ import {
   listTransactions,
   syncIndex,
 } from "@/lib/explorer/api"
-import { getExplorerLookupKind, QAU_MAINNET } from "@/lib/explorer/config"
+import {
+  getExplorerLookupKind,
+  normalizeQueryForRoute,
+  QAU_MAINNET,
+} from "@/lib/explorer/config"
 import explorerHeroImg from "@/public/images/heroes/explorer-hero.png"
 
 export const dynamic = "force-dynamic"
@@ -47,14 +51,17 @@ export default async function ExplorerPage(props: {
   let searchNoMatch = false
   if (query) {
     const kind = getExplorerLookupKind(query)
+    // Canonical query shape (leading 0x + no trailing slash) so the detail
+    // route segment matches the value the address/tx pages expect.
+    const canonical = normalizeQueryForRoute(query)
     // Keep the current locale when redirecting into a detail page.
     const detailPath =
       kind === "address"
-        ? `/explorer/address/${query}/`
+        ? `/explorer/address/${canonical}/`
         : kind === "transaction"
-          ? `/explorer/tx/${query}/`
+          ? `/explorer/tx/${canonical}/`
           : kind === "block"
-            ? `/explorer/block/${query}/`
+            ? `/explorer/block/${canonical}/`
             : null
     if (detailPath) {
       redirect(locale === "en" ? detailPath : `/${locale}${detailPath}`)
