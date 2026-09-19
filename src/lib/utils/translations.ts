@@ -27,7 +27,6 @@ export const EXACT_PATH_NAMESPACE_MAP: Record<string, string> = {
 }
 
 export const PREFIX_PATH_NAMESPACE_MAP: Array<[string, string]> = [
-  ["/staking/deposit-contract/", "page-staking-deposit-contract"],
   ["/staking/", "page-staking"],
   ["/developers/local-environment/", "page-developers-local-environment"],
   ["/developers/learning-tools/", "page-developers-learning-tools"],
@@ -36,15 +35,9 @@ export const PREFIX_PATH_NAMESPACE_MAP: Array<[string, string]> = [
   ["/developers/tools/", "page-developers-tools"],
   ["/developers/", "page-developers-index"],
   ["/wallets/find-wallet/", "page-wallets-find-wallet"],
-  ["/community/events/", "page-community-events"],
-  ["/community/support/", "page-community-support"],
   ["/community/", "page-community"],
   ["/energy-consumption/", "page-energy-consumption"],
-  ["/quantaureum-forks/", "page-history"],
   ["/resources/", "page-resources"],
-  // Ordering matters: /videos/ MUST be before /learn/ to prevent false positive matching
-  // (because /videos/ paths are prefixed with /learn/ in some contexts or just to avoid overly greedy matches)
-  ["/videos/", "page-videos"],
   ["/stories/", "page-stories"],
   ["/learn/", "page-learn"],
   ["/gas/", "page-gas"],
@@ -63,7 +56,6 @@ const EXACT_PATH_ADDITIONAL_NAMESPACES: Record<string, string[]> = {
 }
 
 const PREFIX_PATH_ADDITIONAL_NAMESPACES: Array<[string, string[]]> = [
-  ["/developers/docs/scaling/", ["page-layer-2"]],
   ["/developers/tools/", ["page-developers-tools-descriptions"]],
   ["/gas/", ["page-gas", "page-community"]],
   ["/energy-consumption/", ["page-about"]],
@@ -87,7 +79,6 @@ const GLOSSARY_TOOLTIP_PREFIXES: string[] = [
 
 const LAYOUT_NAMESPACES: Record<string, string[]> = {
   docs: ["page-developers-docs"],
-  upgrade: ["page-upgrades", "page-upgrades-index"],
   tutorial: ["page-developers-tutorials"],
 }
 
