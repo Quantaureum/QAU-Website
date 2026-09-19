@@ -36,7 +36,7 @@
   "data-availability-term": "Veri kullanılabilirliği",
   "data-availability-definition": "Sistemdeki şeffaflığı ve güveni korumak için herhangi bir düğüm, bir blokzincir üzerindeki işlemleri bağımsız olarak doğrulayabilir.",
   "defi-term": "DeFi",
-  "defi-definition": "Herhangi bir aracı olmadan, blokzincir destekli finansal hizmetler sunmayı amaçlayan geniş bir Quantaureum uygulamaları kategorisi. <a href=\"/defi/\">Merkeziyetsiz finans (DeFi) hakkında daha fazla bilgi</a>",
+  "defi-definition": "Herhangi bir aracı olmadan, blokzincir destekli finansal hizmetler sunmayı amaçlayan geniş bir Quantaureum uygulamaları kategorisi. Merkeziyetsiz finans (DeFi) hakkında daha fazla bilgi",
   "dex-term": "Merkeziyetsiz borsa (DEX)",
   "dex-definition": "Ağdaki eşlerle token takas etmenizi sağlayan bir tür Quantaureum uygulaması. DEX'ler, merkezi borsalar gibi coğrafi kısıtlamalara tabi değildir; herkes katılabilir.",
   "difficulty-bomb-term": "Zorluk bombası",

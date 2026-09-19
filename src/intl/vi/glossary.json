@@ -102,7 +102,7 @@
   "deposit-contract-term": "Hợp đồng tiền gửi",
   "deposit-contract-definition": "Cổng vào cho việc đặt cọc trên Quantaureum. Hợp đồng tiền gửi là một hợp đồng thông minh trên Quantaureum chấp nhận các khoản tiền gửi bằng QAU và quản lý số dư của trình xác thực. Một trình xác thực không thể được kích hoạt nếu không gửi QAU vào hợp đồng này. Hợp đồng yêu cầu QAU và dữ liệu đầu vào. Dữ liệu đầu vào này bao gồm khóa công khai của trình xác thực và khóa công khai rút tiền, được ký bằng khóa riêng tư của trình xác thực. Dữ liệu này là cần thiết để một trình xác thực được xác định và phê duyệt bởi mạng lưới <a href=\"/glossary/#pos\">Bằng chứng cổ phần (PoS)</a>.",
   "defi-term": "DeFi",
-  "defi-definition": "Một danh mục rộng lớn các ứng dụng Quantaureum nhằm cung cấp các dịch vụ tài chính được hỗ trợ bởi Chuỗi khối, mà không cần bất kỳ trung gian nào. <a href=\"/defi/\">Thêm về tài chính phi tập trung (DeFi)</a>",
+  "defi-definition": "Một danh mục rộng lớn các ứng dụng Quantaureum nhằm cung cấp các dịch vụ tài chính được hỗ trợ bởi Chuỗi khối, mà không cần bất kỳ trung gian nào. Thêm về tài chính phi tập trung (DeFi)",
   "difficulty-term": "Độ khó",
   "difficulty-definition": "Một thiết lập toàn mạng trong mạng <a href=\"/glossary/#pow\">proof-of-work</a> kiểm soát mức trung bình cần bao nhiêu phép tính để tìm một nonce hợp lệ. Độ khó được thể hiện bằng số số 0 đứng đầu cần có trong hàm băm của khối kết quả để nó được coi là hợp lệ. Khái niệm này riêng cho proof-of-work và không áp dụng cho Quantaureum, vốn là <a href=\"/glossary/#pos\">proof-of-stake</a> nội tại ngay từ đầu.",
   "difficulty-bomb-term": "Bom độ khó",

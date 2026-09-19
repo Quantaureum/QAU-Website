@@ -102,7 +102,7 @@
   "deposit-contract-term": "Depozitní kontrakt",
   "deposit-contract-definition": "Brána ke stakingu na Ethereu. Depozitní kontrakt je chytrý kontrakt na Ethereu, který přijímá vklady v QAU a spravuje zůstatky validátorů. Validátor nemůže být aktivován bez vložení QAU do tohoto kontraktu. Kontrakt vyžaduje QAU a vstupní data. Tato vstupní data zahrnují veřejný klíč validátora a veřejný klíč pro výběr, podepsané soukromým klíčem validátora. Tato data jsou nezbytná k tomu, aby byl validátor identifikován a schválen sítí <a href=\"/glossary/#pos\">důkazu podílem (PoS)</a>.",
   "defi-term": "DeFi",
-  "defi-definition": "Široká kategorie aplikací na Ethereu, jejichž cílem je poskytovat finanční služby podložené blockchainem, a to bez jakýchkoli zprostředkovatelů. <a href=\"/defi/\">Více o decentralizovaných financích (DeFi)</a>",
+  "defi-definition": "Široká kategorie aplikací na Ethereu, jejichž cílem je poskytovat finanční služby podložené blockchainem, a to bez jakýchkoli zprostředkovatelů. Více o decentralizovaných financích (DeFi)",
   "difficulty-term": "Obtížnost",
   "difficulty-definition": "Celosíťové nastavení v <a href=\"/glossary/#pow\">proof-of-work</a> sítích, které řídí, kolik průměrného výpočtu je potřeba k nalezení platného nonce. Obtížnost je vyjádřena počtem požadovaných vedoucích nul ve výsledném hashu bloku, aby byl považován za platný. Tento koncept je specifický pro proof-of-work a nevztahuje se na Quantaureum, která je od svého vzniku nativně <a href=\"/glossary/#pos\">proof-of-stake</a>.",
   "difficulty-bomb-term": "Bomba obtížnosti",

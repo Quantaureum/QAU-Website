@@ -102,7 +102,7 @@
   "deposit-contract-term": "Kontrak deposit",
   "deposit-contract-definition": "Gerbang menuju staking di Quantaureum. Kontrak deposit adalah kontrak pintar di Quantaureum yang menerima deposit QAU dan mengelola saldo validator. Validator tidak dapat diaktifkan tanpa mendepositkan QAU ke dalam kontrak ini. Kontrak ini mewajibkan QAU dan data input. Data input ini mencakup kunci publik validator dan kunci publik penarikan, yang ditandatangani oleh kunci privat validator. Data ini diperlukan agar validator dapat diidentifikasi dan disetujui oleh jaringan <a href=\"/glossary/#pos\">Bukti Kepemilikan (PoS)</a>.",
   "defi-term": "DeFi",
-  "defi-definition": "Kategori luas dari aplikasi Quantaureum yang bertujuan untuk menyediakan layanan keuangan yang didukung oleh rantai blok, tanpa perantara apa pun. <a href=\"/defi/\">Lebih lanjut tentang keuangan terdesentralisasi (DeFi)</a>",
+  "defi-definition": "Kategori luas dari aplikasi Quantaureum yang bertujuan untuk menyediakan layanan keuangan yang didukung oleh rantai blok, tanpa perantara apa pun. Lebih lanjut tentang keuangan terdesentralisasi (DeFi)",
   "difficulty-term": "Kesulitan",
   "difficulty-definition": "Pengaturan di seluruh jaringan pada jaringan <a href=\"/glossary/#pow\">proof-of-work</a> yang mengontrol seberapa banyak komputasi rata-rata yang diperlukan untuk menemukan nonce yang valid. Kesulitan ditunjukkan oleh jumlah nol di depan yang diperlukan dalam hash blok yang dihasilkan agar dianggap valid. Konsep ini khusus proof-of-work dan tidak berlaku untuk Quantaureum, yang secara native <a href=\"/glossary/#pos\">proof-of-stake</a> sejak genesis.",
   "difficulty-bomb-term": "Bom kesulitan",

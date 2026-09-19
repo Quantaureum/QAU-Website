@@ -102,7 +102,7 @@
   "deposit-contract-term": "存款合約",
   "deposit-contract-definition": "在量子金链上進行質押的閘道。存款合約是量子金链上的一個智能合約，負責接收 QAU 存款並管理驗證者餘額。如果不將 QAU 存入此合約，驗證者就無法啟用。該合約需要 QAU 和輸入資料。此輸入資料包含驗證者公鑰和提款公鑰，並由驗證者私鑰簽署。這些資料是驗證者被<a href=\"/glossary/#pos\">權益證明 (PoS)</a>網路識別和核准所必需的。",
   "defi-term": "DeFi",
-  "defi-definition": "量子金链應用程式的一個廣泛類別，旨在提供由區塊鏈支持且沒有任何中介機構的金融服務。<a href=\"/defi/\">更多關於去中心化金融 (DeFi) 的資訊</a>",
+  "defi-definition": "量子金链應用程式的一個廣泛類別，旨在提供由區塊鏈支持且沒有任何中介機構的金融服務。更多關於去中心化金融 (DeFi) 的資訊",
   "difficulty-term": "難度",
   "difficulty-definition": "<a href=\"/glossary/#pow\">工作量證明</a>網路中的全網設定，控制平均需要多少計算才能找到有效的 nonce。難度以結果區塊雜湊中被視為有效所需的開頭零的數量來表示。此概念是工作量證明特有的，不適用於從創世起就是原生<a href=\"/glossary/#pos\">權益證明</a>的 Quantaureum。",
   "difficulty-bomb-term": "難度炸彈",

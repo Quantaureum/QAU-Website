@@ -36,7 +36,7 @@
   "data-availability-term": "Tính khả dụng của dữ liệu",
   "data-availability-definition": "Bất kỳ nút nào cũng có thể xác minh độc lập các giao dịch trên một chuỗi khối nhằm duy trì tính minh bạch và sự tin cậy trong hệ thống.",
   "defi-term": "DeFi",
-  "defi-definition": "Một danh mục rộng lớn các ứng dụng Quantaureum nhằm cung cấp các dịch vụ tài chính được hỗ trợ bởi chuỗi khối, mà không cần bất kỳ trung gian nào. <a href=\"/defi/\">Tìm hiểu thêm về tài chính phi tập trung (DeFi)</a>",
+  "defi-definition": "Một danh mục rộng lớn các ứng dụng Quantaureum nhằm cung cấp các dịch vụ tài chính được hỗ trợ bởi chuỗi khối, mà không cần bất kỳ trung gian nào. Tìm hiểu thêm về tài chính phi tập trung (DeFi)",
   "dex-term": "Sàn giao dịch phi tập trung (DEX)",
   "dex-definition": "Một loại ứng dụng Quantaureum cho phép bạn hoán đổi token với các đối tác ngang hàng trên mạng lưới. Các DEX không bị hạn chế về mặt địa lý như các sàn giao dịch tập trung – bất kỳ ai cũng có thể tham gia.",
   "difficulty-bomb-term": "Bom độ khó",

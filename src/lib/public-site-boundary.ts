@@ -16,15 +16,14 @@ export const PUBLIC_NAV_ROUTES = [
   "/community/",
 ] as const
 
-/** Routes retained for reuse but intentionally excluded from public discovery. */
-export const HIDDEN_PUBLIC_ROUTE_PREFIXES = [
-  "/flights/",
-  "/hotels/",
-  "/movies/",
-  "/tickets/",
-  "/exchange/",
-  "/defi/",
-] as const
+/**
+ * Routes retained for reuse but intentionally excluded from public discovery.
+ *
+ * NOTE: previously listed ethereum.org template remnants (/flights/, /hotels/,
+ * /movies/, /tickets/, /exchange/, /defi/) that do not exist on this site and
+ * were removed — robots.txt and the sitemap only cover live QAU routes now.
+ */
+export const HIDDEN_PUBLIC_ROUTE_PREFIXES = [] as const
 
 export function isPublicSiteRoute(pathname: string): boolean {
   const normalized = pathname.startsWith("/") ? pathname : `/${pathname}`

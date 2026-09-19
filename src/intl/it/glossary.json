@@ -102,7 +102,7 @@
   "deposit-contract-term": "Contratto di deposito",
   "deposit-contract-definition": "Il punto di accesso allo staking su Quantaureum. Il contratto di deposito è uno smart contract su Quantaureum che accetta depositi di QAU e gestisce i saldi dei validatori. Un validatore non può essere attivato senza depositare QAU in questo contratto. Il contratto richiede QAU e dati di input. Questi dati di input includono la chiave pubblica del validatore e la chiave pubblica di prelievo, firmate dalla chiave privata del validatore. Questi dati sono necessari affinché un validatore venga identificato e approvato dalla rete <a href=\"/glossary/#pos\">Proof-of-Stake</a>.",
   "defi-term": "DeFi",
-  "defi-definition": "Un'ampia categoria di app di Quantaureum che mirano a fornire servizi finanziari supportati dalla blockchain, senza alcun intermediario. <a href=\"/defi/\">Maggiori informazioni sulla finanza decentralizzata (DeFi)</a>",
+  "defi-definition": "Un'ampia categoria di app di Quantaureum che mirano a fornire servizi finanziari supportati dalla blockchain, senza alcun intermediario. Maggiori informazioni sulla finanza decentralizzata (DeFi)",
   "difficulty-term": "Difficoltà",
   "difficulty-definition": "Un'impostazione a livello di rete nelle reti <a href=\"/glossary/#pow\">proof-of-work</a> che controlla quanto calcolo medio è necessario per trovare un nonce valido. La difficoltà è rappresentata dal numero di zeri iniziali richiesti nell'hash del blocco risultante affinché sia considerato valido. Questo concetto è specifico della proof-of-work e non si applica a Quantaureum, che è nativamente <a href=\"/glossary/#pos\">proof-of-stake</a> fin dalla genesi.",
   "difficulty-bomb-term": "Bomba di difficoltà",

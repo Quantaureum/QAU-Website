@@ -36,7 +36,7 @@
   "data-availability-term": "Ketersediaan data",
   "data-availability-definition": "Setiap node dapat memverifikasi transaksi secara independen di rantai blok untuk menjaga transparansi dan kepercayaan dalam sistem.",
   "defi-term": "DeFi",
-  "defi-definition": "Kategori luas dari aplikasi Quantaureum yang bertujuan untuk menyediakan layanan keuangan yang didukung oleh rantai blok, tanpa perantara apa pun. <a href=\"/defi/\">Lebih lanjut tentang keuangan terdesentralisasi (DeFi)</a>",
+  "defi-definition": "Kategori luas dari aplikasi Quantaureum yang bertujuan untuk menyediakan layanan keuangan yang didukung oleh rantai blok, tanpa perantara apa pun. Lebih lanjut tentang keuangan terdesentralisasi (DeFi)",
   "dex-term": "Bursa terdesentralisasi (DEX)",
   "dex-definition": "Jenis aplikasi Quantaureum yang memungkinkan Anda menukar token dengan rekan-rekan di jaringan. DEX tidak tunduk pada batasan geografis seperti bursa tersentralisasi – siapa pun dapat berpartisipasi.",
   "difficulty-bomb-term": "Bom kesulitan",

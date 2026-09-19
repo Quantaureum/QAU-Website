@@ -16,19 +16,13 @@ test.describe("QAU public site boundary", () => {
     expect(isPublicSiteRoute("/explorer/blocks/")).toBe(true)
   })
 
-  test("keeps retained non-core app routes out of discovery", () => {
-    expect(HIDDEN_PUBLIC_ROUTE_PREFIXES).toEqual(
-      expect.arrayContaining([
-        "/flights/",
-        "/hotels/",
-        "/movies/",
-        "/tickets/",
-        "/exchange/",
-        "/defi/",
-      ])
-    )
-    expect(isPublicSiteRoute("/flights/")).toBe(false)
-    expect(isPublicSiteRoute("exchange/orders")).toBe(false)
+  test("does not hide non-existent ethereum template routes", () => {
+    // The old ethereum.org template blocklist (/flights/, /hotels/, /movies/,
+    // /tickets/, /exchange/, /defi/) was removed: those routes do not exist on
+    // this site and must not be treated as hidden-but-reserved.
+    expect(HIDDEN_PUBLIC_ROUTE_PREFIXES).toEqual([])
+    expect(isPublicSiteRoute("/flights/")).toBe(true)
+    expect(isPublicSiteRoute("exchange/orders")).toBe(true)
     expect(isPublicSiteRoute("/what-is-qau/")).toBe(true)
   })
 

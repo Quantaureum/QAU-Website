@@ -102,7 +102,7 @@
   "deposit-contract-term": "存款合约",
   "deposit-contract-definition": "量子金链质押的网关。存款合约是量子金链上的一个智能合约，接受 QAU 存款并管理验证者余额。如果不向该合约存入 QAU，验证者就无法激活。该合约需要 QAU 和输入数据。此输入数据包括验证者公钥和提款公钥，并由验证者私钥签名。验证者需要这些数据才能被<a href=\"/glossary/#pos\">权益证明 (PoS)</a>网络识别和批准。",
   "defi-term": "DeFi",
-  "defi-definition": "量子金链应用的一个大类，旨在提供由区块链支持的、没有任何中介的金融服务。<a href=\"/defi/\">更多关于去中心化金融 (DeFi) 的信息</a>",
+  "defi-definition": "量子金链应用的一个大类，旨在提供由区块链支持的、没有任何中介的金融服务。更多关于去中心化金融 (DeFi) 的信息",
   "difficulty-term": "难度",
   "difficulty-definition": "<a href=\"/glossary/#pow\">工作量证明 (PoW)</a>网络中的一项全网设置，用于控制找到有效随机数平均需要多少计算量。难度由生成的区块哈希中被视为有效所需的前导零的数量表示。这种概念是工作量证明特有的，不适用于从创世起就是原生<a href=\"/glossary/#pos\">权益证明 (PoS)</a>的量子金链。",
   "difficulty-bomb-term": "难度炸弹",

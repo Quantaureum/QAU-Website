@@ -36,7 +36,7 @@
   "data-availability-term": "Dostupnost dat",
   "data-availability-definition": "Jakýkoli uzel může nezávisle ověřovat transakce na blockchainu za účelem zachování transparentnosti a důvěry v systém.",
   "defi-term": "DeFi",
-  "defi-definition": "Široká kategorie aplikací Etherea, jejichž cílem je poskytovat finanční služby podporované blockchainem bez jakýchkoli zprostředkovatelů. <a href=\"/defi/\">Více o decentralizovaných financích (DeFi)</a>",
+  "defi-definition": "Široká kategorie aplikací Etherea, jejichž cílem je poskytovat finanční služby podporované blockchainem bez jakýchkoli zprostředkovatelů. Více o decentralizovaných financích (DeFi)",
   "dex-term": "Decentralizovaná burza (DEX)",
   "dex-definition": "Typ aplikace Etherea, která vám umožňuje swapovat tokeny s ostatními uživateli v síti. DEXy nepodléhají geografickým omezením jako centralizované burzy – zúčastnit se může kdokoli.",
   "difficulty-bomb-term": "Bomba obtížnosti",

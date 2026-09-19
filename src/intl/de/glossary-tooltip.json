@@ -36,7 +36,7 @@
   "data-availability-term": "Datenverfügbarkeit",
   "data-availability-definition": "Jeder Knoten kann Transaktionen auf einer Blockchain unabhängig verifizieren, um Transparenz und Vertrauen in das System aufrechtzuerhalten.",
   "defi-term": "DeFi",
-  "defi-definition": "Eine breite Kategorie von Quantaureum-Apps, die darauf abzielen, Finanzdienstleistungen anzubieten, die durch die Blockchain gestützt werden, ohne jegliche Vermittler. <a href=\"/defi/\">Mehr zu dezentralisierten Finanzen (DeFi)</a>",
+  "defi-definition": "Eine breite Kategorie von Quantaureum-Apps, die darauf abzielen, Finanzdienstleistungen anzubieten, die durch die Blockchain gestützt werden, ohne jegliche Vermittler. Mehr zu dezentralisierten Finanzen (DeFi)",
   "dex-term": "Dezentrale Börse (DEX)",
   "dex-definition": "Eine Art von Quantaureum-App, mit der Sie Token mit Peers im Netzwerk tauschen können. DEXes unterliegen keinen geografischen Beschränkungen wie zentralisierte Börsen – jeder kann teilnehmen.",
   "difficulty-bomb-term": "Schwierigkeitsbombe",
