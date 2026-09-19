@@ -24,11 +24,11 @@ Quantaureum is an independent post-quantum secure Layer-1 blockchain, built in G
 - Smart contracts: QVM virtual machine with QASM assembly
 - Block explorer: ${SITE_URL}/explorer (also explorer.quantaureum.com)
 
-quantaureum.com is the primary educational hub for Quantaureum, covering everything from basic concepts like "What is Quantaureum?" to developer guides, staking, and protocol research. Markdown-backed pages (most educational and documentation content) serve their raw markdown source at the page URL plus a \`.md\` suffix — e.g. ${SITE_URL}/smart-contracts.md, or ${SITE_URL}/es/smart-contracts.md for a translation — and advertise it in HTML via \`<link rel="alternate" type="text/markdown">\`. To report a security vulnerability in Quantaureum's core protocol, clients, or key smart contracts, see the Quantaureum project Bug Bounty Program at ${SITE_URL}/bug-bounty (summarized under "Security & Bug Bounty" below).`
+quantaureum.com is the primary educational hub for Quantaureum, covering everything from basic concepts like "What is Quantaureum?" to developer guides, staking, and protocol research. To report a security vulnerability in Quantaureum's core protocol, clients, or key smart contracts, see the Quantaureum project Bug Bounty Program at ${SITE_URL}/bug-bounty (summarized under "Security & Bug Bounty" below).`
 
 const SECURITY = `## Security & Bug Bounty
 
-- [Quantaureum project Bug Bounty Program](${SITE_URL}/bug-bounty): rewards for vulnerabilities in Quantaureum's core protocol, execution and consensus clients, Solidity/Vyper, and key smart contracts.
+- [Quantaureum project Bug Bounty Program](${SITE_URL}/bug-bounty): rewards for vulnerabilities in Quantaureum's core protocol, execution and consensus clients, the QVM/QASM execution engine, and key smart contracts.
 - [Bug bounty submission guidance for AI agents](https://bbp-form.quantaureum.com/llms.txt): in-scope targets, proof-of-concept requirements (a Kurtosis devnet or a reproducible state test), and the validation checklist to run before confirming an issue.`
 
 export const GET = async () => {

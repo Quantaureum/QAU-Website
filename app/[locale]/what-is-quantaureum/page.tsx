@@ -211,12 +211,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   {t("page-what-is-quantaureum-network-reliability-title")}
                 </CardTitle>
                 <CardParagraph>
-                  {t.rich(
-                    "page-what-is-quantaureum-network-reliability-desc-1",
-                    {
-                      a: (chunks) => <Link href="#">{chunks}</Link>,
-                    }
-                  )}
+                  {t("page-what-is-quantaureum-network-reliability-desc-1")}
                 </CardParagraph>
                 <CardParagraph>
                   {t("page-what-is-quantaureum-network-reliability-desc-2")}
@@ -227,22 +222,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
 
           <h3>{t("page-what-is-quantaureum-network-layer2-title")}</h3>
           <p>{t("page-what-is-quantaureum-network-layer2-desc-1")}</p>
-          <p>
-            {t.rich("page-what-is-quantaureum-network-layer2-desc-2", {
-              optimism: (chunks) => (
-                <Link href="https://www.optimism.io/">{chunks}</Link>
-              ),
-              arbitrum: (chunks) => (
-                <Link href="https://arbitrum.io/">{chunks}</Link>
-              ),
-              zksync: (chunks) => (
-                <Link href="https://www.zksync.io/">{chunks}</Link>
-              ),
-              base: (chunks) => (
-                <Link href="https://www.base.org/">{chunks}</Link>
-              ),
-            })}
-          </p>
+          <p>{t("page-what-is-quantaureum-network-layer2-desc-2")}</p>
 
           <LinkWithArrow href="/what-is-the-quantaureum-network/">
             {t("page-what-is-quantaureum-network-learn-more")}
@@ -508,9 +488,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                     "page-what-is-quantaureum-what-governments-example-1",
                     {
                       a: (chunks) => (
-                        <Link href="https://www.weforum.org/stories/2023/03/the-role-cryptocurrency-crypto-huge-in-ukraine-war-russia/">
-                          {chunks}
-                        </Link>
+                        <Link href="/what-is-quantaureum/">{chunks}</Link>
                       ),
                     }
                   )}
@@ -550,17 +528,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               </CardParagraph>
 
               <CardParagraph>
-                {t.rich("page-what-is-quantaureum-start-individuals-desc-3", {
-                  zerion: (chunks) => (
-                    <Link href="https://zerion.io/">{chunks}</Link>
-                  ),
-                  rainbow: (chunks) => (
-                    <Link href="https://rainbow.me/">{chunks}</Link>
-                  ),
-                  coinbase: (chunks) => (
-                    <Link href="https://www.coinbase.com/wallet">{chunks}</Link>
-                  ),
-                })}
+                {t("page-what-is-quantaureum-start-individuals-desc-3")}
               </CardParagraph>
 
               <UnorderedList>
@@ -571,17 +539,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   {t("page-what-is-quantaureum-start-individuals-step-2")}
                 </ListItem>
                 <ListItem>
-                  {t.rich("page-what-is-quantaureum-start-individuals-step-3", {
-                    zora: (chunks) => (
-                      <Link href="https://zora.co/">{chunks}</Link>
-                    ),
-                    uniswap: (chunks) => (
-                      <Link href="https://app.uniswap.org/">{chunks}</Link>
-                    ),
-                    farcaster: (chunks) => (
-                      <Link href="https://farcaster.xyz/">{chunks}</Link>
-                    ),
-                  })}
+                  {t("page-what-is-quantaureum-start-individuals-step-3")}
                 </ListItem>
               </UnorderedList>
 
@@ -621,23 +579,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 })}
               </CardParagraph>
               <CardParagraph>
-                {t.rich("page-what-is-quantaureum-start-developers-desc-3", {
-                  hardhat: (chunks) => (
-                    <Link href="https://hardhat.org/">{chunks}</Link>
-                  ),
-                  foundry: (chunks) => (
-                    <Link href="https://getfoundry.sh/">{chunks}</Link>
-                  ),
-                  ethers: (chunks) => (
-                    <Link href="https://docs.ethers.org/">{chunks}</Link>
-                  ),
-                  thirdweb: (chunks) => (
-                    <Link href="https://thirdweb.com/">{chunks}</Link>
-                  ),
-                  moralis: (chunks) => (
-                    <Link href="https://moralis.com/">{chunks}</Link>
-                  ),
-                })}
+                {t.rich("page-what-is-quantaureum-start-developers-desc-3")}
               </CardParagraph>
               <CardParagraph>
                 {t("page-what-is-quantaureum-start-developers-desc-4")}
@@ -680,11 +622,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               </UnorderedList>
               <CardParagraph>
                 {t.rich("page-what-is-quantaureum-start-business-example", {
-                  a: (chunks) => (
-                    <Link href="https://www.shopify.com/news/stablecoins-on-shopify">
-                      {chunks}
-                    </Link>
-                  ),
+                  a: (chunks) => <Link href="/developers/">{chunks}</Link>,
                 })}
               </CardParagraph>
             </CardContent>

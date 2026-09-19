@@ -87,7 +87,7 @@ export default async function OpenSourcePageJsonLD({
             "@type": "Thing",
             name: "Quantaureum",
             description:
-              "A decentralized platform for applications and digital economies powered by smart contracts",
+              "An independent post-quantum secure Layer-1 blockchain with QPOS consensus, QVM/QASM smart contracts, and the native QAU token",
           },
         ],
         dateModified: lastEditLocaleTimestamp,

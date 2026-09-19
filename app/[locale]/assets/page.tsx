@@ -59,7 +59,7 @@ import hero from "@/public/images/home/hero.png"
 import heroPanda from "@/public/images/home/hero-panda.png"
 import impact from "@/public/images/impact_transparent.png"
 import infrastructure from "@/public/images/infrastructure_transparent.png"
-import eth from "@/public/images/qau.png"
+import qau from "@/public/images/qau.png"
 import newRings from "@/public/images/upgrades/newrings.png"
 import oldShip from "@/public/images/upgrades/oldship.png"
 import dao from "@/public/images/use-cases/dao-2.png"
@@ -165,7 +165,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
     ],
     [
       { title: t("page-assets-bazaar"), image: whatIsQuantaureum, ...hachmang },
-      { title: t("page-assets-eth"), image: eth, ...hachmang },
+      { title: t("page-assets-eth"), image: qau, ...hachmang },
     ],
     [
       { title: t("page-assets-mainnet"), image: oldShip, ...hachmang },
