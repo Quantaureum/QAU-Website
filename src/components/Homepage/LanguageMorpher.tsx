@@ -93,8 +93,8 @@ const LanguageMorpher = () => {
           "Квантауреум",
           "کوانٹوریئم",
           "Quantaureum",
-          "寬塔烏瑞姆",
-          "宽塔乌瑞姆",
+          "昆塔",
+          "昆塔",
         ]}
         charSet="abcdxyz01234567{}%$?!"
       />
