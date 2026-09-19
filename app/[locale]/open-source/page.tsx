@@ -266,9 +266,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
       approach: t("page-open-source-comparison-copyleft-approach"),
       rights: t("page-open-source-comparison-copyleft-rights"),
       licenses: t("page-open-source-comparison-copyleft-licenses"),
-      examples: t.rich("page-open-source-comparison-copyleft-examples", {
-        strong: Strong,
-      }),
+      examples: t("page-open-source-comparison-copyleft-examples"),
     },
   ]
 
