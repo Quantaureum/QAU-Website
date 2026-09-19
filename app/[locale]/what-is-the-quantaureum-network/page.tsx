@@ -276,10 +276,6 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
             {t.rich(
               "page-what-is-quantaureum-network-staking-section-description-7",
               {
-                validators: (chunks) => <Link href="/explorer/">{chunks}</Link>,
-                stakedEther: (chunks) => (
-                  <Link href="/explorer/">{chunks}</Link>
-                ),
                 strong: Strong,
               }
             )}
@@ -380,7 +376,9 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
               {t.rich(
                 "page-what-is-quantaureum-network-live-network-data-section-description-9",
                 {
-                  explorer: (chunks) => <Link href="/explorer/">{chunks}</Link>,
+                  etherscan: (chunks) => (
+                    <Link href="/explorer/">{chunks}</Link>
+                  ),
                 }
               )}
             </ListItem>
@@ -388,8 +386,8 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
               {t.rich(
                 "page-what-is-quantaureum-network-live-network-data-section-description-10",
                 {
-                  beaconcha: (chunks) => (
-                    <Link href="/explorer/">{chunks}</Link>
+                  github: (chunks) => (
+                    <Link href="https://github.com/Quantaureum">{chunks}</Link>
                   ),
                 }
               )}
@@ -398,9 +396,7 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
               {t.rich(
                 "page-what-is-quantaureum-network-live-network-data-section-description-11",
                 {
-                  ultrasound: (chunks) => (
-                    <Link href="https://github.com/Quantaureum">{chunks}</Link>
-                  ),
+                  docs: (chunks) => <Link href="/developers/">{chunks}</Link>,
                 }
               )}
             </ListItem>
@@ -408,7 +404,7 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
               {t.rich(
                 "page-what-is-quantaureum-network-live-network-data-section-description-12",
                 {
-                  l2fees: (chunks) => (
+                  discord: (chunks) => (
                     <Link href="https://discord.gg/MSctkBT5j">{chunks}</Link>
                   ),
                 }

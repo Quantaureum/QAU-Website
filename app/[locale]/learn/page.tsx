@@ -33,10 +33,10 @@ import financeTransparent from "@/public/images/finance_transparent.png"
 import futureTransparent from "@/public/images/future_transparent.png"
 import hackathon from "@/public/images/hackathon_transparent.png"
 import heroImage from "@/public/images/heroes/learn-hub-hero.png"
+import roadmapHero from "@/public/images/heroes/roadmap-hub-hero.jpg"
 import impact from "@/public/images/impact_transparent.png"
 import developersQauBlocks from "@/public/images/learn/developers-qau-blocks.png"
-import eth from "@/public/images/qau.png"
-import merge from "@/public/images/upgrades/merge.png"
+import qau from "@/public/images/qau.png"
 import wallet from "@/public/images/wallet.png"
 import whatIsEth from "@/public/images/what-is-quantaureum.png"
 
@@ -220,7 +220,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
             />
             <LearnCard
               href="/what-is-QAU/"
-              image={eth}
+              image={qau}
               title={t("what-is-qau-card-title")}
               description={t("what-is-qau-description")}
               ctaLabel={t("what-is-qau-cta")}
@@ -293,7 +293,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
             />
             <LearnCard
               href="/get-qau/"
-              image={eth}
+              image={qau}
               title={t("get-qau-card-title")}
               description={t("get-qau-card-description")}
               ctaLabel={t("get-qau-cta")}
@@ -331,7 +331,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
           <Grid>
             <LearnCard
               href="/roadmap/"
-              image={merge}
+              image={roadmapHero}
               title={t("quantaureum-upgrades-card-title")}
               description={t("quantaureum-upgrades-card-description")}
               ctaLabel={t("quantaureum-upgrades-card-button")}
