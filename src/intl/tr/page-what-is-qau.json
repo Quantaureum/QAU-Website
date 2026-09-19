@@ -43,7 +43,7 @@
   "page-what-is-qau-how-long-does-it-take-to-send-eth": "QAU göndermek ne kadar sürer?",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-1": "Her QAU işlemi kuantum sonrası Dilithium3 imzasıyla imzalanır, ardından ağa yayılır ve bir doğrulayıcı tarafından bloğa dahil edilir.",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-2": "Bir blok, doğrulayıcı komitesinin eşik imzası (GM-QTD) ile birlikte imzaladığında kesinleşir — birden fazla olasılıksal onay beklenmez.",
-  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "Yüksek ağ trafiği sırasında, daha yüksek öncelik ücreti ödeyerek sıradan öne geçebilir ve işlem süresini kısaltabilirsiniz. Temel ücret yakılır; öncelik ücreti blok önerenine gider.",
+  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "Ağ trafiğinin yüksek olduğu dönemlerde, daha yüksek öncelikli ücretler ödeyerek işlemlerinizi hızlandırabilir ve kuyruğun önüne geçebilirsiniz. Ücret, işlemin işlenmesine ve blok önericisinin ödüllendirilmesine gider.",
   "page-what-is-qau-how-much-does-it-cost-to-send-eth": "QAU göndermenin maliyeti nedir?",
   "page-what-is-qau-how-much-does-it-cost-to-send-qau-description-1": "Quantaureum işlemleri <strong>QAU cinsinden ödenen ücretler</strong> gerektirir. Ücret, gereken hesaplama işine (birimi 'gaz'dır) ve ağın anlık talebine göre hesaplanır. Gaz fiyatı ağ trafiğiyle dalgalanır; bu da işlem hacminin düşük olduğu dönemlerde maliyetin daha düşük olmasını sağlar.",
   "page-what-is-qau-how-much-does-it-cost-note": "Güncel ücret seviyeleri için blok gezginine göz atın — canlı gas fiyatları gerçek ağ koşullarına bağlı olduğundan, bu sayfa kasıtlı olarak sabit rakamlar belirtmemektedir.",

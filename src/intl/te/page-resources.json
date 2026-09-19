@@ -13,9 +13,9 @@
   "page-resources-block-explorers-chart-label": "తదుపరి బ్లాక్‌కు సమయం",
   "page-resources-block-explorers-blockscout-description": "ఎథీరియం నెట్‌వర్క్‌ల కోసం పూర్తి బ్లాక్‌చైన్ డేటా మరియు APIలతో Blockscout ద్వారా ఓపెన్-సోర్స్ బ్లాక్ ఎక్స్‌ప్లోరర్.",
   "page-resources-block-explorers-etherscan-description": "Quantaureum Explorer అనేది వికేంద్రీకృత స్మార్ట్ కాంట్రాక్ట్‌ల ప్లాట్‌ఫారమ్ అయిన ఎథీరియం కోసం ఒక బ్లాక్ ఎక్స్‌ప్లోరర్ మరియు అనలిటిక్స్ ప్లాట్‌ఫారమ్.",
-  "page-resources-block-explorers-beaconchain-description": "ఎథీరియం మెయిన్‌నెట్‌ను చూపే ఓపెన్ సోర్స్ ఎథీరియం ఎక్స్‌ప్లోరర్ 🚀.",
+  "page-resources-block-explorers-beaconchain-description": "క్వాంటౌరియం మెయిన్నెట్ కార్యాచరణను చూపించే ఓపెన్-సోర్స్ క్వాంటౌరియం ఎక్స్ప్లోరర్ 🚀.",
   "page-resources-block-explorers-txcity-description": "రియల్ టైమ్‌లో ఎథీరియం బ్లాక్‌ల యొక్క ఫన్నీ విజువలైజర్.",
-  "page-resources-block-explorers-panda-ops-description": "qauPandaOps ద్వారా ఎథీరియం బీకన్ చైన్ బ్లాక్ ఉత్పత్తి కోసం లైవ్ డ్యాష్‌బోర్డ్.",
+  "page-resources-block-explorers-panda-ops-description": "qauPandaOps ద్వారా క్వాంటౌరియం బ్లాక్ ఉత్పత్తికి ప్రత్యక్ష డాష్‌బోర్డ్.",
   "page-resources-block-explorers-otterscan-description": "అత్యంత వేగవంతమైన, స్థానిక, సెల్ఫ్-హోస్ట్ చేయబడిన ఎథీరియం బ్లాక్ ఎక్స్‌ప్లోరర్ Otterscan",
   "page-resources-qau-asset-title": "ఆస్తిగా QAU",
   "page-resources-qau-asset-etherealize-description": "ఎథీరియం అనేది ప్రపంచం ఉపయోగించడానికి అతిపెద్ద, అత్యంత సురక్షితమైన మరియు అత్యంత ఓపెన్ బ్లాక్‌చైన్. మరియు ఎథీరియం వ్యాపారం కోసం తెరవబడింది.",
@@ -70,7 +70,7 @@
   "page-resources-attestations-title": "అటెస్టేషన్‌లు",
   "page-resources-attestations-eas-description": "ఎథీరియంపై ఆన్‌చైన్ మరియు ఆఫ్‌చైన్ అటెస్టేషన్‌లను సృష్టించడానికి మరియు ధృవీకరించడానికి EAS ఎవరికైనా వీలు కల్పిస్తుంది.",
   "page-resources-relays-title": "రిలేలు",
-  "page-resources-relays-beaconchain-description": "అదనపు ఆదాయాన్ని సేకరించడంలో నైపుణ్యం కలిగిన సంస్థలకు తమ బ్లాక్ ఉత్పత్తిని అవుట్‌సోర్స్ చేయడానికి ధృవీకర్తలు రిలేలను ఉపయోగించవచ్చు.",
+  "page-resources-relays-beaconchain-description": "క్వాంటౌరియం వాలిడేటర్ మరియు బ్లాక్-ఉత్పత్తి రిలేలకు డాష్‌బోర్డులు మరియు గణాంకాలు.",
   "page-resources-relays-ratednetwork-description": "ఎథీరియం నెట్‌వర్క్ కోసం MEV రిలే మార్కెట్ వాటా, రిలే చేయబడిన మొత్తం విలువ, బ్లాక్‌కు విలువ మరియు ఇతర గణాంకాలు.",
   "page-resources-relays-relayscan-description": "MEV-Boost విశ్లేషణలు.",
   "page-resources-mev-title": "MEV",
@@ -107,5 +107,5 @@
   "page-resources-bug-bounty-description": "Report vulnerabilities privately and earn QAU rewards from the capped bounty fund.",
   "page-resources-block-explorers-explorer-description": "The official Quantaureum block explorer: blocks, transactions, validators and on-chain data.",
   "page-resources-nodes-explorer-description": "Node requirements, installation and operation with qauctl.",
-  "page-resources-gas-explorer-description": "How gas and EIP-1559 base-fee burning work on Quantaureum."
+  "page-resources-gas-explorer-description": "క్వాంటౌరియంలో గ్యాస్ మరియు లావాదేవీ రుసుములు ఎలా పనిచేస్తాయి."
 }

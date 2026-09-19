@@ -124,7 +124,7 @@
   "page-find-wallet-methodology-criterion-maintenance": "Aktivně udržována, s dostupnou podporou pro uživatele.",
   "page-find-wallet-methodology-criterion-honest-info": "Poskytuje pravdivé a přesné informace pro zařazení. Produkty, které falšují podrobnosti, jsou odstraněny.",
   "page-find-wallet-methodology-criterion-contact": "Má určenou kontaktní osobu, abychom mohli ověřit informace při jejich změně.",
-  "page-find-wallet-methodology-criterion-eip1559": "Podporuje transakce EIP-1559 (typ 2) na síti Quantaureum Mainnet.",
+  "page-find-wallet-methodology-criterion-eip1559": "Správně odesílá transakce v síti Quantaureum a transparentně zachází s transakčními poplatky.",
   "page-find-wallet-methodology-criterion-ux": "Nabízí přezkoumatelnou uživatelskou zkušenost. Pokud náš tým shledá produkt obtížně použitelným, můžeme před jeho zařazením požadovat vylepšení.",
   "page-find-wallet-methodology-criterion-quantaureum-focused": "Je zaměřena na Quantaureum, přičemž jako výchozí síť je nastaveno Quantaureum nebo vrstva 2 (l2).",
   "page-find-wallet-methodology-verification": "Záznamy nejsou statické. Poskytovatelé peněženek musí každých šest měsíců znovu odeslat informace. Pokud tým neodpoví, peněženku odstraníme. Tím udržujeme adresář přesný i s vývojem produktů.",

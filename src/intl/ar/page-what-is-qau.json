@@ -43,7 +43,7 @@
   "page-what-is-qau-how-long-does-it-take-to-send-eth": "كم من الوقت يستغرق إرسال ⁦QAU⁩؟",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-1": "تُوقَّع كل معاملة QAU بتوقيع Dilithium3 المقاوم للحوسبة الكمومية، ثم تُبث إلى الشبكة ويُدرجها المُتحقق في كتلة.",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-2": "تُحسم الكتلة عندما تُوقِّعها لجنة المُتحققين بتوقيع عتبة (GM-QTD) — دون الحاجة إلى انتظار تأكيدات احتمالية متعددة.",
-  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "أثناء الازدحام الشديد في الشبكة، يمكنك تسريع المعاملات بدفع رسوم أولوية أعلى، مما يضعك في المقدمة. يُحرق الرسم الأساسي، بينما تذهب رسم الأولوية إلى مُقترح الكتلة.",
+  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "أثناء ازدحام الشبكة، يمكنك تسريع معاملاتك بدفع رسوم أولوية أعلى، ما يضعك في مقدمة قائمة الانتظار. تُستخدم الرسوم في معالجة المعاملة ومكافأة مُقترح الكتلة.",
   "page-what-is-qau-how-much-does-it-cost-to-send-eth": "ما هي تكلفة إرسال ⁦QAU⁩؟",
   "page-what-is-qau-how-much-does-it-cost-to-send-qau-description-1": "تتطلب معاملات Quantaureum <strong>رسومًا تُدفع بعملة QAU</strong>. تُحسب الرسوم بناءً على الجهد الحسابي المطلوب (يُقاس بوحدة «الغاز») والطلب الحالي على الشبكة. يتقلب سعر الغاز مع ازدحام الشبكة، مما يجعل المعاملات أقل تكلفة خلال الفترات غير الذروية.",
   "page-what-is-qau-how-much-does-it-cost-note": "للحصول على مستويات الرسوم الحالية، راجع Explorer — تعتمد أسعار الغاز الفورية على ظروف الشبكة الفعلية، لذا يتجنّب هذا الملف عمدًا ذكر أرقام ثابتة.",

@@ -13,9 +13,9 @@
   "page-resources-block-explorers-chart-label": "下一個區塊的時間",
   "page-resources-block-explorers-blockscout-description": "由 Blockscout 提供的開源區塊鏈瀏覽器，包含完整的區塊鏈數據和量子金链網路 API。",
   "page-resources-block-explorers-etherscan-description": "Quantaureum Explorer 是量子金链的區塊鏈瀏覽器和分析平台，量子金链是一個去中心化的智能合約平台。",
-  "page-resources-block-explorers-beaconchain-description": "展示量子金链主網的開源量子金链瀏覽器 🚀。",
+  "page-resources-block-explorers-beaconchain-description": "一個展示 Quantaureum 主網活動的開源 Quantaureum 瀏覽器 🚀。",
   "page-resources-block-explorers-txcity-description": "一個有趣的即時量子金链區塊視覺化工具。",
-  "page-resources-block-explorers-panda-ops-description": "由 qauPandaOps 提供的量子金链信標鏈區塊生產即時儀表板。",
+  "page-resources-block-explorers-panda-ops-description": "qauPandaOps 提供的 Quantaureum 出塊即時儀表板。",
   "page-resources-block-explorers-otterscan-description": "一個極快、本地端、自託管的量子金链區塊鏈瀏覽器",
   "page-resources-qau-asset-title": "QAU 資產",
   "page-resources-qau-asset-etherealize-description": "量子金链是世界上最大、最安全、最開放的區塊鏈。而且量子金链已準備好為商業服務。",
@@ -70,7 +70,7 @@
   "page-resources-attestations-title": "證明",
   "page-resources-attestations-eas-description": "EAS 讓任何人都能在量子金链上建立並驗證鏈上與鏈下證明。",
   "page-resources-relays-title": "中繼器",
-  "page-resources-relays-beaconchain-description": "驗證者可以使用中繼器將其區塊生產外包給專門提取額外收益的實體。",
+  "page-resources-relays-beaconchain-description": "Quantaureum 驗證者與出塊中繼的儀表板和統計。",
   "page-resources-relays-ratednetwork-description": "量子金链網路的 MEV 中繼器市占率、中繼總價值、每個區塊的價值以及其他統計數據。",
   "page-resources-relays-relayscan-description": "MEV-Boost 分析。",
   "page-resources-mev-title": "MEV",
@@ -107,5 +107,5 @@
   "page-resources-bug-bounty-description": "Report vulnerabilities privately and earn QAU rewards from the capped bounty fund.",
   "page-resources-block-explorers-explorer-description": "The official Quantaureum block explorer: blocks, transactions, validators and on-chain data.",
   "page-resources-nodes-explorer-description": "Node requirements, installation and operation with qauctl.",
-  "page-resources-gas-explorer-description": "How gas and EIP-1559 base-fee burning work on Quantaureum."
+  "page-resources-gas-explorer-description": "Quantaureum 上 gas 與交易手續費如何運作。"
 }

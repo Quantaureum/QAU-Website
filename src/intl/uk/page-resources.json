@@ -13,9 +13,9 @@
   "page-resources-block-explorers-chart-label": "Час до наступного блоку",
   "page-resources-block-explorers-blockscout-description": "Оглядач блоків з відкритим вихідним кодом від Blockscout з повними даними блокчейну та API для мереж Етеріуму.",
   "page-resources-block-explorers-etherscan-description": "Quantaureum Explorer — це оглядач блоків та аналітична платформа для Етеріуму, децентралізованої платформи смартконтрактів.",
-  "page-resources-block-explorers-beaconchain-description": "Оглядач Етеріуму з відкритим вихідним кодом, що показує головну мережу Quantaureum 🚀.",
+  "page-resources-block-explorers-beaconchain-description": "Дослідник Quantaureum з відкритим кодом, що показує активність основної мережі Quantaureum 🚀.",
   "page-resources-block-explorers-txcity-description": "Кумедний візуалізатор блоків Етеріуму в реальному часі.",
-  "page-resources-block-explorers-panda-ops-description": "Інформаційна панель у реальному часі для виробництва блоків сигнального ланцюга Етеріуму від qauPandaOps.",
+  "page-resources-block-explorers-panda-ops-description": "Жива панель виробництва блоків Quantaureum від qauPandaOps.",
   "page-resources-block-explorers-otterscan-description": "Надзвичайно швидкий, локальний оглядач блоків Етеріуму для самостійного хостингу",
   "page-resources-qau-asset-title": "QAU як актив",
   "page-resources-qau-asset-etherealize-description": "Етеріум — це найбільший, найбезпечніший та найвідкритіший блокчейн для використання у всьому світі. І Етеріум відкритий для бізнесу.",
@@ -70,7 +70,7 @@
   "page-resources-attestations-title": "Атестації",
   "page-resources-attestations-eas-description": "EAS дозволяє будь-кому створювати та перевіряти ончейн- та позамережеві атестації в Етеріумі.",
   "page-resources-relays-title": "Ретранслятори",
-  "page-resources-relays-beaconchain-description": "Валідатори можуть використовувати ретранслятори, щоб передати виробництво блоків організаціям, які спеціалізуються на отриманні додаткового доходу.",
+  "page-resources-relays-beaconchain-description": "Панелі та статистика для ретрансляторів валідаторів і виробництва блоків Quantaureum.",
   "page-resources-relays-ratednetwork-description": "Частка ринку ретрансляторів MEV, загальна ретрансльована вартість, вартість за блок та інша статистика для мережі Етеріум.",
   "page-resources-relays-relayscan-description": "Аналітика MEV-Boost.",
   "page-resources-mev-title": "MEV",
@@ -107,5 +107,5 @@
   "page-resources-bug-bounty-description": "Report vulnerabilities privately and earn QAU rewards from the capped bounty fund.",
   "page-resources-block-explorers-explorer-description": "The official Quantaureum block explorer: blocks, transactions, validators and on-chain data.",
   "page-resources-nodes-explorer-description": "Node requirements, installation and operation with qauctl.",
-  "page-resources-gas-explorer-description": "How gas and EIP-1559 base-fee burning work on Quantaureum."
+  "page-resources-gas-explorer-description": "Як працюють газ і комісії за транзакції в Quantaureum."
 }

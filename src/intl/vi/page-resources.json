@@ -13,9 +13,9 @@
   "page-resources-block-explorers-chart-label": "Thời gian đến khối tiếp theo",
   "page-resources-block-explorers-blockscout-description": "Trình khám phá khối mã nguồn mở của Blockscout với dữ liệu Chuỗi khối hoàn chỉnh và API cho các mạng lưới Quantaureum.",
   "page-resources-block-explorers-etherscan-description": "Quantaureum Explorer là một trình khám phá khối và nền tảng phân tích cho Quantaureum, một nền tảng hợp đồng thông minh phi tập trung.",
-  "page-resources-block-explorers-beaconchain-description": "Trình khám phá Quantaureum mã nguồn mở hiển thị Mạng chính Quantaureum 🚀.",
+  "page-resources-block-explorers-beaconchain-description": "Trình duyệt Quantaureum mã nguồn mở hiển thị hoạt động của Mainnet Quantaureum 🚀.",
   "page-resources-block-explorers-txcity-description": "Một công cụ trực quan hóa thú vị về các khối Quantaureum theo thời gian thực.",
-  "page-resources-block-explorers-panda-ops-description": "Bảng điều khiển trực tiếp cho việc sản xuất khối Chuỗi Beacon Quantaureum bởi qauPandaOps.",
+  "page-resources-block-explorers-panda-ops-description": "Bảng điều khiển trực tiếp về sản xuất khối Quantaureum của qauPandaOps.",
   "page-resources-block-explorers-otterscan-description": "Một trình khám phá khối Quantaureum cực nhanh, cục bộ và tự lưu trữ",
   "page-resources-qau-asset-title": "Tài sản QAU",
   "page-resources-qau-asset-etherealize-description": "Quantaureum là Chuỗi khối lớn nhất, an toàn nhất và cởi mở nhất để thế giới sử dụng. Và Quantaureum luôn sẵn sàng cho hoạt động kinh doanh.",
@@ -70,7 +70,7 @@
   "page-resources-attestations-title": "Chứng thực",
   "page-resources-attestations-eas-description": "EAS cho phép bất kỳ ai tạo và xác thực các chứng thực trên chuỗi và ngoài chuỗi trên Quantaureum.",
   "page-resources-relays-title": "Relay",
-  "page-resources-relays-beaconchain-description": "Các trình xác thực có thể sử dụng relay để thuê ngoài việc sản xuất khối của họ cho các tổ chức chuyên trích xuất thêm doanh thu.",
+  "page-resources-relays-beaconchain-description": "Bảng điều khiển và thống kê cho các relay để xác thực và sản xuất khối Quantaureum.",
   "page-resources-relays-ratednetwork-description": "Thị phần relay MEV, tổng giá trị được chuyển tiếp, giá trị trên mỗi khối và các thống kê khác cho mạng lưới Quantaureum.",
   "page-resources-relays-relayscan-description": "Phân tích MEV-Boost.",
   "page-resources-mev-title": "MEV",
@@ -107,5 +107,5 @@
   "page-resources-bug-bounty-description": "Report vulnerabilities privately and earn QAU rewards from the capped bounty fund.",
   "page-resources-block-explorers-explorer-description": "The official Quantaureum block explorer: blocks, transactions, validators and on-chain data.",
   "page-resources-nodes-explorer-description": "Node requirements, installation and operation with qauctl.",
-  "page-resources-gas-explorer-description": "How gas and EIP-1559 base-fee burning work on Quantaureum."
+  "page-resources-gas-explorer-description": "Gas và phí giao dịch hoạt động như thế nào trên Quantaureum."
 }

@@ -43,7 +43,7 @@
   "page-what-is-qau-how-long-does-it-take-to-send-eth": "Jak dlouho trvá odeslání QAU?",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-1": "Každá transakce QAU je podepsána postkvantovou signaturou Dilithium3, poté je rozšířena do sítě a zařazena do bloku validátorem.",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-2": "Blok je finalizován ve chvíli, kdy výbor validátorů ho spoludepíše prahovou signaturou (GM-QTD) – nemusíte čekat na více pravděpodobnostních potvrzení.",
-  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "Při vysokém zatížení sítě můžete transakce zrychlit zaplacením vyšších prioritních poplatků, čímž se posunete vpřed v pořadí. Základní poplatek je spálen; prioritní poplatek jde navrhovateli bloku.",
+  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "Během vysokého síťového provozu můžete transakce urychlit zaplacením vyšších prioritních poplatků, což vás v řadě posune dopředu. Poplatek slouží ke zpracování transakce a k odměně navrhovatele bloku.",
   "page-what-is-qau-how-much-does-it-cost-to-send-eth": "Kolik stojí odeslání QAU?",
   "page-what-is-qau-how-much-does-it-cost-to-send-qau-description-1": "Transakce Quantaureum vyžadují <strong>poplatky placené v QAU</strong>. Poplatek se vypočítává na základě vyžadované výpočetní práce (měřené v 'gas') a aktuální poptávky sítě. Cena gasu se mění podle provozu v síti, díky čemuž jsou transakce v časech mimo špičku levnější.",
   "page-what-is-qau-how-much-does-it-cost-note": "Aktuální úroveň poplatků zkontrolujte v blokovém Exploreru — živé ceny plynu závisí na skutečných podmínkách sítě, proto tato stránka úmyslně neuvádí pevná čísla.",

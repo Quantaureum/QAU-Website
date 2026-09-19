@@ -124,7 +124,7 @@
   "page-find-wallet-methodology-criterion-maintenance": "Être activement maintenu, avec une assistance disponible pour les utilisateurs.",
   "page-find-wallet-methodology-criterion-honest-info": "Fournir des informations de référencement honnêtes et précises. Les produits qui falsifient des détails sont retirés.",
   "page-find-wallet-methodology-criterion-contact": "Avoir un point de contact désigné afin que nous puissions vérifier les informations lorsqu'elles changent.",
-  "page-find-wallet-methodology-criterion-eip1559": "Prendre en charge les transactions EIP-1559 (type 2) sur le réseau principal Quantaureum.",
+  "page-find-wallet-methodology-criterion-eip1559": "Envoie correctement les transactions sur le réseau Quantaureum et gère les frais de transaction de manière transparente.",
   "page-find-wallet-methodology-criterion-ux": "Offrir une expérience utilisateur évaluable. Si notre équipe trouve un produit difficile à utiliser, nous pouvons demander des améliorations avant de le lister.",
   "page-find-wallet-methodology-criterion-quantaureum-focused": "Être axé sur Quantaureum, avec Quantaureum ou une couche 2 défini comme réseau par défaut.",
   "page-find-wallet-methodology-verification": "Les référencements ne sont pas statiques. Les fournisseurs de portefeuilles sont tenus de soumettre à nouveau leurs informations tous les six mois. Si une équipe ne répond pas, nous retirons le portefeuille. Cela permet de garder l'annuaire précis à mesure que les produits évoluent.",

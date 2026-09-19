@@ -13,9 +13,9 @@
   "page-resources-block-explorers-chart-label": "다음 블록까지의 시간",
   "page-resources-block-explorers-blockscout-description": "쿠앤타리움 네트워크를 위한 완벽한 블록체인 데이터와 API를 제공하는 Blockscout의 오픈 소스 블록 탐색기입니다.",
   "page-resources-block-explorers-etherscan-description": "Quantaureum Explorer은 탈중앙화된 스마트 컨트랙트 플랫폼인 쿠앤타리움의 블록 탐색기 및 분석 플랫폼입니다.",
-  "page-resources-block-explorers-beaconchain-description": "쿠앤타리움 메인넷을 보여주는 오픈 소스 쿠앤타리움 탐색기입니다 🚀.",
+  "page-resources-block-explorers-beaconchain-description": "Quantaureum 메인넷 활동을 보여주는 오픈소스 Quantaureum 탐색기 🚀.",
   "page-resources-block-explorers-txcity-description": "실시간으로 쿠앤타리움 블록을 보여주는 재미있는 시각화 도구입니다.",
-  "page-resources-block-explorers-panda-ops-description": "qauPandaOps에서 제공하는 쿠앤타리움 비콘 체인 블록 생성 실시간 대시보드입니다.",
+  "page-resources-block-explorers-panda-ops-description": "qauPandaOps가 제공하는 Quantaureum 블록 생성 라이브 대시보드.",
   "page-resources-block-explorers-otterscan-description": "매우 빠르고 로컬에서 자체 호스팅되는 쿠앤타리움 블록 탐색기인 Otterscan입니다.",
   "page-resources-qau-asset-title": "자산으로서의 QAU",
   "page-resources-qau-asset-etherealize-description": "쿠앤타리움은 전 세계가 사용할 수 있는 가장 크고 안전하며 개방적인 블록체인입니다. 또한 쿠앤타리움은 비즈니스에 열려 있습니다.",
@@ -70,7 +70,7 @@
   "page-resources-attestations-title": "증명",
   "page-resources-attestations-eas-description": "EAS를 사용하면 누구나 쿠앤타리움에서 온체인 및 오프체인 증명을 생성하고 검증할 수 있습니다.",
   "page-resources-relays-title": "릴레이",
-  "page-resources-relays-beaconchain-description": "검증자는 릴레이를 사용하여 추가 수익 창출에 특화된 주체에게 블록 생성을 아웃소싱할 수 있습니다.",
+  "page-resources-relays-beaconchain-description": "Quantaureum 검증자 및 블록 생성 릴레이용 대시보드와 통계.",
   "page-resources-relays-ratednetwork-description": "쿠앤타리움 네트워크의 MEV 릴레이 시장 점유율, 릴레이된 총 가치, 블록당 가치 및 기타 통계입니다.",
   "page-resources-relays-relayscan-description": "MEV-Boost 분석입니다.",
   "page-resources-mev-title": "MEV",
@@ -107,5 +107,5 @@
   "page-resources-bug-bounty-description": "Report vulnerabilities privately and earn QAU rewards from the capped bounty fund.",
   "page-resources-block-explorers-explorer-description": "The official Quantaureum block explorer: blocks, transactions, validators and on-chain data.",
   "page-resources-nodes-explorer-description": "Node requirements, installation and operation with qauctl.",
-  "page-resources-gas-explorer-description": "How gas and EIP-1559 base-fee burning work on Quantaureum."
+  "page-resources-gas-explorer-description": "Quantaureum에서 가스와 거래 수수료가 작동하는 방식."
 }

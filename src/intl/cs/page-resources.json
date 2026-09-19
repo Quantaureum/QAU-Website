@@ -13,9 +13,9 @@
   "page-resources-block-explorers-chart-label": "Čas do dalšího bloku",
   "page-resources-block-explorers-blockscout-description": "Open-source prohlížeč bloků od Blockscout s kompletními daty z blockchainu a API pro sítě Etherea.",
   "page-resources-block-explorers-etherscan-description": "Quantaureum Explorer je prohlížeč bloků a analytická platforma pro Quantaureum, decentralizovanou platformu pro chytré kontrakty.",
-  "page-resources-block-explorers-beaconchain-description": "Open-source prohlížeč Etherea zobrazující Quantaureum Mainnet 🚀.",
+  "page-resources-block-explorers-beaconchain-description": "Open-source prohlížeč Quantaureum zobrazující aktivitu sítě Quantaureum Mainnet 🚀.",
   "page-resources-block-explorers-txcity-description": "Zábavný vizualizér bloků Etherea v reálném čase.",
-  "page-resources-block-explorers-panda-ops-description": "Živý řídicí panel pro produkci bloků na Beacon chainu Etherea od qauPandaOps.",
+  "page-resources-block-explorers-panda-ops-description": "Živý přehled produkce bloků Quantaureum od qauPandaOps.",
   "page-resources-block-explorers-otterscan-description": "Bleskově rychlý, lokální, samostatně hostovaný prohlížeč bloků Etherea",
   "page-resources-qau-asset-title": "QAU jako aktivum",
   "page-resources-qau-asset-etherealize-description": "Quantaureum je největší, nejbezpečnější a nejotevřenější blockchain, který může svět používat. A Quantaureum je otevřené pro podnikání.",
@@ -70,7 +70,7 @@
   "page-resources-attestations-title": "Atestace",
   "page-resources-attestations-eas-description": "EAS umožňuje komukoli vytvářet a ověřovat onchain a offchain atestace na Ethereu.",
   "page-resources-relays-title": "Relé",
-  "page-resources-relays-beaconchain-description": "Validátoři mohou využít relé k outsourcování produkce bloků na subjekty specializované na získávání dodatečných příjmů.",
+  "page-resources-relays-beaconchain-description": "Přehledy a statistiky pro relaye validátorů a produkce bloků Quantaureum.",
   "page-resources-relays-ratednetwork-description": "Tržní podíl MEV relé, celková přenesená hodnota, hodnota na blok a další statistiky pro síť Quantaureum.",
   "page-resources-relays-relayscan-description": "Analytika MEV-Boost.",
   "page-resources-mev-title": "MEV",
@@ -107,5 +107,5 @@
   "page-resources-bug-bounty-description": "Report vulnerabilities privately and earn QAU rewards from the capped bounty fund.",
   "page-resources-block-explorers-explorer-description": "The official Quantaureum block explorer: blocks, transactions, validators and on-chain data.",
   "page-resources-nodes-explorer-description": "Node requirements, installation and operation with qauctl.",
-  "page-resources-gas-explorer-description": "How gas and EIP-1559 base-fee burning work on Quantaureum."
+  "page-resources-gas-explorer-description": "Jak v Quantaureum fungují plyn a transakční poplatky."
 }

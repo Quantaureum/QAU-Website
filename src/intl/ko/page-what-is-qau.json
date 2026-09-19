@@ -43,7 +43,7 @@
   "page-what-is-qau-how-long-does-it-take-to-send-eth": "QAU를 전송하는 데 얼마나 걸리나요?",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-1": "모든 QAU 거래는 포스트 퀀텀 Dilithium3 서명으로 서명된 후 네트워크에 브로드캐스트되며, 검증자가 블록에 포함합니다.",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-2": "검증자 위원회가 임계값 서명(GM-QTD)으로 공동 서명하면 블록이 최종 확정됩니다. 확률적 확인을 여러 번 기다릴 필요가 없습니다.",
-  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "네트워크 트래픽이 혼잡할 때는 높은 우선순위 수수료를 지불하여 거래 순서를 앞당길 수 있습니다. 기본 수수료는 소각되며, 우선순위 수수료는 블록 제안자에게 지급됩니다.",
+  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "네트워크 트래픽이 많을 때 더 높은 우선 수수료를 지불하면 대기열 앞쪽으로 이동해 거래 속도를 높일 수 있습니다. 수수료는 거래 처리와 블록 제안자 보상에 사용됩니다.",
   "page-what-is-qau-how-much-does-it-cost-to-send-eth": "QAU를 전송하는 데 비용이 얼마나 드나요?",
   "page-what-is-qau-how-much-does-it-cost-to-send-qau-description-1": "Quantaureum 거래에는 <strong>QAU로 지불하는 수수료</strong>가 필요합니다. 수수료는 필요한 연산량('가스'로 측정)과 네트워크의 현재 수요를 기반으로 계산됩니다. 가스 가격은 네트워크 트래픽에 따라 변동하므로, 비수기에는 거래 비용이 낮아집니다.",
   "page-what-is-qau-how-much-does-it-cost-note": "최신 수수료 수준은 블록 탐색기에서 확인하세요 — 실시간 가스 가격은 실제 네트워크 조건에 따라 달라지므로, 이 페이지에서는 고정을 수치를 제시하지 않습니다.",

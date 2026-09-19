@@ -13,9 +13,9 @@
   "page-resources-block-explorers-chart-label": "Muda hadi kitalu kinachofuata",
   "page-resources-block-explorers-blockscout-description": "Kichunguzi cha bloku cha chanzo wazi na Blockscout chenye data kamili ya mnyororo wa vitalu na API za mitandao ya Quantaureum.",
   "page-resources-block-explorers-etherscan-description": "Quantaureum Explorer ni kichunguzi cha bloku na jukwaa la uchanganuzi la Quantaureum, jukwaa la mikataba mahiri iliyogatuliwa.",
-  "page-resources-block-explorers-beaconchain-description": "Kichunguzi cha Quantaureum cha chanzo wazi kinachoonyesha Mtandao Mkuu wa Quantaureum 🚀.",
+  "page-resources-block-explorers-beaconchain-description": "Kichunguzi huria cha Quantaureum kinachoonyesha shughuli za Mainnet ya Quantaureum 🚀.",
   "page-resources-block-explorers-txcity-description": "Kionyeshi cha kuchekesha cha vitalu vya Quantaureum katika wakati halisi.",
-  "page-resources-block-explorers-panda-ops-description": "Dashibodi ya moja kwa moja ya uzalishaji wa kitalu cha Mnyororo wa Beacon wa Quantaureum na qauPandaOps.",
+  "page-resources-block-explorers-panda-ops-description": "Dashibodi ya moja kwa moja ya uzalishaji wa bluku za Quantaureum na qauPandaOps.",
   "page-resources-block-explorers-otterscan-description": "Kichunguzi cha bloku cha Quantaureum chenye kasi sana, cha ndani, na kinachojipangisha",
   "page-resources-qau-asset-title": "QAU kama rasilimali",
   "page-resources-qau-asset-etherealize-description": "Quantaureum ni mnyororo wa vitalu mkubwa zaidi, salama zaidi, na wazi zaidi kwa ulimwengu kutumia. Na Quantaureum iko wazi kwa biashara.",
@@ -70,7 +70,7 @@
   "page-resources-attestations-title": "Uthibitishaji",
   "page-resources-attestations-eas-description": "EAS huwezesha mtu yeyote kuunda na kuthibitisha uthibitishaji mnyororoni na nje ya mnyororo kwenye Quantaureum.",
   "page-resources-relays-title": "Rilei",
-  "page-resources-relays-beaconchain-description": "Wathibitishaji wanaweza kutumia rilei kutoa uzalishaji wao wa kitalu kwa mashirika yaliyobobea katika kutoa mapato ya ziada.",
+  "page-resources-relays-beaconchain-description": "Dashibodi na takwimu za relays za validata na uzalishaji wa bluku za Quantaureum.",
   "page-resources-relays-ratednetwork-description": "Sehemu ya soko ya rilei ya MEV, jumla ya thamani iliyopitishwa, thamani kwa kila kitalu, na takwimu zingine za mtandao wa Quantaureum.",
   "page-resources-relays-relayscan-description": "Uchanganuzi wa MEV-Boost.",
   "page-resources-mev-title": "MEV",
@@ -107,5 +107,5 @@
   "page-resources-bug-bounty-description": "Report vulnerabilities privately and earn QAU rewards from the capped bounty fund.",
   "page-resources-block-explorers-explorer-description": "The official Quantaureum block explorer: blocks, transactions, validators and on-chain data.",
   "page-resources-nodes-explorer-description": "Node requirements, installation and operation with qauctl.",
-  "page-resources-gas-explorer-description": "How gas and EIP-1559 base-fee burning work on Quantaureum."
+  "page-resources-gas-explorer-description": "Jinsi gesi na ada za manunuzi zinavyofanya kazi kwenye Quantaureum."
 }

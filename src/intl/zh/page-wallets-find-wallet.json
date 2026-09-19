@@ -124,7 +124,7 @@
   "page-find-wallet-methodology-criterion-maintenance": "积极维护，并为用户提供支持。",
   "page-find-wallet-methodology-criterion-honest-info": "提供诚实、准确的列表信息。伪造细节的产品将被移除。",
   "page-find-wallet-methodology-criterion-contact": "有指定的联系人，以便我们在信息更改时进行验证。",
-  "page-find-wallet-methodology-criterion-eip1559": "支持量子金链主网上的 EIP-1559（类型 2）交易。",
+  "page-find-wallet-methodology-criterion-eip1559": "在量子金链网络上正确发送交易，并透明地处理交易费用。",
   "page-find-wallet-methodology-criterion-ux": "提供可审查的用户体验。如果我们的团队发现某个产品难以使用，我们可能会在列出之前要求其进行改进。",
   "page-find-wallet-methodology-criterion-quantaureum-focused": "以量子金链为中心，将量子金链或二层网络 (l2) 设为默认网络。",
   "page-find-wallet-methodology-verification": "列表不是静态的。钱包提供商需要每六个月重新提交一次信息。如果团队没有回应，我们将移除该钱包。这使得目录在产品发展过程中保持准确。",

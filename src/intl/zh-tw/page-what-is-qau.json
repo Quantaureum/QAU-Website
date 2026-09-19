@@ -43,7 +43,7 @@
   "page-what-is-qau-how-long-does-it-take-to-send-eth": "發送 QAU 需要多長時間？",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-1": "每筆 QAU 交易都會使用抗量子 Dilithium3 簽名進行簽署，然後廣播至網路並由驗證者封裝入區塊。",
   "page-what-is-qau-how-long-does-it-take-to-send-qau-description-2": "區塊在驗證者委員會以閾值簽名（GM-QTD）共同簽署後即告最終確認，無需等待多次概率性確認。",
-  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "在網路高峰期，您可以支付更高的優先順序手續費來加速交易，使您的交易優先處理。基本手續費將被燃燒；優先順序費用則歸區塊提議者所有。",
+  "page-what-is-qau-how-long-does-it-take-to-send-qau-description-3": "在網路流量較高時，您可以透過支付更高的優先費用來加速交易，從而排到佇列前面。這筆費用用於處理交易並獎勵區塊提議者。",
   "page-what-is-qau-how-much-does-it-cost-to-send-eth": "發送 QAU 需要多少費用？",
   "page-what-is-qau-how-much-does-it-cost-to-send-qau-description-1": "Quantaureum 交易需要<strong>以 QAU 支付的手續費</strong>。手續費根據所需的計算工作量（以「gas」衡量）及網路當前的需求來計算。Gas 的價格會隨網路流量波動，因此非高峰時段的交易成本較低。",
   "page-what-is-qau-how-much-does-it-cost-note": "如需了解目前的費用水準，請查看區塊瀏覽器——即時 gas 價格取決於實際網路狀況，因此本頁刻意避免引用固定數字。",

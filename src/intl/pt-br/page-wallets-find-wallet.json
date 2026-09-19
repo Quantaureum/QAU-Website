@@ -124,7 +124,7 @@
   "page-find-wallet-methodology-criterion-maintenance": "Mantida ativamente, com suporte disponível para os usuários.",
   "page-find-wallet-methodology-criterion-honest-info": "Fornece informações de listagem honestas e precisas. Produtos que falsificam detalhes são removidos.",
   "page-find-wallet-methodology-criterion-contact": "Possui um ponto de contato nomeado para que possamos verificar as informações quando elas mudarem.",
-  "page-find-wallet-methodology-criterion-eip1559": "Suporta transações EIP-1559 (tipo 2) na Rede Principal do Quantaureum.",
+  "page-find-wallet-methodology-criterion-eip1559": "Envia transações corretamente na rede Quantaureum e lida com as taxas de transação de forma transparente.",
   "page-find-wallet-methodology-criterion-ux": "Oferece uma experiência de usuário revisável. Se nossa equipe achar um produto difícil de usar, podemos solicitar melhorias antes de listá-lo.",
   "page-find-wallet-methodology-criterion-quantaureum-focused": "É focada no Quantaureum, com o Quantaureum ou uma Camada 2 definida como a rede padrão.",
   "page-find-wallet-methodology-verification": "As listagens não são estáticas. Os provedores de carteiras são obrigados a reenviar informações a cada seis meses. Se uma equipe não responder, removemos a carteira. Isso mantém o diretório preciso à medida que os produtos evoluem.",
