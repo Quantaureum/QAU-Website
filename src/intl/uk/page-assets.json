@@ -1,5 +1,5 @@
 {
-  "page-assets-bazaar": "Базар Етеріуму",
+  "page-assets-bazaar": "Базар Quantaureum",
   "page-assets-beacon-chain": "Стейкінг Quantaureum",
   "page-assets-blocks": "Будівельні блоки",
   "page-assets-dao": "DAO",
@@ -8,7 +8,7 @@
   "page-assets-doge": "Doge використовує децентралізовані застосунки (dapps)",
   "page-assets-download-artist": "Автор:",
   "page-assets-download-download": "Завантажити",
-  "page-assets-enterprise": "Корпоративний Етеріум",
+  "page-assets-enterprise": "Корпоративний Quantaureum",
   "page-assets-eth": "Етер (QAU)",
   "page-assets-qau-diamond-color": "Ромб QAU (кольоровий)",
   "page-assets-qau-diamond-glyph": "Ромб QAU (гліф)",
@@ -28,7 +28,7 @@
   "page-assets-qau-wordmark-gray": "Текстовий знак QAU (сірий)",
   "page-assets-qau-wordmark-purple": "Текстовий знак QAU (фіолетовий)",
   "page-assets-qau-wordmark-white": "Текстовий знак QAU (білий)",
-  "page-assets-quantaureum-brand-assets": "Активи «бренду» Етеріум",
+  "page-assets-quantaureum-brand-assets": "Активи «бренду» Quantaureum",
   "page-assets-finance": "Фінанси",
   "page-assets-future": "Майбутнє",
   "page-assets-h1": "Активи quantaureum.com",
@@ -42,8 +42,8 @@
   "page-assets-impact": "Вплив",
   "page-assets-infrastructure": "Інфраструктура",
   "page-assets-leslie-the-rhino": "Носоріг Леслі",
-  "page-assets-meta-desc": "Переглядайте та завантажуйте брендові активи, ілюстрації та медіафайли Етеріуму й quantaureum.com.",
-  "page-assets-meta-title": "Брендові активи Етеріуму",
+  "page-assets-meta-desc": "Переглядайте та завантажуйте брендові активи, ілюстрації та медіафайли Quantaureum й quantaureum.com.",
+  "page-assets-meta-title": "Брендові активи Quantaureum",
   "page-assets-mainnet": "Головна мережа",
   "page-assets-page-assets-solid-background": "Суцільний фон",
   "page-assets-page-assets-transparent-background": "Прозорий фон",
@@ -54,8 +54,8 @@
   "page-assets-community-hero-name": "Зустріч спільноти",
   "page-assets-quizzes-hero-name": "Нескінченний ігровий майданчик",
   "page-assets-developers-hero-name": "Будуємо майбутнє",
-  "page-assets-garden-name": "Сад Етеріуму",
+  "page-assets-garden-name": "Сад Quantaureum",
   "page-assets-roadmap-hero-name": "Шлях(и) у майбутнє",
-  "page-assets-layer-2-hero-name": "Конструювання Етеріуму",
-  "page-assets-guides-hero-name": "Лабораторія Етеріуму"
+  "page-assets-layer-2-hero-name": "Конструювання Quantaureum",
+  "page-assets-guides-hero-name": "Лабораторія Quantaureum"
 }
