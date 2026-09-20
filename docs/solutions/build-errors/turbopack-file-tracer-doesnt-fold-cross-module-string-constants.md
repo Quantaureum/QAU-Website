@@ -60,7 +60,7 @@ Two changes, both in PR #17906, commit `5f1aae57`:
 
 1. **Inline the literal at the call site** in files that feed `path.join(...)` into `fs`/MDX reads with dynamic suffixes:
    - `src/lib/md/compile.ts` — inline `"/content"` and `"public/content"` instead of importing `CONTENT_PATH`/`CONTENT_DIR`
-   - `src/lib/utils/md.ts` — inline `"public/content"` in `getContentRoot()` and in `getTutorialsData()`
+   - `src/lib/utils/md.ts` — inline `"public/content"` in `getContentRoot()`
    - `src/lib/i18n/translationRegistry.ts` — inline `"public/content/translations"` instead of importing `TRANSLATIONS_DIR`
 
 2. **Suppress the residual warnings** in `next.config.js`:

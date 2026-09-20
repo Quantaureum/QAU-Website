@@ -76,10 +76,7 @@ const GLOSSARY_TOOLTIP_PREFIXES: string[] = [
   "/roadmap/",
 ]
 
-const LAYOUT_NAMESPACES: Record<string, string[]> = {
-  docs: ["page-developers-docs"],
-  tutorial: ["page-developers-tutorials"],
-}
+const LAYOUT_NAMESPACES: Record<string, string[]> = {}
 
 export const isLangRightToLeft = (lang: Lang): boolean => {
   const langConfig = i18nConfig.filter((language) => language.code === lang)

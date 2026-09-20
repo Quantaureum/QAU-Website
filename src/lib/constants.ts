@@ -9,7 +9,6 @@ export const CONTENT_DIR = "public/content"
 export const CONTENT_PATH = "/content"
 export const TRANSLATED_IMAGES_DIR = "/content/translations"
 export const PLACEHOLDER_IMAGE_DIR = "src/data/placeholders"
-export const INTERNAL_TUTORIALS_JSON = "src/data/internalTutorials.json"
 export const INTL_JSON_DIR = "src/intl"
 
 export const NULL_VALUE = "—"

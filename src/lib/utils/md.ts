@@ -1,22 +1,7 @@
 import fsp from "fs/promises"
 import { extname, join } from "path"
 
-import matter from "gray-matter"
-import readingTime from "reading-time"
-
-import type {
-  BlogPost,
-  Frontmatter,
-  ITutorial,
-  Skill,
-  SlugPageParams,
-} from "@/lib/types"
-
-import { dateToString } from "@/lib/utils/date"
-
-import internalTutorialSlugs from "@/data/internalTutorials.json"
-
-import { DEFAULT_LOCALE } from "@/lib/constants"
+import type { SlugPageParams } from "@/lib/types"
 
 import { toPosixPath } from "./relativePath"
 
@@ -83,89 +68,6 @@ export const getPostSlugs = async (dir: string, filterRegex?: RegExp) => {
   }
 }
 
-/**
- * Generic helper for reading a list of content slugs, resolving locale
- * fallback, parsing frontmatter, and mapping to a typed result.
- *
- * getTutorialsData delegates to this to avoid
- * duplicating the slug-resolution and frontmatter-parsing boilerplate.
- */
-const getContentListData = async <T>(
-  locale: string,
-  slugs: string[],
-  contentDir: string,
-  mapEntry: (
-    frontmatter: Frontmatter,
-    content: string,
-    slug: string,
-    isTranslated: boolean
-  ) => T,
-  label: string
-): Promise<T[]> => {
-  const contentRoot = join(process.cwd(), "public/content")
-
-  const promises = slugs.map(async (slug) => {
-    try {
-      let fileContents: string
-      let isTranslated = true
-
-      const enPath = join(contentRoot, contentDir, slug, "index.md")
-
-      if (locale === DEFAULT_LOCALE) {
-        fileContents = await fsp.readFile(enPath, "utf-8")
-      } else {
-        const translatedPath = join(
-          contentRoot,
-          "translations",
-          locale,
-          contentDir,
-          slug,
-          "index.md"
-        )
-        try {
-          fileContents = await fsp.readFile(translatedPath, "utf-8")
-        } catch {
-          fileContents = await fsp.readFile(enPath, "utf-8")
-          isTranslated = false
-        }
-      }
-
-      const { data, content } = matter(fileContents)
-      return mapEntry(data as Frontmatter, content, slug, isTranslated)
-    } catch (error) {
-      console.warn(`Error reading ${label} ${slug}:`, error)
-      return null
-    }
-  })
-
-  const results = await Promise.all(promises)
-  return results.filter((item) => item !== null) as T[]
-}
-
-export const getTutorialsData = async (
-  locale: string
-): Promise<ITutorial[]> => {
-  return getContentListData(
-    locale,
-    internalTutorialSlugs as string[],
-    "developers/tutorials",
-    (frontmatter, content, slug, isTranslated) => ({
-      href: `/developers/tutorials/${slug}`,
-      title: frontmatter.title,
-      description: frontmatter.description,
-      author: frontmatter.author || "",
-      tags: frontmatter.tags,
-      skill: frontmatter.skill as Skill,
-      timeToRead: Math.round(readingTime(content).minutes),
-      published: dateToString(frontmatter.published),
-      lang: frontmatter.lang,
-      isExternal: false,
-      isTranslated,
-    }),
-    "tutorial"
-  )
-}
-
 export const checkPathValidity = (
   validPaths: SlugPageParams[],
   { slug: slugArray }: SlugPageParams
@@ -210,5 +112,3 @@ export function stripMarkdown(
 
   return result.trim()
 }
-
-

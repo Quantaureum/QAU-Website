@@ -4,29 +4,21 @@ import { Layout } from "@/lib/types"
 
 import * as topicComponents from "@/components/MdComponents/topics"
 
-import { docsComponents, DocsLayout } from "./Docs"
 import { staticComponents, StaticLayout } from "./Static"
 import { TopicLayout } from "./Topic"
-import { TutorialLayout, tutorialsComponents } from "./Tutorial"
 
 export * from "./BaseLayout"
-export * from "./Docs"
 export * from "./Static"
 export * from "./Topic"
-export * from "./Tutorial"
 
 export const layoutMapping = {
   static: StaticLayout,
   staking: TopicLayout,
   roadmap: TopicLayout,
-  docs: DocsLayout,
-  tutorial: TutorialLayout,
 }
 
 export const componentsMapping: Record<Layout, MDXRemoteProps["components"]> = {
   static: staticComponents,
   staking: topicComponents.stakingComponents,
   roadmap: topicComponents.roadmapComponents,
-  docs: docsComponents,
-  tutorial: tutorialsComponents,
 }
