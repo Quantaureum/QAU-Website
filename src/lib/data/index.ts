@@ -103,12 +103,6 @@ export const getStakedPercentageData = createCachedGetter(
   CACHE_REVALIDATE_DAY
 )
 
-export const getBlobStats = createCachedGetter(
-  dataLayer.getBlobStats,
-  ["blob-stats"],
-  CACHE_REVALIDATE_DAY
-)
-
 export const getQuantaureumMarketcapData = createCachedGetter(
   dataLayer.getQuantaureumMarketcapData,
   ["quantaureum-marketcap-data"],

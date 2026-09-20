@@ -12,12 +12,8 @@ import { logger, schedules, task, tasks } from "@trigger.dev/sdk/v3"
 import { fetchDeveloperTools } from "./fetchers/developer-tools"
 import { fetchAccountHolders } from "./fetchers/fetchAccountHolders"
 import { fetchApps } from "./fetchers/fetchApps"
-import { fetchBlobStats } from "./fetchers/fetchBlobStats"
 import { fetchCalendarEvents } from "./fetchers/fetchCalendarEvents"
 import { fetchCommunityPicks } from "./fetchers/fetchCommunityPicks"
-import { fetchQuantaureumMarketcap } from "./fetchers/fetchQuantaureumMarketcap"
-import { fetchQuantaureumStablecoinsMcap } from "./fetchers/fetchQuantaureumStablecoinsMcap"
-import { fetchQauPrice } from "./fetchers/fetchQauPrice"
 import { fetchEvents } from "./fetchers/fetchEvents"
 import { fetchGasPrice } from "./fetchers/fetchGasPrice"
 import { fetchGFIs } from "./fetchers/fetchGFIs"
@@ -28,6 +24,9 @@ import { fetchGrowThePie } from "./fetchers/fetchGrowThePie"
 import { fetchGrowThePieBlockspace } from "./fetchers/fetchGrowThePieBlockspace"
 import { fetchGrowThePieMaster } from "./fetchers/fetchGrowThePieMaster"
 import { fetchL2beat } from "./fetchers/fetchL2beat"
+import { fetchQauPrice } from "./fetchers/fetchQauPrice"
+import { fetchQuantaureumMarketcap } from "./fetchers/fetchQuantaureumMarketcap"
+import { fetchQuantaureumStablecoinsMcap } from "./fetchers/fetchQuantaureumStablecoinsMcap"
 import { fetchQuizStats } from "./fetchers/fetchQuizStats"
 import { fetchStablecoinsData } from "./fetchers/fetchStablecoinsData"
 import { fetchStakedPercentage } from "./fetchers/fetchStakedPercentage"
@@ -50,7 +49,6 @@ export const KEYS = {
   L2BEAT: "fetch-l2beat",
   GITHUB_REPO_DATA: "fetch-github-repo-data",
   EVENTS: "fetch-events",
-  BLOB_STATS: "fetch-blob-stats",
   QUANTAUREUM_MARKETCAP: "fetch-quantaureum-marketcap",
   QUANTAUREUM_STABLECOINS_MCAP: "fetch-quantaureum-stablecoins-mcap",
   ETH_PRICE: "fetch-qau-price",
@@ -72,7 +70,6 @@ const WEEKLY: TaskDef[] = [[KEYS.GITHUB_CONTRIBUTORS, fetchGitHubContributors]]
 const DAILY: TaskDef[] = [
   [KEYS.ACCOUNT_HOLDERS, fetchAccountHolders],
   [KEYS.APPS, fetchApps],
-  [KEYS.BLOB_STATS, fetchBlobStats],
   [KEYS.CALENDAR_EVENTS, fetchCalendarEvents],
   [KEYS.COMMUNITY_PICKS, fetchCommunityPicks],
   [KEYS.GFIS, fetchGFIs],
