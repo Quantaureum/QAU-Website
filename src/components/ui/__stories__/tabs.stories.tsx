@@ -80,20 +80,14 @@ export const ManyPanels: Story = {
     <Tabs defaultValue="quantaureum" className="w-[640px]">
       <TabsList>
         <TabsTrigger value="quantaureum">Quantaureum</TabsTrigger>
-        <TabsTrigger value="arbitrum">Arbitrum</TabsTrigger>
-        <TabsTrigger value="base">Base</TabsTrigger>
-        <TabsTrigger value="op">OP Mainnet</TabsTrigger>
-        <TabsTrigger value="zksync">zkSync Era</TabsTrigger>
-        <TabsTrigger value="linea">Linea</TabsTrigger>
-        <TabsTrigger value="scroll">Scroll</TabsTrigger>
+        <TabsTrigger value="mainnet">Mainnet</TabsTrigger>
+        <TabsTrigger value="testnet">Testnet</TabsTrigger>
+        <TabsTrigger value="devnet">Devnet</TabsTrigger>
       </TabsList>
       <TabsContent value="quantaureum">Quantaureum mainnet.</TabsContent>
-      <TabsContent value="arbitrum">Arbitrum One details.</TabsContent>
-      <TabsContent value="base">Base details.</TabsContent>
-      <TabsContent value="op">OP Mainnet details.</TabsContent>
-      <TabsContent value="zksync">zkSync Era details.</TabsContent>
-      <TabsContent value="linea">Linea details.</TabsContent>
-      <TabsContent value="scroll">Scroll details.</TabsContent>
+      <TabsContent value="mainnet">Mainnet 1668.</TabsContent>
+      <TabsContent value="testnet">Testnet 1669.</TabsContent>
+      <TabsContent value="devnet">Devnet 1333.</TabsContent>
     </Tabs>
   ),
 }

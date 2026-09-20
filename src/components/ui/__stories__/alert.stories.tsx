@@ -163,7 +163,7 @@ export const WithEmoji: Story = {
         <AlertContent>
           <AlertTitle>New feature</AlertTitle>
           <AlertDescription>
-            Layer 2 network filtering is now live across the dapps directory.
+            Network filtering is now live across the dapps directory.
           </AlertDescription>
         </AlertContent>
       </Alert>
@@ -172,8 +172,8 @@ export const WithEmoji: Story = {
         <AlertContent>
           <AlertTitle>Did you know?</AlertTitle>
           <AlertDescription>
-            Validators secure the Quantaureum network by proposing and attesting to
-            blocks.
+            Validators secure the Quantaureum network by proposing and attesting
+            to blocks.
           </AlertDescription>
         </AlertContent>
       </Alert>

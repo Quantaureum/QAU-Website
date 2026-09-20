@@ -24,9 +24,9 @@ type Story = StoryObj<typeof meta>
 export const Unordered: Story = {
   render: () => (
     <UnorderedList className="list-disc">
-      <ListItem>Smart contracts run on the EVM.</ListItem>
+      <ListItem>Smart contracts run on the QVM.</ListItem>
       <ListItem>Validators secure the network.</ListItem>
-      <ListItem>Layer 2 rollups scale throughput.</ListItem>
+      <ListItem>QPOS finalizes new blocks continuously.</ListItem>
     </UnorderedList>
   ),
 }
@@ -35,8 +35,8 @@ export const Ordered: Story = {
   render: () => (
     <OrderedList className="list-decimal">
       <ListItem>Connect a wallet.</ListItem>
-      <ListItem>Pick a layer 2 network.</ListItem>
-      <ListItem>Bridge QAU to start transacting.</ListItem>
+      <ListItem>Pick a network.</ListItem>
+      <ListItem>Send QAU to start transacting.</ListItem>
     </OrderedList>
   ),
 }
@@ -53,17 +53,17 @@ export const Nested: Story = {
   render: () => (
     <UnorderedList className="list-disc">
       <ListItem>
-        Layer 1
+        Consensus
         <UnorderedList className="list-disc">
           <ListItem>Quantaureum mainnet</ListItem>
         </UnorderedList>
       </ListItem>
       <ListItem>
-        Layer 2
+        Networks
         <OrderedList className="list-decimal">
-          <ListItem>Arbitrum One</ListItem>
-          <ListItem>Base</ListItem>
-          <ListItem>OP Mainnet</ListItem>
+          <ListItem>Mainnet</ListItem>
+          <ListItem>Testnet</ListItem>
+          <ListItem>Devnet</ListItem>
         </OrderedList>
       </ListItem>
     </UnorderedList>

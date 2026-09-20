@@ -59,11 +59,11 @@ export const ResponsiveFlex: Story = {
         </div>
       </SectionBanner>
       <SectionContent>
-        <SectionTag>Layer 2</SectionTag>
-        <SectionHeader>Scaling Quantaureum</SectionHeader>
+        <SectionTag>Consensus</SectionTag>
+        <SectionHeader>Securing Quantaureum</SectionHeader>
         <p>
-          Layer 2 networks bundle transactions off-chain and post proofs to
-          mainnet, reducing fees and increasing throughput.
+          QPOS validates and finalizes each block on-chain through a
+          quantum-secure proof-of-stake mechanism.
         </p>
       </SectionContent>
     </Section>

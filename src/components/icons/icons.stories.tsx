@@ -74,7 +74,6 @@ import {
   ConnectDappsIcon,
   DesktopIcon,
   ENSSupportIcon,
-  ERC20SupportIcon,
   GasFeeCustomizationIcon,
   HardwareIcon,
   HardwareSupportIcon,
@@ -90,7 +89,7 @@ import {
   SwapIcon,
   WithdrawCryptoIcon,
 } from "./wallets"
-import { QauHomeIcon, FeedbackThumbsUpIcon } from "."
+import { FeedbackThumbsUpIcon, QauHomeIcon } from "."
 
 const meta = {
   title: "Components / Icons",
@@ -127,7 +126,6 @@ const iconsDefinitions = [
   { label: "EarthGlyphIcon", Icon: EarthGlyphIcon },
   { label: "EconomicalIcon", Icon: EconomicalIcon },
   { label: "ENSSupportIcon", Icon: ENSSupportIcon },
-  { label: "ERC20SupportIcon", Icon: ERC20SupportIcon },
   { label: "QauHomeIcon", Icon: QauHomeIcon },
   { label: "EthpoolGlyphIcon", Icon: EthpoolGlyphIcon },
   { label: "EverstakeGlyphIcon", Icon: EverstakeGlyphIcon },

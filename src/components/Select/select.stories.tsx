@@ -36,11 +36,11 @@ export const Dropdown: Story = {
         ],
       },
       {
-        label: "Layer2 Options",
+        label: "Network Options",
         options: [
           { label: "Mainnet", value: "mainnet" },
-          { label: "Arbitrum", value: "arbitrum" },
-          { label: "Optimism", value: "optimism" },
+          { label: "Testnet", value: "testnet" },
+          { label: "Devnet", value: "devnet" },
         ],
       },
     ],

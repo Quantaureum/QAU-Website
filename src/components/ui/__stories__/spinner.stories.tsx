@@ -63,7 +63,7 @@ export const WithLabel: Story = {
       </HStack>
       <HStack className="items-center gap-2" aria-live="polite">
         <Spinner className="text-base" />
-        <span className="text-sm">Fetching layer 2 networks</span>
+        <span className="text-sm">Fetching network status</span>
       </HStack>
     </VStack>
   ),

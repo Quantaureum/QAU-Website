@@ -196,10 +196,10 @@ export const SideBySide: Story = {
         <Callout
           image={manAndDog}
           alt=""
-          title="Use layer 2"
+          title="Explore the network"
           description="Short copy."
         >
-          <ButtonLink href="#">Use layer 2</ButtonLink>
+          <ButtonLink href="#">Explore the network</ButtonLink>
         </Callout>
         <Callout
           image={walking}
