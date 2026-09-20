@@ -14,13 +14,10 @@ export const languages: Languages = i18nConfig.reduce((result, config) => {
 export const EXACT_PATH_NAMESPACE_MAP: Record<string, string> = {
   "/": "page-index",
   "/assets/": "page-assets",
-  "/enterprise/": "page-enterprise",
-  "/founders/": "page-founders",
   "/get-qau/": "page-get-qau",
   "/bug-bounty/": "page-bug-bounty",
   "/feedback/": "page-feedback",
   "/open-source/": "page-open-source",
-  "/wallets/find-wallet/": "page-wallets-find-wallet",
   "/wallets/": "page-wallets",
   "/what-is-qau/": "page-what-is-qau",
   "/what-is-the-quantaureum-network/": "page-what-is-the-quantaureum-network",
@@ -28,17 +25,10 @@ export const EXACT_PATH_NAMESPACE_MAP: Record<string, string> = {
 
 export const PREFIX_PATH_NAMESPACE_MAP: Array<[string, string]> = [
   ["/staking/", "page-staking"],
-  ["/developers/local-environment/", "page-developers-local-environment"],
-  ["/developers/learning-tools/", "page-developers-learning-tools"],
-  ["/latest/", "page-latest"],
-  ["/developers/tutorials/", "page-developers-tutorials"],
   ["/developers/tools/", "page-developers-tools"],
   ["/developers/", "page-developers-index"],
-  ["/wallets/find-wallet/", "page-wallets-find-wallet"],
   ["/community/", "page-community"],
-  ["/energy-consumption/", "page-energy-consumption"],
   ["/resources/", "page-resources"],
-  ["/stories/", "page-stories"],
   ["/learn/", "page-learn"],
   ["/gas/", "page-gas"],
   ["/what-is-quantaureum/", "page-what-is-quantaureum"],
@@ -58,13 +48,10 @@ const EXACT_PATH_ADDITIONAL_NAMESPACES: Record<string, string[]> = {
 const PREFIX_PATH_ADDITIONAL_NAMESPACES: Array<[string, string[]]> = [
   ["/developers/tools/", ["page-developers-tools-descriptions"]],
   ["/gas/", ["page-gas", "page-community"]],
-  ["/energy-consumption/", ["page-about"]],
   ["/apps/", ["page-app-descriptions", "component-swiper"]],
 ]
 
-const SUFFIX_PATH_ADDITIONAL_NAMESPACES: Array<[string, string[]]> = [
-  ["/wallets/find-wallet/", ["page-wallets", "table"]],
-]
+const SUFFIX_PATH_ADDITIONAL_NAMESPACES: Array<[string, string[]]> = []
 
 const GLOSSARY_TOOLTIP_PREFIXES: string[] = [
   "/get-qau/",
