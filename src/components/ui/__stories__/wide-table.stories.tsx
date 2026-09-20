@@ -41,24 +41,32 @@ const COLUMNS = [
 ]
 
 const ROWS = [
-  ["Quantaureum", "L1", "Proof-of-stake", "--", "On-chain", "--", "--"],
   [
-    "Optimistic L2",
-    "L2",
-    "Inherited",
-    "Quantaureum",
-    "Quantaureum",
-    "Centralized",
-    "Fraud proofs",
+    "Quantaureum Mainnet",
+    "L1",
+    "Proof-of-stake",
+    "On-chain",
+    "On-chain",
+    "1668",
+    "--",
   ],
   [
-    "Validity L2",
-    "L2",
-    "Inherited",
-    "Quantaureum",
-    "Quantaureum",
-    "Centralized",
-    "Validity proofs",
+    "Quantaureum Testnet",
+    "L1",
+    "Proof-of-stake",
+    "On-chain",
+    "On-chain",
+    "1669",
+    "--",
+  ],
+  [
+    "Quantaureum Devnet",
+    "L1",
+    "Proof-of-stake",
+    "On-chain",
+    "On-chain",
+    "1333",
+    "--",
   ],
 ]
 
