@@ -5,17 +5,8 @@ import type {
   Lang,
   Layout,
   ToCItem,
-  TranslationKey,
   VideoFormat,
 } from "@/lib/types"
-
-export interface DeveloperDocsLink {
-  id: TranslationKey
-  href: string
-  path: string
-  description: TranslationKey
-  items: DeveloperDocsLink[]
-}
 
 /**
  * Layout interface
@@ -56,11 +47,6 @@ export interface TopicFrontmatter extends SharedFrontmatter, ImageInfo {
   hideEditBanner?: boolean
 }
 
-export interface DocsFrontmatter extends SharedFrontmatter {
-  incomplete?: boolean
-  hideEditButton?: boolean
-}
-
 export interface VideoFrontmatter extends SharedFrontmatter {
   youtubeId: string
   uploadDate: string
@@ -70,23 +56,6 @@ export interface VideoFrontmatter extends SharedFrontmatter {
   format: VideoFormat
   author: string
   customThumbnailUrl?: string
-  breadcrumb?: string
-}
-
-export interface TutorialFrontmatter extends SharedFrontmatter {
-  tags?: string[]
-  author: string
-  source?: string
-  sourceUrl?: string
-  skill?: string
-  published: string
-  address?: string
-  team?: string
-  image?: string
-  imageWidth?: number
-  imageHeight?: number
-  blurDataURL?: string
-  hideEditButton?: boolean
   breadcrumb?: string
 }
 

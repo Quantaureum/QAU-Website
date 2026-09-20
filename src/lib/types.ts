@@ -7,10 +7,8 @@ import type { ColumnDef } from "@tanstack/react-table"
 
 import type {
   BlogFrontmatter,
-  DocsFrontmatter,
   StaticFrontmatter,
   TopicFrontmatter,
-  TutorialFrontmatter,
   VideoFrontmatter,
 } from "@/lib/interfaces"
 
@@ -56,13 +54,11 @@ export type Params = {
 
 export type Frontmatter = TopicFrontmatter &
   StaticFrontmatter &
-  DocsFrontmatter &
-  TutorialFrontmatter &
   BlogFrontmatter &
   VideoFrontmatter
 
 export type LayoutMappingType = typeof layoutMapping
-export type Layout = keyof LayoutMappingType | "docs" | "tutorial"
+export type Layout = keyof LayoutMappingType
 
 export type Lang =
   | "en"
@@ -1158,40 +1154,6 @@ export type MaturityLevel =
   | "maturing"
   | "developing"
   | "emerging"
-
-// Tutorials
-export enum Skill {
-  BEGINNER = "beginner",
-  INTERMEDIATE = "intermediate",
-  ADVANCED = "advanced",
-}
-
-export interface IExternalTutorial {
-  url: string
-  title: string
-  description: string
-  author: string
-  authorGithub: string
-  tags: Array<string>
-  skillLevel: string
-  timeToRead?: string
-  lang: string
-  publishDate: string
-}
-
-export interface ITutorial {
-  href: string
-  title: string
-  description: string
-  author: string
-  tags?: Array<string>
-  skill?: Skill
-  timeToRead?: number | null
-  published?: string | null
-  lang: string
-  isExternal: boolean
-  isTranslated?: boolean
-}
 
 export enum AppCategoryEnum {
   DEFI = "DeFi",

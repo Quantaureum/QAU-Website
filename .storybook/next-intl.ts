@@ -23,7 +23,6 @@ export const ns = [
   "page-staking",
   "page-what-is-quantaureum",
   "page-wallets-find-wallet",
-  "page-developers-docs",
   "page-developers-tutorials",
   "table",
 ] as const
