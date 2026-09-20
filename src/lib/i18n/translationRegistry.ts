@@ -94,57 +94,10 @@ type PageWithTranslations = {
 }
 
 async function getDynamicIntlPagePaths(): Promise<string[]> {
-  // Imports are deferred so test environments that don't transform SVG /
-  // Next.js-only modules can still load this file to test getTranslatedLocales.
-  const [
-    { appsCategories },
-    { getStaticAppsData, getStaticDeveloperToolsData },
-    { getToolKey, normalizeDeveloperToolsData, withCategories },
-    { slugify },
-  ] = await Promise.all([
-    import("@/data/apps/categories"),
-    import("@/lib/data"),
-    import("@/lib/utils/developerToolsData"),
-    import("../utils/url"),
-    import("@/lib/utils/walletData"),
-  ])
-
-  // discoverStaticPages() excludes dynamic segments, so add known
-  // generateStaticParams() routes that should be present in sitemap output.
-  const toolsData = normalizeDeveloperToolsData(
-    await getStaticDeveloperToolsData()
-  )
-  const devToolPaths =
-    toolsData?.taxonomy.categories.definitions.map(
-      (category) => `/developers/tools/categories/${category.id}/`
-    ) || []
-
-  // Individual tool detail pages, matching the [tool] route's static params.
-  const devToolDetailPaths = toolsData
-    ? withCategories(toolsData).map(
-        (tool) => `/developers/tools/${getToolKey(tool)}/`
-      )
-    : []
-
-  // App category pages
-  const appCategoryPaths = Object.values(appsCategories).map(
-    (category) => `/apps/categories/${category.slug}/`
-  )
-
-  // Individual app pages
-  const appsData = await getStaticAppsData()
-  const appPaths = appsData
-    ? Object.values(appsData)
-        .flat()
-        .map((app) => `/apps/${slugify(app.name)}/`)
-    : []
-
-  return [
-    ...devToolPaths,
-    ...devToolDetailPaths,
-    ...appCategoryPaths,
-    ...appPaths,
-  ]
+  // No dynamic static-route generators remain: the /developers/tools/ and
+  // /apps/ branches that once emitted paths here were removed because those
+  // app-directory routes no longer exist (they would 404 in the sitemap).
+  return []
 }
 
 export async function getAllPagesWithTranslations(): Promise<

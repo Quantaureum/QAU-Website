@@ -25,7 +25,6 @@ export const EXACT_PATH_NAMESPACE_MAP: Record<string, string> = {
 
 export const PREFIX_PATH_NAMESPACE_MAP: Array<[string, string]> = [
   ["/staking/", "page-staking"],
-  ["/developers/tools/", "page-developers-tools"],
   ["/developers/", "page-developers-index"],
   ["/community/", "page-community"],
   ["/resources/", "page-resources"],
@@ -34,21 +33,18 @@ export const PREFIX_PATH_NAMESPACE_MAP: Array<[string, string]> = [
   ["/what-is-quantaureum/", "page-what-is-quantaureum"],
   ["/run-a-node/", "page-run-a-node"],
   ["/roadmap/", "page-roadmap"],
+  ["/explorer/", "page-explorer"],
 ]
 
 const EXACT_PATH_ADDITIONAL_NAMESPACES: Record<string, string[]> = {
-  "/": ["page-10-year-anniversary", "page-app-descriptions"],
   "/community/": ["component-story-card"],
   "/developers/": ["component-swiper"],
   "/roadmap/": ["component-swiper"],
   "/wallets/": ["component-wallet-simulator"],
-  "/start/": ["component-swiper"],
 }
 
 const PREFIX_PATH_ADDITIONAL_NAMESPACES: Array<[string, string[]]> = [
-  ["/developers/tools/", ["page-developers-tools-descriptions"]],
   ["/gas/", ["page-gas", "page-community"]],
-  ["/apps/", ["page-app-descriptions", "component-swiper"]],
 ]
 
 const SUFFIX_PATH_ADDITIONAL_NAMESPACES: Array<[string, string[]]> = []
