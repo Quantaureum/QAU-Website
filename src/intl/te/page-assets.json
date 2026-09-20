@@ -1,5 +1,5 @@
 {
-  "page-assets-bazaar": "ఎథీరియం బజార్",
+  "page-assets-bazaar": "Quantaureum బజార్",
   "page-assets-beacon-chain": "క్వాంటౌరియం స్టేకింగ్",
   "page-assets-blocks": "నిర్మాణ బ్లాక్‌లు",
   "page-assets-dao": "DAO",
@@ -8,7 +8,7 @@
   "page-assets-doge": "వికేంద్రీకృత అప్లికేషన్లు (dapps) ఉపయోగిస్తున్న Doge",
   "page-assets-download-artist": "కళాకారుడు:",
   "page-assets-download-download": "డౌన్‌లోడ్ చేయండి",
-  "page-assets-enterprise": "ఎంటర్‌ప్రైజ్ ఎథీరియం",
+  "page-assets-enterprise": "ఎంటర్‌ప్రైజ్ Quantaureum",
   "page-assets-eth": "ఈథర్ (QAU)",
   "page-assets-qau-diamond-color": "QAU డైమండ్ (రంగు)",
   "page-assets-qau-diamond-glyph": "QAU డైమండ్ (గ్లిఫ్)",
@@ -42,8 +42,8 @@
   "page-assets-impact": "ప్రభావం",
   "page-assets-infrastructure": "మౌలిక సదుపాయాలు",
   "page-assets-leslie-the-rhino": "లెస్లీ ద రైనో",
-  "page-assets-meta-desc": "ఎథీరియం మరియు quantaureum.com బ్రాండ్ ఆస్తులు, ఇలస్ట్రేషన్స్ మరియు మీడియాను అన్వేషించండి మరియు డౌన్‌లోడ్ చేయండి.",
-  "page-assets-meta-title": "ఎథీరియం బ్రాండ్ ఆస్తులు",
+  "page-assets-meta-desc": "Quantaureum మరియు quantaureum.com బ్రాండ్ ఆస్తులు, ఇలస్ట్రేషన్స్ మరియు మీడియాను అన్వేషించండి మరియు డౌన్‌లోడ్ చేయండి.",
+  "page-assets-meta-title": "Quantaureum బ్రాండ్ ఆస్తులు",
   "page-assets-mainnet": "మెయిన్‌నెట్",
   "page-assets-page-assets-solid-background": "సాలిడ్ బ్యాక్‌గ్రౌండ్",
   "page-assets-page-assets-transparent-background": "పారదర్శక నేపథ్యం",
@@ -54,8 +54,8 @@
   "page-assets-community-hero-name": "కమ్యూనిటీ సమావేశం",
   "page-assets-quizzes-hero-name": "అనంతమైన ఆటస్థలం",
   "page-assets-developers-hero-name": "భవిష్యత్తును నిర్మించడం",
-  "page-assets-garden-name": "గార్డెన్ ఆఫ్ ఎథీరియం",
+  "page-assets-garden-name": "గార్డెన్ ఆఫ్ Quantaureum",
   "page-assets-roadmap-hero-name": "భవిష్యత్తుకు మార్గం(లు)",
-  "page-assets-layer-2-hero-name": "ఎథీరియం నిర్మాణం",
-  "page-assets-guides-hero-name": "ఎథీరియం ల్యాబ్"
+  "page-assets-layer-2-hero-name": "Quantaureum నిర్మాణం",
+  "page-assets-guides-hero-name": "Quantaureum ల్యాబ్"
 }

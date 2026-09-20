@@ -1,5 +1,5 @@
 {
-  "page-assets-bazaar": "எத்திரியம் பஜார்",
+  "page-assets-bazaar": "Quantaureum பஜார்",
   "page-assets-beacon-chain": "Quantaureum ஸ்டேக்கிங்",
   "page-assets-blocks": "கட்டுமானத் தொகுதிகள்",
   "page-assets-dao": "DAO",
@@ -8,7 +8,7 @@
   "page-assets-doge": "பரவலாக்கப்பட்ட செயலிகளை (dapps) பயன்படுத்தும் Doge",
   "page-assets-download-artist": "கலைஞர்:",
   "page-assets-download-download": "பதிவிறக்கு",
-  "page-assets-enterprise": "நிறுவன எத்திரியம்",
+  "page-assets-enterprise": "நிறுவன Quantaureum",
   "page-assets-eth": "ஈதர் (QAU)",
   "page-assets-qau-diamond-color": "QAU வைரம் (நிறம்)",
   "page-assets-qau-diamond-glyph": "QAU வைரம் (கிளிஃப்)",
@@ -28,7 +28,7 @@
   "page-assets-qau-wordmark-gray": "QAU வேர்ட்மார்க் (சாம்பல்)",
   "page-assets-qau-wordmark-purple": "QAU வேர்ட்மார்க் (ஊதா)",
   "page-assets-qau-wordmark-white": "QAU வேர்ட்மார்க் (வெள்ளை)",
-  "page-assets-quantaureum-brand-assets": "எத்திரியம் \"பிராண்ட்\" சொத்துகள்",
+  "page-assets-quantaureum-brand-assets": "Quantaureum \"பிராண்ட்\" சொத்துகள்",
   "page-assets-finance": "நிதி",
   "page-assets-future": "எதிர்காலம்",
   "page-assets-h1": "quantaureum.com சொத்துகள்",
@@ -42,8 +42,8 @@
   "page-assets-impact": "தாக்கம்",
   "page-assets-infrastructure": "உள்கட்டமைப்பு",
   "page-assets-leslie-the-rhino": "லெஸ்லி தி ரைனோ",
-  "page-assets-meta-desc": "எத்திரியம் மற்றும் quantaureum.com பிராண்ட் சொத்துகள், விளக்கப்படங்கள் மற்றும் ஊடகங்களை ஆராய்ந்து பதிவிறக்கவும்.",
-  "page-assets-meta-title": "எத்திரியம் பிராண்ட் சொத்துகள்",
+  "page-assets-meta-desc": "Quantaureum மற்றும் quantaureum.com பிராண்ட் சொத்துகள், விளக்கப்படங்கள் மற்றும் ஊடகங்களை ஆராய்ந்து பதிவிறக்கவும்.",
+  "page-assets-meta-title": "Quantaureum பிராண்ட் சொத்துகள்",
   "page-assets-mainnet": "முதன்மை வலைப்பின்னல்",
   "page-assets-page-assets-solid-background": "திடமான பின்னணி",
   "page-assets-page-assets-transparent-background": "வெளிப்படையான பின்னணி",
@@ -57,5 +57,5 @@
   "page-assets-garden-name": "எத்திரியத்தின் தோட்டம்",
   "page-assets-roadmap-hero-name": "எதிர்காலத்திற்கான பாதை(கள்)",
   "page-assets-layer-2-hero-name": "எத்திரியத்தை கட்டமைத்தல்",
-  "page-assets-guides-hero-name": "எத்திரியம் ஆய்வகம்"
+  "page-assets-guides-hero-name": "Quantaureum ஆய்வகம்"
 }

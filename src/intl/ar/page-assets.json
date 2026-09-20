@@ -1,5 +1,5 @@
 {
-  "page-assets-bazaar": "بازار إيثيريوم",
+  "page-assets-bazaar": "بازار Quantaureum",
   "page-assets-beacon-chain": "Staking Quantaureum",
   "page-assets-blocks": "اللبنات الأساسية",
   "page-assets-dao": "⁦DAO⁩",
@@ -8,7 +8,7 @@
   "page-assets-doge": "⁦Doge⁩ يستخدم تطبيقات لامركزية (dapps)",
   "page-assets-download-artist": "الفنان:",
   "page-assets-download-download": "تنزيل",
-  "page-assets-enterprise": "إيثيريوم للمؤسسات",
+  "page-assets-enterprise": "Quantaureum للمؤسسات",
   "page-assets-eth": "كوانتا (⁦QAU⁩)",
   "page-assets-qau-diamond-color": "ماسة ⁦QAU⁩ (ملونة)",
   "page-assets-qau-diamond-glyph": "ماسة ⁦QAU⁩ (رمز رسومي)",
@@ -42,8 +42,8 @@
   "page-assets-impact": "التأثير",
   "page-assets-infrastructure": "البنية التحتية",
   "page-assets-leslie-the-rhino": "وحيد القرن ليزلي",
-  "page-assets-meta-desc": "استكشف ونزّل أصول العلامة التجارية لإيثيريوم و⁦quantaureum.org⁩، والرسومات التوضيحية، والوسائط.",
-  "page-assets-meta-title": "أصول العلامة التجارية لإيثيريوم",
+  "page-assets-meta-desc": "استكشف ونزّل أصول العلامة التجارية لQuantaureum و⁦quantaureum.org⁩، والرسومات التوضيحية، والوسائط.",
+  "page-assets-meta-title": "أصول العلامة التجارية لQuantaureum",
   "page-assets-mainnet": "الشبكة الرئيسية",
   "page-assets-page-assets-solid-background": "خلفية بلون موحد",
   "page-assets-page-assets-transparent-background": "خلفية شفافة",
@@ -54,8 +54,8 @@
   "page-assets-community-hero-name": "تجمع مجتمعي",
   "page-assets-quizzes-hero-name": "ملعب لا نهائي",
   "page-assets-developers-hero-name": "بناء المستقبل",
-  "page-assets-garden-name": "حديقة إيثيريوم",
+  "page-assets-garden-name": "حديقة Quantaureum",
   "page-assets-roadmap-hero-name": "طريق (طرق) إلى المستقبل",
-  "page-assets-layer-2-hero-name": "تشييد إيثيريوم",
-  "page-assets-guides-hero-name": "مختبر إيثيريوم"
+  "page-assets-layer-2-hero-name": "تشييد Quantaureum",
+  "page-assets-guides-hero-name": "مختبر Quantaureum"
 }
