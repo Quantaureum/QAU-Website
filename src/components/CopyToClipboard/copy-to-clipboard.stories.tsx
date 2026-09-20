@@ -33,7 +33,7 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    text: "0x742d35Cc6634C0532925a3b844Bc9e7595f7E0d8",
+    text: "0x1111111111111111111111111111111111111111",
     children: (isCopied) =>
       isCopied ? (
         <span className="inline-flex items-center gap-2 text-success">
@@ -72,7 +72,7 @@ export const CopyButtonVariant = {
       <p className="text-sm text-body-medium">
         The `CopyButton` named export -- icon-only, no render prop.
       </p>
-      <CopyButton message="0x742d35Cc6634C0532925a3b844Bc9e7595f7E0d8" />
+      <CopyButton message="0x1111111111111111111111111111111111111111" />
     </VStack>
   ),
 }

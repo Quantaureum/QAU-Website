@@ -70,7 +70,7 @@ export const WithText: Story = {
       <Button variant="outline">Slow</Button>
       <Button variant="outline">Average</Button>
       <Button variant="outline">Fast</Button>
-      <ButtonGroupText>gwei</ButtonGroupText>
+      <ButtonGroupText>QAU</ButtonGroupText>
     </ButtonGroup>
   ),
 }
