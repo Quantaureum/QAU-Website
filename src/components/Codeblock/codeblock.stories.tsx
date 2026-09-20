@@ -28,46 +28,46 @@ export default meta
 
 type Story = StoryObj<typeof meta>
 
-const solidityExample = `// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+const rpcExample = `// POST to a Quantaureum JSON-RPC endpoint
+const request = {
+  method: "POST",
+  headers: { "content-type": "application/json" },
+  body: JSON.stringify({
+    jsonrpc: "2.0",
+    method: "eth_blockNumber",
+    params: [],
+    id: 1,
+  }),
+}
 
-contract Counter {
-    uint256 public count;
+const res = await fetch("http://127.0.0.1:8545", request)
+const { result } = await res.json()
+console.log(result)`
 
-    function increment() external {
-        count += 1;
-    }
+const jsExample = `async function getLatestBlock(rpcUrl) {
+  const res = await fetch(rpcUrl, {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({
+      jsonrpc: "2.0",
+      method: "qau_protocolVersion",
+      params: [],
+      id: 1,
+    }),
+  })
+  const { result } = await res.json()
+  return result
+}
 
-    function reset() external {
-        count = 0;
-    }
-}`
-
-const jsExample = `import { createPublicClient, http } from "viem"
-import { mainnet } from "viem/chains"
-
-const client = createPublicClient({
-  chain: mainnet,
-  transport: http(),
-})
-
-const block = await client.getBlock()
-console.log(block.number)`
-
-const pythonExample = `from web3 import Web3
-
-w3 = Web3(Web3.HTTPProvider("https://mainnet.example/v3/KEY"))
-
-latest = w3.qau.get_block("latest")
-print(latest.number)`
+getLatestBlock("http://127.0.0.1:8545").then(console.log)`
 
 const bashExample = `pnpm install
 pnpm dev`
 
 export const Default: Story = {
   args: {
-    codeLanguage: "language-solidity",
-    children: solidityExample,
+    codeLanguage: "language-js",
+    children: rpcExample,
   },
 }
 
@@ -75,13 +75,6 @@ export const JavaScript: Story = {
   args: {
     codeLanguage: "language-js",
     children: jsExample,
-  },
-}
-
-export const Python: Story = {
-  args: {
-    codeLanguage: "language-python",
-    children: pythonExample,
   },
 }
 
@@ -94,27 +87,24 @@ export const Bash: Story = {
 
 export const Collapsible: Story = {
   args: {
-    codeLanguage: "language-solidity",
+    codeLanguage: "language-js",
     allowCollapse: true,
-    children: Array.from(
-      { length: 40 },
-      (_, i) => `    uint256 line${i} = ${i};`
-    ).join("\n"),
+    children: Array.from({ length: 40 }, (_, i) => `    line ${i}`).join("\n"),
   },
 }
 
 export const NoCollapse: Story = {
   args: {
-    codeLanguage: "language-solidity",
+    codeLanguage: "language-js",
     allowCollapse: false,
-    children: solidityExample,
+    children: rpcExample,
   },
 }
 
 export const FromHomepage: Story = {
   args: {
-    codeLanguage: "language-solidity",
+    codeLanguage: "language-js",
     fromHomepage: true,
-    children: solidityExample,
+    children: rpcExample,
   },
 }
