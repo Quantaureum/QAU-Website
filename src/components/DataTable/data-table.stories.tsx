@@ -12,22 +12,22 @@ type Network = {
 
 const DATA: Network[] = [
   {
-    name: "Arbitrum One",
-    type: "Optimistic rollup",
-    settlement: "Quantaureum",
-    detail: "Fraud proofs with a seven-day challenge window.",
+    name: "Mainnet",
+    type: "Quantaureum Layer 1",
+    settlement: "—",
+    detail: "Post-quantum QPOS network secured by Dilithium3 + Kyber768.",
   },
   {
-    name: "Base",
-    type: "Optimistic rollup",
-    settlement: "Quantaureum",
-    detail: "Built on the OP Stack.",
+    name: "Testnet",
+    type: "Quantaureum Layer 1",
+    settlement: "—",
+    detail: "Public test network for QVM/QASM contracts, chainId 1669.",
   },
   {
-    name: "Starknet",
-    type: "Validity rollup",
-    settlement: "Quantaureum",
-    detail: "STARK proofs; a non-EVM execution environment.",
+    name: "Devnet",
+    type: "Quantaureum Layer 1",
+    settlement: "—",
+    detail: "Developer network, chainId 1333.",
   },
 ]
 

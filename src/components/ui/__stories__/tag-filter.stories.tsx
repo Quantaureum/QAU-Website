@@ -30,20 +30,20 @@ type Story = StoryObj
 
 // Count-descending entries, the shape `getTagCounts` returns.
 const TAGS: Array<[string, number]> = [
-  ["solidity", 42],
-  ["smart contracts", 31],
-  ["security", 24],
-  ["defi", 19],
-  ["nft", 15],
-  ["testing", 12],
-  ["hardhat", 9],
-  ["foundry", 7],
-  ["layer 2", 6],
-  ["oracles", 5],
+  ["qvm", 42],
+  ["qasm", 31],
+  ["qpos", 24],
+  ["staking", 19],
+  ["dilithium", 15],
+  ["kyber", 12],
+  ["consensus", 9],
+  ["validators", 7],
+  ["delegation", 6],
+  ["quantum-safe", 5],
   ["governance", 4],
-  ["staking", 3],
-  ["zk", 2],
-  ["mev", 2],
+  ["tss", 3],
+  ["explorer", 2],
+  ["qau", 2],
 ]
 
 const Controlled = ({
@@ -91,7 +91,7 @@ export const WithSelection: Story = {
     },
   },
   render: () => (
-    <Controlled tags={TAGS} defaultVisible={8} initial={["solidity", "defi"]} />
+    <Controlled tags={TAGS} defaultVisible={8} initial={["qvm", "staking"]} />
   ),
 }
 
@@ -100,11 +100,11 @@ export const ActiveHiddenTag: Story = {
     docs: {
       description: {
         story:
-          "A selected tag that falls beyond `defaultVisible` (`mev`) stays pinned-visible while collapsed, so the active filter is never hidden.",
+          "A selected tag that falls beyond `defaultVisible` (`qau`) stays pinned-visible while collapsed, so the active filter is never hidden.",
       },
     },
   },
-  render: () => <Controlled tags={TAGS} defaultVisible={6} initial={["mev"]} />,
+  render: () => <Controlled tags={TAGS} defaultVisible={6} initial={["qau"]} />,
 }
 
 export const NoCount: Story = {
