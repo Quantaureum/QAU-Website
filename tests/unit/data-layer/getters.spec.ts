@@ -203,18 +203,6 @@ test.describe("Data-Layer Getters", () => {
   })
 
   test.describe("Stats & Analytics", () => {
-    test("getBlobStats returns blob stats or null", async () => {
-      const result = await dataLayer.getBlobStats()
-      if (result !== null) {
-        expect(result).toHaveProperty("totalBlobs")
-        expect(result).toHaveProperty("avgBlobFee")
-        expect(result).toHaveProperty("updatedAt")
-        expect(typeof result.totalBlobs).toBe("number")
-        expect(typeof result.avgBlobFee).toBe("number")
-        expect(typeof result.updatedAt).toBe("string")
-      }
-    })
-
     test("getStablecoinsData returns data or null", async () => {
       const result = await dataLayer.getStablecoinsData()
       // StablecoinsData is unknown type, just check it's not null

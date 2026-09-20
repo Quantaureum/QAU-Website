@@ -3,7 +3,6 @@ import type {
   BlockspaceData,
   Commit,
   CommunityPick,
-  QauPriceData,
   EventItem,
   GHIssue,
   GitHubContributorsData,
@@ -12,11 +11,11 @@ import type {
   GrowThePieMasterData,
   L2beatData,
   MetricReturnData,
+  QauPriceData,
 } from "@/lib/types"
 import type { CommunityEventsReturnType } from "@/lib/interfaces"
 
 import type { DeveloperToolsDataEnvelope } from "./fetchers/developer-tools/utils"
-import type { BlobStats } from "./fetchers/fetchBlobStats"
 import type { GasPriceData } from "./fetchers/fetchGasPrice"
 import type { QuizStatsData } from "./fetchers/fetchQuizStats"
 import type { CoinGeckoCoinMarketResponse } from "./fetchers/fetchStablecoinsData"
@@ -34,7 +33,6 @@ export const getGrowThePieBlockspaceData = () => get<Record<string, BlockspaceDa
 export const getGrowThePieMasterData = () => get<GrowThePieMasterData>(KEYS.GROW_THE_PIE_MASTER)
 export const getCommunityPicks = () => get<CommunityPick[]>(KEYS.COMMUNITY_PICKS)
 export const getCalendarEvents = () => get<CommunityEventsReturnType>(KEYS.CALENDAR_EVENTS)
-export const getBlobStats = () => get<BlobStats>(KEYS.BLOB_STATS)
 export const getQuantaureumMarketcapData = () => get<MetricReturnData>(KEYS.QUANTAUREUM_MARKETCAP)
 export const getQuantaureumStablecoinsMcapData = () => get<MetricReturnData>(KEYS.QUANTAUREUM_STABLECOINS_MCAP)
 export const getGasPriceData = () => get<GasPriceData>(KEYS.GAS_PRICE)
