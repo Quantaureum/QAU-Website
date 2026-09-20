@@ -205,8 +205,8 @@ export const InputWithCustomIcon: Story = {
       <CommandInput placeholder="Search wallets..." icon={Wallet} />
       <CommandList>
         <CommandGroup>
-          <CommandItem>Connect MetaMask</CommandItem>
-          <CommandItem>Connect Rainbow</CommandItem>
+          <CommandItem>Connect wallet</CommandItem>
+          <CommandItem>Unlock account</CommandItem>
         </CommandGroup>
       </CommandList>
     </Command>

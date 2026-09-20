@@ -5,7 +5,7 @@ const SLOTS_PER_EPOCH = 32
 const SECONDS_PER_SLOT = 12
 const SECONDS_PER_YEAR = 31_557_600 // 365.25 days
 const EPOCHS_PER_YEAR = SECONDS_PER_YEAR / (SLOTS_PER_EPOCH * SECONDS_PER_SLOT)
-const GWEI_PER_ETH = 1e9
+const GWEI_PER_QAU = 1e9
 
 /**
  * Approximate the network staking APR from the total amount of QAU staked.
@@ -22,4 +22,4 @@ const GWEI_PER_ETH = 1e9
  */
 export const computeStakingApr = (totalQauStaked: number): number =>
   (BASE_REWARD_FACTOR * EPOCHS_PER_YEAR) /
-  Math.sqrt(totalQauStaked * GWEI_PER_ETH)
+  Math.sqrt(totalQauStaked * GWEI_PER_QAU)
