@@ -43,17 +43,17 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 const monthlyData = [
-  { month: "Jan", mainnet: 186, l2: 80 },
-  { month: "Feb", mainnet: 305, l2: 200 },
-  { month: "Mar", mainnet: 237, l2: 120 },
-  { month: "Apr", mainnet: 73, l2: 190 },
-  { month: "May", mainnet: 209, l2: 130 },
-  { month: "Jun", mainnet: 214, l2: 140 },
+  { month: "Jan", mainnet: 186, testnet: 80 },
+  { month: "Feb", mainnet: 305, testnet: 200 },
+  { month: "Mar", mainnet: 237, testnet: 120 },
+  { month: "Apr", mainnet: 73, testnet: 190 },
+  { month: "May", mainnet: 209, testnet: 130 },
+  { month: "Jun", mainnet: 214, testnet: 140 },
 ]
 
 const monthlyConfig = {
   mainnet: { label: "Mainnet", color: "hsl(var(--primary))" },
-  l2: { label: "Layer 2", color: "hsl(var(--accent-a))" },
+  testnet: { label: "Testnet", color: "hsl(var(--accent-a))" },
 } satisfies ChartConfig
 
 export const BarUsage: Story = {
@@ -145,16 +145,16 @@ export const AreaUsage: Story = {
 
 const pieData = [
   { name: "quantaureum", value: 60 },
-  { name: "arbitrum", value: 18 },
-  { name: "base", value: 12 },
-  { name: "op", value: 10 },
+  { name: "mainnet", value: 18 },
+  { name: "testnet", value: 12 },
+  { name: "devnet", value: 10 },
 ]
 
 const pieConfig = {
   quantaureum: { label: "Quantaureum", color: "hsl(var(--primary))" },
-  arbitrum: { label: "Arbitrum", color: "hsl(var(--accent-a))" },
-  base: { label: "Base", color: "hsl(var(--accent-b))" },
-  op: { label: "OP Mainnet", color: "hsl(var(--accent-c))" },
+  mainnet: { label: "Mainnet", color: "hsl(var(--accent-a))" },
+  testnet: { label: "Testnet", color: "hsl(var(--accent-b))" },
+  devnet: { label: "Devnet", color: "hsl(var(--accent-c))" },
 } satisfies ChartConfig
 
 export const PieUsage: Story = {

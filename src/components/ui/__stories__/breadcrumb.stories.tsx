@@ -38,7 +38,7 @@ export const TwoLevel: Story = {
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         <BreadcrumbItem>
-          <BreadcrumbPage>Layer 2</BreadcrumbPage>
+          <BreadcrumbPage>Developers</BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>
@@ -54,11 +54,11 @@ export const ThreeLevel: Story = {
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         <BreadcrumbItem>
-          <BreadcrumbLink href="/layer-2">Layer 2</BreadcrumbLink>
+          <BreadcrumbLink href="/developers">Developers</BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbSeparator />
         <BreadcrumbItem>
-          <BreadcrumbPage>Optimistic rollups</BreadcrumbPage>
+          <BreadcrumbPage>QVM &amp; QASM</BreadcrumbPage>
         </BreadcrumbItem>
       </BreadcrumbList>
     </Breadcrumb>

@@ -41,8 +41,8 @@ const SAMPLE = [
   },
   {
     id: "item-2",
-    title: "What is a layer 2?",
-    body: "Layer 2 networks scale Quantaureum by handling transactions off the main chain while inheriting its security guarantees.",
+    title: "What is QPOS?",
+    body: "QPOS is Quantaureum's quantum-secure proof-of-stake consensus. Anyone staking QAU can participate in proposing and attesting to blocks.",
   },
   {
     id: "item-3",

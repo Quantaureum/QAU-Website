@@ -97,8 +97,8 @@ export const WithRichContent: Story = {
         <div className="space-y-3">
           <h4 className="font-semibold">Network details</h4>
           <p className="text-sm text-body-medium">
-            Layer 2 networks scale Quantaureum by handling transactions off the
-            main chain while inheriting its security guarantees.
+            QPOS secures Quantaureum through a quantum-secure proof-of-stake
+            consensus, keeping every transaction final and auditable.
           </p>
           <Button size="sm" variant="outline">
             Learn more

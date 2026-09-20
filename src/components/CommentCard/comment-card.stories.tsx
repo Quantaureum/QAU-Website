@@ -34,7 +34,7 @@ export const Default: Story = {
   args: {
     description:
       "Quantaureum is a global, decentralized platform for money and new kinds of applications.",
-    name: "Tim Beiko",
+    name: "A. Navin",
     title: "Protocol Coordination, Quantaureum project",
   },
 }
@@ -42,9 +42,9 @@ export const Default: Story = {
 export const LongDescription: Story = {
   args: {
     description:
-      "Layer 2 networks settle transactions on Quantaureum mainnet while running execution off-chain, which gives users much lower fees and higher throughput without compromising on the security properties of the underlying network. This is the path the ecosystem has converged on for scaling.",
+      "Post-quantum signatures and a quantum-secure proof-of-stake consensus protect every transaction on Quantaureum, giving users digital sovereignty by default. This is the direction the industry is converging on.",
     name: "Alex Smirnov",
-    title: "Co-founder, deBridge",
+    title: "Quantaureum community contributor",
   },
 }
 

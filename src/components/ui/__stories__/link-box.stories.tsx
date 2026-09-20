@@ -26,7 +26,7 @@ export const Default: Story = {
   render: () => (
     <LinkBox className="block w-[320px] rounded-md border p-4 hover:bg-background-highlight">
       <h3 className="font-semibold">
-        <LinkOverlay href="/layer-2">Layer 2 networks</LinkOverlay>
+        <LinkOverlay href="/developers">Developer docs</LinkOverlay>
       </h3>
       <p className="mt-1 text-sm text-body-medium">
         Anywhere on this card is a click target. The overlay covers the whole

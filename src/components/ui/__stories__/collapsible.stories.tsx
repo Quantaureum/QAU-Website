@@ -100,12 +100,12 @@ export const ListOfDetails: Story = {
     <VStack className="w-[420px] gap-2">
       {[
         {
-          title: "What is a layer 2?",
-          body: "Layer 2 networks scale Quantaureum by handling transactions off the main chain.",
+          title: "What is a layer 1?",
+          body: "Layer 1 networks validate transactions and security directly on the base chain.",
         },
         {
-          title: "What is a rollup?",
-          body: "Rollups bundle many transactions into a single proof posted to layer 1.",
+          title: "What is QPOS?",
+          body: "QPOS is Quantaureum's quantum-secure proof-of-stake consensus securing the network.",
         },
         {
           title: "What is a validator?",

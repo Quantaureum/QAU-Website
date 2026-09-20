@@ -7,7 +7,6 @@ import {
   SelectGroup,
   SelectItem,
   SelectLabel,
-  SelectSeparator,
   SelectTrigger,
   SelectValue,
 } from "../select"
@@ -80,16 +79,10 @@ export const WithGroups: Story = {
         </SelectTrigger>
         <SelectContent>
           <SelectGroup>
-            <SelectLabel>Layer 1</SelectLabel>
-            <SelectItem value="mainnet">Quantaureum</SelectItem>
-          </SelectGroup>
-          <SelectSeparator />
-          <SelectGroup>
-            <SelectLabel>Layer 2</SelectLabel>
-            <SelectItem value="arbitrum">Arbitrum One</SelectItem>
-            <SelectItem value="base">Base</SelectItem>
-            <SelectItem value="op">OP Mainnet</SelectItem>
-            <SelectItem value="zksync">zkSync Era</SelectItem>
+            <SelectLabel>Network</SelectLabel>
+            <SelectItem value="mainnet">Mainnet</SelectItem>
+            <SelectItem value="testnet">Testnet</SelectItem>
+            <SelectItem value="devnet">Devnet</SelectItem>
           </SelectGroup>
         </SelectContent>
       </Select>
