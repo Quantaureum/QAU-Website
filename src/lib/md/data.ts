@@ -67,11 +67,7 @@ export async function getPageData({
 
   // Get contributor information
   const { contributors, lastUpdatedDate } =
-    await getMarkdownFileContributorInfo(
-      slug,
-      locale,
-      frontmatter.lang as string
-    )
+    await getMarkdownFileContributorInfo(slug)
 
   // Format timestamp (undefined when contributor data is missing)
   const lastEditLocaleTimestamp = lastUpdatedDate

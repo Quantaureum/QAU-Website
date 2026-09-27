@@ -6,13 +6,9 @@ export interface GasPriceData {
 }
 
 export async function fetchGasPrice(): Promise<GasPriceData> {
-  const explorerApiKey = process.env.ETHERSCAN_API_KEY
-
   console.log("Starting gas price data fetch")
 
-  const response = await fetchRetry(
-    `https://explorer.quantaureum.com}`
-  )
+  const response = await fetchRetry(`https://explorer.quantaureum.com}`)
 
   if (!response.ok) {
     throw new Error(

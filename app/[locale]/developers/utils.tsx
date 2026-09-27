@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server"
 
 import type { EventItem } from "@/lib/types"
+
 import type { DevelopersPath, VideoCourse } from "./types"
 
 import docsBanner from "@/public/images/developers/resources-banner.png"
