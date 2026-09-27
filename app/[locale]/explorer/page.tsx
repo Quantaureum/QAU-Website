@@ -163,7 +163,6 @@ export default async function ExplorerPage(props: {
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
           {[
             [t("page-explorer-validators"), "/explorer/validators/"],
-            [t("page-explorer-miners"), "/explorer/miners/"],
             [t("page-explorer-contracts"), "/explorer/contracts/"],
             [t("page-explorer-qpos-short"), "/explorer/qpos/"],
             [t("page-explorer-network"), "/explorer/network/"],

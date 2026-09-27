@@ -436,7 +436,7 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
               </DocLink>
             </ListItem>
             <ListItem>
-              <DocLink href="/what-is-QAU">
+              <DocLink href="/what-is-qau">
                 {t("page-what-is-quantaureum-network-read-next-item-2")}
               </DocLink>
             </ListItem>

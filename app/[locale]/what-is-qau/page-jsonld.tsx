@@ -29,7 +29,7 @@ export default async function WhatIsQauPageJsonLD({
   }))
 
   const webPageId = { "@id": url }
-  const articleId = { "@id": `${url}#what-is-QAU` }
+  const articleId = { "@id": `${url}#what-is-qau` }
 
   const jsonLd = {
     "@context": "https://schema.org",

@@ -46,19 +46,19 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
   ])
 
   const tocItems: ToCItem[] = [
-    { title: t("page-what-is-qau-title"), url: "#what-is-QAU" },
-    { title: t("page-what-is-qau-how-to-buy-eth"), url: "#how-to-buy-eth" },
+    { title: t("page-what-is-qau-title"), url: "#what-is-qau" },
+    { title: t("page-what-is-qau-how-to-buy-eth"), url: "#how-to-buy-qau" },
     {
       title: t("page-what-is-qau-how-to-send-and-receive-eth"),
-      url: "#how-to-send-and-receive-eth",
+      url: "#how-to-send-and-receive-qau",
     },
     {
       title: t("page-what-is-qau-how-long-does-it-take-to-send-eth"),
-      url: "#how-long-does-it-take-to-send-eth",
+      url: "#how-long-does-it-take-to-send-qau",
     },
     {
       title: t("page-what-is-qau-how-much-does-it-cost-to-send-eth"),
-      url: "#how-much-does-it-cost-to-send-eth",
+      url: "#how-much-does-it-cost-to-send-qau",
     },
     {
       title: t("page-what-is-qau-what-is-the-qau-supply"),
@@ -66,7 +66,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
     },
     {
       title: t("page-what-is-qau-what-is-the-distribution-of-eth"),
-      url: "#what-is-the-distribution-of-eth",
+      url: "#what-is-the-distribution-of-qau",
     },
     {
       title: t("page-what-is-qau-what-makes-qau-valuable"),
@@ -74,7 +74,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
     },
     {
       title: t("page-what-is-qau-what-is-wrapping-eth"),
-      url: "#what-is-wrapping-eth",
+      url: "#what-is-wrapping-qau",
     },
   ]
 
@@ -90,7 +90,7 @@ const Page = async (props: { params: Promise<{ locale: Lang }> }) => {
         heroSection={
           <PageHero
             breadcrumbs={{
-              slug: "what-is-QAU",
+              slug: "what-is-qau",
               startDepth: 1,
             }}
             heroImg={heroImg}
