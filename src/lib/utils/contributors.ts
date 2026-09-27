@@ -1,10 +1,6 @@
-import { join } from "path"
-
 import type { FileContributor, Lang } from "@/lib/types"
 
 import { TEAM_LOGINS } from "@/data/team"
-
-import { CONTENT_PATH, DEFAULT_LOCALE } from "@/lib/constants"
 
 import { getAppPageLastCommitDate } from "./gh"
 import { getLocaleTimestamp } from "./time"
@@ -18,13 +14,7 @@ const sortTeamToEnd = (contributors: FileContributor[]): FileContributor[] =>
       Number(TEAM_LOGINS.has(a.login)) - Number(TEAM_LOGINS.has(b.login))
   )
 
-export const getMarkdownFileContributorInfo = async (
-  slug: string,
-  locale: string,
-  fileLang: string
-) => {
-  const mdPath = join(CONTENT_PATH, slug)
-
+export const getMarkdownFileContributorInfo = async (slug: string) => {
   const contributorsData = await getStaticGitHubContributors()
   const gitHubContributors = contributorsData?.content[slug] ?? []
 

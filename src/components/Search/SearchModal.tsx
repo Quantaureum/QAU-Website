@@ -1,9 +1,8 @@
 "use client"
 
 import { useCallback, useEffect, useRef, useState } from "react"
-import { useTranslations } from "next-intl"
-
 import { ChevronRightIcon, SearchIcon } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 import type { SearchEntry } from "@/lib/search/searchIndex"
 
@@ -18,7 +17,9 @@ const SearchModal = ({ onClose, locale }: SearchModalProps) => {
   const [hits, setHits] = useState<SearchEntry[]>([])
   const [loading, setLoading] = useState(true)
   const inputRef = useRef<HTMLInputElement>(null)
-  const debounceRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+  const debounceRef = useRef<ReturnType<typeof setTimeout> | undefined>(
+    undefined
+  )
 
   useEffect(() => {
     inputRef.current?.focus()

@@ -6,8 +6,8 @@ import type { Chain, ChainIdNetworkResponse } from "@/lib/types"
 
 import {
   CHAINID_NETWORK_ENDPOINT,
-  QAU,
   EXCLUDED_NAMES,
+  QAU,
   TESTNETS,
 } from "../lib/constants"
 

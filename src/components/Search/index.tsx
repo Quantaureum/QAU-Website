@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react"
 import dynamic from "next/dynamic"
-import { useLocale, useTranslations } from "next-intl"
+import { useLocale } from "next-intl"
 import * as Portal from "@radix-ui/react-portal"
 import { Slot } from "@radix-ui/react-slot"
 
@@ -26,7 +26,6 @@ const Search = ({ asChild = false, children }: SearchProps) => {
 
   const locale = useLocale()
   const searchButtonRef = useRef<HTMLButtonElement>(null)
-  const t = useTranslations("common")
 
   const handleOpen = () => {
     onOpen()
