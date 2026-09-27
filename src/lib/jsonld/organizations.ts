@@ -19,7 +19,7 @@ export const KNOWN_ORGANIZATIONS = {
     "@type": "Organization" as const,
     name: "Quantaureum project",
     url: "https://quantaureum.com",
-    ownershipFundingInfo: "https://quantaureum.com/about/",
+    ownershipFundingInfo: "https://quantaureum.com/what-is-quantaureum/",
     logo: "https://quantaureum.com/images/qau-org-logo.png",
     sameAs: ["https://github.com/Quantaureum"],
     ...REFERENCE.QUANTAUREUM_ORG,

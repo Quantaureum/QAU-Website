@@ -88,18 +88,20 @@ module.exports = [
   ],
 
   // Removed legacy ethereum.org hub pages — point at the closest Quantaureum equivalent
-  ["/enterprise", "/about/"],
-  ["/enterprise/:path*", "/about/"],
+  ["/enterprise", "/what-is-quantaureum/"],
+  ["/enterprise/:path*", "/what-is-quantaureum/"],
   ["/use", "/apps/"],
   ["/dapps", "/apps/"],
-  ["/team", "/about/"],
+  ["/team", "/what-is-quantaureum/"],
   ["/donate", "/"],
   ["/blog", "/"],
   ["/tds", "/"],
   ["/trillion-dollar-security", "/"],
   ["/10-years", "/"],
   ["/10years", "/"],
-  ["/about/:path*", "/about/"],
+  ["/about/:path*", "/what-is-quantaureum/"],
+  // QPOS 为 PoS 共识，不存在矿工：explorer/miners 并入 validators
+  ["/explorer/miners", "/explorer/validators/"],
   [
     "/guides/how-to-register-an-ethereum-account",
     "/guides/how-to-create-an-account/",

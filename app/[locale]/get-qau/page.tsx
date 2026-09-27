@@ -362,7 +362,7 @@ export async function generateMetadata(props: {
 
   return await getMetadata({
     locale,
-    slug: ["get-eth"],
+    slug: ["get-qau"],
     title: t("page-get-qau-meta-title"),
     description: t("page-get-qau-meta-description"),
   })

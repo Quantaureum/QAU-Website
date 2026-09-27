@@ -72,13 +72,14 @@ export default async function RunANodePageJsonLD({
         isPartOf: webPageId,
         headline: t("page-run-a-node-title"),
         description: t("page-run-a-node-hero-subtitle"),
-        image: "https://quantaureum.com/images/run-a-node/quantaureum-inside.png",
+        image:
+          "https://quantaureum.com/images/run-a-node/quantaureum-inside.png",
         author: [REFERENCE.QUANTAUREUM_COMMUNITY],
         contributor: contributorList,
         publisher: REFERENCE.QUANTAUREUM_ORG,
         about: {
           "@type": "Thing",
-          name: "Running an Quantaureum Node",
+          name: "Running a Quantaureum Node",
           description:
             "Guide to running your own Quantaureum node, benefits, and requirements",
         },
