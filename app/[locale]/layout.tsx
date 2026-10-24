@@ -1,5 +1,5 @@
 import { Suspense } from "react"
-import { pick } from "lodash"
+import { merge, pick } from "lodash"
 import { notFound } from "next/navigation"
 import { getMessages, setRequestLocale } from "next-intl/server"
 
@@ -46,7 +46,12 @@ export default async function LocaleLayout(props: {
   }
 
   const allMessages = await getMessages()
-  const messages = pick(allMessages, "common")
+  // page-airdrop ships page-level UI copy needed by the client-side
+  // registration component; common stays the default client surface.
+  const messages = merge(
+    pick(allMessages, "common"),
+    pick(allMessages, "page-airdrop")
+  )
 
   const lastDeployDate = getLastDeployDate()
   const lastDeployLocaleTimestamp = getLocaleTimestamp(
