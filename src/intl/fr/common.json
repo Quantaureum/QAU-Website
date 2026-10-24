@@ -570,5 +570,9 @@
   "region-bonaire-netherlands": "Bonaire (Pays-Bas)",
   "region-saba-netherlands": "Saba (Pays-Bas)",
   "region-sint-eustatius-netherlands": "Saint-Eustache (Pays-Bas)",
-  "quantaureum-logo": "Quantaureum logo"
+  "quantaureum-logo": "Quantaureum logo",
+  "page-airdrop": {
+    "page-airdrop-title": "Airdrop communautaire",
+    "page-airdrop-subtitle": "50 QAU pour les membres vérifiés de la communauté — contrôles anti-Sybil automatisés, règles transparentes"
+  }
 }

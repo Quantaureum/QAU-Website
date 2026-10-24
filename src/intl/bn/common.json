@@ -570,5 +570,9 @@
   "region-bonaire-netherlands": "বোনেয়ার (নেদারল্যান্ডস)",
   "region-saba-netherlands": "সাবা (নেদারল্যান্ডস)",
   "region-sint-eustatius-netherlands": "সিন্ট ইউস্টাটিয়াস (নেদারল্যান্ডস)",
-  "quantaureum-logo": "Quantaureum logo"
+  "quantaureum-logo": "Quantaureum logo",
+  "page-airdrop": {
+    "page-airdrop-title": "কমিউনিটি এয়ারড্রপ",
+    "page-airdrop-subtitle": "যাচাইকৃত কমিউনিটি সদস্যদের জন্য ৫০ QAU — স্বয়ংক্রিয় অ্যান্টি-সিবিল যাচাই, স্বচ্ছ নিয়ম"
+  }
 }

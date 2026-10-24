@@ -570,5 +570,9 @@
   "region-bonaire-netherlands": "Bonaire (Belanda)",
   "region-saba-netherlands": "Saba (Belanda)",
   "region-sint-eustatius-netherlands": "Sint Eustatius (Belanda)",
-  "quantaureum-logo": "Quantaureum logo"
+  "quantaureum-logo": "Quantaureum logo",
+  "page-airdrop": {
+    "page-airdrop-title": "Airdrop Komunitas",
+    "page-airdrop-subtitle": "50 QAU untuk anggota komunitas terverifikasi — pemeriksaan anti-sybil otomatis, aturan transparan"
+  }
 }
