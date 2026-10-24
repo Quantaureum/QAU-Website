@@ -570,5 +570,9 @@
   "region-bonaire-netherlands": "Bonaire (Hà Lan)",
   "region-saba-netherlands": "Saba (Hà Lan)",
   "region-sint-eustatius-netherlands": "Sint Eustatius (Hà Lan)",
-  "quantaureum-logo": "Quantaureum logo"
+  "quantaureum-logo": "Quantaureum logo",
+  "page-airdrop": {
+    "page-airdrop-title": "Airdrop cộng đồng",
+    "page-airdrop-subtitle": "50 QAU cho thành viên cộng đồng đã xác minh — kiểm tra chống sybil tự động, quy tắc minh bạch"
+  }
 }
