@@ -47,9 +47,10 @@ export async function POST(req: Request): Promise<NextResponse> {
     void note
     // The pending endpoint exposes id = registrations.id (serial), but
     // markAirdropPaid keys on user_id. Resolve the row first.
-    const { sql } = await import("@/lib/airdrop/database")
-    const rows =
+    const { rowsOf, sql } = await import("@/lib/airdrop/database")
+    const rows = rowsOf<Record<string, unknown>>(
       await sql`SELECT user_id FROM airdrop_registrations WHERE id = ${Number(body.id)} LIMIT 1`
+    )
     if (!rows.length) {
       return NextResponse.json(
         { success: false, error: "registration not found" },

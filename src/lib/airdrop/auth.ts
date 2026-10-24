@@ -5,11 +5,14 @@
 import jwt from "jsonwebtoken"
 import { NextRequest, NextResponse } from "next/server"
 
-const JWT_SECRET = process.env.JWT_SECRET || process.env.NEXTAUTH_SECRET || ""
-
-// SECURITY: Fail at startup if JWT_SECRET is not configured
-if (!JWT_SECRET) {
-  throw new Error("JWT_SECRET environment variable is required but not set")
+// SECURITY: JWT_SECRET must be set in the deployment environment. Checked
+// lazily at sign/verify time rather than at module load, because Next
+// evaluates route modules during build (when secrets are absent).
+function requireSecret(): string {
+  const s = process.env.JWT_SECRET || process.env.NEXTAUTH_SECRET || ""
+  if (!s)
+    throw new Error("JWT_SECRET environment variable is required but not set")
+  return s
 }
 
 export interface JWTPayload {
@@ -34,7 +37,7 @@ export function verifyRawToken(token: string): JWTPayload | null {
   if (!token) return null
 
   try {
-    const decoded = jwt.verify(token, JWT_SECRET!) as JWTPayload
+    const decoded = jwt.verify(token, requireSecret()) as JWTPayload
     return decoded
   } catch {
     return null
@@ -47,8 +50,7 @@ export function verifyRawToken(token: string): JWTPayload | null {
 export function generateToken(
   payload: Omit<JWTPayload, "iat" | "exp">
 ): string {
-  // JWT_SECRET is guaranteed to be defined here because the module throws at startup if it's not set
-  return jwt.sign(payload, JWT_SECRET!, { expiresIn: "24h" })
+  return jwt.sign(payload, requireSecret(), { expiresIn: "24h" })
 }
 
 /**
