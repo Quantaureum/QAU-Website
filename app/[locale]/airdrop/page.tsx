@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { getTranslations } from "next-intl/server"
 
-import type { Lang, PageParams } from "@/lib/types"
+import type { PageParams } from "@/lib/types"
 
 import { AirdropRegistration } from "@/components/AirdropRegistration"
 import PageHero from "@/components/Hero/PageHero/index"
@@ -20,8 +20,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   }
 }
 
-export default async function Page({ params }: Props) {
-  const { locale } = params
+export default async function Page() {
   return (
     <>
       <PageHero
@@ -34,7 +33,7 @@ export default async function Page({ params }: Props) {
         }
       />
       <MainArticle className="flex flex-col items-center gap-8 py-8">
-        <AirdropRegistration locale={locale as Lang} />
+        <AirdropRegistration />
       </MainArticle>
     </>
   )

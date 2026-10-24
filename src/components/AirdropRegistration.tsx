@@ -7,9 +7,15 @@
  * state machine: approved → success card; hold → wait-14-days card;
  * rejected → rejection card with the rule list. The form is disabled
  * outside the campaign window.
+ *
+ * All copy is served by next-intl from the page-airdrop namespace
+ * (src/intl/<locale>/page-airdrop.json) — 25-locale coverage, with
+ * ICU placeholders ({registered}/{maxSlots}/{amount}/{paid}) for the
+ * live counters.
  */
 
-import { type ReactNode, useCallback, useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react"
+import { useTranslations } from "next-intl"
 
 import TurnstileWidget from "@/components/TurnstileWidget"
 
@@ -30,11 +36,8 @@ interface DoneState {
   message: string
 }
 
-export function AirdropRegistration({ locale }: { locale: string }) {
-  const t = useCallback(
-    (en: string, zh: string) => (locale === "zh" ? zh : en),
-    [locale]
-  )
+export function AirdropRegistration() {
+  const t = useTranslations("page-airdrop")
 
   const [phase, setPhase] = useState<Phase>("loading")
   const [status, setStatus] = useState<StatusResponse | null>(null)
@@ -67,10 +70,6 @@ export function AirdropRegistration({ locale }: { locale: string }) {
 
   useEffect(() => {
     void refreshStatus()
-    // Logged-in probe: a cheap authed request. 401 → not logged in.
-    void fetch("/api/airdrop/admin/stats?public=1").then(() => {
-      /* noop — actual login probe happens on submit */
-    })
   }, [refreshStatus])
 
   const authCall = async (action: string, body: Record<string, unknown>) => {
@@ -89,7 +88,7 @@ export function AirdropRegistration({ locale }: { locale: string }) {
       }
       return data
     } catch {
-      setError("network error")
+      setError(t("ui-network-error"))
       return false
     } finally {
       setBusy(false)
@@ -98,12 +97,7 @@ export function AirdropRegistration({ locale }: { locale: string }) {
 
   const submitRegistration = async () => {
     if (!/^0x[a-fA-F0-9]{40}$/.test(walletAddress)) {
-      setError(
-        t(
-          "Invalid wallet address (0x + 40 hex)",
-          "无效的钱包地址（0x + 40 位十六进制）"
-        )
-      )
+      setError(t("ui-invalid-wallet"))
       return
     }
     setBusy(true)
@@ -122,10 +116,7 @@ export function AirdropRegistration({ locale }: { locale: string }) {
       if (data.success) {
         const sybilStatus = data.sybil?.status as string | undefined
         if (data.alreadyRegistered) {
-          setDone({
-            kind: "already",
-            message: data.error || t("Already registered", "已登记过"),
-          })
+          setDone({ kind: "already", message: t("ui-already-registered") })
         } else if (sybilStatus === "approved") {
           setDone({ kind: "approved", message: data.message })
         } else if (sybilStatus === "hold") {
@@ -139,7 +130,7 @@ export function AirdropRegistration({ locale }: { locale: string }) {
         setError(data.error || "error")
       }
     } catch {
-      setError("network error")
+      setError(t("ui-network-error"))
     } finally {
       setBusy(false)
     }
@@ -147,7 +138,7 @@ export function AirdropRegistration({ locale }: { locale: string }) {
 
   // ---- render helpers ----------------------------------------------------
 
-  const card = (children: ReactNode) => (
+  const card = (children: React.ReactNode) => (
     <div className="mx-auto max-w-xl rounded-lg border p-6 shadow-sm">
       {children}
     </div>
@@ -171,12 +162,12 @@ export function AirdropRegistration({ locale }: { locale: string }) {
       >
         <h2 className="mb-3 text-lg font-semibold">
           {done.kind === "approved"
-            ? t("Registration approved", "报名已通过")
+            ? t("ui-registration-approved")
             : done.kind === "hold"
-              ? t("Under review", "需要额外核验")
+              ? t("ui-under-review")
               : done.kind === "already"
-                ? t("Already registered", "已登记过")
-                : t("Registration rejected", "报名未通过")}
+                ? t("ui-already-registered")
+                : t("ui-registration-rejected")}
         </h2>
         <p className="text-sm text-gray-700">{done.message}</p>
       </div>
@@ -184,34 +175,26 @@ export function AirdropRegistration({ locale }: { locale: string }) {
   }
 
   if (phase === "not_started") {
-    return card(
-      <p className="text-center">
-        {t("The airdrop has not started yet.", "空投活动尚未开始。")}
-      </p>
-    )
+    return card(<p className="text-center">{t("ui-not-started")}</p>)
   }
   if (phase === "ended") {
-    return card(
-      <p className="text-center">
-        {t("The airdrop has ended.", "空投活动已结束。")}
-      </p>
-    )
+    return card(<p className="text-center">{t("ui-ended")}</p>)
   }
 
   if (screen === "login") {
     return card(
       <div className="space-y-4">
-        <h2 className="text-lg font-semibold">{t("Login", "登录")}</h2>
+        <h2 className="text-lg font-semibold">{t("ui-login")}</h2>
         <input
           className={inputCls}
-          placeholder={t("Email", "邮箱")}
+          placeholder={t("ui-email")}
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
           className={inputCls}
           type="password"
-          placeholder={t("Password", "密码")}
+          placeholder={t("ui-password")}
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
@@ -224,7 +207,7 @@ export function AirdropRegistration({ locale }: { locale: string }) {
             if (r) setScreen("register")
           }}
         >
-          {t("Login", "登录")}
+          {t("ui-login")}
         </button>
         <button
           className="text-sm text-blue-600"
@@ -233,7 +216,7 @@ export function AirdropRegistration({ locale }: { locale: string }) {
             if (r) setScreen("verify")
           }}
         >
-          {t("No account? Register", "没有账号？注册")}
+          {t("ui-no-account-register")}
         </button>
       </div>
     )
@@ -242,18 +225,11 @@ export function AirdropRegistration({ locale }: { locale: string }) {
   if (screen === "verify") {
     return card(
       <div className="space-y-4">
-        <h2 className="text-lg font-semibold">
-          {t("Verify your email", "邮箱验证")}
-        </h2>
-        <p className="text-sm text-gray-600">
-          {t(
-            "Enter the 6-digit code sent to your inbox. (Rehearsal deployments print it in the server log.)",
-            "输入发送到邮箱的 6 位验证码。（预演部署会打印在服务端日志中。）"
-          )}
-        </p>
+        <h2 className="text-lg font-semibold">{t("ui-verify-email")}</h2>
+        <p className="text-sm text-gray-600">{t("ui-code-hint")}</p>
         <input
           className={inputCls}
-          placeholder={t("6-digit code", "6 位验证码")}
+          placeholder={t("ui-code-placeholder")}
           value={code}
           onChange={(e) => setCode(e.target.value)}
         />
@@ -266,7 +242,7 @@ export function AirdropRegistration({ locale }: { locale: string }) {
             if (r) setScreen("login")
           }}
         >
-          {t("Verify", "验证")}
+          {t("ui-verify")}
         </button>
       </div>
     )
@@ -275,35 +251,32 @@ export function AirdropRegistration({ locale }: { locale: string }) {
   if (screen === "register") {
     return card(
       <div className="space-y-4">
-        <h2 className="text-lg font-semibold">
-          {t("Register for the airdrop", "空投报名")}
-        </h2>
+        <h2 className="text-lg font-semibold">{t("ui-register-title")}</h2>
         <p className="text-sm text-gray-600">
           {status
-            ? t(
-                `${status.registered}/${status.maxSlots} slots taken · ${status.amountPerUser} QAU each`,
-                `已报 ${status.registered}/${status.maxSlots} 名 · 每人 ${status.amountPerUser} QAU`
-              )
+            ? t("ui-slots-taken", {
+                registered: status.registered,
+                maxSlots: status.maxSlots,
+                amount: status.amountPerUser,
+              })
             : ""}
         </p>
         <input
           className={inputCls}
-          placeholder={t("Wallet address (0x...)", "钱包地址 (0x...)")}
+          placeholder={t("ui-wallet-placeholder")}
           value={walletAddress}
           onChange={(e) => setWalletAddress(e.target.value)}
         />
         <input
           className={inputCls}
-          placeholder={t("X (Twitter) username", "X (Twitter) 用户名")}
+          placeholder={t("ui-x-placeholder")}
           value={xHandle}
           onChange={(e) => setXHandle(e.target.value)}
         />
         <TurnstileWidget onChange={setTurnstileToken} />
         {error && <p className="text-sm text-red-600">{error}</p>}
         <button className={btnCls} disabled={busy} onClick={submitRegistration}>
-          {busy
-            ? t("Submitting...", "提交中...")
-            : t("Submit registration", "提交报名")}
+          {busy ? t("ui-submitting") : t("ui-submit")}
         </button>
       </div>
     )
@@ -312,19 +285,18 @@ export function AirdropRegistration({ locale }: { locale: string }) {
   // default: status → CTA
   return card(
     <div className="space-y-4 text-center">
-      <h2 className="text-lg font-semibold">
-        {t("Community Airdrop", "社区空投")}
-      </h2>
+      <h2 className="text-lg font-semibold">{t("page-airdrop-title")}</h2>
       {status && (
         <p className="text-sm text-gray-600">
-          {t(
-            `${status.registered}/${status.maxSlots} registered · ${status.paid} paid`,
-            `已报 ${status.registered}/${status.maxSlots} · 已发放 ${status.paid}`
-          )}
+          {t("ui-registered-paid", {
+            registered: status.registered,
+            maxSlots: status.maxSlots,
+            paid: status.paid,
+          })}
         </p>
       )}
       <button className={btnCls} onClick={() => setScreen("login")}>
-        {t("Participate", "参与空投")}
+        {t("ui-participate")}
       </button>
     </div>
   )
