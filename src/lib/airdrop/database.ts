@@ -17,13 +17,15 @@ import { neon } from "@neondatabase/serverless"
 
 const DATABASE_URL = process.env.DATABASE_URL || ""
 
-export const sql = DATABASE_URL
+// Build/preview without a DB: the proxy throws at call-time, never at
+// import-time, so module evaluation during `next build` stays safe.
+export const sql: ReturnType<typeof neon> = DATABASE_URL
   ? neon(DATABASE_URL)
-  : // Build/preview without a DB: every call fails loudly at use-time, never
-    // at import-time, so static generation of unrelated pages still works.
-    (() => {
-      throw new Error("DATABASE_URL is not configured")
-    })()
+  : (new Proxy({} as ReturnType<typeof neon>, {
+      get() {
+        throw new Error("DATABASE_URL is not configured")
+      },
+    }) as ReturnType<typeof neon>)
 
 export function hasDatabase(): boolean {
   return DATABASE_URL !== ""
@@ -118,6 +120,12 @@ export function initAirdropTables(): Promise<void> {
   return initPromise
 }
 
+export function rowsOf<T = Record<string, unknown>>(result: unknown): T[] {
+  if (Array.isArray(result)) return result as T[]
+  const full = result as { rows?: T[] }
+  return full.rows ?? []
+}
+
 function mapRow(row: Record<string, unknown>): AirdropRegistration {
   return row as unknown as AirdropRegistration
 }
@@ -128,7 +136,8 @@ export async function findAirdropByUserId(
   await initAirdropTables()
   const rows =
     await sql`SELECT id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, created_at, updated_at FROM airdrop_registrations WHERE user_id = ${userId} LIMIT 1`
-  return rows.length ? mapRow(rows[0]) : null
+  const first = (rows as unknown as Record<string, unknown>[])[0]
+  return first ? mapRow(first) : null
 }
 
 export async function findAirdropByAddress(
@@ -137,7 +146,8 @@ export async function findAirdropByAddress(
   await initAirdropTables()
   const rows =
     await sql`SELECT id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, created_at, updated_at FROM airdrop_registrations WHERE lower(wallet_address) = lower(${address}) LIMIT 1`
-  return rows.length ? mapRow(rows[0]) : null
+  const first = (rows as unknown as Record<string, unknown>[])[0]
+  return first ? mapRow(first) : null
 }
 
 export async function findAirdropByXHandle(
@@ -146,14 +156,15 @@ export async function findAirdropByXHandle(
   await initAirdropTables()
   const rows =
     await sql`SELECT id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, created_at, updated_at FROM airdrop_registrations WHERE lower(x_handle) = lower(${handle}) LIMIT 1`
-  return rows.length ? mapRow(rows[0]) : null
+  const first = (rows as unknown as Record<string, unknown>[])[0]
+  return first ? mapRow(first) : null
 }
 
 export async function countAirdropByIp(ip: string): Promise<number> {
   await initAirdropTables()
   const rows =
     await sql`SELECT COUNT(*)::int AS n FROM airdrop_registrations WHERE ip_address = ${ip}`
-  return rows[0]?.n ?? 0
+  return (rows as unknown as { n?: number }[])[0]?.n ?? 0
 }
 
 /** L3/S1: registrations already filed from the same /24 subnet. */
@@ -161,7 +172,7 @@ export async function countAirdropByPrefix24(prefix: string): Promise<number> {
   await initAirdropTables()
   const rows =
     await sql`SELECT COUNT(*)::int AS n FROM airdrop_registrations WHERE ip_prefix24 = ${prefix}`
-  return rows[0]?.n ?? 0
+  return (rows as unknown as { n?: number }[])[0]?.n ?? 0
 }
 
 /** L6-v2/S7: registrations sharing one email domain (excluding common providers). */
@@ -173,7 +184,7 @@ export async function countAirdropByEmailDomain(
     SELECT COUNT(*)::int AS n FROM airdrop_registrations
     WHERE split_part(email, '@', 2) = ${domain}
   `
-  return rows[0]?.n ?? 0
+  return (rows as unknown as { n?: number }[])[0]?.n ?? 0
 }
 
 /** L6-v2/S9: other registrations whose payout address shares the same /24.
@@ -189,7 +200,7 @@ export async function countAirdropByAddressPrefix(
     SELECT COUNT(*)::int AS n FROM airdrop_registrations
     WHERE lower(wallet_address) LIKE ${prefix + "%"}
   `
-  return rows[0]?.n ?? 0
+  return (rows as unknown as { n?: number }[])[0]?.n ?? 0
 }
 
 export async function createAirdropRegistration(data: {
@@ -231,7 +242,8 @@ export async function createAirdropRegistration(data: {
     ON CONFLICT (user_id) DO NOTHING
     RETURNING id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, created_at, updated_at
   `
-  return rows.length ? mapRow(rows[0]) : null
+  const first = (rows as unknown as Record<string, unknown>[])[0]
+  return first ? mapRow(first) : null
 }
 
 export async function updateAirdropSybilResult(
@@ -259,7 +271,7 @@ export async function listHoldRegistrations(): Promise<AirdropRegistration[]> {
     WHERE sybil_status = 'hold' AND hold_since IS NOT NULL
     ORDER BY hold_since ASC
   `
-  return rows.map(mapRow)
+  return rowsOf<Record<string, unknown>>(rows).map(mapRow)
 }
 
 export async function listApprovedRegistrations(
@@ -271,7 +283,7 @@ export async function listApprovedRegistrations(
     WHERE sybil_status = 'approved' AND status <> 'paid'
     ORDER BY created_at ASC LIMIT ${limit}
   `
-  return rows.map(mapRow)
+  return rowsOf<Record<string, unknown>>(rows).map(mapRow)
 }
 
 /** Admin: mark a registration paid (txHash written back by the distributor). */
@@ -317,7 +329,8 @@ export async function findUserById(uid: string): Promise<AirdropUser | null> {
   const rows = await sql`
     SELECT uid, email, is_verified FROM users WHERE uid = ${uid} LIMIT 1
   `
-  return rows.length ? (rows[0] as unknown as AirdropUser) : null
+  const list = rowsOf<Record<string, unknown>>(rows)
+  return list.length ? (list[0] as unknown as AirdropUser) : null
 }
 
 export async function findUserByEmail(
@@ -327,7 +340,8 @@ export async function findUserByEmail(
   const rows = await sql`
     SELECT uid, email, is_verified FROM users WHERE lower(email) = lower(${email}) LIMIT 1
   `
-  return rows.length ? (rows[0] as unknown as AirdropUser) : null
+  const list = rowsOf<Record<string, unknown>>(rows)
+  return list.length ? (list[0] as unknown as AirdropUser) : null
 }
 
 export async function createUser(
@@ -349,10 +363,12 @@ export async function verifyUserEmail(
   code: string
 ): Promise<boolean> {
   await initUsersTable()
-  const rows = await sql`
+  const rows = rowsOf<{ uid: string }>(
+    await sql`
     UPDATE users SET is_verified = TRUE, verification_code = NULL
     WHERE lower(email) = lower(${email}) AND verification_code = ${code}
     RETURNING uid
   `
+  )
   return rows.length > 0
 }
