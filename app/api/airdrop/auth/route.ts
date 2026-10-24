@@ -138,7 +138,14 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
 
   if (action === "login") {
     const user = await findUserByEmail(email)
-    if (!user || !checkPassword(password, String(body.password || ""))) {
+    const { sql, rowsOf } = await import("@/lib/airdrop/database")
+    const hashRows = rowsOf<{ password_hash: string }>(
+      await sql`SELECT password_hash FROM users WHERE lower(email) = lower(${email}) LIMIT 1`
+    )
+    if (
+      !user ||
+      !checkPassword(password, String(hashRows[0]?.password_hash ?? ""))
+    ) {
       return jsonResponse({ success: false, error: "邮箱或密码错误" }, 401)
     }
     if (!user.is_verified) {

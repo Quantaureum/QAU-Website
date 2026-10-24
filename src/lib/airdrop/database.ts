@@ -17,15 +17,68 @@ import { neon } from "@neondatabase/serverless"
 
 const DATABASE_URL = process.env.DATABASE_URL || ""
 
-// Build/preview without a DB: the proxy throws at call-time, never at
-// import-time, so module evaluation during `next build` stays safe.
-export const sql: ReturnType<typeof neon> = DATABASE_URL
-  ? neon(DATABASE_URL)
-  : (new Proxy({} as ReturnType<typeof neon>, {
+// ---------------------------------------------------------------------------
+// sql surface (three backends behind one tagged-template call)
+//
+// 1. Neon-hosted DATABASE_URL  → the neon() serverless driver.
+// 2. localhost DATABASE_URL    → node-postgres (`pg`) adapter — the Neon
+//    HTTP driver cannot speak to a plain Postgres server, and local
+//    rehearsals run against the docker-compose.dev.yml Postgres.
+// 3. No DATABASE_URL (build)   → a call-time Proxy that throws, so module
+//    evaluation during `next build` stays safe.
+// ---------------------------------------------------------------------------
+
+function isLocalDatabaseUrl(url: string): boolean {
+  try {
+    const host = new URL(url.replace(/^postgres(?:ql)?:\/\//, "http://"))
+      .hostname
+    return ["localhost", "127.0.0.1", "::1", "host.docker.internal"].includes(
+      host
+    )
+  } catch {
+    return false
+  }
+}
+
+type SqlFn = (
+  strings: TemplateStringsArray,
+  ...values: unknown[]
+) => Promise<unknown[]>
+
+function createLocalSql(url: string): SqlFn {
+  // Local rehearsals only: `pg` is a devDependency of the site and must
+  // not be bundled for the Neon production path. Dynamic import keeps the
+  // neon production path free of the pg bundle.
+  /* eslint-disable @typescript-eslint/no-var-requires */
+  const { Pool } = require("pg") as typeof import("pg")
+  const pool = new Pool({ connectionString: url })
+  return async (strings, ...values) => {
+    const text = strings.reduce(
+      (acc, part, i) => acc + part + (i < values.length ? `$${i + 1}` : ""),
+      ""
+    )
+    const res = await pool.query(text, values as unknown[])
+    return res.rows as unknown[]
+  }
+}
+
+function createSqlFn(url: string): SqlFn {
+  if (isLocalDatabaseUrl(url)) {
+    return createLocalSql(url)
+  }
+  return neon(url) as unknown as SqlFn
+}
+
+export const sql: SqlFn = DATABASE_URL
+  ? createSqlFn(DATABASE_URL)
+  : (new Proxy((() => undefined) as unknown as SqlFn, {
+      apply() {
+        throw new Error("DATABASE_URL is not configured")
+      },
       get() {
         throw new Error("DATABASE_URL is not configured")
       },
-    }) as ReturnType<typeof neon>)
+    }) as SqlFn)
 
 export function hasDatabase(): boolean {
   return DATABASE_URL !== ""
@@ -225,7 +278,10 @@ export async function createAirdropRegistration(data: {
   // caller distinguishes "race lost" from "campaign full" via findAirdropByUserId.
   const countRows =
     await sql`SELECT COUNT(*)::int AS n FROM airdrop_registrations`
-  if ((countRows[0]?.n ?? 0) >= data.maxSlots) {
+  if (
+    Number(rowsOf<Record<string, unknown>>(countRows)[0]?.n ?? 0) >=
+    data.maxSlots
+  ) {
     return null
   }
   const rows = await sql`

@@ -6,7 +6,12 @@
 import { NextResponse } from "next/server"
 
 import { getAirdropConfig } from "@/lib/airdrop/airdropConfig"
-import { hasDatabase, initAirdropTables, sql } from "@/lib/airdrop/database"
+import {
+  hasDatabase,
+  initAirdropTables,
+  rowsOf,
+  sql,
+} from "@/lib/airdrop/database"
 
 export const dynamic = "force-dynamic"
 
@@ -47,7 +52,13 @@ export async function GET(req: Request): Promise<NextResponse> {
       COUNT(*) FILTER (WHERE sybil_status = 'rejected' OR status = 'rejected')::int AS rejected
     FROM airdrop_registrations
   `
-  const s = rows[0] ?? { total: 0, approved: 0, paid: 0, hold: 0, rejected: 0 }
+  const s = rowsOf<Record<string, number>>(rows)[0] ?? {
+    total: 0,
+    approved: 0,
+    paid: 0,
+    hold: 0,
+    rejected: 0,
+  }
 
   const base = {
     total: s.total,
@@ -63,9 +74,11 @@ export async function GET(req: Request): Promise<NextResponse> {
     // Public view: aggregate numbers only (对外公布数字必须可随时链上复查)
     return NextResponse.json({ success: true, ...base })
   }
-  const detail = await sql`
+  const detail = rowsOf<Record<string, unknown>>(
+    await sql`
     SELECT id, user_id, email, wallet_address, sybil_score, sybil_status, social_status, status
     FROM airdrop_registrations ORDER BY created_at DESC LIMIT 100
   `
+  )
   return NextResponse.json({ success: true, ...base, detail })
 }

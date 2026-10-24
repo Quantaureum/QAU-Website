@@ -6,7 +6,12 @@
 import { NextResponse } from "next/server"
 
 import { getAirdropConfig } from "@/lib/airdrop/airdropConfig"
-import { hasDatabase, initAirdropTables, sql } from "@/lib/airdrop/database"
+import {
+  hasDatabase,
+  initAirdropTables,
+  rowsOf,
+  sql,
+} from "@/lib/airdrop/database"
 
 export const dynamic = "force-dynamic"
 
@@ -26,8 +31,9 @@ export async function GET(): Promise<NextResponse> {
         COUNT(*) FILTER (WHERE status = 'paid')::int AS paid
       FROM airdrop_registrations
     `
-    registered = rows[0]?.registered ?? 0
-    paid = rows[0]?.paid ?? 0
+    const agg = rowsOf<{ registered?: number; paid?: number }>(rows)[0]
+    registered = agg?.registered ?? 0
+    paid = agg?.paid ?? 0
   }
   return NextResponse.json({
     success: true,

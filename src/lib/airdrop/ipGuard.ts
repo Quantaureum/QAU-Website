@@ -76,7 +76,9 @@ export async function checkIpEmailQuota(ip: string): Promise<{
         AND action = 'send_code'
         AND created_at > NOW() - INTERVAL '24 hours'
     `
-    const used = result[0]?.used || 0
+    const used =
+      Number((result as unknown as Record<string, unknown>[])[0]?.used ?? 0) ||
+      0
     return {
       allowed: used < SEND_CODE_DAILY_EMAILS,
       used,
@@ -103,7 +105,10 @@ export async function countAirdropByIp(ip: string): Promise<number> {
       FROM airdrop_registrations
       WHERE ip_address = ${ip}
     `
-    return result[0]?.count || 0
+    return (
+      Number((result as unknown as Record<string, unknown>[])[0]?.count ?? 0) ||
+      0
+    )
   } catch (err) {
     console.warn(
       "[ipGuard] airdrop count failed:",
