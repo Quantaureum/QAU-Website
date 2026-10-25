@@ -440,6 +440,8 @@
   "nav2-run-a-node-desc": "Join the network with your own hardware",
   "nav2-get-qau": "Get QAU",
   "nav2-get-qau-desc": "Where to obtain QAU",
+  "nav-airdrop": "Airdrop",
+  "nav-airdrop-desc": "Community airdrop — register and receive 50 QAU",
   "nav2-gas": "Gas",
   "nav2-gas-desc": "How transaction fees work",
   "nav2-roadmap": "Roadmap",
