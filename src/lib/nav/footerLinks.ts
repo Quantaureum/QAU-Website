@@ -40,6 +40,7 @@ export const buildFooterLinkSections = (
       { href: "/staking/", text: t("nav2-staking") },
       { href: "/run-a-node/", text: t("nav2-run-a-node") },
       { href: "/get-qau/", text: t("nav2-get-qau") },
+      { href: "/airdrop/", text: t("nav-airdrop") },
       { href: "/gas/", text: t("nav2-gas") },
       { href: "/roadmap/", text: t("nav2-roadmap") },
     ],

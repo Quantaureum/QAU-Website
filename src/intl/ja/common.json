@@ -440,6 +440,8 @@
   "nav2-run-a-node-desc": "自社ハードウェアでネットワークに参加",
   "nav2-get-qau": "QAUを取得",
   "nav2-get-qau-desc": "QAUの入手方法",
+  "nav-airdrop": "エアドロップ",
+  "nav-airdrop-desc": "コミュニティエアドロップ — 登録して 50 QAU を受け取る",
   "nav2-gas": "ガス",
   "nav2-gas-desc": "トランザクション手数料の仕組み",
   "nav2-roadmap": "ロードマップ",

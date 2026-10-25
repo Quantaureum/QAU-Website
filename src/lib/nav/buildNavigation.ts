@@ -91,6 +91,12 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
           href: "/get-qau/",
         },
         {
+          id: "network/airdrop",
+          label: t("nav-airdrop"),
+          description: t("nav-airdrop-desc"),
+          href: "/airdrop/",
+        },
+        {
           id: "network/gas",
           label: t("nav2-gas"),
           description: t("nav2-gas-desc"),
