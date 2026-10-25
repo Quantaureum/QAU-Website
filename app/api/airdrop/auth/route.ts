@@ -18,6 +18,7 @@ import {
   findUserByEmail,
   verifyUserEmail,
 } from "@/lib/airdrop/database"
+import { sendVerificationEmail } from "@/lib/airdrop/mailer"
 import { isDisposableEmailDomain } from "@/lib/sybil/signals"
 
 const UID_PREFIX = "aid"
@@ -103,20 +104,26 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     const code = String(randomInt(100000, 999999))
     const uid = newUid()
     await createUser(uid, email, hashPassword(password), code)
-    // Production: send code via email service. Rehearsal: log it.
-    if (process.env.AIRDROP_SMTP_URL) {
-      // mailer integration point — rehearsal runs use the log path
-      console.log(`[airdrop-auth] verification code for ${email}: ${code}`)
-    } else {
+    // Production: email the code via Brevo. Rehearsal (no BREVO_API_KEY): log it.
+    const mail = await sendVerificationEmail(email, code)
+    if (!mail.sent) {
       console.log(
-        `[airdrop-auth] rehearsal mode — verification code for ${email}: ${code}`
+        `[airdrop-auth] ${mail.rehearsal ? "rehearsal mode" : "MAIL SEND FAILED (" + mail.error + ")"} — verification code for ${email}: ${code}`
       )
+      if (!mail.rehearsal) {
+        return jsonResponse(
+          { success: false, error: "验证码邮件发送失败，请稍后重试" },
+          502
+        )
+      }
     }
     return jsonResponse(
       {
         success: true,
         uid,
-        message: "验证码已发送至邮箱（预演模式见服务端日志）",
+        message: mail.sent
+          ? "验证码已发送至邮箱，请查收（含垃圾邮件文件夹）"
+          : "验证码已发送（预演模式见服务端日志）",
       },
       201
     )
