@@ -1,30 +1,20 @@
 /**
  * Admin: pending payout queue (approved rows, gated by social binding mode).
  * Guarded by AIRDROP_ADMIN_KEY (X-Admin-Key header) — the distributor
- * (cmd/airdrop on the dedicated distributor node) is the only intended caller.
+ * (cmd/airdrop on the payout node) is the only intended caller.
  */
 
 import { NextResponse } from "next/server"
 
+import { adminKeyError } from "@/lib/airdrop/adminGuard"
+import { getAirdropConfig } from "@/lib/airdrop/airdropConfig"
 import { hasDatabase, listApprovedRegistrations } from "@/lib/airdrop/database"
 
 export const dynamic = "force-dynamic"
 
-const ADMIN_KEY = process.env.AIRDROP_ADMIN_KEY || ""
-
 export async function GET(req: Request): Promise<NextResponse> {
-  if (!ADMIN_KEY) {
-    return NextResponse.json(
-      { success: false, error: "admin key not configured" },
-      { status: 503 }
-    )
-  }
-  if ((req.headers.get("x-admin-key") || "") !== ADMIN_KEY) {
-    return NextResponse.json(
-      { success: false, error: "unauthorized" },
-      { status: 401 }
-    )
-  }
+  const denied = adminKeyError(req)
+  if (denied) return denied
   if (!hasDatabase()) {
     return NextResponse.json(
       { success: false, error: "database not configured" },
@@ -32,10 +22,11 @@ export async function GET(req: Request): Promise<NextResponse> {
     )
   }
 
-  const limit = Math.min(
-    Number(new URL(req.url).searchParams.get("limit") || 200),
-    500
-  )
+  const cfg = getAirdropConfig()
+  const raw = Number(new URL(req.url).searchParams.get("limit") || 200)
+  const limit = Number.isFinite(raw)
+    ? Math.min(Math.max(Math.floor(raw), 1), 500)
+    : 200
   const rows = await listApprovedRegistrations(limit)
 
   // Payout gating (defense design v2 L4): social binding rows must be
@@ -58,7 +49,7 @@ export async function GET(req: Request): Promise<NextResponse> {
       id: r.id,
       userId: r.user_id,
       walletAddress: r.wallet_address,
-      amount: Number(r.amount) || 50,
+      amount: Number(r.amount) || cfg.amountPerUser,
     }))
   const rejected = rows
     .filter((r) => r.social_status === "failed")

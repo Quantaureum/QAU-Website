@@ -46,10 +46,14 @@ export async function GET(req: Request): Promise<NextResponse> {
   const rows = await sql`
     SELECT
       COUNT(*)::int AS total,
-      COUNT(*) FILTER (WHERE sybil_status = 'approved')::int AS approved,
+      COUNT(*) FILTER (
+        WHERE sybil_status = 'approved' AND status <> 'rejected'
+      )::int AS approved,
       COUNT(*) FILTER (WHERE status = 'paid')::int AS paid,
       COUNT(*) FILTER (WHERE sybil_status = 'hold')::int AS hold,
-      COUNT(*) FILTER (WHERE sybil_status = 'rejected' OR status = 'rejected')::int AS rejected
+      COUNT(*) FILTER (
+        WHERE sybil_status = 'rejected' OR status = 'rejected'
+      )::int AS rejected
     FROM airdrop_registrations
   `
   const s = rowsOf<Record<string, number>>(rows)[0] ?? {
@@ -71,7 +75,8 @@ export async function GET(req: Request): Promise<NextResponse> {
     amountPerUser: cfg.amountPerUser,
   }
   if (isPublic) {
-    // Public view: aggregate numbers only (对外公布数字必须可随时链上复查)
+    // Public view: aggregate numbers only (published figures must always be
+    // re-verifiable on-chain).
     return NextResponse.json({ success: true, ...base })
   }
   const detail = rowsOf<Record<string, unknown>>(
