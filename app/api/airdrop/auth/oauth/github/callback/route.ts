@@ -109,7 +109,6 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   }
 
   let user = await findUserByGithubId(profile.id)
-  console.log("[airdrop-oauth] profile ok, existing user:", Boolean(user))
   if (!user) {
     const email =
       profile.email || `${profile.id}+${profile.login}@users.noreply.github.com`
