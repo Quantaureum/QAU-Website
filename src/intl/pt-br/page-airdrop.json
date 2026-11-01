@@ -54,5 +54,12 @@
   "ui-msg-sybil-hold": "Cadastro realizado com sucesso! Seu registro precisa de verificação adicional (concluída automaticamente em 14 dias) — não é necessário cadastrar-se novamente.",
   "ui-msg-sybil-rejected": "Desculpe, a verificação automática não aprovou este cadastro.",
   "ui-code-expiry": "O código expira em {time}",
-  "ui-code-expired": "O código expirou. Reenvie-o."
+  "ui-code-expired": "O código expirou. Reenvie-o.",
+  "ui-login-github": "Entrar com GitHub",
+  "ui-login-github-hint": "Entre com uma conta do GitHub com pelo menos um ano e cadastre sua carteira.",
+  "ui-login-github-unavailable": "O login com GitHub não está disponível no momento. Tente novamente mais tarde.",
+  "ui-x-required-hint": "É necessário um nome de usuário do X (Twitter) para se cadastrar.",
+  "ui-api-account-too-young": "Sua conta do GitHub deve ter pelo menos um ano para participar.",
+  "ui-api-github-error": "Falha no login com GitHub. Tente novamente.",
+  "ui-api-email-disabled": "O cadastro por e-mail foi encerrado. Entre com o GitHub."
 }

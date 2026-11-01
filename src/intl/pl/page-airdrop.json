@@ -54,5 +54,12 @@
   "ui-msg-sybil-hold": "Rejestracja zakończona sukcesem! Wpis wymaga dodatkowej weryfikacji (zakończonej automatycznie w ciągu 14 dni) — nie ma potrzeby ponownej rejestracji.",
   "ui-msg-sybil-rejected": "Przepraszamy, automatyczna weryfikacja nie zaliczyła tej rejestracji.",
   "ui-code-expiry": "Kod wygaśnie za {time}",
-  "ui-code-expired": "Kod wygasł. Wyślij go ponownie."
+  "ui-code-expired": "Kod wygasł. Wyślij go ponownie.",
+  "ui-login-github": "Zaloguj się przez GitHub",
+  "ui-login-github-hint": "Zaloguj się kontem GitHub starszym niż rok, a następnie zarejestruj swój portfel.",
+  "ui-login-github-unavailable": "Logowanie przez GitHub jest obecnie niedostępne. Spróbuj ponownie później.",
+  "ui-x-required-hint": "Do rejestracji wymagana jest nazwa użytkownika X (Twitter).",
+  "ui-api-account-too-young": "Twoje konto GitHub musi mieć co najmniej rok, aby wziąć udział.",
+  "ui-api-github-error": "Logowanie przez GitHub nie powiodło się. Spróbuj ponownie.",
+  "ui-api-email-disabled": "Rejestracja e-mailowa została zamknięta. Zaloguj się przez GitHub."
 }

@@ -54,5 +54,12 @@
   "ui-msg-sybil-hold": "報名成功！需要額外核驗（14 天內自動完成），無需重複報名。",
   "ui-msg-sybil-rejected": "很抱歉，自動核驗未通過本次報名。",
   "ui-code-expiry": "驗證碼 {time} 後過期",
-  "ui-code-expired": "驗證碼已過期，請重新傳送。"
+  "ui-code-expired": "驗證碼已過期，請重新傳送。",
+  "ui-login-github": "使用 GitHub 登入",
+  "ui-login-github-hint": "使用註冊滿一年的 GitHub 帳號登入，然後登記你的錢包地址。",
+  "ui-login-github-unavailable": "GitHub 登入暫時無法使用，請稍後重試。",
+  "ui-x-required-hint": "報名必須填寫 X (Twitter) 使用者名稱。",
+  "ui-api-account-too-young": "GitHub 帳號需註冊滿一年才能參與。",
+  "ui-api-github-error": "GitHub 登入失敗，請重試。",
+  "ui-api-email-disabled": "電子郵件註冊已關閉，請使用 GitHub 登入。"
 }

@@ -54,5 +54,12 @@
   "ui-msg-sybil-hold": "Registrierung erfolgreich! Dein Eintrag benötigt eine zusätzliche Prüfung (erfolgt automatisch innerhalb von 14 Tagen) — keine erneute Registrierung nötig.",
   "ui-msg-sybil-rejected": "Leider hat diese Registrierung die automatische Prüfung nicht bestanden.",
   "ui-code-expiry": "Code läuft in {time} ab",
-  "ui-code-expired": "Der Code ist abgelaufen. Bitte sende ihn erneut."
+  "ui-code-expired": "Der Code ist abgelaufen. Bitte sende ihn erneut.",
+  "ui-login-github": "Mit GitHub anmelden",
+  "ui-login-github-hint": "Melde dich mit einem mindestens ein Jahr alten GitHub-Konto an und registriere deine Wallet.",
+  "ui-login-github-unavailable": "Die GitHub-Anmeldung ist derzeit nicht verfügbar. Bitte versuche es später erneut.",
+  "ui-x-required-hint": "Für die Registrierung ist ein X-(Twitter-)Benutzername erforderlich.",
+  "ui-api-account-too-young": "Dein GitHub-Konto muss mindestens ein Jahr alt sein, um teilzunehmen.",
+  "ui-api-github-error": "Die GitHub-Anmeldung ist fehlgeschlagen. Bitte erneut versuchen.",
+  "ui-api-email-disabled": "Die E-Mail-Registrierung wurde geschlossen. Bitte melde dich mit GitHub an."
 }

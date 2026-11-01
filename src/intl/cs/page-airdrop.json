@@ -54,5 +54,12 @@
   "ui-msg-sybil-hold": "Registrace úspěšná! Vaše registrace vyžaduje dodatečné ověření (proběhne automaticky do 14 dní) — není třeba se registrovat znovu.",
   "ui-msg-sybil-rejected": "Promiňte, automatické ověření této registrace neprošlo.",
   "ui-code-expiry": "Kód vyprší za {time}",
-  "ui-code-expired": "Kód vypršel. Pošlete jej prosím znovu."
+  "ui-code-expired": "Kód vypršel. Pošlete jej prosím znovu.",
+  "ui-login-github": "Přihlásit se přes GitHub",
+  "ui-login-github-hint": "Přihlaste se GitHub účtem starším alespoň jeden rok a zaregistrujte svou peněženku.",
+  "ui-login-github-unavailable": "Přihlášení přes GitHub momentálně není dostupné. Zkuste to prosím později.",
+  "ui-x-required-hint": "Pro registraci je vyžadováno uživatelské jméno na X (Twitter).",
+  "ui-api-account-too-young": "Váš GitHub účet musí mít alespoň jeden rok, abyste se mohli zúčastnit.",
+  "ui-api-github-error": "Přihlášení přes GitHub se nezdařilo. Zkuste to prosím znovu.",
+  "ui-api-email-disabled": "Registrace e-mailem byla uzavřena. Přihlaste se prosím přes GitHub."
 }

@@ -54,5 +54,12 @@
   "ui-msg-sybil-hold": "Usajili umefanikiwa! Usajili wako unahitaji uthibitisho wa ziada (hukamilika kiotomatiki ndani ya siku 14) — hakuna haja ya kusajiliwa tena.",
   "ui-msg-sybil-rejected": "Samahani, uthibitisho wa kiotomatiki haukufaulu kwa usajili huu.",
   "ui-code-expiry": "Nambari inaisha baada ya {time}",
-  "ui-code-expired": "Nambari imeisha. Tafadhali ituma tena."
+  "ui-code-expired": "Nambari imeisha. Tafadhali ituma tena.",
+  "ui-login-github": "Ingia kwa GitHub",
+  "ui-login-github-hint": "Ingia kwa akaunti ya GitHub yenye umri angalau mwaka mmoja, kisha sajili pochi yako.",
+  "ui-login-github-unavailable": "Kuingia kwa GitHub haipatikani kwa sasa. Tafadhali jaribu tena baadaye.",
+  "ui-x-required-hint": "Jina la mtumiaji la X (Twitter) linahitajika kwa usajili.",
+  "ui-api-account-too-young": "Akaunti yako ya GitHub lazima iwe na umri angalau mwaka mmoja ili ushiriki.",
+  "ui-api-github-error": "Kuingia kwa GitHub kumeshindikana. Tafadhali jaribu tena.",
+  "ui-api-email-disabled": "Usajili wa barua pepe umefungwa. Tafadhali ingia kwa GitHub."
 }

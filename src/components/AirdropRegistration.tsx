@@ -1,27 +1,21 @@
 "use client"
 
 /**
- * Airdrop registration flow (client-side).
+ * Airdrop registration flow (client-side), OAuth-only.
  *
- * Talks to the isolated /api/airdrop/* namespace. States mirror the sybil
- * state machine: approved → success card; hold → wait-14-days card;
- * rejected → rejection card with the rule list. The form is disabled
- * outside the campaign window.
- *
- * API contract: server responses carry machine-readable `code` fields and
- * no user-facing prose; this component maps every code to localized copy
- * (API_ERROR_KEYS below) so all 25 locales render translated messages.
- * Register/resend responses also carry expiresInSeconds, driving the
- * visible verification-code countdown on the verify screen.
+ * GitHub is the only sign-in path (the email/password + verification-code
+ * flow was retired): clicking Participate probes /api/airdrop/auth/me and
+ * either opens the wallet form or the GitHub sign-in card. Server responses
+ * carry machine-readable `code` fields; every code maps to localized copy
+ * (API_ERROR_KEYS) so all 25 locales render translated messages.
  *
  * All copy is served by next-intl from the page-airdrop namespace
- * (src/intl/<locale>/page-airdrop.json) — 25-locale coverage, with
- * ICU placeholders ({registered}/{maxSlots}/{amount}/{paid}) for the
- * live counters.
+ * (src/intl/<locale>/page-airdrop.json) — 25-locale coverage, with ICU
+ * placeholders ({registered}/{maxSlots}/{amount}/{paid}) for live counters.
  */
 
 import { useCallback, useEffect, useState } from "react"
-import { useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 
 import TurnstileWidget from "@/components/TurnstileWidget"
 
@@ -33,9 +27,10 @@ interface StatusResponse {
   paid: number
   maxSlots: number
   amountPerUser: number
+  requireSocial?: boolean
 }
 
-type Screen = "status" | "register" | "login" | "verify" | "done"
+type Screen = "status" | "oauth" | "register" | "done"
 
 interface DoneState {
   kind: "approved" | "hold" | "rejected" | "already"
@@ -47,25 +42,18 @@ interface ApiResponse extends Record<string, unknown> {
   code?: string
 }
 
+interface MeResponse {
+  authenticated: boolean
+  email: string | null
+  provider: string | null
+  githubEnabled: boolean
+}
+
 // Server error codes → page-airdrop keys. Codes missing here (and network
 // failures) fall back to the generic network-error copy. A few codes reuse
 // existing page copy instead of dedicated ui-api-* keys.
 const API_ERROR_KEYS: Record<string, string> = {
   invalid_request: "ui-api-invalid-request",
-  invalid_email: "ui-api-invalid-email",
-  password_too_short: "ui-api-password-too-short",
-  disposable_email: "ui-api-disposable-email",
-  email_domain_crowded: "ui-api-email-domain-crowded",
-  email_exists: "ui-api-email-exists",
-  code_send_failed: "ui-api-code-send-failed",
-  wrong_code: "ui-api-wrong-code",
-  code_expired: "ui-code-expired",
-  wrong_credentials: "ui-api-wrong-credentials",
-  verify_first: "ui-api-verify-first",
-  unknown_action: "ui-api-unknown-action",
-  not_logged_in: "ui-api-not-logged-in",
-  system_not_configured: "ui-api-system-not-configured",
-  send_code_rate_limited: "ui-api-send-code-rate-limited",
   invalid_x_handle: "ui-api-invalid-x-handle",
   x_handle_taken: "ui-api-x-handle-taken",
   wallet_taken: "ui-api-wallet-taken",
@@ -73,6 +61,14 @@ const API_ERROR_KEYS: Record<string, string> = {
   turnstile_failed: "ui-api-turnstile-failed",
   turnstile_invalid: "ui-api-turnstile-invalid",
   turnstile_fast: "ui-api-turnstile-fast",
+  not_logged_in: "ui-api-not-logged-in",
+  system_not_configured: "ui-api-system-not-configured",
+  send_code_rate_limited: "ui-api-send-code-rate-limited",
+  account_too_young: "ui-api-account-too-young",
+  state_mismatch: "ui-api-github-error",
+  github_error: "ui-api-github-error",
+  github_not_configured: "ui-login-github-unavailable",
+  email_disabled: "ui-api-email-disabled",
   // reuse of existing page copy
   campaign_not_started: "ui-not-started",
   campaign_ended: "ui-ended",
@@ -81,16 +77,12 @@ const API_ERROR_KEYS: Record<string, string> = {
 
 export function AirdropRegistration() {
   const t = useTranslations("page-airdrop")
+  const locale = useLocale()
 
   const [phase, setPhase] = useState<Phase>("loading")
   const [status, setStatus] = useState<StatusResponse | null>(null)
   const [screen, setScreen] = useState<Screen>("status")
   const [done, setDone] = useState<DoneState | null>(null)
-
-  // auth form state
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [code, setCode] = useState("")
 
   // registration form state
   const [walletAddress, setWalletAddress] = useState("")
@@ -99,11 +91,8 @@ export function AirdropRegistration() {
 
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState("")
-  const [notice, setNotice] = useState("")
-
-  // verification-code validity countdown (ms epoch deadline; null = hidden)
-  const [codeDeadline, setCodeDeadline] = useState<number | null>(null)
-  const [nowTick, setNowTick] = useState(Date.now())
+  const [authError, setAuthError] = useState("")
+  const [me, setMe] = useState<MeResponse | null>(null)
 
   const refreshStatus = useCallback(async () => {
     try {
@@ -118,22 +107,17 @@ export function AirdropRegistration() {
 
   useEffect(() => {
     void refreshStatus()
-  }, [refreshStatus])
-
-  // 1-second ticker for the code countdown, only while the verify screen shows
-  useEffect(() => {
-    if (screen !== "verify") return
-    const id = setInterval(() => setNowTick(Date.now()), 1000)
-    return () => clearInterval(id)
-  }, [screen])
-
-  // Anchor the countdown to the moment the server issues the code: refreshing
-  // the tick base here keeps the first paint from overstating the remaining
-  // time by however long the page has been open.
-  const startCountdown = (expiresInSeconds: unknown) => {
-    setNowTick(Date.now())
-    setCodeDeadline(Date.now() + (Number(expiresInSeconds) || 600) * 1000)
-  }
+    // OAuth callback failures land back with ?authError=<code>; surface it
+    // once as a localized banner, then strip it from the address bar.
+    const params = new URLSearchParams(window.location.search)
+    const code = params.get("authError")
+    if (code) {
+      const key = API_ERROR_KEYS[code]
+      setAuthError(key ? t(key) : t("ui-api-github-error"))
+      window.history.replaceState(null, "", window.location.pathname)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   // Localized text for a server error response (machine code → copy).
   const errorText = (data: ApiResponse): string => {
@@ -147,30 +131,17 @@ export function AirdropRegistration() {
     return key ? t(key) : t("ui-network-error")
   }
 
-  const authCall = async (
-    action: string,
-    body: Record<string, unknown>
-  ): Promise<ApiResponse | null> => {
-    setBusy(true)
+  const openParticipation = async () => {
+    setAuthError("")
     setError("")
-    setNotice("")
     try {
-      const res = await fetch(`/api/airdrop/auth?action=${action}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
-      })
-      const data = (await res.json()) as ApiResponse
-      if (!data.success) {
-        setError(errorText(data))
-        return null
-      }
-      return data
+      const res = await fetch("/api/airdrop/auth/me")
+      const data = (await res.json()) as MeResponse
+      setMe(data)
+      setScreen(data.authenticated ? "register" : "oauth")
     } catch {
-      setError(t("ui-network-error"))
-      return null
-    } finally {
-      setBusy(false)
+      setMe(null)
+      setScreen("oauth")
     }
   }
 
@@ -264,104 +235,37 @@ export function AirdropRegistration() {
     return card(<p className="text-center">{t("ui-ended")}</p>)
   }
 
-  if (screen === "login") {
+  if (screen === "oauth") {
     return card(
       <div className="space-y-4">
         <h2 className="text-lg font-semibold">{t("ui-login")}</h2>
-        <input
-          className={inputCls}
-          placeholder={t("ui-email")}
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          className={inputCls}
-          type="password"
-          placeholder={t("ui-password")}
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+        {authError && <p className="text-sm text-red-600">{authError}</p>}
         {error && <p className="text-sm text-red-600">{error}</p>}
-        {notice && <p className="text-sm text-green-600">{notice}</p>}
-        <button
-          className={btnCls}
-          disabled={busy}
-          onClick={async () => {
-            const r = await authCall("login", { email, password })
-            if (r) setScreen("register")
-          }}
-        >
-          {t("ui-login")}
-        </button>
-        <button
-          className="text-sm text-blue-600"
-          disabled={busy}
-          onClick={async () => {
-            const r = await authCall("register", { email, password })
-            if (r) {
-              startCountdown(r.expiresInSeconds)
-              setScreen("verify")
-            }
-          }}
-        >
-          {t("ui-no-account-register")}
-        </button>
-      </div>
-    )
-  }
-
-  if (screen === "verify") {
-    const remaining = codeDeadline ? Math.max(0, codeDeadline - nowTick) : null
-    const mmss = (ms: number) => {
-      const total = Math.floor(ms / 1000)
-      return `${String(Math.floor(total / 60)).padStart(2, "0")}:${String(total % 60).padStart(2, "0")}`
-    }
-    return card(
-      <div className="space-y-4">
-        <h2 className="text-lg font-semibold">{t("ui-verify-email")}</h2>
-        <p className="text-sm text-gray-600">{t("ui-code-hint")}</p>
-        <input
-          className={inputCls}
-          placeholder={t("ui-code-placeholder")}
-          value={code}
-          onChange={(e) => setCode(e.target.value)}
-        />
-        {remaining !== null && remaining > 0 && (
-          <p className="text-sm text-gray-500">
-            {t("ui-code-expiry", { time: mmss(remaining) })}
+        <p className="text-sm text-gray-600">{t("ui-login-github-hint")}</p>
+        {status?.requireSocial && (
+          <p className="text-sm text-gray-600">{t("ui-x-required-hint")}</p>
+        )}
+        {me?.githubEnabled ? (
+          <a
+            className="flex w-full items-center justify-center gap-2 rounded bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-gray-800"
+            href={`/api/airdrop/auth/oauth/github?locale=${locale}`}
+          >
+            <svg
+              aria-hidden="true"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+            >
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z" />
+            </svg>
+            {t("ui-login-github")}
+          </a>
+        ) : (
+          <p className="text-sm text-orange-600">
+            {t("ui-login-github-unavailable")}
           </p>
         )}
-        {remaining !== null && remaining <= 0 && (
-          <p className="text-sm text-orange-600">{t("ui-code-expired")}</p>
-        )}
-        {error && <p className="text-sm text-red-600">{error}</p>}
-        {notice && <p className="text-sm text-green-600">{notice}</p>}
-        <button
-          className={btnCls}
-          disabled={busy}
-          onClick={async () => {
-            const r = await authCall("verify", { email, code })
-            if (r) {
-              setNotice(t("ui-msg-verify-ok"))
-              setScreen("login")
-            }
-          }}
-        >
-          {t("ui-verify")}
-        </button>
-        <button
-          className="text-sm text-blue-600"
-          disabled={busy}
-          onClick={async () => {
-            const r = await authCall("resend", { email })
-            if (r) {
-              startCountdown(r.expiresInSeconds)
-              setNotice(t("ui-msg-code-sent"))
-            }
-          }}
-        >
-          {t("ui-resend")}
-        </button>
       </div>
     )
   }
@@ -391,6 +295,9 @@ export function AirdropRegistration() {
           value={xHandle}
           onChange={(e) => setXHandle(e.target.value)}
         />
+        {status?.requireSocial && (
+          <p className="text-sm text-gray-500">{t("ui-x-required-hint")}</p>
+        )}
         <TurnstileWidget onChange={setTurnstileToken} />
         {error && <p className="text-sm text-red-600">{error}</p>}
         <button className={btnCls} disabled={busy} onClick={submitRegistration}>
@@ -413,7 +320,7 @@ export function AirdropRegistration() {
           })}
         </p>
       )}
-      <button className={btnCls} onClick={() => setScreen("login")}>
+      <button className={btnCls} onClick={() => void openParticipation()}>
         {t("ui-participate")}
       </button>
     </div>

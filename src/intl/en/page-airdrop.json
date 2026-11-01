@@ -54,5 +54,12 @@
   "ui-msg-sybil-hold": "Registration successful! Your entry needs additional verification (completed automatically within 14 days) — no need to register again.",
   "ui-msg-sybil-rejected": "Sorry, automatic verification did not pass for this registration.",
   "ui-code-expiry": "Code expires in {time}",
-  "ui-code-expired": "The code has expired. Please resend it."
+  "ui-code-expired": "The code has expired. Please resend it.",
+  "ui-login-github": "Sign in with GitHub",
+  "ui-login-github-hint": "Sign in with a GitHub account that is at least one year old, then register your wallet.",
+  "ui-login-github-unavailable": "GitHub sign-in is not available right now. Please try again later.",
+  "ui-x-required-hint": "An X (Twitter) username is required for registration.",
+  "ui-api-account-too-young": "Your GitHub account must be at least one year old to participate.",
+  "ui-api-github-error": "GitHub sign-in failed. Please try again.",
+  "ui-api-email-disabled": "Email sign-up has been closed. Please sign in with GitHub."
 }

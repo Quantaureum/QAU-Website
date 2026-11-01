@@ -54,5 +54,12 @@
   "ui-msg-sybil-hold": "¡Registro exitoso! Tu registro necesita una verificación adicional (se completa automáticamente en 14 días); no es necesario volver a registrarse.",
   "ui-msg-sybil-rejected": "Lo sentimos, la verificación automática no aprobó este registro.",
   "ui-code-expiry": "El código caduca en {time}",
-  "ui-code-expired": "El código ha caducado. Reenvíalo."
+  "ui-code-expired": "El código ha caducado. Reenvíalo.",
+  "ui-login-github": "Iniciar sesión con GitHub",
+  "ui-login-github-hint": "Inicia sesión con una cuenta de GitHub de al menos un año y registra tu billetera.",
+  "ui-login-github-unavailable": "El inicio de sesión con GitHub no está disponible ahora. Inténtalo más tarde.",
+  "ui-x-required-hint": "Se requiere un nombre de usuario de X (Twitter) para registrarse.",
+  "ui-api-account-too-young": "Tu cuenta de GitHub debe tener al menos un año para participar.",
+  "ui-api-github-error": "Falló el inicio de sesión con GitHub. Inténtalo de nuevo.",
+  "ui-api-email-disabled": "El registro por correo electrónico ha sido cerrado. Inicia sesión con GitHub."
 }
