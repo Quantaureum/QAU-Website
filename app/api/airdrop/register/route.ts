@@ -1,10 +1,14 @@
 /**
  * Airdrop registration endpoint — production site port with the v2 sybil
- * scoring integrated. Flow (防护设计 v2):
+ * scoring integrated. Flow (defense design v2):
  *
  *   campaign window → auth session → email verified (L2) → idempotency (L5)
  *   → address validation → X binding (L4) → Turnstile (L1) → IP cap (L3)
  *   → sybil score (L6-v2) → insert with auto disposition
+ *
+ * Response contract: every body carries a machine-readable `code` field
+ * (plus `success`); the client maps codes to localized copy — no
+ * user-facing prose on the server side.
  */
 
 import { NextRequest, NextResponse } from "next/server"
@@ -37,35 +41,34 @@ function jsonResponse(body: unknown, status: number): NextResponse {
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
   if (!hasDatabase()) {
-    return jsonResponse(
-      { success: false, error: "报名系统未配置（DATABASE_URL 缺失）" },
-      503
-    )
+    return jsonResponse({ success: false, code: "system_not_configured" }, 503)
   }
   const cfg = getAirdropConfig()
 
   const phase = campaignPhase(new Date(), cfg)
   if (phase === "not_started")
-    return jsonResponse({ success: false, error: "空投活动尚未开始" }, 403)
+    return jsonResponse({ success: false, code: "campaign_not_started" }, 403)
   if (phase === "ended")
-    return jsonResponse({ success: false, error: "空投活动已结束" }, 410)
+    return jsonResponse({ success: false, code: "campaign_ended" }, 410)
 
   const user = await resolveAuthUser(req)
   const uid = String(user?.uid ?? "")
   const userEmail = String(user?.email ?? "")
   const userVerified = user?.is_verified === true
-  if (!user) return jsonResponse({ success: false, error: "请先登录" }, 401)
+  if (!user) return jsonResponse({ success: false, code: "not_logged_in" }, 401)
   if (!userVerified) {
-    return jsonResponse(
-      { success: false, error: "请先完成邮箱验证后再参与空投" },
-      403
-    )
+    return jsonResponse({ success: false, code: "verify_first" }, 403)
   }
 
   const existing = await findAirdropByUserId(String(user.uid))
   if (existing) {
     return jsonResponse(
-      { success: true, registration: existing, alreadyRegistered: true },
+      {
+        success: true,
+        code: "already_registered",
+        registration: existing,
+        alreadyRegistered: true,
+      },
       200
     )
   }
@@ -74,18 +77,12 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   try {
     body = await req.json()
   } catch {
-    return jsonResponse({ success: false, error: "请求格式错误" }, 400)
+    return jsonResponse({ success: false, code: "invalid_request" }, 400)
   }
 
   const walletAddress = String(body.walletAddress || "").trim()
   if (!/^0x[a-fA-F0-9]{40}$/.test(walletAddress)) {
-    return jsonResponse(
-      {
-        success: false,
-        error: "无效的量子钱包地址（应为 0x 开头的 40 位十六进制）",
-      },
-      400
-    )
+    return jsonResponse({ success: false, code: "invalid_wallet" }, 400)
   }
 
   const xHandle = cfg.requireSocial
@@ -94,22 +91,16 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         .replace(/^@/, "") || null
     : null
   if (cfg.requireSocial && (!xHandle || !isValidXHandle(xHandle))) {
-    return jsonResponse(
-      { success: false, error: "请填写有效的 X (Twitter) 用户名" },
-      400
-    )
+    return jsonResponse({ success: false, code: "invalid_x_handle" }, 400)
   }
   if (xHandle) {
     const taken = await findAirdropByXHandle(xHandle)
     if (taken)
-      return jsonResponse(
-        { success: false, error: "该 X 账号已绑定过其他登记" },
-        409
-      )
+      return jsonResponse({ success: false, code: "x_handle_taken" }, 409)
   }
   const addrTaken = await findAirdropByAddress(walletAddress)
   if (addrTaken)
-    return jsonResponse({ success: false, error: "该钱包地址已被登记" }, 409)
+    return jsonResponse({ success: false, code: "wallet_taken" }, 409)
 
   // L1: Turnstile
   const turnstile = await verifyTurnstile(
@@ -117,8 +108,9 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     req.headers.get("x-forwarded-for")?.split(",")[0].trim() || "unknown"
   )
   if (!turnstile.ok) {
+    // reason is already a machine code (see turnstile.ts)
     return jsonResponse(
-      { success: false, error: turnstile.reason || "人机验证未通过" },
+      { success: false, code: turnstile.reason || "turnstile_failed" },
       403
     )
   }
@@ -165,7 +157,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       ? xUserMetrics.public_metrics.tweet_count === 0
       : null,
     xFollowsCampaign: true,
-    addressNonce: 0, // A档: chain-history check happens at payout time (L7)
+    addressNonce: 0, // tier A: chain-history check happens at payout time (L7)
     addressBalanceWei: null,
     sameSubnetPayoutAddresses: sameAddrPrefix,
     registrationToAddressSeconds: null, // address submitted in the same request
@@ -190,7 +182,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     addressPrefix: addrPrefix,
     status: rejectByIp ? "rejected" : "pending",
     note: rejectByIp
-      ? `IP ${ip} 已有 ${sameIp} 条登记（上限 2），自动标记待人工复核`
+      ? `IP ${ip} has ${sameIp} registrations (cap 2); auto-flagged for manual review`
       : undefined,
     xHandle,
     socialStatus: cfg.requireSocial ? "unverified" : "skipped",
@@ -205,13 +197,20 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     const raced = await findAirdropByUserId(uid)
     if (raced)
       return jsonResponse(
-        { success: true, registration: raced, alreadyRegistered: true },
+        {
+          success: true,
+          code: "already_registered",
+          registration: raced,
+          alreadyRegistered: true,
+        },
         200
       )
     return jsonResponse(
       {
         success: false,
-        error: `空投名额已满（${cfg.maxSlots} 名，预算 ${cfg.budgetQau} QAU）`,
+        code: "slots_full",
+        maxSlots: cfg.maxSlots,
+        budgetQau: cfg.budgetQau,
       },
       403
     )
@@ -231,15 +230,15 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   return jsonResponse(
     {
       success: true,
+      code:
+        disposition === "approved"
+          ? "sybil_approved"
+          : disposition === "hold"
+            ? "sybil_hold"
+            : "sybil_rejected",
       registration,
       amount: cfg.amountPerUser,
       sybil: { score: scored.score, status: disposition },
-      message:
-        disposition === "approved"
-          ? "报名成功！已通过自动核验。"
-          : disposition === "hold"
-            ? "报名成功！需要额外核验（14 天内自动完成），无需重复报名。"
-            : "很抱歉，自动核验未通过本次报名。",
     },
     201
   )
