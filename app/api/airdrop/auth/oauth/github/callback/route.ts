@@ -37,6 +37,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
 
   if (!isGithubOAuthConfigured()) return fail(locale, "github_error")
   if (!code || !nonce || state !== stateCookie) {
+    console.log("[airdrop-oauth] rejected: state mismatch")
     return fail(locale, "state_mismatch")
   }
 
@@ -54,7 +55,10 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
     }),
   })
   const token = (await tokenRes.json()) as { access_token?: string }
-  if (!token.access_token) return fail(locale, "github_error")
+  if (!token.access_token) {
+    console.log("[airdrop-oauth] rejected: token exchange failed")
+    return fail(locale, "github_error")
+  }
 
   const userRes = await fetch("https://api.github.com/user", {
     headers: {
@@ -62,7 +66,10 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
       Accept: "application/vnd.github+json",
     },
   })
-  if (!userRes.ok) return fail(locale, "github_error")
+  if (!userRes.ok) {
+    console.log("[airdrop-oauth] rejected: /user fetch failed", userRes.status)
+    return fail(locale, "github_error")
+  }
   const profile = (await userRes.json()) as {
     id: number
     login: string
@@ -77,17 +84,23 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
     !Number.isFinite(createdAtMs) ||
     Date.now() - createdAtMs < ACCOUNT_MIN_AGE_MS
   ) {
+    console.log("[airdrop-oauth] rejected: account too young")
     return fail(locale, "account_too_young")
   }
 
   let user = await findUserByGithubId(profile.id)
+  console.log("[airdrop-oauth] profile ok, existing user:", Boolean(user))
   if (!user) {
     const email =
       profile.email || `${profile.id}+${profile.login}@users.noreply.github.com`
     const uid = `aid-gh-${profile.id}`
     await createUserOAuth(uid, email, "github", profile.id)
     user = await findUserByGithubId(profile.id)
-    if (!user) return fail(locale, "github_error")
+    if (!user) {
+      console.log("[airdrop-oauth] rejected: user row missing after create")
+      return fail(locale, "github_error")
+    }
+    console.log("[airdrop-oauth] created user", user.uid)
   }
 
   const authToken = generateToken({
@@ -95,6 +108,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
     email: user.email,
     role: "user",
   })
+  console.log("[airdrop-oauth] success, issuing session cookie")
   const res = NextResponse.redirect(`${SITE_URL}/${locale}/airdrop`, 302)
   res.cookies.set("oauth_state", "", { maxAge: 0, path: "/" })
   res.cookies.set("auth_token", authToken, {
