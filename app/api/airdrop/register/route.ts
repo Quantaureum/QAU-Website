@@ -20,6 +20,7 @@ import {
 } from "@/lib/airdrop/airdropConfig"
 import { resolveAuthUser } from "@/lib/airdrop/authSession"
 import {
+  countAirdropByAddressPrefix,
   countAirdropByEmailDomain,
   countAirdropByPrefix24,
   createAirdropRegistration,
@@ -129,7 +130,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   const emailDomain = userEmail.split("@")[1] || ""
   const sameEmailDomain = await countAirdropByEmailDomain(emailDomain)
   const addrPrefix = walletAddress.toLowerCase().slice(2, 6) // first 4 hex chars
-  const sameAddrPrefix = await countAirdropByPrefix24(addrPrefix)
+  const sameAddrPrefix = await countAirdropByAddressPrefix(addrPrefix)
 
   // L6-v2: X profile signals (when social binding is on, fetch metrics here —
   // the verifier job re-checks asynchronously; this first-pass score uses the
@@ -180,6 +181,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     ipAddress: ip,
     ipPrefix24: subnet,
     addressPrefix: addrPrefix,
+    amount: cfg.amountPerUser,
     status: rejectByIp ? "rejected" : "pending",
     note: rejectByIp
       ? `IP ${ip} has ${sameIp} registrations (cap 2); auto-flagged for manual review`
@@ -205,6 +207,16 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
         },
         200
       )
+    // The insert is skipped when a unique constraint is hit: an address or a
+    // handle can already be claimed by another registration.
+    const addrConflict = await findAirdropByAddress(walletAddress)
+    if (addrConflict)
+      return jsonResponse({ success: false, code: "wallet_taken" }, 409)
+    if (xHandle) {
+      const handleConflict = await findAirdropByXHandle(xHandle)
+      if (handleConflict)
+        return jsonResponse({ success: false, code: "x_handle_taken" }, 409)
+    }
     return jsonResponse(
       {
         success: false,

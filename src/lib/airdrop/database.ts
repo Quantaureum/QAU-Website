@@ -103,6 +103,11 @@ export interface AirdropRegistration {
   sybil_scored_at: Date | null
   sybil_rules: string | null
   hold_since: Date | null
+  payout_state: PayoutState
+  payout_nonce: number | null
+  payout_attempts: number
+  payout_error: string | null
+  payout_next_attempt_at: Date | null
   created_at: Date
   updated_at: Date
 }
@@ -113,6 +118,19 @@ export type RegistrationStatus =
   | "approved"
   | "rejected"
   | "paid"
+
+/**
+ * Payout lifecycle of a registration.
+ *
+ *   idle      → eligible for the payout queue
+ *   reserved  → claimed by a distributor run (no chain interaction yet)
+ *   broadcast → the reveal transaction hash is known and may be on chain
+ *   paid      → a receipt with status 0x1 was observed and recorded
+ *
+ * The state only ever moves forward through conditional UPDATE statements, so
+ * two distributors can never pay the same registration twice.
+ */
+export type PayoutState = "idle" | "reserved" | "broadcast" | "paid"
 
 let initPromise: Promise<void> | null = null
 
@@ -159,6 +177,60 @@ export function initAirdropTables(): Promise<void> {
         CREATE INDEX IF NOT EXISTS idx_ip_activity_ip_time
         ON ip_activity_log (ip_address, created_at)
       `
+      // Payout state machine (two-phase payouts: reserve → broadcast → paid).
+      await sql`
+        ALTER TABLE airdrop_registrations
+        ADD COLUMN IF NOT EXISTS payout_state VARCHAR(20) NOT NULL DEFAULT 'idle'
+      `
+      await sql`
+        ALTER TABLE airdrop_registrations
+        ADD COLUMN IF NOT EXISTS payout_nonce BIGINT
+      `
+      await sql`
+        ALTER TABLE airdrop_registrations
+        ADD COLUMN IF NOT EXISTS payout_attempts INTEGER NOT NULL DEFAULT 0
+      `
+      await sql`
+        ALTER TABLE airdrop_registrations
+        ADD COLUMN IF NOT EXISTS payout_error TEXT
+      `
+      await sql`
+        ALTER TABLE airdrop_registrations
+        ADD COLUMN IF NOT EXISTS payout_next_attempt_at TIMESTAMP
+      `
+      await sql`
+        ALTER TABLE airdrop_registrations
+        ADD COLUMN IF NOT EXISTS payout_updated_at TIMESTAMP
+      `
+      // Payout queue index: the queue filters on sybil/status/payout state.
+      await sql`
+        CREATE INDEX IF NOT EXISTS idx_airdrop_payout_queue
+        ON airdrop_registrations (sybil_status, status, payout_state)
+      `
+      // One claim per address, case-insensitively: the plain UNIQUE constraint
+      // on wallet_address is case-sensitive, so 0xAb… and 0xab… could both
+      // claim a slot while the lookup compares lower(). The index is created
+      // only when no case-duplicate rows exist — otherwise the statement
+      // aborts and would take the whole bootstrap down with it.
+      try {
+        const dupes = rowsOf<{ n?: number }>(
+          await sql`
+            SELECT COUNT(*)::int AS n FROM (
+              SELECT lower(wallet_address) FROM airdrop_registrations
+              GROUP BY lower(wallet_address) HAVING COUNT(*) > 1
+            ) d
+          `
+        )
+        if (Number(dupes[0]?.n ?? 0) === 0) {
+          await sql`
+            CREATE UNIQUE INDEX IF NOT EXISTS airdrop_registrations_wallet_lower_key
+            ON airdrop_registrations (lower(wallet_address))
+          `
+        }
+      } catch {
+        // A pre-existing duplicate keeps the plain constraint only; the
+        // registration path still rejects duplicates case-insensitively.
+      }
       // L6-v2: scoring queue + hold re-evaluation
       await sql`
         CREATE INDEX IF NOT EXISTS idx_airdrop_sybil_status
@@ -188,7 +260,7 @@ export async function findAirdropByUserId(
 ): Promise<AirdropRegistration | null> {
   await initAirdropTables()
   const rows =
-    await sql`SELECT id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, created_at, updated_at FROM airdrop_registrations WHERE user_id = ${userId} LIMIT 1`
+    await sql`SELECT id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, payout_state, payout_nonce, payout_attempts, payout_error, payout_next_attempt_at, created_at, updated_at FROM airdrop_registrations WHERE user_id = ${userId} LIMIT 1`
   const first = (rows as unknown as Record<string, unknown>[])[0]
   return first ? mapRow(first) : null
 }
@@ -198,7 +270,7 @@ export async function findAirdropByAddress(
 ): Promise<AirdropRegistration | null> {
   await initAirdropTables()
   const rows =
-    await sql`SELECT id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, created_at, updated_at FROM airdrop_registrations WHERE lower(wallet_address) = lower(${address}) LIMIT 1`
+    await sql`SELECT id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, payout_state, payout_nonce, payout_attempts, payout_error, payout_next_attempt_at, created_at, updated_at FROM airdrop_registrations WHERE lower(wallet_address) = lower(${address}) LIMIT 1`
   const first = (rows as unknown as Record<string, unknown>[])[0]
   return first ? mapRow(first) : null
 }
@@ -208,7 +280,7 @@ export async function findAirdropByXHandle(
 ): Promise<AirdropRegistration | null> {
   await initAirdropTables()
   const rows =
-    await sql`SELECT id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, created_at, updated_at FROM airdrop_registrations WHERE lower(x_handle) = lower(${handle}) LIMIT 1`
+    await sql`SELECT id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, payout_state, payout_nonce, payout_attempts, payout_error, payout_next_attempt_at, created_at, updated_at FROM airdrop_registrations WHERE lower(x_handle) = lower(${handle}) LIMIT 1`
   const first = (rows as unknown as Record<string, unknown>[])[0]
   return first ? mapRow(first) : null
 }
@@ -263,6 +335,7 @@ export async function createAirdropRegistration(data: {
   ipAddress: string
   ipPrefix24: string
   addressPrefix: string
+  amount: number
   status: "pending" | "rejected"
   note?: string
   xHandle: string | null
@@ -274,29 +347,28 @@ export async function createAirdropRegistration(data: {
   holdSince: Date | null
 }): Promise<AirdropRegistration | null> {
   await initAirdropTables()
-  // maxSlots guard: if the campaign is full the INSERT is aborted and the
-  // caller distinguishes "race lost" from "campaign full" via findAirdropByUserId.
-  const countRows =
-    await sql`SELECT COUNT(*)::int AS n FROM airdrop_registrations`
-  if (
-    Number(rowsOf<Record<string, unknown>>(countRows)[0]?.n ?? 0) >=
-    data.maxSlots
-  ) {
-    return null
-  }
+  // The slot cap is evaluated inside the INSERT (one statement, one snapshot)
+  // so a concurrent registration cannot slip past a separate SELECT. Rejected
+  // rows do not occupy a slot — they are not payable.
+  // Addresses and handles are stored lower-case: lookups compare lower() and
+  // the unique index on lower(wallet_address) enforces one claim per address.
   const rows = await sql`
     INSERT INTO airdrop_registrations
       (user_id, email, wallet_address, ip_address, ip_prefix24, amount, status,
        x_handle, social_status, sybil_score, sybil_status, sybil_scored_at, sybil_rules,
        hold_since, note)
-    VALUES
-      (${data.userId}, ${data.email}, ${data.walletAddress}, ${data.ipAddress},
-       ${data.ipPrefix24}, 50, ${data.status},
-       ${data.xHandle}, ${data.socialStatus}, ${data.sybilScore}, ${data.sybilStatus},
-       CURRENT_TIMESTAMP, ${data.sybilRules},
-       ${data.holdSince ? data.holdSince.toISOString() : null}, ${data.note ?? null})
-    ON CONFLICT (user_id) DO NOTHING
-    RETURNING id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, created_at, updated_at
+    SELECT
+      ${data.userId}, ${data.email}, ${data.walletAddress.toLowerCase()}, ${data.ipAddress},
+      ${data.ipPrefix24}, ${data.amount}, ${data.status},
+      ${data.xHandle ? data.xHandle.toLowerCase() : null}, ${data.socialStatus},
+      ${data.sybilScore}, ${data.sybilStatus},
+      CURRENT_TIMESTAMP, ${data.sybilRules},
+      ${data.holdSince ? data.holdSince.toISOString() : null}, ${data.note ?? null}
+    WHERE (
+      SELECT COUNT(*) FROM airdrop_registrations WHERE status <> 'rejected'
+    ) < ${data.maxSlots}
+    ON CONFLICT DO NOTHING
+    RETURNING id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, payout_state, payout_nonce, payout_attempts, payout_error, payout_next_attempt_at, created_at, updated_at
   `
   const first = (rows as unknown as Record<string, unknown>[])[0]
   return first ? mapRow(first) : null
@@ -323,36 +395,173 @@ export async function updateAirdropSybilResult(
 export async function listHoldRegistrations(): Promise<AirdropRegistration[]> {
   await initAirdropTables()
   const rows = await sql`
-    SELECT id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, created_at, updated_at FROM airdrop_registrations
+    SELECT id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, payout_state, payout_nonce, payout_attempts, payout_error, payout_next_attempt_at, created_at, updated_at FROM airdrop_registrations
     WHERE sybil_status = 'hold' AND hold_since IS NOT NULL
     ORDER BY hold_since ASC
   `
   return rowsOf<Record<string, unknown>>(rows).map(mapRow)
 }
 
+/**
+ * Payout queue: approved rows that are not rejected, not paid and not
+ * claimed by a running distributor. A row whose last attempt failed waits
+ * for its retry backoff before it is offered again.
+ */
 export async function listApprovedRegistrations(
   limit: number
 ): Promise<AirdropRegistration[]> {
   await initAirdropTables()
   const rows = await sql`
-    SELECT id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, created_at, updated_at FROM airdrop_registrations
-    WHERE sybil_status = 'approved' AND status <> 'paid'
+    SELECT id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, payout_state, payout_nonce, payout_attempts, payout_error, payout_next_attempt_at, created_at, updated_at FROM airdrop_registrations
+    WHERE sybil_status = 'approved'
+      AND status = 'pending'
+      AND payout_state = 'idle'
+      AND (payout_next_attempt_at IS NULL OR payout_next_attempt_at <= CURRENT_TIMESTAMP)
     ORDER BY created_at ASC LIMIT ${limit}
   `
   return rowsOf<Record<string, unknown>>(rows).map(mapRow)
 }
 
-/** Admin: mark a registration paid (txHash written back by the distributor). */
-export async function markAirdropPaid(
-  userId: string,
-  txHash: string
-): Promise<void> {
+/** Admin: one registration by its serial id. */
+export async function findAirdropById(
+  id: number
+): Promise<AirdropRegistration | null> {
   await initAirdropTables()
-  await sql`
-    UPDATE airdrop_registrations
-    SET status = 'paid', tx_hash = ${txHash}, updated_at = CURRENT_TIMESTAMP
-    WHERE user_id = ${userId}
+  const rows = await sql`
+    SELECT id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, payout_state, payout_nonce, payout_attempts, payout_error, payout_next_attempt_at, created_at, updated_at
+    FROM airdrop_registrations WHERE id = ${id} LIMIT 1
   `
+  const first = (rows as unknown as Record<string, unknown>[])[0]
+  return first ? mapRow(first) : null
+}
+
+/**
+ * Atomically claim a registration for payout. The conditional UPDATE is the
+ * single-payment guarantee: only the first caller sees the row, every other
+ * caller gets null and must not pay it.
+ */
+export async function reserveAirdropRegistration(
+  id: number
+): Promise<AirdropRegistration | null> {
+  await initAirdropTables()
+  const rows = await sql`
+    UPDATE airdrop_registrations
+    SET payout_state = 'reserved',
+        payout_attempts = payout_attempts + 1,
+        payout_error = NULL,
+        payout_next_attempt_at = NULL,
+        payout_updated_at = CURRENT_TIMESTAMP,
+        updated_at = CURRENT_TIMESTAMP
+    WHERE id = ${id}
+      AND payout_state = 'idle'
+      AND status = 'pending'
+      AND sybil_status = 'approved'
+    RETURNING id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, payout_state, payout_nonce, payout_attempts, payout_error, payout_next_attempt_at, created_at, updated_at
+  `
+  const first = (rows as unknown as Record<string, unknown>[])[0]
+  return first ? mapRow(first) : null
+}
+
+/**
+ * Record the reveal transaction before it is broadcast. A distributor crash
+ * between signing and broadcasting leaves a row whose transaction hash can
+ * be checked against the chain, instead of an unmarked payment.
+ */
+export async function recordAirdropIntent(
+  id: number,
+  txHash: string,
+  nonce: number
+): Promise<boolean> {
+  await initAirdropTables()
+  const rows = await sql`
+    UPDATE airdrop_registrations
+    SET payout_state = 'broadcast',
+        tx_hash = ${txHash},
+        payout_nonce = ${nonce},
+        payout_updated_at = CURRENT_TIMESTAMP,
+        updated_at = CURRENT_TIMESTAMP
+    WHERE id = ${id} AND payout_state = 'reserved' AND status <> 'paid'
+    RETURNING id
+  `
+  return rowsOf(rows).length > 0
+}
+
+/**
+ * Mark a registration paid after a receipt with status 0x1 was observed.
+ * Idempotent: an already paid row stays paid, a missing row is not paid.
+ */
+export async function markAirdropPaidById(
+  id: number,
+  txHash: string
+): Promise<boolean> {
+  await initAirdropTables()
+  const rows = await sql`
+    UPDATE airdrop_registrations
+    SET status = 'paid',
+        payout_state = 'paid',
+        tx_hash = ${txHash},
+        payout_error = NULL,
+        payout_next_attempt_at = NULL,
+        payout_updated_at = CURRENT_TIMESTAMP,
+        updated_at = CURRENT_TIMESTAMP
+    WHERE id = ${id} AND status <> 'paid'
+    RETURNING id
+  `
+  if (rowsOf(rows).length > 0) return true
+  const current = await findAirdropById(id)
+  return current?.status === "paid"
+}
+
+/**
+ * Release a reservation after a failed attempt: the row returns to the queue
+ * after the retry backoff and keeps the failure reason for the audit trail.
+ * A row that exhausted its attempts is rejected and leaves the queue for
+ * manual review instead of being retried forever.
+ */
+export async function releaseAirdropReservation(
+  id: number,
+  reason: string,
+  retryDelayMinutes: number,
+  maxAttempts: number
+): Promise<boolean> {
+  await initAirdropTables()
+  const rows = await sql`
+    UPDATE airdrop_registrations
+    SET status = CASE
+          WHEN payout_attempts >= ${maxAttempts} THEN 'rejected'
+          ELSE status
+        END,
+        note = CASE
+          WHEN payout_attempts >= ${maxAttempts} THEN ${reason}
+          ELSE note
+        END,
+        payout_state = 'idle',
+        payout_error = ${reason},
+        payout_next_attempt_at = CASE
+          WHEN payout_attempts >= ${maxAttempts} THEN NULL
+          ELSE CURRENT_TIMESTAMP + (${retryDelayMinutes} * INTERVAL '1 minute')
+        END,
+        payout_updated_at = CURRENT_TIMESTAMP,
+        updated_at = CURRENT_TIMESTAMP
+    WHERE id = ${id}
+      AND payout_state IN ('reserved', 'broadcast')
+      AND status <> 'paid'
+    RETURNING id
+  `
+  return rowsOf(rows).length > 0
+}
+
+/** Reservations that never reached a confirmed receipt. */
+export async function listStuckPayouts(
+  limit: number
+): Promise<AirdropRegistration[]> {
+  await initAirdropTables()
+  const rows = await sql`
+    SELECT id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, payout_state, payout_nonce, payout_attempts, payout_error, payout_next_attempt_at, created_at, updated_at FROM airdrop_registrations
+    WHERE payout_state IN ('reserved', 'broadcast')
+    ORDER BY id ASC LIMIT ${limit}
+  `
+  return rowsOf<Record<string, unknown>>(rows).map(mapRow)
 }
 
 // ---------------------------------------------------------------------------
@@ -363,6 +572,8 @@ export interface AirdropUser {
   uid: string
   email: string
   is_verified: boolean
+  /** NULL for legacy email rows, "github" for OAuth rows. */
+  provider?: string | null
 }
 
 export async function initUsersTable(): Promise<void> {
@@ -401,7 +612,7 @@ export const VERIFICATION_CODE_TTL_MINUTES = 10
 export async function findUserById(uid: string): Promise<AirdropUser | null> {
   await initUsersTable()
   const rows = await sql`
-    SELECT uid, email, is_verified FROM users WHERE uid = ${uid} LIMIT 1
+    SELECT uid, email, is_verified, provider FROM users WHERE uid = ${uid} LIMIT 1
   `
   const list = rowsOf<Record<string, unknown>>(rows)
   return list.length ? (list[0] as unknown as AirdropUser) : null
