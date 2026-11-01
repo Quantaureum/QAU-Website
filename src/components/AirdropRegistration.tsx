@@ -8,6 +8,12 @@
  * rejected → rejection card with the rule list. The form is disabled
  * outside the campaign window.
  *
+ * API contract: server responses carry machine-readable `code` fields and
+ * no user-facing prose; this component maps every code to localized copy
+ * (API_ERROR_KEYS below) so all 25 locales render translated messages.
+ * Register/resend responses also carry expiresInSeconds, driving the
+ * visible verification-code countdown on the verify screen.
+ *
  * All copy is served by next-intl from the page-airdrop namespace
  * (src/intl/<locale>/page-airdrop.json) — 25-locale coverage, with
  * ICU placeholders ({registered}/{maxSlots}/{amount}/{paid}) for the
@@ -36,6 +42,43 @@ interface DoneState {
   message: string
 }
 
+interface ApiResponse extends Record<string, unknown> {
+  success?: boolean
+  code?: string
+}
+
+// Server error codes → page-airdrop keys. Codes missing here (and network
+// failures) fall back to the generic network-error copy. A few codes reuse
+// existing page copy instead of dedicated ui-api-* keys.
+const API_ERROR_KEYS: Record<string, string> = {
+  invalid_request: "ui-api-invalid-request",
+  invalid_email: "ui-api-invalid-email",
+  password_too_short: "ui-api-password-too-short",
+  disposable_email: "ui-api-disposable-email",
+  email_domain_crowded: "ui-api-email-domain-crowded",
+  email_exists: "ui-api-email-exists",
+  code_send_failed: "ui-api-code-send-failed",
+  wrong_code: "ui-api-wrong-code",
+  code_expired: "ui-code-expired",
+  wrong_credentials: "ui-api-wrong-credentials",
+  verify_first: "ui-api-verify-first",
+  unknown_action: "ui-api-unknown-action",
+  not_logged_in: "ui-api-not-logged-in",
+  system_not_configured: "ui-api-system-not-configured",
+  send_code_rate_limited: "ui-api-send-code-rate-limited",
+  invalid_x_handle: "ui-api-invalid-x-handle",
+  x_handle_taken: "ui-api-x-handle-taken",
+  wallet_taken: "ui-api-wallet-taken",
+  turnstile_missing: "ui-api-turnstile-missing",
+  turnstile_failed: "ui-api-turnstile-failed",
+  turnstile_invalid: "ui-api-turnstile-invalid",
+  turnstile_fast: "ui-api-turnstile-fast",
+  // reuse of existing page copy
+  campaign_not_started: "ui-not-started",
+  campaign_ended: "ui-ended",
+  invalid_wallet: "ui-invalid-wallet",
+}
+
 export function AirdropRegistration() {
   const t = useTranslations("page-airdrop")
 
@@ -56,6 +99,11 @@ export function AirdropRegistration() {
 
   const [busy, setBusy] = useState(false)
   const [error, setError] = useState("")
+  const [notice, setNotice] = useState("")
+
+  // verification-code validity countdown (ms epoch deadline; null = hidden)
+  const [codeDeadline, setCodeDeadline] = useState<number | null>(null)
+  const [nowTick, setNowTick] = useState(Date.now())
 
   const refreshStatus = useCallback(async () => {
     try {
@@ -72,24 +120,47 @@ export function AirdropRegistration() {
     void refreshStatus()
   }, [refreshStatus])
 
-  const authCall = async (action: string, body: Record<string, unknown>) => {
+  // 1-second ticker for the code countdown, only while the verify screen shows
+  useEffect(() => {
+    if (screen !== "verify") return
+    const id = setInterval(() => setNowTick(Date.now()), 1000)
+    return () => clearInterval(id)
+  }, [screen])
+
+  // Localized text for a server error response (machine code → copy).
+  const errorText = (data: ApiResponse): string => {
+    if (data.code === "slots_full") {
+      return t("ui-api-slots-full", {
+        maxSlots: Number(data.maxSlots ?? 0),
+        budgetQau: Number(data.budgetQau ?? 0),
+      })
+    }
+    const key = data.code ? API_ERROR_KEYS[data.code] : undefined
+    return key ? t(key) : t("ui-network-error")
+  }
+
+  const authCall = async (
+    action: string,
+    body: Record<string, unknown>
+  ): Promise<ApiResponse | null> => {
     setBusy(true)
     setError("")
+    setNotice("")
     try {
       const res = await fetch(`/api/airdrop/auth?action=${action}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
       })
-      const data = await res.json()
+      const data = (await res.json()) as ApiResponse
       if (!data.success) {
-        setError(data.error || "error")
-        return false
+        setError(errorText(data))
+        return null
       }
       return data
     } catch {
       setError(t("ui-network-error"))
-      return false
+      return null
     } finally {
       setBusy(false)
     }
@@ -112,22 +183,26 @@ export function AirdropRegistration() {
           turnstileToken: turnstileToken || undefined,
         }),
       })
-      const data = await res.json()
+      const data = (await res.json()) as ApiResponse
       if (data.success) {
-        const sybilStatus = data.sybil?.status as string | undefined
-        if (data.alreadyRegistered) {
+        const sybil = data.sybil as { status?: string } | undefined
+        const sybilStatus = sybil?.status
+        if (data.code === "already_registered" || data.alreadyRegistered) {
           setDone({ kind: "already", message: t("ui-already-registered") })
-        } else if (sybilStatus === "approved") {
-          setDone({ kind: "approved", message: data.message })
-        } else if (sybilStatus === "hold") {
-          setDone({ kind: "hold", message: data.message })
+        } else if (
+          data.code === "sybil_approved" ||
+          sybilStatus === "approved"
+        ) {
+          setDone({ kind: "approved", message: t("ui-msg-sybil-approved") })
+        } else if (data.code === "sybil_hold" || sybilStatus === "hold") {
+          setDone({ kind: "hold", message: t("ui-msg-sybil-hold") })
         } else {
-          setDone({ kind: "rejected", message: data.message })
+          setDone({ kind: "rejected", message: t("ui-msg-sybil-rejected") })
         }
         setScreen("done")
         void refreshStatus()
       } else {
-        setError(data.error || "error")
+        setError(errorText(data))
       }
     } catch {
       setError(t("ui-network-error"))
@@ -199,6 +274,7 @@ export function AirdropRegistration() {
           onChange={(e) => setPassword(e.target.value)}
         />
         {error && <p className="text-sm text-red-600">{error}</p>}
+        {notice && <p className="text-sm text-green-600">{notice}</p>}
         <button
           className={btnCls}
           disabled={busy}
@@ -211,9 +287,15 @@ export function AirdropRegistration() {
         </button>
         <button
           className="text-sm text-blue-600"
+          disabled={busy}
           onClick={async () => {
             const r = await authCall("register", { email, password })
-            if (r) setScreen("verify")
+            if (r) {
+              setCodeDeadline(
+                Date.now() + (Number(r.expiresInSeconds) || 600) * 1000
+              )
+              setScreen("verify")
+            }
           }}
         >
           {t("ui-no-account-register")}
@@ -223,6 +305,11 @@ export function AirdropRegistration() {
   }
 
   if (screen === "verify") {
+    const remaining = codeDeadline ? Math.max(0, codeDeadline - nowTick) : null
+    const mmss = (ms: number) => {
+      const total = Math.floor(ms / 1000)
+      return `${String(Math.floor(total / 60)).padStart(2, "0")}:${String(total % 60).padStart(2, "0")}`
+    }
     return card(
       <div className="space-y-4">
         <h2 className="text-lg font-semibold">{t("ui-verify-email")}</h2>
@@ -233,16 +320,43 @@ export function AirdropRegistration() {
           value={code}
           onChange={(e) => setCode(e.target.value)}
         />
+        {remaining !== null && remaining > 0 && (
+          <p className="text-sm text-gray-500">
+            {t("ui-code-expiry", { time: mmss(remaining) })}
+          </p>
+        )}
+        {remaining !== null && remaining <= 0 && (
+          <p className="text-sm text-orange-600">{t("ui-code-expired")}</p>
+        )}
         {error && <p className="text-sm text-red-600">{error}</p>}
+        {notice && <p className="text-sm text-green-600">{notice}</p>}
         <button
           className={btnCls}
           disabled={busy}
           onClick={async () => {
             const r = await authCall("verify", { email, code })
-            if (r) setScreen("login")
+            if (r) {
+              setNotice(t("ui-msg-verify-ok"))
+              setScreen("login")
+            }
           }}
         >
           {t("ui-verify")}
+        </button>
+        <button
+          className="text-sm text-blue-600"
+          disabled={busy}
+          onClick={async () => {
+            const r = await authCall("resend", { email })
+            if (r) {
+              setCodeDeadline(
+                Date.now() + (Number(r.expiresInSeconds) || 600) * 1000
+              )
+              setNotice(t("ui-msg-code-sent"))
+            }
+          }}
+        >
+          {t("ui-resend")}
         </button>
       </div>
     )
