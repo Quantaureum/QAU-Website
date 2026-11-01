@@ -127,6 +127,14 @@ export function AirdropRegistration() {
     return () => clearInterval(id)
   }, [screen])
 
+  // Anchor the countdown to the moment the server issues the code: refreshing
+  // the tick base here keeps the first paint from overstating the remaining
+  // time by however long the page has been open.
+  const startCountdown = (expiresInSeconds: unknown) => {
+    setNowTick(Date.now())
+    setCodeDeadline(Date.now() + (Number(expiresInSeconds) || 600) * 1000)
+  }
+
   // Localized text for a server error response (machine code → copy).
   const errorText = (data: ApiResponse): string => {
     if (data.code === "slots_full") {
@@ -291,9 +299,7 @@ export function AirdropRegistration() {
           onClick={async () => {
             const r = await authCall("register", { email, password })
             if (r) {
-              setCodeDeadline(
-                Date.now() + (Number(r.expiresInSeconds) || 600) * 1000
-              )
+              startCountdown(r.expiresInSeconds)
               setScreen("verify")
             }
           }}
@@ -349,9 +355,7 @@ export function AirdropRegistration() {
           onClick={async () => {
             const r = await authCall("resend", { email })
             if (r) {
-              setCodeDeadline(
-                Date.now() + (Number(r.expiresInSeconds) || 600) * 1000
-              )
+              startCountdown(r.expiresInSeconds)
               setNotice(t("ui-msg-code-sent"))
             }
           }}
