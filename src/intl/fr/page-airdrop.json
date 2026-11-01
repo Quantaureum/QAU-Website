@@ -54,5 +54,12 @@
   "ui-msg-sybil-hold": "Inscription réussie ! Votre inscription nécessite une vérification supplémentaire (effectuée automatiquement sous 14 jours) — inutile de vous inscrire à nouveau.",
   "ui-msg-sybil-rejected": "Désolé, la vérification automatique n'a pas validé cette inscription.",
   "ui-code-expiry": "Le code expire dans {time}",
-  "ui-code-expired": "Le code a expiré. Veuillez le renvoyer."
+  "ui-code-expired": "Le code a expiré. Veuillez le renvoyer.",
+  "ui-login-github": "Se connecter avec GitHub",
+  "ui-login-github-hint": "Connectez-vous avec un compte GitHub vieux d'au moins un an, puis enregistrez votre portefeuille.",
+  "ui-login-github-unavailable": "La connexion via GitHub n'est pas disponible pour le moment. Veuillez réessayer plus tard.",
+  "ui-x-required-hint": "Un nom d'utilisateur X (Twitter) est requis pour s'inscrire.",
+  "ui-api-account-too-young": "Votre compte GitHub doit être âgé d'au moins un an pour participer.",
+  "ui-api-github-error": "Échec de la connexion via GitHub. Veuillez réessayer.",
+  "ui-api-email-disabled": "Les inscriptions par e-mail sont fermées. Veuillez vous connecter avec GitHub."
 }

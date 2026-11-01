@@ -54,5 +54,12 @@
   "ui-msg-sybil-hold": "登録が完了しました！追加審査が必要です（14 日以内に自動的に完了します）。再登録は不要です。",
   "ui-msg-sybil-rejected": "申し訳ありませんが、自動審査でこの登録は承認されませんでした。",
   "ui-code-expiry": "コードは {time} 後に期限切れになります",
-  "ui-code-expired": "コードの有効期限が切れました。再送信してください。"
+  "ui-code-expired": "コードの有効期限が切れました。再送信してください。",
+  "ui-login-github": "GitHub でサインイン",
+  "ui-login-github-hint": "登録から 1 年以上経過した GitHub アカウントでサインインし、ウォレットを登録してください。",
+  "ui-login-github-unavailable": "GitHub サインインは現在利用できません。後ほどもう一度お試しください。",
+  "ui-x-required-hint": "登録には X (Twitter) ユーザー名が必要です。",
+  "ui-api-account-too-young": "参加には GitHub アカウントの登録から 1 年以上が条件です。",
+  "ui-api-github-error": "GitHub サインインに失敗しました。もう一度お試しください。",
+  "ui-api-email-disabled": "メールでの登録は終了しました。GitHub でサインインしてください。"
 }

@@ -1,7 +1,7 @@
 /**
- * Admin: pending payout queue (approved + social-verified rows only).
+ * Admin: pending payout queue (approved rows, gated by social binding mode).
  * Guarded by AIRDROP_ADMIN_KEY (X-Admin-Key header) — the distributor
- * (cmd/airdrop, S7) is the only intended caller.
+ * (cmd/airdrop on the dedicated distributor node) is the only intended caller.
  */
 
 import { NextResponse } from "next/server"
@@ -38,9 +38,21 @@ export async function GET(req: Request): Promise<NextResponse> {
   )
   const rows = await listApprovedRegistrations(limit)
 
-  // Payout gating (防护设计 v2 L4): social binding rows must be verified.
+  // Payout gating (defense design v2 L4): social binding rows must be
+  // verified — but the current campaign mode is binding-only (a handle is
+  // required and recorded, no follow-target to verify), so an unverified
+  // binding is acceptable while no verification step exists.
+  const socialRequired = process.env.AIRDROP_REQUIRE_SOCIAL === "1"
+  const followTargetConfigured = Boolean(
+    (process.env.AIRDROP_X_TARGET_HANDLE || "").trim()
+  )
   const registrations = rows
-    .filter((r) => r.social_status !== "unverified")
+    .filter(
+      (r) =>
+        !followTargetConfigured ||
+        !socialRequired ||
+        r.social_status !== "unverified"
+    )
     .filter((r) => (r.social_status === "failed" ? false : true))
     .map((r) => ({
       id: r.id,

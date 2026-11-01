@@ -54,5 +54,12 @@
   "ui-msg-sybil-hold": "Kayıt başarılı! Kaydınız ek doğrulama gerektiriyor (14 gün içinde otomatik tamamlanır) — tekrar kayıt olmanız gerekmiyor.",
   "ui-msg-sybil-rejected": "Üzgünüz, otomatik doğrulamada bu kayıt geçemedi.",
   "ui-code-expiry": "Kod {time} sonra geçersiz olacak",
-  "ui-code-expired": "Kodun süresi doldu. Lütfen yeniden gönderin."
+  "ui-code-expired": "Kodun süresi doldu. Lütfen yeniden gönderin.",
+  "ui-login-github": "GitHub ile giriş yap",
+  "ui-login-github-hint": "En az bir yıllık bir GitHub hesabıyla giriş yapın, sonra cüzdanınızı kaydedin.",
+  "ui-login-github-unavailable": "GitHub girişi şu anda kullanılamıyor. Lütfen daha sonra tekrar deneyin.",
+  "ui-x-required-hint": "Kayıt için bir X (Twitter) kullanıcı adı gereklidir.",
+  "ui-api-account-too-young": "Katılmak için GitHub hesabınızın en az bir yıl önce oluşturulmuş olması gerekir.",
+  "ui-api-github-error": "GitHub girişi başarısız oldu. Lütfen tekrar deneyin.",
+  "ui-api-email-disabled": "E-posta kaydı kapatıldı. Lütfen GitHub ile giriş yapın."
 }

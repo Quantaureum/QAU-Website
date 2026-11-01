@@ -43,6 +43,7 @@ export async function GET(): Promise<NextResponse> {
     maxSlots: cfg.maxSlots,
     budgetQau: cfg.budgetQau,
     amountPerUser: cfg.amountPerUser,
+    requireSocial: cfg.requireSocial,
     startAt: cfg.startAt?.toISOString() ?? null,
     endAt: cfg.endAt?.toISOString() ?? null,
   })

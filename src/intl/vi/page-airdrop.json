@@ -54,5 +54,12 @@
   "ui-msg-sybil-hold": "Đăng ký thành công! Bản ghi của bạn cần xác minh bổ sung (tự động hoàn tất trong 14 ngày) — không cần đăng ký lại.",
   "ui-msg-sybil-rejected": "Rất tiếc, xác minh tự động không vượt qua cho đăng ký này.",
   "ui-code-expiry": "Mã sẽ hết hạn sau {time}",
-  "ui-code-expired": "Mã đã hết hạn. Vui lòng gửi lại."
+  "ui-code-expired": "Mã đã hết hạn. Vui lòng gửi lại.",
+  "ui-login-github": "Đăng nhập bằng GitHub",
+  "ui-login-github-hint": "Đăng nhập bằng tài khoản GitHub đã tạo ít nhất một năm, sau đó đăng ký ví của bạn.",
+  "ui-login-github-unavailable": "Đăng nhập GitHub hiện không khả dụng. Vui lòng thử lại sau.",
+  "ui-x-required-hint": "Cần có tên người dùng X (Twitter) để đăng ký.",
+  "ui-api-account-too-young": "Tài khoản GitHub của bạn phải được tạo ít nhất một năm để tham gia.",
+  "ui-api-github-error": "Đăng nhập GitHub thất bại. Vui lòng thử lại.",
+  "ui-api-email-disabled": "Đăng ký bằng email đã đóng. Vui lòng đăng nhập bằng GitHub."
 }

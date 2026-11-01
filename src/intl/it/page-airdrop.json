@@ -54,5 +54,12 @@
   "ui-msg-sybil-hold": "Registrazione riuscita! La tua iscrizione richiede una verifica aggiuntiva (completata automaticamente entro 14 giorni) — non è necessario registrarsi di nuovo.",
   "ui-msg-sybil-rejected": "Siamo spiacenti, la verifica automatica non ha approvato questa registrazione.",
   "ui-code-expiry": "Il codice scade tra {time}",
-  "ui-code-expired": "Il codice è scaduto. Reinvialo."
+  "ui-code-expired": "Il codice è scaduto. Reinvialo.",
+  "ui-login-github": "Accedi con GitHub",
+  "ui-login-github-hint": "Accedi con un account GitHub di almeno un anno, poi registra il tuo wallet.",
+  "ui-login-github-unavailable": "L'accesso con GitHub non è disponibile al momento. Riprova più tardi.",
+  "ui-x-required-hint": "Per la registrazione è richiesto un nome utente X (Twitter).",
+  "ui-api-account-too-young": "Il tuo account GitHub deve avere almeno un anno per partecipare.",
+  "ui-api-github-error": "Accesso con GitHub non riuscito. Riprova.",
+  "ui-api-email-disabled": "La registrazione via email è stata chiusa. Accedi con GitHub."
 }

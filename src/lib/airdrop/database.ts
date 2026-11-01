@@ -382,6 +382,17 @@ export async function initUsersTable(): Promise<void> {
   await sql`
     ALTER TABLE users ADD COLUMN IF NOT EXISTS verification_code_expires_at TIMESTAMP
   `
+  // OAuth login (GitHub): provider columns are NULL for legacy email rows.
+  await sql`
+    ALTER TABLE users ADD COLUMN IF NOT EXISTS provider VARCHAR(16)
+  `
+  await sql`
+    ALTER TABLE users ADD COLUMN IF NOT EXISTS github_id BIGINT
+  `
+  await sql`
+    CREATE UNIQUE INDEX IF NOT EXISTS users_github_id_key
+    ON users (github_id) WHERE github_id IS NOT NULL
+  `
 }
 
 /** Verification-code lifetime; mirrored by the API's expiresInSeconds field. */
@@ -420,6 +431,33 @@ export async function createUser(
             NOW() + (${VERIFICATION_CODE_TTL_MINUTES} * INTERVAL '1 minute'))
     ON CONFLICT (email) DO NOTHING
   `
+}
+
+/** Create a user from an OAuth login: pre-verified, no usable password. */
+export async function createUserOAuth(
+  uid: string,
+  email: string,
+  provider: string,
+  githubId: number
+): Promise<void> {
+  await initUsersTable()
+  // password_hash holds a sentinel no verifier accepts (no ":" separator).
+  await sql`
+    INSERT INTO users (uid, email, password_hash, is_verified, provider, github_id)
+    VALUES (${uid}, ${email}, 'oauth-no-password', TRUE, ${provider}, ${githubId})
+    ON CONFLICT (email) DO NOTHING
+  `
+}
+
+export async function findUserByGithubId(
+  githubId: number
+): Promise<AirdropUser | null> {
+  await initUsersTable()
+  const rows = await sql`
+    SELECT uid, email, is_verified FROM users WHERE github_id = ${githubId} LIMIT 1
+  `
+  const list = rowsOf<Record<string, unknown>>(rows)
+  return list.length ? (list[0] as unknown as AirdropUser) : null
 }
 
 /** Store a fresh verification code (resend flow). */

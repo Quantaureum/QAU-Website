@@ -54,5 +54,12 @@
   "ui-msg-sybil-hold": "Pendaftaran berhasil! Entri Anda memerlukan verifikasi tambahan (selesai otomatis dalam 14 hari) — tidak perlu mendaftar lagi.",
   "ui-msg-sybil-rejected": "Maaf, verifikasi otomatis tidak lulus untuk pendaftaran ini.",
   "ui-code-expiry": "Kode kedaluwarsa dalam {time}",
-  "ui-code-expired": "Kode telah kedaluwarsa. Silakan kirim ulang."
+  "ui-code-expired": "Kode telah kedaluwarsa. Silakan kirim ulang.",
+  "ui-login-github": "Masuk dengan GitHub",
+  "ui-login-github-hint": "Masuk dengan akun GitHub yang berusia minimal satu tahun, lalu daftarkan dompet Anda.",
+  "ui-login-github-unavailable": "Masuk GitHub saat ini tidak tersedia. Silakan coba lagi nanti.",
+  "ui-x-required-hint": "Nama pengguna X (Twitter) wajib diisi untuk pendaftaran.",
+  "ui-api-account-too-young": "Akun GitHub Anda harus berusia minimal satu tahun untuk berpartisipasi.",
+  "ui-api-github-error": "Masuk GitHub gagal. Silakan coba lagi.",
+  "ui-api-email-disabled": "Pendaftaran email telah ditutup. Silakan masuk dengan GitHub."
 }
