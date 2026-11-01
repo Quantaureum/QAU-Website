@@ -11,6 +11,8 @@
 
 import { NextRequest, NextResponse } from "next/server"
 
+import { SITE_URL } from "@/lib/constants"
+
 import { isGithubOAuthConfigured } from "../route"
 
 import { routing } from "@/i18n/routing"
@@ -19,24 +21,23 @@ import { createUserOAuth, findUserByGithubId } from "@/lib/airdrop/database"
 
 const ACCOUNT_MIN_AGE_MS = 365 * 24 * 3600 * 1000
 
-function fail(origin: string, locale: string, code: string): NextResponse {
+function fail(locale: string, code: string): NextResponse {
   return NextResponse.redirect(
-    `${origin}/${locale}/airdrop?authError=${code}`,
+    `${SITE_URL}/${locale}/airdrop?authError=${code}`,
     302
   )
 }
 
 export async function GET(req: NextRequest): Promise<NextResponse> {
   const url = new URL(req.url)
-  const origin = url.origin
   const stateCookie = req.cookies.get("oauth_state")?.value || ""
   const [nonce, locale = routing.defaultLocale] = stateCookie.split(".")
   const code = url.searchParams.get("code") || ""
   const state = url.searchParams.get("state") || ""
 
-  if (!isGithubOAuthConfigured()) return fail(origin, locale, "github_error")
+  if (!isGithubOAuthConfigured()) return fail(locale, "github_error")
   if (!code || !nonce || state !== stateCookie) {
-    return fail(origin, locale, "state_mismatch")
+    return fail(locale, "state_mismatch")
   }
 
   const tokenRes = await fetch("https://github.com/login/oauth/access_token", {
@@ -49,11 +50,11 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
       client_id: process.env.GITHUB_OAUTH_CLIENT_ID,
       client_secret: process.env.GITHUB_OAUTH_CLIENT_SECRET,
       code,
-      redirect_uri: `${origin}/api/airdrop/auth/oauth/github/callback`,
+      redirect_uri: `${SITE_URL}/api/airdrop/auth/oauth/github/callback`,
     }),
   })
   const token = (await tokenRes.json()) as { access_token?: string }
-  if (!token.access_token) return fail(origin, locale, "github_error")
+  if (!token.access_token) return fail(locale, "github_error")
 
   const userRes = await fetch("https://api.github.com/user", {
     headers: {
@@ -61,7 +62,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
       Accept: "application/vnd.github+json",
     },
   })
-  if (!userRes.ok) return fail(origin, locale, "github_error")
+  if (!userRes.ok) return fail(locale, "github_error")
   const profile = (await userRes.json()) as {
     id: number
     login: string
@@ -76,7 +77,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
     !Number.isFinite(createdAtMs) ||
     Date.now() - createdAtMs < ACCOUNT_MIN_AGE_MS
   ) {
-    return fail(origin, locale, "account_too_young")
+    return fail(locale, "account_too_young")
   }
 
   let user = await findUserByGithubId(profile.id)
@@ -86,7 +87,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
     const uid = `aid-gh-${profile.id}`
     await createUserOAuth(uid, email, "github", profile.id)
     user = await findUserByGithubId(profile.id)
-    if (!user) return fail(origin, locale, "github_error")
+    if (!user) return fail(locale, "github_error")
   }
 
   const authToken = generateToken({
@@ -94,7 +95,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
     email: user.email,
     role: "user",
   })
-  const res = NextResponse.redirect(`${origin}/${locale}/airdrop`, 302)
+  const res = NextResponse.redirect(`${SITE_URL}/${locale}/airdrop`, 302)
   res.cookies.set("oauth_state", "", { maxAge: 0, path: "/" })
   res.cookies.set("auth_token", authToken, {
     httpOnly: true,

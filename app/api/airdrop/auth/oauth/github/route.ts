@@ -11,6 +11,8 @@ import { randomBytes } from "crypto"
 
 import { NextRequest, NextResponse } from "next/server"
 
+import { SITE_URL } from "@/lib/constants"
+
 import { routing } from "@/i18n/routing"
 
 export function isGithubOAuthConfigured(): boolean {
@@ -35,9 +37,11 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
   const state = `${randomBytes(16).toString("hex")}.${locale}`
   const authorize = new URL("https://github.com/login/oauth/authorize")
   authorize.searchParams.set("client_id", process.env.GITHUB_OAUTH_CLIENT_ID!)
+  // Base from SITE_URL, not req.url: behind the reverse proxy the internal
+  // origin leaks into redirect_uri and GitHub rejects the mismatch.
   authorize.searchParams.set(
     "redirect_uri",
-    `${url.origin}/api/airdrop/auth/oauth/github/callback`
+    `${SITE_URL}/api/airdrop/auth/oauth/github/callback`
   )
   authorize.searchParams.set("scope", "read:user")
   authorize.searchParams.set("state", state)
