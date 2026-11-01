@@ -1,12 +1,12 @@
 /**
  * Airdrop database layer (Neon Postgres serverless).
  *
- * Ported from the D:/bigood/website prototype (lib/database.ts, 2026-10-13)
- * into the production site. Schema evolution is idempotent: the init runs on
- * first use and every statement is IF NOT EXISTS / ADD COLUMN IF NOT EXISTS,
- * so deploys never block on migrations.
+ * Ported from the prototype database module (2026-10-13) into the production
+ * site. Schema evolution is idempotent: the init runs on first use and every
+ * statement is IF NOT EXISTS / ADD COLUMN IF NOT EXISTS, so deploys never
+ * block on migrations.
  *
- * Anti-sybil additions vs the prototype (防护设计 v2):
+ * Anti-sybil additions vs the prototype (defense design v2):
  *   - sybil_score / sybil_status / sybil_scored_at / sybil_rules columns
  *   - hold re-evaluation timestamps
  *   - unique indexes on user_id, wallet_address, x_handle (L5)
@@ -378,7 +378,14 @@ export async function initUsersTable(): Promise<void> {
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )
   `
+  // Code TTL (added after launch; NULL = legacy row whose code never expires)
+  await sql`
+    ALTER TABLE users ADD COLUMN IF NOT EXISTS verification_code_expires_at TIMESTAMP
+  `
 }
+
+/** Verification-code lifetime; mirrored by the API's expiresInSeconds field. */
+export const VERIFICATION_CODE_TTL_MINUTES = 10
 
 export async function findUserById(uid: string): Promise<AirdropUser | null> {
   await initUsersTable()
@@ -408,23 +415,50 @@ export async function createUser(
 ): Promise<void> {
   await initUsersTable()
   await sql`
-    INSERT INTO users (uid, email, password_hash, is_verified, verification_code)
-    VALUES (${uid}, ${email}, ${passwordHash}, FALSE, ${code})
+    INSERT INTO users (uid, email, password_hash, is_verified, verification_code, verification_code_expires_at)
+    VALUES (${uid}, ${email}, ${passwordHash}, FALSE, ${code},
+            NOW() + (${VERIFICATION_CODE_TTL_MINUTES} * INTERVAL '1 minute'))
     ON CONFLICT (email) DO NOTHING
   `
 }
 
+/** Store a fresh verification code (resend flow). */
+export async function updateUserVerificationCode(
+  email: string,
+  code: string
+): Promise<void> {
+  await initUsersTable()
+  await sql`
+    UPDATE users SET verification_code = ${code},
+                     verification_code_expires_at = NOW() + (${VERIFICATION_CODE_TTL_MINUTES} * INTERVAL '1 minute')
+    WHERE lower(email) = lower(${email})
+  `
+}
+
+/**
+ * Verify the emailed code. NULL expiry means a legacy row from before the
+ * TTL existed — still accepted so pre-launch codes keep working.
+ */
 export async function verifyUserEmail(
   email: string,
   code: string
-): Promise<boolean> {
+): Promise<"ok" | "expired" | "wrong"> {
   await initUsersTable()
   const rows = rowsOf<{ uid: string }>(
     await sql`
-    UPDATE users SET is_verified = TRUE, verification_code = NULL
+    UPDATE users SET is_verified = TRUE, verification_code = NULL, verification_code_expires_at = NULL
     WHERE lower(email) = lower(${email}) AND verification_code = ${code}
+      AND (verification_code_expires_at IS NULL OR verification_code_expires_at > NOW())
     RETURNING uid
   `
   )
-  return rows.length > 0
+  if (rows.length > 0) return "ok"
+  const stale = rowsOf<{ uid: string }>(
+    await sql`
+    SELECT uid FROM users
+    WHERE lower(email) = lower(${email}) AND verification_code = ${code}
+      AND verification_code_expires_at IS NOT NULL AND verification_code_expires_at <= NOW()
+  `
+  )
+  return stale.length > 0 ? "expired" : "wrong"
 }
