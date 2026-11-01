@@ -9,6 +9,8 @@
  * client maps codes to localized copy. No user-facing prose here.
  */
 
+import { createHmac } from "crypto"
+
 import { NextRequest, NextResponse } from "next/server"
 
 import { SITE_URL } from "@/lib/constants"
@@ -21,6 +23,24 @@ import { createUserOAuth, findUserByGithubId } from "@/lib/airdrop/database"
 
 const ACCOUNT_MIN_AGE_MS = 365 * 24 * 3600 * 1000
 
+function requireSecret(): string {
+  const s = process.env.JWT_SECRET || ""
+  if (!s) throw new Error("JWT_SECRET environment variable is required")
+  return s
+}
+
+/** Verify the HMAC-signed state (see ../route.ts signedState). */
+function verifyState(state: string): string | null {
+  const parts = state.split(".")
+  if (parts.length !== 3) return null
+  const [nonce, locale, sig] = parts
+  const expected = createHmac("sha256", requireSecret())
+    .update(`${nonce}.${locale}`)
+    .digest("hex")
+    .slice(0, 32)
+  return sig === expected && nonce && locale ? locale : null
+}
+
 function fail(locale: string, code: string): NextResponse {
   return NextResponse.redirect(
     `${SITE_URL}/${locale}/airdrop?authError=${code}`,
@@ -30,15 +50,15 @@ function fail(locale: string, code: string): NextResponse {
 
 export async function GET(req: NextRequest): Promise<NextResponse> {
   const url = new URL(req.url)
-  const stateCookie = req.cookies.get("oauth_state")?.value || ""
-  const [nonce, locale = routing.defaultLocale] = stateCookie.split(".")
   const code = url.searchParams.get("code") || ""
   const state = url.searchParams.get("state") || ""
 
-  if (!isGithubOAuthConfigured()) return fail(locale, "github_error")
-  if (!code || !nonce || state !== stateCookie) {
-    console.log("[airdrop-oauth] rejected: state mismatch")
-    return fail(locale, "state_mismatch")
+  if (!isGithubOAuthConfigured())
+    return fail(routing.defaultLocale, "github_error")
+  const locale = verifyState(state)
+  if (!locale || !code) {
+    console.log("[airdrop-oauth] rejected: state invalid or missing code")
+    return fail(routing.defaultLocale, "state_mismatch")
   }
 
   const tokenRes = await fetch("https://github.com/login/oauth/access_token", {
