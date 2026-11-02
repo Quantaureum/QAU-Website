@@ -204,9 +204,9 @@ export function AirdropRegistration() {
     )
   }
 
-  // SSR and the first paint render a skeleton, never the CTA: the
-  // Participate button flashing before hydration was flagged by the daily
-  // ops patrol (2026-10-26), and the status fetch only resolves client-side.
+  // SSR and the first paint render a skeleton, never the CTA: the status
+  // fetch only resolves client-side, so any CTA rendered server-side would
+  // flash before hydration.
   if (phase === "loading") {
     return card(
       <div className="space-y-4 text-center" aria-busy="true">
