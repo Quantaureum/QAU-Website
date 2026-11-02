@@ -1,9 +1,21 @@
 // All primary redirects ([source, destination, permanent? (default true)])
+//
+// Target rule: every destination must resolve to a live route (app/[locale]
+// page or public/content). The ethereum.org migration table pointed at hub
+// subpaths that were never ported (guides, dao, layer-2, nft, security,
+// developers/docs/*), which 301'd straight into 404s. Dead targets now go to
+// the closest live hub instead:
+//   developer-doc paths        -> /developers/
+//   beginner concept pages     -> /learn/
+//   app/ecosystem discovery    -> /explorer/
+//   community programs         -> /community/
+//   wallet topics              -> /wallets/
+//   staking subtopics          -> /staking/
 
 /** @type { [string, string, boolean | undefined][] } */
 module.exports = [
-  ["/developers/docs/evm", "/developers/docs/qvm/"],
-  ["/developers/docs/evm/opcodes", "/developers/docs/qvm/opcodes/"],
+  ["/developers/docs/evm", "/developers/"],
+  ["/developers/docs/evm/opcodes", "/developers/"],
   ["/discord", "https://discord.gg/MSctkBT5j"],
   ["/brand", "/assets/"],
   ["/what-is-ethereum", "/what-is-quantaureum/"],
@@ -13,85 +25,69 @@ module.exports = [
   ["/token", "/developers/"],
   ["/cli", "/developers/"],
   ["/roadmap/vision", "/roadmap/"],
-  ["/roadmap/future-proofing", "/roadmap/security/"],
-  [
-    "/roadmap/future-proofing/quantum-resistance",
-    "/roadmap/security/quantum-resistance/",
-  ],
+  ["/roadmap/future-proofing", "/roadmap/"],
+  ["/roadmap/future-proofing/quantum-resistance", "/roadmap/"],
   ["/search", "/"],
-  ["/download", "/wallets/find-wallet/"],
-  ["/how", "/guides/"],
-  ["/nfts", "/nft/"],
-  ["/daos", "/dao/"],
-  ["/layer2", "/layer-2/"],
-  ["/grants", "/community/grants/"],
-  ["/java", "/developers/docs/programming-languages/java/"],
-  ["/python", "/developers/docs/programming-languages/python/"],
-  ["/javascript", "/developers/docs/programming-languages/javascript/"],
-  ["/golang", "/developers/docs/programming-languages/golang/"],
-  ["/rust", "/developers/docs/programming-languages/rust/"],
-  ["/dot-net", "/developers/docs/programming-languages/dot-net/"],
-  ["/delphi", "/developers/docs/programming-languages/delphi/"],
-  ["/dart", "/developers/docs/programming-languages/dart/"],
   ["/beginners", "/what-is-quantaureum/"],
-  ["/build", "/developers/tools/"],
+  ["/download", "/wallets/"],
+  ["/how", "/learn/"],
+  ["/nfts", "/learn/"],
+  ["/daos", "/learn/"],
+  ["/layer2", "/learn/"],
+  ["/grants", "/community/"],
+  ["/java", "/developers/"],
+  ["/python", "/developers/"],
+  ["/javascript", "/developers/"],
+  ["/golang", "/developers/"],
+  ["/rust", "/developers/"],
+  ["/dot-net", "/developers/"],
+  ["/delphi", "/developers/"],
+  ["/dart", "/developers/"],
+  ["/build", "/developers/"],
 
   // Former ethereum.org eth2/roadmap/upgrade URLs now point at the generic
-  // Quantaureum roadmap and staking hubs. Historical sub-paths were removed.
+  // Quantaureum roadmap hub. Historical sub-paths were removed.
   ["/eth2", "/roadmap/"],
   ["/eth2/:path*", "/roadmap/"],
   ["/upgrades", "/roadmap/"],
   ["/upgrades/:path*", "/roadmap/"],
   ["/garden", "/roadmap/"],
 
-  ["/deprecated-software", "/apps/"],
+  ["/deprecated-software", "/explorer/"],
   ["/dashboards", "/resources"],
   ["/history", "/roadmap/"],
   ["/wallet", "/wallets/"],
-  ["/beginners", "/what-is-quantaureum/"],
 
   // Developer docs legacy paths (generic, chain-agnostic)
-  [
-    "/developers/learning-tools",
-    "/developers/tools/categories/education-standards/",
-  ],
-  ["/developers/local-environment", "/developers/tools/"],
-  ["/developers/docs/scaling/layer-2-rollups", "/developers/docs/scaling"],
-  ["/developers/docs/layer-2-scaling", "/layer-2/"],
-  ["/developers/docs/zk", "/zero-knowledge-proofs/"],
-  ["/developers/docs/zk-snarks", "/zero-knowledge-proofs/"],
-  ["/developers/docs/security", "/developers/docs/smart-contracts/security/"],
+  ["/developers/learning-tools", "/developers/"],
+  ["/developers/local-environment", "/developers/"],
+  ["/developers/docs/scaling/layer-2-rollups", "/developers/"],
+  ["/developers/docs/layer-2-scaling", "/developers/"],
+  ["/developers/docs/zk", "/developers/"],
+  ["/developers/docs/zk-snarks", "/developers/"],
+  ["/developers/docs/security", "/developers/"],
   ["/developers/docs/wallets", "/wallets/"],
-  ["/developers/docs/daos", "/dao/"],
-  ["/developers/docs/rollups", "/developers/docs/scaling/#rollups"],
-  [
-    "/developers/docs/smart-contracts/source-code-verification",
-    "/developers/docs/smart-contracts/verifying/",
-  ],
+  ["/developers/docs/daos", "/developers/"],
+  ["/developers/docs/rollups", "/developers/"],
+  ["/developers/docs/smart-contracts/source-code-verification", "/developers/"],
   [
     "/developers/docs/smart-contracts/upgrading-smart-contracts",
-    "/developers/docs/smart-contracts/upgrading/",
+    "/developers/",
   ],
+  ["/developers/docs/consensus-mechanisms/proof-of-stake", "/developers/"],
   [
-    "/developers/docs/consensus-mechanisms/proof-of-stake",
-    "/developers/docs/consensus-mechanisms/pos/",
+    "/developers/docs/consensus-mechanisms/proof-of-stake/slashing",
+    "/developers/",
   ],
-  [
-    "/developers/docs/consensus-mechanisms/pos/slashing",
-    "/developers/docs/consensus-mechanisms/pos/rewards-and-penalties/",
-  ],
-  ["/developers/docs/ides/%23web-based-ides", "/developers/docs/"],
-  ["/developers/docs/scaling/rollups", "/developers/docs/scaling/#rollups"],
-  [
-    "/developers/docs/scaling/layer-2",
-    "/developers/docs/scaling/#layer-2-scaling",
-  ],
+  ["/developers/docs/ides/%23web-based-ides", "/developers/"],
+  ["/developers/docs/scaling/rollups", "/developers/"],
+  ["/developers/docs/scaling/layer-2", "/developers/"],
 
   // Removed legacy ethereum.org hub pages — point at the closest Quantaureum equivalent
   ["/enterprise", "/what-is-quantaureum/"],
   ["/enterprise/:path*", "/what-is-quantaureum/"],
-  ["/use", "/apps/"],
-  ["/dapps", "/apps/"],
+  ["/use", "/explorer/"],
+  ["/dapps", "/explorer/"],
   ["/team", "/what-is-quantaureum/"],
   ["/donate", "/"],
   ["/blog", "/"],
@@ -100,28 +96,20 @@ module.exports = [
   ["/10-years", "/"],
   ["/10years", "/"],
   ["/about/:path*", "/what-is-quantaureum/"],
-  // QPOS 为 PoS 共识，不存在矿工：explorer/miners 并入 validators
+  // QPOS is a PoS consensus: no miners exist, so explorer/miners folds into
+  // the validators page.
   ["/explorer/miners", "/explorer/validators/"],
-  [
-    "/guides/how-to-register-an-ethereum-account",
-    "/guides/how-to-create-an-account/",
-  ],
-  [
-    "/guides/how-to-create-an-ethereum-account",
-    "/guides/how-to-create-an-account/",
-  ],
-  ["/wlan", "/wallets/find-wallet/"],
-  ["/wallets/security", "/security/"],
-  ["/zero-knowledge", "/zero-knowledge-proofs/"],
-  ["/layer-2-scaling", "/layer-2/"],
-  ["/layer-2-scaling/rollups", "/developers/docs/scaling/"],
-  ["/layer-1-scaling/sidechains", "/developers/docs/scaling/sidechains/"],
-  [
-    "/layer-2-scaling/state-channels",
-    "/developers/docs/scaling/state-channels/",
-  ],
-  ["/staking/withdraws", "/staking/withdrawals/"],
-  ["/languages", "/community/language-resources/"],
+  ["/guides/how-to-register-an-ethereum-account", "/wallets/"],
+  ["/guides/how-to-create-an-ethereum-account", "/wallets/"],
+  ["/wlan", "/wallets/"],
+  ["/wallets/security", "/wallets/"],
+  ["/zero-knowledge", "/learn/"],
+  ["/layer-2-scaling", "/learn/"],
+  ["/layer-2-scaling/rollups", "/developers/"],
+  ["/layer-1-scaling/sidechains", "/developers/"],
+  ["/layer-2-scaling/state-channels", "/developers/"],
+  ["/staking/withdraws", "/staking/"],
+  ["/languages", "/community/"],
 
   // Pages removed from the QAU site: send old URLs to the closest live hub.
   ["/apps", "/explorer/"],
