@@ -12,6 +12,8 @@ import { getLastDeployDate } from "@/lib/utils/getLastDeployDate"
 import { getLocaleTimestamp } from "@/lib/utils/time"
 import { toLanguageTag } from "@/lib/utils/url"
 
+import { LANG_DIRS } from "@/lib/constants"
+
 import { ibmPlexMono, inter } from "../fonts"
 
 import Providers from "./providers"
@@ -62,6 +64,7 @@ export default async function LocaleLayout(props: {
   return (
     <html
       lang={toLanguageTag(locale)}
+      dir={LANG_DIRS[locale] ?? "ltr"}
       className={`${inter.variable} ${ibmPlexMono.variable}`}
       // Lets Next disable smooth scroll during route transitions so it lands
       // at the true top instead of short (behind the sticky nav).
