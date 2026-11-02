@@ -19,6 +19,8 @@ import { useLocale, useTranslations } from "next-intl"
 
 import TurnstileWidget from "@/components/TurnstileWidget"
 
+import { API_ERROR_KEYS, SLOTS_FULL_ERROR_KEY } from "@/lib/airdrop/errorCodes"
+
 type Phase = "loading" | "not_started" | "open" | "ended"
 
 interface StatusResponse {
@@ -47,32 +49,6 @@ interface MeResponse {
   email: string | null
   provider: string | null
   githubEnabled: boolean
-}
-
-// Server error codes → page-airdrop keys. Codes missing here (and network
-// failures) fall back to the generic network-error copy. A few codes reuse
-// existing page copy instead of dedicated ui-api-* keys.
-const API_ERROR_KEYS: Record<string, string> = {
-  invalid_request: "ui-api-invalid-request",
-  invalid_x_handle: "ui-api-invalid-x-handle",
-  x_handle_taken: "ui-api-x-handle-taken",
-  wallet_taken: "ui-api-wallet-taken",
-  turnstile_missing: "ui-api-turnstile-missing",
-  turnstile_failed: "ui-api-turnstile-failed",
-  turnstile_invalid: "ui-api-turnstile-invalid",
-  turnstile_fast: "ui-api-turnstile-fast",
-  not_logged_in: "ui-api-not-logged-in",
-  system_not_configured: "ui-api-system-not-configured",
-  send_code_rate_limited: "ui-api-send-code-rate-limited",
-  account_too_young: "ui-api-account-too-young",
-  state_mismatch: "ui-api-github-error",
-  github_error: "ui-api-github-error",
-  github_not_configured: "ui-login-github-unavailable",
-  email_disabled: "ui-api-email-disabled",
-  // reuse of existing page copy
-  campaign_not_started: "ui-not-started",
-  campaign_ended: "ui-ended",
-  invalid_wallet: "ui-invalid-wallet",
 }
 
 export function AirdropRegistration() {
@@ -122,7 +98,7 @@ export function AirdropRegistration() {
   // Localized text for a server error response (machine code → copy).
   const errorText = (data: ApiResponse): string => {
     if (data.code === "slots_full") {
-      return t("ui-api-slots-full", {
+      return t(SLOTS_FULL_ERROR_KEY, {
         maxSlots: Number(data.maxSlots ?? 0),
         budgetQau: Number(data.budgetQau ?? 0),
       })
@@ -224,6 +200,19 @@ export function AirdropRegistration() {
                 : t("ui-registration-rejected")}
         </h2>
         <p className="text-sm text-gray-700">{done.message}</p>
+      </div>
+    )
+  }
+
+  // SSR and the first paint render a skeleton, never the CTA: the
+  // Participate button flashing before hydration was flagged by the daily
+  // ops patrol (2026-10-26), and the status fetch only resolves client-side.
+  if (phase === "loading") {
+    return card(
+      <div className="space-y-4 text-center" aria-busy="true">
+        <h2 className="text-lg font-semibold">{t("page-airdrop-title")}</h2>
+        <div className="mx-auto h-4 w-2/3 animate-pulse rounded bg-gray-200" />
+        <div className="mx-auto h-9 w-full animate-pulse rounded bg-gray-200" />
       </div>
     )
   }

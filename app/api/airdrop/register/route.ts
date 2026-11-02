@@ -2,9 +2,9 @@
  * Airdrop registration endpoint — production site port with the v2 sybil
  * scoring integrated. Flow (defense design v2):
  *
- *   campaign window → auth session → email verified (L2) → idempotency (L5)
- *   → address validation → X binding (L4) → Turnstile (L1) → IP cap (L3)
- *   → sybil score (L6-v2) → insert with auto disposition
+ *   campaign window → auth session (GitHub OAuth) → verified account →
+ *   idempotency (L5) → address validation → X binding (L4) → Turnstile (L1)
+ *   → IP cap (L3) → sybil score (L6-v2) → insert with auto disposition
  *
  * Response contract: every body carries a machine-readable `code` field
  * (plus `success`); the client maps codes to localized copy — no
