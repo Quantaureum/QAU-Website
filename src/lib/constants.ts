@@ -22,6 +22,12 @@ export const LOCALES_CODES = BUILD_LOCALES
   ? BUILD_LOCALES.split(",")
   : i18nConfig.map(({ code }) => code)
 
+// Text direction per locale code (from `i18n.config.json`), used for the
+// <html dir> attribute; locales missing from the config fall back to "ltr".
+export const LANG_DIRS: Record<string, string> = Object.fromEntries(
+  i18nConfig.map(({ code, langDir }) => [code, langDir])
+)
+
 // Site URL - resolved at build time in next.config.js from Netlify deploy context
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://quantaureum.com"
