@@ -42,7 +42,7 @@ const COLUMNS = [
 
 const ROWS = [
   [
-    "Quantaureum Mainnet",
+    "Quantaureum Testnet",
     "L1",
     "Proof-of-stake",
     "On-chain",

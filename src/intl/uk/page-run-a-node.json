@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "Зберіть власний",
   "page-run-a-node-shop-dappnode": "Зберіть власний",
   "page-run-a-node-staking-title": "Стейкайте свій QAU",
-  "page-run-a-node-staking-description": "Хоча це не обов'язково, із запущеним вузлом ви на крок ближче до стейкінгу свого QAU, щоб отримувати винагороди та робити внесок в інший компонент безпеки Quantaureum.",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "Стейкати QAU",
   "page-run-a-node-staking-plans-title": "Плануєте стейкінг?",
   "page-run-a-node-staking-plans-description": "Для ефективної роботи валідатора рекомендовано: 8 ГБ RAM, NVMe SSD об'ємом 500 ГБ або більше та симетричне підключення 100 Мбіт/с зі статичною публічною IP-адресою. Ці характеристики наведені в офіційній документації вузла.",

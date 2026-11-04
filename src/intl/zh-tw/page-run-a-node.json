@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "自行建置",
   "page-run-a-node-shop-dappnode": "自行建置",
   "page-run-a-node-staking-title": "質押你的 QAU",
-  "page-run-a-node-staking-description": "雖然並非必要，但隨著節點啟動並運作，你離質押 QAU 以賺取獎勵並協助貢獻量子金链安全的另一個層面又更近了一步。",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "質押 QAU",
   "page-run-a-node-staking-plans-title": "計畫進行質押嗎？",
   "page-run-a-node-staking-plans-description": "要高效運行驗證者：建議配備 8 GB 記憶體、500 GB 以上的 NVMe SSD，以及具備靜態公網 IP 的 100 Mbit 對稱頻寬連線。以上規格來自官方節點文件。",

@@ -31,7 +31,7 @@
   "page-what-is-quantaureum-network-section-description-16": "플랫폼 퇴출(de-platforming) 없는 소셜 미디어",
   "page-what-is-quantaureum-network-section-description-17": "개방적이고 투명한 금융 시스템",
   "page-what-is-quantaureum-network-section-description-18": "본질적으로 쿠앤타리움 네트워크는 디지털 소유권과 개방적 참여를 위한 기반입니다.",
-  "page-what-is-quantaureum-network-section-description-19": "누군가 <strong>Quantaureum 메인넷</strong>이라고 말하는 것을 들을 수 있습니다. 이는 실제 가치 흐름이 일어나는 Quantaureum의 메인 네트워크입니다. 공개 테스트넷은 안전한 실험을 위한 별도의 네트워크입니다.",
+  "page-what-is-quantaureum-network-section-description-19": "You may see ChainID 1668 referred to as the Quantaureum mainnet configuration. It is configured in code, but the project is currently in testnet phase (1669) and mainnet launch status will be announced officially.",
   "page-what-is-quantaureum-network-gas-section-description-1": "쿠앤타리움의 모든 트랜잭션에는 가스비라는 소액의 수수료가 듭니다. QAU를 전송하든, 토큰을 스왑하든, 앱을 사용하든, 블록체인에 데이터를 기록할 때마다 소량의 가스를 지불하게 됩니다.",
   "page-what-is-quantaureum-network-gas-section-description-2": "<strong>가스비는 쿠앤타리움이 원활하게 작동하도록 유지합니다</strong>. 가스비가 없다면, 악의적인 행위자가 빈 트랜잭션으로 네트워크에 스팸을 보내 심각한 혼잡을 유발하여 사용을 불가능하게 만들 수 있습니다. 사용자가 지불할 의사가 있는 수수료에 따라 트랜잭션의 우선순위를 정할 방법이 없기 때문입니다.",
   "page-what-is-quantaureum-network-gas-section-description-3": "Quantaureum 가스 수수료는 트랜잭션이 소모하는 리소스 — 컴퓨트, 대역폭, 저장 — 의 비용을 충당합니다. 사용자에게는 모든 것이 단일 값으로 단순화되며, 각 작업의 상대적 비용은 프로토콜에서 정의됩니다.",

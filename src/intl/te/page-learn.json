@@ -135,5 +135,16 @@
   "unchained-title": "అన్‌చైన్డ్",
   "unchained-description": "వికేంద్రీకృత ఇంటర్నెట్‌ను నిర్మిస్తున్న వ్యక్తులను, మన భవిష్యత్తుకు ఆధారమయ్యే ఈ సాంకేతికత వివరాలను మరియు నియంత్రణ, భద్రత మరియు గోప్యత వంటి క్రిప్టోలోని కొన్ని అత్యంత క్లిష్టమైన అంశాలను లోతుగా విశ్లేషిస్తుంది",
   "the-daily-gwei-title": "ది డైలీ Gwei",
-  "the-daily-gwei-description": "Quantaureum వార్తల సారాంశాలు, అప్‌డేట్‌లు మరియు విశ్లేషణ"
+  "the-daily-gwei-description": "Quantaureum వార్తల సారాంశాలు, అప్‌డేట్‌లు మరియు విశ్లేషణ",
+  "learn-more-quantaureum-official": "Official Quantaureum resources",
+  "official-github-title": "Quantaureum on GitHub",
+  "official-github-description": "Source code, protocol documentation and release history",
+  "official-docs-title": "Developer documentation",
+  "official-docs-description": "In-depth documentation for building on Quantaureum",
+  "official-explorer-title": "Quantaureum Explorer",
+  "official-explorer-description": "Live network data: blocks, transactions, validators",
+  "official-discord-title": "Discord community",
+  "official-discord-description": "Chat with the community and the development team",
+  "official-telegram-title": "Telegram channel",
+  "official-telegram-description": "Announcements and community discussion"
 }

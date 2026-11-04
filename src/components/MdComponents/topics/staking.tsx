@@ -22,7 +22,6 @@ import StakingConsiderations from "@/components/Staking/StakingConsiderations"
 import StakingGuides from "@/components/Staking/StakingGuides"
 import StakingHowSoloWorks from "@/components/Staking/StakingHowSoloWorks"
 import StakingLaunchpadWidget from "@/components/Staking/StakingLaunchpadWidget"
-import StakingProductsCardGrid from "@/components/Staking/StakingProductsCardGrid"
 import WithdrawalCredentials from "@/components/Staking/WithdrawalCredentials"
 import WithdrawalsTabComparison from "@/components/Staking/WithdrawalsTabComparison"
 
@@ -55,7 +54,6 @@ export const stakingComponents = {
   StakingGuides,
   StakingHowSoloWorks,
   StakingLaunchpadWidget,
-  StakingProductsCardGrid,
   TableContainer,
   TriangleAlert,
   WithdrawalCredentials,

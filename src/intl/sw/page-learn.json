@@ -135,5 +135,16 @@
   "unchained-title": "Unchained",
   "unchained-description": "Inaingia kwa kina kuhusu watu wanaojenga intaneti iliyogatuliwa, maelezo ya teknolojia hii inayoweza kuweka msingi wa maisha yetu ya baadaye, na baadhi ya mada ngumu zaidi katika kripto, kama vile udhibiti, usalama na faragha",
   "the-daily-gwei-title": "The Daily Gwei",
-  "the-daily-gwei-description": "Muhtasari wa habari za Quantaureum, sasisho na uchambuzi"
+  "the-daily-gwei-description": "Muhtasari wa habari za Quantaureum, sasisho na uchambuzi",
+  "learn-more-quantaureum-official": "Official Quantaureum resources",
+  "official-github-title": "Quantaureum on GitHub",
+  "official-github-description": "Source code, protocol documentation and release history",
+  "official-docs-title": "Developer documentation",
+  "official-docs-description": "In-depth documentation for building on Quantaureum",
+  "official-explorer-title": "Quantaureum Explorer",
+  "official-explorer-description": "Live network data: blocks, transactions, validators",
+  "official-discord-title": "Discord community",
+  "official-discord-description": "Chat with the community and the development team",
+  "official-telegram-title": "Telegram channel",
+  "official-telegram-description": "Announcements and community discussion"
 }

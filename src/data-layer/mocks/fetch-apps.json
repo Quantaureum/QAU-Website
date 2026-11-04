@@ -12,7 +12,7 @@
       "networks": [
         "Base",
         "Scroll",
-        "Quantaureum Mainnet",
+        "Quantaureum Testnet",
         "Arbitrum One",
         "OP Mainnet",
         "zkSync Mainnet"
@@ -59,7 +59,7 @@
       ],
       "networks": [
         "Base",
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [
         "https://i.imgur.com/6OxNqMF.jpeg"
@@ -83,7 +83,7 @@
       "parentCompany": "Zora Labs",
       "parentCompanyURL": "https://zora.co",
       "openSource": true,
-      "contractAddress": "0xaD031EeE55f595dF6Dbd61e9ef3B908FaD1B3671",
+      "contractAddress": "0x1111111111111111111111111111111111111111",
       "dateOfLaunch": "1/1/2021",
       "lastUpdated": "7/3/2025",
       "ready": "true",
@@ -103,7 +103,7 @@
         "Identity"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -139,7 +139,7 @@
         "Identity"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -175,7 +175,7 @@
         "Identity"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -211,7 +211,7 @@
         "Identity"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -247,7 +247,7 @@
         "Identity"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -283,7 +283,7 @@
         "Governance"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -319,7 +319,7 @@
         "Governance"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -355,7 +355,7 @@
         "Governance"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -391,7 +391,7 @@
         "Governance"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -428,7 +428,7 @@
         "Communication"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -464,7 +464,7 @@
         "Governance"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -500,7 +500,7 @@
         "Communication"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -536,7 +536,7 @@
         "Communication"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -572,7 +572,7 @@
         "Communication"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -608,7 +608,7 @@
         "Communication"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -644,7 +644,7 @@
         "Communication"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -680,7 +680,7 @@
         "Stealth address"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -716,7 +716,7 @@
         "Stealth address"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -752,7 +752,7 @@
         "Stealth address"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -788,7 +788,7 @@
         "Payments"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -824,7 +824,7 @@
         "Payments"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -860,7 +860,7 @@
         "Payments"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/CnsW57W.png",
@@ -900,7 +900,7 @@
       "networks": [
         "Base",
         "Blast",
-        "Quantaureum Mainnet",
+        "Quantaureum Testnet",
         "Arbitrum One",
         "OP Mainnet"
       ],
@@ -931,7 +931,7 @@
       "parentCompany": "OpenSea",
       "parentCompanyURL": "https://opensea.io",
       "openSource": true,
-      "contractAddress": "0xA5409eC958C83C3f309868bABaCA7c86DCB077c1 ",
+      "contractAddress": "0x1111111111111111111111111111111111111111",
       "dateOfLaunch": "12/20/2017",
       "lastUpdated": "7/4/2025",
       "ready": "true",
@@ -999,7 +999,7 @@
       ],
       "networks": [
         "Starknet",
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [],
       "bannerImage": "https://i.imgur.com/lyAL0O7.png",
@@ -1040,7 +1040,7 @@
         "Identity"
       ],
       "networks": [
-        "Quantaureum Mainnet"
+        "Quantaureum Testnet"
       ],
       "screenshots": [
         "https://i.imgur.com/YZGOPFM.png"
@@ -1088,7 +1088,7 @@
         "Linea",
         "Blast",
         "Mode",
-        "Quantaureum Mainnet",
+        "Quantaureum Testnet",
         "Arbitrum One",
         "OP Mainnet",
         "Taiko",

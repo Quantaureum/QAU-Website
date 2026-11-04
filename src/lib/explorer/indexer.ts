@@ -52,10 +52,15 @@ const BLOB_KEY = "explorer-index-v1"
 // A local file cache (below) persists progress across process restarts, since
 // the index was previously in-memory only and reset on every pm2 restart —
 // which meant it could never fully reach older history.
-const MAX_SCAN_PER_TICK = 10
+export const MAX_SCAN_PER_TICK = 10
 const SCAN_INTERVAL_MS = 1_000
-const INDEX_FILE =
-  process.env.EXPLORER_INDEX_FILE || join(tmpdir(), "qau-explorer-index.json")
+// Resolve the cache path lazily: tests and self-hosted operators can override
+// EXPLORER_INDEX_FILE at runtime without depending on module import order.
+function indexFile(): string {
+  return (
+    process.env.EXPLORER_INDEX_FILE || join(tmpdir(), "qau-explorer-index.json")
+  )
+}
 let lastDiskSaveAt = 0
 
 interface PersistedData {
@@ -111,10 +116,9 @@ async function loadIndex(): Promise<PersistedData> {
   }
   // Fallback cache: load a local file so the index survives process restarts.
   try {
-    if (existsSync(INDEX_FILE)) {
-      const parsed = JSON.parse(
-        readFileSync(INDEX_FILE, "utf8")
-      ) as PersistedData
+    const file = indexFile()
+    if (existsSync(file)) {
+      const parsed = JSON.parse(readFileSync(file, "utf8")) as PersistedData
       if (parsed?.state && Array.isArray(parsed.txs)) {
         store.state = parsed.state
         store.txs = parsed.txs
@@ -145,8 +149,9 @@ async function saveIndex(data: PersistedData): Promise<void> {
   if (now - lastDiskSaveAt < 10_000) return
   lastDiskSaveAt = now
   try {
-    mkdirSync(dirname(INDEX_FILE), { recursive: true })
-    writeFileSync(INDEX_FILE, JSON.stringify(data))
+    const file = indexFile()
+    mkdirSync(dirname(file), { recursive: true })
+    writeFileSync(file, JSON.stringify(data))
     data.state.persisted = true
   } catch {
     // ignore — in-memory only (e.g. read-only tmp)

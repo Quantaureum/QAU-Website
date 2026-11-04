@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "Соберите свой",
   "page-run-a-node-shop-dappnode": "Соберите свой",
   "page-run-a-node-staking-title": "Стейкайте свои QAU",
-  "page-run-a-node-staking-description": "Хотя это и не обязательно, с запущенным узлом вы на шаг ближе к стейкингу своих QAU, чтобы получать вознаграждения и вносить свой вклад в другой компонент безопасности Квантариума.",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "Стейкать QAU",
   "page-run-a-node-staking-plans-title": "Планируете стейкать?",
   "page-run-a-node-staking-plans-description": "Для эффективной работы валидатора рекомендуются: 8 ГБ ОЗУ, NVMe SSD объёмом от 500 ГБ и симметричное подключение на 100 Мбит/с со статическим публичным IP. Эти требования взяты из официальной документации узла.",

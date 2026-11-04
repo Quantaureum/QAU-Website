@@ -47,7 +47,7 @@
   "page-developers-learn-tutorials-cta": "ट्यूटोरियल देखें",
   "page-developers-learn-tutorials-desc": "उन बिल्डरों से चरण-दर-चरण क्वांटारियम विकास सीखें जो इसे पहले ही कर चुके हैं।",
   "page-developers-meta-desc": "क्वांटारियम पर निर्माण करने वाले डेवलपर्स के लिए दस्तावेज़, ट्यूटोरियल और टूल।",
-  "page-developers-networks-desc": "मेननेट और टेस्ट नेटवर्क का अवलोकन",
+  "page-developers-networks-desc": "Built-in network presets: testnet 1669, mainnet config 1668, devnet 1333; launch status will be announced officially",
   "page-developers-networks-link": "नेटवर्क",
   "page-developers-node-clients-desc": "नेटवर्क में ब्लॉक और लेन-देन को कैसे सत्यापित किया जाता है",
   "page-developers-node-clients-link": "नोड और क्लाइंट",

@@ -11,7 +11,7 @@ import TooltipComponent from "./index"
 const TooltipContent = () => (
   <div>
     <Translation id="data-provided-by" />{" "}
-    <InlineLink href="https://defillama.com/">defillama</InlineLink>
+    <InlineLink href="#">qau explorer</InlineLink>
   </div>
 )
 

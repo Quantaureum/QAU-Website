@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "ابنِ عقدةً خاصة بك",
   "page-run-a-node-shop-dappnode": "ابنِ عقدةً خاصة بك",
   "page-run-a-node-staking-title": "قم بتخزين ⁦QAU⁩ الخاص بك",
-  "page-run-a-node-staking-description": "على الرغم من أنه غير مطلوب، فمع تشغيل عقدة، أنت على بعد خطوة واحدة من تخزين ⁦QAU⁩ الخاص بك لكسب المكافآت والمساعدة في المساهمة في مكون مختلف من أمان Quantaureum.",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "تخزين ⁦QAU⁩",
   "page-run-a-node-staking-plans-title": "هل تخطط للتخزين؟",
   "page-run-a-node-staking-plans-description": "لتشغيل عقدة مصادِقة بكفاءة: يُنصح بذاكرة 8 غيغابايت، وقرص NVMe SSD بسعة 500 غيغابايت فأكثر، واتصال متماثل بسرعة 100 ميغابت/ثانية مع عنوان IP عام ثابت. استُقيت هذه المواصفات من التوثيق الرسمي للعقد.",

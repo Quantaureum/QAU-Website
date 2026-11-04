@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "खुद बनाइए",
   "page-run-a-node-shop-dappnode": "खुद बनाइए",
   "page-run-a-node-staking-title": "अपना QAU स्टेक करें",
-  "page-run-a-node-staking-description": "हालाँकि यह आवश्यक नहीं है, लेकिन एक नोड चालू होने के साथ आप पुरस्कार अर्जित करने और क्वांटारियम सुरक्षा के एक अलग घटक में योगदान करने में मदद करने के लिए अपने QAU को स्टेक करने के एक कदम करीब हैं।",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "QAU स्टेक करें",
   "page-run-a-node-staking-plans-title": "स्टेकिंग की योजना बना रहे हैं?",
   "page-run-a-node-staking-plans-description": "वैलिडेटर को कुशलता से चलाने के लिए: 8 GB RAM, 500 GB+ NVMe SSD, और स्टैटिक पब्लिक IP के साथ सैमेट्रिक 100 Mbit कनेक्शन अनुशंसित है। ये विनिर्देश आधिकारिक नोड दस्तावेज़ों से लिये गए हैं।",

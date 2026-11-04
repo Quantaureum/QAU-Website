@@ -17,3 +17,5 @@ docs/superpowers/
 
 # Local scratch output
 tmp/
+.next-gate/
+.next-gate2/

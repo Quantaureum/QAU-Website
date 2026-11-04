@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "Monte o seu",
   "page-run-a-node-shop-dappnode": "Monte o seu",
   "page-run-a-node-staking-title": "Faça stake do seu QAU",
-  "page-run-a-node-staking-description": "Embora não seja obrigatório, com um nó em funcionamento, você está um passo mais perto de fazer stake do seu QAU para ganhar recompensas e ajudar a contribuir para um componente diferente da segurança do Quantaureum.",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "Fazer stake de QAU",
   "page-run-a-node-staking-plans-title": "Planeja fazer staking?",
   "page-run-a-node-staking-plans-description": "Para executar um validador de forma eficiente, são recomendados 8 GB de RAM, um SSD NVMe de 500 GB ou mais e uma conexão simétrica de 100 Mbit com IP público estático. Essas especificações são extraídas da documentação oficial do nó.",

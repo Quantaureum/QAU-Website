@@ -47,7 +47,7 @@
   "page-developers-learn-tutorials-cta": "チュートリアルを見る",
   "page-developers-learn-tutorials-desc": "すでに実績のあるビルダーから、クアンタリアム開発をステップバイステップで学びましょう。",
   "page-developers-meta-desc": "クアンタリアム上で構築する開発者向けのドキュメント、チュートリアル、ツール。",
-  "page-developers-networks-desc": "メインネットとテストネットワークの概要",
+  "page-developers-networks-desc": "Built-in network presets: testnet 1669, mainnet config 1668, devnet 1333; launch status will be announced officially",
   "page-developers-networks-link": "ネットワーク",
   "page-developers-node-clients-desc": "ネットワーク内でブロックとトランザクションが検証される仕組み",
   "page-developers-node-clients-link": "ノードとクライアント",

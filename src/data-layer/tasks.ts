@@ -10,7 +10,6 @@ import * as Sentry from "@sentry/nextjs"
 import { logger, schedules, task, tasks } from "@trigger.dev/sdk/v3"
 
 import { fetchDeveloperTools } from "./fetchers/developer-tools"
-import { fetchAccountHolders } from "./fetchers/fetchAccountHolders"
 import { fetchApps } from "./fetchers/fetchApps"
 import { fetchCalendarEvents } from "./fetchers/fetchCalendarEvents"
 import { fetchCommunityPicks } from "./fetchers/fetchCommunityPicks"
@@ -20,21 +19,13 @@ import { fetchGFIs } from "./fetchers/fetchGFIs"
 import { fetchGitHistory } from "./fetchers/fetchGitHistory"
 import { fetchGitHubContributors } from "./fetchers/fetchGitHubContributors"
 import { fetchGithubRepoData } from "./fetchers/fetchGithubRepoData"
-import { fetchGrowThePie } from "./fetchers/fetchGrowThePie"
-import { fetchGrowThePieBlockspace } from "./fetchers/fetchGrowThePieBlockspace"
-import { fetchGrowThePieMaster } from "./fetchers/fetchGrowThePieMaster"
-import { fetchL2beat } from "./fetchers/fetchL2beat"
-import { fetchQauPrice } from "./fetchers/fetchQauPrice"
-import { fetchQuantaureumMarketcap } from "./fetchers/fetchQuantaureumMarketcap"
-import { fetchQuantaureumStablecoinsMcap } from "./fetchers/fetchQuantaureumStablecoinsMcap"
 import { fetchQuizStats } from "./fetchers/fetchQuizStats"
-import { fetchStablecoinsData } from "./fetchers/fetchStablecoinsData"
-import { fetchStakedPercentage } from "./fetchers/fetchStakedPercentage"
-import { fetchTotalQauStaked } from "./fetchers/fetchTotalQauStaked"
-import { fetchTotalValueLocked } from "./fetchers/fetchTotalValueLocked"
 import { fetchTranslationGlossary } from "./fetchers/fetchTranslationGlossary"
 import { set } from "./storage"
 
+// Note: Ethereum-ecosystem data sources (Dune, L2BEAT, GrowThePie, DefiLlama,
+// CoinGecko) were decommissioned -- QAU has no listings on those platforms and
+// the site must not display unverifiable numbers.
 export const KEYS = {
   APPS: "fetch-apps",
   CALENDAR_EVENTS: "fetch-calendar-events",
@@ -43,21 +34,9 @@ export const KEYS = {
   DEVELOPER_TOOLS: "fetch-developer-tools",
   GFIS: "fetch-gfis",
   GIT_HISTORY: "fetch-git-history",
-  GROW_THE_PIE: "fetch-grow-the-pie",
-  GROW_THE_PIE_BLOCKSPACE: "fetch-grow-the-pie-blockspace",
-  GROW_THE_PIE_MASTER: "fetch-grow-the-pie-master",
-  L2BEAT: "fetch-l2beat",
   GITHUB_REPO_DATA: "fetch-github-repo-data",
   EVENTS: "fetch-events",
-  QUANTAUREUM_MARKETCAP: "fetch-quantaureum-marketcap",
-  QUANTAUREUM_STABLECOINS_MCAP: "fetch-quantaureum-stablecoins-mcap",
-  ETH_PRICE: "fetch-qau-price",
   GAS_PRICE: "fetch-gas-price",
-  STAKED_PERCENTAGE: "fetch-staked-percentage",
-  TOTAL_ETH_STAKED: "fetch-total-qau-staked",
-  TOTAL_VALUE_LOCKED: "fetch-total-value-locked",
-  STABLECOINS_DATA: "fetch-stablecoins-data",
-  ACCOUNT_HOLDERS: "fetch-account-holders",
   TRANSLATION_GLOSSARY: "fetch-translation-glossary",
   QUIZ_STATS: "fetch-quiz-stats",
 } as const
@@ -68,33 +47,19 @@ type TaskDef = [string, () => Promise<unknown>]
 const WEEKLY: TaskDef[] = [[KEYS.GITHUB_CONTRIBUTORS, fetchGitHubContributors]]
 
 const DAILY: TaskDef[] = [
-  [KEYS.ACCOUNT_HOLDERS, fetchAccountHolders],
   [KEYS.APPS, fetchApps],
   [KEYS.CALENDAR_EVENTS, fetchCalendarEvents],
   [KEYS.COMMUNITY_PICKS, fetchCommunityPicks],
   [KEYS.GFIS, fetchGFIs],
   [KEYS.GIT_HISTORY, fetchGitHistory],
-  [KEYS.GROW_THE_PIE, fetchGrowThePie],
-  [KEYS.GROW_THE_PIE_BLOCKSPACE, fetchGrowThePieBlockspace],
-  [KEYS.GROW_THE_PIE_MASTER, fetchGrowThePieMaster],
-  [KEYS.L2BEAT, fetchL2beat],
   [KEYS.GITHUB_REPO_DATA, fetchGithubRepoData],
   [KEYS.EVENTS, fetchEvents],
   [KEYS.DEVELOPER_TOOLS, fetchDeveloperTools],
   [KEYS.TRANSLATION_GLOSSARY, fetchTranslationGlossary],
-  [KEYS.STAKED_PERCENTAGE, fetchStakedPercentage],
   [KEYS.QUIZ_STATS, fetchQuizStats],
 ]
 
-const HOURLY: TaskDef[] = [
-  [KEYS.QUANTAUREUM_MARKETCAP, fetchQuantaureumMarketcap],
-  [KEYS.QUANTAUREUM_STABLECOINS_MCAP, fetchQuantaureumStablecoinsMcap],
-  [KEYS.ETH_PRICE, fetchQauPrice],
-  [KEYS.GAS_PRICE, fetchGasPrice],
-  [KEYS.TOTAL_ETH_STAKED, fetchTotalQauStaked],
-  [KEYS.TOTAL_VALUE_LOCKED, fetchTotalValueLocked],
-  [KEYS.STABLECOINS_DATA, fetchStablecoinsData],
-]
+const HOURLY: TaskDef[] = [[KEYS.GAS_PRICE, fetchGasPrice]]
 
 // ─── Dynamic task creation ───
 function createDataTask([key, fetchFn]: TaskDef) {

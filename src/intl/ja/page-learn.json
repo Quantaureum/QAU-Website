@@ -135,5 +135,16 @@
   "unchained-title": "Unchained",
   "unchained-description": "分散型インターネットを構築する人々、私たちの未来を支える可能性のあるこの技術の詳細、そして規制、セキュリティ、プライバシーなど、暗号資産における最も厄介なトピックのいくつかを深く掘り下げます",
   "the-daily-gwei-title": "The Daily Gwei",
-  "the-daily-gwei-description": "クアンタリアムのニュースの要約、最新情報、分析"
+  "the-daily-gwei-description": "クアンタリアムのニュースの要約、最新情報、分析",
+  "learn-more-quantaureum-official": "Official Quantaureum resources",
+  "official-github-title": "Quantaureum on GitHub",
+  "official-github-description": "Source code, protocol documentation and release history",
+  "official-docs-title": "Developer documentation",
+  "official-docs-description": "In-depth documentation for building on Quantaureum",
+  "official-explorer-title": "Quantaureum Explorer",
+  "official-explorer-description": "Live network data: blocks, transactions, validators",
+  "official-discord-title": "Discord community",
+  "official-discord-description": "Chat with the community and the development team",
+  "official-telegram-title": "Telegram channel",
+  "official-telegram-description": "Announcements and community discussion"
 }

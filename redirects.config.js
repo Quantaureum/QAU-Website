@@ -125,4 +125,13 @@ module.exports = [
   ["/roadmap/privacy", "/roadmap/#technical-upgrades"],
   ["/roadmap/user-experience", "/roadmap/#changes-coming"],
   ["/roadmap/verkle-trees", "/roadmap/#technical-upgrades"],
+
+  // Dead internal links still referenced by live i18n copy (glossary tooltips,
+  // gas page, footer "contributing" link). Map to the closest live hub.
+  ["/glossary", "/learn/"],
+  ["/smart-contracts", "/developers/"],
+  ["/contributing", "/open-source/"],
+  ["/developers/docs/blocks", "/developers/"],
+  ["/developers/docs/gas", "/gas/"],
+  ["/developers/docs/consensus-mechanisms/pos", "/staking/"],
 ]

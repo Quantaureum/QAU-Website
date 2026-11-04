@@ -135,5 +135,16 @@
   "unchained-title": "ان چینڈ",
   "unchained-description": "لامركزی انٹرنیٹ بنانے والے لوگوں، اس ٹیکنالوجی کی تفصیلات جو ہمارے مستقبل کی بنیاد بن سکتی ہے، اور کرپٹو کے کچھ مشکل ترین موضوعات، جیسے کہ ریگولیشن، سیکیورٹی اور رازداری کا گہرائی سے جائزہ لیتا ہے۔",
   "the-daily-gwei-title": "دی ڈیلی ⁦Gwei⁩",
-  "the-daily-gwei-description": "Quantaureum کی خبروں کا خلاصہ، اپ ڈیٹس اور تجزیہ"
+  "the-daily-gwei-description": "Quantaureum کی خبروں کا خلاصہ، اپ ڈیٹس اور تجزیہ",
+  "learn-more-quantaureum-official": "Official Quantaureum resources",
+  "official-github-title": "Quantaureum on GitHub",
+  "official-github-description": "Source code, protocol documentation and release history",
+  "official-docs-title": "Developer documentation",
+  "official-docs-description": "In-depth documentation for building on Quantaureum",
+  "official-explorer-title": "Quantaureum Explorer",
+  "official-explorer-description": "Live network data: blocks, transactions, validators",
+  "official-discord-title": "Discord community",
+  "official-discord-description": "Chat with the community and the development team",
+  "official-telegram-title": "Telegram channel",
+  "official-telegram-description": "Announcements and community discussion"
 }

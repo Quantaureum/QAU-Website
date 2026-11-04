@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "自建节点",
   "page-run-a-node-shop-dappnode": "自建节点",
   "page-run-a-node-staking-title": "质押你的 QAU",
-  "page-run-a-node-staking-description": "虽然不是必须的，但随着节点的启动和运行，你离质押 QAU 以赚取奖励并帮助为量子金链安全的不同组成部分做出贡献又近了一步。",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "质押 QAU",
   "page-run-a-node-staking-plans-title": "计划质押？",
   "page-run-a-node-staking-plans-description": "要高效运行验证节点，建议配置：8 GB 内存、500 GB 及以上 NVMe SSD，以及 100 Mbit 对称带宽并配有静态公网 IP。以上规格建议来源于官方节点文档。",

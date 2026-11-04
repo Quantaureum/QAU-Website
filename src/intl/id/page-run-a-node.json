@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "Buat node Anda sendiri",
   "page-run-a-node-shop-dappnode": "Buat node Anda sendiri",
   "page-run-a-node-staking-title": "Stake QAU Anda",
-  "page-run-a-node-staking-description": "Meskipun tidak wajib, dengan node yang aktif dan berjalan, Anda selangkah lebih dekat untuk melakukan staking QAU Anda untuk mendapatkan hadiah dan membantu berkontribusi pada komponen keamanan Quantaureum yang berbeda.",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "Stake QAU",
   "page-run-a-node-staking-plans-title": "Berencana untuk staking?",
   "page-run-a-node-staking-plans-description": "Untuk menjalankan validator secara efisien: 8 GB RAM, NVMe SSD 500 GB+, dan koneksi simetris 100 Mbit dengan IP publik statis direkomendasikan. Spesifikasi ini berasal dari dokumentasi node resmi.",

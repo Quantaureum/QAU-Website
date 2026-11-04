@@ -1,6 +1,6 @@
 {
   "page-get-qau-hero-title": "QAUの入手方法",
-  "page-get-qau-hero-subtitle": "QAUの購入、暗号資産のスワップ、支払いの受け取り、または報酬の獲得を行い、クアンタリアム上の何千ものアプリでQAUを使用できます。",
+  "page-get-qau-hero-subtitle": "QAU is the native utility token for gas and staking. No purchase, price or investment guidance is provided; the project is in testnet phase",
   "page-get-qau-get-qau-btn": "QAUを入手する",
   "page-get-qau-learn-about-qau-btn": "QAUについて学ぶ",
   "page-get-qau-ways-you-can-get-qau": "QAUを入手する方法",
@@ -39,7 +39,7 @@
   "page-get-qau-dexs-desc": "分散型取引所は、QAUやその他のトークンのためのオープンな市場です。買い手と売り手を直接結びつけます。",
   "page-get-qau-dexs-desc-2": "トランザクションにおいて資金を保護するために信頼できる第三者を使用する代わりに、コードを使用します。売り手のQAUは、支払いが保証された場合にのみ送金されます。この種のコードはスマート・コントラクトと呼ばれます。",
   "page-get-qau-dexs-desc-3": "つまり、中央集権型の代替手段よりも地理的な制限が少なくなります。あなたが欲しいものを販売しており、あなたが提供できる支払い方法を受け入れている人がいれば、すぐに取引できます。",
-  "page-get-qau-dexs-desc-4": "注: 多くのDEXは、機能するためにラップド・クアンタ (WETH) を使用します。<a href=\"/wrapped-eth\">ラップド・クアンタの詳細</a>。",
+  "page-get-qau-dexs-desc-4": "注: 多くのDEXは、機能するためにラップド・クアンタ (WQAU) を使用します。",
   "page-get-qau-do-not-copy": "例: コピーしないでください",
   "page-get-qau-exchanges-disclaimer": "この情報は手作業で収集されました。間違いを見つけた場合は、以下までお知らせください:",
   "page-get-qau-exchanges-except": "除外",

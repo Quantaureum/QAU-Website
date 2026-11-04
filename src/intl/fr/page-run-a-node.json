@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "Créez le vôtre",
   "page-run-a-node-shop-dappnode": "Créez le vôtre",
   "page-run-a-node-staking-title": "Staker vos QAU",
-  "page-run-a-node-staking-description": "Bien que ce ne soit pas obligatoire, avec un nœud opérationnel, vous êtes un peu plus près de staker vos QAU pour gagner des récompenses et contribuer à un autre composant de la sécurité d'Quantaureum.",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "Staker des QAU",
   "page-run-a-node-staking-plans-title": "Vous prévoyez de staker ?",
   "page-run-a-node-staking-plans-description": "Pour faire fonctionner un validateur de manière efficace : 8 Go de RAM, un SSD NVMe de 500 Go ou plus, ainsi qu'une connexion symétrique de 100 Mbit avec une IP publique statique sont recommandés. Ces spécifications proviennent de la documentation officielle du nœud.",

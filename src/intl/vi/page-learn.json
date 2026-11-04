@@ -135,5 +135,16 @@
   "unchained-title": "Unchained",
   "unchained-description": "Đi sâu vào những người đang xây dựng internet phi tập trung, các chi tiết của công nghệ này có thể làm nền tảng cho tương lai của chúng ta, và một số chủ đề hóc búa nhất trong lĩnh vực tiền mã hóa, chẳng hạn như quy định, bảo mật và quyền riêng tư",
   "the-daily-gwei-title": "The Daily Gwei",
-  "the-daily-gwei-description": "Tóm tắt tin tức, cập nhật và phân tích về Quantaureum"
+  "the-daily-gwei-description": "Tóm tắt tin tức, cập nhật và phân tích về Quantaureum",
+  "learn-more-quantaureum-official": "Official Quantaureum resources",
+  "official-github-title": "Quantaureum on GitHub",
+  "official-github-description": "Source code, protocol documentation and release history",
+  "official-docs-title": "Developer documentation",
+  "official-docs-description": "In-depth documentation for building on Quantaureum",
+  "official-explorer-title": "Quantaureum Explorer",
+  "official-explorer-description": "Live network data: blocks, transactions, validators",
+  "official-discord-title": "Discord community",
+  "official-discord-description": "Chat with the community and the development team",
+  "official-telegram-title": "Telegram channel",
+  "official-telegram-description": "Announcements and community discussion"
 }

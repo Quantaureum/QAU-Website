@@ -9,14 +9,6 @@ import { getStore } from "@netlify/blobs"
 
 const USE_MOCK = process.env.USE_MOCK_DATA === "true"
 
-// Self-hosted production has no Netlify Blobs store. Keep the deployment
-// buildable with the repository's snapshots for stats that pages require,
-// without opting the whole site into mock mode.
-const SELF_HOSTED_FALLBACK_KEYS = new Set([
-  "fetch-total-qau-staked",
-  "fetch-staked-percentage",
-])
-
 // Netlify Blobs store (lazy init)
 let blobStore: ReturnType<typeof getStore> | null = null
 
@@ -27,7 +19,7 @@ function getBlobs() {
   const token = process.env.NETLIFY_BLOBS_TOKEN
 
   if (!siteID || !token) {
-    // Self-hosted deployments can render from the built-in fallbacks.
+    // Self-hosted deployments have no Netlify Blobs store; callers get null.
     return null
   }
 
@@ -61,7 +53,7 @@ export async function get<T>(key: string): Promise<T | null> {
 
   const store = getBlobs()
   if (!store) {
-    return SELF_HOSTED_FALLBACK_KEYS.has(key) ? readMock<T>(key) : null
+    return null
   }
 
   const blob = await store.get(key, { type: "text" })

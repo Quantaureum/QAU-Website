@@ -1,6 +1,6 @@
 {
   "page-get-qau-hero-title": "Jinsi ya kupata QAU",
-  "page-get-qau-hero-subtitle": "Unaweza kununua QAU, kufanya badilishano la kripto, kupokea malipo, au kuchuma zawadi, kisha utumie QAU yako kwenye maelfu ya programu kwenye Quantaureum.",
+  "page-get-qau-hero-subtitle": "QAU is the native utility token for gas and staking. No purchase, price or investment guidance is provided; the project is in testnet phase",
   "page-get-qau-get-qau-btn": "Pata QAU",
   "page-get-qau-learn-about-qau-btn": "Jifunze kuhusu QAU",
   "page-get-qau-ways-you-can-get-qau": "Njia unazoweza kupata QAU",
@@ -39,7 +39,7 @@
   "page-get-qau-dexs-desc": "Mabadilishano yaliyogatuliwa ni masoko wazi kwa ajili ya QAU na tokeni nyingine. Yanaunganisha wanunuzi na wauzaji moja kwa moja.",
   "page-get-qau-dexs-desc-2": "Badala ya kutumia mhusika wa tatu anayeaminika kulinda fedha katika muamala, yanatumia msimbo. QAU ya muuzaji itafanyiwa hamisho tu wakati malipo yamehakikishwa. Aina hii ya msimbo inajulikana kama mkataba mahiri.",
   "page-get-qau-dexs-desc-3": "Hii inamaanisha kuna vizuizi vichache vya kijiografia kuliko njia mbadala zilizowekwa kati. Ikiwa mtu anauza unachotaka na anakubali njia ya malipo unayoweza kutoa, uko tayari kuendelea.",
-  "page-get-qau-dexs-desc-4": "Kumbuka: dex nyingi hutumia qau iliyofungwa (WETH) kufanya kazi. <a href=\"/wrapped-eth\">Jifunze zaidi kuhusu qau iliyofungwa</a>.",
+  "page-get-qau-dexs-desc-4": "Kumbuka: dex nyingi hutumia QAU iliyofungwa (WQAU) kufanya kazi.",
   "page-get-qau-do-not-copy": "Mfano: usinakili",
   "page-get-qau-exchanges-disclaimer": "Tulikusanya taarifa hizi kwa mikono. Ikiwa utaona kitu kibaya, tujulishe kwenye",
   "page-get-qau-exchanges-except": "Isipokuwa",

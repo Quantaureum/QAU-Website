@@ -135,5 +135,16 @@
   "unchained-title": "Unchained",
   "unchained-description": "深入探讨构建去中心化互联网的人们、可能支撑我们未来的这项技术的细节，以及加密货币领域一些最棘手的话题，如监管、安全和隐私",
   "the-daily-gwei-title": "The Daily Gwei",
-  "the-daily-gwei-description": "量子金链新闻回顾、更新与分析"
+  "the-daily-gwei-description": "量子金链新闻回顾、更新与分析",
+  "learn-more-quantaureum-official": "Official Quantaureum resources",
+  "official-github-title": "Quantaureum on GitHub",
+  "official-github-description": "Source code, protocol documentation and release history",
+  "official-docs-title": "Developer documentation",
+  "official-docs-description": "In-depth documentation for building on Quantaureum",
+  "official-explorer-title": "Quantaureum Explorer",
+  "official-explorer-description": "Live network data: blocks, transactions, validators",
+  "official-discord-title": "Discord community",
+  "official-discord-description": "Chat with the community and the development team",
+  "official-telegram-title": "Telegram channel",
+  "official-telegram-description": "Announcements and community discussion"
 }

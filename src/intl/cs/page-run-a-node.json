@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "Sestavte si vlastní",
   "page-run-a-node-shop-dappnode": "Sestavte si vlastní",
   "page-run-a-node-staking-title": "Stakujte své QAU",
-  "page-run-a-node-staking-description": "Ačkoli to není vyžadováno, se spuštěným uzlem jste o krok blíže ke stakingu vašeho QAU, abyste získali odměny a pomohli přispět k další složce bezpečnosti Quantaureum.",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "Stakovat QAU",
   "page-run-a-node-staking-plans-title": "Plánujete staking?",
   "page-run-a-node-staking-plans-description": "Pro efektivní provoz validátoru doporučujeme 8 GB RAM, NVMe SSD s kapacitou 500 GB a více, symetrické připojení 100 Mbit a statickou veřejnou IP adresu. Tyto specifikace vycházejí z oficiální dokumentace uzlu.",

@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "اپنی خود بنائیں",
   "page-run-a-node-shop-dappnode": "اپنی خود بنائیں",
   "page-run-a-node-staking-title": "اپنا QAU اسٹیک کریں",
-  "page-run-a-node-staking-description": "اگرچہ ضروری نہیں ہے، لیکن ایک نوڈ چلنے کے ساتھ آپ انعامات حاصل کرنے اور Quantaureum سیکیورٹی کے ایک مختلف جزو میں حصہ ڈالنے میں مدد کے لیے اپنا QAU اسٹیک کرنے کے ایک قدم قریب ہیں۔",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "QAU اسٹیک کریں",
   "page-run-a-node-staking-plans-title": "اسٹیکنگ کا ارادہ ہے؟",
   "page-run-a-node-staking-plans-description": "Validator کو مؤثر طریقے سے چلانے کے لیے: 8 GB RAM، 500 GB+ NVMe SSD، اور static public IP کے ساتھ symmetric 100 Mbit کنکشن کی سفارش کی جاتی ہے۔ یہ موازنات آفیشل نوڈ دستاویزات سے لیے گئے ہیں۔",

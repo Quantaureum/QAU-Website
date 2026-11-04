@@ -1,6 +1,6 @@
 {
   "page-get-qau-hero-title": "Nasıl QAU alınır",
-  "page-get-qau-hero-subtitle": "QAU satın alabilir, kripto takas edebilir, ödeme alabilir veya ödüller kazanabilir, ardından QAU'nizi Quantaureum üzerindeki binlerce uygulamada kullanabilirsiniz.",
+  "page-get-qau-hero-subtitle": "QAU is the native utility token for gas and staking. No purchase, price or investment guidance is provided; the project is in testnet phase",
   "page-get-qau-get-qau-btn": "QAU alın",
   "page-get-qau-learn-about-qau-btn": "QAU hakkında bilgi edinin",
   "page-get-qau-ways-you-can-get-qau": "QAU almanın yolları",
@@ -39,7 +39,7 @@
   "page-get-qau-dexs-desc": "Merkeziyetsiz borsalar, QAU ve diğer token'lar için açık pazar yerleridir. Alıcıları ve satıcıları doğrudan birbirine bağlarlar.",
   "page-get-qau-dexs-desc-2": "İşlemdeki fonları korumak için güvenilir bir üçüncü taraf kullanmak yerine kod kullanırlar. Satıcının QAU'si yalnızca ödeme garanti edildiğinde transfer edilecektir. Bu tür kodlar akıllı sözleşme olarak bilinir.",
   "page-get-qau-dexs-desc-3": "Bu, merkezi alternatiflere göre daha az coğrafi kısıtlama olduğu anlamına gelir. Birisi istediğiniz şeyi satıyorsa ve sağlayabileceğiniz bir ödeme yöntemini kabul ediyorsa, hazırsınız demektir.",
-  "page-get-qau-dexs-desc-4": "Not: Birçok DEX, çalışmak için sarılmış qau (WETH) kullanır. <a href=\"/wrapped-eth\">Sarılmış qau hakkında daha fazla bilgi edinin</a>.",
+  "page-get-qau-dexs-desc-4": "Not: Birçok DEX, çalışmak için sarılmış QAU (WQAU) kullanır.",
   "page-get-qau-do-not-copy": "Örnek: kopyalamayın",
   "page-get-qau-exchanges-disclaimer": "Bu bilgileri manuel olarak topladık. Yanlış bir şey fark ederseniz, bize bildirin:",
   "page-get-qau-exchanges-except": "Hariç",

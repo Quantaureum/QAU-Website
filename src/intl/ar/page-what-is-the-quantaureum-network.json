@@ -31,7 +31,7 @@
   "page-what-is-quantaureum-network-section-description-16": "وسائل تواصل اجتماعي بدون حظر أو إزالة من المنصات",
   "page-what-is-quantaureum-network-section-description-17": "أنظمة مالية مفتوحة وشفافة",
   "page-what-is-quantaureum-network-section-description-18": "في جوهرها، تعد شبكة Quantaureum أساسًا للملكية الرقمية والمشاركة المفتوحة.",
-  "page-what-is-quantaureum-network-section-description-19": "قد تسمع الناس يذكرون <strong>Quantaureum Mainnet</strong>. هذه هي الشبكة الرئيسية لـ Quantaureum، حيث تتحرك القيمة الحقيقية. أما الشبكة التجريبية العامة فهي شبكة منفصلة مخصصة للتجارب الآمنة.",
+  "page-what-is-quantaureum-network-section-description-19": "You may see ChainID 1668 referred to as the Quantaureum mainnet configuration. It is configured in code, but the project is currently in testnet phase (1669) and mainnet launch status will be announced officially.",
   "page-what-is-quantaureum-network-gas-section-description-1": "تكلف كل معاملة على Quantaureum رسومًا صغيرة تسمى رسوم الغاز. سواء كنت ترسل ⁦QAU⁩، أو تبادل الرموز المميزة، أو تستخدم تطبيقًا، فإنك تدفع كمية صغيرة من الغاز في كل مرة تكتب فيها بيانات على سلسلة الكتل.",
   "page-what-is-quantaureum-network-gas-section-description-2": "<strong>تحافظ رسوم الغاز على تشغيل Quantaureum بسلاسة</strong>. بدونها، يمكن للجهات الفاعلة السيئة إغراق الشبكة بمعاملات فارغة وجعل استخدامها مستحيلًا بسبب الازدحام الشديد، حيث لن تكون هناك طريقة لتحديد أولويات المعاملات حسب الرسوم التي يرغب المستخدمون في دفعها.",
   "page-what-is-quantaureum-network-gas-section-description-3": "تغطي رسوم الغاز في Quantaureum تكلفة الموارد التي تستهلكها المعاملة — المعالجة، وعرض النطاق، والتخزين. يتم تجريد كل ذلك في قيمة موحدة للمستخدمين، مع تحديد التكلفة النسبية لكل عملية من قِبل البروتوكول.",

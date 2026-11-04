@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "Kendi makinenizi oluşturun",
   "page-run-a-node-shop-dappnode": "Kendi makinenizi oluşturun",
   "page-run-a-node-staking-title": "QAU'nizi stake edin",
-  "page-run-a-node-staking-description": "Zorunlu olmamakla birlikte, çalışır durumdaki bir düğümle, ödüller kazanmak ve Quantaureum güvenliğinin farklı bir bileşenine katkıda bulunmaya yardımcı olmak için QAU'nizi stake etmeye bir adım daha yaklaşırsınız.",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "QAU stake edin",
   "page-run-a-node-staking-plans-title": "Stake etmeyi mi planlıyorsunuz?",
   "page-run-a-node-staking-plans-description": "Bir doğrulayıcıyı verimli şekilde çalıştırmak için: 8 GB RAM, 500 GB+ NVMe SSD ve sabit herkese açık IP'li simetrik 100 Mbit bağlantı önerilir. Bu özellikler resmi düğüm dokümantasyonundan alınmıştır.",
