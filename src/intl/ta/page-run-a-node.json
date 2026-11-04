@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "உங்கள் சொந்தம் உருவாக்கவும்",
   "page-run-a-node-shop-dappnode": "உங்கள் சொந்தம் உருவாக்கவும்",
   "page-run-a-node-staking-title": "உங்கள் QAU-ஐப் பங்குவைக்கவும்",
-  "page-run-a-node-staking-description": "கட்டாயமில்லை என்றாலும், ஒரு கணு இயங்குவதன் மூலம், வெகுமதிகளைப் பெறவும், Quantaureum பாதுகாப்பின் வேறுபட்ட கூறிற்குப் பங்களிக்கவும் உங்கள் QAU-ஐப் பங்குவைப்பதற்கு நீங்கள் ஒரு படி நெருங்கிவிட்டீர்கள்.",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "QAU-ஐப் பங்குவைக்கவும்",
   "page-run-a-node-staking-plans-title": "பங்குவைக்கத் திட்டமிடுகிறீர்களா?",
   "page-run-a-node-staking-plans-description": "ஒரு Validator-ஐ முன்னேற எடுப்பதற்கு: 8 GB RAM, 500 GB+ NVMe SSD, மற்றும் நிலையான பொது IP உடைய சம விகித 100 Mbit இணைப்பு பரிந்துரைக்கப்படுகிறது. இந்த விவரங்கள் அதிகாரப்பூர்வம் நோட் ஆவணத்திலிருந்து வரும்.",

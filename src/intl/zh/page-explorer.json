@@ -85,7 +85,7 @@
   "page-explorer-breadcrumb-network": "网络",
   "page-explorer-breadcrumb-quantum-verify": "量子验证",
   "page-explorer-validators-title": "验证者",
-  "page-explorer-validators-desc": "QAU 主网最近 {count} 个区块中观察到的区块提议者。完整的验证者集合数据需要共识层 RPC 访问，将在可用后提供。",
+  "page-explorer-validators-desc": "最近 {count} 个区块中观察到的出块者。项目处于测试网阶段，完整验证者集合数据需要共识层索引支持。",
   "page-explorer-validators-empty": "暂无提议者数据——索引器仍在初始化中。",
   "page-explorer-validators-rank": "排名",
   "page-explorer-validators-address": "提议者地址",
@@ -99,7 +99,7 @@
   "page-explorer-network-slot-time": "出块间隔",
   "page-explorer-network-rpc": "RPC 端点",
   "page-explorer-qpos-title": "QPOS 共识",
-  "page-explorer-qpos-desc": "QAU 主网实时共识参数与链头进度。逐 epoch 的证明数据需要共识层 RPC 访问。",
+  "page-explorer-qpos-desc": "共识参数与链头进度。项目处于测试网阶段，逐纪元的证明数据需要共识层索引支持。",
   "page-explorer-qpos-slot": "时隙时间",
   "page-explorer-qpos-slots-per-epoch": "每 Epoch 时隙数",
   "page-explorer-qpos-current-slot": "当前时隙（链头）",
@@ -109,7 +109,7 @@
   "page-explorer-qpos-signature": "签名方案",
   "page-explorer-qpos-see-also": "另见：",
   "page-explorer-contracts-title": "合约",
-  "page-explorer-contracts-desc": "在 QAU 主网上按地址查询已部署的智能合约。",
+  "page-explorer-contracts-desc": "按地址查询已部署的 QASM/QVM 合约；Solidity 合约部署会被拒绝。",
   "page-explorer-contracts-placeholder": "0x… 合约地址",
   "page-explorer-contracts-searching": "查询中…",
   "page-explorer-contracts-search": "查询",
@@ -119,7 +119,7 @@
   "page-explorer-contracts-status-deployed": "合约已部署",
   "page-explorer-contracts-outgoing": "外部交易数",
   "page-explorer-qv-title": "后量子签名验证",
-  "page-explorer-qv-desc": "验证一笔交易是否使用了 QAU 主网的 ML-DSA (Dilithium3) 后量子签名方案。",
+  "page-explorer-qv-desc": "验证交易是否使用 ML-DSA-65（Dilithium3）后量子签名方案签名。",
   "page-explorer-qv-algorithm": "算法",
   "page-explorer-qv-security-level": "安全级别",
   "page-explorer-qv-pubkey-size": "公钥大小",
@@ -153,5 +153,6 @@
   "page-explorer-opened-via-hash": "通过区块哈希打开。",
   "page-explorer-view-full-block": "查看完整区块详情",
   "page-explorer-qpos-finality-value": "Casper FFG：2 个 epoch 内 justified → finalized",
-  "page-explorer-qpos-signature-value": "ML-DSA (Dilithium3) —— 后量子"
+  "page-explorer-qpos-signature-value": "ML-DSA (Dilithium3) —— 后量子",
+  "page-explorer-search-no-match": "No block, transaction, or address matches \"{query}\". Enter a 0x-prefixed 40-character address, a 66-character transaction hash, or a block number."
 }

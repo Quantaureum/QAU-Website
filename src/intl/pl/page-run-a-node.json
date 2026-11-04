@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "Zbuduj własny",
   "page-run-a-node-shop-dappnode": "Zbuduj własny",
   "page-run-a-node-staking-title": "Stakuj swoje QAU",
-  "page-run-a-node-staking-description": "Chociaż nie jest to wymagane, z uruchomionym węzłem jesteś o krok bliżej do stakowania swojego QAU, aby zdobywać nagrody i pomóc w tworzeniu innego elementu bezpieczeństwa Quantaureum.",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "Stakuj QAU",
   "page-run-a-node-staking-plans-title": "Planujesz staking?",
   "page-run-a-node-staking-plans-description": "Aby efektywnie uruchomić walidatora: zalecana jest pamięć RAM 8 GB, dysk NVMe SSD o pojemności 500 GB lub większej oraz symetryczne połączenie 100 Mbit ze statycznym adresem IP publicznym. Te specyfikacje pochodzą z oficjalnej dokumentacji węzła.",

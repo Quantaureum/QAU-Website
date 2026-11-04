@@ -1,6 +1,6 @@
 {
   "page-get-qau-hero-title": "Jak získat QAU",
-  "page-get-qau-hero-subtitle": "Můžete si koupit QAU, provést swap krypta, přijímat platby nebo získávat odměny a poté své QAU používat v tisících aplikací na Quantaureum.",
+  "page-get-qau-hero-subtitle": "QAU is the native utility token for gas and staking. No purchase, price or investment guidance is provided; the project is in testnet phase",
   "page-get-qau-get-qau-btn": "Získat QAU",
   "page-get-qau-learn-about-qau-btn": "Zjistit více o QAU",
   "page-get-qau-ways-you-can-get-qau": "Způsoby, jak můžete získat QAU",
@@ -39,7 +39,7 @@
   "page-get-qau-dexs-desc": "Decentralizované burzy jsou otevřená tržiště pro QAU a další tokeny. Propojují kupující a prodávající přímo.",
   "page-get-qau-dexs-desc-2": "Místo využití důvěryhodné třetí strany k ochraně prostředků v transakci používají kód. QAU prodávajícího bude převeden pouze tehdy, když je platba zaručena. Tento typ kódu je známý jako chytrý kontrakt.",
   "page-get-qau-dexs-desc-3": "To znamená, že existuje méně geografických omezení než u centralizovaných alternativ. Pokud někdo prodává to, co chcete, a přijímá platební metodu, kterou můžete poskytnout, máte vystaráno.",
-  "page-get-qau-dexs-desc-4": "Poznámka: mnoho DEX ke svému fungování používá zabalený qau (WETH). <a href=\"/wrapped-eth\">Zjistěte více o zabaleném etheru</a>.",
+  "page-get-qau-dexs-desc-4": "Poznámka: mnoho DEX ke svému fungování používá zabalený QAU (WQAU).",
   "page-get-qau-do-not-copy": "Příklad: nekopírovat",
   "page-get-qau-exchanges-disclaimer": "Tyto informace jsme shromáždili ručně. Pokud narazíte na nějakou chybu, dejte nám vědět na",
   "page-get-qau-exchanges-except": "Kromě",

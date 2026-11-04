@@ -1,8 +1,24 @@
+import { rmSync } from "node:fs"
+import { tmpdir } from "node:os"
+import { join } from "node:path"
 import { expect, test } from "@playwright/test"
 
-import { indexState, listTransactions, syncIndex } from "@/lib/explorer/indexer"
+import {
+  indexState,
+  listTransactions,
+  MAX_SCAN_PER_TICK,
+  syncIndex,
+} from "@/lib/explorer/indexer"
 
 const originalFetch = globalThis.fetch
+
+// The production indexer keeps a restart-safe cache in the OS temp directory.
+// Give every worker its own file and clear it before each test so no test can
+// inherit index state from a previous run or from a sibling worker.
+const TEST_INDEX_FILE = join(
+  tmpdir(),
+  `qau-explorer-index.spec-${process.pid}-${process.env.TEST_WORKER_INDEX ?? "0"}.json`
+)
 
 function resetRpc() {
   delete (globalThis as typeof globalThis & { __qauRpcEndpoints?: unknown })
@@ -10,6 +26,8 @@ function resetRpc() {
 }
 
 test.beforeEach(() => {
+  process.env.EXPLORER_INDEX_FILE = TEST_INDEX_FILE
+  rmSync(TEST_INDEX_FILE, { force: true })
   resetRpc()
   delete (globalThis as typeof globalThis & { __qauExplorerIndex?: unknown })
     .__qauExplorerIndex
@@ -70,7 +88,8 @@ test("adds new transactions after historical indexing reaches genesis", async ()
 test("coalesces concurrent scans without multiplying the block budget", async () => {
   mockChain(100)
   await Promise.all(Array.from({ length: 4 }, () => syncIndex("mainnet")))
-  expect(listTransactions(100, 1).total).toBeLessThanOrEqual(5)
+  // Four concurrent scans must coalesce into at most one tick's block budget.
+  expect(listTransactions(100, 1).total).toBeLessThanOrEqual(MAX_SCAN_PER_TICK)
   const downTo = indexState().indexedDownTo
   await syncIndex("mainnet")
   expect(indexState().indexedDownTo).toBe(downTo)

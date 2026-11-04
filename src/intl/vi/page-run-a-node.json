@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "Tự dựng của bạn",
   "page-run-a-node-shop-dappnode": "Tự dựng của bạn",
   "page-run-a-node-staking-title": "Đặt cọc QAU của bạn",
-  "page-run-a-node-staking-description": "Mặc dù không bắt buộc, nhưng với một nút đang hoạt động, bạn đã tiến gần hơn một bước tới việc đặt cọc QAU của mình để kiếm phần thưởng và giúp đóng góp vào một thành phần khác của bảo mật Quantaureum.",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "Đặt cọc QAU",
   "page-run-a-node-staking-plans-title": "Bạn có dự định đặt cọc không?",
   "page-run-a-node-staking-plans-description": "Để chạy validator hiệu quả: 8 GB RAM, SSD NVMe từ 500 GB trở lên, và kết nối đối xứng 100 Mbit với IP công tĩnh được khuyến nghị. Các thông số này được lấy từ tài liệu chính thức về node.",

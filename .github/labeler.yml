@@ -23,7 +23,6 @@
   - .eslintrc.json
   - .prettierignore
   - .prettierrc
-  - netlify.toml
 
 "translation 🌍":
   - public/content/translations/**/*

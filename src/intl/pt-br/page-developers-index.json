@@ -47,7 +47,7 @@
   "page-developers-learn-tutorials-cta": "Ver tutoriais",
   "page-developers-learn-tutorials-desc": "Aprenda o desenvolvimento no Quantaureum passo a passo com construtores que já fizeram isso.",
   "page-developers-meta-desc": "Documentação, tutoriais e ferramentas para desenvolvedores construindo no Quantaureum.",
-  "page-developers-networks-desc": "Uma visão geral da Mainnet e das redes de teste",
+  "page-developers-networks-desc": "Built-in network presets: testnet 1669, mainnet config 1668, devnet 1333; launch status will be announced officially",
   "page-developers-networks-link": "Redes",
   "page-developers-node-clients-desc": "Como blocos e transações são verificados na rede",
   "page-developers-node-clients-link": "Nós e clientes",

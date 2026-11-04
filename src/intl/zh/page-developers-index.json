@@ -47,7 +47,7 @@
   "page-developers-learn-tutorials-cta": "查看教程",
   "page-developers-learn-tutorials-desc": "向经验丰富的构建者逐步学习量子金链开发。",
   "page-developers-meta-desc": "供在量子金链上构建的开发者使用的文档、教程和工具。",
-  "page-developers-networks-desc": "主网和测试网概述",
+  "page-developers-networks-desc": "Built-in network presets: testnet 1669, mainnet config 1668, devnet 1333; launch status will be announced officially",
   "page-developers-networks-link": "网络",
   "page-developers-node-clients-desc": "区块和交易如何在网络中被验证",
   "page-developers-node-clients-link": "节点和客户端",

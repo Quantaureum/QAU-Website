@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "নিজের নোড তৈরি করুন",
   "page-run-a-node-shop-dappnode": "নিজের নোড তৈরি করুন",
   "page-run-a-node-staking-title": "আপনার QAU স্টেক করুন",
-  "page-run-a-node-staking-description": "যদিও বাধ্যতামূলক নয়, একটি নোড চালু থাকার মাধ্যমে আপনি পুরস্কার অর্জন করতে এবং কুয়ান্টারিয়াম নিরাপত্তার একটি ভিন্ন উপাদানে অবদান রাখতে আপনার QAU স্টেকিং করার এক ধাপ কাছাকাছি চলে এসেছেন।",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "QAU স্টেক করুন",
   "page-run-a-node-staking-plans-title": "স্টেকিং করার পরিকল্পনা করছেন?",
   "page-run-a-node-staking-plans-description": "একটি ভ্যালিডেটরকে দক্ষভাবে চালানোর জন্য: 8 GB RAM, 500 GB+ NVMe SSD এবং স্ট্যাটিক পাবলিক IP সহ সিমমেট্রিক 100 Mbit কানেকশন সুপারিশ করা হয়। এই স্পেসিফিকেশনগুলো অফিশিয়াল নোড ডকুমেন্টেশন থেকে নেওয়া।",

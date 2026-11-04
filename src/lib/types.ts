@@ -15,7 +15,7 @@ import type {
 import type { BreadcrumbsProps } from "@/components/Breadcrumbs"
 import type { CallToActionProps } from "@/components/Hero/CallToAction"
 
-import chains from "@/data/chains"
+import type chains from "@/data/chains"
 import { Rollup, Rollups } from "@/data/networks/networks"
 
 import { screens } from "./utils/screen"
@@ -416,54 +416,6 @@ export type CommonHeroProps<
   className?: string
 }
 
-// Staking stats data fetching
-export type DuneResultResponse = {
-  result: {
-    rows?: Record<string, number | string | null>[]
-  }
-}
-
-export type StakingStatsData = {
-  totalQauStaked: number
-  stakedPercentage: number
-  apr: number
-}
-
-export type ValueOrError<T> =
-  | { value: T; timestamp?: number }
-  | { error: string }
-
-export type EtherscanNodeResponse = {
-  result: {
-    UTCDate: number
-    TotalNodeCount: number
-  }[]
-}
-
-type EtherscanTxCountItem = {
-  unixTimeStamp: string
-  transactionCount: number
-}
-
-export type EtherscanTxCountResponse = {
-  status: string
-  message: string
-  result: EtherscanTxCountItem[]
-}
-
-export type DefiLlamaTVLResponse = {
-  date: number
-  tvl: number
-}[]
-
-export type MetricReturnData = ValueOrError<number>
-
-export type QauPriceData =
-  | { value: number; timestamp?: number; percentChange24h?: number }
-  | { error: string }
-
-export type GrowThePieMetricKey = "txCount" | "txCostsMedianUsd"
-
 /**
  * Full video data parsed from a video's index.md file.
  * Includes frontmatter metadata and the markdown body (transcript).
@@ -520,55 +472,10 @@ export type StoryPreview = {
   published: string
 }
 
-export type GrowThePieData = Record<GrowThePieMetricKey, MetricReturnData> & {
-  dailyTxCosts: Record<string, number | undefined>
-  activeAddresses: Record<string, number | undefined>
-}
-
-export type BlockspaceData = {
-  nft: number
-  defi: number
-  social: number
-  token_transfers: number
-  unlabeled: number
-}
-
-export type GrowThePieMasterData = {
-  launchDates: Record<string, string>
-}
-
 export type GithubRepoData = {
   starCount: number
   languages: string[]
 }
-
-export type L2beatData = {
-  projects: Record<
-    string,
-    {
-      stage: string
-      tvl: { total: number }
-      tvs: { breakdown: { total: number } }
-      risks: Array<{ name: string; sentiment: string }>
-    }
-  >
-  chart?: {
-    types: string[]
-    data: number[][]
-  }
-}
-
-export type EnterpriseActivityMetric =
-  | "txCount"
-  | "txCostsMedianUsd"
-  | "stablecoinMarketCap"
-  | "qauPrice" // Use with `totalQauStaked` to convert QAU to USD
-  | "totalQauStaked"
-
-export type AllEnterpriseActivityData = Record<
-  EnterpriseActivityMetric,
-  MetricReturnData
->
 
 // Events (Geode Labs Supabase API)
 export interface GeodeApiEventItem {
@@ -657,23 +564,6 @@ export type ChainName = (typeof chains)[number]["name"]
 export type NonEVMChainName = "Starknet"
 
 export type AppOnlyChainName = "Immutable zkEVM" | "Ronin"
-
-export type ExtendedRollup = Rollup & {
-  networkMaturity: MaturityLevel
-  txCosts: number | undefined
-  tvl: number
-  walletsSupported: string[]
-  activeAddresses: number | undefined
-  launchDate: string | null
-  walletsSupportedCount: string
-  blockspaceData: {
-    nft: number
-    defi: number
-    social: number
-    token_transfers: number
-    unlabeled: number
-  } | null
-}
 
 // Wallets
 /** Fee category; maps to the `page-find-wallet-fee-label-*` intl strings */

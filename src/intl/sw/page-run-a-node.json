@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "Jenga yako mwenyewe",
   "page-run-a-node-shop-dappnode": "Jenga yako mwenyewe",
   "page-run-a-node-staking-title": "Weka dhamana ya QAU yako",
-  "page-run-a-node-staking-description": "Ingawa si lazima, ukiwa na nodi inayofanya kazi unakaribia hatua moja ya kuweka dhamana ya QAU yako ili kupata zawadi na kusaidia kuchangia katika sehemu tofauti ya usalama wa Quantaureum.",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "Weka dhamana ya QAU",
   "page-run-a-node-staking-plans-title": "Unapanga kuweka dhamana?",
   "page-run-a-node-staking-plans-description": "Kwa kuendesha validator kwa ufanisi: RAM ya 8 GB, NVMe SSD ya GB 500 au zaidi, na muunganisho wa Mbit 100 sawa-sawa wenye IP ya umma thabiti inapendekezwa. Mipangilio hii inatoka kwenye marejeshio rasmi ya noda.",

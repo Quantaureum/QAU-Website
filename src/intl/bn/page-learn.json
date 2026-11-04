@@ -135,5 +135,16 @@
   "unchained-title": "আনচেইনড",
   "unchained-description": "বিকেন্দ্রীকৃত ইন্টারনেট তৈরি করা মানুষ, আমাদের ভবিষ্যতের ভিত্তি হতে পারে এমন প্রযুক্তির বিশদ বিবরণ এবং ক্রিপ্টোর সবচেয়ে জটিল কিছু বিষয়, যেমন রেগুলেশন, নিরাপত্তা এবং গোপনীয়তার গভীরে প্রবেশ করে",
   "the-daily-gwei-title": "দ্য ডেইলি Gwei",
-  "the-daily-gwei-description": "কুয়ান্টারিয়াম খবরের সারসংক্ষেপ, আপডেট এবং বিশ্লেষণ"
+  "the-daily-gwei-description": "কুয়ান্টারিয়াম খবরের সারসংক্ষেপ, আপডেট এবং বিশ্লেষণ",
+  "learn-more-quantaureum-official": "Official Quantaureum resources",
+  "official-github-title": "Quantaureum on GitHub",
+  "official-github-description": "Source code, protocol documentation and release history",
+  "official-docs-title": "Developer documentation",
+  "official-docs-description": "In-depth documentation for building on Quantaureum",
+  "official-explorer-title": "Quantaureum Explorer",
+  "official-explorer-description": "Live network data: blocks, transactions, validators",
+  "official-discord-title": "Discord community",
+  "official-discord-description": "Chat with the community and the development team",
+  "official-telegram-title": "Telegram channel",
+  "official-telegram-description": "Announcements and community discussion"
 }

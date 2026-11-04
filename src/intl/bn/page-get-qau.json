@@ -1,6 +1,6 @@
 {
   "page-get-qau-hero-title": "কীভাবে QAU পাবেন",
-  "page-get-qau-hero-subtitle": "আপনি QAU কিনতে, ক্রিপ্টো সোয়াপ করতে, পেমেন্ট গ্রহণ করতে বা রিওয়ার্ড উপার্জন করতে পারেন, তারপর কুয়ান্টারিয়ামের হাজার হাজার অ্যাপে আপনার QAU ব্যবহার করতে পারেন।",
+  "page-get-qau-hero-subtitle": "QAU is the native utility token for gas and staking. No purchase, price or investment guidance is provided; the project is in testnet phase",
   "page-get-qau-get-qau-btn": "QAU পান",
   "page-get-qau-learn-about-qau-btn": "QAU সম্পর্কে জানুন",
   "page-get-qau-ways-you-can-get-qau": "যেসব উপায়ে আপনি QAU পেতে পারেন",
@@ -39,7 +39,7 @@
   "page-get-qau-dexs-desc": "বিকেন্দ্রীকৃত এক্সচেঞ্জ হলো QAU এবং অন্যান্য টোকেনের জন্য উন্মুক্ত মার্কেটপ্লেস। এগুলো সরাসরি ক্রেতা এবং বিক্রেতাদের সংযুক্ত করে।",
   "page-get-qau-dexs-desc-2": "ট্রানজ্যাকশনে ফান্ড সুরক্ষিত রাখার জন্য কোনো বিশ্বস্ত তৃতীয় পক্ষ ব্যবহার করার পরিবর্তে, তারা কোড ব্যবহার করে। পেমেন্ট নিশ্চিত হলেই কেবল বিক্রেতার QAU হস্তান্তর করা হবে। এই ধরনের কোড স্মার্ট কন্ট্রাক্ট হিসেবে পরিচিত।",
   "page-get-qau-dexs-desc-3": "এর মানে হলো কেন্দ্রীভূত বিকল্পগুলোর তুলনায় এতে ভৌগোলিক বিধিনিষেধ কম থাকে। যদি কেউ আপনার কাঙ্ক্ষিত কিছু বিক্রি করে এবং আপনার প্রদানযোগ্য কোনো পেমেন্ট পদ্ধতি গ্রহণ করে, তবে আপনি সহজেই লেনদেন করতে পারবেন।",
-  "page-get-qau-dexs-desc-4": "দ্রষ্টব্য: অনেক dex কাজ করার জন্য র‍্যাপড কুয়ান্টা (weth) ব্যবহার করে। <a href=\"/wrapped-eth\">র‍্যাপড কুয়ান্টা সম্পর্কে আরও জানুন</a>।",
+  "page-get-qau-dexs-desc-4": "নোট: অনেক DEX কাজ করতে মোড়ানো QAU (WQAU) ব্যবহার করে।",
   "page-get-qau-do-not-copy": "উদাহরণ: কপি করবেন না",
   "page-get-qau-exchanges-disclaimer": "আমরা এই তথ্যগুলো ম্যানুয়ালি সংগ্রহ করেছি। আপনি যদি কোনো ভুল দেখতে পান, তবে আমাদের জানান এখানে",
   "page-get-qau-exchanges-except": "ব্যতীত",

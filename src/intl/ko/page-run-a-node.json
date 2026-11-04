@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "직접 조립하기",
   "page-run-a-node-shop-dappnode": "직접 조립하기",
   "page-run-a-node-staking-title": "QAU 스테이킹하기",
-  "page-run-a-node-staking-description": "필수는 아니지만, 노드를 가동하고 실행하면 보상을 얻고 쿠앤타리움 보안의 다른 구성 요소에 기여하기 위해 QAU를 스테이킹하는 데 한 걸음 더 다가갈 수 있습니다.",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "QAU 스테이킹",
   "page-run-a-node-staking-plans-title": "스테이킹을 계획 중이신가요?",
   "page-run-a-node-staking-plans-description": "검증인을 효율적으로 운영하려면 8 GB RAM, 500 GB 이상 NVMe SSD, 정적 공용 IP를 가진 대칭 100 Mbit 인터넷 연결을 권장합니다. 해당 사양은 공식 노드 문서에 근거합니다.",

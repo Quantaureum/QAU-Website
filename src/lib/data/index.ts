@@ -17,18 +17,6 @@ function createCachedGetter<T>(
   return cache(persistentCache)
 }
 
-export const getQauPrice = createCachedGetter(
-  dataLayer.getQauPrice,
-  ["qau-price"],
-  CACHE_REVALIDATE_DAY
-)
-
-export const getHourlyQauPrice = createCachedGetter(
-  dataLayer.getQauPrice,
-  ["qau-price-hourly"],
-  CACHE_REVALIDATE_HOUR
-)
-
 export const getGasPriceData = createCachedGetter(
   dataLayer.getGasPriceData,
   ["gas-price"],
@@ -39,12 +27,6 @@ export const getHourlyGasPriceData = createCachedGetter(
   dataLayer.getGasPriceData,
   ["gas-price-hourly"],
   CACHE_REVALIDATE_HOUR
-)
-
-export const getL2beatData = createCachedGetter(
-  dataLayer.getL2beatData,
-  ["l2beat-data"],
-  CACHE_REVALIDATE_DAY
 )
 
 export const getAppsData = createCachedGetter(
@@ -67,24 +49,6 @@ export const getStaticAppsData = createCachedGetter(
   false
 )
 
-export const getGrowThePieData = createCachedGetter(
-  dataLayer.getGrowThePieData,
-  ["grow-the-pie-data"],
-  CACHE_REVALIDATE_DAY
-)
-
-export const getGrowThePieBlockspaceData = createCachedGetter(
-  dataLayer.getGrowThePieBlockspaceData,
-  ["grow-the-pie-blockspace-data"],
-  CACHE_REVALIDATE_DAY
-)
-
-export const getGrowThePieMasterData = createCachedGetter(
-  dataLayer.getGrowThePieMasterData,
-  ["grow-the-pie-master-data"],
-  CACHE_REVALIDATE_DAY
-)
-
 export const getCommunityPicks = createCachedGetter(
   dataLayer.getCommunityPicks,
   ["community-picks"],
@@ -94,24 +58,6 @@ export const getCommunityPicks = createCachedGetter(
 export const getCalendarEvents = createCachedGetter(
   dataLayer.getCalendarEvents,
   ["calendar-events"],
-  CACHE_REVALIDATE_DAY
-)
-
-export const getStakedPercentageData = createCachedGetter(
-  dataLayer.getStakedPercentageData,
-  ["staked-percentage-data"],
-  CACHE_REVALIDATE_DAY
-)
-
-export const getQuantaureumMarketcapData = createCachedGetter(
-  dataLayer.getQuantaureumMarketcapData,
-  ["quantaureum-marketcap-data"],
-  CACHE_REVALIDATE_DAY
-)
-
-export const getQuantaureumStablecoinsMcapData = createCachedGetter(
-  dataLayer.getQuantaureumStablecoinsMcapData,
-  ["quantaureum-stablecoins-mcap-data"],
   CACHE_REVALIDATE_DAY
 )
 
@@ -139,24 +85,6 @@ export const getQuizStats = createCachedGetter(
   CACHE_REVALIDATE_DAY
 )
 
-export const getStablecoinsData = createCachedGetter(
-  dataLayer.getStablecoinsData,
-  ["stablecoins-data"],
-  CACHE_REVALIDATE_DAY
-)
-
-export const getTotalQauStakedData = createCachedGetter(
-  dataLayer.getTotalQauStakedData,
-  ["total-qau-staked-data"],
-  CACHE_REVALIDATE_DAY
-)
-
-export const getTotalValueLockedData = createCachedGetter(
-  dataLayer.getTotalValueLockedData,
-  ["total-value-locked-data"],
-  CACHE_REVALIDATE_DAY
-)
-
 export const getEventsData = createCachedGetter(
   dataLayer.getEventsData,
   ["events-data"],
@@ -180,12 +108,6 @@ export const getStaticDeveloperToolsData = createCachedGetter(
   dataLayer.getDeveloperToolsData,
   ["developer-tools-data-static"],
   false
-)
-
-export const getAccountHolders = createCachedGetter(
-  dataLayer.getAccountHolders,
-  ["account-holders"],
-  CACHE_REVALIDATE_DAY
 )
 
 export const getTranslationGlossary = createCachedGetter(

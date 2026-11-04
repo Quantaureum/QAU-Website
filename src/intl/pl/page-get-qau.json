@@ -1,6 +1,6 @@
 {
   "page-get-qau-hero-title": "Jak zdobyć QAU",
-  "page-get-qau-hero-subtitle": "Możesz kupić QAU, wymienić krypto, otrzymywać płatności lub zdobywać nagrody, a następnie używać swojego QAU w tysiącach aplikacji na Quantaureum.",
+  "page-get-qau-hero-subtitle": "QAU is the native utility token for gas and staking. No purchase, price or investment guidance is provided; the project is in testnet phase",
   "page-get-qau-get-qau-btn": "Zdobądź QAU",
   "page-get-qau-learn-about-qau-btn": "Dowiedz się więcej o QAU",
   "page-get-qau-ways-you-can-get-qau": "Sposoby na zdobycie QAU",
@@ -39,7 +39,7 @@
   "page-get-qau-dexs-desc": "Zdecentralizowane giełdy to otwarte rynki dla QAU i innych tokenów. Łączą one kupujących i sprzedających bezpośrednio.",
   "page-get-qau-dexs-desc-2": "Zamiast korzystać z zaufanej strony trzeciej do zabezpieczenia środków w transakcji, używają one kodu. QAU sprzedającego zostanie przetransferowane tylko wtedy, gdy płatność będzie zagwarantowana. Ten rodzaj kodu jest znany jako inteligentny kontrakt.",
   "page-get-qau-dexs-desc-3": "Oznacza to, że istnieje mniej ograniczeń geograficznych niż w przypadku scentralizowanych alternatyw. Jeśli ktoś sprzedaje to, czego chcesz, i akceptuje metodę płatności, którą możesz zapewnić, możesz działać.",
-  "page-get-qau-dexs-desc-4": "Uwaga: wiele giełd DEX używa do działania opakowanego etheru (WETH). <a href=\"/wrapped-eth\">Dowiedz się więcej o opakowanym etherze</a>.",
+  "page-get-qau-dexs-desc-4": "Uwaga: wiele giełd DEX używa do działania opakowanego QAU (WQAU).",
   "page-get-qau-do-not-copy": "Przykład: nie kopiuj",
   "page-get-qau-exchanges-disclaimer": "Zebraliśmy te informacje ręcznie. Jeśli zauważysz błąd, daj nam znać na",
   "page-get-qau-exchanges-except": "Z wyjątkiem",

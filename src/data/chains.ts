@@ -1,8 +1,17 @@
+/**
+ * D-34 status note (2026-11-04): this list is inherited from the upstream
+ * ethereum.org / chainlist template. The first entry previously claimed
+ * a mainnet label with chainId 1, which is Ethereum's chain ID and
+ * contradicts qau/params. It is now labelled as a testnet preset.
+ * These entries are sample data, not a verified network registry. The project
+ * is in testnet phase (1669); mainnet parameters (1668) exist in code and
+ * launch status will be announced officially.
+ */
 const chains = [
   {
-    name: "Quantaureum Mainnet",
+    name: "Quantaureum Testnet",
     infoURL: "https://quantaureum.com",
-    chainId: 1,
+    chainId: 1669,
     nativeCurrency: {
       name: "QAU",
       symbol: "QAU",

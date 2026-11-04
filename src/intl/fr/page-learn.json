@@ -135,5 +135,16 @@
   "unchained-title": "Unchained",
   "unchained-description": "Plonge au cœur des personnes qui construisent l'internet décentralisé, des détails de cette technologie qui pourrait sous-tendre notre avenir, et de certains des sujets les plus épineux de la crypto, tels que la réglementation, la sécurité et la confidentialité",
   "the-daily-gwei-title": "The Daily Gwei",
-  "the-daily-gwei-description": "Récapitulatifs des actualités, mises à jour et analyses sur Quantaureum"
+  "the-daily-gwei-description": "Récapitulatifs des actualités, mises à jour et analyses sur Quantaureum",
+  "learn-more-quantaureum-official": "Official Quantaureum resources",
+  "official-github-title": "Quantaureum on GitHub",
+  "official-github-description": "Source code, protocol documentation and release history",
+  "official-docs-title": "Developer documentation",
+  "official-docs-description": "In-depth documentation for building on Quantaureum",
+  "official-explorer-title": "Quantaureum Explorer",
+  "official-explorer-description": "Live network data: blocks, transactions, validators",
+  "official-discord-title": "Discord community",
+  "official-discord-description": "Chat with the community and the development team",
+  "official-telegram-title": "Telegram channel",
+  "official-telegram-description": "Announcements and community discussion"
 }

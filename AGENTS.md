@@ -266,8 +266,8 @@ Full guide (architecture, step-by-step recipe, env vars): `docs/ab-testing.md`. 
 
 ## Deployment
 
-- **Platform**: Netlify (config in `netlify.toml`)
-- **Next.js Integration**: Uses `@netlify/plugin-nextjs` for seamless Netlify and Next.js compatibility
+- **Platform**: self-hosted production server. A push to `master` triggers `.github/workflows/deploy-production.yml`, which runs `deploy-qau.sh` over SSH.
+- **Next.js Integration**: `output: "standalone"` in `next.config.js`. The Netlify deploy track and `netlify.toml` were retired; CI builds with `pnpm build` directly.
 - **Monitoring**: Matomo analytics integration
 
 ## Internal Infrastructure

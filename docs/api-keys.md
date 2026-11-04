@@ -39,6 +39,8 @@ GITHUB_TOKEN_READ_ONLY=48f84de812090000demo00000000697cf6e6a059
 > - Copy & paste your API-Key Token from Quantaureum Explorer into `.env.local`
 
 ```sh
-# .env.local Example:
-ETHERSCAN_API_KEY=K6NUTARFJZJCIXHF1F1E1YGJZ8RQ29BE4U
+# .env.local Example (use a placeholder; never commit a real key):
+ETHERSCAN_API_KEY=YOUR_ETHERSCAN_API_KEY_HERE
 ```
+
+> **Note (2026-11-03):** the Ethereum data-layer fetchers that consumed this key were decommissioned; Quantaureum metrics are served from the QAU node RPC. This section is retained for reference only and will be removed with the docs cleanup.

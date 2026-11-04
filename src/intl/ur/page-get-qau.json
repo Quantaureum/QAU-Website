@@ -1,6 +1,6 @@
 {
   "page-get-qau-hero-title": "⁦QAU⁩ کیسے حاصل کریں",
-  "page-get-qau-hero-subtitle": "آپ ⁦QAU⁩ خرید سکتے ہیں، کرپٹو کا تبادلہ کر سکتے ہیں، ادائیگیاں وصول کر سکتے ہیں، یا انعامات کما سکتے ہیں، پھر اپنے ⁦QAU⁩ کو Quantaureum پر ہزاروں ایپس میں استعمال کر سکتے ہیں۔",
+  "page-get-qau-hero-subtitle": "QAU is the native utility token for gas and staking. No purchase, price or investment guidance is provided; the project is in testnet phase",
   "page-get-qau-get-qau-btn": "⁦QAU⁩ حاصل کریں",
   "page-get-qau-learn-about-qau-btn": "⁦QAU⁩ کے بارے میں جانیں",
   "page-get-qau-ways-you-can-get-qau": "⁦QAU⁩ حاصل کرنے کے طریقے",
@@ -39,7 +39,7 @@
   "page-get-qau-dexs-desc": "لامركزی ایکسچینجز ⁦QAU⁩ اور دیگر ٹوکنز کے لیے کھلی مارکیٹیں ہیں۔ وہ خریداروں اور فروخت کنندگان کو براہ راست جوڑتی ہیں۔",
   "page-get-qau-dexs-desc-2": "ٹرانزیکشن میں فنڈز کی حفاظت کے لیے کسی قابل اعتماد تیسرے فریق کا استعمال کرنے کے بجائے، وہ کوڈ کا استعمال کرتے ہیں۔ فروخت کنندہ کا ⁦QAU⁩ صرف اسی وقت منتقل کیا جائے گا جب ادائیگی کی ضمانت دی گئی ہو۔ اس قسم کے کوڈ کو سمارٹ کنٹریکٹ کہا جاتا ہے۔",
   "page-get-qau-dexs-desc-3": "اس کا مطلب یہ ہے کہ مرکزی متبادلات کے مقابلے میں جغرافیائی پابندیاں کم ہیں۔ اگر کوئی وہ چیز بیچ رہا ہے جو آپ چاہتے ہیں اور ادائیگی کا وہ طریقہ قبول کر رہا ہے جو آپ فراہم کر سکتے ہیں، تو آپ کا کام ہو گیا۔",
-  "page-get-qau-dexs-desc-4": "نوٹ: بہت سے ڈیکس (dexes) کام کرنے کے لیے ریپڈ ایتھر (ڈبلیو ایتھ) کا استعمال کرتے ہیں۔ <a href=\"/wrapped-eth\">ریپڈ ایتھر کے بارے میں مزید جانیں</a>۔",
+  "page-get-qau-dexs-desc-4": "نوٹ: بہت سے DEX کام کرنے کے لیے ریپڈ QAU (WQAU) استعمال کرتے ہیں۔",
   "page-get-qau-do-not-copy": "مثال: کاپی نہ کریں",
   "page-get-qau-exchanges-disclaimer": "ہم نے یہ معلومات دستی طور پر جمع کی ہیں۔ اگر آپ کو کوئی غلطی نظر آئے، تو ہمیں یہاں بتائیں",
   "page-get-qau-exchanges-except": "سوائے",

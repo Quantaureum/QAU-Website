@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "自分で組み立てる",
   "page-run-a-node-shop-dappnode": "自分で組み立てる",
   "page-run-a-node-staking-title": "QAUをステークする",
-  "page-run-a-node-staking-description": "必須ではありませんが、ノードを立ち上げて実行することで、QAUをステークして報酬を獲得し、クアンタリアムのセキュリティの別の側面に貢献することに一歩近づきます。",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "QAUをステークする",
   "page-run-a-node-staking-plans-title": "ステーキングを計画していますか？",
   "page-run-a-node-staking-plans-description": "バリデータを効率的に運営するには、8 GB RAM、500 GB以上のNVMe SSD、静的パブリックIP付きの対称100 Mbit接続が推奨されます。これらの仕様は公式ノードドキュメントに基づいています。",

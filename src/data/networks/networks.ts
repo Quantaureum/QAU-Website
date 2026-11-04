@@ -3,8 +3,6 @@ import { StaticImageData } from "next/image"
 import QuantaureumLogo from "@/public/images/layer-2/quantaureum.png"
 
 export interface Rollup {
-  l2beatID: string
-  growthepieID: string
   name: string
   chainName: string
   canExpand?: boolean
@@ -15,17 +13,17 @@ export interface Rollup {
   applicationsLink: string
   blockExplorerLink: string
   bridgeLink: string
-  l2BeatLink: string
-  growthepieLink: string
   feeToken: string[]
 }
 
 export type Rollups = Rollup[]
 
+// D-34 (2026-11-04): upstream template sample data, not a live-network claim.
+// Project is in testnet phase (1669); mainnet config (1668) launch status
+// will be announced officially.
 export const quantaureumNetworkData = {
-  name: "Quantaureum Mainnet",
-  chainName: "Quantaureum Mainnet",
-  growthepieID: "quantaureum",
+  name: "Quantaureum Testnet",
+  chainName: "Quantaureum Testnet",
   logo: QuantaureumLogo,
   networkMaturity: "n/a",
   canExpand: false,

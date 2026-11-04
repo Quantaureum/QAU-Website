@@ -20,7 +20,7 @@
   "page-gas-how-do-i-pay-less-gas-card-2-title": "Wait for gas to go down",
   "page-gas-how-do-i-pay-less-gas-card-2-description": "Gas prices go up and down based on how congested Quantaureum is. When gas prices are high, waiting just a few minutes before making a transaction could see a significant drop in what you pay.",
   "page-gas-how-do-i-pay-less-gas-card-3-title": "Use network scaling",
-  "page-gas-how-do-i-pay-less-gas-card-3-description": "Quantaureum's layer 1 is designed to scale from the start — parallel execution, sharding and built-in rollup support mean more transactions can be handled without offloading users to external chains. Using these scaling paths can help you pay less.",
+  "page-gas-how-do-i-pay-less-gas-card-3-description": "Fee behaviour follows EIP-1559-style base-fee burning as implemented in code. Sharding and rollups are roadmap design work, not shipped scaling features.",
   "page-gas-try-layer-2": "Explore scaling plans",
   "page-gas-what-causes-high-gas-fees-header": "What causes high gas fees?",
   "page-gas-what-causes-high-gas-fees-text-1": "Whenever the amount of computation (gas) on Quantaureum exceeds a certain threshold, gas fees begin to rise. The more the gas exceeds this threshold, the quicker gas fees increase.",

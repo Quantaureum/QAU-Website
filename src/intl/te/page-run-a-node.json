@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "మీరు నిర్మించండి",
   "page-run-a-node-shop-dappnode": "మీరు నిర్మించండి",
   "page-run-a-node-staking-title": "మీ QAUని స్టేక్ చేయండి",
-  "page-run-a-node-staking-description": "అవసరం లేనప్పటికీ, నోడ్ రన్ అవుతుండటంతో మీరు రివార్డ్‌లను సంపాదించడానికి మరియు Quantaureum భద్రతలోని వేరొక భాగానికి సహకరించడంలో సహాయపడటానికి మీ QAUని స్టేక్ చేయడానికి ఒక అడుగు దగ్గరగా ఉన్నారు.",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "QAUని స్టేక్ చేయండి",
   "page-run-a-node-staking-plans-title": "స్టేకింగ్ చేయాలని ప్లాన్ చేస్తున్నారా?",
   "page-run-a-node-staking-plans-description": "వాలిడేటర్‌ను సమర్థవంతంగా నడపడానికి: 8 GB RAM, 500 GB+ NVMe SSD, మరియు స్థిరమైన పబ్లిక్ IP తో సమాన 100 Mbit కనెక్షన్ సిఫార్సు చేయబడింది. ఈ స్పెక్స్ అధికారిక నోడ్ డాక్యుమెంటేషన్ నుండి వచ్చాయి.",

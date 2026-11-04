@@ -1,6 +1,6 @@
 {
   "page-get-qau-hero-title": "How to get QAU",
-  "page-get-qau-hero-subtitle": "You can buy QAU, swap crypto, receive payments, or earn rewards, then use your QAU on Quantaureum.",
+  "page-get-qau-hero-subtitle": "QAU is the native utility token for gas and staking. No purchase, price or investment guidance is provided; the project is in testnet phase",
   "page-get-qau-get-qau-btn": "Get QAU",
   "page-get-qau-learn-about-qau-btn": "Learn about QAU",
   "page-get-qau-ways-you-can-get-qau": "Ways you can get QAU",
@@ -39,7 +39,7 @@
   "page-get-qau-dexs-desc": "Decentralized exchanges are open marketplaces for QAU and other tokens. They connect buyers and sellers directly.",
   "page-get-qau-dexs-desc-2": "Instead of using a trusted third party to safeguard funds in the transaction, they use code. The seller's QAU will only be transferred when payment is guaranteed. This type of code is known as a smart contract.",
   "page-get-qau-dexs-desc-3": "This means there are fewer geographical restrictions than with centralized alternatives. If someone is selling what you want and accepting a payment method you can provide, you’re good to go.",
-  "page-get-qau-dexs-desc-4": "Note: many dexes use wrapped qau (WETH) to function. <a href=\"/wrapped-eth\">Learn more about wrapped qau</a>.",
+  "page-get-qau-dexs-desc-4": "Note: many dexes use wrapped QAU (WQAU) to function.",
   "page-get-qau-do-not-copy": "Example: do not copy",
   "page-get-qau-exchanges-disclaimer": "We collected this information manually. If you spot something wrong, let us know at",
   "page-get-qau-exchanges-except": "Except",

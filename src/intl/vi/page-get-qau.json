@@ -1,6 +1,6 @@
 {
   "page-get-qau-hero-title": "Cách nhận QAU",
-  "page-get-qau-hero-subtitle": "Bạn có thể mua QAU, hoán đổi tiền mã hóa, nhận thanh toán hoặc kiếm phần thưởng, sau đó sử dụng QAU của bạn trên hàng ngàn ứng dụng trên Quantaureum.",
+  "page-get-qau-hero-subtitle": "QAU is the native utility token for gas and staking. No purchase, price or investment guidance is provided; the project is in testnet phase",
   "page-get-qau-get-qau-btn": "Nhận QAU",
   "page-get-qau-learn-about-qau-btn": "Tìm hiểu về QAU",
   "page-get-qau-ways-you-can-get-qau": "Các cách bạn có thể nhận QAU",
@@ -39,7 +39,7 @@
   "page-get-qau-dexs-desc": "Các sàn giao dịch phi tập trung là những thị trường mở cho QAU và các token khác. Chúng kết nối trực tiếp người mua và người bán.",
   "page-get-qau-dexs-desc-2": "Thay vì sử dụng một bên thứ ba đáng tin cậy để bảo vệ tiền trong giao dịch, chúng sử dụng mã. QAU của người bán sẽ chỉ được chuyển khi khoản thanh toán được đảm bảo. Loại mã này được gọi là hợp đồng thông minh.",
   "page-get-qau-dexs-desc-3": "Điều này có nghĩa là có ít hạn chế về mặt địa lý hơn so với các lựa chọn thay thế tập trung. Nếu ai đó đang bán thứ bạn muốn và chấp nhận phương thức thanh toán mà bạn có thể cung cấp, bạn đã sẵn sàng để giao dịch.",
-  "page-get-qau-dexs-desc-4": "Lưu ý: nhiều sàn dex sử dụng QAU được bọc (WETH) để hoạt động. <a href=\"/wrapped-eth\">Tìm hiểu thêm về QAU được bọc</a>.",
+  "page-get-qau-dexs-desc-4": "Lưu ý: nhiều sàn dex sử dụng QAU được bọc (WQAU) để hoạt động.",
   "page-get-qau-do-not-copy": "Ví dụ: không sao chép",
   "page-get-qau-exchanges-disclaimer": "Chúng tôi đã thu thập thông tin này theo cách thủ công. Nếu bạn phát hiện điều gì đó sai sót, hãy cho chúng tôi biết tại",
   "page-get-qau-exchanges-except": "Ngoại trừ",

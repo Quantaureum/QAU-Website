@@ -60,14 +60,6 @@ export const RETRY_DELAY_BASE_MS = 250 // (milliseconds)
 // Crowdin
 export const CROWDIN_PROJECT_URL = "https://crowdin.com/project/quantaureum"
 
-// Metrics
-export const DAYS_TO_FETCH = 1
-// TODO(P4): legacy external data sources below are only referenced by pages
-// scheduled for rewrite/removal (see .local-only audit). Delete them with P4.
-export const BEACONCHA_IN_URL = "https://beaconcha.in/"
-export const ETHERSCAN_API_URL = "https://explorer.quantaureum.com"
-export const DUNE_API_URL = "https://api.dune.com"
-
 // Wallets
 export const NUMBER_OF_SUPPORTED_LANGUAGES_SHOWN = 5
 

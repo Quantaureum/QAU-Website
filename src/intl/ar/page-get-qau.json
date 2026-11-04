@@ -1,6 +1,6 @@
 {
   "page-get-qau-hero-title": "كيفية الحصول على ⁦QAU⁩",
-  "page-get-qau-hero-subtitle": "يمكنك شراء ⁦QAU⁩، أو مبادلة الكريبتو، أو استلام المدفوعات، أو كسب المكافآت، ثم استخدام ⁦QAU⁩ الخاص بك عبر آلاف التطبيقات على Quantaureum.",
+  "page-get-qau-hero-subtitle": "QAU is the native utility token for gas and staking. No purchase, price or investment guidance is provided; the project is in testnet phase",
   "page-get-qau-get-qau-btn": "احصل على ⁦QAU⁩",
   "page-get-qau-learn-about-qau-btn": "تعرف على ⁦QAU⁩",
   "page-get-qau-ways-you-can-get-qau": "طرق يمكنك من خلالها الحصول على ⁦QAU⁩",
@@ -39,7 +39,7 @@
   "page-get-qau-dexs-desc": "منصات التداول اللامركزية هي أسواق مفتوحة لـ ⁦QAU⁩ والرموز الأخرى. إنها تربط المشترين والبائعين مباشرة.",
   "page-get-qau-dexs-desc-2": "بدلاً من استخدام طرف ثالث موثوق به لحماية الأموال في المعاملة، فإنها تستخدم الكود. سيتم تحويل ⁦QAU⁩ الخاص بالبائع فقط عندما يكون الدفع مضمونًا. يُعرف هذا النوع من الأكواد باسم العقد الذكي.",
   "page-get-qau-dexs-desc-3": "هذا يعني أن هناك قيودًا جغرافية أقل مقارنة بالبدائل المركزية. إذا كان شخص ما يبيع ما تريده ويقبل طريقة دفع يمكنك توفيرها، فأنت جاهز للبدء.",
-  "page-get-qau-dexs-desc-4": "ملاحظة: تستخدم العديد من منصات التداول اللامركزية كوانتا مغلف ⁦(WETH)⁩ للعمل. <a href=\"/wrapped-eth\">تعرف على المزيد حول الكوانتا المغلف</a>.",
+  "page-get-qau-dexs-desc-4": "ملاحظة: تستخدم العديد من منصات التداول اللامركزية كوانتا مغلف (WQAU) للعمل.",
   "page-get-qau-do-not-copy": "مثال: لا تقم بالنسخ",
   "page-get-qau-exchanges-disclaimer": "لقد جمعنا هذه المعلومات يدويًا. إذا لاحظت شيئًا خاطئًا، فأخبرنا على",
   "page-get-qau-exchanges-except": "باستثناء",

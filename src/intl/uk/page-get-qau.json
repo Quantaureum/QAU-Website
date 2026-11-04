@@ -1,6 +1,6 @@
 {
   "page-get-qau-hero-title": "Як отримати QAU",
-  "page-get-qau-hero-subtitle": "Ви можете купити QAU, обміняти крипто, отримувати платежі або заробляти винагороди, а потім використовувати свій QAU у тисячах застосунків на Quantaureum.",
+  "page-get-qau-hero-subtitle": "QAU is the native utility token for gas and staking. No purchase, price or investment guidance is provided; the project is in testnet phase",
   "page-get-qau-get-qau-btn": "Отримати QAU",
   "page-get-qau-learn-about-qau-btn": "Дізнатися про QAU",
   "page-get-qau-ways-you-can-get-qau": "Способи отримати QAU",
@@ -39,7 +39,7 @@
   "page-get-qau-dexs-desc": "Децентралізовані біржі — це відкриті ринки для QAU та інших токенів. Вони з'єднують покупців і продавців безпосередньо.",
   "page-get-qau-dexs-desc-2": "Замість того, щоб використовувати довірену третю сторону для захисту коштів у транзакції, вони використовують код. QAU продавця буде переказано лише тоді, коли оплата буде гарантована. Цей тип коду відомий як смарт-контракт.",
   "page-get-qau-dexs-desc-3": "Це означає, що тут менше географічних обмежень, ніж у централізованих альтернативах. Якщо хтось продає те, що ви хочете, і приймає спосіб оплати, який ви можете надати, ви готові до роботи.",
-  "page-get-qau-dexs-desc-4": "Примітка: багато децентралізованих бірж використовують обгорнутий ефір (WETH) для роботи. <a href=\"/wrapped-eth\">Дізнайтеся більше про обгорнутий ефір (WETH)</a>.",
+  "page-get-qau-dexs-desc-4": "Примітка: багато децентралізованих бірж використовують обгорнутий QAU (WQAU) для роботи.",
   "page-get-qau-do-not-copy": "Приклад: не копіювати",
   "page-get-qau-exchanges-disclaimer": "Ми зібрали цю інформацію вручну. Якщо ви помітили помилку, повідомте нам на",
   "page-get-qau-exchanges-except": "Крім",

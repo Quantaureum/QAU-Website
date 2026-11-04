@@ -1,51 +1,38 @@
 import type {
   AppData,
-  BlockspaceData,
   Commit,
   CommunityPick,
   EventItem,
   GHIssue,
   GitHubContributorsData,
   GithubRepoData,
-  GrowThePieData,
-  GrowThePieMasterData,
-  L2beatData,
-  MetricReturnData,
-  QauPriceData,
 } from "@/lib/types"
 import type { CommunityEventsReturnType } from "@/lib/interfaces"
 
 import type { DeveloperToolsDataEnvelope } from "./fetchers/developer-tools/utils"
 import type { GasPriceData } from "./fetchers/fetchGasPrice"
 import type { QuizStatsData } from "./fetchers/fetchQuizStats"
-import type { CoinGeckoCoinMarketResponse } from "./fetchers/fetchStablecoinsData"
 import type { GlossaryEntry } from "./fetchers/fetchTranslationGlossary"
 import { get } from "./storage"
 import { KEYS } from "./tasks"
 
 export { KEYS }
 
-export const getQauPrice = () => get<QauPriceData>(KEYS.ETH_PRICE)
-export const getL2beatData = () => get<L2beatData>(KEYS.L2BEAT)
+// Note: Ethereum-ecosystem metric getters (price, market cap, TVL, stablecoins,
+// L2BEAT, GrowThePie, Dune staking/address stats) were decommissioned -- no QAU
+// data source exists for them, and the site must not display unverifiable
+// numbers. On-chain metrics are served from the QAU node RPC instead
+// (see app/api/explorer/*).
+
 export const getAppsData = () => get<Record<string, AppData[]>>(KEYS.APPS)
-export const getGrowThePieData = () => get<GrowThePieData>(KEYS.GROW_THE_PIE)
-export const getGrowThePieBlockspaceData = () => get<Record<string, BlockspaceData>>(KEYS.GROW_THE_PIE_BLOCKSPACE)
-export const getGrowThePieMasterData = () => get<GrowThePieMasterData>(KEYS.GROW_THE_PIE_MASTER)
 export const getCommunityPicks = () => get<CommunityPick[]>(KEYS.COMMUNITY_PICKS)
 export const getCalendarEvents = () => get<CommunityEventsReturnType>(KEYS.CALENDAR_EVENTS)
-export const getQuantaureumMarketcapData = () => get<MetricReturnData>(KEYS.QUANTAUREUM_MARKETCAP)
-export const getQuantaureumStablecoinsMcapData = () => get<MetricReturnData>(KEYS.QUANTAUREUM_STABLECOINS_MCAP)
 export const getGasPriceData = () => get<GasPriceData>(KEYS.GAS_PRICE)
 export const getGFIs = () => get<GHIssue[]>(KEYS.GFIS)
 export const getGitHistory = () => get<Commit[]>(KEYS.GIT_HISTORY)
 export const getGithubRepoData = () => get<Record<string, GithubRepoData>>(KEYS.GITHUB_REPO_DATA)
-export const getStablecoinsData = () => get<CoinGeckoCoinMarketResponse>(KEYS.STABLECOINS_DATA)
-export const getTotalQauStakedData = () => get<MetricReturnData>(KEYS.TOTAL_ETH_STAKED)
-export const getStakedPercentageData = () => get<MetricReturnData>(KEYS.STAKED_PERCENTAGE)
-export const getTotalValueLockedData = () => get<MetricReturnData>(KEYS.TOTAL_VALUE_LOCKED)
 export const getEventsData = () => get<EventItem[]>(KEYS.EVENTS)
 export const getDeveloperToolsData = () => get<DeveloperToolsDataEnvelope>(KEYS.DEVELOPER_TOOLS)
-export const getAccountHolders = () => get<MetricReturnData>(KEYS.ACCOUNT_HOLDERS)
 export const getTranslationGlossary = () => get<GlossaryEntry[]>(KEYS.TRANSLATION_GLOSSARY)
 export const getGitHubContributors = () => get<GitHubContributorsData>(KEYS.GITHUB_CONTRIBUTORS)
 export const getQuizStats = () => get<QuizStatsData>(KEYS.QUIZ_STATS)

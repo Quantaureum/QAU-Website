@@ -1,6 +1,6 @@
 {
   "page-get-qau-hero-title": "QAU를 얻는 방법",
-  "page-get-qau-hero-subtitle": "QAU를 구매하거나, 암호화폐를 스왑하거나, 결제를 받거나, 보상을 얻을 수 있으며, 쿠앤타리움의 수천 개 앱에서 QAU를 사용할 수 있습니다.",
+  "page-get-qau-hero-subtitle": "QAU is the native utility token for gas and staking. No purchase, price or investment guidance is provided; the project is in testnet phase",
   "page-get-qau-get-qau-btn": "QAU 얻기",
   "page-get-qau-learn-about-qau-btn": "QAU에 대해 알아보기",
   "page-get-qau-ways-you-can-get-qau": "QAU를 얻는 방법",
@@ -39,7 +39,7 @@
   "page-get-qau-dexs-desc": "탈중앙화 거래소는 QAU 및 기타 토큰을 위한 개방형 마켓플레이스입니다. 구매자와 판매자를 직접 연결합니다.",
   "page-get-qau-dexs-desc-2": "트랜잭션에서 자금을 보호하기 위해 신뢰할 수 있는 제3자를 사용하는 대신 코드를 사용합니다. 판매자의 QAU는 결제가 보장될 때만 전송됩니다. 이러한 유형의 코드를 스마트 컨트랙트라고 합니다.",
   "page-get-qau-dexs-desc-3": "이는 중앙화된 대안보다 지리적 제한이 적다는 것을 의미합니다. 누군가 당신이 원하는 것을 판매하고 당신이 제공할 수 있는 결제 수단을 수락한다면, 바로 거래할 수 있습니다.",
-  "page-get-qau-dexs-desc-4": "참고: 많은 DEX는 기능을 수행하기 위해 래핑된 이더(WETH)를 사용합니다. <a href=\"/wrapped-eth\">래핑된 이더에 대해 자세히 알아보기</a>.",
+  "page-get-qau-dexs-desc-4": "참고: 많은 DEX는 기능을 수행하기 위해 래핑된 QAU(WQAU)를 사용합니다.",
   "page-get-qau-do-not-copy": "예시: 복사하지 마세요",
   "page-get-qau-exchanges-disclaimer": "이 정보는 수동으로 수집되었습니다. 잘못된 부분을 발견하면 다음으로 알려주세요.",
   "page-get-qau-exchanges-except": "제외",

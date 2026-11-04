@@ -1,6 +1,6 @@
 {
   "page-get-qau-hero-title": "如何获取 QAU",
-  "page-get-qau-hero-subtitle": "你可以购买 QAU、兑换加密货币、接收付款或赚取奖励，然后在量子金链上的数千个应用中使用你的 QAU。",
+  "page-get-qau-hero-subtitle": "QAU is the native utility token for gas and staking. No purchase, price or investment guidance is provided; the project is in testnet phase",
   "page-get-qau-get-qau-btn": "获取 QAU",
   "page-get-qau-learn-about-qau-btn": "了解 QAU",
   "page-get-qau-ways-you-can-get-qau": "获取 QAU 的方式",
@@ -39,7 +39,7 @@
   "page-get-qau-dexs-desc": "去中心化交易所是 QAU 和其他代币的开放市场。它们直接连接买家和卖家。",
   "page-get-qau-dexs-desc-2": "它们不使用受信任的第三方来保障交易中的资金安全，而是使用代码。只有在确保付款的情况下，卖方的 QAU 才会被转账。这种代码被称为智能合约。",
   "page-get-qau-dexs-desc-3": "这意味着与中心化替代方案相比，地理限制更少。如果有人在出售你想要的东西，并且接受你能提供的付款方式，你就可以进行交易了。",
-  "page-get-qau-dexs-desc-4": "注意：许多去中心化交易所使用封装量子金币 (WETH) 来运行。<a href=\"/wrapped-eth\">了解更多关于封装量子金币的信息</a>。",
+  "page-get-qau-dexs-desc-4": "注意：许多去中心化交易所使用封装量子金币 (WQAU) 来运行。",
   "page-get-qau-do-not-copy": "示例：请勿复制",
   "page-get-qau-exchanges-disclaimer": "我们手动收集了这些信息。如果你发现有误，请告知我们，联系方式：",
   "page-get-qau-exchanges-except": "除外",

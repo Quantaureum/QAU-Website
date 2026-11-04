@@ -47,7 +47,7 @@
   "page-developers-learn-tutorials-cta": "Посмотреть руководства",
   "page-developers-learn-tutorials-desc": "Изучайте разработку на Квантариуме шаг за шагом от разработчиков, которые уже сделали это.",
   "page-developers-meta-desc": "Документация, руководства и инструменты для разработчиков, создающих на Квантариуме.",
-  "page-developers-networks-desc": "Обзор Мейннета и тестовых сетей",
+  "page-developers-networks-desc": "Built-in network presets: testnet 1669, mainnet config 1668, devnet 1333; launch status will be announced officially",
   "page-developers-networks-link": "Сети",
   "page-developers-node-clients-desc": "Как блоки и транзакции проверяются в сети",
   "page-developers-node-clients-link": "Узлы и клиенты",

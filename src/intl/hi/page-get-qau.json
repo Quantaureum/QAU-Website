@@ -1,6 +1,6 @@
 {
   "page-get-qau-hero-title": "QAU कैसे प्राप्त करें",
-  "page-get-qau-hero-subtitle": "आप QAU खरीद सकते हैं, क्रिप्टो स्वैप कर सकते हैं, भुगतान प्राप्त कर सकते हैं, या इनाम कमा सकते हैं, फिर क्वांटारियम पर हज़ारों ऐप में अपने QAU का उपयोग कर सकते हैं।",
+  "page-get-qau-hero-subtitle": "QAU is the native utility token for gas and staking. No purchase, price or investment guidance is provided; the project is in testnet phase",
   "page-get-qau-get-qau-btn": "QAU प्राप्त करें",
   "page-get-qau-learn-about-qau-btn": "QAU के बारे में जानें",
   "page-get-qau-ways-you-can-get-qau": "QAU प्राप्त करने के तरीके",
@@ -39,7 +39,7 @@
   "page-get-qau-dexs-desc": "विकेंद्रीकृत एक्सचेंज QAU और अन्य टोकन के लिए खुले बाज़ार हैं। वे खरीदारों और विक्रेताओं को सीधे जोड़ते हैं।",
   "page-get-qau-dexs-desc-2": "लेन-देन में फंड की सुरक्षा के लिए किसी विश्वसनीय तीसरे पक्ष का उपयोग करने के बजाय, वे कोड का उपयोग करते हैं। विक्रेता का QAU केवल तभी ट्रांसफर किया जाएगा जब भुगतान की गारंटी होगी। इस प्रकार के कोड को स्मार्ट अनुबंध के रूप में जाना जाता है।",
   "page-get-qau-dexs-desc-3": "इसका मतलब है कि केंद्रीकृत विकल्पों की तुलना में कम भौगोलिक प्रतिबंध हैं। यदि कोई वह बेच रहा है जो आप चाहते हैं और वह भुगतान विधि स्वीकार कर रहा है जो आप प्रदान कर सकते हैं, तो आप तैयार हैं।",
-  "page-get-qau-dexs-desc-4": "ध्यान दें: कई DEX काम करने के लिए रैप्ड ईथर (WETH) का उपयोग करते हैं। <a href=\"/wrapped-eth\">रैप्ड ईथर (WETH) के बारे में अधिक जानें</a>।",
+  "page-get-qau-dexs-desc-4": "ध्यान दें: कई DEX काम करने के लिए रैप्ड QAU (WQAU) का उपयोग करते हैं।",
   "page-get-qau-do-not-copy": "उदाहरण: कॉपी न करें",
   "page-get-qau-exchanges-disclaimer": "हमने यह जानकारी मैन्युअल रूप से एकत्र की है। यदि आपको कुछ गलत लगता है, तो हमें यहां बताएं",
   "page-get-qau-exchanges-except": "सिवाय",

@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "स्वतः तयार करा",
   "page-run-a-node-shop-dappnode": "स्वतः तयार करा",
   "page-run-a-node-staking-title": "तुमचे QAU स्टेक करा",
-  "page-run-a-node-staking-description": "जरी आवश्यक नसले तरी, नोड चालू असल्याने तुम्ही बक्षिसे मिळवण्यासाठी आणि क्वांटारियम सुरक्षेच्या वेगळ्या घटकामध्ये योगदान देण्यासाठी तुमचे QAU स्टेक करण्याच्या एक पाऊल जवळ आहात.",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "QAU स्टेक करा",
   "page-run-a-node-staking-plans-title": "स्टेकिंगची योजना करत आहात?",
   "page-run-a-node-staking-plans-description": "Validator efficiently चालवण्यासाठी: 8 GB RAM, 500 GB+ NVMe SSD आणि static public IP असलेली symmetric 100 Mbit connection शिफारस करण्यात आले आहे. ही specs अधिकृत node documentation मधून घेण्यात आली आहे.",

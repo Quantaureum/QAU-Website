@@ -100,7 +100,7 @@
   "page-run-a-node-shop-avado": "Build your own",
   "page-run-a-node-shop-dappnode": "Build your own",
   "page-run-a-node-staking-title": "Stake your QAU",
-  "page-run-a-node-staking-description": "Though not required, with a node up and running you're one step closer to staking your QAU to earn rewards and help contribute to a different component of Quantaureum security.",
+  "page-run-a-node-staking-description": "Validator requirements and staking parameters are documented in qau/docs; no APY is published",
   "page-run-a-node-staking-link": "Stake QAU",
   "page-run-a-node-staking-plans-title": "Plan on staking?",
   "page-run-a-node-staking-plans-description": "To run a validator efficiently: 8 GB RAM, a 500 GB+ NVMe SSD, and a symmetric 100 Mbit connection with a static public IP are recommended. These specs come from the official node documentation.",
