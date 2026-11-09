@@ -403,6 +403,25 @@ export async function listHoldRegistrations(): Promise<AirdropRegistration[]> {
 }
 
 /**
+ * Read-only manual-review queue: rows parked by the sybil scorer
+ * (sybil_status 'hold') plus legacy rows that were never scored
+ * ('pending'). There is intentionally no approve/reject write path yet —
+ * this exists only so operators can see what needs review.
+ */
+export async function listReviewRegistrations(
+  limit: number
+): Promise<AirdropRegistration[]> {
+  await initAirdropTables()
+  const rows = await sql`
+    SELECT id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, payout_state, payout_nonce, payout_attempts, payout_error, payout_next_attempt_at, created_at, updated_at FROM airdrop_registrations
+    WHERE sybil_status IN ('hold', 'pending')
+    ORDER BY hold_since ASC NULLS LAST, created_at ASC
+    LIMIT ${limit}
+  `
+  return rowsOf<Record<string, unknown>>(rows).map(mapRow)
+}
+
+/**
  * Payout queue: approved rows that are not rejected, not paid and not
  * claimed by a running distributor. A row whose last attempt failed waits
  * for its retry backoff before it is offered again.
