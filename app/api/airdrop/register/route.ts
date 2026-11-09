@@ -32,6 +32,7 @@ import {
 } from "@/lib/airdrop/database"
 import { countAirdropByIp as countIpActivity } from "@/lib/airdrop/ipGuard"
 import { verifyTurnstile } from "@/lib/airdrop/turnstile"
+import { trustedClientIp } from "@/lib/security/clientIp"
 import { collectSignals } from "@/lib/sybil/signals"
 import {
   applyUnknownSignalGate,
@@ -107,10 +108,15 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   if (addrTaken)
     return jsonResponse({ success: false, code: "wallet_taken" }, 409)
 
+  // Client IP: only the proxy-appended tail of X-Forwarded-For is trusted
+  // (see src/lib/security/clientIp.ts). The leftmost entry is client-supplied
+  // and must never key a security control.
+  const ip = trustedClientIp(req.headers)
+
   // L1: Turnstile
   const turnstile = await verifyTurnstile(
     (body.turnstileToken as string | undefined) || null,
-    req.headers.get("x-forwarded-for")?.split(",")[0].trim() || "unknown"
+    ip
   )
   if (!turnstile.ok) {
     // reason is already a machine code (see turnstile.ts)
@@ -121,8 +127,6 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   }
 
   // L3: same-IP cap
-  const ip =
-    req.headers.get("x-forwarded-for")?.split(",")[0].trim() || "unknown"
   const sameIp = await countIpActivity(ip)
   const rejectByIp = sameIp >= 2
 
