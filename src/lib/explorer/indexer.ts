@@ -247,7 +247,11 @@ export async function syncIndex(
 
     await saveIndex(data)
   } catch (e) {
-    data.state.lastError = e instanceof Error ? e.message : String(e)
+    // Keep the raw error server-side only: lastError is relayed verbatim in
+    // public API responses and must never carry upstream exception text
+    // (URLs, credentials in connection strings, internal hostnames).
+    console.error("[explorer-indexer] scan failed:", e)
+    data.state.lastError = "Explorer index update failed"
   } finally {
     data.lastScanAt = Date.now()
     data.state.scanning = false

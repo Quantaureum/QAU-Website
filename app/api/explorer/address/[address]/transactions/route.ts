@@ -8,6 +8,7 @@ import {
   pickNetwork,
   syncIndex,
 } from "@/lib/explorer/api"
+import { guardExplorerRequest } from "@/lib/explorer/rateLimit"
 
 export const dynamic = "force-dynamic"
 
@@ -16,6 +17,11 @@ export async function GET(
   req: Request,
   { params }: { params: Promise<{ address: string }> }
 ) {
+  // This endpoint triggers upstream RPC scanning work (syncIndex) — keep an
+  // unauthenticated client from forcing it in a loop.
+  const denied = guardExplorerRequest(req)
+  if (denied) return denied
+
   const { searchParams } = new URL(req.url)
   const network = pickNetwork(searchParams)
   const { address } = await params
