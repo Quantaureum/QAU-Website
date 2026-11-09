@@ -116,3 +116,20 @@ The main idea behind the community QA process is to focus on the [current releas
 QA is not limited to the release window. Because releases go out twice a week, anything reported against `dev` or a deploy preview at any point in the week will typically ship within a few days.
 
 If you find any bug, please report it on the [#website-bugs](https://discord.com/channels/714888181740339261/727898649006309377) Discord channel.
+
+## Runtime constraints
+
+### Single instance is required for GitHub OAuth
+
+`src/lib/oauth/state.ts` keeps pending OAuth `state` values in process memory
+so a callback can only be accepted by the instance that issued it, and only
+once. The current deployment is a single instance, which satisfies this.
+
+Before scaling to more than one instance (or enabling multiple replicas behind
+a load balancer), this store must be replaced with shared storage (Redis or a
+database table) **before** the second instance goes live. Otherwise callbacks
+randomly land on a replica without the state copy and the login fails with
+`state_mismatch`. This failure is fail-closed — it never accepts a forged
+state — but it is user-visible. Sticky routing is not a substitute: the state
+must be consumable exactly once across all replicas.
+
