@@ -10,6 +10,8 @@
  */
 import crypto from "crypto"
 
+import { trustedClientIp } from "@/lib/security/clientIp"
+
 /** Minimal shape of the optional 'redis' client (dynamic require). */
 interface RedisLike {
   connect: () => Promise<void>
@@ -571,15 +573,10 @@ export class SecurityLogger {
 // ==================== 安全中间件辅助函数 ====================
 
 export function getClientIP(request: Request): string {
-  const forwarded = request.headers.get("x-forwarded-for")
-  if (forwarded) {
-    return forwarded.split(",")[0].trim()
-  }
-  const realIP = request.headers.get("x-real-ip")
-  if (realIP) {
-    return realIP
-  }
-  return "unknown"
+  // Delegates to the shared trusted derivation: only the proxy-appended
+  // tail of X-Forwarded-For (or a proxy-owned x-real-ip) is usable — the
+  // leftmost XFF entry is client-supplied and spoofable.
+  return trustedClientIp(request.headers)
 }
 
 export function getUserAgent(request: Request): string {
