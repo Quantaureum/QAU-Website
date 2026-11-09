@@ -4,9 +4,10 @@
  * Sybil defense layer 2: human verification required before registration
  * / code sending.
  *
- * - When TURNSTILE_SECRET_KEY is absent the module degrades gracefully
- *   (not enabled); the degraded path relies on honeypot-field + submit-
- *   timing heuristics (see fallbackHumanCheck).
+ * - When TURNSTILE_SECRET_KEY is absent the module cannot perform the human
+ *   check. Callers must treat the result as `degraded` and route the
+ *   registration to manual review — never auto-approve a request whose
+ *   human check could not run.
  * - The client widget is src/components/TurnstileWidget.tsx: it also skips
  *   rendering without a site key, so front and back stay in sync via env.
  *
@@ -26,6 +27,12 @@ export interface TurnstileCheckResult {
   ok: boolean
   /** true when Turnstile is not enabled (degraded mode) */
   skipped: boolean
+  /**
+   * true when the human check could not be performed (not configured or the
+   * verification request failed). Callers must fail closed and route the
+   * registration to manual review instead of auto-approving it.
+   */
+  degraded: boolean
   /** machine code, e.g. "turnstile_missing" */
   reason?: string
 }
@@ -49,13 +56,24 @@ export async function verifyTurnstile(
   const secret = process.env.TURNSTILE_SECRET_KEY
   const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY
 
-  // Not configured: degraded mode (do not block; honeypot + timing checks)
+  // Not configured: the human check cannot run. Degraded (fail-closed to
+  // manual review) rather than silently trusted.
   if (!secret || !siteKey) {
-    return { ok: true, skipped: true }
+    return {
+      ok: true,
+      skipped: true,
+      degraded: true,
+      reason: "turnstile_unconfigured",
+    }
   }
 
   if (!token) {
-    return { ok: false, skipped: false, reason: "turnstile_missing" }
+    return {
+      ok: false,
+      skipped: false,
+      degraded: false,
+      reason: "turnstile_missing",
+    }
   }
 
   try {
@@ -74,15 +92,25 @@ export async function verifyTurnstile(
       "error-codes"?: string[]
     }
 
-    if (data.success) return { ok: true, skipped: false }
+    if (data.success) return { ok: true, skipped: false, degraded: false }
 
     console.warn("[turnstile] verify failed:", data["error-codes"])
-    return { ok: false, skipped: false, reason: "turnstile_failed" }
+    return {
+      ok: false,
+      skipped: false,
+      degraded: false,
+      reason: "turnstile_failed",
+    }
   } catch (err) {
-    // Fail open on network errors (a Cloudflare outage must not lock out
-    // every user), but log it.
+    // A network error means the check did not run: fail closed to manual
+    // review instead of treating the request as human-verified.
     console.error("[turnstile] verify error:", err)
-    return { ok: true, skipped: false }
+    return {
+      ok: true,
+      skipped: false,
+      degraded: true,
+      reason: "turnstile_unavailable",
+    }
   }
 }
 
