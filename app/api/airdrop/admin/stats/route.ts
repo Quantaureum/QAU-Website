@@ -5,6 +5,7 @@
 
 import { NextResponse } from "next/server"
 
+import { adminKeyError } from "@/lib/airdrop/adminGuard"
 import { getAirdropConfig } from "@/lib/airdrop/airdropConfig"
 import {
   hasDatabase,
@@ -15,19 +16,15 @@ import {
 
 export const dynamic = "force-dynamic"
 
-const ADMIN_KEY = process.env.AIRDROP_ADMIN_KEY || ""
-
 export async function GET(req: Request): Promise<NextResponse> {
   const cfg = getAirdropConfig()
   const isPublic = new URL(req.url).searchParams.get("public") === "1"
-  const isAdmin =
-    (req.headers.get("x-admin-key") || "") === ADMIN_KEY && ADMIN_KEY !== ""
 
-  if (!isPublic && !isAdmin) {
-    return NextResponse.json(
-      { success: false, error: "unauthorized" },
-      { status: 401 }
-    )
+  // Same shared guard as the other admin endpoints: constant-time key
+  // comparison, key read per request. Public stats (?public=1) skip it.
+  if (!isPublic) {
+    const denied = adminKeyError(req)
+    if (denied) return denied
   }
   if (!hasDatabase()) {
     return NextResponse.json({
