@@ -2,12 +2,16 @@ import { revalidatePath } from "next/cache"
 import { NextRequest, NextResponse } from "next/server"
 
 import i18nConfig from "../../../i18n.config.json"
+import { secretEquals } from "../../../src/lib/security/timingSafe"
 
-export async function GET(req: NextRequest) {
+// The secret travels in a header (never a query string, which leaks into
+// access logs, browser history and Referer headers) and is compared in
+// constant time.
+export async function POST(req: NextRequest) {
   const searchParams = req.nextUrl.searchParams
-  const secret = searchParams.get("secret")
+  const secret = req.headers.get("x-revalidate-secret")
 
-  if (secret !== process.env.REVALIDATE_SECRET) {
+  if (!secretEquals(secret, process.env.REVALIDATE_SECRET)) {
     return NextResponse.json({ message: "Invalid secret" }, { status: 401 })
   }
 
@@ -57,4 +61,12 @@ export async function GET(req: NextRequest) {
     // to show the last successfully generated page
     return NextResponse.json({ message: "Error revalidating" }, { status: 500 })
   }
+}
+
+// GET is rejected so the secret can no longer be passed in the URL.
+export async function GET() {
+  return NextResponse.json(
+    { message: "Use POST with the x-revalidate-secret header" },
+    { status: 405, headers: { Allow: "POST" } }
+  )
 }
