@@ -13,7 +13,12 @@
  *   AIRDROP_START_AT       ISO-8601 start; empty = already open
  *   AIRDROP_END_AT         ISO-8601 end; empty = no end date
  *   AIRDROP_REQUIRE_SOCIAL '1' = X handle required at registration and
- *                          payout is gated on social verification
+ *                          payout is gated on social verification.
+ *                          Defaults to OFF. Enable only once server-side X
+ *                          verification exists: while X metrics have no
+ *                          server-side source, every registration would be
+ *                          routed to manual review (hold) instead of being
+ *                          auto-approved.
  *   AIRDROP_X_TARGET_HANDLE the X account participants must follow
  */
 

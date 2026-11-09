@@ -32,7 +32,11 @@ import {
 } from "@/lib/airdrop/database"
 import { countAirdropByIp as countIpActivity } from "@/lib/airdrop/ipGuard"
 import { verifyTurnstile } from "@/lib/airdrop/turnstile"
-import { dispositionForScore } from "@/lib/sybil/stateMachine"
+import { collectSignals } from "@/lib/sybil/signals"
+import {
+  applyUnknownSignalGate,
+  dispositionForScore,
+} from "@/lib/sybil/stateMachine"
 
 export const dynamic = "force-dynamic"
 
@@ -132,47 +136,47 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
   const addrPrefix = walletAddress.toLowerCase().slice(2, 6) // first 4 hex chars
   const sameAddrPrefix = await countAirdropByAddressPrefix(addrPrefix)
 
-  // L6-v2: X profile signals (when social binding is on, fetch metrics here —
-  // the verifier job re-checks asynchronously; this first-pass score uses the
-  // registration endpoint's own lookup result passed from the client claim).
-  const xUserMetrics =
-    (body.xUserMetrics as {
-      created_at?: string
-      public_metrics?: {
-        followers_count?: number
-        following_count?: number
-        tweet_count?: number
-      }
-    } | null) || null
-
-  const scoreInput = {
-    sameSubnetRegistrations: sameSubnet,
-    disposableEmailDomain: false, // rejected at register-account time already
-    sameEmailDomainRegistrations: sameEmailDomain,
-    xAccountCreatedAt: xUserMetrics?.created_at
-      ? new Date(xUserMetrics.created_at)
-      : null,
-    xFollowers: xUserMetrics?.public_metrics?.followers_count ?? null,
-    xFollowing: xUserMetrics?.public_metrics?.following_count ?? null,
-    xZeroTweets: xUserMetrics?.public_metrics
-      ? xUserMetrics.public_metrics.tweet_count === 0
-      : null,
-    xFollowsCampaign: true,
-    addressNonce: 0, // tier A: chain-history check happens at payout time (L7)
-    addressBalanceWei: null,
-    sameSubnetPayoutAddresses: sameAddrPrefix,
-    registrationToAddressSeconds: null, // address submitted in the same request
-    productionCurveCorrelation: null,
-    nodeIpMismatch: null,
-    now: new Date(),
-  }
-
-  // NOTE: the sybil scorer is pure but requires the signals module — inline
-  // import to avoid a circular dependency with the database layer.
-  const { scoreSybilSignals } = await import("@/lib/sybil/sybilScore")
-  const scored = scoreSybilSignals(scoreInput)
+  // L6-v2: score inputs are collected server-side only. Client-asserted
+  // profile metrics (previously body.xUserMetrics) are never used for
+  // scoring — a fabricated "aged account with many followers" would be
+  // auto-approved and enter the payout queue.
+  const rpcUrl =
+    process.env.QAU_RPC_URL_MAINNET || "https://rpc.quantaureum.com/"
+  const collection = await collectSignals(
+    {
+      sameSubnetRegistrations: sameSubnet,
+      sameEmailDomainRegistrations: sameEmailDomain,
+      sameSubnetPayoutAddresses: sameAddrPrefix,
+      // No server-side X API source exists in this repo: X metrics stay
+      // unknown here and the async verifier job can refine them later.
+      xUser: null,
+      // The address is submitted in this same request, so this signal is not
+      // measurable at registration; it must not be treated as favourable.
+      registrationToAddressSeconds: null,
+      tierB: null,
+    },
+    {
+      email: userEmail,
+      registrationIp: ip,
+      address: walletAddress,
+      rpcUrl,
+      now: new Date(),
+    }
+  )
+  const scored = collection.result
   const scoreRecord = { ...scored, scoredAt: new Date() }
-  const disposition = dispositionForScore(scoreRecord)
+  let disposition = dispositionForScore(scoreRecord)
+
+  // Fail-closed: an automatic approval whose inputs are unknown (or whose
+  // human check could not run) goes to manual review instead. X profile
+  // signals only gate the flow when social binding is required.
+  const missingSignals = collection.missing.filter(
+    (signal) => signal !== "x-profile-signals" || cfg.requireSocial
+  )
+  if (turnstile.degraded) missingSignals.push("turnstile-verification")
+  const gated = applyUnknownSignalGate(disposition, missingSignals)
+  disposition = gated.disposition
+  const hits = gated.hit ? [...scored.hits, gated.hit] : scored.hits
 
   const registration = await createAirdropRegistration({
     userId: uid,
@@ -191,7 +195,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     maxSlots: cfg.maxSlots,
     sybilScore: scored.score,
     sybilStatus: disposition,
-    sybilRules: JSON.stringify(scored.hits),
+    sybilRules: JSON.stringify(hits),
     holdSince: disposition === "hold" ? new Date() : null,
   })
 
@@ -234,7 +238,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       uid,
       disposition,
       scored.score,
-      JSON.stringify(scored.hits),
+      JSON.stringify(hits),
       new Date()
     )
   }
