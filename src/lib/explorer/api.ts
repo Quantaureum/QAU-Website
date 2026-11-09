@@ -43,10 +43,12 @@ export {
 export const REVALIDATE = 5 // seconds
 
 export function json<T>(data: T, init?: ResponseInit) {
+  // Same-origin API for the site's own explorer UI: no CORS header. A
+  // wildcard Access-Control-Allow-Origin is unnecessary for same-origin
+  // callers and advertises the endpoints to arbitrary third-party origins.
   return Response.json(data, {
     ...init,
     headers: {
-      "Access-Control-Allow-Origin": "*",
       "Cache-Control": "public, s-maxage=5, stale-while-revalidate=25",
       ...(init?.headers ?? {}),
     },
