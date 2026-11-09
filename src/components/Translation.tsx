@@ -1,15 +1,12 @@
-import parse, {
-  type DOMNode,
-  domToReact,
-  Element,
-  type HTMLReactParserOptions,
-} from "html-react-parser"
+import parse from "html-react-parser"
 import { type TranslationValues, useTranslations } from "next-intl"
-import type { ComponentType } from "react"
+
+import {
+  buildTranslationParserOptions,
+  type TransformMap,
+} from "@/lib/utils/translationMarkup"
 
 import TooltipLink from "./TooltipLink"
-
-type TransformMap = Record<string, ComponentType<Record<string, unknown>>>
 
 type TranslationProps = {
   id: string
@@ -50,18 +47,7 @@ const Translation = ({
 
   const allTransforms: TransformMap = { ...defaultTransform, ...transform }
 
-  const options: HTMLReactParserOptions = {
-    replace: (domNode: DOMNode) => {
-      if (domNode instanceof Element && domNode.name in allTransforms) {
-        const Component = allTransforms[domNode.name]
-        return (
-          <Component {...domNode.attribs}>
-            {domToReact(domNode.children as DOMNode[], options)}
-          </Component>
-        )
-      }
-    },
-  }
+  const options = buildTranslationParserOptions(allTransforms)
 
   return <>{parse(translatedText, options)}</>
 }
