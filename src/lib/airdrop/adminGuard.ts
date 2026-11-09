@@ -10,6 +10,8 @@
 
 import { NextResponse } from "next/server"
 
+import { secretEquals } from "@/lib/security/timingSafe"
+
 export function adminKeyError(req: Request): NextResponse | null {
   const configured = process.env.AIRDROP_ADMIN_KEY || ""
   if (!configured) {
@@ -18,7 +20,7 @@ export function adminKeyError(req: Request): NextResponse | null {
       { status: 503 }
     )
   }
-  if ((req.headers.get("x-admin-key") || "") !== configured) {
+  if (!secretEquals(req.headers.get("x-admin-key"), configured)) {
     return NextResponse.json(
       { success: false, error: "unauthorized" },
       { status: 401 }
