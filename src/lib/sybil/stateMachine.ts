@@ -41,6 +41,33 @@ export function dispositionForScore(
   return "hold"
 }
 
+/**
+ * Fail-closed gate for server-side signal collection: when a required signal
+ * could not be collected (or the human check was degraded), an automatic
+ * approval is downgraded to "hold" so the row goes to manual review. The
+ * returned hit is recorded in the audit log; it carries no penalty because
+ * the score itself already treated the signal as unknown.
+ */
+export function applyUnknownSignalGate(
+  disposition: Exclude<RegistrationStatus, "pending">,
+  missingSignals: string[]
+): {
+  disposition: Exclude<RegistrationStatus, "pending">
+  hit: ScoreRecord["hits"][number] | null
+} {
+  if (disposition !== "approved" || missingSignals.length === 0) {
+    return { disposition, hit: null }
+  }
+  return {
+    disposition: "hold",
+    hit: {
+      rule: "unverified-signals",
+      penalty: 0,
+      detail: `server-side signals unavailable: ${missingSignals.join(", ")}`,
+    },
+  }
+}
+
 /** Is a hold row due for automatic re-evaluation? */
 export function isRescoreDue(holdSince: Date, now: Date): boolean {
   return (

@@ -159,6 +159,16 @@ export interface SignalContext {
   } | null
 }
 
+export interface CollectSignalsResult {
+  result: SybilScoreResult
+  /**
+   * Signals that could not be collected server-side. Callers must treat them
+   * as unknown and fail closed (no auto-approval) instead of substituting
+   * favourable defaults — a client-supplied value is never a substitute.
+   */
+  missing: string[]
+}
+
 /** Assemble SybilSignals from raw context + on-chain fetch. */
 export async function collectSignals(
   ctx: SignalContext,
@@ -169,8 +179,15 @@ export async function collectSignals(
     rpcUrl: string
     now?: Date
   }
-): Promise<SybilScoreResult> {
-  const chain = await fetchOnChainSignals(opts.rpcUrl, opts.address)
+): Promise<CollectSignalsResult> {
+  let chain: { nonce: number; balanceWei: string } | null = null
+  try {
+    chain = await fetchOnChainSignals(opts.rpcUrl, opts.address)
+  } catch {
+    // Unreachable / failing RPC means the address signal is unknown.
+    chain = null
+  }
+
   const x = ctx.xUser
     ? xSignalsFromApiUser(ctx.xUser)
     : {
@@ -180,6 +197,10 @@ export async function collectSignals(
         xZeroTweets: null,
       }
 
+  const missing: string[] = []
+  if (!chain) missing.push("onchain-address-signals")
+  if (!ctx.xUser) missing.push("x-profile-signals")
+
   const signals: SybilSignals = {
     sameSubnetRegistrations: ctx.sameSubnetRegistrations,
     disposableEmailDomain: isDisposableEmailDomain(opts.email),
@@ -188,14 +209,15 @@ export async function collectSignals(
     xFollowers: x.xFollowers,
     xFollowing: x.xFollowing,
     xZeroTweets: x.xZeroTweets,
-    xFollowsCampaign: true,
-    addressNonce: chain.nonce,
-    addressBalanceWei: chain.balanceWei,
+    // Follow verification is asynchronous; it is never true at registration.
+    xFollowsCampaign: false,
+    addressNonce: chain?.nonce ?? null,
+    addressBalanceWei: chain?.balanceWei ?? null,
     sameSubnetPayoutAddresses: ctx.sameSubnetPayoutAddresses,
     registrationToAddressSeconds: ctx.registrationToAddressSeconds,
     productionCurveCorrelation: ctx.tierB?.productionCurveCorrelation ?? null,
     nodeIpMismatch: ctx.tierB?.nodeIpMismatch ?? null,
     now: opts.now ?? new Date(),
   }
-  return scoreSybilSignals(signals)
+  return { result: scoreSybilSignals(signals), missing }
 }
