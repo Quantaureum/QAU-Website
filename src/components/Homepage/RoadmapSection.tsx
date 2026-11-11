@@ -64,7 +64,7 @@ const RoadmapSection = async ({
             {t("page-index-roadmap-cta")} <ChevronNext />
           </ButtonLink>
           <ButtonLink
-            href="https://discord.gg/MSctkBT5j"
+            href="https://discord.gg/m6R8udvzgh"
             variant="outline"
             size="lg"
             customEventOptions={{

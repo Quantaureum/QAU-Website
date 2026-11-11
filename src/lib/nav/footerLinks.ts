@@ -50,9 +50,12 @@ export const buildFooterLinkSections = (
     links: [
       { href: "/community/", text: t("nav2-community-hub") },
       { href: "https://x.com/ldf1570073", text: t("nav2-x") },
-      { href: "https://discord.gg/MSctkBT5j", text: t("nav2-discord") },
+      { href: "https://discord.gg/m6R8udvzgh", text: t("nav2-discord") },
       { href: "https://github.com/Quantaureum", text: t("nav2-github") },
-      { href: "https://t.me/quantaureum", text: t("nav2-telegram") },
+      {
+        href: "https://t.me/quantaureum_announcements",
+        text: t("nav2-telegram"),
+      },
     ],
   },
 ]

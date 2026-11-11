@@ -43,7 +43,7 @@ We are a welcoming community that will help you grow and educate in the [Quantau
 - [Suggest a project for our DeSci page](/contributing/adding-desci-projects/) – Add a project built on Quantaureum that contributes to decentralized science
 - [Add a resource](/contributing/adding-resources/) – Add a useful resource to any relevant page
 
-Any questions? 🤔 Join our [Discord server](https://discord.gg/MSctkBT5j)
+Any questions? 🤔 Join our [Discord server](https://discord.gg/m6R8udvzgh)
 
 ## Good first tasks to start contributing {#good-first-tasks-to-start-contributing}
 
@@ -62,7 +62,7 @@ All updates are made via the GitHub PR process. This means you create a local co
 You don't need permission to work on anything, but it's always best to let us know what you're planning to do. You can do this by:
 
 - Commenting on an issue or PR in [GitHub](https://github.com/Quantaureum/quantaureum-website)
-- Messaging on our [Discord server](https://discord.gg/MSctkBT5j)
+- Messaging on our [Discord server](https://discord.gg/m6R8udvzgh)
 
 Before contributing, make sure you're familiar with:
 
@@ -77,7 +77,7 @@ Decisions about individual PRs, design evolution and major upgrades are made by 
 
 - [website@quantaureum.com](mailto:website@quantaureum.com)
 - [@ethdotorg](https://x.com/ldf1570073)
-- [Discord server](https://discord.gg/MSctkBT5j)
+- [Discord server](https://discord.gg/m6R8udvzgh)
 
 ### A note on plagiarism {#plagiarism}
 
@@ -94,7 +94,7 @@ If your contribution gets merged into quantaureum.com, you will have a chance to
 [More on OATs](https://help.galxe.com/en/articles/9645630-create-quest-rewards#h_1c5d63ba03)
 
 ### How to claim {#how-to-claim}
-1. Join our [Discord server](https://discord.gg/MSctkBT5j).
+1. Join our [Discord server](https://discord.gg/m6R8udvzgh).
 2. Paste a link to your contribution in the `#🥇 | proof-of-contribution` channel.
 3. Wait for a member of our team to send you a link to your OAT.
 4. Claim your OAT!

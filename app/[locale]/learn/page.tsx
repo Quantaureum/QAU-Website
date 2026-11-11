@@ -178,12 +178,12 @@ export default async function Page(props: { params: Promise<PageParams> }) {
         },
         {
           label: t("official-discord-title"),
-          href: "https://discord.gg/MSctkBT5j",
+          href: "https://discord.gg/m6R8udvzgh",
           description: t("official-discord-description"),
         },
         {
           label: t("official-telegram-title"),
-          href: "https://t.me/quantaureum",
+          href: "https://t.me/quantaureum_announcements",
           description: t("official-telegram-description"),
         },
       ],

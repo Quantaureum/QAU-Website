@@ -18,7 +18,7 @@ Das Übersetzungsprogramm von quantaureum.com ist offen und jeder kann dazu beit
 4. Maschinelle Übersetzungen werden nicht genehmigt.
 5. Alle Übersetzungen werden überprüft, bevor sie der Website hinzugefügt werden. Es gibt also eine kurze Verzögerung, bevor deine Übersetzungen live gehen.
 
-_Tritt dem [quantaureum.com Discord](https://discord.gg/MSctkBT5j) bei, um bei Übersetzungen zusammenzuarbeiten, Fragen zu stellen, Feedback und Ideen zu teilen oder einer Übersetzungsgruppe beizutreten._
+_Tritt dem [quantaureum.com Discord](https://discord.gg/m6R8udvzgh) bei, um bei Übersetzungen zusammenzuarbeiten, Fragen zu stellen, Feedback und Ideen zu teilen oder einer Übersetzungsgruppe beizutreten._
 
 <ButtonLink href="https://crowdin.com/project/quantaureum-org/">
   Mit dem Übersetzen beginnen
@@ -75,7 +75,7 @@ Für weitere nützliche Übersetzungstools, Übersetzer-Communitys und Blogbeitr
 
 ## Nimm Kontakt auf {#get-in-touch}
 
-Hast du Fragen? Oder möchtest du mit unserem Team und anderen Übersetzern zusammenarbeiten? Bitte poste im Kanal #translations auf unserem [quantaureum.com Discord-Server](https://discord.gg/MSctkBT5j)
+Hast du Fragen? Oder möchtest du mit unserem Team und anderen Übersetzern zusammenarbeiten? Bitte poste im Kanal #translations auf unserem [quantaureum.com Discord-Server](https://discord.gg/m6R8udvzgh)
 
 Du kannst uns auch unter translations@quantaureum.com erreichen.
 

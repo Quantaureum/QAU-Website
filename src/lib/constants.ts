@@ -34,7 +34,7 @@ export const SITE_URL =
 
 export const IS_PRODUCTION_DEPLOY =
   process.env.NEXT_PUBLIC_CONTEXT === "production"
-export const DISCORD_PATH = "https://discord.gg/MSctkBT5j"
+export const DISCORD_PATH = "https://discord.gg/m6R8udvzgh"
 export const GITHUB_REPO_URL =
   "https://github.com/Quantaureum/quantaureum-website/"
 export const EDIT_CONTENT_URL = `https://github.com/Quantaureum/quantaureum-website/tree/master/`

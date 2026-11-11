@@ -359,7 +359,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   )}
                   image={dogeComputerImg}
                 >
-                  <ButtonLink href="https://discord.gg/MSctkBT5j">
+                  <ButtonLink href="https://discord.gg/m6R8udvzgh">
                     {tCommunity("page-community-explore-dapps")}
                   </ButtonLink>
                 </Callout>

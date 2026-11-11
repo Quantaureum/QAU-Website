@@ -553,7 +553,10 @@ const Page = async (props: { params: Promise<PageParams> }) => {
               <ButtonLink href="/wallets/">
                 {t("page-what-is-quantaureum-start-individuals-cta-1")}
               </ButtonLink>
-              <ButtonLink href="https://discord.gg/MSctkBT5j" variant="outline">
+              <ButtonLink
+                href="https://discord.gg/m6R8udvzgh"
+                variant="outline"
+              >
                 {t("page-what-is-quantaureum-start-individuals-cta-2")}
               </ButtonLink>
             </CardFooter>

@@ -220,7 +220,7 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
 
               {/* Get help */}
               <Card
-                href="https://discord.gg/MSctkBT5j"
+                href="https://discord.gg/m6R8udvzgh"
                 variant="nested"
                 size="lg"
               >
@@ -506,7 +506,7 @@ const DevelopersPage = async (props: { params: Promise<PageParams> }) => {
               className={cn("flex", hackathons.length > 0 && "justify-center")}
             >
               <ButtonLink
-                href="https://discord.gg/MSctkBT5j"
+                href="https://discord.gg/m6R8udvzgh"
                 className="max-md:w-full"
                 customEventOptions={{
                   eventCategory: "hackathons",
