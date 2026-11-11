@@ -142,7 +142,7 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
           id: "community/discord",
           label: t("nav2-discord"),
           description: t("nav2-discord-desc"),
-          href: "https://discord.gg/MSctkBT5j",
+          href: "https://discord.gg/m6R8udvzgh",
         },
         {
           id: "community/github",
@@ -154,7 +154,7 @@ export const buildNavigation = (t: TranslateFn): NavSections => {
           id: "community/telegram",
           label: t("nav2-telegram"),
           description: t("nav2-telegram-desc"),
-          href: "https://t.me/quantaureum",
+          href: "https://t.me/quantaureum_announcements",
         },
       ],
     },

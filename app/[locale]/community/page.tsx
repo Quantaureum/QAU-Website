@@ -56,7 +56,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
       title: t("page-community-why-get-involved-card-1-title"),
       description: t("page-community-why-get-involved-card-1-description"),
       cta: t("page-community-why-get-involved-card-1-cta"),
-      href: "https://discord.gg/MSctkBT5j",
+      href: "https://discord.gg/m6R8udvzgh",
     },
     {
       icon: <HandCoins />,
@@ -165,7 +165,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
             </p>
             <Grid columns={3}>
               <Card
-                href="https://discord.gg/MSctkBT5j"
+                href="https://discord.gg/m6R8udvzgh"
                 variant="ghost"
                 size="sm"
               >
@@ -176,7 +176,11 @@ export default async function Page(props: { params: Promise<PageParams> }) {
                   </CardParagraph>
                 </CardContent>
               </Card>
-              <Card href="https://t.me/quantaureum" variant="ghost" size="sm">
+              <Card
+                href="https://t.me/quantaureum_announcements"
+                variant="ghost"
+                size="sm"
+              >
                 <CardContent className="pt-6">
                   <CardTitle>Telegram</CardTitle>
                   <CardParagraph>
@@ -194,7 +198,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
               </Card>
             </Grid>
             <div className="flex justify-center">
-              <ButtonLink size="lg" href="https://discord.gg/MSctkBT5j">
+              <ButtonLink size="lg" href="https://discord.gg/m6R8udvzgh">
                 {t("page-community-online-see-all")}
               </ButtonLink>
             </div>
@@ -264,7 +268,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
                 description={t("page-community-explore-dapps-description")}
                 image={dogeComputerImg}
               >
-                <ButtonLink href="https://discord.gg/MSctkBT5j">
+                <ButtonLink href="https://discord.gg/m6R8udvzgh">
                   {t("page-community-explore-dapps")}
                 </ButtonLink>
               </Callout>

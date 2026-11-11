@@ -40,7 +40,7 @@ export const Default: Story = {
 export const Twitter: Story = {
   args: {
     socialIcon: "twitter",
-    children: "@quantaureum on Twitter / X",
+    children: "@ldf1570073 on Twitter / X",
   },
 }
 
@@ -48,14 +48,18 @@ export const AllPlatforms = {
   render: () => (
     <VStack className="items-stretch gap-1">
       <SocialListItem socialIcon="webpage">quantaureum.com</SocialListItem>
-      <SocialListItem socialIcon="reddit">/r/quantaureum on Reddit</SocialListItem>
+      <SocialListItem socialIcon="reddit">
+        /r/quantaureum on Reddit
+      </SocialListItem>
       <SocialListItem socialIcon="twitter">
-        @quantaureum on Twitter / X
+        @ldf1570073 on Twitter / X
       </SocialListItem>
       <SocialListItem socialIcon="youtube">
         Quantaureum project YouTube
       </SocialListItem>
-      <SocialListItem socialIcon="discord">Quantaureum on Discord</SocialListItem>
+      <SocialListItem socialIcon="discord">
+        Quantaureum on Discord
+      </SocialListItem>
       <SocialListItem socialIcon="stackExchange">
         Quantaureum Stack Exchange
       </SocialListItem>

@@ -31,12 +31,12 @@ const socialLinks = [
   },
   {
     icon: Discord,
-    href: "https://discord.gg/MSctkBT5j",
+    href: "https://discord.gg/m6R8udvzgh",
     ariaLabel: "Discord",
   },
   {
     icon: Telegram,
-    href: "https://t.me/quantaureum",
+    href: "https://t.me/quantaureum_announcements",
     ariaLabel: "Telegram",
   },
 ]

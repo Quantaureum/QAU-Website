@@ -544,13 +544,13 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                 <p>{t("page-run-a-node-community-description-1")}</p>
                 <p>{t("page-run-a-node-community-description-2")}</p>
                 <div className="flex gap-4 text-center max-lg:flex-col">
-                  <ButtonLink href="https://discord.gg/MSctkBT5j">
+                  <ButtonLink href="https://discord.gg/m6R8udvzgh">
                     <Discord />
                     &nbsp;
                     {t("page-run-a-node-community-link-1")}
                   </ButtonLink>
                   <ButtonLink
-                    href="https://discord.gg/MSctkBT5j"
+                    href="https://discord.gg/m6R8udvzgh"
                     variant="outline"
                     isSecondary
                   >
@@ -581,7 +581,7 @@ const Page = async (props: { params: Promise<PageParams> }) => {
                   </InlineLink>
                 </ListItem>
                 <ListItem>
-                  <InlineLink href="https://discord.gg/MSctkBT5j">
+                  <InlineLink href="https://discord.gg/m6R8udvzgh">
                     {t("page-run-a-node-further-reading-3-link")}
                   </InlineLink>{" "}
                   - <i>{t("page-run-a-node-further-reading-3-author")}</i>

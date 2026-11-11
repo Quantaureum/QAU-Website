@@ -404,7 +404,7 @@ const Page = async ({ params }: { params: Promise<{ locale: Lang }> }) => {
                 "page-what-is-quantaureum-network-live-network-data-section-description-12",
                 {
                   discord: (chunks) => (
-                    <Link href="https://discord.gg/MSctkBT5j">{chunks}</Link>
+                    <Link href="https://discord.gg/m6R8udvzgh">{chunks}</Link>
                   ),
                 }
               )}

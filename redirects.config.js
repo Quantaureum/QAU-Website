@@ -16,7 +16,7 @@
 module.exports = [
   ["/developers/docs/evm", "/developers/"],
   ["/developers/docs/evm/opcodes", "/developers/"],
-  ["/discord", "https://discord.gg/MSctkBT5j"],
+  ["/discord", "https://discord.gg/m6R8udvzgh"],
   ["/brand", "/assets/"],
   ["/what-is-ethereum", "/what-is-quantaureum/"],
   ["/what-is-ether", "/what-is-qau/"],

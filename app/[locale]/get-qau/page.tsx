@@ -229,7 +229,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
                   {t("page-get-qau-find-exchange-desc")}
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
-                  <ButtonLink href="https://discord.gg/MSctkBT5j">
+                  <ButtonLink href="https://discord.gg/m6R8udvzgh">
                     {t("page-get-qau-community-cta")}
                   </ButtonLink>
                   <ButtonLink href="https://x.com/ldf1570073" variant="outline">
@@ -330,7 +330,7 @@ export default async function Page(props: { params: Promise<PageParams> }) {
                 image={dapps}
                 alt=""
               >
-                <ButtonLink href="https://discord.gg/MSctkBT5j">
+                <ButtonLink href="https://discord.gg/m6R8udvzgh">
                   {t("page-get-qau-checkout-dapps-btn")}
                 </ButtonLink>
               </Callout>

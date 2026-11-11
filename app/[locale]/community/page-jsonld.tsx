@@ -81,7 +81,7 @@ export default async function CommunityJsonLD({
             position: 2,
             name: t("page-community-conferences-title"),
             description: t("page-community-conferences-subtitle"),
-            url: normalizeUrlForJsonLd(locale, "https://discord.gg/MSctkBT5j"),
+            url: normalizeUrlForJsonLd(locale, "https://discord.gg/m6R8udvzgh"),
           },
           {
             "@type": "ListItem",

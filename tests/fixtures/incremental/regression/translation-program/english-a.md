@@ -18,7 +18,7 @@ The quantaureum.com Translation Program is open and anyone can contribute!
 4. Machine translations will not be approved.
 5. All translations are reviewed before being added to the site, so there will be a short delay before your translations go live.
 
-_Join the [quantaureum.com Discord](https://discord.gg/MSctkBT5j) to collaborate on translations, ask questions, share feedback and ideas, or join a translation group._
+_Join the [quantaureum.com Discord](https://discord.gg/m6R8udvzgh) to collaborate on translations, ask questions, share feedback and ideas, or join a translation group._
 
 <ButtonLink href="https://crowdin.com/project/quantaureum-org/">
   Start translating
@@ -75,7 +75,7 @@ For other useful translation tools, translator communities and Translation Progr
 
 ## Get in touch {#get-in-touch}
 
-Do you have any questions? Or want to collaborate with our team and other translators? Please post in the #translations channel of our [quantaureum.com Discord server](https://discord.gg/MSctkBT5j)
+Do you have any questions? Or want to collaborate with our team and other translators? Please post in the #translations channel of our [quantaureum.com Discord server](https://discord.gg/m6R8udvzgh)
 
 You can also reach out to us at translations@quantaureum.com
 
