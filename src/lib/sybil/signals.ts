@@ -64,6 +64,11 @@ export function isCommonEmailDomain(email: string): boolean {
   return COMMON_DOMAINS.has(emailDomain(email))
 }
 
+/** Common provider check by bare (already lower-cased) domain name. */
+export function isCommonEmailDomainName(domain: string): boolean {
+  return COMMON_DOMAINS.has(domain)
+}
+
 // ---------------------------------------------------------------------------
 // /24 subnet extraction
 // ---------------------------------------------------------------------------

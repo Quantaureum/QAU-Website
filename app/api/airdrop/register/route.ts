@@ -5,6 +5,7 @@
  *   campaign window → auth session (GitHub OAuth) → verified account →
  *   idempotency (L5) → address validation → X binding (L4) → Turnstile (L1)
  *   → IP cap (L3) → sybil score (L6-v2) → insert with auto disposition
+ *   → invite ledger (optional inviteCode, B-tier viral loop)
  *
  * Response contract: every body carries a machine-readable `code` field
  * (plus `success`); the client maps codes to localized copy — no
@@ -16,6 +17,7 @@ import { NextRequest, NextResponse } from "next/server"
 import {
   campaignPhase,
   getAirdropConfig,
+  getInviteBonusConfig,
   isValidXHandle,
 } from "@/lib/airdrop/airdropConfig"
 import { resolveAuthUser } from "@/lib/airdrop/authSession"
@@ -30,6 +32,11 @@ import {
   hasDatabase,
   updateAirdropSybilResult,
 } from "@/lib/airdrop/database"
+import {
+  createInviteRelation,
+  findApprovedInviterByInviteCode,
+  recordInviteApprovalSideEffects,
+} from "@/lib/airdrop/inviteStore"
 import { countAirdropByIp as countIpActivity } from "@/lib/airdrop/ipGuard"
 import { verifyTurnstile } from "@/lib/airdrop/turnstile"
 import { trustedClientIp } from "@/lib/security/clientIp"
@@ -247,6 +254,31 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     )
   }
 
+  // ---- B-tier invite ledger (plan §3.1, optional field) -----------------
+  // The invite code is existence-checked ONLY and never blocks the main
+  // flow: an unknown/duplicate code just records a machine hint. It is
+  // NEVER passed to the sybil scorer — the scoring inputs above were built
+  // and evaluated without it, by construction.
+  const invite = await handleInviteCode(
+    body.inviteCode,
+    registration.id,
+    getInviteBonusConfig().enabled
+  )
+
+  // Approval hook (plan §6-2): fire on the auto-approval path so the
+  // invitee's relation is approved, the inviter's count advances and bonus
+  // rounds generate. The invite layer's own failures must never fail a
+  // completed registration — log and continue.
+  let inviteCode: string | null = null
+  if (disposition === "approved") {
+    try {
+      const summary = await recordInviteApprovalSideEffects(registration.id)
+      inviteCode = summary.inviteCode
+    } catch (error) {
+      console.error("invite approval hook failed:", error)
+    }
+  }
+
   return jsonResponse(
     {
       success: true,
@@ -259,7 +291,48 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       registration,
       amount: cfg.amountPerUser,
       sybil: { score: scored.score, status: disposition },
+      invite,
+      ...(disposition === "approved" && inviteCode ? { inviteCode } : {}),
     },
     201
   )
+}
+
+type InviteHint = {
+  accepted: boolean
+  reason: "none" | "disabled" | "not_found" | "duplicate" | "self"
+}
+
+/**
+ * Optional inviteCode handling: existence check against approved
+ * registrations only, relation insert best-effort. Returns a machine hint
+ * for the response; never throws into the main flow.
+ */
+async function handleInviteCode(
+  rawCode: unknown,
+  inviteeRegistrationId: number,
+  featureEnabled: boolean
+): Promise<InviteHint> {
+  const code = typeof rawCode === "string" ? rawCode.trim() : ""
+  if (!code) return { accepted: false, reason: "none" }
+  if (!featureEnabled) return { accepted: false, reason: "disabled" }
+  try {
+    const inviterRegistrationId = await findApprovedInviterByInviteCode(code)
+    if (!inviterRegistrationId) return { accepted: false, reason: "not_found" }
+    if (inviterRegistrationId === inviteeRegistrationId) {
+      return { accepted: false, reason: "self" }
+    }
+    const created = await createInviteRelation(
+      inviterRegistrationId,
+      inviteeRegistrationId
+    )
+    return created
+      ? { accepted: true, reason: "none" }
+      : { accepted: false, reason: "duplicate" }
+  } catch (error) {
+    // Invite bookkeeping is auxiliary — a failed lookup/insert must not
+    // fail the registration itself.
+    console.error("invite code handling failed:", error)
+    return { accepted: false, reason: "not_found" }
+  }
 }
