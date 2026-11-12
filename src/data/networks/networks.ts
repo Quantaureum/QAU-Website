@@ -18,12 +18,12 @@ export interface Rollup {
 
 export type Rollups = Rollup[]
 
-// D-34 (2026-11-04): upstream template sample data, not a live-network claim.
-// Project is in testnet phase (1669); mainnet config (1668) launch status
-// will be announced officially.
+// Mainnet is live (2026-11-13): chain ID 1668, RPC rpc.quantaureum.com.
+// The testnet (1669) remains available for testing; this label points at
+// mainnet as the primary Quantaureum network.
 export const quantaureumNetworkData = {
-  name: "Quantaureum Testnet",
-  chainName: "Quantaureum Testnet",
+  name: "Quantaureum Mainnet",
+  chainName: "Quantaureum Mainnet",
   logo: QuantaureumLogo,
   networkMaturity: "n/a",
   canExpand: false,

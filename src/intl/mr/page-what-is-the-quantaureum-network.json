@@ -31,7 +31,7 @@
   "page-what-is-quantaureum-network-section-description-16": "डी-प्लॅटफॉर्मिंगशिवाय सोशल मीडिया",
   "page-what-is-quantaureum-network-section-description-17": "खुल्या आणि पारदर्शक आर्थिक प्रणाली",
   "page-what-is-quantaureum-network-section-description-18": "मुळात, क्वांटारियम नेटवर्क हा डिजिटल मालकी आणि खुल्या सहभागाचा पाया आहे.",
-  "page-what-is-quantaureum-network-section-description-19": "You may see ChainID 1668 referred to as the Quantaureum mainnet configuration. It is configured in code, but the project is currently in testnet phase (1669) and mainnet launch status will be announced officially.",
+  "page-what-is-quantaureum-network-section-description-19": "Quantaureum mainnet is live on ChainID 1668 (RPC: https://rpc.quantaureum.com). The testnet (1669) remains available for testing.",
   "page-what-is-quantaureum-network-gas-section-description-1": "क्वांटारियमवरील प्रत्येक व्यवहारासाठी गॅस शुल्क नावाचे एक छोटे शुल्क लागते. तुम्ही QAU पाठवता, टोकनची अदलाबदल करता किंवा ॲप वापरता, प्रत्येक वेळी तुम्ही ब्लॉकचेनवर डेटा लिहिता तेव्हा तुम्ही थोड्या प्रमाणात गॅस भरता.",
   "page-what-is-quantaureum-network-gas-section-description-2": "<strong>गॅस शुल्क क्वांटारियम सुरळीत चालू ठेवते</strong>. त्याशिवाय, वाईट प्रवृत्तीचे लोक रिकाम्या व्यवहारांसह नेटवर्कला स्पॅम करू शकतात आणि प्रचंड गर्दीमुळे ते वापरणे अशक्य करू शकतात, कारण वापरकर्ते भरण्यास तयार असलेल्या शुल्कानुसार व्यवहारांना प्राधान्य देण्याचा कोणताही मार्ग नसेल.",
   "page-what-is-quantaureum-network-gas-section-description-3": "Quantaureum गॅस शुल्क एखाद्या व्यवहारासाठी खर्च होणाऱ्या संसाधनांच्या खर्चाचा विचार करते — गणना, बँडविड्थ आणि स्टोरेज. वापरकर्त्यांसाठी या सगळ्यांचा उल्लेख एकच मूल्य म्हणून केला जातो, आणि प्रत्येक प्रक्रियेचा सापेक्ष खर्च प्रोटोकॉलने ठरवलेला असतो.",

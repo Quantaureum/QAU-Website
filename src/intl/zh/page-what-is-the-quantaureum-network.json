@@ -31,7 +31,7 @@
   "page-what-is-quantaureum-network-section-description-16": "不会被封禁的社交媒体",
   "page-what-is-quantaureum-network-section-description-17": "公开透明的金融系统",
   "page-what-is-quantaureum-network-section-description-18": "从本质上讲，量子金链网络是数字所有权和开放参与的基础。",
-  "page-what-is-quantaureum-network-section-description-19": "你可能会看到 ChainID 1668 被称为 Quantaureum 主网配置。该配置已存在于代码中，但项目目前处于测试网阶段（1669），主网上线状态以官方公告为准。",
+  "page-what-is-quantaureum-network-section-description-19": "Quantaureum 主网已在 ChainID 1668 上线（RPC：https://rpc.quantaureum.com）。测试网（1669）仍可用于测试。",
   "page-what-is-quantaureum-network-gas-section-description-1": "量子金链上的每笔交易都需要支付一笔称为 gas 费的小额费用。无论你是发送 QAU、兑换代币还是使用应用，每次向区块链写入数据时，你都需要支付少量的 Gas。",
   "page-what-is-quantaureum-network-gas-section-description-2": "<strong>gas 费使量子金链保持平稳运行</strong>。如果没有它，恶意行为者可能会用空交易向网络发送垃圾信息，导致严重拥堵而无法使用，因为将无法根据用户愿意支付的费用来对交易进行优先级排序。",
   "page-what-is-quantaureum-network-gas-section-description-3": "Quantaureum 的 Gas 费用涵盖交易所消耗资源的成本——计算、带宽和存储。所有这些对用户而言都被抽象为一个统一的值，每种操作的相对成本由协议定义。",

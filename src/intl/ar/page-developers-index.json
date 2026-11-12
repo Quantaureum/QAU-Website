@@ -47,7 +47,7 @@
   "page-developers-learn-tutorials-cta": "عرض البرامج التعليمية",
   "page-developers-learn-tutorials-desc": "تعلم تطوير Quantaureum خطوة بخطوة من بناة قاموا بذلك بالفعل.",
   "page-developers-meta-desc": "وثائق وبرامج تعليمية وأدوات للمطورين الذين يبنون على Quantaureum.",
-  "page-developers-networks-desc": "Built-in network presets: testnet 1669, mainnet config 1668, devnet 1333; launch status will be announced officially",
+  "page-developers-networks-desc": "Built-in network presets: mainnet 1668, testnet 1669, devnet 1333",
   "page-developers-networks-link": "الشبكات",
   "page-developers-node-clients-desc": "كيفية التحقق من الكتل والمعاملات في الشبكة",
   "page-developers-node-clients-link": "العقد والعملاء",

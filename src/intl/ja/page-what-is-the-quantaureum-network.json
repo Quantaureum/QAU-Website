@@ -31,7 +31,7 @@
   "page-what-is-quantaureum-network-section-description-16": "アカウント凍結（ディプラットフォーム）のないソーシャルメディア",
   "page-what-is-quantaureum-network-section-description-17": "オープンで透明性の高い金融システム",
   "page-what-is-quantaureum-network-section-description-18": "その中核において、クアンタリアム・ネットワークはデジタルな所有権とオープンな参加のための基盤です。",
-  "page-what-is-quantaureum-network-section-description-19": "You may see ChainID 1668 referred to as the Quantaureum mainnet configuration. It is configured in code, but the project is currently in testnet phase (1669) and mainnet launch status will be announced officially.",
+  "page-what-is-quantaureum-network-section-description-19": "Quantaureum mainnet is live on ChainID 1668 (RPC: https://rpc.quantaureum.com). The testnet (1669) remains available for testing.",
   "page-what-is-quantaureum-network-gas-section-description-1": "クアンタリアム上のすべてのトランザクションには、ガス代と呼ばれる少額の手数料がかかります。QAUを送金したり、トークンをスワップしたり、アプリを使用したりする場合でも、ブロックチェーンにデータを書き込むたびに少額のガスを支払います。",
   "page-what-is-quantaureum-network-gas-section-description-2": "<strong>ガス代はクアンタリアムをスムーズに稼働させ続けます</strong>。これがなければ、悪意のある者が空のトランザクションでネットワークにスパムを送信し、深刻な混雑を引き起こして使用不可能にする可能性があります。ユーザーが支払う意思のある手数料によってトランザクションに優先順位を付ける方法がなくなるためです。",
   "page-what-is-quantaureum-network-gas-section-description-3": "Quantaureumのガス手数料は、トランザクションが消費するリソースのコスト（計算、帯域幅、ストレージ）をカバーします。これらはすべてユーザーにとって単一の値に集約され、各操作の相対的なコストはプロトコルで定義されています。",

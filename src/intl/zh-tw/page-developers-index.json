@@ -47,7 +47,7 @@
   "page-developers-learn-tutorials-cta": "檢視教學",
   "page-developers-learn-tutorials-desc": "跟著已經實作過的建置者，一步步學習量子金链開發。",
   "page-developers-meta-desc": "提供給在量子金链上建置的開發者的文件、教學與工具。",
-  "page-developers-networks-desc": "Built-in network presets: testnet 1669, mainnet config 1668, devnet 1333; launch status will be announced officially",
+  "page-developers-networks-desc": "Built-in network presets: mainnet 1668, testnet 1669, devnet 1333",
   "page-developers-networks-link": "網路",
   "page-developers-node-clients-desc": "區塊與交易如何在網路中被驗證",
   "page-developers-node-clients-link": "節點與客戶端",

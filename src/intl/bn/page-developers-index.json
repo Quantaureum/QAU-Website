@@ -47,7 +47,7 @@
   "page-developers-learn-tutorials-cta": "টিউটোরিয়ালগুলো দেখুন",
   "page-developers-learn-tutorials-desc": "যেসব বিল্ডাররা ইতিমধ্যে এটি করেছেন তাদের কাছ থেকে ধাপে ধাপে কুয়ান্টারিয়াম ডেভেলপমেন্ট শিখুন।",
   "page-developers-meta-desc": "কুয়ান্টারিয়ামে তৈরি করা ডেভেলপারদের জন্য ডকুমেন্টেশন, টিউটোরিয়াল এবং টুল।",
-  "page-developers-networks-desc": "Built-in network presets: testnet 1669, mainnet config 1668, devnet 1333; launch status will be announced officially",
+  "page-developers-networks-desc": "Built-in network presets: mainnet 1668, testnet 1669, devnet 1333",
   "page-developers-networks-link": "নেটওয়ার্ক",
   "page-developers-node-clients-desc": "নেটওয়ার্কে কীভাবে ব্লক এবং ট্রানজ্যাকশন যাচাই করা হয়",
   "page-developers-node-clients-link": "নোড এবং ক্লায়েন্ট",
