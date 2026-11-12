@@ -61,5 +61,7 @@
   "ui-x-required-hint": "Do rejestracji wymagana jest nazwa użytkownika X (Twitter).",
   "ui-api-account-too-young": "Twoje konto GitHub musi mieć co najmniej rok, aby wziąć udział.",
   "ui-api-github-error": "Logowanie przez GitHub nie powiodło się. Spróbuj ponownie.",
-  "ui-api-email-disabled": "Rejestracja e-mailowa została zamknięta. Zaloguj się przez GitHub."
+  "ui-api-email-disabled": "Rejestracja e-mailowa została zamknięta. Zaloguj się przez GitHub.",
+  "invite-bonus-title": "Zaproszenie i bonus (opcjonalnie)",
+  "invite-bonus-body": "Po zatwierdzeniu rejestracji otrzymujesz osobisty kod zaproszenia.\n\n• Zaproś 3 znajomych, którzy przejdą tę samą weryfikację anty-nadużyć → bonus +30 QAU, do 2 rund (+60 QAU maks.)\n• Pula bonusowa: 60 000 QAU, kto pierwszy, ten lepszy\n• Fair play: jeśli zaproszony zostanie oznaczony jako sybil, runda jest unieważniana — twój własny airdrop nigdy nie jest dotykany\n• Tokeny bonusowe mogą być przyznane w zależności od dostępności puli\n• Naliczanie bonusów kończy się 8 grudnia 2026 o 23:59 UTC"
 }

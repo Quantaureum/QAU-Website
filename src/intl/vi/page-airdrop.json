@@ -61,5 +61,7 @@
   "ui-x-required-hint": "Cần có tên người dùng X (Twitter) để đăng ký.",
   "ui-api-account-too-young": "Tài khoản GitHub của bạn phải được tạo ít nhất một năm để tham gia.",
   "ui-api-github-error": "Đăng nhập GitHub thất bại. Vui lòng thử lại.",
-  "ui-api-email-disabled": "Đăng ký bằng email đã đóng. Vui lòng đăng nhập bằng GitHub."
+  "ui-api-email-disabled": "Đăng ký bằng email đã đóng. Vui lòng đăng nhập bằng GitHub.",
+  "invite-bonus-title": "Giới thiệu & Thưởng (tùy chọn)",
+  "invite-bonus-body": "Sau khi đăng ký được phê duyệt, bạn nhận được mã giới thiệu cá nhân.\n\n• Giới thiệu 3 người bạn vượt qua cùng một buổi sàng lọc chống lạm dụng → thưởng +30 QAU, tối đa 2 vòng (+60 QAU)\n• Quỹ thưởng: 60.000 QAU, ai nhanh người đó được\n• Chơi đẹp: nếu người được giới thiệu bị đánh dấu là sybil, vòng đó bị hủy — airdrop của bạn không bao giờ bị ảnh hưởng\n• Token thưởng có thể được phát tùy theo quỹ còn lại\n• Tích lũy thưởng kết thúc 23:59 UTC ngày 8/12/2026"
 }

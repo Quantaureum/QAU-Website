@@ -61,5 +61,7 @@
   "ui-x-required-hint": "Nama pengguna X (Twitter) wajib diisi untuk pendaftaran.",
   "ui-api-account-too-young": "Akun GitHub Anda harus berusia minimal satu tahun untuk berpartisipasi.",
   "ui-api-github-error": "Masuk GitHub gagal. Silakan coba lagi.",
-  "ui-api-email-disabled": "Pendaftaran email telah ditutup. Silakan masuk dengan GitHub."
+  "ui-api-email-disabled": "Pendaftaran email telah ditutup. Silakan masuk dengan GitHub.",
+  "invite-bonus-title": "Undangan & Bonus (opsional)",
+  "invite-bonus-body": "Setelah pendaftaran Anda disetujui, Anda menerima kode undangan pribadi.\n\n• Undang 3 teman yang lolos penyaringan anti-penyalahgunaan yang sama → bonus +30 QAU, hingga 2 putaran (maks +60 QAU)\n• Pool bonus: 60.000 QAU, siapa cepat dia dapat\n• Fair play: jika undangan ditandai sebagai sybil, putaran itu dibatalkan — airdrop Anda sendiri tidak pernah terpengaruh\n• Token bonus dapat diberikan sesuai ketersediaan pool\n• Akumulasi bonus berakhir 8 Desember 2026 23:59 UTC"
 }

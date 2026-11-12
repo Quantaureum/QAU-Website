@@ -61,5 +61,7 @@
   "ui-x-required-hint": "Jina la mtumiaji la X (Twitter) linahitajika kwa usajili.",
   "ui-api-account-too-young": "Akaunti yako ya GitHub lazima iwe na umri angalau mwaka mmoja ili ushiriki.",
   "ui-api-github-error": "Kuingia kwa GitHub kumeshindikana. Tafadhali jaribu tena.",
-  "ui-api-email-disabled": "Usajili wa barua pepe umefungwa. Tafadhali ingia kwa GitHub."
+  "ui-api-email-disabled": "Usajili wa barua pepe umefungwa. Tafadhali ingia kwa GitHub.",
+  "invite-bonus-title": "Mwaliko & Bonus (hiari)",
+  "invite-bonus-body": "Baada ya usajili wako kuidhinishwa, unapokea kodi yako ya kibinafsi ya mwaliko.\n\n• Kariri marafiki 3 wanaofanya uchunguzi sawa wa kutokuza → bonus ya +30 QAU, hadi raundi 2 (+60 QAU kwa juu)\n• Pool ya bonus: QAU 60,000, wa kwanza huwa wa kwanza\n• Uchezaji mwema: ikiwa mwalikwa anagundulika kuwa sybil, raundi hiyo inafutwa — airdrop yako mwenyewe haiathiriki kamwe\n• Tokeni za bonus zinaweza kutolewa kulingana na upatikanaji wa pool\n• Ukusanyaji wa bonus unaisha Desemba 8, 2026 23:59 UTC"
 }
