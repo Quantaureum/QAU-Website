@@ -20,7 +20,9 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   }
 }
 
-export default async function Page() {
+export default async function Page({ params }: Props) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: "page-airdrop" })
   return (
     <>
       <PageHero
@@ -34,6 +36,12 @@ export default async function Page() {
       />
       <MainArticle className="flex flex-col items-center gap-8 py-8">
         <AirdropRegistration />
+        <div className="w-full max-w-2xl rounded-2xl border border-gray-200 p-6 dark:border-gray-700">
+          <h2 className="text-lg font-bold">{t("invite-bonus-title")}</h2>
+          <p className="mt-3 text-sm whitespace-pre-line text-gray-600 dark:text-gray-400">
+            {t("invite-bonus-body")}
+          </p>
+        </div>
       </MainArticle>
     </>
   )

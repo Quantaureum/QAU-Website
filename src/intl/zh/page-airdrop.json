@@ -61,5 +61,7 @@
   "ui-x-required-hint": "报名必须填写 X (Twitter) 用户名。",
   "ui-api-account-too-young": "GitHub 账号需注册满一年才能参与。",
   "ui-api-github-error": "GitHub 登录失败，请重试。",
-  "ui-api-email-disabled": "邮箱注册已关闭，请使用 GitHub 登录。"
+  "ui-api-email-disabled": "邮箱注册已关闭，请使用 GitHub 登录。",
+  "invite-bonus-title": "邀请与加成（可选）",
+  "invite-bonus-body": "报名过审后，你将获得个人邀请码。\n\n• 每邀请 3 名通过同样反滥用筛查的好友 → +30 QAU 加成，封顶 2 轮（+60 QAU）\n• 加成池 60,000 QAU，先到先得\n• 公平规则：若被邀请人被判定为女巫，该轮加成作废——你自己的空投不受任何影响\n• 加成可能视池子余量发放（may be rewarded）\n• 邀请加成累计截止 2026-12-08 23:59 UTC"
 }

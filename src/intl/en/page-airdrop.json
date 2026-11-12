@@ -61,5 +61,7 @@
   "ui-x-required-hint": "An X (Twitter) username is required for registration.",
   "ui-api-account-too-young": "Your GitHub account must be at least one year old to participate.",
   "ui-api-github-error": "GitHub sign-in failed. Please try again.",
-  "ui-api-email-disabled": "Email sign-up has been closed. Please sign in with GitHub."
+  "ui-api-email-disabled": "Email sign-up has been closed. Please sign in with GitHub.",
+  "invite-bonus-title": "Invite & Bonus (optional)",
+  "invite-bonus-body": "Once your registration is approved, you receive a personal invite code.\n\n• Invite 3 friends who pass the same anti-abuse screening → +30 QAU bonus, up to 2 rounds (+60 QAU max)\n• Bonus pool: 60,000 QAU, first come first served\n• Fair play: if an invitee is flagged as sybil, that round is voided — your own airdrop is never affected\n• Bonus tokens may be rewarded subject to pool availability\n• Invite bonus accrual closes Dec 8, 2026 23:59 UTC"
 }
