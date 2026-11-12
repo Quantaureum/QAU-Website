@@ -47,7 +47,7 @@
   "page-developers-learn-tutorials-cta": "Xem các bài hướng dẫn",
   "page-developers-learn-tutorials-desc": "Học phát triển Quantaureum từng bước từ những người xây dựng đã có kinh nghiệm.",
   "page-developers-meta-desc": "Tài liệu, bài hướng dẫn và công cụ dành cho các nhà phát triển xây dựng trên Quantaureum.",
-  "page-developers-networks-desc": "Built-in network presets: testnet 1669, mainnet config 1668, devnet 1333; launch status will be announced officially",
+  "page-developers-networks-desc": "Built-in network presets: mainnet 1668, testnet 1669, devnet 1333",
   "page-developers-networks-link": "Mạng lưới",
   "page-developers-node-clients-desc": "Cách các khối và giao dịch được xác minh trong mạng lưới",
   "page-developers-node-clients-link": "Nút và client",

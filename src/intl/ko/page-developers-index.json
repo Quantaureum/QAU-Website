@@ -47,7 +47,7 @@
   "page-developers-learn-tutorials-cta": "튜토리얼 보기",
   "page-developers-learn-tutorials-desc": "이미 경험이 있는 빌더들로부터 쿠앤타리움 개발을 단계별로 배워보세요.",
   "page-developers-meta-desc": "쿠앤타리움에서 빌드하는 개발자를 위한 문서, 튜토리얼 및 도구입니다.",
-  "page-developers-networks-desc": "Built-in network presets: testnet 1669, mainnet config 1668, devnet 1333; launch status will be announced officially",
+  "page-developers-networks-desc": "Built-in network presets: mainnet 1668, testnet 1669, devnet 1333",
   "page-developers-networks-link": "네트워크",
   "page-developers-node-clients-desc": "네트워크에서 블록과 트랜잭션이 검증되는 방법",
   "page-developers-node-clients-link": "노드 및 클라이언트",

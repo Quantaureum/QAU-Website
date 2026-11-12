@@ -5,7 +5,7 @@
   "page-index-title": "欢迎来到量子金链",
   "page-index-hero-image-alt": "Quantaureum 网络示意图：由相互关联的量子晶格构成的晶格结构。",
   "page-index-hero-title": "抗量子区块链",
-  "page-index-hero-subtitle": "Quantaureum 采用 NIST 标准后量子密码学保护每一个账户和每一笔签名——从零构建、开源，目前处于测试网阶段。",
+  "page-index-hero-subtitle": "Quantaureum 采用 NIST 标准后量子密码学保护每一个账户和每一笔签名——从零构建、开源，主网已在 ChainID 1668 上线。",
   "page-index-hero-cta": "从这里开始",
   "page-index-modal-title": "你来这里的目的是什么？",
   "page-index-modal-description": "选择你的路径：了解 Quantaureum、使用网络，或开始构建。",

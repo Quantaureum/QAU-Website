@@ -47,7 +47,7 @@
   "page-developers-learn-tutorials-cta": "View tutorials",
   "page-developers-learn-tutorials-desc": "Learn Quantaureum development step-by-step from builders who have already done it.",
   "page-developers-meta-desc": "Documentation, tutorials, and tools for developers building on Quantaureum.",
-  "page-developers-networks-desc": "Built-in network presets: testnet 1669, mainnet config 1668, devnet 1333; launch status will be announced officially",
+  "page-developers-networks-desc": "Built-in network presets: mainnet 1668, testnet 1669, devnet 1333",
   "page-developers-networks-link": "Networks",
   "page-developers-node-clients-desc": "How blocks and transactions are verified in the network",
   "page-developers-node-clients-link": "Nodes and clients",

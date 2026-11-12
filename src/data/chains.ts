@@ -1,13 +1,24 @@
 /**
- * D-34 status note (2026-11-04): this list is inherited from the upstream
+ * Status note (2026-11-13): this list is inherited from the upstream
  * ethereum.org / chainlist template. The first entry previously claimed
  * a mainnet label with chainId 1, which is Ethereum's chain ID and
  * contradicts qau/params. It is now labelled as a testnet preset.
- * These entries are sample data, not a verified network registry. The project
- * is in testnet phase (1669); mainnet parameters (1668) exist in code and
- * launch status will be announced officially.
+ * These entries are sample data, not a verified network registry.
+ * Quantaureum mainnet is live on chain ID 1668; the testnet preset (1669)
+ * is kept below because the testnet still exists.
  */
 const chains = [
+  {
+    name: "Quantaureum Mainnet",
+    infoURL: "https://quantaureum.com",
+    chainId: 1668,
+    nativeCurrency: {
+      name: "QAU",
+      symbol: "QAU",
+      decimals: 18,
+    },
+    chain: "QAU",
+  },
   {
     name: "Quantaureum Testnet",
     infoURL: "https://quantaureum.com",

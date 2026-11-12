@@ -47,7 +47,7 @@
   "page-developers-learn-tutorials-cta": "Eğiticileri görüntüle",
   "page-developers-learn-tutorials-desc": "Quantaureum geliştirmeyi, bunu daha önce yapmış olan geliştiricilerden adım adım öğrenin.",
   "page-developers-meta-desc": "Quantaureum üzerinde geliştirme yapanlar için belgeler, eğiticiler ve araçlar.",
-  "page-developers-networks-desc": "Built-in network presets: testnet 1669, mainnet config 1668, devnet 1333; launch status will be announced officially",
+  "page-developers-networks-desc": "Built-in network presets: mainnet 1668, testnet 1669, devnet 1333",
   "page-developers-networks-link": "Ağlar",
   "page-developers-node-clients-desc": "Ağda blokların ve işlemlerin nasıl doğrulandığı",
   "page-developers-node-clients-link": "Düğümler ve istemciler",

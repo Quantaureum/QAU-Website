@@ -47,7 +47,7 @@
   "page-developers-learn-tutorials-cta": "Zobrazit tutoriály",
   "page-developers-learn-tutorials-desc": "Naučte se vývoj na Quantaureum krok za krokem od tvůrců, kteří to již udělali.",
   "page-developers-meta-desc": "Dokumentace, tutoriály a nástroje pro vývojáře tvořící na Quantaureum.",
-  "page-developers-networks-desc": "Built-in network presets: testnet 1669, mainnet config 1668, devnet 1333; launch status will be announced officially",
+  "page-developers-networks-desc": "Built-in network presets: mainnet 1668, testnet 1669, devnet 1333",
   "page-developers-networks-link": "Sítě",
   "page-developers-node-clients-desc": "Jak jsou bloky a transakce ověřovány v síti",
   "page-developers-node-clients-link": "Uzly a klienti",
