@@ -61,5 +61,7 @@
   "ui-x-required-hint": "Un nom d'utilisateur X (Twitter) est requis pour s'inscrire.",
   "ui-api-account-too-young": "Votre compte GitHub doit être âgé d'au moins un an pour participer.",
   "ui-api-github-error": "Échec de la connexion via GitHub. Veuillez réessayer.",
-  "ui-api-email-disabled": "Les inscriptions par e-mail sont fermées. Veuillez vous connecter avec GitHub."
+  "ui-api-email-disabled": "Les inscriptions par e-mail sont fermées. Veuillez vous connecter avec GitHub.",
+  "invite-bonus-title": "Parrainage et bonus (facultatif)",
+  "invite-bonus-body": "Une fois votre inscription approuvée, vous recevez un code d'invitation personnel.\n\n• Parrainez 3 amis qui passent le même contrôle anti-abus → bonus de +30 QAU, jusqu'à 2 tours (+60 QAU max)\n• Cagnotte : 60 000 QAU, premier arrivé, premier servi\n• Fair-play : si un invité est signalé comme sybil, le tour est annulé — votre propre airdrop n'est jamais affecté\n• Les tokens de bonus peuvent être attribués selon la disponibilité de la cagnotte\n• L'accumulation du bonus se termine le 8 décembre 2026 à 23h59 UTC"
 }

@@ -61,5 +61,7 @@
   "ui-x-required-hint": "Per la registrazione è richiesto un nome utente X (Twitter).",
   "ui-api-account-too-young": "Il tuo account GitHub deve avere almeno un anno per partecipare.",
   "ui-api-github-error": "Accesso con GitHub non riuscito. Riprova.",
-  "ui-api-email-disabled": "La registrazione via email è stata chiusa. Accedi con GitHub."
+  "ui-api-email-disabled": "La registrazione via email è stata chiusa. Accedi con GitHub.",
+  "invite-bonus-title": "Invito e bonus (opzionale)",
+  "invite-bonus-body": "Una volta approvata la registrazione, ricevi un codice invito personale.\n\n• Invita 3 amici che superino lo stesso controllo anti-abuso → bonus di +30 QAU, fino a 2 round (+60 QAU max)\n• Pool del bonus: 60.000 QAU, primo arrivato primo servito\n• Fair play: se un invitato viene segnalato come sybil, il round viene annullato — il tuo airdrop non è mai influenzato\n• I token bonus possono essere erogati in base alla disponibilità del pool\n• L'accumulo del bonus termina l'8 dicembre 2026, 23:59 UTC"
 }

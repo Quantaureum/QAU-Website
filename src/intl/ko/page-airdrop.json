@@ -61,5 +61,7 @@
   "ui-x-required-hint": "등록하려면 X(Twitter) 사용자 이름이 필요합니다.",
   "ui-api-account-too-young": "참여하려면 GitHub 계정이 생성된 지 1년 이상 되어야 합니다.",
   "ui-api-github-error": "GitHub 로그인에 실패했습니다. 다시 시도해 주세요.",
-  "ui-api-email-disabled": "이메일 가입이 마감되었습니다. GitHub로 로그인해 주세요."
+  "ui-api-email-disabled": "이메일 가입이 마감되었습니다. GitHub로 로그인해 주세요.",
+  "invite-bonus-title": "초대 및 보너스 (선택)",
+  "invite-bonus-body": "등록이 승인되면 개인 초대 코드가 발급됩니다.\n\n• 동일한 어뷰즈 방지 심사를 통과한 친구 3명 초대 → +30 QAU 보너스, 최대 2라운드 (+60 QAU)\n• 보너스 풀: 60,000 QAU, 선착순\n• 페어플레이: 초대된 사용자가 sybil로 판정되면 해당 라운드는 무효화됩니다 — 본인의 에어드랍에는 영향이 없습니다\n• 보너스 토큰은 풀 잔량에 따라 지급될 수 있습니다\n• 보너스 적립은 2026년 12월 8일 23:59 UTC 종료"
 }

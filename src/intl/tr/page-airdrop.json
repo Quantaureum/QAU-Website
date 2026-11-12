@@ -61,5 +61,7 @@
   "ui-x-required-hint": "Kayıt için bir X (Twitter) kullanıcı adı gereklidir.",
   "ui-api-account-too-young": "Katılmak için GitHub hesabınızın en az bir yıl önce oluşturulmuş olması gerekir.",
   "ui-api-github-error": "GitHub girişi başarısız oldu. Lütfen tekrar deneyin.",
-  "ui-api-email-disabled": "E-posta kaydı kapatıldı. Lütfen GitHub ile giriş yapın."
+  "ui-api-email-disabled": "E-posta kaydı kapatıldı. Lütfen GitHub ile giriş yapın.",
+  "invite-bonus-title": "Davet ve Bonus (isteğe bağlı)",
+  "invite-bonus-body": "Kaydınız onaylandıktan sonra kişisel davet kodunuz oluşur.\n\n• Aynı kötüye kullanım taramasından geçen 3 arkadaş davet edin → +30 QAU bonus, en fazla 2 tur (+60 QAU)\n• Bonus havuzu: 60.000 QAU, ilk gelen ilk alır\n• Adil oyun: bir davetli sybil olarak işaretlenirse o tur geçersiz kılınır — kendi airdrop'ınız hiçbir zaman etkilenmez\n• Bonus tokenlar havuz uygunluğuna göre dağıtılabilir\n• Bonus birikimi 8 Aralık 2026 23:59 UTC'de sona erer"
 }

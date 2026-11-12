@@ -61,5 +61,7 @@
   "ui-x-required-hint": "É necessário um nome de usuário do X (Twitter) para se cadastrar.",
   "ui-api-account-too-young": "Sua conta do GitHub deve ter pelo menos um ano para participar.",
   "ui-api-github-error": "Falha no login com GitHub. Tente novamente.",
-  "ui-api-email-disabled": "O cadastro por e-mail foi encerrado. Entre com o GitHub."
+  "ui-api-email-disabled": "O cadastro por e-mail foi encerrado. Entre com o GitHub.",
+  "invite-bonus-title": "Convite & Bônus (opcional)",
+  "invite-bonus-body": "Após a aprovação do seu registro, você recebe um código de convite pessoal.\n\n• Convide 3 amigos que passem pela mesma triagem antifraude → bônus de +30 QAU, até 2 rodadas (+60 QAU no máximo)\n• Pool do bônus: 60.000 QAU, por ordem de chegada\n• Jogo limpo: se um convidado for marcado como sybil, a rodada é anulada — seu próprio airdrop nunca é afetado\n• Os tokens do bônus podem ser concedidos conforme a disponibilidade do pool\n• O acúmulo do bônus encerra em 8 de dezembro de 2026, 23:59 UTC"
 }

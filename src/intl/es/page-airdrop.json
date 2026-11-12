@@ -61,5 +61,7 @@
   "ui-x-required-hint": "Se requiere un nombre de usuario de X (Twitter) para registrarse.",
   "ui-api-account-too-young": "Tu cuenta de GitHub debe tener al menos un año para participar.",
   "ui-api-github-error": "Falló el inicio de sesión con GitHub. Inténtalo de nuevo.",
-  "ui-api-email-disabled": "El registro por correo electrónico ha sido cerrado. Inicia sesión con GitHub."
+  "ui-api-email-disabled": "El registro por correo electrónico ha sido cerrado. Inicia sesión con GitHub.",
+  "invite-bonus-title": "Invitación y bono (opcional)",
+  "invite-bonus-body": "Una vez aprobado tu registro, recibirás un código de invitación personal.\n\n• Invita a 3 amigos que superen el mismo filtro antifraude → +30 QAU de bono, hasta 2 rondas (+60 QAU máximo)\n• Fondo del bono: 60.000 QAU, por orden de llegada\n• Juego limpio: si un invitado es marcado como sybil, esa ronda se anula; tu propio airdrop nunca se ve afectado\n• Los tokens del bono pueden otorgarse según la disponibilidad del fondo\n• La acumulación del bono cierra el 8 de diciembre de 2026, 23:59 UTC"
 }

@@ -61,5 +61,7 @@
   "ui-x-required-hint": "Pro registraci je vyžadováno uživatelské jméno na X (Twitter).",
   "ui-api-account-too-young": "Váš GitHub účet musí mít alespoň jeden rok, abyste se mohli zúčastnit.",
   "ui-api-github-error": "Přihlášení přes GitHub se nezdařilo. Zkuste to prosím znovu.",
-  "ui-api-email-disabled": "Registrace e-mailem byla uzavřena. Přihlaste se prosím přes GitHub."
+  "ui-api-email-disabled": "Registrace e-mailem byla uzavřena. Přihlaste se prosím přes GitHub.",
+  "invite-bonus-title": "Pozvánka a bonus (volitelné)",
+  "invite-bonus-body": "Po schválení registrace obdržíte osobní pozvánkový kód.\n\n• Pozvěte 3 přátele, kteří projdou stejnou ochranou proti zneužívání → bonus +30 QAU, až 2 kola (+60 QAU max)\n• Bonusový pool: 60 000 QAU, kdo přijde dřív, ten bere\n• Fair play: pokud je pozvaný označen jako sybil, kolo se anuluje — váš vlastní airdrop není nikdy ovlivněn\n• Bonusové tokeny mohou být přiděleny podle dostupnosti poolu\n• Sčítání bonusů končí 8. prosince 2026 v 23:59 UTC"
 }
