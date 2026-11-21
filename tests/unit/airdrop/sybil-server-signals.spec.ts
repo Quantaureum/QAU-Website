@@ -41,21 +41,21 @@ function mockJsonRpc(resultByMethod: Record<string, string>) {
 }
 
 test.describe("server-side signal collection", () => {
-  test("client X claims never reach the scorer and unknown X signals force manual review", async () => {
+  test("X verification cancelled: clean registration auto-approves without X signals", async () => {
     mockJsonRpc({ eth_getTransactionCount: "0x0", eth_getBalance: "0x0" })
 
     const collection = await collectSignals(ctx, opts)
 
-    // The scorer only sees server-collected values: X metrics stay null.
-    expect(collection.missing).toContain("x-profile-signals")
+    // X metrics are never collected (verification cancelled) and no longer
+    // count as missing signals — they cannot force manual review.
+    expect(collection.missing).not.toContain("x-profile-signals")
     expect(collection.missing).not.toContain("onchain-address-signals")
 
-    // This otherwise-clean registration would auto-approve, but the missing
-    // X profile signals downgrade it to manual review.
+    // A clean registration auto-approves; the fail-closed gate is a no-op.
     expect(collection.result.verdict).toBe("approved")
     expect(
       applyUnknownSignalGate("approved", collection.missing).disposition
-    ).toBe("hold")
+    ).toBe("approved")
   })
 
   test("on-chain nonce is read server-side and drives the score", async () => {
@@ -89,10 +89,11 @@ test.describe("server-side signal collection", () => {
 test.describe("unknown-signal gate", () => {
   test("never upgrades or alters a non-approved disposition", () => {
     expect(
-      applyUnknownSignalGate("rejected", ["x-profile-signals"]).disposition
+      applyUnknownSignalGate("rejected", ["onchain-address-signals"])
+        .disposition
     ).toBe("rejected")
     expect(
-      applyUnknownSignalGate("hold", ["x-profile-signals"]).disposition
+      applyUnknownSignalGate("hold", ["onchain-address-signals"]).disposition
     ).toBe("hold")
     expect(applyUnknownSignalGate("approved", []).disposition).toBe("approved")
   })

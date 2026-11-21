@@ -204,6 +204,9 @@ export async function collectSignals(
     chain = null
   }
 
+  // X verification was cancelled (founder decision, 2026-11-21): the handle is
+  // no longer collected and X profile metrics are never fetched. The X fields
+  // below stay null (scorer-neutral) so the SybilSignals shape is stable.
   const x = ctx.xUser
     ? xSignalsFromApiUser(ctx.xUser)
     : {
@@ -215,7 +218,6 @@ export async function collectSignals(
 
   const missing: string[] = []
   if (!chain) missing.push("onchain-address-signals")
-  if (!ctx.xUser) missing.push("x-profile-signals")
 
   const signals: SybilSignals = {
     sameSubnetRegistrations: ctx.sameSubnetRegistrations,
