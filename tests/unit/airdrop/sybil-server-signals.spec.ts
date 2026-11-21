@@ -1,6 +1,10 @@
 import { expect, test } from "@playwright/test"
 
-import { collectSignals, type SignalContext } from "@/lib/sybil/signals"
+import {
+  collectSignals,
+  isSharedByDesignEmailDomain,
+  type SignalContext,
+} from "@/lib/sybil/signals"
 import { applyUnknownSignalGate } from "@/lib/sybil/stateMachine"
 
 const RPC_URL = "http://localhost:8545/"
@@ -91,5 +95,21 @@ test.describe("unknown-signal gate", () => {
       applyUnknownSignalGate("hold", ["x-profile-signals"]).disposition
     ).toBe("hold")
     expect(applyUnknownSignalGate("approved", []).disposition).toBe("approved")
+  })
+})
+
+test.describe("shared-by-design email domains", () => {
+  test("GitHub noreply domain is exempt from the email-domain-batch signal", () => {
+    expect(isSharedByDesignEmailDomain("users.noreply.github.com")).toBe(true)
+    expect(isSharedByDesignEmailDomain("Users.Noreply.Github.Com")).toBe(true)
+    expect(isSharedByDesignEmailDomain("  users.noreply.github.com  ")).toBe(
+      true
+    )
+  })
+
+  test("ordinary domains stay scorable", () => {
+    expect(isSharedByDesignEmailDomain("gmail.com")).toBe(false)
+    expect(isSharedByDesignEmailDomain("mailinator.com")).toBe(false)
+    expect(isSharedByDesignEmailDomain("")).toBe(false)
   })
 })

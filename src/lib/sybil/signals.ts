@@ -146,6 +146,17 @@ export async function fetchOnChainSignals(
 // Full assembly
 // ---------------------------------------------------------------------------
 
+/**
+ * GitHub OAuth issues every account the same anonymized reply address
+ * (`<id>+<login>@users.noreply.github.com`), so a shared email domain carries
+ * zero sybil signal for GitHub-auth registrations. Counting it would
+ * false-positive every GitHub signup (the 2026-11-20 incident: a 100-score
+ * registration was penalized -15 and parked for manual review).
+ */
+export function isSharedByDesignEmailDomain(domain: string): boolean {
+  return domain.trim().toLowerCase() === "users.noreply.github.com"
+}
+
 export interface SignalContext {
   /** Registrations from the same /24 (excluding this one). */
   sameSubnetRegistrations: number

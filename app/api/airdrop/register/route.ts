@@ -40,7 +40,10 @@ import {
 import { countAirdropByIp as countIpActivity } from "@/lib/airdrop/ipGuard"
 import { verifyTurnstile } from "@/lib/airdrop/turnstile"
 import { trustedClientIp } from "@/lib/security/clientIp"
-import { collectSignals } from "@/lib/sybil/signals"
+import {
+  collectSignals,
+  isSharedByDesignEmailDomain,
+} from "@/lib/sybil/signals"
 import {
   applyUnknownSignalGate,
   dispositionForScore,
@@ -143,7 +146,12 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     : ""
   const sameSubnet = await countAirdropByPrefix24(subnet)
   const emailDomain = userEmail.split("@")[1] || ""
-  const sameEmailDomain = await countAirdropByEmailDomain(emailDomain)
+  // A shared GitHub-issued noreply domain is not a sybil signal (every GitHub
+  // signup shares it) — skip the DB count so the email-domain-batch rule
+  // cannot false-positive GitHub registrations.
+  const sameEmailDomain = isSharedByDesignEmailDomain(emailDomain)
+    ? 0
+    : await countAirdropByEmailDomain(emailDomain)
   const addrPrefix = walletAddress.toLowerCase().slice(2, 6) // first 4 hex chars
   const sameAddrPrefix = await countAirdropByAddressPrefix(addrPrefix)
 
