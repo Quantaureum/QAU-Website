@@ -101,12 +101,16 @@ export function isValidXHandle(handle: string): boolean {
 //   AIRDROP_INVITE_BONUS_MAX_ROUNDS       per-user cap in rounds (default 2 → 60 QAU)
 //   AIRDROP_INVITE_BONUS_POOL_QAU         bonus pool budget (default 60000)
 //   AIRDROP_INVITE_BONUS_APPROVAL_CUTOFF_AT approvals after this instant never
-//                                         count toward bonuses (default
-//                                         2026-12-08T23:59:59Z, plan §8 N5)
+//                                         count toward bonuses (default: no
+//                                         cutoff — since 2026-11-23 the
+//                                         campaign runs until the pool is
+//                                         exhausted; set an explicit ISO date
+//                                         to re-enable a cutoff)
 //   AIRDROP_INVITE_BONUS_SETTLE_END_AT    bonus channel closes after this
-//                                         instant (default 2026-12-14T23:59:59Z,
-//                                         final settlement in the second week
-//                                         of December, plan §3.1)
+//                                         instant (default: never — the bonus
+//                                         channel stays open while the
+//                                         campaign runs; set an explicit ISO
+//                                         date to re-enable a settlement end)
 // ---------------------------------------------------------------------------
 
 /** Week-over-week trigger for the automatic bonus pause (plan §4.3, N4). */
@@ -160,10 +164,6 @@ export interface InviteBonusConfig {
   settleEndAt: Date | null
 }
 
-function defaultIso(iso: string): Date {
-  return new Date(iso)
-}
-
 export function getInviteBonusConfig(
   env: Record<string, string | undefined> = process.env
 ): InviteBonusConfig {
@@ -180,12 +180,10 @@ export function getInviteBonusConfig(
     roundSize,
     maxRounds,
     poolQau: parsePositiveInt(env.AIRDROP_INVITE_BONUS_POOL_QAU, 60_000),
-    approvalCutoffAt:
-      parseDateOrNull(env.AIRDROP_INVITE_BONUS_APPROVAL_CUTOFF_AT) ??
-      defaultIso("2026-12-08T23:59:59Z"),
-    settleEndAt:
-      parseDateOrNull(env.AIRDROP_INVITE_BONUS_SETTLE_END_AT) ??
-      defaultIso("2026-12-14T23:59:59Z"),
+    approvalCutoffAt: parseDateOrNull(
+      env.AIRDROP_INVITE_BONUS_APPROVAL_CUTOFF_AT
+    ),
+    settleEndAt: parseDateOrNull(env.AIRDROP_INVITE_BONUS_SETTLE_END_AT),
   }
 }
 

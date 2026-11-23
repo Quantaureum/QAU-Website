@@ -461,8 +461,10 @@ test.describe("assertion 11: kill-switch and the v4-pinned multiplier criterion"
     expect(off.roundSize).toBe(3)
     expect(off.maxRounds).toBe(2)
     expect(off.poolQau).toBe(60000)
-    expect(off.approvalCutoffAt?.toISOString()).toBe("2026-12-08T23:59:59.000Z")
-    expect(off.settleEndAt?.toISOString()).toBe("2026-12-14T23:59:59.000Z")
+    // Since 2026-11-23 the campaign runs until the pool is exhausted — no
+    // time-bound defaults.
+    expect(off.approvalCutoffAt).toBeNull()
+    expect(off.settleEndAt).toBeNull()
   })
 
   test("distinct-cluster counting dedupes per inviter (counting口径)", () => {
@@ -494,8 +496,13 @@ test.describe("assertion 13: revocation is pending-only and final", () => {
 // ---------------------------------------------------------------------------
 
 test.describe("assertion 14: approval cutoff and settlement channel close", () => {
-  test("approvals after 12-08 never count toward bonuses (N5)", () => {
-    const cutoff = bonusCfg.approvalCutoffAt
+  test("approval cutoff: explicit date blocks late approvals; default is open-ended", () => {
+    // Explicit cutoff (the pre-2026-11-23 default, plan §8 N5) still works
+    // when configured via env:
+    const cutoff = getInviteBonusConfig({
+      AIRDROP_INVITE_BONUS_ENABLED: "1",
+      AIRDROP_INVITE_BONUS_APPROVAL_CUTOFF_AT: "2026-12-08T23:59:59Z",
+    }).approvalCutoffAt
     expect(
       isApprovalBonusEligible(new Date("2026-12-08T12:00:00Z"), cutoff)
     ).toBe(true)
@@ -503,13 +510,28 @@ test.describe("assertion 14: approval cutoff and settlement channel close", () =
       isApprovalBonusEligible(new Date("2026-12-09T00:00:01Z"), cutoff)
     ).toBe(false)
     expect(isApprovalBonusEligible(null, cutoff)).toBe(false)
+    // Default since 2026-11-23: the campaign runs until the pool is
+    // exhausted — no cutoff, any approval date counts.
+    expect(bonusCfg.approvalCutoffAt).toBeNull()
+    expect(
+      isApprovalBonusEligible(
+        new Date("2027-06-01T00:00:00Z"),
+        bonusCfg.approvalCutoffAt
+      )
+    ).toBe(true)
   })
 
   test("after the settle window the bonus channel is closed for the whole batch", () => {
+    // Settlement end is opt-in since 2026-11-23 (open-ended by default), so
+    // the closure semantics are pinned with an explicit date:
+    const settlingCfg = getInviteBonusConfig({
+      AIRDROP_INVITE_BONUS_ENABLED: "1",
+      AIRDROP_INVITE_BONUS_SETTLE_END_AT: "2026-12-14T23:59:59Z",
+    })
     const result = buildBonusBatch({
       eligible: [bonusRecord({})],
       poolRemainingQau: 60000,
-      cfg: bonusCfg,
+      cfg: settlingCfg,
       lastWeekClusterHits: 0,
       currentWeekClusterHits: 0,
       now: new Date("2026-12-15T00:00:01Z"),
@@ -524,7 +546,7 @@ test.describe("assertion 14: approval cutoff and settlement channel close", () =
         bonusRecord({ id: 2, inviterRegistrationId: 200 }),
       ],
       poolRemainingQau: 60000,
-      cfg: bonusCfg,
+      cfg: settlingCfg,
       lastWeekClusterHits: 0,
       currentWeekClusterHits: 0,
       now: new Date("2026-12-14T23:59:59Z"),
