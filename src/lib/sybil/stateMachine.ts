@@ -98,18 +98,25 @@ export function notificationText(
   const ruleList = r.hits.map((h) => `- ${h.rule}: ${h.detail}`).join("\n")
   switch (status) {
     case "approved":
-      return "你的登记已通过自动核验，进入发放队列。发放后可在链上查询交易。"
+      return (
+        "Your registration passed the automated verification and entered " +
+        "the payout queue. Once paid, the transaction can be looked up " +
+        "on-chain."
+      )
     case "hold":
       return (
-        "你的登记需要更多时间核验（14 天后自动重新评估），无需重复报名。" +
-        (r.hits.length ? `\n未达线信号:\n${ruleList}` : "")
+        "Your registration needs more verification time (it will be " +
+        "re-evaluated automatically after 14 days); you do not need to " +
+        "register again." +
+        (r.hits.length ? `\nSignals below threshold:\n${ruleList}` : "")
       )
     case "rejected":
       return (
-        "自动核验未达线，本次活动窗口内无法参与。" +
-        (r.hits.length ? `\n未达线信号:\n${ruleList}` : "")
+        "The automated verification did not reach the threshold; you cannot " +
+        "participate in this campaign window." +
+        (r.hits.length ? `\nSignals below threshold:\n${ruleList}` : "")
       )
     default:
-      return "登记已收到，等待核验。"
+      return "Registration received. Verification pending."
   }
 }

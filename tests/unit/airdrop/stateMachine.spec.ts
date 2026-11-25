@@ -74,15 +74,15 @@ test.describe("state machine — hold transitions", () => {
 test.describe("state machine — notification text", () => {
   test("rejected mail includes the rule list but no appeal promise", () => {
     const t = notificationText("rejected", rejectedRec)
-    expect(t).toContain("无法参与")
+    expect(t).toContain("cannot participate")
     expect(t).toContain("same-subnet-batch")
-    expect(t.toLowerCase()).not.toContain("申诉")
+    expect(t.toLowerCase()).not.toContain("appeal")
   })
   test("hold mail tells the user to wait, not re-register", () => {
     const t = notificationText("hold", holdRec)
-    expect(t).toContain("无需重复报名")
+    expect(t).toContain("do not need to register again")
   })
   test("approved mail confirms queue entry", () => {
-    expect(notificationText("approved", approvedRec)).toContain("发放队列")
+    expect(notificationText("approved", approvedRec)).toContain("payout queue")
   })
 })

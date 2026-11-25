@@ -115,7 +115,7 @@ export function scoreSybilSignals(s: SybilSignals): SybilScoreResult {
     hits.push({
       rule: "node-ip-mismatch",
       penalty: 50,
-      detail: "B档 node IP does not match on-chain P2P peers",
+      detail: "Tier B node IP does not match on-chain P2P peers",
     })
   }
 
