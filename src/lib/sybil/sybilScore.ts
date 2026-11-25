@@ -1,7 +1,8 @@
 /**
  * Sybil trust scoring — pure functions only.
  *
- * Rationale (see 运营中心/09-内容与活动/空投女巫防护设计-v2.md): every
+ * Rationale (see the internal anti-sybil design doc, archived in .local-only,
+ * not in repo): every
  * registration is scored by a transparent linear model over automatically
  * collected signals. No human review. Thresholds are public on purpose —
  * an attacker who satisfies every rule pays the same cost as a real user.

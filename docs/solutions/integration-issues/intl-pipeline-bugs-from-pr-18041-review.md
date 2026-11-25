@@ -161,4 +161,4 @@ These showed up enough to be worth canon, even if they don't trigger pipeline ch
 - Recent JSX-quote escape patch: commit `1fda55d6c2`
 - Source PR for these findings: #18041 (`intl/pending-dev`, HEAD `4e735b32`)
 - Per-language review reports: live in chat / PR review on #18041, not committed (raw outputs from 22 of 24 review agents; zh and zh-tw were rate-limited and need re-running)
-- Known-patterns reference: `.claude/translation-review/known-patterns.md`
+- Known-patterns reference: `.local-only/ai-assets/QAU-Website/.claude/translation-review/known-patterns.md` (archived, untracked)

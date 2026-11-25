@@ -151,7 +151,7 @@ When reviewing any PR touching `src/intl/`:
 
 - `src/scripts/i18n/post_import_sanitize.ts` - Post-import sanitizer (needs JSON href support)
 - `src/scripts/i18n/lib/workflows/sanitization.ts` - Sanitization workflow runner
-- `.claude/commands/review-translations.md` - Translation review slash command
+- `.local-only/ai-assets/QAU-Website/.claude/commands/review-translations.md` (archived, untracked) - Translation review slash command
 - `.github/workflows/claude-review-translations.yml` - CI translation review workflow
 - `docs/header-ids.md` - Related: header IDs must also not be translated
 - `docs/solutions/translation-review/crowdin-import-review-vietnamese-pr-17176.md` - Full PR #17176 review post-mortem

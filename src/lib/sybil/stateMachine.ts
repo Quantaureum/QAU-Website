@@ -3,7 +3,7 @@
  * 14-day re-evaluation for `hold`. Pure functions for the transitions;
  * callers own the DB writes.
  *
- * Design (运营中心/09-内容与活动/空投女巫防护设计-v2.md):
+ * Design (internal anti-sybil design doc, archived in .local-only, not in repo):
  *   score ≥ 70            → approved   (enters the payout queue)
  *   40 < score < 70       → hold       (re-scored automatically after 14 days)
  *   score ≤ 40 / hard     → rejected   (appeal only affects a future re-eval)

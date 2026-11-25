@@ -134,8 +134,8 @@
   }
 }
 
-/* CONTENT FLOW RHYTHM (POC -- see
-   .claude/skills/design-system/references/typography-spacing-flow-spec.md)
+/* CONTENT FLOW RHYTHM (POC -- spec archived in
+   .local-only/ai-assets/QAU-Website/)
    One `.flow` on a content region applies the rhythm to the direct children of
    the region AND of any <section> within it (one level deep per section, so it
    never reaches into a component's internals). Group content with

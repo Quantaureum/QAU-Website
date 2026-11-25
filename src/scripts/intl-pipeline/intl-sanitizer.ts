@@ -251,7 +251,8 @@ function stripCrowdinBoilerplate(content: string): {
  * entries are added for brands ETHGlossary classifies as `transliterate`, the
  * lookup here will need to grow ETHGlossary integration to fetch the per-locale
  * form. ETHGlossary is the single source of truth for term translations; see
- * `.claude/skills/intl-pipeline/references/ethglossary.md`.
+ * the ETHGlossary reference (archived under
+ * `.local-only/ai-assets/QAU-Website/.claude/skills/intl-pipeline/references/`).
  */
 const BRAND_GARBLE_CORRECTIONS: Record<string, string> = {
   يجتبه: "GitHub",

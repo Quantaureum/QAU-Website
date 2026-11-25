@@ -127,6 +127,6 @@ When authoring any route under `app/[locale]/`:
 - Recovery PRs (one route each): #18785 (videos `[slug]`), #18797 (wallets), #18798 (resources), #18800 (`[...slug]` `generateMetadata`). Systemic sweep across ~54 pages: #18811 -- incomplete: it left 14 `Page` bodies unfixed, which a later bot-probe wave surfaced one route at a time as #18932, #18994, #19003, #19005-#19012. #19016 replaced that set with a single AST-verified sweep.
 - #18999 -- layout-level safety net (see "Why there is no single central fix").
 - `docs/solutions/integration-issues/netlify-isr-404-async-server-components.md` -- adjacent static-vs-dynamic-on-Netlify failure, different mechanism (`unstable_cache` TTL forcing ISR).
-- `.claude/skills/design-system/references/i18n-rtl.md` -- one-line rule + pointer here for UI-authoring agents.
+- `.local-only/ai-assets/QAU-Website/.claude/skills/design-system/references/i18n-rtl.md` (archived, untracked) -- one-line rule + pointer here for UI-authoring agents.
 - next-intl static rendering docs: https://next-intl.dev/docs/getting-started/app-router
 - Next.js: https://nextjs.org/docs/messages/app-static-to-dynamic-error

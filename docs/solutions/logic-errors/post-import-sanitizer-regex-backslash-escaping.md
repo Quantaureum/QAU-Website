@@ -146,7 +146,7 @@ Test these input patterns for any angle bracket escaping function:
 - [Crowdin Translation Sanitizer MDX Fence Bugs](../build-errors/crowdin-translation-sanitizer-mdx-fence-bugs.md) -- Patterns 12-15 covering `escapeMdxAngleBrackets` bugs
 - [Post-Import Sanitizer Regex Bugs: Whitespace Handling](./post-import-sanitizer-regex-bugs-whitespace-handling.md) -- Sibling regex bugs in the same sanitizer
 - [Sanitizer Test Research](../integration-issues/sanitizer-test-research.md) -- Comprehensive pattern catalog (Patterns 1-16)
-- [Known Patterns](~/.claude/translation-review/known-patterns.md) -- Pattern 6: Double-Escaping in MDX
+- [Known Patterns](../../.local-only/ai-assets/QAU-Website/.claude/translation-review/known-patterns.md) (archived, untracked) -- Pattern 6: Double-Escaping in MDX
 
 ## Commits
 

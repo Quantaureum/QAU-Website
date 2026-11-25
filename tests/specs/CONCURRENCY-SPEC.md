@@ -121,7 +121,7 @@ At ~4 chars/token (English), 32KB = ~8K tokens input. With CJK at ~1-2 chars/tok
 
 **Current:** If the total wire size of TRANSLATE sections exceeds MAX_CHUNK_BYTES, split into multiple Gemini calls. Each call carries up to MAX_CONTEXT_BYTES of CONTEXT sections for translation quality.
 
-Three rules make this bounded, all learned from run 31149083965 ($1,108 for 42KB of new text — see `.claude/skills/intl-pipeline/references/gotchas.md`):
+Three rules make this bounded, all learned from run 31149083965 ($1,108 for 42KB of new text — see `.local-only/ai-assets/QAU-Website/.claude/skills/intl-pipeline/references/gotchas.md`, archived):
 
 1. **TRANSLATE content gets the whole chunk budget.** CONTEXT is replicated into every batch, so its size must NOT be subtracted from the per-batch budget. Doing so floors the budget at 1 byte for any file whose existing translation exceeds MAX_CHUNK_BYTES, which degenerates to one call per changed section, each carrying the whole file.
 2. **CONTEXT is capped, not complete.** At most MAX_CONTEXT_BYTES per batch, selected as the sections nearest in document order to that batch's TRANSLATE sections. Terminology consistency comes from the glossary, not from context volume.

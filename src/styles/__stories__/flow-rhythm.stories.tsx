@@ -17,7 +17,7 @@ import { Button } from "@/components/ui/buttons/Button"
  * View at the `md` (mobile) and `2xl` (desktop) viewports to confirm the
  * single-variable rescale.
  *
- * Spec: .claude/skills/design-system/references/typography-spacing-flow-spec.md
+ * Spec: typography/spacing/flow spec (archived under .local-only/ai-assets/QAU-Website/)
  */
 const meta = {
   title: "Design System / Typography / FlowRhythm",

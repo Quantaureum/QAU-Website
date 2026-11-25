@@ -1,7 +1,8 @@
 /**
  * Invitation-cluster re-scan — pure functions only.
  *
- * Plan 运营中心/11-病毒增长/B档裂变改造方案-v2.md §3.1 (pinned by anti-sybil
+ * Per the internal invite-bonus plan (archived in .local-only, not in repo)
+ * §3.1 (pinned by anti-sybil
  * reviews v2 N1 / v3 / v4): before every bonus-invite batch is generated,
  * each inviter's downstream cluster is re-scanned on the two tracks:
  *

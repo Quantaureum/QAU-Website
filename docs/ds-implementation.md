@@ -1,6 +1,6 @@
 # Design System Implementation
 
-> **This document has been superseded.** See the **`design-system` skill** at [`.claude/skills/design-system/`](../.claude/skills/design-system/) for canonical guidance on:
+> **This document has been superseded.** See the **`design-system` skill** at [`.local-only/ai-assets/QAU-Website/.claude/skills/design-system/`](../.local-only/ai-assets/QAU-Website/.claude/skills/design-system/) (archived, untracked) for canonical guidance on:
 >
 > - Component choices and canonical imports
 > - Design tokens (Tailwind v4, CSS-first config)
