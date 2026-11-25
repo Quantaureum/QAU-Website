@@ -96,14 +96,15 @@ export class InputValidator {
     } = SecurityConfig.password
 
     if (password.length < minLength)
-      errors.push(`密码至少需要 ${minLength} 个字符`)
+      errors.push(`Password must be at least ${minLength} characters`)
     if (requireUppercase && !/[A-Z]/.test(password))
-      errors.push("需要包含大写字母")
+      errors.push("Password must contain an uppercase letter")
     if (requireLowercase && !/[a-z]/.test(password))
-      errors.push("需要包含小写字母")
-    if (requireNumbers && !/\d/.test(password)) errors.push("需要包含数字")
+      errors.push("Password must contain a lowercase letter")
+    if (requireNumbers && !/\d/.test(password))
+      errors.push("Password must contain a number")
     if (requireSpecial && !/[!@#$%^&*(),.?":{}|<>]/.test(password))
-      errors.push("需要包含特殊字符")
+      errors.push("Password must contain a special character")
 
     return { valid: errors.length === 0, errors }
   }

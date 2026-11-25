@@ -71,7 +71,10 @@ export async function withRateLimit(
     )
 
     const response = NextResponse.json(
-      { error: "请求过于频繁，请稍后再试", retryAfter: result.retryAfter },
+      {
+        error: "Too many requests, please try again later",
+        retryAfter: result.retryAfter,
+      },
       { status: 429 }
     )
     response.headers.set("Retry-After", String(result.retryAfter))
@@ -107,7 +110,7 @@ export function validateInput(
       rule.required &&
       (value === undefined || value === null || value === "")
     ) {
-      errors.push(`${rule.field} 是必填项`)
+      errors.push(`${rule.field} is required`)
       continue
     }
 
@@ -117,16 +120,16 @@ export function validateInput(
     switch (rule.type) {
       case "string":
         if (typeof value !== "string") {
-          errors.push(`${rule.field} 必须是字符串`)
+          errors.push(`${rule.field} must be a string`)
         } else {
           if (rule.min && value.length < rule.min) {
-            errors.push(`${rule.field} 长度至少为 ${rule.min}`)
+            errors.push(`${rule.field} must be at least ${rule.min} characters`)
           }
           if (rule.max && value.length > rule.max) {
-            errors.push(`${rule.field} 长度不能超过 ${rule.max}`)
+            errors.push(`${rule.field} must not exceed ${rule.max} characters`)
           }
           if (rule.pattern && !rule.pattern.test(value)) {
-            errors.push(`${rule.field} 格式不正确`)
+            errors.push(`${rule.field} has an invalid format`)
           }
         }
         break
@@ -134,20 +137,20 @@ export function validateInput(
       case "number": {
         const num = Number(value)
         if (isNaN(num)) {
-          errors.push(`${rule.field} 必须是数字`)
+          errors.push(`${rule.field} must be a number`)
         } else {
           if (rule.min !== undefined && num < rule.min) {
-            errors.push(`${rule.field} 不能小于 ${rule.min}`)
+            errors.push(`${rule.field} must not be less than ${rule.min}`)
           }
           if (rule.max !== undefined && num > rule.max) {
-            errors.push(`${rule.field} 不能大于 ${rule.max}`)
+            errors.push(`${rule.field} must not be greater than ${rule.max}`)
           }
         }
         break
       }
       case "boolean":
         if (typeof value !== "boolean") {
-          errors.push(`${rule.field} 必须是布尔值`)
+          errors.push(`${rule.field} must be a boolean`)
         }
         break
 
@@ -156,32 +159,32 @@ export function validateInput(
           typeof value !== "string" ||
           !InputValidator.isValidAddress(value)
         ) {
-          errors.push(`${rule.field} 不是有效的钱包地址`)
+          errors.push(`${rule.field} is not a valid wallet address`)
         }
         break
 
       case "email":
         if (typeof value !== "string" || !InputValidator.isValidEmail(value)) {
-          errors.push(`${rule.field} 不是有效的邮箱地址`)
+          errors.push(`${rule.field} is not a valid email address`)
         }
         break
 
       case "txHash":
         if (typeof value !== "string" || !InputValidator.isValidTxHash(value)) {
-          errors.push(`${rule.field} 不是有效的交易哈希`)
+          errors.push(`${rule.field} is not a valid transaction hash`)
         }
         break
 
       case "url":
         if (typeof value !== "string" || !InputValidator.isValidUrl(value)) {
-          errors.push(`${rule.field} 不是有效的 URL`)
+          errors.push(`${rule.field} is not a valid URL`)
         }
         break
     }
 
     // Custom validation
     if (rule.custom && !rule.custom(value)) {
-      errors.push(`${rule.field} 验证失败`)
+      errors.push(`${rule.field} validation failed`)
     }
   }
 
@@ -218,7 +221,7 @@ export function createSecureHandler(
         !options.allowedMethods.includes(request.method)
       ) {
         return addSecurityHeaders(
-          NextResponse.json({ error: "方法不允许" }, { status: 405 })
+          NextResponse.json({ error: "Method not allowed" }, { status: 405 })
         )
       }
 
@@ -238,7 +241,10 @@ export function createSecureHandler(
           )
 
           const response = NextResponse.json(
-            { error: "请求过于频繁", retryAfter: rateLimitResult.retryAfter },
+            {
+              error: "Too many requests",
+              retryAfter: rateLimitResult.retryAfter,
+            },
             { status: 429 }
           )
           response.headers.set(
@@ -339,7 +345,10 @@ export function createSecureHandler(
 
             return addSecurityHeaders(
               NextResponse.json(
-                { error: "输入验证失败", details: validation.errors },
+                {
+                  error: "Input validation failed",
+                  details: validation.errors,
+                },
                 { status: 400 }
               )
             )
@@ -348,7 +357,10 @@ export function createSecureHandler(
           validatedData = body
         } catch {
           return addSecurityHeaders(
-            NextResponse.json({ error: "无效的请求体" }, { status: 400 })
+            NextResponse.json(
+              { error: "Invalid request body" },
+              { status: 400 }
+            )
           )
         }
       }
@@ -369,7 +381,7 @@ export function createSecureHandler(
       const response = await handler(request, validatedData)
       return addSecurityHeaders(response)
     } catch (error: unknown) {
-      const message = error instanceof Error ? error.message : "未知错误"
+      const message = error instanceof Error ? error.message : "Unknown error"
       SecurityLogger.log(
         SecurityEventType.SUSPICIOUS_ACTIVITY,
         "error",
@@ -380,7 +392,7 @@ export function createSecureHandler(
       )
 
       return addSecurityHeaders(
-        NextResponse.json({ error: "服务器内部错误" }, { status: 500 })
+        NextResponse.json({ error: "Internal server error" }, { status: 500 })
       )
     }
   }

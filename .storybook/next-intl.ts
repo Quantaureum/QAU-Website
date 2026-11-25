@@ -1,6 +1,6 @@
 export const baseLocales = {
   en: { title: "English", left: "En" },
-  zh: { title: "中国人", left: "Zh" },
+  zh: { title: "简体中文", left: "Zh" },
   ru: { title: "Русский", left: "Ru" },
   uk: { title: "українська", left: "Uk" },
   ar: { title: "العربية", left: "Ar" },
