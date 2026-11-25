@@ -86,7 +86,7 @@ const GetStartedGrid = async ({
       downloads: [
         {
           label: t("page-index-get-started-wallet-dl-android"),
-          href: "https://github.com/Quantaureum/qau-wallet-mobile/releases/download/wallet-apk/quantaureum-wallet.apk",
+          href: "https://github.com/Quantaureum/QAU-Website/releases/download/wallet-apk/quantaureum-wallet.apk",
         },
         {
           label: t("page-index-get-started-wallet-dl-chrome"),
