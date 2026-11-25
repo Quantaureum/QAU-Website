@@ -25,7 +25,7 @@
     "sync-upgrades": "tsx src/scripts/sync-upgrades/main.ts",
     "prepare": "husky",
     "test": "pnpm test:unit && pnpm test:e2e",
-    "test:unit": "USE_MOCK_DATA=true playwright test --project=unit",
+    "test:unit": "USE_MOCK_DATA=true playwright test --project=unit && USE_MOCK_DATA=true playwright test --config playwright.unit-db.config.ts",
     "test:e2e": "playwright test --project=e2e --project=e2e-webkit --project=e2e-mobile-chrome --project=e2e-mobile-safari",
     "test:e2e:ui": "playwright test --project=e2e --ui",
     "test:e2e:debug": "playwright test --project=e2e --debug",
