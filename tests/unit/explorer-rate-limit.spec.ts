@@ -3,6 +3,7 @@ import { expect, test } from "@playwright/test"
 import {
   explorerRateLimit,
   guardExplorerRequest,
+  MAX_TRACKED_CLIENTS,
 } from "../../src/lib/explorer/rateLimit"
 
 function headersForIp(ip: string | undefined): Headers {
@@ -88,5 +89,31 @@ test.describe("explorer rate limit", () => {
       })
     )
     expect(res).toBeNull()
+  })
+
+  test("a flood of fresh client IPs cannot reset an active client's budget", () => {
+    const target = headersForIp("203.0.113.7")
+    let deniedBefore = 0
+    for (let i = 0; i < 61; i++) {
+      if (!explorerRateLimit(target).allowed) deniedBefore++
+    }
+    expect(deniedBefore).toBe(1)
+
+    // Flood with more unique client IPs than the tracking bound.
+    for (let i = 0; i < MAX_TRACKED_CLIENTS + 50; i++) {
+      const second = Math.floor(i / 256) % 256
+      const fourth = i % 256
+      explorerRateLimit(headersForIp(`198.51.${second}.${fourth}`))
+    }
+
+    // The table stays bounded and the original client's exhausted budget was
+    // not wiped by the flood: it is still denied for the rest of its window.
+    const tracked = (
+      globalThis as unknown as { __qauExplorerRateLimit?: Map<string, unknown> }
+    ).__qauExplorerRateLimit
+    expect(tracked?.size).toBeLessThanOrEqual(MAX_TRACKED_CLIENTS)
+    const verdict = explorerRateLimit(target)
+    expect(verdict.allowed).toBe(false)
+    expect(verdict.retryAfter).toBeGreaterThan(0)
   })
 })

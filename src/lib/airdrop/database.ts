@@ -15,6 +15,10 @@
 
 import { neon } from "@neondatabase/serverless"
 
+import { type PayoutState, STUCK_PAYOUT_STATES } from "./payoutState"
+
+export type { PayoutState } from "./payoutState"
+
 const DATABASE_URL = process.env.DATABASE_URL || ""
 
 // ---------------------------------------------------------------------------
@@ -45,6 +49,39 @@ type SqlFn = (
   ...values: unknown[]
 ) => Promise<unknown[]>
 
+/** One statement built against a transaction-scoped sql function. */
+type SqlStmt = (tx: SqlFn) => unknown
+
+type TxRunner = (stmts: SqlStmt[]) => Promise<unknown[]>
+
+/** Backend-specific transaction runner, installed by createSqlFn. */
+let txRunner: TxRunner | null = null
+
+function templateToText(
+  strings: TemplateStringsArray,
+  values: unknown[]
+): string {
+  return strings.reduce(
+    (acc, part, i) => acc + part + (i < values.length ? `$${i + 1}` : ""),
+    ""
+  )
+}
+
+/**
+ * Run a FIXED list of statements in ONE database transaction (READ
+ * COMMITTED). Neon's HTTP driver only supports non-interactive
+ * transactions, so the statements must not await earlier results — each
+ * statement is built up-front and the results come back in statement order.
+ * The local pg adapter runs the same list on a single client with
+ * BEGIN/COMMIT. Used where statements must observe one serialized state
+ * (e.g. the airdrop slot-cap check H-02, the invite-bonus pool-gated claim
+ * N2/H-03).
+ */
+export async function sqlTransaction(stmts: SqlStmt[]): Promise<unknown[]> {
+  if (!txRunner) throw new Error("DATABASE_URL is not configured")
+  return txRunner(stmts)
+}
+
 function createLocalSql(url: string): SqlFn {
   // Local rehearsals only: `pg` is a devDependency of the site and must
   // not be bundled for the Neon production path. Dynamic import keeps the
@@ -52,12 +89,38 @@ function createLocalSql(url: string): SqlFn {
   /* eslint-disable @typescript-eslint/no-var-requires */
   const { Pool } = require("pg") as typeof import("pg")
   const pool = new Pool({ connectionString: url })
+  txRunner = async (stmts) => {
+    const client = await pool.connect()
+    try {
+      await client.query("BEGIN")
+      const results: unknown[] = []
+      try {
+        for (const stmt of stmts) {
+          results.push(
+            await stmt(async (strings, ...values) => {
+              const res = await client.query(
+                templateToText(strings, values),
+                values as unknown[]
+              )
+              return res.rows as unknown[]
+            })
+          )
+        }
+        await client.query("COMMIT")
+      } catch (err) {
+        await client.query("ROLLBACK").catch(() => undefined)
+        throw err
+      }
+      return results
+    } finally {
+      client.release()
+    }
+  }
   return async (strings, ...values) => {
-    const text = strings.reduce(
-      (acc, part, i) => acc + part + (i < values.length ? `$${i + 1}` : ""),
-      ""
+    const res = await pool.query(
+      templateToText(strings, values),
+      values as unknown[]
     )
-    const res = await pool.query(text, values as unknown[])
     return res.rows as unknown[]
   }
 }
@@ -66,7 +129,16 @@ function createSqlFn(url: string): SqlFn {
   if (isLocalDatabaseUrl(url)) {
     return createLocalSql(url)
   }
-  return neon(url) as unknown as SqlFn
+  const neonFn = neon(url)
+  txRunner = (stmts) => {
+    // Array form: every statement is built up-front and submitted as one
+    // non-interactive Postgres transaction over HTTP.
+    const queries = stmts.map((stmt) =>
+      stmt(neonFn as unknown as SqlFn)
+    ) as unknown as Parameters<typeof neonFn.transaction>[0]
+    return neonFn.transaction(queries) as Promise<unknown[]>
+  }
+  return neonFn as unknown as SqlFn
 }
 
 export const sql: SqlFn = DATABASE_URL
@@ -119,18 +191,9 @@ export type RegistrationStatus =
   | "rejected"
   | "paid"
 
-/**
- * Payout lifecycle of a registration.
- *
- *   idle      → eligible for the payout queue
- *   reserved  → claimed by a distributor run (no chain interaction yet)
- *   broadcast → the reveal transaction hash is known and may be on chain
- *   paid      → a receipt with status 0x1 was observed and recorded
- *
- * The state only ever moves forward through conditional UPDATE statements, so
- * two distributors can never pay the same registration twice.
- */
-export type PayoutState = "idle" | "reserved" | "broadcast" | "paid"
+// PayoutState (lifecycle + transition rules) lives in ./payoutState — the
+// pure module is the single source of truth; re-exported above for the
+// existing import sites.
 
 let initPromise: Promise<void> | null = null
 
@@ -328,6 +391,13 @@ export async function countAirdropByAddressPrefix(
   return (rows as unknown as { n?: number }[])[0]?.n ?? 0
 }
 
+/**
+ * Advisory-lock key serializing the slot-count check + insert for the
+ * airdrop campaign (audit H-02). One campaign today, so a single fixed key;
+ * if several campaigns ever run concurrently, derive one key per campaign.
+ */
+const AIRDROP_SLOT_LOCK_KEY = 721549362
+
 export async function createAirdropRegistration(data: {
   userId: string
   email: string
@@ -347,30 +417,38 @@ export async function createAirdropRegistration(data: {
   holdSince: Date | null
 }): Promise<AirdropRegistration | null> {
   await initAirdropTables()
-  // The slot cap is evaluated inside the INSERT (one statement, one snapshot)
-  // so a concurrent registration cannot slip past a separate SELECT. Rejected
-  // rows do not occupy a slot — they are not payable.
+  // The cap check and the insert must observe the same committed state
+  // (audit H-02). Under READ COMMITTED a bare INSERT...SELECT sees one
+  // statement snapshot, so two concurrent registrations could both count a
+  // free slot and both insert. The transaction-scoped advisory lock
+  // serializes the pair, and the INSERT runs as the SECOND statement of the
+  // same transaction — its snapshot is taken after the lock is granted, so
+  // it always sees every registration committed before it. Rejected rows do
+  // not occupy a slot — they are not payable.
   // Addresses and handles are stored lower-case: lookups compare lower() and
   // the unique index on lower(wallet_address) enforces one claim per address.
-  const rows = await sql`
-    INSERT INTO airdrop_registrations
-      (user_id, email, wallet_address, ip_address, ip_prefix24, amount, status,
-       x_handle, social_status, sybil_score, sybil_status, sybil_scored_at, sybil_rules,
-       hold_since, note)
-    SELECT
-      ${data.userId}, ${data.email}, ${data.walletAddress.toLowerCase()}, ${data.ipAddress},
-      ${data.ipPrefix24}, ${data.amount}, ${data.status},
-      ${data.xHandle ? data.xHandle.toLowerCase() : null}, ${data.socialStatus},
-      ${data.sybilScore}, ${data.sybilStatus},
-      CURRENT_TIMESTAMP, ${data.sybilRules},
-      ${data.holdSince ? data.holdSince.toISOString() : null}, ${data.note ?? null}
-    WHERE (
-      SELECT COUNT(*) FROM airdrop_registrations WHERE status <> 'rejected'
-    ) < ${data.maxSlots}
-    ON CONFLICT DO NOTHING
-    RETURNING id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, payout_state, payout_nonce, payout_attempts, payout_error, payout_next_attempt_at, created_at, updated_at
-  `
-  const first = (rows as unknown as Record<string, unknown>[])[0]
+  const results = await sqlTransaction([
+    (tx) => tx`SELECT pg_advisory_xact_lock(${AIRDROP_SLOT_LOCK_KEY})`,
+    (tx) => tx`
+      INSERT INTO airdrop_registrations
+        (user_id, email, wallet_address, ip_address, ip_prefix24, amount, status,
+         x_handle, social_status, sybil_score, sybil_status, sybil_scored_at, sybil_rules,
+         hold_since, note)
+      SELECT
+        ${data.userId}, ${data.email}, ${data.walletAddress.toLowerCase()}, ${data.ipAddress},
+        ${data.ipPrefix24}, ${data.amount}, ${data.status},
+        ${data.xHandle ? data.xHandle.toLowerCase() : null}, ${data.socialStatus},
+        ${data.sybilScore}, ${data.sybilStatus},
+        CURRENT_TIMESTAMP, ${data.sybilRules},
+        ${data.holdSince ? data.holdSince.toISOString() : null}, ${data.note ?? null}
+      WHERE (
+        SELECT COUNT(*) FROM airdrop_registrations WHERE status <> 'rejected'
+      ) < ${data.maxSlots}
+      ON CONFLICT DO NOTHING
+      RETURNING id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, payout_state, payout_nonce, payout_attempts, payout_error, payout_next_attempt_at, created_at, updated_at
+    `,
+  ])
+  const first = (results[1] as unknown as Record<string, unknown>[])[0]
   return first ? mapRow(first) : null
 }
 
@@ -534,8 +612,11 @@ export async function markAirdropPaidById(
 /**
  * Release a reservation after a failed attempt: the row returns to the queue
  * after the retry backoff and keeps the failure reason for the audit trail.
- * A row that exhausted its attempts is rejected and leaves the queue for
- * manual review instead of being retried forever.
+ * ONLY a 'reserved' (never broadcast) row may take this path (audit H-04):
+ * a broadcast/confirming row has an uncertain outcome and must be parked in
+ * 'unknown' via parkAirdropPayoutUnknown instead. A row that exhausted its
+ * attempts is rejected and leaves the queue for manual review instead of
+ * being retried forever.
  */
 export async function releaseAirdropReservation(
   id: number,
@@ -563,21 +644,105 @@ export async function releaseAirdropReservation(
         payout_updated_at = CURRENT_TIMESTAMP,
         updated_at = CURRENT_TIMESTAMP
     WHERE id = ${id}
-      AND payout_state IN ('reserved', 'broadcast')
+      AND payout_state = 'reserved'
       AND status <> 'paid'
     RETURNING id
   `
   return rowsOf(rows).length > 0
 }
 
-/** Reservations that never reached a confirmed receipt. */
+/**
+ * The distributor is waiting for the receipt of a broadcast transaction:
+ * broadcast → confirming. Conditional on the current state (audit H-04).
+ */
+export async function markAirdropConfirming(id: number): Promise<boolean> {
+  await initAirdropTables()
+  const rows = await sql`
+    UPDATE airdrop_registrations
+    SET payout_state = 'confirming',
+        payout_updated_at = CURRENT_TIMESTAMP,
+        updated_at = CURRENT_TIMESTAMP
+    WHERE id = ${id} AND payout_state = 'broadcast' AND status <> 'paid'
+    RETURNING id
+  `
+  return rowsOf(rows).length > 0
+}
+
+/**
+ * Park an uncertain outcome after a broadcast (timeout, unknown error):
+ * broadcast/confirming → unknown (audit H-04). The row keeps its tx_hash
+ * and payout_nonce so the reconciliation listing can resolve the on-chain
+ * truth; it never re-enters the queue from here — only a reconciled
+ * resolution (markAirdropPaidById or releaseUnknownAirdropPayout) may move
+ * it on.
+ */
+export async function parkAirdropPayoutUnknown(
+  id: number,
+  reason: string
+): Promise<boolean> {
+  await initAirdropTables()
+  const rows = await sql`
+    UPDATE airdrop_registrations
+    SET payout_state = 'unknown',
+        payout_error = ${reason},
+        payout_next_attempt_at = NULL,
+        payout_updated_at = CURRENT_TIMESTAMP,
+        updated_at = CURRENT_TIMESTAMP
+    WHERE id = ${id}
+      AND payout_state IN ('broadcast', 'confirming')
+      AND status <> 'paid'
+    RETURNING id
+  `
+  return rowsOf(rows).length > 0
+}
+
+/**
+ * Resolve an 'unknown' row back to the queue after chain reconciliation
+ * PROVED the transaction never landed (audit H-04). Same backoff and
+ * max-attempt semantics as releaseAirdropReservation. Only 'unknown' rows
+ * take this path — a live broadcast/confirming attempt cannot be re-queued.
+ */
+export async function releaseUnknownAirdropPayout(
+  id: number,
+  reason: string,
+  retryDelayMinutes: number,
+  maxAttempts: number
+): Promise<boolean> {
+  await initAirdropTables()
+  const rows = await sql`
+    UPDATE airdrop_registrations
+    SET status = CASE
+          WHEN payout_attempts >= ${maxAttempts} THEN 'rejected'
+          ELSE status
+        END,
+        note = CASE
+          WHEN payout_attempts >= ${maxAttempts} THEN ${reason}
+          ELSE note
+        END,
+        payout_state = 'idle',
+        payout_error = ${reason},
+        payout_next_attempt_at = CASE
+          WHEN payout_attempts >= ${maxAttempts} THEN NULL
+          ELSE CURRENT_TIMESTAMP + (${retryDelayMinutes} * INTERVAL '1 minute')
+        END,
+        payout_updated_at = CURRENT_TIMESTAMP,
+        updated_at = CURRENT_TIMESTAMP
+    WHERE id = ${id}
+      AND payout_state = 'unknown'
+      AND status <> 'paid'
+    RETURNING id
+  `
+  return rowsOf(rows).length > 0
+}
+
+/** Reservations that never reached a confirmed receipt (reconciliation list). */
 export async function listStuckPayouts(
   limit: number
 ): Promise<AirdropRegistration[]> {
   await initAirdropTables()
   const rows = await sql`
     SELECT id, user_id, email, wallet_address, ip_address, ip_prefix24, amount, status, tx_hash, note, x_handle, social_status, social_checked_at, social_detail, sybil_score, sybil_status, sybil_scored_at, sybil_rules, hold_since, payout_state, payout_nonce, payout_attempts, payout_error, payout_next_attempt_at, created_at, updated_at FROM airdrop_registrations
-    WHERE payout_state IN ('reserved', 'broadcast')
+    WHERE payout_state = ANY(${STUCK_PAYOUT_STATES}::varchar[])
     ORDER BY id ASC LIMIT ${limit}
   `
   return rowsOf<Record<string, unknown>>(rows).map(mapRow)

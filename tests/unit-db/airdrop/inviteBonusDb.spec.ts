@@ -10,6 +10,11 @@
  *
  * Tests are SERIAL and each one cleans up the bonus rows it leaves behind,
  * so later batch-generation tests see an empty payable slate.
+ *
+ * Runs in the SINGLE-WORKER unit-db project (playwright.unit-db.config.ts):
+ * several assertions take whole-database snapshots (full payout queue,
+ * global pool sums), which are only stable when no other spec mutates the
+ * shared Postgres concurrently (OBS-1).
  */
 
 import { Pool } from "pg"
@@ -368,6 +373,9 @@ test.describe("assertion 6/9: track-A scan voids bonuses, never the state machin
         WHERE id = ANY(${[inviter, ...farm]})
       `
     )
+    // Whole-DB snapshot (500-row queue): valid only because the unit-db
+    // project runs with a single worker (OBS-1) — a concurrent DELETE from
+    // another spec file would change the queue between the two reads.
     const queueBefore = (await listApprovedRegistrations(500)).map(
       (r) => `${r.id}:${r.payout_state}`
     )
@@ -488,7 +496,17 @@ test.describe("assertion 13/10/12: revoke, pool breaker, batch stamping", () => 
     expect(result.ok).toBe(false)
     if (!result.ok) {
       expect(result.code).toBe("pool_insufficient")
-      expect(result.poolRemainingQau).toBe(10)
+      // The reported remaining charges the GLOBAL pool: paid rows plus
+      // claimed-but-unpaid rows of outstanding batches (audit N2). Derive
+      // the expectation from the ledger instead of assuming a fresh pool.
+      const charged = rowsOf<{ t: string }>(
+        await sql`
+          SELECT COALESCE(SUM(amount), 0) AS t FROM airdrop_invite_bonuses
+          WHERE status = 'paid'
+            OR (status = 'pending' AND revoked = FALSE AND batch_ref IS NOT NULL)
+        `
+      )
+      expect(result.poolRemainingQau).toBe(10 - Number(charged[0].t))
       expect(result.requiredQau).toBe(30)
     }
     // 整批拒付: not a single row of THIS run got stamped into a batch
@@ -602,6 +620,83 @@ test.describe("assertion 7: track-B candidates surface clusters from the network
 })
 
 // ---------------------------------------------------------------------------
+// H-03 — batch generation claims payable rows atomically
+// ---------------------------------------------------------------------------
+
+test.describe("H-03: batch generation claims rows atomically", () => {
+  test("two concurrent generations never receive the same bonus row", async () => {
+    skipIfNoDb()
+    const inv1 = await seedRegistration("h3-inv1", {
+      sybilStatus: "approved",
+    })
+    await approveInvitees(inv1, 3, "h3-a") // one pending round each
+    const inv2 = await seedRegistration("h3-inv2", {
+      sybilStatus: "approved",
+    })
+    await approveInvitees(inv2, 3, "h3-b")
+
+    const [r1, r2] = await Promise.all([
+      generateInviteBonusBatch(testCfg({ poolQau: 5000 }), {
+        skipScan: true,
+        now: new Date(),
+      }),
+      generateInviteBonusBatch(testCfg({ poolQau: 5000 }), {
+        skipScan: true,
+        now: new Date(),
+      }),
+    ])
+    const ids1 = r1.ok ? r1.rows.map((r) => r.inviterRegistrationId) : []
+    const ids2 = r2.ok ? r2.rows.map((r) => r.inviterRegistrationId) : []
+    // THE property (H-03): no payout row may appear in both CSVs.
+    for (const id of ids2) expect(ids1).not.toContain(id)
+    for (const id of ids1) expect(ids2).not.toContain(id)
+    // At most the two existing pending rows were claimed in total, and each
+    // generation lists every inviter at most once (per-inviter aggregation).
+    expect(ids1.length + ids2.length).toBeLessThanOrEqual(2)
+    expect(new Set(ids1).size).toBe(ids1.length)
+    expect(new Set(ids2).size).toBe(ids2.length)
+
+    // Hygiene: leave no pending/stamped rows for later tests.
+    await sweepPending(inv1)
+    await sweepPending(inv2)
+  })
+
+  test("a refused batch releases its claim so a later batch can pay", async () => {
+    skipIfNoDb()
+    const inviter = await seedRegistration("h3-rel", {
+      sybilStatus: "approved",
+    })
+    await approveInvitees(inviter, 3, "h3-c")
+    const refused = await generateInviteBonusBatch(testCfg({ poolQau: 5 }), {
+      skipScan: true,
+      now: new Date(),
+    })
+    expect(refused.ok).toBe(false)
+    if (!refused.ok) expect(refused.code).toBe("pool_insufficient")
+    // Nothing stayed stamped behind the refused batch reference.
+    const stamped = rowsOf<{ n: number }>(
+      await sql`
+        SELECT COUNT(*)::int AS n FROM airdrop_invite_bonuses
+        WHERE inviter_registration_id = ${inviter} AND batch_ref IS NOT NULL
+      `
+    )
+    expect(Number(stamped[0].n)).toBe(0)
+    // The released rows are claimable by a later generation.
+    const again = await generateInviteBonusBatch(testCfg({ poolQau: 1000 }), {
+      skipScan: true,
+      now: new Date(),
+    })
+    expect(again.ok).toBe(true)
+    if (again.ok) {
+      expect(
+        again.rows.find((r) => r.inviterRegistrationId === inviter)
+      ).toBeDefined()
+    }
+    await sweepPending(inviter)
+  })
+})
+
+// ---------------------------------------------------------------------------
 // Reporting + main-payout isolation
 // ---------------------------------------------------------------------------
 
@@ -625,6 +720,8 @@ test.describe("report and main-payout isolation", () => {
     const approvedInviter = await seedRegistration("queue-inv", {
       sybilStatus: "approved",
     })
+    // Whole-DB snapshot (500-row queue): valid only because the unit-db
+    // project runs with a single worker (OBS-1).
     const before = await listApprovedRegistrations(500)
     const beforeState = new Map(before.map((r) => [r.id, r.payout_state]))
     expect(beforeState.has(approvedInviter)).toBe(true)
@@ -677,5 +774,119 @@ test.describe("assertion 14: post-cutoff approvals keep the relation but earn no
     expect(summary.bonusEligibleApprovals).toBeNull()
     expect(summary.bonusRoundsCreated).toEqual([])
     expect(await bonusRowsOf(inviter)).toHaveLength(0)
+  })
+})
+
+// ---------------------------------------------------------------------------
+// N2/N3 — pool budget serialization and void-vs-claim race
+// ---------------------------------------------------------------------------
+
+test.describe("N2/N3: pool budget and void-vs-claim races", () => {
+  test("two concurrent generations with headroom for one batch never overpay (N2)", async () => {
+    skipIfNoDb()
+    const inv1 = await seedRegistration("n2-inv1", {
+      sybilStatus: "approved",
+    })
+    await approveInvitees(inv1, 3, "n2-a") // 30 QAU pending
+    const inv2 = await seedRegistration("n2-inv2", {
+      sybilStatus: "approved",
+    })
+    await approveInvitees(inv2, 3, "n2-b") // 30 QAU pending
+
+    // Headroom for exactly ONE 30-QAU batch above the current paid total —
+    // the pool is global, so the paid rows of earlier tests are charged too.
+    // Whole-DB sums: stable only under the single-worker unit-db project
+    // (OBS-1) — a concurrent DELETE of paid rows would widen the headroom.
+    const paidRows = rowsOf<{ t: string }>(
+      await sql`
+        SELECT COALESCE(SUM(amount), 0) AS t FROM airdrop_invite_bonuses
+        WHERE status = 'paid'
+      `
+    )
+    const poolQau = Number(paidRows[0].t) + 30
+
+    const [r1, r2] = await Promise.all([
+      generateInviteBonusBatch(testCfg({ poolQau }), {
+        skipScan: true,
+        now: new Date(),
+      }),
+      generateInviteBonusBatch(testCfg({ poolQau }), {
+        skipScan: true,
+        now: new Date(),
+      }),
+    ])
+    const paid =
+      (r1.ok ? r1.totalAmountQau : 0) + (r2.ok ? r2.totalAmountQau : 0)
+    // THE property (N2): combined committed payouts never exceed the pool.
+    expect(paid).toBeLessThanOrEqual(30)
+    // The gate actually engaged — any refusal is the pool breaker, and the
+    // candidates were really there (not an empty ledger).
+    for (const r of [r1, r2]) {
+      if (!r.ok) {
+        expect(r.code).toBe("pool_insufficient")
+        expect(r.requiredQau).toBeGreaterThan(0)
+      }
+    }
+    await sweepPending(inv1)
+    await sweepPending(inv2)
+  })
+
+  test("a void racing generation never voids rows that entered the CSV (N3)", async () => {
+    skipIfNoDb()
+    const inviter = await seedRegistration("n3-inv", {
+      sybilStatus: "approved",
+    })
+    await approveInvitees(inviter, 6, "n3-e") // 2 pending rounds, 60 QAU
+
+    const [gen] = await Promise.all([
+      generateInviteBonusBatch(testCfg({ poolQau: 5000 }), {
+        skipScan: true,
+        now: new Date(),
+      }),
+      voidPendingBonusesForInviter(inviter, "trackA: race drill"),
+    ])
+    const rows = rowsOf<{ status: string; batch_ref: string | null }>(
+      await sql`
+        SELECT status, batch_ref FROM airdrop_invite_bonuses
+        WHERE inviter_registration_id = ${inviter} ORDER BY round
+      `
+    )
+    if (gen.ok) {
+      // A CSV went out: none of its claimed rows may be void (paid on chain
+      // but void in the ledger would be a money/ledger mismatch).
+      expect(gen.rows.length).toBeGreaterThan(0)
+      for (const r of rows) {
+        if (r.batch_ref === gen.batchRef) expect(r.status).not.toBe("void")
+      }
+    } else {
+      // The void won the race: the generation must return no CSV at all.
+      expect(gen.code).toBe("no_pending_bonus")
+    }
+    await sweepPending(inviter)
+  })
+
+  test("a void after the claim cannot touch claimed rows (N3 guard)", async () => {
+    skipIfNoDb()
+    const inviter = await seedRegistration("n3b-inv", {
+      sybilStatus: "approved",
+    })
+    await approveInvitees(inviter, 3, "n3b-e") // 1 pending round
+    const gen = await generateInviteBonusBatch(testCfg({ poolQau: 5000 }), {
+      skipScan: true,
+      now: new Date(),
+    })
+    if (!gen.ok) throw new Error(`batch refused: ${gen.code}`)
+    // The automatic void path skips rows already stamped into a batch.
+    expect(
+      await voidPendingBonusesForInviter(inviter, "trackA: late drill")
+    ).toBe(0)
+    const rows = rowsOf<{ status: string }>(
+      await sql`
+        SELECT status FROM airdrop_invite_bonuses
+        WHERE inviter_registration_id = ${inviter}
+      `
+    )
+    expect(rows.every((r) => r.status === "pending")).toBe(true)
+    await sweepPending(inviter)
   })
 })

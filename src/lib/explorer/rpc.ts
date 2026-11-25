@@ -3,9 +3,14 @@
 
 export type RpcNetwork = "mainnet" | "testnet"
 
-const DEFAULT_MAINNET =
-  process.env.QAU_RPC_URL_MAINNET || "https://rpc.quantaureum.com/"
-const DEFAULT_TESTNET = process.env.QAU_RPC_URL_TESTNET || ""
+// Resolved per call (not at module load) so operators and tests can retarget
+// a network via the environment at runtime.
+function endpointUrl(network: RpcNetwork): string {
+  if (network === "mainnet") {
+    return process.env.QAU_RPC_URL_MAINNET || "https://rpc.quantaureum.com/"
+  }
+  return process.env.QAU_RPC_URL_TESTNET || ""
+}
 
 interface EndpointState {
   tail: Promise<void>
@@ -58,7 +63,7 @@ export async function rpc<T = unknown>(
   method: string,
   params: unknown[] = []
 ): Promise<T | null> {
-  const url = network === "mainnet" ? DEFAULT_MAINNET : DEFAULT_TESTNET
+  const url = endpointUrl(network)
   if (!url) return null
   const state = endpointState(url)
   const key = JSON.stringify([method, params])

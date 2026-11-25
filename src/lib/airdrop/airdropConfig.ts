@@ -85,7 +85,8 @@ export function isValidXHandle(handle: string): boolean {
 }
 
 // ---------------------------------------------------------------------------
-// Invite bonus (B-tier viral loop) — plan 运营中心/11-病毒增长/B档裂变改造方案-v2.md §3.1/§4
+// Invite bonus (B-tier viral loop) — internal plan doc (archived in
+// .local-only, not in repo) §3.1/§4
 //
 // The only monetary bonus of the campaign: for every 3 invited users whose
 // registration is APPROVED, the inviter earns one bonus round. Kill-switch

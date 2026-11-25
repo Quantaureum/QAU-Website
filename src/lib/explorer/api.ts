@@ -73,6 +73,12 @@ export function clampPage(sp: URLSearchParams): number {
   return Number.isFinite(n) && n >= 1 ? Math.floor(n) : 1
 }
 
+/** Offset-based pagination input for endpoints that page by offset. */
+export function clampOffset(sp: URLSearchParams, max = 1_000_000): number {
+  const n = Number(sp.get("offset") ?? 0)
+  return Number.isFinite(n) && n >= 1 ? Math.min(Math.floor(n), max) : 0
+}
+
 // ── block normalization (old-site shape) ─────────────────────────────────
 
 export interface BlockDto {
@@ -146,9 +152,18 @@ export interface TxDto {
   logsCount: number
 }
 
-export async function toTxDto(network: RpcNetwork, tx: QauTx): Promise<TxDto> {
+export async function toTxDto(
+  network: RpcNetwork,
+  tx: QauTx,
+  blockTimestamp?: string
+): Promise<TxDto> {
   const receipt = await fetchReceipt(network, tx.hash)
-  const blockTs = await blockTimestampOf(network, tx.blockHash, tx.blockNumber)
+  // Callers that already hold the block (e.g. block transaction listings)
+  // pass its timestamp so each transaction costs one receipt lookup instead
+  // of a receipt plus a block re-fetch.
+  const blockTs =
+    blockTimestamp ??
+    (await blockTimestampOf(network, tx.blockHash, tx.blockNumber))
   const status: TxDto["status"] = !receipt
     ? tx.blockNumber === null
       ? "pending"
@@ -204,7 +219,7 @@ async function blockTimestampOf(
 
 export async function getStats(network: RpcNetwork) {
   await syncIndex(network)
-  const state = indexState()
+  const state = indexState(network)
   const [head, gas, peers] = await Promise.all([
     fetchBlock(network, "latest", false),
     fetchGasPrice(network),
@@ -213,7 +228,7 @@ export async function getStats(network: RpcNetwork) {
   const headNum = head ? hexToInt(head.number) : state.head
   // recent txs in the last 20 blocks for TPS
   const windowStart = Math.max(0, headNum - 20)
-  const recentTx = listTransactions(20, 1).txs.filter(
+  const recentTx = listTransactions(20, 1, network).txs.filter(
     (t) => hexToInt(t.blockNumber) > windowStart
   ).length
   return {
@@ -300,18 +315,56 @@ export async function getBlockByNumberOrTag(
   return b ? toBlockDto(b) : null
 }
 
-export async function getBlockTxs(
+/** Upper bound on transactions served per block-transactions request. */
+export const MAX_BLOCK_TXS_PER_REQUEST = 100
+
+export interface BlockTxsPage {
+  txs: TxDto[]
+  total: number
+  limit: number
+  offset: number
+  hasMore: boolean
+}
+
+/**
+ * Block transactions with offset pagination. Upstream budget per call:
+ * one block fetch plus at most `limit` receipt lookups — block timestamps are
+ * reused from the fetched block instead of re-reading the block per
+ * transaction (the previous path cost roughly 1 + 2N upstream calls).
+ */
+export async function getBlockTxsPaged(
   network: RpcNetwork,
-  tagOrNum: string
-): Promise<TxDto[]> {
+  tagOrNum: string,
+  limit: number,
+  offset: number
+): Promise<BlockTxsPage> {
   const asTag = /^\d+$/.test(tagOrNum)
     ? intToHex(parseInt(tagOrNum, 10))
     : tagOrNum
   const b = await fetchBlock(network, asTag, true)
-  if (!b) return []
-  const txs = (b.transactions as QauTx[]) ?? []
-  const out = await Promise.all(txs.map((t) => toTxDto(network, t)))
-  return out
+  if (!b) return { txs: [], total: 0, limit, offset, hasMore: false }
+  const all = (b.transactions as QauTx[]) ?? []
+  const total = all.length
+  const slice = all.slice(offset, offset + limit)
+  const txs = await Promise.all(
+    slice.map((t) => toTxDto(network, t, b.timestamp))
+  )
+  return { txs, total, limit, offset, hasMore: offset + slice.length < total }
+}
+
+export async function getBlockTxs(
+  network: RpcNetwork,
+  tagOrNum: string
+): Promise<TxDto[]> {
+  // Full-block shape kept for the RSC block page; capped to the same
+  // per-request transaction ceiling as the public API route.
+  const page = await getBlockTxsPaged(
+    network,
+    tagOrNum,
+    MAX_BLOCK_TXS_PER_REQUEST,
+    0
+  )
+  return page.txs
 }
 
 export async function getTxDetail(

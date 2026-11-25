@@ -23,8 +23,8 @@ export async function GET(req: Request) {
   await syncIndex(network)
   const limit = clampLimit(searchParams, 10, 50)
   const page = clampPage(searchParams)
-  const result = listTransactions(limit, page)
-  const state = indexState()
+  const result = listTransactions(limit, page, network)
+  const state = indexState(network)
   return json({
     ...result,
     index: {

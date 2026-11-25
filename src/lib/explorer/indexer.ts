@@ -46,7 +46,15 @@ export interface IndexState {
   lastError: string | null
 }
 
-const BLOB_KEY = "explorer-index-v1"
+const BLOB_KEY_PREFIX = "explorer-index-v1"
+// Per-network blob key: mainnet and testnet must never share persisted index
+// data. Legacy deployments stored both networks under the bare
+// "explorer-index-v1" key with no network marker; such snapshots carry no
+// trustworthy network identity, so they are rejected on load and each network
+// rebuilds its own index from the chain head instead.
+function blobKey(network: RpcNetwork): string {
+  return `${BLOB_KEY_PREFIX}:${network}`
+}
 // Faster backfill: scan ~10 blocks every 1s (~10 blocks/s) so history like
 // recent-day transfers becomes visible much sooner than the old 5-block/5s.
 // A local file cache (below) persists progress across process restarts, since
@@ -56,14 +64,19 @@ export const MAX_SCAN_PER_TICK = 10
 const SCAN_INTERVAL_MS = 1_000
 // Resolve the cache path lazily: tests and self-hosted operators can override
 // EXPLORER_INDEX_FILE at runtime without depending on module import order.
-function indexFile(): string {
-  return (
-    process.env.EXPLORER_INDEX_FILE || join(tmpdir(), "qau-explorer-index.json")
-  )
+// The override is honored verbatim (single-network setups); the default path
+// is per-network so local fallback caches never mix chains. Either way a
+// snapshot whose network marker does not match is rejected on load.
+function indexFile(network: RpcNetwork): string {
+  const override = process.env.EXPLORER_INDEX_FILE
+  if (override) return override
+  return join(tmpdir(), `qau-explorer-index-${network}.json`)
 }
 let lastDiskSaveAt = 0
 
 interface PersistedData {
+  /** Network this snapshot belongs to; legacy mixed snapshots have no marker. */
+  network?: RpcNetwork
   state: IndexState
   txs: IndexedTx[]
   lastScanAt?: number
@@ -71,12 +84,19 @@ interface PersistedData {
 
 // ── storage backend ────────────────────────────────────────────────────────
 
-function mem(): PersistedData {
-  const g = globalThis as unknown as { __qauExplorerIndex?: PersistedData }
-  if (!g.__qauExplorerIndex) {
-    g.__qauExplorerIndex = { state: emptyState(), txs: [] }
+// One isolated in-memory store per network, keyed so mainnet and testnet can
+// be served from the same process without cross-network contamination.
+function mem(network: RpcNetwork): PersistedData {
+  const g = globalThis as unknown as {
+    __qauExplorerIndex?: Map<RpcNetwork, PersistedData>
   }
-  return g.__qauExplorerIndex
+  if (!g.__qauExplorerIndex) g.__qauExplorerIndex = new Map()
+  let store = g.__qauExplorerIndex.get(network)
+  if (!store) {
+    store = { network, state: emptyState(), txs: [] }
+    g.__qauExplorerIndex.set(network, store)
+  }
+  return store
 }
 
 function emptyState(): IndexState {
@@ -91,37 +111,56 @@ function emptyState(): IndexState {
   }
 }
 
-async function loadIndex(): Promise<PersistedData> {
-  const store = mem()
+/** Accept a parsed snapshot only when it belongs to the requested network. */
+function isSnapshotFor(
+  parsed: unknown,
+  network: RpcNetwork
+): parsed is PersistedData {
+  const p = parsed as PersistedData | null
+  return (
+    !!p &&
+    p.network === network &&
+    !!p.state &&
+    typeof p.state === "object" &&
+    Array.isArray(p.txs)
+  )
+}
+
+async function loadIndex(network: RpcNetwork): Promise<PersistedData> {
+  const store = mem(network)
   if (store.state.persisted) return store
   // Try Netlify Blobs (no-op import failure locally)
   try {
     const { getStore } = await import("@netlify/blobs")
     const blobStore = await getStore({ name: "qau-explorer" })
-    const raw = await blobStore?.get(BLOB_KEY)
+    const raw = await blobStore?.get(blobKey(network))
     if (raw) {
       const text =
         raw instanceof ArrayBuffer ? new TextDecoder().decode(raw) : raw
-      const parsed = JSON.parse(text) as PersistedData
-      if (parsed?.state && Array.isArray(parsed.txs)) {
+      const parsed = JSON.parse(text) as unknown
+      if (isSnapshotFor(parsed, network)) {
         store.state = parsed.state
         store.txs = parsed.txs
+        store.lastScanAt = parsed.lastScanAt
         store.state.persisted = true
         store.state.scanning = false
         return store
       }
+      // Rejected (legacy mixed blob or foreign network): fall through and
+      // rebuild this network's index from the chain head.
     }
   } catch {
     // blobs unavailable (non-Netlify deployment) — fall through to file cache
   }
   // Fallback cache: load a local file so the index survives process restarts.
   try {
-    const file = indexFile()
+    const file = indexFile(network)
     if (existsSync(file)) {
-      const parsed = JSON.parse(readFileSync(file, "utf8")) as PersistedData
-      if (parsed?.state && Array.isArray(parsed.txs)) {
+      const parsed = JSON.parse(readFileSync(file, "utf8")) as unknown
+      if (isSnapshotFor(parsed, network)) {
         store.state = parsed.state
         store.txs = parsed.txs
+        store.lastScanAt = parsed.lastScanAt
         store.state.persisted = true
         store.state.scanning = false
       }
@@ -132,12 +171,16 @@ async function loadIndex(): Promise<PersistedData> {
   return store
 }
 
-async function saveIndex(data: PersistedData): Promise<void> {
+async function saveIndex(
+  network: RpcNetwork,
+  data: PersistedData
+): Promise<void> {
+  data.network = network
   try {
     const { getStore } = await import("@netlify/blobs")
     const blobStore = await getStore({ name: "qau-explorer" })
     if (blobStore) {
-      await blobStore.setJSON(BLOB_KEY, data)
+      await blobStore.setJSON(blobKey(network), data)
       data.state.persisted = true
     }
   } catch {
@@ -149,7 +192,7 @@ async function saveIndex(data: PersistedData): Promise<void> {
   if (now - lastDiskSaveAt < 10_000) return
   lastDiskSaveAt = now
   try {
-    const file = indexFile()
+    const file = indexFile(network)
     mkdirSync(dirname(file), { recursive: true })
     writeFileSync(file, JSON.stringify(data))
     data.state.persisted = true
@@ -169,7 +212,7 @@ export async function syncIndex(
   network: RpcNetwork,
   opts: { full?: boolean } = {}
 ): Promise<IndexState> {
-  const data = await loadIndex()
+  const data = await loadIndex(network)
   const wantFull = opts.full ?? true
   const head = await fetchBlockNumber(network)
   if (head === null) {
@@ -245,7 +288,7 @@ export async function syncIndex(
       data.txs = data.txs.slice(0, 12_000)
     }
 
-    await saveIndex(data)
+    await saveIndex(network, data)
   } catch (e) {
     // Keep the raw error server-side only: lastError is relayed verbatim in
     // public API responses and must never carry upstream exception text
@@ -282,19 +325,22 @@ function toIndexedTx(
   }
 }
 
-// ── queries (all operate on the shared index) ─────────────────────────────
+// ── queries (all operate on one network's isolated index) ─────────────────
+// Read helpers default to "mainnet" for the RSC pages, which only serve the
+// mainnet explorer; every API route passes its resolved network explicitly.
 
-function store() {
-  return mem()
+function store(network: RpcNetwork) {
+  return mem(network)
 }
 
-export function indexState(): IndexState {
-  return mem().state
+export function indexState(network: RpcNetwork = "mainnet"): IndexState {
+  return mem(network).state
 }
 
 export function listTransactions(
   limit: number,
-  page: number
+  page: number,
+  network: RpcNetwork = "mainnet"
 ): {
   txs: IndexedTx[]
   total: number
@@ -302,7 +348,7 @@ export function listTransactions(
   limit: number
   hasMore: boolean
 } {
-  const s = store()
+  const s = store(network)
   const txs = s.txs
   const start = (page - 1) * limit
   const slice = txs.slice(start, start + limit)
@@ -318,7 +364,8 @@ export function listTransactions(
 export function addressTransactionList(
   address: string,
   limit: number,
-  page: number
+  page: number,
+  network: RpcNetwork = "mainnet"
 ): {
   txs: IndexedTx[]
   total: number
@@ -326,7 +373,7 @@ export function addressTransactionList(
   limit: number
   hasMore: boolean
 } {
-  const s = store()
+  const s = store(network)
   const a = address.toLowerCase()
   const filtered = s.txs.filter(
     (t) => t.from.toLowerCase() === a || t.to?.toLowerCase() === a
@@ -342,11 +389,14 @@ export function addressTransactionList(
   }
 }
 
-export function addressDirectionCounts(address: string): {
+export function addressDirectionCounts(
+  address: string,
+  network: RpcNetwork = "mainnet"
+): {
   outgoing: number
   incoming: number
 } {
-  const s = store()
+  const s = store(network)
   const a = address.toLowerCase()
   let outgoing = 0
   let incoming = 0
@@ -360,12 +410,16 @@ export function addressDirectionCounts(address: string): {
   return { outgoing, incoming }
 }
 
-export function totalTxCount(): number {
-  return store().state.totalTx
+export function totalTxCount(network: RpcNetwork = "mainnet"): number {
+  return store(network).state.totalTx
 }
 
-export function recentTxBetween(fromBlock: number, toBlock: number): number {
-  const s = store()
+export function recentTxBetween(
+  fromBlock: number,
+  toBlock: number,
+  network: RpcNetwork = "mainnet"
+): number {
+  const s = store(network)
   return s.txs.filter((t) => {
     const n = parseInt(t.blockNumber, 16)
     return n > fromBlock && n <= toBlock

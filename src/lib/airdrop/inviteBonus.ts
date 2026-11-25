@@ -1,7 +1,8 @@
 /**
  * Invite-bonus flow logic — pure functions only.
  *
- * Plan 运营中心/11-病毒增长/B档裂变改造方案-v2.md §3.1/§4 (anti-sybil review
+ * Per the internal invite-bonus plan (archived in .local-only, not in repo)
+ * §3.1/§4 (anti-sybil review
  * v4, PASS): the monetary bonus layer of the B-tier viral loop.
  *
  *   - one bonus round per `roundSize` approved invitees, capped at `maxRounds`
@@ -159,6 +160,28 @@ export interface BuildBonusBatchInput {
 }
 
 /**
+ * Refusals that can be decided BEFORE any row is claimed: the kill-switch
+ * (manual flag + week-over-week criterion) and the settlement window.
+ * The store applies this pre-claim so a paused/closed campaign never stamps
+ * rows; buildBonusBatch re-applies it after the claim (defense in depth).
+ * Pure.
+ */
+export function preClaimRefusal(
+  cfg: InviteBonusConfig,
+  lastWeekClusterHits: number,
+  currentWeekClusterHits: number,
+  now: Date
+): BatchRefusalCode | null {
+  if (isBonusPayoutPaused(cfg, lastWeekClusterHits, currentWeekClusterHits)) {
+    return "kill_switch_paused"
+  }
+  if (cfg.settleEndAt && now.getTime() > cfg.settleEndAt.getTime()) {
+    return "bonus_channel_closed"
+  }
+  return null
+}
+
+/**
  * Build one whole bonus-invite batch from the payable records. Refuses the
  * ENTIRE batch (never a partial payout) when the kill-switch is engaged,
  * the settlement window has closed, there is nothing payable, or the bonus
@@ -168,17 +191,14 @@ export interface BuildBonusBatchInput {
 export function buildBonusBatch(input: BuildBonusBatchInput): BonusBatchResult {
   const { eligible, poolRemainingQau, cfg, batchRef, now } = input
 
-  if (
-    isBonusPayoutPaused(
-      cfg,
-      input.lastWeekClusterHits,
-      input.currentWeekClusterHits
-    )
-  ) {
-    return { ok: false, code: "kill_switch_paused" }
-  }
-  if (cfg.settleEndAt && now.getTime() > cfg.settleEndAt.getTime()) {
-    return { ok: false, code: "bonus_channel_closed" }
+  const pre = preClaimRefusal(
+    cfg,
+    input.lastWeekClusterHits,
+    input.currentWeekClusterHits,
+    now
+  )
+  if (pre) {
+    return { ok: false, code: pre }
   }
   if (eligible.length === 0) {
     return { ok: false, code: "no_pending_bonus" }

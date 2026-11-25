@@ -1,7 +1,8 @@
 /**
  * Invite-bonus database layer (Neon Postgres serverless / local pg).
  *
- * Plan 运营中心/11-病毒增长/B档裂变改造方案-v2.md §6 items 2-6, composed from
+ * Internal invite-bonus plan (archived in .local-only, not in repo) §6 items
+ * 2-6, composed from
  * the pure modules (inviteBonus.ts + sybil/clusterScan.ts) with SQL:
  *
  *   - invite codes: generated for APPROVED registrations only, one per user
@@ -26,7 +27,7 @@
 import { randomBytes } from "node:crypto"
 
 import { getInviteBonusConfig, type InviteBonusConfig } from "./airdropConfig"
-import { rowsOf, sql } from "./database"
+import { rowsOf, sql, sqlTransaction } from "./database"
 import {
   type BatchRefusalCode,
   BONUS_BATCH_TYPE,
@@ -35,6 +36,7 @@ import {
   computeEarnedRounds,
   isApprovalBonusEligible,
   isoWeekStart,
+  preClaimRefusal,
   reconcileBonusPool,
   roundsToCreate,
 } from "./inviteBonus"
@@ -496,10 +498,17 @@ const noTransferRelation: TransferRelationProvider = async () => false
 // ---------------------------------------------------------------------------
 
 /**
- * Void every PENDING bonus record of one inviter's cluster (track-A
- * automatic trigger or confirmed track-B). Terminal: already-void and paid
- * records are untouched, and a voided record never flips back (review v4 §2
- * remark 1). Returns how many records were voided.
+ * Void every PENDING, NOT-YET-CLAIMED bonus record of one inviter's cluster
+ * (track-A automatic trigger or confirmed track-B). Terminal: already-void
+ * and paid records are untouched, and a voided record never flips back
+ * (review v4 §2 remark 1). Returns how many records were voided.
+ *
+ * audit N3: rows already claimed into a generated batch (batch_ref set) are
+ * EXCLUDED — their CSV may already be with the distributor, so voiding them
+ * would create a paid-on-chain/void-in-ledger mismatch. Under READ
+ * COMMITTED the predicate is re-checked on the newest row version once the
+ * row lock is granted (EvalPlanQual), so a void racing an in-flight claim
+ * also skips the just-claimed rows.
  */
 export async function voidPendingBonusesForInviter(
   inviterRegistrationId: number,
@@ -511,7 +520,8 @@ export async function voidPendingBonusesForInviter(
       UPDATE airdrop_invite_bonuses
       SET status = 'void', void_reason = ${reason}, voided_at = CURRENT_TIMESTAMP,
           updated_at = CURRENT_TIMESTAMP
-      WHERE inviter_registration_id = ${inviterRegistrationId} AND status = 'pending'
+      WHERE inviter_registration_id = ${inviterRegistrationId}
+        AND status = 'pending' AND batch_ref IS NULL
       RETURNING id
     `
   )
@@ -636,35 +646,125 @@ export async function getBonusPoolRemainingQau(
   return cfg.poolQau - paidTotal
 }
 
-async function listPayableBonusRecords(): Promise<BonusRecordLike[]> {
+/**
+ * Transaction-scoped advisory-lock key serializing batch generation (audit
+ * N2/H-03). One fixed key: only one generation at a time runs the
+ * pool-gated claim, so each generation's pool snapshot includes every
+ * previously stamped batch. Distinct from the registration slot lock.
+ */
+const AIRDROP_INVITE_BATCH_LOCK_KEY = 721549363
+
+interface ClaimedBonusBatch {
+  /** Rows stamped with this batch reference, in claim order. */
+  eligible: BonusRecordLike[]
+  /** Pool budget left before this claim (paid + outstanding batches charged). */
+  poolRemainingBeforeQau: number
+  /** Payable rows that matched the claim predicate (before the pool gate). */
+  candidateCount: number
+  candidateTotalQau: number
+}
+
+/**
+ * Claim every currently payable bonus row and stamp THIS batch reference
+ * onto exactly those rows — inside ONE serialized boundary (audit N2/H-03):
+ *
+ *   1. pg_advisory_xact_lock serializes concurrent generations (Neon
+ *      array-form transaction on the HTTP driver, BEGIN/COMMIT on the pg
+ *      adapter), so this statement's snapshot always includes every batch
+ *      a previous generation stamped.
+ *   2. The claim+stamp stays a single statement (FOR UPDATE SKIP LOCKED):
+ *      a concurrent generation would lock a disjoint set, and the CSV is
+ *      built only from the rows this statement actually stamped.
+ *   3. The pool gate charges the budget for PAID rows AND for
+ *      claimed-but-unpaid rows of outstanding batches, so two generations
+ *      can never jointly commit more than the pool budget — the whole
+ *      claim is refused (nothing stamped) when the candidates do not fit.
+ *
+ * The returned summary lets the caller distinguish "nothing payable" from
+ * "pool insufficient" without a second round trip.
+ */
+async function claimPayableBonusRecords(
+  batchRef: string,
+  poolQau: number
+): Promise<ClaimedBonusBatch> {
   await initInviteTables()
-  // batch_ref IS NULL keeps already-batched (not yet paid) records out of a
-  // second batch — one record joins at most one batch, ever.
+  const [, claimResult] = await sqlTransaction([
+    (tx) => tx`SELECT pg_advisory_xact_lock(${AIRDROP_INVITE_BATCH_LOCK_KEY})`,
+    (tx) => tx`
+      WITH claimed AS MATERIALIZED (
+        SELECT id, inviter_registration_id, round, amount
+        FROM airdrop_invite_bonuses
+        WHERE status = 'pending' AND revoked = FALSE AND batch_ref IS NULL
+        ORDER BY inviter_registration_id ASC, round ASC
+        FOR UPDATE SKIP LOCKED
+      ),
+      pool AS MATERIALIZED (
+        SELECT
+          ${poolQau}::numeric
+          - COALESCE((SELECT SUM(amount) FROM airdrop_invite_bonuses
+                      WHERE status = 'paid'), 0)
+          - COALESCE((SELECT SUM(amount) FROM airdrop_invite_bonuses
+                      WHERE status = 'pending' AND revoked = FALSE
+                        AND batch_ref IS NOT NULL), 0)
+            AS remaining_before,
+          (SELECT COALESCE(SUM(amount), 0) FROM claimed) AS candidate_total,
+          (SELECT COUNT(*) FROM claimed)::int AS candidate_count
+      ),
+      stamped AS (
+        UPDATE airdrop_invite_bonuses b
+        SET batch_ref = ${batchRef}, updated_at = CURRENT_TIMESTAMP
+        FROM claimed c, pool p
+        WHERE b.id = c.id
+          AND p.remaining_before >= p.candidate_total
+        RETURNING b.id, b.inviter_registration_id, b.round, b.amount
+      )
+      SELECT p.remaining_before, p.candidate_total, p.candidate_count,
+             s.id, s.inviter_registration_id, s.round, s.amount
+      FROM pool p
+      LEFT JOIN stamped s ON TRUE
+    `,
+  ])
   const rows = rowsOf<{
-    id: number
-    inviter_registration_id: number
-    round: number
-    amount: string | number
-    status: string
-    revoked: boolean
-    batch_ref: string | null
-  }>(
-    await sql`
-      SELECT id, inviter_registration_id, round, amount, status, revoked, batch_ref
-      FROM airdrop_invite_bonuses
-      WHERE status = 'pending' AND revoked = FALSE AND batch_ref IS NULL
-      ORDER BY inviter_registration_id ASC, round ASC
-    `
-  )
-  return rows.map((r) => ({
-    id: Number(r.id),
-    inviterRegistrationId: Number(r.inviter_registration_id),
-    round: Number(r.round),
-    amountQau: Number(r.amount),
-    status: "pending" as const,
-    revoked: Boolean(r.revoked),
-    batchRef: r.batch_ref ?? null,
-  }))
+    remaining_before: string | number
+    candidate_total: string | number
+    candidate_count: number
+    id: number | null
+    inviter_registration_id: number | null
+    round: number | null
+    amount: string | number | null
+  }>(claimResult)
+  const summary = rows[0]
+  const eligible = rows
+    .filter((r) => r.id !== null && r.id !== undefined)
+    .map((r) => ({
+      id: Number(r.id),
+      inviterRegistrationId: Number(r.inviter_registration_id),
+      round: Number(r.round),
+      amountQau: Number(r.amount),
+      status: "pending" as const,
+      revoked: false,
+      batchRef,
+    }))
+  return {
+    eligible,
+    poolRemainingBeforeQau: Number(summary?.remaining_before ?? 0),
+    candidateCount: Number(summary?.candidate_count ?? 0),
+    candidateTotalQau: Number(summary?.candidate_total ?? 0),
+  }
+}
+
+/**
+ * Give a claimed-but-refused batch's rows back to the payable pool (the
+ * refusal must not strand them behind a batch_ref they can never be paid
+ * from). Scoped to this batch's ref; only un-paid rows are released.
+ */
+async function releaseClaimedBonusBatch(batchRef: string): Promise<void> {
+  await initInviteTables()
+  await sql`
+    UPDATE airdrop_invite_bonuses
+    SET batch_ref = NULL, updated_at = CURRENT_TIMESTAMP
+    WHERE batch_ref = ${batchRef} AND status = 'pending'
+  `
 }
 
 export interface GenerateBonusBatchOptions {
@@ -707,8 +807,10 @@ export type GenerateBonusBatchResult =
  *      cluster's PENDING bonus records automatically ("规则即判"); main
  *      payouts and the registration state machine are untouched
  *   3. kill-switch (manual flag + week-over-week criterion) → refuse
- *   4. build the whole batch; pool below total → refuse ENTIRE batch
- *   5. stamp batch_ref onto the payable records and hand the CSV rows back
+ *   4. atomically claim+stamp the payable rows behind a pool gate (audits
+ *      N2/H-03) and build the whole batch from the claimed rows only;
+ *      pool below total → refuse ENTIRE batch and release the claim
+ *   5. hand the CSV rows back — exclusively owned by this batch
  */
 export async function generateInviteBonusBatch(
   cfg: InviteBonusConfig = getInviteBonusConfig(),
@@ -732,18 +834,47 @@ export async function generateInviteBonusBatch(
   }
 
   const weeklyHits = await weeklyClusterHitCounts(now)
-  const poolRemainingQau = await getBonusPoolRemainingQau(cfg)
-  const eligible = await listPayableBonusRecords()
+  const batchRef = newBatchRef(now)
+  // Refuse a paused/closed campaign BEFORE claiming anything, so no rows
+  // are ever stamped for a batch that cannot be paid out.
+  const preRefusal = preClaimRefusal(
+    cfg,
+    weeklyHits.lastWeek,
+    weeklyHits.currentWeek,
+    now
+  )
+  if (preRefusal) {
+    return { ok: false, code: preRefusal }
+  }
+  // Pool check + claim in one serialized boundary (audit N2/H-03): the
+  // eligible set IS the claimed set, so the CSV can never contain a row
+  // another request also received, and the pool budget is charged for
+  // concurrent outstanding batches before this batch is admitted.
+  const claim = await claimPayableBonusRecords(batchRef, cfg.poolQau)
+  if (claim.candidateCount === 0) {
+    return { ok: false, code: "no_pending_bonus" }
+  }
+  if (claim.eligible.length === 0) {
+    // The pool gate refused the WHOLE claim — nothing was stamped.
+    return {
+      ok: false,
+      code: "pool_insufficient",
+      poolRemainingQau: claim.poolRemainingBeforeQau,
+      requiredQau: claim.candidateTotalQau,
+    }
+  }
   const built = buildBonusBatch({
-    eligible,
-    poolRemainingQau,
+    eligible: claim.eligible,
+    poolRemainingQau: claim.poolRemainingBeforeQau,
     cfg,
     lastWeekClusterHits: weeklyHits.lastWeek,
     currentWeekClusterHits: weeklyHits.currentWeek,
     now,
-    batchRef: newBatchRef(now),
+    batchRef,
   })
   if (!built.ok) {
+    // Refused: give the claimed rows back so a later batch can pay them.
+    await releaseClaimedBonusBatch(batchRef)
     return {
       ok: false,
       code: built.code,
@@ -752,11 +883,6 @@ export async function generateInviteBonusBatch(
     }
   }
 
-  // Stamp the batch reference onto exactly the rows included in the batch,
-  // in one statement — the guards make a record join at most one batch.
-  const payableIds = eligible
-    .filter((r) => r.status === "pending" && !r.revoked)
-    .map((r) => r.id)
   const inviterIds = built.rows.map((r) => r.inviterRegistrationId)
   const memberFacts = await loadMemberFacts(inviterIds)
   const rows = built.rows.map((r) => ({
@@ -766,17 +892,10 @@ export async function generateInviteBonusBatch(
     amountQau: r.amountQau,
     memo: r.memo,
   }))
-  if (payableIds.length > 0) {
-    await sql`
-      UPDATE airdrop_invite_bonuses
-      SET batch_ref = ${built.batchRef}, updated_at = CURRENT_TIMESTAMP
-      WHERE id = ANY(${payableIds}) AND status = 'pending' AND revoked = FALSE AND batch_ref IS NULL
-    `
-  }
 
   return {
     ok: true,
-    batchRef: built.batchRef,
+    batchRef,
     rows,
     totalAmountQau: built.totalAmountQau,
     poolRemainingAfterQau: built.poolRemainingAfterQau,

@@ -12,6 +12,7 @@ import {
   rowsOf,
   sql,
 } from "@/lib/airdrop/database"
+import { PAYING_PAYOUT_STATES } from "@/lib/airdrop/payoutState"
 
 export const dynamic = "force-dynamic"
 
@@ -31,7 +32,7 @@ export async function GET(): Promise<NextResponse> {
         COUNT(*) FILTER (WHERE status <> 'rejected')::int AS registered,
         COUNT(*) FILTER (WHERE status = 'paid')::int AS paid,
         COUNT(*) FILTER (
-          WHERE payout_state IN ('reserved', 'broadcast')
+          WHERE payout_state = ANY(${PAYING_PAYOUT_STATES}::varchar[])
         )::int AS paying
       FROM airdrop_registrations
     `
