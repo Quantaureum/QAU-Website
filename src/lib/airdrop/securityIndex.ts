@@ -1,12 +1,12 @@
 /**
- * Quantaureum 生产级安全模块
+ * Quantaureum production-grade security module.
  *
- * 提供全面的安全功能：
- * - 输入验证和清理
- * - CSRF 保护
- * - 速率限制
- * - 加密工具
- * - 安全日志
+ * Provides comprehensive security features:
+ * - input validation and sanitization
+ * - CSRF protection
+ * - rate limiting
+ * - crypto utilities
+ * - security logging
  */
 import crypto from "crypto"
 
@@ -26,62 +26,62 @@ interface RedisLike {
 
 import { shouldUseSecureCookie } from "./cookieSecurity"
 
-// ==================== 配置 ====================
+// ==================== Configuration ====================
 
 export const SecurityConfig = {
-  // 速率限制配置
+  // Rate-limit configuration
   rateLimit: {
-    windowMs: 60 * 1000, // 1分钟窗口
-    maxRequests: 100, // 每窗口最大请求数
-    blockDuration: 15 * 60 * 1000, // 封禁15分钟
+    windowMs: 60 * 1000, // 1-minute window
+    maxRequests: 100, // max requests per window
+    blockDuration: 15 * 60 * 1000, // 15-minute block
   },
 
-  // CSRF 配置
+  // CSRF configuration
   csrf: {
     tokenLength: 32,
     cookieName: "_csrf",
     headerName: "x-csrf-token",
   },
 
-  // 会话配置
+  // Session configuration
   session: {
-    maxAge: 24 * 60 * 60 * 1000, // 24小时
+    maxAge: 24 * 60 * 60 * 1000, // 24 hours
     secure: shouldUseSecureCookie(),
     httpOnly: true,
     sameSite: "strict" as const,
   },
 
-  // 密码策略
+  // Password policy
   password: {
     minLength: 12,
     requireUppercase: true,
     requireLowercase: true,
     requireNumbers: true,
     requireSpecial: true,
-    maxAge: 90 * 24 * 60 * 60 * 1000, // 90天
+    maxAge: 90 * 24 * 60 * 60 * 1000, // 90 days
   },
 }
 
-// ==================== 输入验证 ====================
+// ==================== Input validation ====================
 
 export class InputValidator {
-  // 验证以太坊地址
+  // Validate an Ethereum address
   static isValidAddress(address: string): boolean {
     return /^0x[a-fA-F0-9]{40}$/.test(address)
   }
 
-  // 验证交易哈希
+  // Validate a transaction hash
   static isValidTxHash(hash: string): boolean {
     return /^0x[a-fA-F0-9]{64}$/.test(hash)
   }
 
-  // 验证邮箱
+  // Validate an email address
   static isValidEmail(email: string): boolean {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     return emailRegex.test(email) && email.length <= 254
   }
 
-  // 验证密码强度
+  // Validate password strength
   static isStrongPassword(password: string): {
     valid: boolean
     errors: string[]
@@ -108,7 +108,7 @@ export class InputValidator {
     return { valid: errors.length === 0, errors }
   }
 
-  // 清理 HTML 防止 XSS
+  // Sanitize HTML to prevent XSS
   static sanitizeHtml(input: string): string {
     return input
       .replace(/&/g, "&amp;")
@@ -119,12 +119,12 @@ export class InputValidator {
       .replace(/\//g, "&#x2F;")
   }
 
-  // 验证数字范围
+  // Validate a numeric range
   static isValidNumber(value: number, min: number, max: number): boolean {
     return !isNaN(value) && isFinite(value) && value >= min && value <= max
   }
 
-  // 验证 URL
+  // Validate a URL
   static isValidUrl(url: string): boolean {
     try {
       const parsed = new URL(url)
@@ -135,7 +135,7 @@ export class InputValidator {
   }
 }
 
-// ==================== 速率限制 ====================
+// ==================== Rate limiting ====================
 
 interface RateLimitEntry {
   count: number
@@ -190,8 +190,9 @@ class RedisRateLimitStore implements RateLimitStore {
 
   private async initRedis(redisUrl?: string) {
     try {
-      // 动态加载可选依赖 redis：用 eval 包裹避免 webpack 静态解析，
-      // redis 未安装时降级到内存限流（原有行为）。
+      // Dynamically load the optional 'redis' dependency: wrap the require
+      // in eval so webpack cannot statically resolve it; when redis is not
+      // installed, fall back to in-memory rate limiting (original behavior).
       const requireFn: (id: string) => {
         createClient: (opts: { url?: string }) => RedisLike
       } =
@@ -334,12 +335,12 @@ export class RateLimiter {
   }
 }
 
-// 定期清理
+// Periodic cleanup
 if (typeof setInterval !== "undefined") {
   setInterval(() => RateLimiter.cleanup(), 60000)
 }
 
-// ==================== CSRF 保护 ====================
+// ==================== CSRF protection ====================
 
 export class CSRFProtection {
   static generateToken(): string {
@@ -348,12 +349,12 @@ export class CSRFProtection {
 
   static validateToken(token: string, storedToken: string): boolean {
     if (!token || !storedToken) return false
-    // 使用时间安全的比较防止时序攻击
+    // Timing-safe comparison to prevent timing attacks
     return crypto.timingSafeEqual(Buffer.from(token), Buffer.from(storedToken))
   }
 }
 
-// ==================== 加密工具 ====================
+// ==================== Crypto utilities ====================
 
 export class CryptoUtils {
   private static readonly ALGORITHM = "aes-256-gcm"
@@ -364,7 +365,7 @@ export class CryptoUtils {
   // A hardcoded salt defeats the purpose of key derivation — same password always
   // produces the same key, enabling precomputation attacks (rainbow tables).
 
-  // 加密数据
+  // Encrypt data
   static encrypt(data: string, key: string): string {
     const iv = crypto.randomBytes(this.IV_LENGTH)
     const salt = crypto.randomBytes(16) // Q-009 fix: random salt per encryption
@@ -387,7 +388,7 @@ export class CryptoUtils {
     )
   }
 
-  // 解密数据
+  // Decrypt data
   static decrypt(encryptedData: string, key: string): string {
     const parts = encryptedData.split(":")
     if (parts.length !== 4) throw new Error("Invalid encrypted data format")
@@ -407,7 +408,7 @@ export class CryptoUtils {
     return decrypted
   }
 
-  // 哈希密码
+  // Hash a password
   static async hashPassword(password: string): Promise<string> {
     const salt = crypto.randomBytes(16).toString("hex")
     return new Promise((resolve, reject) => {
@@ -418,7 +419,7 @@ export class CryptoUtils {
     })
   }
 
-  // 验证密码
+  // Verify a password
   static async verifyPassword(
     password: string,
     hash: string
@@ -432,13 +433,13 @@ export class CryptoUtils {
     })
   }
 
-  // 生成安全随机字符串
+  // Generate a secure random token
   static generateSecureToken(length: number = 32): string {
     return crypto.randomBytes(length).toString("hex")
   }
 }
 
-// ==================== 安全日志 ====================
+// ==================== Security logging ====================
 
 export enum SecurityEventType {
   LOGIN_SUCCESS = "LOGIN_SUCCESS",
@@ -456,25 +457,25 @@ export enum SecurityEventType {
   TRANSACTION_INITIATED = "TRANSACTION_INITIATED",
   TRANSACTION_COMPLETED = "TRANSACTION_COMPLETED",
   TRANSACTION_FAILED = "TRANSACTION_FAILED",
-  // 2FA事件
+  // 2FA events
   TWO_FACTOR_SETUP = "TWO_FACTOR_SETUP",
   TWO_FACTOR_ENABLED = "TWO_FACTOR_ENABLED",
   TWO_FACTOR_DISABLED = "TWO_FACTOR_DISABLED",
   TWO_FACTOR_SUCCESS = "TWO_FACTOR_SUCCESS",
   TWO_FACTOR_FAILED = "TWO_FACTOR_FAILED",
-  // KYC事件
+  // KYC events
   KYC_SUBMITTED = "KYC_SUBMITTED",
   KYC_APPROVED = "KYC_APPROVED",
   KYC_REJECTED = "KYC_REJECTED",
-  // 支付事件
+  // Payment events
   PAYMENT_INITIATED = "PAYMENT_INITIATED",
   PAYMENT_VERIFIED = "PAYMENT_VERIFIED",
   PAYMENT_FAILED = "PAYMENT_FAILED",
-  // 白名单事件
+  // Whitelist events
   WHITELIST_APPLICATION = "WHITELIST_APPLICATION",
   WHITELIST_APPROVED = "WHITELIST_APPROVED",
   WHITELIST_REJECTED = "WHITELIST_REJECTED",
-  // 推荐事件
+  // Referral events
   REFERRAL_CODE_CREATED = "REFERRAL_CODE_CREATED",
   REFERRAL_REWARD_EARNED = "REFERRAL_REWARD_EARNED",
   REFERRAL_REWARD_PAID = "REFERRAL_REWARD_PAID",
@@ -514,12 +515,12 @@ export class SecurityLogger {
 
     this.logs.push(entry)
 
-    // 保持日志大小在限制内
+    // Keep the log size within the limit
     if (this.logs.length > this.MAX_LOGS) {
       this.logs = this.logs.slice(-this.MAX_LOGS)
     }
 
-    // 在生产环境中，这里应该发送到日志服务
+    // In production this should be shipped to a log service
     if (severity === "critical" || severity === "error") {
       console.error("[SECURITY]", JSON.stringify(entry))
     } else if (process.env.NODE_ENV !== "production") {
@@ -527,7 +528,7 @@ export class SecurityLogger {
     }
   }
 
-  // 清理敏感信息
+  // Redact sensitive information
   private static sanitizeDetails(
     details?: Record<string, unknown>
   ): Record<string, unknown> | undefined {
@@ -551,7 +552,7 @@ export class SecurityLogger {
     return sanitized
   }
 
-  // 部分隐藏 IP 地址
+  // Partially mask an IP address
   private static maskIP(ip?: string): string | undefined {
     if (!ip) return undefined
     const parts = ip.split(".")
@@ -570,7 +571,7 @@ export class SecurityLogger {
   }
 }
 
-// ==================== 安全中间件辅助函数 ====================
+// ==================== Security middleware helpers ====================
 
 export function getClientIP(request: Request): string {
   // Delegates to the shared trusted derivation: only the proxy-appended
@@ -583,7 +584,7 @@ export function getUserAgent(request: Request): string {
   return request.headers.get("user-agent") || "unknown"
 }
 
-// ==================== 导出 ====================
+// ==================== Exports ====================
 
 export default {
   SecurityConfig,

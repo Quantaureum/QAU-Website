@@ -1,13 +1,14 @@
 /**
  * Admin: track-B slow-drip farm channel (plan §3.1, review v2 N1).
  *
- *   GET    — full-network S1 recompute (防护 v2 GROUP BY semantics) intersected
+ *   GET    — full-network S1 recompute (protection-v2 GROUP BY semantics) intersected
  *            with invitation-cluster membership: the candidate list the
  *            weekly dry-run review inspects.
  *   POST   — operator CONFIRMS a candidate cluster: voids that inviter's
  *            pending bonus records with a trackB-confirmed reason. This is
  *            the only human step in the bonus layer (confirming re-scan
- *            evidence, an existing SOP duty — no new sampling防线).
+ *            evidence, an existing SOP duty — no new sampling line of
+ *            defense).
  *
  * Voids are terminal and scoped to bonus records only — the registration
  * state machine and downstream main payouts are never touched (plan §3.1 N2).

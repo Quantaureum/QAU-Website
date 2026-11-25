@@ -71,8 +71,9 @@ const DEPRECATED_LOCALES = new Set([
 function redirectTo(request: NextRequest, pathname: string, status: number) {
   const url = request.nextUrl.clone()
   url.pathname = pathname
-  // 生产环境经反向代理时 Host 为 localhost:3000，经 absolutizeRedirectHost
-  // 把 Location 重写为 SITE_URL，避免把内网 host 泄露给浏览器
+  // In production behind a reverse proxy the Host is localhost:3000;
+  // absolutizeRedirectHost rewrites the Location to SITE_URL so the
+  // internal proxy host never leaks to the browser
   return absolutizeRedirectHost(NextResponse.redirect(url, status))
 }
 

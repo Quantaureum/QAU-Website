@@ -131,11 +131,12 @@ export const BONUS_PAUSE_THRESHOLDS = {
 
 /**
  * Automatic pause criterion (plan §4.3 as pinned by review v4):
- * "仅当上周命中簇数 ≥2 时启用周环比 >3 倍判据".
+ * "the >3x week-over-week criterion applies only when last week's cluster
+ * hit count is >= 2".
  *
- * Cluster-hit counting口径 (review v4 §2 remark 2): track-A automatic hits +
+ * Cluster-hit counting basis (review v4 §2 remark 2): track-A automatic hits +
  * track-B confirmed hits, deduplicated per cluster (inviter).
- * Pure function — unit tests pin both钉死 cases (1→4 no trip, 2→7 trip).
+ * Pure function — unit tests pin both pinned cases (1→4 no trip, 2→7 trip).
  */
 export function shouldAutoPauseBonusPayout(
   lastWeekClusterHits: number,

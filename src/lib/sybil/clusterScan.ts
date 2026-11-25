@@ -7,7 +7,7 @@
  * each inviter's downstream cluster is re-scanned on the two tracks:
  *
  *   Track A (intra-cluster aggregation, "rule is the judge", no human step)
- *     S1 — ≥ 3 downstreams share one /24 IP subnet (threshold = 防护 v2 S1)
+ *     S1 — ≥ 3 downstreams share one /24 IP subnet (threshold = protection v2 S1)
  *     S7 — ≥ 3 downstreams share one email domain, with the common-provider
  *          whitelist (gmail/outlook/qq/163/126/…) exempt
  *     S9 — ≥ 2 downstreams share one payout-address prefix, counted only when
@@ -17,7 +17,7 @@
  *     are voided automatically
  *
  *   Track B (full-network recompute ∩ cluster members, human-confirmed):
- *     the whole network is re-grouped per 防护 v2 GROUP BY semantics; groups
+ *     the whole network is re-grouped per protection-v2 GROUP BY semantics; groups
  *     that contain a cluster member are reported as candidates and only void
  *     bonuses after an operator confirms the evidence at the weekly dry-run
  *     review. This catches slow-drip farms whose per-registration signals
@@ -32,7 +32,7 @@
 
 import { isCommonEmailDomainName } from "./signals"
 
-/** Pinned thresholds (防护 v2 S1/S9 + review-pinned S7), mirrored in tests. */
+/** Pinned thresholds (protection v2 S1/S9 + review-pinned S7), mirrored in tests. */
 export const CLUSTER_SCAN_THRESHOLDS = {
   /** S1: downstreams sharing one /24 that trips the cluster rule. */
   sameSubnet: 3,
@@ -88,7 +88,8 @@ export interface TrackADeps {
   addressByRegistrationId: Map<number, string>
   /**
    * The inviter's own payout address joins the S9 corroboration pool as the
-   * cluster anchor ("存在链上转账关联 … 或邀请人") but is NEVER aggregated
+   * cluster anchor ("on-chain transfer relation … or the inviter") but is
+   * NEVER aggregated
    * into the S1/S7/S9 counts themselves — those stay downstream-only.
    */
   anchorAddresses: string[]
@@ -145,8 +146,9 @@ export async function scanClusterTrackA(
 }
 
 /**
- * S9 corroboration (plan §3.1: "仅当命中地址与簇内其他成员或邀请人存在链上
- * 转账关联时才计入"): a prefix group counts only when at least one of its
+ * S9 corroboration (plan §3.1: "count it only when the hit address has an
+ * on-chain transfer relation with another cluster member or the inviter"):
+ * a prefix group counts only when at least one of its
  * members is transfer-related to another group member (the inviter's own
  * address joins the candidate pool as the cluster anchor).
  */
@@ -177,7 +179,7 @@ async function hasCorroboratedPair(
 
 /**
  * Track B candidate extraction: given full-network recompute groups (the
- * 防护 v2 GROUP BY output — one entry per subnet/domain/prefix bucket that
+ * protection-v2 GROUP BY output — one entry per subnet/domain/prefix bucket that
  * exceeded the network-wide threshold) and the set of registration ids that
  * belong to invitation clusters (any downstream or inviter), return the
  * groups that contain at least one cluster member. Pure.

@@ -335,7 +335,8 @@ test.describe("assertion 6/9: track-A scan voids bonuses, never the state machin
     const inviter = await seedRegistration("trackA-inv", {
       sybilStatus: "approved",
     })
-    // Three downstreams on the SAME /24 → track-A S1 fires ("规则即判").
+    // Three downstreams on the SAME /24 → track-A S1 fires ("the rule hit is
+    // the verdict").
     const farm: number[] = []
     for (let i = 0; i < 3; i++) {
       const invitee = await seedRegistration(`trackA-e${i}`, {
@@ -380,7 +381,8 @@ test.describe("assertion 6/9: track-A scan voids bonuses, never the state machin
       (r) => `${r.id}:${r.payout_state}`
     )
 
-    // THE pre-step wiring (plan §3.1: 复扫挂加成批次生成前): one generation
+    // THE pre-step wiring (plan §3.1: the re-scan runs before the bonus
+    // batch is generated): one generation
     // call scans every cluster first and voids the hit cluster's pendings.
     const result = await generateInviteBonusBatch(testCfg({}), {
       now: new Date(),
@@ -407,7 +409,7 @@ test.describe("assertion 6/9: track-A scan voids bonuses, never the state machin
       bonusRows.every((r) => (r.void_reason ?? "").startsWith("trackA:"))
     ).toBe(true)
 
-    // 状态机零改动: every touched registration kept its approval state.
+    // State machine untouched: every touched registration kept its approval state.
     const stateAfter = rowsOf<{
       id: number
       status: string
@@ -461,7 +463,7 @@ test.describe("assertion 13/10/12: revoke, pool breaker, batch stamping", () => 
     expect(result.ok).toBe(false)
     if (!result.ok) expect(result.code).toBe("no_pending_bonus")
 
-    // Paid rows can never be revoked (发放后不追).
+    // Paid rows can never be revoked (no clawback after payout).
     const paidInviter = await seedRegistration("paid-inv", {
       sybilStatus: "approved",
     })
@@ -509,7 +511,7 @@ test.describe("assertion 13/10/12: revoke, pool breaker, batch stamping", () => 
       expect(result.poolRemainingQau).toBe(10 - Number(charged[0].t))
       expect(result.requiredQau).toBe(30)
     }
-    // 整批拒付: not a single row of THIS run got stamped into a batch
+    // Whole-batch refusal: not a single row of THIS run got stamped into a batch
     // (scoped to the test's inviter — earlier tests may have stamped rows).
     const stamped = rowsOf<{ n: number }>(
       await sql`

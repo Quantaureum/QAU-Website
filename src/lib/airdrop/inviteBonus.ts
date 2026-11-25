@@ -7,7 +7,7 @@
  *
  *   - one bonus round per `roundSize` approved invitees, capped at `maxRounds`
  *     (default: 30 QAU per 3 approvals, max 2 rounds = 60 QAU per user)
- *   - "下游恒不加成" (plan design rule 4): being invited NEVER feeds the
+ *   - "no bonus for the invited downstream" (plan design rule 4): being invited NEVER feeds the
  *     invitee's own bonus accounting — the functions below only ever credit
  *     the inviter column, and the tests lock that
  *   - bonus payout is a separate batch type (`bonus-invite`), generated in
@@ -16,7 +16,7 @@
  *   - revocation is allowed any time BEFORE payout; voided (cluster-hit)
  *     rounds are terminal — a later clean re-scan restores eligibility for
  *     FUTURE rounds only and never resurrects a voided record (review v4 §2
- *     remark 1: 作废不复活)
+ *     remark 1: voided records never resurrect)
  *
  * The DB layer (inviteStore.ts) composes these functions with SQL; keeping
  * the rules here is what makes the 14 acceptance assertions unit-testable.
@@ -124,7 +124,7 @@ export function isBonusPayable(r: BonusRecordLike): boolean {
 /**
  * Apply a cluster hit to ONE inviter's records (track A or confirmed track
  * B): every PENDING record is voided; paid records are never touched
- * ("发放后不追"), already-void records stay void (terminal). Downstream main
+ * ("no clawback after payout"), already-void records stay void (terminal). Downstream main
  * payouts and the registration state machine are outside this layer by
  * design — this function only sees bonus records.
  * Pure: returns the updated list plus how many rows flipped.
@@ -185,7 +185,8 @@ export function preClaimRefusal(
  * Build one whole bonus-invite batch from the payable records. Refuses the
  * ENTIRE batch (never a partial payout) when the kill-switch is engaged,
  * the settlement window has closed, there is nothing payable, or the bonus
- * pool cannot cover the total (plan §4.2: 池余额硬熔断整批拒付).
+ * pool cannot cover the total (plan §4.2: hard pool-balance circuit breaker
+ * refuses the whole batch).
  * Pure.
  */
 export function buildBonusBatch(input: BuildBonusBatchInput): BonusBatchResult {
@@ -251,7 +252,7 @@ export function buildBonusBatch(input: BuildBonusBatchInput): BonusBatchResult {
 
 /**
  * Reconciliation summary input for the independent bonus ledger check
- * (plan §5: 池期初 − 期末 = Σ加成批次, error < 0.01).
+ * (plan §5: pool opening − closing = Σ bonus batches, error < 0.01).
  */
 export function reconcileBonusPool(
   poolQau: number,

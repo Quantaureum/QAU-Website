@@ -13,12 +13,14 @@
  *     approval time — no nickname, no extra PII: privacy red line)
  *   - airdrop_invite_bonuses: one record per (inviter, round); statuses
  *     pending → paid | void; the revoked flag withdraws a pending record
- *     before payout; voided records are terminal (作废不复活)
+ *     before payout; voided records are terminal (never resurrect)
  *   - approval hook: called on every transition into sybil 'approved' —
  *     approves the invitee's relation, credits the INVITER's eligible
- *     approval count and back-fills missing bonus rounds ("下游恒不加成")
- *   - batch generation: track-A re-scan as a pre-step (plan §3.1: 复扫挂
- *     加成批次生成前), auto-pause + pool circuit breaker refuse the WHOLE
+ *     approval count and back-fills missing bonus rounds ("no bonus for the
+ *     invited downstream")
+ *   - batch generation: track-A re-scan as a pre-step (plan §3.1: the
+ *     re-scan runs before the bonus batch is generated), auto-pause + pool
+ *     circuit breaker refuse the WHOLE
  *     batch, rows carry the independent `bonus-invite` batch type marker
  *   - registration state machine and main-payout queue are NEVER touched by
  *     this layer (plan §3.1 N2: downstream main payouts unaffected)
@@ -149,7 +151,7 @@ function generateInviteCode(): string {
 
 /**
  * Generate and store the invite code for an APPROVED registration
- * (plan §3.1: 未过审不生成). Idempotent: an existing code is returned
+ * (plan §3.1: no approval, no code generation). Idempotent: an existing code is returned
  * unchanged, so a re-approved row keeps its code forever.
  */
 export async function ensureInviteCode(
@@ -196,7 +198,7 @@ export async function ensureInviteCode(
  * Existence check for the optional registration invite-code field: a code
  * is valid only when it belongs to an APPROVED registration. Returns the
  * inviter's registration id, or null (the caller must not block the main
- * flow on null — plan §3.1: 只做存在性校验，不阻塞主流程).
+ * flow on null — plan §3.1: existence check only, never blocks the main flow).
  */
 export async function findApprovedInviterByInviteCode(
   rawCode: string
@@ -229,7 +231,7 @@ export interface InviteRelationRow {
 /**
  * Record "invitee was invited by inviter". Returns false when the invitee
  * already has an inviter — the UNIQUE constraint is the plan's duplicate
- * protection (一下游唯一邀请人); callers must treat false as "ignored, main
+ * protection (one downstream, exactly one inviter); callers must treat false as "ignored, main
  * flow continues".
  */
 export async function createInviteRelation(
@@ -531,7 +533,7 @@ export async function voidPendingBonusesForInviter(
 export type RevokeOutcome = "revoked" | "not_found" | "not_pending"
 
 /**
- * Operator revocation (plan §3.1: 发放前均可撤销，发放后不追). Only a
+ * Operator revocation (plan §3.1: revocable until payout, no clawback after). Only a
  * pending record can be revoked; paid stays paid, void stays void. The
  * (inviter, round) unique constraint blocks any re-creation afterwards.
  */
@@ -593,7 +595,7 @@ export interface WeeklyHitCounts {
 
 /**
  * Distinct clusters with track-A / confirmed track-B void events per ISO
- * week (review v4 §2 remark 2 counting口径) — the kill-switch criterion's
+ * week (review v4 §2 remark 2 counting basis) — the kill-switch criterion's
  * input. Both weeks read from the same void audit trail.
  */
 export async function weeklyClusterHitCounts(
@@ -806,11 +808,13 @@ export type GenerateBonusBatchResult =
     }
 
 /**
- * Generate one whole bonus-invite batch (plan §3.1: 复扫挂批次生成前).
+ * Generate one whole bonus-invite batch (plan §3.1: re-scan before batch
+ * generation).
  *
  *   1. feature gate → refuse
  *   2. track-A re-scan of every approved cluster → cluster hits void that
- *      cluster's PENDING bonus records automatically ("规则即判"); main
+ *      cluster's PENDING bonus records automatically ("the rule hit is the
+ *      verdict"); main
  *      payouts and the registration state machine are untouched
  *   3. kill-switch (manual flag + week-over-week criterion) → refuse
  *   4. atomically claim+stamp the payable rows behind a pool gate (audits
@@ -956,8 +960,9 @@ export interface TrackARescanResult {
 
 /**
  * Re-scan every approved invitation cluster on track A (S1/S7/S9). Scans
- * ALL downstreams of an inviter regardless of approval status — 下游之间
- * 互聚 covers pending members too; only bonus counting cares about approval.
+ * ALL downstreams of an inviter regardless of approval status — downstreams
+ * cluster among themselves, covering pending members too; only bonus
+ * counting cares about approval.
  */
 export async function rescanClustersTrackA(
   transferRelated: TransferRelationProvider = noTransferRelation
@@ -1027,7 +1032,7 @@ export interface TrackBCandidateRow {
 }
 
 /**
- * Full-network S1 recompute (防护 v2 GROUP BY semantics: every subnet holding
+ * Full-network S1 recompute (protection-v2 GROUP BY semantics: every subnet holding
  * ≥ 3 non-rejected registrations), intersected with invitation-cluster
  * membership (any inviter or invitee id). Pure listing — the dry-run review
  * confirms evidence before the confirm endpoint voids anything.
@@ -1100,7 +1105,8 @@ export interface ClusterReportRow {
 }
 
 /**
- * Weekly cluster report data (plan §3.1: 同邀请人下游的双轨聚合一览, consumed
+ * Weekly cluster report data (plan §3.1: dual-track aggregation view of one
+ * inviter's downstreams, consumed
  * by the ops re-scan script). Facts only — the ops tooling applies its own
  * thresholds. Email is exposed as domain ONLY (privacy red line).
  */
@@ -1256,7 +1262,7 @@ export async function getInviteSummaryForRegistration(
   }
 }
 
-/** Independent bonus ledger reconciliation (plan §5: 池期初−期末=Σ加成批次). */
+/** Independent bonus ledger reconciliation (plan §5: pool opening − closing = Σ bonus batches). */
 export async function getBonusPoolReconciliation(cfg: InviteBonusConfig) {
   const remaining = await getBonusPoolRemainingQau(cfg)
   const paidRows = rowsOf<{ total: string | number | null; n: number }>(

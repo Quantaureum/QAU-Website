@@ -175,7 +175,7 @@ test.describe("assertion 3/4: round accounting — inviter earns, downstream nev
   test("being approved AS INVITED never creates the invitee's own bonus", () => {
     // The hook's shape: approval of invitee #200 (invited by #100) touches
     // only inviter #100's round counter. #200 has invited nobody, so #200
-    // has zero earned rounds regardless of being invited — 设计总则 4.
+    // has zero earned rounds regardless of being invited — design rule 4.
     const invitedUserEarnedRounds = computeEarnedRounds(0, bonusCfg)
     expect(invitedUserEarnedRounds).toBe(0)
     expect(roundsToCreate([], invitedUserEarnedRounds)).toEqual([])
@@ -214,7 +214,7 @@ test.describe("assertion 6/9: cluster void freezes bonuses only, and is terminal
     expect(after.find((r) => r.id === 2)?.status).toBe("pending")
   })
 
-  test("voided round never resurrects and never re-pays (作废不复活)", () => {
+  test("voided round never resurrects and never re-pays (never resurrect)", () => {
     // A later clean re-scan restores FUTURE eligibility only: round 2 can be
     // created while the voided round 1 stays void — never re-created, never
     // flipped back to pending.
@@ -279,7 +279,7 @@ test.describe("assertion 8: track-A thresholds (S1≥3, S7≥3 whitelist-exempt,
     expect(hits.find((h) => h.rule === "S7")?.key).toBe("farmbox.example")
   })
 
-  test("S7 whitelist: common provider domains never fire (豁免 gmail/qq/163…)", async () => {
+  test("S7 whitelist: common provider domains never fire (exempt: gmail/qq/163…)", async () => {
     // Even 10 downstreams on gmail.com stay clean — the whitelist is the
     // review-pinned exemption; offenders must be caught by S1/S9/track-B.
     const members = Array.from({ length: 10 }, (_, i) =>
@@ -300,7 +300,7 @@ test.describe("assertion 8: track-A thresholds (S1≥3, S7≥3 whitelist-exempt,
     expect(CLUSTER_SCAN_THRESHOLDS.sameEmailDomain).toBe(3)
   })
 
-  test("S9 fires at ≥2 same-prefix ONLY with transfer corroboration (佐证)", async () => {
+  test("S9 fires at ≥2 same-prefix ONLY with transfer corroboration (corroborated)", async () => {
     const members = [
       member({ registrationId: 1, addressPrefix: "aaaa" }),
       member({ registrationId: 2, addressPrefix: "aaaa" }),
@@ -373,7 +373,7 @@ test.describe("assertion 10/12: batch build — pool refusal, one row per addres
     expect(inviter100?.memo.startsWith(`${BONUS_BATCH_TYPE}:`)).toBe(true)
   })
 
-  test("pool below the batch total refuses the ENTIRE batch (整批拒付)", () => {
+  test("pool below the batch total refuses the ENTIRE batch (whole-batch refusal)", () => {
     const result = buildBonusBatch({
       eligible: twoRoundSameInviter,
       poolRemainingQau: 89, // one QAU short of 90 — no partial payout
@@ -408,7 +408,7 @@ test.describe("assertion 10/12: batch build — pool refusal, one row per addres
     if (!result.ok) expect(result.code).toBe("no_pending_bonus")
   })
 
-  test("bonus ledger reconciliation: pool − Σpaid = remaining (误差 < 0.01)", () => {
+  test("bonus ledger reconciliation: pool − Σpaid = remaining (error < 0.01)", () => {
     const rec = reconcileBonusPool(60000, 90)
     expect(rec.remainingQau).toBe(59910)
     expect(
@@ -433,11 +433,11 @@ test.describe("assertion 11: kill-switch and the v4-pinned multiplier criterion"
     expect(shouldAutoPauseBonusPayout(0, 4)).toBe(false)
   })
 
-  test("v4 钉死 case 1: last week 1 → current 4 does NOT trip (低基数毛刺)", () => {
+  test("v4 pinned case 1: last week 1 → current 4 does NOT trip (low-base spike)", () => {
     expect(shouldAutoPauseBonusPayout(1, 4)).toBe(false)
   })
 
-  test("v4 钉死 case 2: last week 2 → current 7 trips (7 > 3×2)", () => {
+  test("v4 pinned case 2: last week 2 → current 7 trips (7 > 3×2)", () => {
     expect(BONUS_PAUSE_THRESHOLDS.weekOverWeekBaseClusters).toBe(2)
     expect(shouldAutoPauseBonusPayout(2, 7)).toBe(true)
     // Below the absolute band the ratio decides: lastWeek 2 → current 4 is
@@ -467,7 +467,7 @@ test.describe("assertion 11: kill-switch and the v4-pinned multiplier criterion"
     expect(off.settleEndAt).toBeNull()
   })
 
-  test("distinct-cluster counting dedupes per inviter (counting口径)", () => {
+  test("distinct-cluster counting dedupes per inviter (counting basis)", () => {
     const hits = [
       { inviterRegistrationId: 100 },
       { inviterRegistrationId: 100 },

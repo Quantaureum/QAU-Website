@@ -1,21 +1,24 @@
 /**
- * 同 IP 批量注册/登记防护（防女巫第三层）
+ * Same-IP bulk registration/signup protection (anti-sybil layer 3).
  *
- * 策略：
- *  - send-code / register：同一 IP 24h 内最多验证 3 个不同邮箱
- *    （从源头掐批量注册小号；超过返回 429）
- *  - airdrop register：同一 IP 最多 2 条登记记录，第 3 条起标记
- *    status='rejected'（note 注明原因）——不直接拒绝请求，避免家宽
- *    NAT 误伤，同时让批量女巫拿不到币（可人工复核放行）
+ * Policy:
+ *  - send-code / register: at most 3 distinct emails verified per IP within
+ *    24h (chokes bulk throwaway signups at the source; over the limit → 429)
+ *  - airdrop register: at most 2 registration records per IP; from the 3rd
+ *    on, rows are marked status='rejected' (reason noted) — the request is
+ *    not refused outright, to avoid punishing residential NAT users, while
+ *    bulk sybil farmers get no coins (manual review can still allow)
  *
- * 存储：ip_activity_log 表（initDatabase 创建），失败容错：
- *  表不存在/DB 不可用时返回放行（不阻断主流程），只记 console 警告。
+ * Storage: the ip_activity_log table (created by initDatabase), fail-open on
+ *  storage errors: when the table is missing or the DB is unavailable the
+ *  check allows the request (never blocks the main flow) and only logs a
+ *  console warning.
  */
 
 import { sql } from "./database"
 
-const SEND_CODE_DAILY_EMAILS = 3 // 同 IP 每天最多发码邮箱数
-const AIRDROP_MAX_PER_IP = 2 // 同 IP 最多正常登记数
+const SEND_CODE_DAILY_EMAILS = 3 // max distinct emails sent a code per IP per day
+const AIRDROP_MAX_PER_IP = 2 // max normal airdrop registrations per IP
 
 export async function initIpActivityTable(): Promise<void> {
   if (!sql) return
@@ -34,7 +37,7 @@ export async function initIpActivityTable(): Promise<void> {
   `
 }
 
-/** 记录一次 IP 活动（容错：失败不阻断） */
+/** Record one IP activity event (fail-open: a failure never blocks). */
 export async function logIpActivity(
   ip: string,
   action: string,
@@ -55,9 +58,9 @@ export async function logIpActivity(
 }
 
 /**
- * send-code / register 前 IP 检查：
- * 24h 内该 IP 发码的不同邮箱数是否超限。
- * @returns allowed=false 时应返回 429
+ * Pre-send-code/register IP check: has the distinct-email send-code count
+ * for this IP exceeded the 24h limit?
+ * @returns when allowed=false the caller should respond with 429
  */
 export async function checkIpEmailQuota(ip: string): Promise<{
   allowed: boolean
@@ -65,7 +68,7 @@ export async function checkIpEmailQuota(ip: string): Promise<{
   limit: number
 }> {
   if (!sql || !ip || ip === "unknown" || ip === "::1" || ip === "127.0.0.1") {
-    // 本地开发/无 IP 信息：放行（airdrop 表计数仍生效）
+    // Local development / no IP info: allow (the airdrop-table counts still apply)
     return { allowed: true, used: 0, limit: SEND_CODE_DAILY_EMAILS }
   }
   try {
@@ -94,8 +97,9 @@ export async function checkIpEmailQuota(ip: string): Promise<{
 }
 
 /**
- * airdrop 登记的 IP 计数（含 rejected 的也计入，防换号重试）。
- * 返回该 IP 已有登记数。
+ * Airdrop registration count for an IP (rejected rows count too, so
+ * switching wallets cannot retry). Returns the number of existing
+ * registrations for this IP.
  */
 export async function countAirdropByIp(ip: string): Promise<number> {
   if (!sql || !ip || ip === "unknown") return 0
@@ -118,7 +122,7 @@ export async function countAirdropByIp(ip: string): Promise<number> {
   }
 }
 
-/** 空投 IP 门槛：超过 2 个的登记应标记 rejected */
+/** Airdrop IP threshold: registrations beyond 2 per IP should be rejected */
 export function shouldRejectAirdropByIp(currentCount: number): boolean {
   return currentCount >= AIRDROP_MAX_PER_IP
 }

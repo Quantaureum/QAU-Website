@@ -106,7 +106,7 @@ test.describe("sybilScore — individual rules", () => {
   })
 })
 
-test.describe("sybilScore — B档 hard signals", () => {
+test.describe("sybilScore — Tier B hard signals", () => {
   test("node IP mismatch is a hard reject", () => {
     const r = scoreSybilSignals(
       merge({ nodeIpMismatch: true, productionCurveCorrelation: 0.95 })
@@ -153,7 +153,7 @@ test.describe("sybilScore — threshold boundaries", () => {
   })
 })
 
-test.describe("sybilScore — 女巫攻击模拟（sybil fleet rehearsal）", () => {
+test.describe("sybilScore — sybil fleet rehearsal", () => {
   /**
    * The money scenario: an attacker spins up 100 registrations, each with a
    * fresh email, script-submitted, from a small IP pool, with shell X

@@ -38,9 +38,9 @@ export interface SybilSignals {
   sameSubnetPayoutAddresses: number
   /** L6-v2/S10: seconds between registration and payout-address submission. */
   registrationToAddressSeconds: number | null
-  /** B档/S11: max Pearson correlation of daily production curve vs any same-batch node (0..1, null = not tier B). */
+  /** Tier B / S11: max Pearson correlation of daily production curve vs any same-batch node (0..1, null = not tier B). */
   productionCurveCorrelation: number | null
-  /** B档/S12: node self-reported public IP does not match its on-chain P2P peers. */
+  /** Tier B / S12: node self-reported public IP does not match its on-chain P2P peers. */
   nodeIpMismatch: boolean | null
   /** Date the evaluation runs at (injection point for deterministic tests). */
   now: Date
@@ -79,11 +79,11 @@ export const THRESHOLDS = {
   /** Seconds between registration and address submission under which the
    *  "script inertia" rule fires (a human reads a page, a script doesn't). */
   scriptInertiaSeconds: 60,
-  /** B档: curve correlation above which a same-batch cluster is flagged. */
+  /** Tier B: curve correlation above which a same-batch cluster is flagged. */
   curveCorrelationFlag: 0.9,
 } as const
 
-/** B档 hard signals — S12 mismatch voids the tranche regardless of score. */
+/** Tier B hard signals — S12 mismatch voids the tranche regardless of score. */
 export interface HardRejectInput {
   duplicatePayoutInBatch: boolean
   nodeIpMismatch: boolean | null

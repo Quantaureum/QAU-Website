@@ -1,6 +1,6 @@
 /**
- * Admin: revoke a pending bonus record (plan §3.1: 发放前均可撤销，发放后
- * 不追). A paid record can never be revoked; a voided record is already
+ * Admin: revoke a pending bonus record (plan §3.1: revocable until payout,
+ * no clawback after). A paid record can never be revoked; a voided record is already
  * terminal. The (inviter, round) unique constraint blocks regeneration, so
  * revocation is final — the round can never pay out twice.
  */
@@ -57,7 +57,7 @@ export async function POST(req: Request): Promise<NextResponse> {
     )
   }
   if (outcome === "not_pending") {
-    // paid → 发放后不追; void → already terminal.
+    // paid → no clawback after payout; void → already terminal.
     return NextResponse.json(
       { success: false, code: "bonus_not_pending" },
       { status: 409 }

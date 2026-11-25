@@ -1,16 +1,17 @@
 /**
- * 生产级 API 安全中间件
+ * Production-grade API security middleware.
  *
- * 提供:
- * - 速率限制
- * - CSRF 验证
- * - 输入验证
- * - 安全响应头
- * - 请求日志
+ * Provides:
+ * - rate limiting
+ * - CSRF verification
+ * - input validation
+ * - security response headers
+ * - request logging
  */
 
-// AUDIT FIX (2026-09-08): crypto.timingSafeEqual 之前直接调用了 Web Crypto 全局对象，
-// 它没有 timingSafeEqual 方法，CSRF 比对从未真正执行过（一旦走到这一分支必抛异常）。
+// AUDIT FIX (2026-09-08): the code previously called timingSafeEqual on the
+// Web Crypto global object, which has no such method — the CSRF comparison
+// never actually ran (reaching that branch always threw).
 import { timingSafeEqual } from "crypto"
 
 import { NextRequest, NextResponse } from "next/server"
@@ -24,7 +25,7 @@ import {
   SecurityLogger,
 } from "./securityIndex"
 
-// ==================== 安全响应头 ====================
+// ==================== Security response headers ====================
 
 export function addSecurityHeaders(response: NextResponse): NextResponse {
   response.headers.set("X-Frame-Options", "DENY")
@@ -47,7 +48,7 @@ export function addSecurityHeaders(response: NextResponse): NextResponse {
   return response
 }
 
-// ==================== 速率限制中间件 ====================
+// ==================== Rate-limit middleware ====================
 
 export async function withRateLimit(
   request: NextRequest,
@@ -80,7 +81,7 @@ export async function withRateLimit(
   return handler()
 }
 
-// ==================== 输入验证中间件 ====================
+// ==================== Input-validation middleware ====================
 
 export interface ValidationRule {
   field: string
@@ -101,7 +102,7 @@ export function validateInput(
   for (const rule of rules) {
     const value = data[rule.field]
 
-    // 检查必填
+    // Required-field check
     if (
       rule.required &&
       (value === undefined || value === null || value === "")
@@ -112,7 +113,7 @@ export function validateInput(
 
     if (value === undefined || value === null) continue
 
-    // 类型验证
+    // Type validation
     switch (rule.type) {
       case "string":
         if (typeof value !== "string") {
@@ -178,7 +179,7 @@ export function validateInput(
         break
     }
 
-    // 自定义验证
+    // Custom validation
     if (rule.custom && !rule.custom(value)) {
       errors.push(`${rule.field} 验证失败`)
     }
@@ -187,7 +188,7 @@ export function validateInput(
   return { valid: errors.length === 0, errors }
 }
 
-// ==================== 安全 API 处理器包装 ====================
+// ==================== Secure API handler wrapper ====================
 
 export interface SecureHandlerOptions {
   rateLimit?: boolean
@@ -195,7 +196,7 @@ export interface SecureHandlerOptions {
   requireAuth?: boolean
   allowedMethods?: string[]
   logRequest?: boolean
-  skipCSRF?: boolean //某些端点可能需要跳过CSRF验证（如webhook）
+  skipCSRF?: boolean // some endpoints (e.g. webhooks) may skip CSRF verification
 }
 
 export function createSecureHandler(
@@ -211,7 +212,7 @@ export function createSecureHandler(
     const path = new URL(request.url).pathname
 
     try {
-      // 检查允许的方法
+      // Allowed-methods check
       if (
         options.allowedMethods &&
         !options.allowedMethods.includes(request.method)
@@ -221,7 +222,7 @@ export function createSecureHandler(
         )
       }
 
-      // 速率限制
+      // Rate limiting
       if (options.rateLimit !== false) {
         const identifier = `${ip}:${path}`
         const rateLimitResult = RateLimiter.check(identifier)
@@ -248,8 +249,10 @@ export function createSecureHandler(
         }
       }
 
-      // CSRF 保护 - 对所有状态改变操作验证CSRF token
-      // audit-fix CRITICAL-1: 启用CSRF验证以防止跨站请求伪造攻击
+      // CSRF protection - verify the CSRF token on every state-changing
+      // operation
+      // audit-fix CRITICAL-1: enable CSRF verification to prevent cross-site
+      // request forgery attacks
       if (
         !options.skipCSRF &&
         ["POST", "PUT", "PATCH", "DELETE"].includes(request.method)
@@ -257,7 +260,7 @@ export function createSecureHandler(
         const csrfTokenFromHeader = request.headers.get("x-csrf-token")
         const csrfTokenFromCookie = request.cookies.get("_csrf")?.value
 
-        // 安全比较：使用timingSafeEqual防止时序攻击
+        // Safe comparison: timingSafeEqual to prevent timing attacks
         if (!csrfTokenFromHeader || !csrfTokenFromCookie) {
           SecurityLogger.log(
             SecurityEventType.CSRF_VIOLATION,
@@ -275,7 +278,7 @@ export function createSecureHandler(
           )
         }
 
-        // 验证token是否匹配（防止时序攻击）
+        // Verify the tokens match (timing-attack safe)
         const headerBuffer = Buffer.from(csrfTokenFromHeader)
         const cookieBuffer = Buffer.from(csrfTokenFromCookie)
 
@@ -314,7 +317,7 @@ export function createSecureHandler(
         }
       }
 
-      // 验证请求体
+      // Request-body validation
       let validatedData: Record<string, unknown> | undefined = undefined
       if (
         options.validateBody &&
@@ -350,7 +353,7 @@ export function createSecureHandler(
         }
       }
 
-      // 记录请求
+      // Log the request
       if (options.logRequest) {
         SecurityLogger.log(
           SecurityEventType.TRANSACTION_INITIATED,
@@ -362,7 +365,7 @@ export function createSecureHandler(
         )
       }
 
-      // 执行处理器
+      // Run the handler
       const response = await handler(request, validatedData)
       return addSecurityHeaders(response)
     } catch (error: unknown) {
@@ -383,7 +386,7 @@ export function createSecureHandler(
   }
 }
 
-// ==================== 错误响应辅助函数 ====================
+// ==================== Error-response helpers ====================
 
 export function errorResponse(
   message: string,
@@ -403,7 +406,7 @@ export function successResponse(
   )
 }
 
-// ==================== 导出 ====================
+// ==================== Exports ====================
 
 export default {
   addSecurityHeaders,

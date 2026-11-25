@@ -168,7 +168,7 @@ export interface SignalContext {
   xUser: XUserMetrics | null
   /** Seconds between account registration and address submission. */
   registrationToAddressSeconds: number | null
-  /** B档 signals (null for tier A). */
+  /** Tier B signals (null for tier A). */
   tierB: {
     productionCurveCorrelation: number | null
     nodeIpMismatch: boolean | null

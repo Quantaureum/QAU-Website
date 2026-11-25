@@ -1,6 +1,7 @@
 /**
- * Admin: weekly invitation-cluster report (plan §3.1: 同邀请人下游的聚合一览,
- * consumed by the ops re-scan script; reviewed at the weekly dry-run gate).
+ * Admin: weekly invitation-cluster report (plan §3.1: at-a-glance aggregation
+ * of one inviter's downstreams, consumed by the ops re-scan script; reviewed
+ * at the weekly dry-run gate).
  *
  * Facts only, per inviter: downstream membership with the S1/S7/S9-relevant
  * attributes (subnet / email DOMAIN only / payout-address prefix), approval

@@ -1,13 +1,15 @@
 "use client"
 
 /**
- * Cloudflare Turnstile 前端组件
+ * Cloudflare Turnstile frontend widget.
  *
- * 用法：
+ * Usage:
  *   <TurnstileWidget onChange={setToken} />
  *
- * - 未配置 NEXT_PUBLIC_TURNSTILE_SITE_KEY 时返回 null（服务端自动进入降级模式）
- * - 组件卸载/过期时 onChange 回调收到 ''（表单提交按钮应据此禁用）
+ * - Returns null when NEXT_PUBLIC_TURNSTILE_SITE_KEY is not configured (the
+ *   server automatically enters degraded mode)
+ * - onChange receives '' on unmount/expiry (form submit buttons should
+ *   disable themselves accordingly)
  */
 
 import React, { useEffect, useRef, useState } from "react"
@@ -64,7 +66,7 @@ export default function TurnstileWidget({
 
     loadScriptOnce()
       .then(() => {
-        // script 异步加载完成后 window.turnstile 可能有延迟
+        // window.turnstile may lag slightly behind the script's async load
         const waitTurnstile = (tries = 0) => {
           if (cancelled) return
           if (window.turnstile) {
@@ -76,7 +78,7 @@ export default function TurnstileWidget({
         waitTurnstile()
       })
       .catch(() => {
-        /* 加载失败时保持隐藏，服务端会降级 */
+        /* Stay hidden on load failure; the server degrades gracefully */
       })
 
     return () => {
@@ -99,8 +101,9 @@ export default function TurnstileWidget({
         sitekey: siteKey,
         theme: "dark",
         callback: (token: string) => onChange(token),
-        // FIX(2026-09-09): Managed 模式下无交互会过期，过期时清空 token 并
-        // reset 重新跑一次无感验证，避免用户提交时拿不到 token
+        // FIX(2026-09-09): in Managed mode the challenge expires without
+        // interaction; on expiry clear the token and reset to re-run the
+        // invisible verification so submission never lacks a token
         "expired-callback": () => {
           onChange("")
           try {
@@ -119,7 +122,7 @@ export default function TurnstileWidget({
         },
       })
     } catch {
-      /* 渲染失败：服务端降级模式兜底 */
+      /* Render failure: the server-side degraded mode is the fallback */
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [siteKey, ready])

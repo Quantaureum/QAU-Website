@@ -12,7 +12,7 @@
  *   pending --score--> hold | approved | rejected
  *   hold    --rescore(+14d)--> hold | approved | rejected
  *   approved/rejected are terminal for the window (a NEW registration cycle
- *   after 官宣 relaunch starts fresh rows).
+ *   after the official relaunch starts fresh rows).
  */
 
 import type { SybilScoreResult } from "./sybilScore"
