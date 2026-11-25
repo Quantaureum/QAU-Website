@@ -694,6 +694,47 @@ test.describe("H-03: batch generation claims rows atomically", () => {
     }
     await sweepPending(inviter)
   })
+
+  test("a build-stage crash after the claim releases the pool budget", async () => {
+    skipIfNoDb()
+    const inviter = await seedRegistration("h3-crash", {
+      sybilStatus: "approved",
+    })
+    await approveInvitees(inviter, 3, "h3-crash-e") // one pending round
+    // Injected post-claim failure: the rows were already stamped, so the
+    // generation must release them on the exception path (fail-closed but
+    // self-healing) and rethrow.
+    await expect(
+      generateInviteBonusBatch(testCfg({ poolQau: 5000 }), {
+        skipScan: true,
+        failAfterClaim: true,
+        now: new Date(),
+      })
+    ).rejects.toThrow(/injected post-claim build failure/)
+    // No row stayed stamped behind the dead batch reference: the pool
+    // budget charged by the crashed batch is back on the payable slate.
+    const stamped = rowsOf<{ n: number }>(
+      await sql`
+        SELECT COUNT(*)::int AS n FROM airdrop_invite_bonuses
+        WHERE inviter_registration_id = ${inviter} AND batch_ref IS NOT NULL
+      `
+    )
+    expect(Number(stamped[0].n)).toBe(0)
+    // The released rows (and their budget) are claimable by a later batch —
+    // if the release had not happened, this generation would find no
+    // unclaimed candidates and refuse with no_pending_bonus.
+    const again = await generateInviteBonusBatch(testCfg({ poolQau: 5000 }), {
+      skipScan: true,
+      now: new Date(),
+    })
+    expect(again.ok).toBe(true)
+    if (again.ok) {
+      expect(
+        again.rows.find((r) => r.inviterRegistrationId === inviter)
+      ).toBeDefined()
+    }
+    await sweepPending(inviter)
+  })
 })
 
 // ---------------------------------------------------------------------------

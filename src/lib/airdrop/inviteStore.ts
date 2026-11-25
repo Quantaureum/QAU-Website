@@ -774,6 +774,12 @@ export interface GenerateBonusBatchOptions {
   now?: Date
   /** Test seam: skip the track-A re-scan (covered separately). */
   skipScan?: boolean
+  /**
+   * Test seam: inject a crash into the post-claim build stage so tests can
+   * prove the claimed pool budget is released on the exception path. Never
+   * set in production.
+   */
+  failAfterClaim?: boolean
 }
 
 export type GenerateBonusBatchResult =
@@ -809,7 +815,9 @@ export type GenerateBonusBatchResult =
  *   3. kill-switch (manual flag + week-over-week criterion) → refuse
  *   4. atomically claim+stamp the payable rows behind a pool gate (audits
  *      N2/H-03) and build the whole batch from the claimed rows only;
- *      pool below total → refuse ENTIRE batch and release the claim
+ *      pool below total → refuse ENTIRE batch and release the claim; any
+ *      post-claim failure (build/throw) also releases the claim before the
+ *      error propagates, so no budget is stranded behind a dead batch
  *   5. hand the CSV rows back — exclusively owned by this batch
  */
 export async function generateInviteBonusBatch(
@@ -863,45 +871,65 @@ export async function generateInviteBonusBatch(
       requiredQau: claim.candidateTotalQau,
     }
   }
-  const built = buildBonusBatch({
-    eligible: claim.eligible,
-    poolRemainingQau: claim.poolRemainingBeforeQau,
-    cfg,
-    lastWeekClusterHits: weeklyHits.lastWeek,
-    currentWeekClusterHits: weeklyHits.currentWeek,
-    now,
-    batchRef,
-  })
-  if (!built.ok) {
-    // Refused: give the claimed rows back so a later batch can pay them.
-    await releaseClaimedBonusBatch(batchRef)
-    return {
-      ok: false,
-      code: built.code,
-      poolRemainingQau: built.poolRemainingQau,
-      requiredQau: built.requiredQau,
+  try {
+    if (options.failAfterClaim) {
+      // Test seam: crash AFTER the claim so tests can prove the catch path
+      // below releases the stamped rows back to the pool.
+      throw new Error("injected post-claim build failure (failAfterClaim)")
     }
-  }
+    const built = buildBonusBatch({
+      eligible: claim.eligible,
+      poolRemainingQau: claim.poolRemainingBeforeQau,
+      cfg,
+      lastWeekClusterHits: weeklyHits.lastWeek,
+      currentWeekClusterHits: weeklyHits.currentWeek,
+      now,
+      batchRef,
+    })
+    if (!built.ok) {
+      // Refused: give the claimed rows back so a later batch can pay them.
+      await releaseClaimedBonusBatch(batchRef)
+      return {
+        ok: false,
+        code: built.code,
+        poolRemainingQau: built.poolRemainingQau,
+        requiredQau: built.requiredQau,
+      }
+    }
 
-  const inviterIds = built.rows.map((r) => r.inviterRegistrationId)
-  const memberFacts = await loadMemberFacts(inviterIds)
-  const rows = built.rows.map((r) => ({
-    inviterRegistrationId: r.inviterRegistrationId,
-    walletAddress:
-      memberFacts.get(r.inviterRegistrationId)?.walletAddress ?? "",
-    amountQau: r.amountQau,
-    memo: r.memo,
-  }))
+    const inviterIds = built.rows.map((r) => r.inviterRegistrationId)
+    const memberFacts = await loadMemberFacts(inviterIds)
+    const rows = built.rows.map((r) => ({
+      inviterRegistrationId: r.inviterRegistrationId,
+      walletAddress:
+        memberFacts.get(r.inviterRegistrationId)?.walletAddress ?? "",
+      amountQau: r.amountQau,
+      memo: r.memo,
+    }))
 
-  return {
-    ok: true,
-    batchRef,
-    rows,
-    totalAmountQau: built.totalAmountQau,
-    poolRemainingAfterQau: built.poolRemainingAfterQau,
-    trackAHits,
-    voidedRecords,
-    weeklyHits,
+    return {
+      ok: true,
+      batchRef,
+      rows,
+      totalAmountQau: built.totalAmountQau,
+      poolRemainingAfterQau: built.poolRemainingAfterQau,
+      trackAHits,
+      voidedRecords,
+      weeklyHits,
+    }
+  } catch (err) {
+    // Exception after the claim (build or enrichment stage): release the
+    // stamped rows back to the pool. Fail-closed — nothing is ever paid
+    // from a batch that did not complete — but self-healing: a later batch
+    // can re-claim the released budget instead of it staying stranded
+    // behind this dead batch_ref. The release must not mask the original
+    // error, hence the nested guard.
+    try {
+      await releaseClaimedBonusBatch(batchRef)
+    } catch {
+      // Swallow: the original failure is the one that matters.
+    }
+    throw err
   }
 }
 
