@@ -28,7 +28,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          ref: dev
+          ref: master
 
       - uses: ./.github/actions/setup-pnpm-node
 
@@ -40,7 +40,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          PR=$(gh pr list --head "$BRANCH" --base dev --state open --json number --jq '.[0].number')
+          PR=$(gh pr list --head "$BRANCH" --base master --state open --json number --jq '.[0].number')
           REF=HEAD
           if [ -n "$PR" ] && git fetch --depth=1 origin "$BRANCH"; then
             REF=FETCH_HEAD
@@ -167,6 +167,6 @@ jobs:
           if [ -n "$NUM" ]; then
             gh pr edit "$NUM" --title "$TITLE" --body-file pr_body.md
           else
-            gh pr create --base dev --head "$BRANCH" \
+            gh pr create --base master --head "$BRANCH" \
               --title "$TITLE" --body-file pr_body.md --label "update 🔄"
           fi

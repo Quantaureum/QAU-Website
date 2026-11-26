@@ -9,7 +9,32 @@ permissions:
   pull-requests: read
 
 jobs:
+  credentials:
+    runs-on: ubuntu-latest
+    outputs:
+      ready: ${{ steps.check.outputs.ready }}
+    steps:
+      - name: Check required credentials
+        id: check
+        env:
+          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+        run: |
+          missing=""
+          if [ -z "$NETLIFY_TOKEN" ]; then missing="$missing NETLIFY_TOKEN"; fi
+          if [ -z "$NETLIFY_SITE_ID" ]; then missing="$missing NETLIFY_SITE_ID"; fi
+
+          if [ -z "$missing" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::warning title=Netlify credentials missing::Not configured:$missing. This workflow is skipped until the missing repository secrets are set."
+          fi
+
   cleanup:
+    needs: credentials
+    if: needs.credentials.outputs.ready == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo

@@ -16,7 +16,34 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  credentials:
+    runs-on: ubuntu-latest
+    outputs:
+      ready: ${{ steps.check.outputs.ready }}
+    steps:
+      - name: Check required credentials
+        id: check
+        env:
+          RELEASE_BOT_TOKEN: ${{ secrets.RELEASE_BOT_TOKEN }}
+          DISCORD_RELEASE_WEBHOOK_URL: ${{ secrets.DISCORD_RELEASE_WEBHOOK_URL }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+        run: |
+          missing=""
+          if [ -z "$RELEASE_BOT_TOKEN" ]; then missing="$missing RELEASE_BOT_TOKEN"; fi
+          if [ -z "$DISCORD_RELEASE_WEBHOOK_URL" ]; then missing="$missing DISCORD_RELEASE_WEBHOOK_URL"; fi
+          if [ -z "$ANTHROPIC_API_KEY" ]; then missing="$missing ANTHROPIC_API_KEY"; fi
+
+          if [ -z "$missing" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::warning title=Release credentials missing::Not configured:$missing. This workflow is skipped until the missing repository secrets are set."
+          fi
+
   prepare:
+    needs: credentials
+    if: needs.credentials.outputs.ready == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:

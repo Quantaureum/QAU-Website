@@ -40,7 +40,26 @@ on:
   #   types: [opened]
 
 jobs:
+  credentials:
+    runs-on: ubuntu-latest
+    outputs:
+      ready: ${{ steps.check.outputs.ready }}
+    steps:
+      - name: Check required credentials
+        id: check
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          missing=""
+          if [ -z "$ANTHROPIC_API_KEY" ]; then missing="$missing ANTHROPIC_API_KEY"; fi
+          if [ -z "$missing" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::warning title=Anthropic API key missing::Not configured:$missing. This workflow is skipped until the missing repository secrets are set."
+          fi
   review-translations:
+    needs: credentials
     # Runs when:
     # 1. Comment contains @claude /review-translations (from authorized user), OR
     # 2. Manually dispatched from Actions tab with a PR number.
@@ -58,6 +77,7 @@ jobs:
     #     contains(fromJSON('["pettinarip","wackerow","nloureiro","konopkja","mnelsonBT"]'), github.event.pull_request.user.login)
     #   )
     if: |
+      needs.credentials.outputs.ready == 'true' && (
       github.event_name == 'workflow_dispatch' ||
       (
         github.event_name == 'issue_comment' &&
@@ -71,6 +91,7 @@ jobs:
         contains(github.event.comment.body, '@claude') &&
         contains(github.event.comment.body, '/review-translations') &&
         contains(fromJSON('["pettinarip","wackerow","nloureiro","konopkja","mnelsonBT"]'), github.event.comment.user.login)
+      )
       )
     runs-on: ubuntu-latest
     permissions:
