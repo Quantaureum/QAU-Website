@@ -74,7 +74,7 @@ jobs:
             --allowedTools "Read,Write,Bash(git:*),Bash(gh:*),Bash(./src/scripts/prepare-release.sh:*),Bash(pnpm:*),Bash(node:*),Bash(jq:*),Bash(cat:*),Bash(mkdir:*),Bash(rm:*)"
           prompt: |
             Execute /prepare-release per the instructions in
-            .claude/commands/prepare-release.md.
+            .github/commands/prepare-release.md.
 
             Important modifications for the CI context:
             - Do NOT use AskUserQuestion — this is fully automated.
@@ -135,7 +135,7 @@ jobs:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       # Checkout is needed so the claude-code-action below can read
-      # .claude/commands/review-release.md and so this job can use the
+      # .github/commands/review-release.md and so this job can use the
       # ./.github/actions/discord-notify composite. Don't remove.
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -227,7 +227,7 @@ jobs:
             --allowedTools "Read,Glob,Grep,Bash(gh pr view:*),Bash(gh pr list:*),Bash(gh pr comment:*),Bash(curl:*),Bash(playwright-cli:*),Skill"
           prompt: |
             Execute /review-release for PR #${{ needs.prepare.outputs.pr_number }}
-            with the --post-comment flag, per .claude/commands/review-release.md.
+            with the --post-comment flag, per .github/commands/review-release.md.
 
             Arguments: ${{ needs.prepare.outputs.pr_number }} --post-comment
 

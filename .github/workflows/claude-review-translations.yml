@@ -204,7 +204,7 @@ jobs:
 
             Arguments: --pr=${{ steps.pr.outputs.number }} ${{ steps.parse.outputs.language_flag }} ${{ steps.parse.outputs.full_flag }} ${{ steps.parse.outputs.fix_flag }}
 
-            Follow the instructions in .claude/commands/review-translations.md for Phase 0 (scope detection -- read prior review SHA from gh api .../reviews unless --full was passed), Phase 1 (parallel agents), and Phase 2 (collecting results).
+            Follow the instructions in .github/commands/review-translations.md for Phase 0 (scope detection -- read prior review SHA from gh api .../reviews unless --full was passed), Phase 1 (parallel agents), and Phase 2 (collecting results).
 
             IMPORTANT workflow modifications for GitHub Actions context:
 
