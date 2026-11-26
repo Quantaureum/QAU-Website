@@ -260,6 +260,16 @@ module.exports = (phase) => {
         ...mdRedirects,
       ]
     },
+    async rewrites() {
+      return [
+        // RFC 9116 security.txt has to be reachable at /.well-known/security.txt.
+        // The standalone deploy only copies an allowlist of public/ subdirectories
+        // into the bundle, so a static file under public/.well-known/ never ships.
+        // Serve it from the route handler instead (app/security.txt/route.ts).
+        { source: "/.well-known/security.txt", destination: "/security.txt" },
+        { source: "/.well-known/security.txt/", destination: "/security.txt" },
+      ]
+    },
   }
 
   nextConfig = {
